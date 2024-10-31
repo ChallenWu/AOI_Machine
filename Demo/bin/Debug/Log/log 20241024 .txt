@@ -1,0 +1,6 @@
+2024/10/24 14:22:05:178 => Station4 => AlarmCode:10001 => Category:安全门报警 => Safe Door Triggered:Hãy kiểm tra lại cửa an toàn
+2024/10/24 14:24:29:373 => Station4 => AlarmCode:10001 => Category:安全门报警 => Safe Door Triggered:Hãy kiểm tra lại cửa an toàn
+2024/10/24 14:24:43:699 => Station4 => AlarmCode:10001 => Category:安全门报警 => Safe Door Triggered:Hãy kiểm tra lại cửa an toàn
+2024/10/24 14:26:32:362 => Station4 => AlarmCode:10001 => Category:安全门报警 => Safe Door Triggered
+2024/10/24 14:26:40:287 => Station4 => AlarmCode:10001 => Category:安全门报警 => Safe Door Triggered
+2024/10/24 14:27:00:449 => Station4 => AlarmCode:10001 => Category:安全门报警 => Safe Door Triggered

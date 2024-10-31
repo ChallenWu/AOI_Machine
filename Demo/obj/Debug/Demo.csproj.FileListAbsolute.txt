@@ -1,0 +1,116 @@
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\Demo.exe.config
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\Demo.exe
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\Demo.pdb
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\EntityFramework.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\System.Data.SQLite.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\MiniExcel.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\NPOI.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\NPOI.OOXML.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\TCPLib.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\XCore.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\TCPLib.pdb
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.csproj.AssemblyReference.cache
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.Form1.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.Page.DebugDlg.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.Page.PageAlarm.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.Page.PageChart.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.Page.PageEngineering.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.Page.PageLogin.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.Page.PageProduction.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.Page.PageSetting.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.Page.PageVision.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.Properties.Resources.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\BoTech.AlarmLogShow.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\BoTech.Alarm_Duration.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserControls.ChartIO_Update.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserControls.CriticalPameterDashBoard.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserControls.DataEachUnit.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserControls.DataGripSQL.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\BoTech.DT_Statiistic.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\HB_IWatch.FailTip.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\HB_IWatch.FailTipEx.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.IO_Summary.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserControls.MachineErrorStatistics.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserControls.MachineStateChanges.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.MenuButton.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.NetWorkWatcher.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserControls.STN.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.SwitchButton.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserControls.TrackBar.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserAccountManager.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.UserAccountRegister.resources
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.csproj.GenerateResource.cache
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.csproj.Up2Date
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.exe
+C:\Users\Stand\source\repos\Demo\Demo\obj\Debug\Demo.pdb
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\XCore.pdb
+C:\Users\Stand\source\repos\Demo\Demo\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\Demo.exe.config
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\Demo.exe
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\Demo.pdb
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\EntityFramework.SqlServer.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\EntityFramework.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\Newtonsoft.Json.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\System.Data.SQLite.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\System.Data.SQLite.EF6.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\System.Data.SQLite.Linq.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\MiniExcel.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\NPOI.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\NPOI.OOXML.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\NPOI.OpenXml4Net.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.Form1.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.Page.DebugDlg.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.Page.PageAlarm.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.Page.PageChart.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.Page.PageEngineering.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.Page.PageLogin.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.Page.PageProduction.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.Page.PageSetting.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.Page.PageVision.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\BoTech.AlarmLogShow.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\BoTech.Alarm_Duration.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserControls.ChartIO_Update.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserControls.CriticalPameterDashBoard.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserControls.DataEachUnit.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserControls.DataGripSQL.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\BoTech.DT_Statiistic.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\HB_IWatch.FailTip.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\HB_IWatch.FailTipEx.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.IO_Summary.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserControls.MachineErrorStatistics.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserControls.MachineStateChanges.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.MenuButton.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.NetWorkWatcher.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserControls.STN.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.SwitchButton.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserControls.TrackBar.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserAccountManager.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.UserAccountRegister.resources
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.exe
+E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\Demo\obj\Debug\Demo.pdb

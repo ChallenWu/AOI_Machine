@@ -1,0 +1,4 @@
+E:\Code\HB_IWatch_V1.1.0-20200720\TCPLib\bin\Release\TCPLib.dll
+E:\Code\HB_IWatch_V1.1.0-20200720\TCPLib\bin\Release\TCPLib.pdb
+E:\Code\HB_IWatch_V1.1.0-20200720\TCPLib\obj\Release\TCPLib.dll
+E:\Code\HB_IWatch_V1.1.0-20200720\TCPLib\obj\Release\TCPLib.pdb

@@ -1,0 +1,2 @@
+2024/08/23 08:59:14:465 => Station0 => AlarmCode:10001 => Category:安全门报警 => 触发安全门限:Hãy kiểm tra lại cửa an toàn
+2024/08/23 09:00:05:131 => Station0 => AlarmCode:10001 => Category:安全门报警 => 触发安全门限:Hãy kiểm tra lại cửa an toàn

@@ -1,0 +1,28 @@
+2024/08/21 08:24:32:919 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 08:25:24:211 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 08:36:15:626 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 08:37:04:598 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 09:01:23:034 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 09:29:43:595 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 10:28:42:623 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 11:07:39:705 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 11:28:28:396 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 11:28:49:087 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 13:06:12:290 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 13:06:40:220 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 13:55:31:441 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 14:02:03:722 => Station4 => AlarmCode:14000 => Category:通讯连接报警 => 运行流水程序异常:Error Detail
+2024/08/21 14:03:41:277 => Station4 => AlarmCode:10017 => Category:其他类报警 => Đây là lỗi đang test thử nghiệm:Error Detail
+2024/08/21 14:06:40:359 => Station4 => AlarmCode:10017 => Category:其他类报警 => Đây là lỗi đang test thử nghiệm:Đây là cách giải quyết vấn đề
+2024/08/21 14:06:50:749 => Station4 => AlarmCode:10017 => Category:其他类报警 => Đây là lỗi đang test thử nghiệm:Đây là cách giải quyết vấn đề
+2024/08/21 14:08:48:646 => Station4 => AlarmCode:10017 => Category:其他类报警 => Đây là lỗi đang test thử nghiệm:Đây là cách giải quyết vấn đề
+2024/08/21 14:09:01:974 => Station4 => AlarmCode:10017 => Category:其他类报警 => Đây là lỗi đang test thử nghiệm:Đây là cách giải quyết vấn đề
+2024/08/21 14:09:04:881 => Station4 => AlarmCode:10017 => Category:其他类报警 => Đây là lỗi đang test thử nghiệm:Đây là cách giải quyết vấn đề
+2024/08/21 14:09:14:561 => Station4 => AlarmCode:10017 => Category:其他类报警 => Đây là lỗi đang test thử nghiệm:Đây là cách giải quyết vấn đề
+2024/08/21 14:09:25:780 => Station4 => AlarmCode:10017 => Category:其他类报警 => Đây là lỗi đang test thử nghiệm:Đây là cách giải quyết vấn đề
+2024/08/21 14:20:10:192 => Station4 => AlarmCode:10001 => Category:安全门报警 => 触发安全门限:Hãy kiểm tra lại cửa an toàn
+2024/08/21 14:34:07:235 => Station4 => AlarmCode:10001 => Category:安全门报警 => 触发安全门限:Hãy kiểm tra lại cửa an toàn
+2024/08/21 14:52:31:648 => Station0 => AlarmCode:10001 => Category:安全门报警 => 触发安全门限:Hãy kiểm tra lại cửa an toàn
+2024/08/21 14:53:10:552 => Station0 => AlarmCode:10001 => Category:安全门报警 => 触发安全门限:Hãy kiểm tra lại cửa an toàn
+2024/08/21 14:53:16:128 => Station0 => AlarmCode:10001 => Category:安全门报警 => 触发安全门限:Hãy kiểm tra lại cửa an toàn
+2024/08/21 14:53:26:216 => Station0 => AlarmCode:10001 => Category:安全门报警 => 触发安全门限:Hãy kiểm tra lại cửa an toàn
