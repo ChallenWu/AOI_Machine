@@ -1,0 +1,530 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Net.Sockets;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Net.NetworkInformation;
+using System.Net;
+using System.IO;
+using System.Collections.Concurrent;
+using System.Windows.Forms;
+using XCore;
+
+
+namespace TCPLib
+{
+    public class SimpleTcpClient2 : IDisposable
+    {
+
+        Socket socket;
+        private byte[] buffer = new byte[204800];
+
+        public SimpleTcpClient2()
+        {
+            socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            StringEncoder = System.Text.Encoding.UTF8;
+            ReadLoopIntervalMs = 5;
+            Delimiter = 0x13;
+
+            this.DataReceived += SimpleTcpClient2_DataReceived;
+        }
+
+        private Thread _rxThread = null;
+        private List<byte> _queuedMsg = new List<byte>();
+        public byte Delimiter { get; set; }
+        public System.Text.Encoding StringEncoder { get; set; }
+        // private TcpClient _client = null;
+
+        public event EventHandler<Message2> DelimiterDataReceived;
+        public event EventHandler<Message2> DataReceived;
+
+        internal bool QueueStop { get; set; }
+        internal int ReadLoopIntervalMs { get; set; }
+        public bool AutoTrimStrings { get; set; }
+
+        public string IpAddress;
+        public int Iport;
+        Ping pingSender = new Ping();
+        PingOptions options = new PingOptions();
+      
+
+        public SimpleTcpClient2 Connect(string hostNameOrIpAddress, int port)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(hostNameOrIpAddress))
+                {
+                    throw new ArgumentNullException("hostNameOrIpAddress");
+                }
+                Iport = port;
+                IpAddress = hostNameOrIpAddress;
+
+                //IPAddress hostIPAddress = IPAddress.Parse(hostNameOrIpAddress);
+                //IPEndPoint hostEndPoint = new IPEndPoint(hostIPAddress, port);
+
+                socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                socket.Connect(hostNameOrIpAddress, port);
+                socket.BeginReceive(buffer, 0, 204800, SocketFlags.None, AsyncCallback, this);
+
+            }
+            catch
+            {
+                StartRxThread();
+                return null;
+            }          
+            return this;
+        }
+
+
+        public void AsyncCallback(IAsyncResult ar)
+        {
+            try
+            {
+                int recvcount = this.socket.EndReceive(ar);
+                if (recvcount > 0)
+                {
+                    string recvmsg = Encoding.ASCII.GetString(buffer);
+                    if (DataReceived != null)
+                    {
+                        int pos = recvmsg.IndexOf("\0");
+                        if (pos > 0)
+                        {
+                            recvmsg = recvmsg.Substring(0, pos);
+                        }
+                        var Tmpbuffer = Encoding.ASCII.GetBytes(recvmsg);
+
+                        Message2 m = new Message2(Tmpbuffer, socket, StringEncoder, Delimiter, AutoTrimStrings);
+                        mReply = m;
+                        DataReceived(this, m);
+                        buffer = new byte[204800];
+                        socket.BeginReceive(buffer, 0, 204800, SocketFlags.None, AsyncCallback, this);
+
+                    }
+                }
+            }
+            catch
+            {
+                if (IpAddress != "169.254.0.10")
+                {
+                    Disconnect();
+                    socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                    StartRxThread();
+                }
+
+            }
+
+        }
+
+
+        private void StartRxThread()
+        {
+            if (_rxThread != null) { return; }
+
+            _rxThread = new Thread(ListenerLoop);
+            _rxThread.IsBackground = true;
+            _rxThread.Start();
+        }
+        private void StopRxThread()
+        {
+            try
+            {
+                if (_rxThread != null) { return; }
+
+                _rxThread.Abort();
+                _rxThread = null;
+            }
+            catch (Exception)
+            {
+                 
+            }
+        }
+
+
+
+
+        public SimpleTcpClient2 Disconnect()
+        {
+            try
+            {
+                if (socket == null) { return this; }
+                socket.Disconnect(true);
+
+            }
+            catch (Exception)
+            {
+            }
+            return this;
+        }
+
+        public bool Connected
+        {
+            get
+            {
+                if (socket != null && socket.Connected)
+                {
+                    return true;
+                };
+                return false;
+            }
+        }
+
+
+        public void ReConnect()
+        {
+            try
+            {
+                socket.Connect(IpAddress, Iport);
+                socket.BeginReceive(buffer, 0, 204800, SocketFlags.None, AsyncCallback, this);
+                if (socket.Connected)
+                {
+                    StopRxThread();
+                }
+
+            }
+            catch (Exception)
+            {
+            }
+
+        }
+
+        public Socket SocketClient { get { return socket; } }
+
+
+        private void ListenerLoop(object state)
+        {
+            while (!QueueStop)
+            {
+                try
+                {
+                    RunLoopStep();
+                }
+                catch
+                {
+                }
+                Thread.Sleep(50);
+            }         
+        }
+
+
+        private void RunLoopStep()
+        {
+            if (socket == null || socket.Connected == false)
+            {
+                if (IpAddress != "169.254.0.10")
+                {
+                    ReConnect();
+                }
+            }
+            else
+            {
+                //if (IpAddress != "169.254.0.10" && IpAddress != "127.1.1.1")
+                //{
+                //    PingReply reply = pingSender.Send(IpAddress, 120, Encoding.ASCII.GetBytes("test"));//硬件断线检测
+
+                //    if (reply.Status != IPStatus.Success)
+                //    {
+                //        Disconnect();
+                //        socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                //        ReConnect();
+                //    }
+                //}
+            }
+        }      
+
+
+        private void NotifyDelimiterMessageRx(Socket client, byte[] msg)
+        {
+            if (DelimiterDataReceived != null)
+            {
+                Message2 m = new Message2(msg, client, StringEncoder, Delimiter, AutoTrimStrings);
+                DelimiterDataReceived(this, m);
+            }
+        }
+
+        private void NotifyEndTransmissionRx(Socket client, byte[] msg)
+        {
+            if (DataReceived != null)
+            {
+                Message2 m = new Message2(msg, client, StringEncoder, Delimiter, AutoTrimStrings);
+                DataReceived(this, m);
+            }
+        }
+
+        public void Write(byte[] data)
+        {
+            try
+            {
+                if (socket == null) { throw new Exception("Cannot send data to a null TcpClient (check to see if Connect was called)"); }
+                // socket.GetStream().Write(data, 0, data.Length);
+                socket.Send(data, data.Length, SocketFlags.None);
+            }
+            catch (Exception)
+            {
+                BzMessagebox.Show(string.Format ("发送=>{0} 通讯命令失败,请检查通讯!",IpAddress), "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+            }
+
+        }
+
+        public void Write(string data)
+        {
+            try
+            {
+                if (data == null) { return; }
+                Write(StringEncoder.GetBytes(data));
+            }
+            catch (Exception)
+            {
+
+            }
+
+        }
+
+        public void WriteLine(string data)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(data)) { return; }
+                if (data.LastOrDefault() != Delimiter)
+                {
+                    Write(data + StringEncoder.GetString(new byte[] { Delimiter }));
+                }
+                else
+                {
+                    Write(data);
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+
+        }
+
+        Message2 mReply = null;
+        public bool WriteAndGetReply(string cmd, out string result, int timeout)
+        {
+            result = "";
+            mReply = null;
+            Write(cmd);
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            while (true)
+            {
+                if (sw.ElapsedMilliseconds > timeout)
+                {
+                    return false;
+                }
+                if (mReply == null)
+                {
+                    System.Threading.Thread.Sleep(10);
+                    continue;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            result = mReply.MessageString;
+            return true;
+        }
+
+        public void Send(string cmd)
+        {
+            mReply = null;
+            Write(cmd);
+            try
+            {
+                //string path = "E:\\Record\\TcpClientReceive\\" + DateTime.Today.ToString("yyyyMMdd") + "_TcpClient" + ".csv";
+                //if (File.Exists(path) == false)
+                //{
+                //    CsvServer.Instance.WriteLine(path, "DataTime,SendOrReceive,TcpClientReceive");
+                //}
+                //CsvServer.Instance.WriteLine(path, DateTime.Now.ToString("HH:mm:ss.fff ") + ",Send," + cmd);
+
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        public bool GetReply(out string result, int timeout)
+        {
+            result = "";
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            while (true)
+            {
+                if (sw.ElapsedMilliseconds > timeout)
+                {
+                    return false;
+                }
+                if (mReply == null)
+                {
+                    System.Threading.Thread.Sleep(10);
+                    continue;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            result = mReply.MessageString;
+            return true;
+        }
+
+        private void SimpleTcpClient2_DataReceived(object sender, Message2 message)
+        {
+            mReply = message;
+            try
+            {
+                string path = "D:\\Record\\TcpClientReceive\\" + DateTime.Today.ToString("yyyyMMdd") + "_TcpClient" + ".csv";
+                if (File.Exists(path) == false)
+                {
+                    CsvServer.Instance.WriteLine(path, "DataTime,SendOrReceive,TcpClientReceive");
+                }
+                string recvmsg = Encoding.ASCII.GetString(message.Data);
+                CsvServer.Instance.WriteLine(path, DateTime.Now.ToString("HH:mm:ss.fff ") + ",Receive," + recvmsg);
+
+            }
+            catch (Exception)
+            {
+
+            }
+
+        }
+
+        #region IDisposable Support
+        private bool disposedValue = false; // To detect redundant calls
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposedValue)
+            {
+                if (disposing)
+                {
+                    // TODO: dispose managed state (managed objects).
+
+                }
+
+                // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
+                // TODO: set large fields to null.
+                QueueStop = true;
+                if (socket != null)
+                {
+                    try
+                    {
+                        socket.Close();
+                    }
+                    catch { }
+                    socket = null;
+                }
+
+                disposedValue = true;
+            }
+        }
+
+        // TODO: override a finalizer only if Dispose(bool disposing) above has code to free unmanaged resources.
+        // ~SimpleTcpClient() {
+        //   // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+        //   Dispose(false);
+        // }
+
+        // This code added to correctly implement the disposable pattern.
+        public void Dispose()
+        {
+            // Do not change this code. Put cleanup code in Dispose(bool disposing) above.
+            Dispose(true);
+            // TODO: uncomment the following line if the finalizer is overridden above.
+            // GC.SuppressFinalize(this);
+        }
+        #endregion
+    }
+
+    class CsvServer
+    {
+        private Thread _thread;
+        private ConcurrentQueue<CsvInfo> queue = new ConcurrentQueue<CsvInfo>();
+        private readonly static CsvServer instance = new CsvServer();
+        public object obj = new object();
+        CsvServer() { Start(); }
+        public static CsvServer Instance
+        {
+            get { return instance; }
+        }
+
+        public void Start()
+        {
+            Stop();
+            _thread = new Thread(new ThreadStart(ProcessEventQueue));
+            _thread.IsBackground = true;
+            _thread.Start();
+        }
+
+        public void Stop()
+        {
+            if (this._thread != null)
+            {
+                this._thread.Abort();
+            }
+        }
+        private void Kill()//20170327 XSF
+        {
+            Process[] process = Process.GetProcesses();
+            foreach (Process p in process)
+            {
+                if (p.ProcessName.ToUpper() == "ET")
+                {
+                    p.CloseMainWindow();
+                    p.WaitForExit();
+                }
+            }
+        }
+        private void ProcessEventQueue()
+        {
+            while (true)
+            {
+                if (queue.Count > 0)
+                {
+                    CsvInfo csvInfo;
+                    queue.TryDequeue(out csvInfo);
+                    try
+                    {
+                        lock (obj)
+                        {
+                            Kill();//20170327 XSF
+                            StreamWriter sw = File.AppendText(csvInfo.Path);
+                            sw.WriteLine(csvInfo.Line);
+                            sw.Dispose();
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+                }
+                Thread.Sleep(20);
+            }
+        }
+
+        public void WriteLine(string path, string line)
+        {
+
+            CsvInfo csvInfo = new CsvInfo();
+            csvInfo.Path = path;
+            csvInfo.Line = line;
+            queue.Enqueue(csvInfo);
+
+        }
+    }
+
+    class CsvInfo
+    {
+        public string Path { get; set; }
+        public string Line { get; set; }
+    }
+}

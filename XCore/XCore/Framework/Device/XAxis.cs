@@ -1,0 +1,531 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using APS_Define_W32;
+using System.Diagnostics;
+
+namespace XCore
+{
+    public enum HomeMode
+    {
+        UserDefined = 1,
+
+        Limit = 10,
+        Limit_Home,
+        Limit_Index,
+        Limit_Home_Index,
+
+        Home = 20,
+        Home_Index = 22,
+
+        Index = 30
+    }
+
+    public enum HomeDir
+    {
+        Negative = -1,
+        UnDefined = 0,
+        Positive = 1
+    }
+
+    public class XAxis : XObject
+    {
+        private int actAxisId;
+        private double lead;
+        private XCard card;
+        private string name;
+        private bool checkLimit;
+        private int m_MotionIO;
+        private int m_MotionSts;
+        private double  m_MotionPos;
+        private double m_CommandPos;
+        private bool isHomeOk;
+        private bool hasEStoped = true;
+        private bool m_HasServoOff = false;
+        private bool m_ServoStsLast = false;
+        private bool m_Feedback = true;
+        private short homeMode;
+        private short homeDir;
+        private int axisBreakSetDo = -1;
+        private double homeSpeedH;
+        private double homeSpeedL;
+        private double escapeStep;
+        private double homeOffset;
+        // speed parameters
+        public delegate void UpdateSpeedParameter(int axisId);
+        public static UpdateSpeedParameter updateSpeed;
+
+        public short HomeMode
+        {
+            get { return homeMode; }
+        }
+        public short HomeDir
+        {
+            get { return homeDir; }
+        }
+        public double HomeSpeedH
+        {
+            get { return homeSpeedH; }
+        }
+        public double HomeSpeedL
+        {
+            get { return homeSpeedL; }
+        }
+        public double Lead
+        {
+            get { return lead; }
+        }
+
+        public double EscapeStep
+        {
+            get { return escapeStep; }
+        }
+
+        public double HomeOffset
+        {
+            get { return homeOffset; }
+        }
+
+        public XAxis(int actAxisId, double lead, XCard card, string name,bool chklimit = true)
+        {
+            this.actAxisId = actAxisId;
+            this.lead = lead;
+            this.card = card;
+            this.name = name;
+            this.checkLimit = chklimit;
+        }
+
+
+        public void InitAxis(short homeMode, short homeDir, double homeSpeedH, double homeSpeedL, double band, int sattleTime, double homeOffset, int axisBreakDo = -1)
+        {
+            this.homeMode = homeMode;
+            this.homeDir = homeDir;
+            this.axisBreakSetDo = axisBreakDo;
+            SetAxisBand(band, sattleTime);
+            this.homeSpeedH = homeSpeedH;
+            this.homeSpeedL = homeSpeedL;
+            if (this.homeMode == (short)XCore.HomeMode.Limit)
+                this.escapeStep = 5;
+            else
+                this.escapeStep = 0;
+            this.homeOffset = homeOffset;
+        }
+
+
+        public int ActId
+        {
+            get { return this.actAxisId; }
+        }
+
+        public int SetId { get; set; }
+
+        public int CardId { get; set; }
+
+        public int TaskId { get; set; }
+
+        public XAxisDirection AxisDirection { get; set; }
+
+        public bool IsFeedback
+        {
+            get { return this.m_Feedback; }
+            set { this.m_Feedback = value; }
+        }
+
+        public int SetServo(bool on)
+        {
+            //if (axisBreakSetDo != -1)
+            //{
+            //    if (on)
+            //        XDevice.Instance.FindDoById(axisBreakSetDo).SetDo(DOSTSTYPE.HIGH);
+            //    else
+            //        XDevice.Instance.FindDoById(axisBreakSetDo).SetDo(DOSTSTYPE.LOW);
+            //}
+            if (!on)
+                IsHomeOk = false;
+            return card.SetServo(actAxisId, on);
+        }
+        // 单轴回零
+        public int GoHome()
+        {
+            if (card.GoHome(actAxisId) == 0)
+            {
+                IsHomeOk = true;
+                return 0;
+            }
+            else
+            {
+                IsHomeOk = false;
+                return -1;
+            }
+        }
+
+        // vel单位是国际单位，mm/s
+        public int MoveAbs(double position, double vel)
+        {
+            if (!IsHomeOk)
+                return -1;
+            // 如果是断电状态，使能轴先
+            if (m_HasServoOff) 
+            {
+                SetServo(true);
+            }
+            // 设置加速度
+            if (updateSpeed != null)
+                updateSpeed(SetId);
+            return card.MoveAbs(actAxisId, XConvert.MM2PULS(position, lead), (int)XConvert.MM2PULS(vel, lead));
+        }
+        // vel单位是国际单位，mm/s
+        public int MoveJog(int isStart,double vel)
+        {
+
+            // 如果是断电状态，使能轴先
+            if (m_HasServoOff)
+            {
+                SetServo(true);
+            }
+            return card.MoveJog(actAxisId, isStart, XConvert.MM2PULS(vel, lead));
+        }
+
+        public int MoveRel(double distance,double vel)
+        {
+            if (!IsHomeOk)
+                return -1;
+            // 如果是断电状态，使能轴先
+            if (m_HasServoOff)
+            {
+                SetServo(true);
+            }
+            // 设置加速度
+            if (updateSpeed != null)
+                updateSpeed(actAxisId);
+            return card.MoveRel(actAxisId, XConvert.MM2PULS(distance, lead), (int)XConvert.MM2PULS(vel, lead));
+        }
+        public int Stop()
+        {
+            return card.Stop(actAxisId);
+        }
+        public int EStop()
+        {
+            return card.EStop(actAxisId);
+        }
+
+        public bool WaitMotionEnd(int timeOutMilliseconds = -1)  // @sjx add
+        {
+            return card.WaitMotionEnd(actAxisId, timeOutMilliseconds);
+        }
+
+        public bool WaitLogicalMotionEnd(int timeOutMilliseconds = -1)
+        {
+            return card.WaitLogicalMotionEnd(actAxisId, timeOutMilliseconds);
+        }
+
+        public void GetPos(ref double pos)
+        {
+            card.GetMotionPos(actAxisId, ref pos);
+            pos = XConvert.PULS2MM(pos, lead);
+        }
+
+        public bool IsAxisError()
+        {
+            return card.IsAxisError(actAxisId);
+        }
+
+        private bool m_posLimitDo = false;
+        private bool m_negLimitDo = false;
+        public int Update()
+        {
+            lock (this)
+            {
+
+                int sts = 0;
+                double sts2 = 0;
+                card.GetMotionIo(actAxisId, ref sts);
+                m_MotionIO = sts;
+                card.GetMotionSts(actAxisId, ref sts);
+                m_MotionSts = sts;
+                card.GetMotionPos(actAxisId, ref sts2);
+                m_MotionPos = sts2;
+                card.GetCommandPos(actAxisId, ref sts2);
+                m_CommandPos = sts2;
+
+                if (IsSVON == false && m_ServoStsLast == true)
+                {
+                    m_HasServoOff = true;
+                }
+                m_ServoStsLast = IsSVON;
+
+                if (checkLimit)
+                {
+                    if (IsMEL && isHomeOk)
+                    {
+                        if (!m_negLimitDo)
+                        {
+                            m_negLimitDo = true;
+                            string info = "捕捉到" + "\"" + name + "\"" + "负限位触发，请检查";
+                            System.Threading.Tasks.Task task = new System.Threading.Tasks.Task(new Action(() =>
+                            {
+                                BzMessagebox.Show(info, "错误", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Exclamation);
+                            }));
+                            task.Start();
+                        }
+                    }
+                    else
+                    {
+                        m_negLimitDo = false;
+                    }
+                    if (IsPEL && isHomeOk)
+                    {
+                        if (!m_posLimitDo)
+                        {
+                            m_posLimitDo = true;
+                            string info = "捕捉到" + "\"" + name + "\"" + "正限位触发，请检查";
+                            System.Threading.Tasks.Task task = new System.Threading.Tasks.Task(new Action(() =>
+                            {
+                                BzMessagebox.Show(info, "错误", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Exclamation);
+                            }));
+                            task.Start();
+                        }
+
+                    }
+                    else
+                    {
+                        m_posLimitDo = false;
+                    }
+                }
+                
+                return 0;
+            }
+        }
+        public int SetHome(bool b)
+        {
+            lock (this)
+            {
+                isHomeOk = b;
+                m_HasServoOff = false;
+                return 0;
+            }
+        }
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+        }
+        public bool IsALM
+        {
+            get
+            {
+                lock (this)
+                {
+                    return XConvert.BitEnable(m_MotionIO, XAPS_Define.MIO_ALM);
+                }
+            }
+        }
+        public bool IsPEL
+        {
+            get
+            {
+                lock (this)
+                {
+                    return XConvert.BitEnable(m_MotionIO, XAPS_Define.MIO_PEL);
+                }
+            }
+        }
+        public bool IsMEL
+        {
+            get
+            {
+                lock (this)
+                {
+                    return XConvert.BitEnable(m_MotionIO, XAPS_Define.MIO_MEL);
+                }
+            }
+        }
+        public bool IsORG
+        {
+            get
+            {
+                lock (this)
+                {
+                    return XConvert.BitEnable(m_MotionIO, XAPS_Define.MIO_ORG);
+                }
+            }
+        }
+        public bool IsEMG
+        {
+            get
+            {
+                lock (this)
+                {
+                    return XConvert.BitEnable(m_MotionIO, XAPS_Define.MIO_EMG);
+                }
+            }
+        }
+        public bool IsSVON
+        {
+            get
+            {
+                lock (this)
+                {
+                    return XConvert.BitEnable(m_MotionIO, XAPS_Define.MIO_SVON);
+                }
+            }
+        }
+        public bool HasSVONOFF
+        {
+            get
+            {
+                lock (this)
+                {
+                    return m_HasServoOff;
+                }
+            }
+        }
+        public bool IsMDN
+        {
+            get
+            {
+                lock (this)
+                {
+                    return XConvert.BitEnable(m_MotionSts, XAPS_Define.MTS_MDN);
+                }
+            }
+        }
+        public bool IsHMV
+        {
+            get
+            {
+                lock (this)
+                {
+                    return XConvert.BitEnable(m_MotionSts, XAPS_Define.MTS_HMV);
+                }
+            }
+        }
+        public bool IsASTP
+        {
+            get
+            {
+                lock (this)
+                {
+                    return XConvert.BitEnable(m_MotionSts, XAPS_Define.MTS_ASTP);
+                }
+            }
+        }
+        public bool IsHomeOk
+        {
+            get
+            {
+                lock (this)
+                {
+                    return isHomeOk;
+                }
+            }
+            set
+            {
+                lock (this)
+                {
+                     isHomeOk=value;
+                }
+            }
+        }
+        public bool HasEStoped
+        {
+            get
+            {
+                lock (this)
+                {
+                    return hasEStoped;
+                }
+            }
+            set
+            {
+                lock (this)
+                {
+                    hasEStoped = value;
+                }
+            }
+        }
+        public double POS
+        {
+            get 
+            {
+                lock (this)
+                {
+                    return XConvert.PULS2MM(m_MotionPos, lead);
+                }
+            }
+        }
+        public double CommandPOS
+        {
+            get
+            {
+                lock (this)
+                {
+                    return XConvert.PULS2MM(m_CommandPos, lead);
+                }
+            }
+        }
+        public double PULS
+        {
+            get
+            {
+                lock (this)
+                {
+                    return m_MotionPos;
+                }
+            }
+        }
+        
+        public int SetAxisAccAndDec(double acc, double dec)
+        {
+            return card.SetAxisAccAndDec(actAxisId, XConvert.MM2PULS(acc, lead), XConvert.MM2PULS(dec, lead));
+        }
+        public int SetAxisJerkAndKDec(double jerk, double kdec)
+        {
+            if (jerk < 0 || kdec < 0)
+                return -1;
+            return card.SetAxisJerkAndKDec(actAxisId, XConvert.MM2PULS(jerk, lead), XConvert.MM2PULS(kdec, lead));
+        }
+
+        public int SetAxisBand(double band, int time)
+        {
+            return card.setAxisBand(actAxisId, (int)XConvert.MM2PULS(band, lead), time);
+        }
+
+        public int SetStopDec(double dec)
+        {
+            return card.SetStopDec(actAxisId, lead, dec);
+        }
+
+        public int APS_SetAxisParam(APS_Define PRA, double value)
+        {
+            return card.APS_SetAxisParam(actAxisId, lead, PRA, value);
+        }
+        public int APS_SetAxisJogParam(int mode, int dir, double acc, double dec,int vel)
+        {
+            return card.APS_SetJogParam(actAxisId,mode,dir,lead,acc,dec,vel);
+        }
+
+        public int APS_SetBacklashEn(int on)
+        {
+            return card.APS_SetBacklashEnable(actAxisId, on);
+        }
+
+        public int SetSoftLimt(double positive,double negative)
+        {
+            return card.SetSoftLimit(actAxisId, positive, negative);
+        }
+
+    }
+     public enum XAxisDirection
+    {
+        Left_Right,
+        Front_Back,
+        Up_Down,
+        Rotate,
+        Rotate_antiClock
+
+    }
+}

@@ -1,0 +1,336 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Xml;
+using System.Collections;
+using System.Collections.Concurrent;
+using System.IO;
+using System.Diagnostics;
+using System.Threading;
+using System.Windows.Forms;
+
+namespace XCore
+{
+    public class XSetting : XObject
+    {
+        protected ConcurrentDictionary<string, string> settingMap = new ConcurrentDictionary<string, string>();
+        //增加参数改动记录LOG
+        protected ConcurrentDictionary<string, string> settingMap_temp = new ConcurrentDictionary<string, string>();
+        protected string path;
+        protected string root;
+        protected string copyPath;
+        
+        public void SetPathAndRoot(string path, string root,string copyPath="")
+        {
+            this.path = path;
+            this.root = root;
+            this.copyPath = copyPath;
+        }
+
+        public string Name;
+
+        public string UserAccountName;
+
+        public int LoadSetting()
+        {
+            if (!File.Exists(path))  // 如果路径不存在，需要创建一个新文件
+            {
+                XmlDocument doc = new XmlDocument();
+                XmlElement root = doc.CreateElement(this.root);
+                doc.AppendChild(root);                
+                doc.Save(path);
+            }
+            try
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.Load(path);
+                XmlNode parent = doc.SelectSingleNode(root);
+                if (parent == null)
+                {
+                    return 1;
+                }
+                XmlNodeList children = parent.ChildNodes;
+                foreach (XmlElement child in children)
+                {
+                    settingMap.TryAdd(child.Name, child.InnerText);
+                    settingMap_temp.TryAdd(child.Name, child.InnerText);
+                }
+                return 0;
+            }
+            catch(Exception ex)
+            {
+                Trace.WriteLine(ex, this.GetType().ToString());
+                return -1;
+            }
+        }
+        public void ShowParamOverRangeError<T>(string name, T min, T max)
+        {
+            if (!(min is T && max is T))
+            {
+                return;
+            }
+            BzMessagebox.Show(MultiLanguage.GetSettingName(name) + ":" + min.ToString() + "--" + max.ToString(),
+                    MultiLanguage.GetMessage("参数设置超出范围"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+        public int SaveSetting()
+        {
+            try
+            {
+                string tempstr = copyPath + DateTime.Now.ToString("yyyyMMdd_HH_mm_ss") + UserAccountName + ".xml";
+                if (copyPath != "")
+                {
+                    if (File.Exists(tempstr))
+                    {
+                        File.Delete(tempstr);
+                        Thread.Sleep(10);
+                    }
+                    if (path == null || path == "")
+                        return -1;
+                    File.Copy(path, tempstr);
+                }
+
+                XmlDocument doc = new XmlDocument();
+                XmlElement root = doc.CreateElement(this.root);
+                doc.AppendChild(root);
+                foreach(KeyValuePair<string, string> kvp in settingMap)
+                {
+                    foreach (KeyValuePair<string, string> kkvp in settingMap_temp)
+                    {
+                        if (kvp.Key == kkvp.Key && kvp.Value != kkvp.Value)
+                        {
+                            string line = UserAccountName + "账户下:" + kkvp.Key + "值由" + kkvp.Value + "改为" + kvp.Value;
+                            WriteLog(line);
+                        }
+                    }
+                    XmlElement element = doc.CreateElement(kvp.Key);
+                    element.InnerText = kvp.Value;
+                    root.AppendChild(element);
+                }
+
+                //XmlDocument doc = new XmlDocument();
+                //doc.Load(path);
+                //XmlNode parent = doc.SelectSingleNode(root);
+                //XmlNodeList children = parent.ChildNodes;
+                //foreach (XmlElement xe in children)
+                //{
+                //    foreach (KeyValuePair<string, string> kvp in settingMap)
+                //    {
+                //        if (xe.Name == kvp.Key)
+                //        {
+                //            xe.InnerText = kvp.Value;
+                //        }
+                //    }
+                //}
+                //记录被改之前的值，好做比较
+                foreach (KeyValuePair<string, string> kvp in settingMap)
+            {
+                    foreach (KeyValuePair<string, string> kkvp in settingMap_temp)
+        {
+                        if (kvp.Key == kkvp.Key)
+            {
+                            settingMap_temp[kvp.Key] = kvp.Value;
+            }
+            }
+        }
+                doc.Save(path);
+                return 0;
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.ToString(), "错误", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                Trace.WriteLine(ex, this.GetType().ToString());
+                return -1;
+            }
+        }
+
+        public void SetNodeValue(string nodeName, int setValue)
+        {
+            try
+            {
+                settingMap[nodeName] = setValue.ToString();
+            }
+            catch (KeyNotFoundException knfe)
+            {
+                settingMap.TryAdd(nodeName, setValue.ToString());
+            }
+        }
+        public void SetNodeValue(string nodeName, double setValue)
+        {
+            try
+            {
+                settingMap[nodeName] = setValue.ToString();
+            }
+            catch (KeyNotFoundException knfe)
+            {
+                settingMap.TryAdd(nodeName, setValue.ToString());
+            }
+        }
+
+        public void SetNodeValue(string nodeName, double[] setValue)
+        {
+            string valueArr = "";
+            for (int i = 0; i < setValue.Length; i++)
+            {
+                valueArr += setValue[i].ToString();
+                if (i != setValue.Length - 1)
+                    valueArr += ",";
+            }
+
+            try
+            {
+                settingMap[nodeName] = valueArr;
+            }
+            catch (KeyNotFoundException knfe)
+            {
+                settingMap.TryAdd(nodeName, valueArr);
+            }
+        }
+
+        public void SetNodeValue(string nodeName, bool setValue)
+        {
+            try
+            {
+                settingMap[nodeName] = setValue.ToString();
+            }
+            catch (KeyNotFoundException knfe)
+            {
+                settingMap.TryAdd(nodeName, setValue.ToString());
+            }
+        }
+        public void SetNodeValue(string nodeName, string setValue)
+        {
+            try
+            {
+                settingMap[nodeName] = setValue;
+            }
+            catch (KeyNotFoundException knfe)
+            {
+                settingMap.TryAdd(nodeName, setValue);
+            }
+        }
+        public bool GetNodeValue(string nodeName, bool defaultValue)
+        {
+            try
+            {
+                return bool.Parse(settingMap[nodeName]);
+            }
+            catch (KeyNotFoundException knfe)
+            {
+                settingMap.TryAdd(nodeName, defaultValue.ToString());
+                SaveSetting();
+                return defaultValue;
+            }
+        }
+        public int GetNodeValue(string nodeName, int defaultValue)
+        {
+            try
+            {
+                return int.Parse(settingMap[nodeName]);
+            }
+            catch (KeyNotFoundException knfe)
+            {
+                settingMap.TryAdd(nodeName, defaultValue.ToString());
+                SaveSetting();
+                return defaultValue;
+            }
+        }
+        public double GetNodeValue(string nodeName, double defaultValue)
+        {
+            if (settingMap.Keys.Contains(nodeName))
+                return double.Parse(settingMap[nodeName]);
+            else
+            {
+                settingMap.TryAdd(nodeName, defaultValue.ToString());
+                SaveSetting();
+                return defaultValue;
+            }
+        }
+
+        public double[] GetNodeValue(string nodeName, double[] defaultValue)
+        {
+            if (settingMap.Keys.Contains(nodeName))
+            {
+                string[] valueArr = settingMap[nodeName].Split(',');
+                defaultValue = new double[valueArr.Length];
+                for (int i = 0; i < valueArr.Length; i++)
+                    defaultValue[i] = double.Parse(valueArr[i]);
+
+                return defaultValue;
+            }
+            else
+            {
+                string valueArr = "";
+                for (int i = 0; i < defaultValue.Length; i++)
+                {
+                    valueArr += defaultValue[i].ToString();
+                    if (i != defaultValue.Length - 1)
+                        valueArr +=",";
+                }
+                settingMap.TryAdd(nodeName, valueArr);
+                SaveSetting();
+                return defaultValue;
+            }
+        }
+
+        public string GetNodeValue(string nodeName, string defaultValue)
+        {
+            try
+            {
+                return settingMap[nodeName];
+            }
+            catch (KeyNotFoundException knfe)
+            {
+                settingMap.TryAdd(nodeName, defaultValue);
+                SaveSetting();
+                return defaultValue;
+            }
+        }
+        public object obj = new object();
+        private void WriteLog(string line)
+        {
+            lock (obj)
+            {
+                string path1 = path.Substring(0, path.LastIndexOf("\\") + 1);
+                if (this.path.Contains("_DOE"))
+                {
+                    path1 += "DOELog_" + DateTime.Today.ToString("yyyyMMdd") + ".txt";
+                }
+                else
+                {
+                    path1 += "PDLog_" + DateTime.Today.ToString("yyyyMMdd") + ".txt";
+                }
+                string str = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss:fff") + " => " + line;
+                try
+                {
+                    StreamWriter writer = new StreamWriter(path1,true, Encoding.UTF8);
+                    writer.WriteLine(str);
+                    writer.Dispose();
+                    writer.Close();
+                }
+                catch
+                {
+
+                }
+            }
+        }
+
+        private void KillProcess(string filepath)
+        {
+            int n = filepath.LastIndexOf('/') + 1;
+            string fileName = filepath.Substring(n, filepath.Length - n);
+            Process[] processes = Process.GetProcesses();
+            foreach (Process p in processes)
+            {
+                if (p.ProcessName.ToUpper() == "EXCEL")
+                {
+                    //确认文件
+                    if (p.MainWindowTitle.Contains(fileName))
+                    {
+                        p.Kill();//结束进程
+                    }
+                }
+            }
+        }
+    }
+}

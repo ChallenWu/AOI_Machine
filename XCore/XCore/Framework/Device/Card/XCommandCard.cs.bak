@@ -1,0 +1,142 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using APS_Define_W32;
+using APS168_W32;
+
+namespace XCore
+{
+    public enum AxisState
+    {
+        SERVOALARMON = 1,
+        POSITIVETRIG = 2,
+        NEGATIVETRIG = 3,
+        EMERGENCYALARM = 4,
+        POWERON = 5,
+        POWEROFF = 6,
+        INMOVING = 7,
+        AXISSTOPPED = 8,
+        NODEFINED = -1
+    }
+    public enum CardType
+    {
+        ACS = 1,
+        GTS
+    }
+
+    public abstract class XCommandCard : XObject
+    {
+
+        public CardType cardType;
+
+        public int[] DI_Data = new int[200];
+        public int[] DO_Data = new int[200];
+
+        public virtual int Initial(string IP, bool simulator = false) { return -1; }
+
+        public virtual int InitialGTS(int cardId, int totalAxisNum,int totalExtIOChannel, string cardConfigPath,string extIOConfigPath,bool Offline) { return -1; }
+
+        public virtual int Register(int cardId) { return -1; }
+        public virtual int Close(int actCardId) { return -1; }
+        public virtual int LoadParam(string configFn) { return -1; }
+
+        public virtual int Update(int actCardId) { return -1; }
+
+        public virtual string ReadStringScalar(string variableName) { return "-1"; }
+        public virtual string ReadVariableBuffer(string variableName, int buffer) { return "-1"; }
+        public virtual int ReadIntAxis(string variableName, int axisId) { return -1; }
+       
+        public virtual int WriteLocalVariable(string variableName, string value, int BufferId) { return -1; }
+        public virtual int WriteGlobalVariable(string variableName, string value) { return -1; }
+
+        //public virtual int WritePos(int actCardId, object array, string name);
+
+        public abstract int WritePos(int actCardId, object array, string name);
+
+
+        public virtual int SetDo(int actCardId, int channel, int index, int sts) { return -1; }
+        public virtual int GetDo(int actCardId, int channel, int index, ref int sts) { return -1; }
+        public virtual int GetDi(int actCardId, int channel, int index, ref int sts) { return -1; }
+
+        public virtual int ReadChannel(int actCardId, int channel, out double value) { value = 0; return -1; }
+        public virtual int WriteChannel(int actCardId, int channel, double value) { return -1; }
+
+        public virtual int SetServo(int actCardId, int axisId, bool on) { return -1; }
+        public virtual int GoHome(int actCardId, int axisId) { return -1; }
+
+        public virtual int MoveAbs(int actCardId, int axisId, double position, double vel) { return -1; }
+        public virtual int MoveRel(int actCardId, int axisId, double distance, double vel) { return -1; }
+        public virtual int APS_SetJogParam(int actCardId, int axisId, int mode, int dir, double lead, double acc, double dec ,int vel) { return -1; }
+        public virtual int MoveJog(int actCardId, int axisId, int IsStart,double vel) { return -1; }
+        public virtual int Stop(int actCardId, int axisId) { return -1; }
+        public virtual int EStop(int actCardId, int axisId) { return -1; }
+
+        public virtual int GetMotionIo(int actCardId, int axisId, ref int sts) { return -1; }
+        public virtual int GetMotionSts(int actCardId, int axisId, ref int sts) { return -1; }
+        public virtual int GetMotionPos(int actCardId, int axisId, ref double pos) { return -1; }
+        public virtual int GetCommandPos(int actCardId, int axisId, ref double pos) { return -1; }
+
+        public virtual int GoHome_All(int actCardId, int value) { return -1; }
+        public virtual int RunBuffer(int actCardId, int buffer, string label) { return -1; }
+
+        public virtual int StopBuffer(int actCardId, int buffer) { return -1; }  // @sjx add 
+
+        public virtual object ReadVarToVar(string var) { return -1; }
+
+        public virtual int ReadVarToInt(string var) { return -1; }
+
+        public virtual double ReadVarToDouble(string var) { return -1; }
+
+        public virtual string ReadVarToString(string var){ return null; }
+
+        public virtual void WriteVarToString(string variableName, string value) { return; }
+
+        public virtual int SetAxisBand(int actCardId, int axisId, int band, int sattleTime) { return -1; }
+
+        public virtual int ReadDoneInt_HomeAll(int actCardId) { return -1; }
+
+        public virtual int SetAxisAccAndDec(int actCardId, int axisId, double acc, double dec) { return -1;}
+        public virtual int SetAxisJerkAndKDec(int actCardId, int axisId, double jerk, double kdec) { return -1; }
+        public virtual int SetStopDec(int actCardId, int axisId, double lead, double dec) { return -1; }
+
+        public virtual int APS_SetAxisParam(int actCardId, int axisId, double lead, APS_Define PRA, double value) { return -1; }
+        public virtual int APS_DIO_SetCOSInterrupt32(int actCardId, byte Port, uint ctl, out uint hEvent, bool ManualReset) { hEvent = 0; return -1; } 
+        public virtual int APS_DIO_INT1_EventMessage(int actCardId, int index, uint windowHandle, uint message, MulticastDelegate callbackAddr) { return -1; }
+        public virtual int APS_SetBacklashEnable(int actCardId, int axisId, int on) { return -1; }
+
+        public virtual int MoveLineAbs(int[] axisId, double[] pos, double vel) { return -1; }
+        public virtual int MoveLineRel(int[] axisId, double[] pos, double vel) { return -1; }
+        public virtual int MoveArcAbs(int[] axisId, double[] center, double angle, double vel) { return -1; }
+        public virtual int MoveArcAbs(int[] axisId, double[] center, double[] end, short dir, double vel) { return -1; }
+        public virtual int MoveArcRel(int[] axisId, double[] center, double angle, double vel) { return -1; }
+        public virtual int MoveArcRel(int[] axisId, double[] center, double[] end, short dir, double vel) { return -1; }
+
+        public virtual int APS_pt_start(int actCardId, int ptbId) { return -1; }
+        public virtual int APS_get_pt_status(int actCardId, int ptbId, ref PTSTS Status) { return -1; }
+
+        public virtual bool WaitMotionEnd(int actCardId,int axis, int timeOutMilliseconds = -1)  //@sjx add
+        {
+            return false;
+        }
+
+        public virtual bool WaitLogicalMotionEnd(int actCardId,int axis, int timeOutMilliseconds = -1)
+        {
+            return false;
+        }
+
+        public virtual double GetAinValue(int portId) { return 0.0; }
+
+        public virtual bool IsBufferRunning(int bufId) { return false; }
+
+        public virtual int CheckError() { return 0; }
+
+        // 清除错误
+        public virtual void ClearError(int actCardId) { return; }
+
+        // 获取日志
+        public virtual string GetLogString(int logType = 0) { return ""; }
+
+
+    }
+}

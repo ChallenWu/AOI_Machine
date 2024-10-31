@@ -1,0 +1,537 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Reflection;
+using System.ComponentModel;
+using System.Resources;
+using System.IO;
+using NPOI.SS.UserModel;
+using NPOI.HSSF.UserModel;
+using NPOI.XSSF.UserModel;
+using XCore.Framework.MultiLang;
+
+namespace XCore
+{
+    public enum LanguageType
+    {
+        Chinese = 0,
+        English,
+        Vietnamese
+    }
+
+    public delegate void CustomizeUpdateFormCtrlFunc();  // 定制化更新窗体的空间，例如 ListBox，GridViewCtrl等控件
+
+    public delegate void UpdateProjectSettingFunc(string langStr);  // 定制化更新窗体的空间，例如 ListBox，GridViewCtrl等控件
+
+    public class MultiLanguage
+    {
+        private static LanguageType m_CurLanguage = LanguageType.English;
+        public static SerializableDictionary<string, Language> settingDic = new SerializableDictionary<string, Language>();
+        public static SerializableDictionary<string, Language> categoryDic = new SerializableDictionary<string, Language>();
+        public static SerializableDictionary<string, Language> positionName = new SerializableDictionary<string, Language>();
+        public static LanguageType CurrentLanguage 
+        {
+            get
+            {
+                return m_CurLanguage;
+            }
+        }
+
+        public static string GetPositonName(string key)
+        {
+            if (!positionName.ContainsKey(key)) return key;
+            switch (CurrentLanguage)
+            {
+                case LanguageType.Chinese:
+                    return positionName[key].Chinese;
+                case LanguageType.English:
+                    return positionName[key].English;
+                case LanguageType.Vietnamese:
+                    return positionName[key].Vietnamese;
+                default:
+                    return positionName[key].Chinese;
+            }
+        }
+        private static Dictionary<Form, CustomizeUpdateFormCtrlFunc> m_RegisterForms = new Dictionary<Form, CustomizeUpdateFormCtrlFunc>();
+
+
+        private static UpdateProjectSettingFunc m_UpdateProjectSettingFunc; 
+        private static Dictionary<string, List<string>> m_MultiLangDict = new Dictionary<string,List<string>>();
+
+        public static void RegisterForms(Form from, CustomizeUpdateFormCtrlFunc updateFormContainerCtrl = null)
+        {
+            if (!m_RegisterForms.Keys.Contains(from))
+            {
+                m_RegisterForms.Add(from, updateFormContainerCtrl);
+            }
+
+        }
+
+        /// <summary>  
+        /// 修改默认语言  
+        /// </summary>  
+        /// <param name="lang">待设置默认语言</param>  
+        private static void SetCurLanguage(LanguageType langType)
+        {
+            string lang = GetLanguageString(langType);
+            
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
+            m_CurLanguage = langType;
+
+            if (null != m_UpdateProjectSettingFunc)
+                m_UpdateProjectSettingFunc(lang);
+        }
+
+        /// <summary>
+        /// 注册设置语言的方法
+        /// </summary>
+        /// <param name="langType"></param>
+        /// <returns></returns>
+        public static void RegisterSettingLanguageFunc(UpdateProjectSettingFunc updateProjectSettingFunc)
+        {
+            m_UpdateProjectSettingFunc = updateProjectSettingFunc;
+        }
+
+        /// <summary>
+        /// 获取语言类别的字符串
+        /// </summary>
+        /// <param name="langType"></param>
+        /// <returns></returns>
+        private static string GetLanguageString(LanguageType langType)
+        {
+            string langRes = "zh-CN";
+            switch (langType)
+            {
+                case LanguageType.English:
+                    langRes = "en-US";
+                    break;
+                case LanguageType.Vietnamese:
+                    langRes = "vi";
+                    break;
+                default:
+                    break;
+            }
+            return langRes;
+        }
+
+        public delegate void FuncLoadLanguage(Form form, Type formType);
+        /// <summary>  
+        /// 加载语言  
+        /// </summary>  
+        /// <param name="form">加载语言的窗口</param>  
+        /// <param name="formType">窗口的类型</param>  
+        public static void LoadLanguage(Form form, Type formType)
+        //public static void LoadLanguage(Control ctrl, Type formType)
+        {
+            if (form != null)
+            {
+                //if (form.InvokeRequired)
+                //{
+                //    form.Invoke(new FuncLoadLanguage(LoadLanguage), new object[] { form, formType});
+                //    return;
+                //}
+                System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(formType);
+                resources.ApplyResources(form, "$this");
+                Loading(form, resources);
+                if (m_RegisterForms[form] != null)
+                {
+                    m_RegisterForms[form]();
+                }
+            }
+        }
+
+        /// <summary>  
+        /// 加载语言  
+        /// </summary>  
+        /// <param name="control">控件</param>  
+        /// <param name="resources">语言资源</param>  
+        private static void Loading(Control control, System.ComponentModel.ComponentResourceManager resources)
+        {
+            if (control is MenuStrip)
+            {
+                //将资源与控件对应  
+                resources.ApplyResources(control, control.Name);
+                MenuStrip ms = (MenuStrip)control;
+                if (ms.Items.Count > 0)
+                {
+                    foreach (ToolStripMenuItem c in ms.Items)
+                    {
+                        //遍历菜单  
+                        Loading(c, resources);
+                    }
+                }
+            }
+
+            foreach (Control c in control.Controls)
+            {
+                if (c is UserControl)  // 如果是自定义控件，找自定义控件对应的资源文件
+                {                   
+                    System.ComponentModel.ComponentResourceManager rsc = new System.ComponentModel.ComponentResourceManager(c.GetType());
+                    //rsc.ApplyResources(c, "$this");
+                    foreach (Control ctrl in c.Controls)
+                    {
+                        if (ctrl.Controls.Count > 0)
+                            Loading(ctrl, rsc);
+                        else
+                        {
+                            rsc.ApplyResources(ctrl, ctrl.Name);
+                        }
+                    }
+                }
+                else
+                {
+                    if(c.Controls.Count > 0)
+                        Loading(c, resources);
+                    else
+                        resources.ApplyResources(c, c.Name);
+                }
+            }
+
+        }
+
+
+        /// <summary>  
+        /// 遍历菜单  
+        /// </summary>  
+        /// <param name="item">菜单项</param>  
+        /// <param name="resources">语言资源</param>  
+        private static void Loading(ToolStripMenuItem item, System.ComponentModel.ComponentResourceManager resources)
+        {
+            if (item is ToolStripMenuItem)
+            {
+                resources.ApplyResources(item, item.Name);
+                ToolStripMenuItem tsmi = (ToolStripMenuItem)item;
+                if (tsmi.DropDownItems.Count > 0)
+                {
+                    foreach (ToolStripMenuItem c in tsmi.DropDownItems)
+                    {
+                        Loading(c, resources);
+                    }
+                }
+            }
+        }
+
+        // 修改当前语言
+        public static void ChangeLanguage(LanguageType type, bool forceToChange = false)
+        {
+            if (m_CurLanguage == type && !forceToChange)
+                return;
+            m_CurLanguage = type;
+
+            MultiLanguage.SetCurLanguage(m_CurLanguage);
+
+            foreach (var item in m_RegisterForms)
+            {
+                //if (item.Key.InvokeRequired)
+                //    continue;
+                if (item.Key.IsHandleCreated)
+                    MultiLanguage.LoadLanguage(item.Key, item.Key.GetType());
+            }
+        }
+
+        // 对于跨线程的窗体,可以调用此函数更新窗体控件语言
+        public static void LoadFormLangResource(Form form)
+        {
+            string lang = GetLanguageString(m_CurLanguage);
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(lang);
+            MultiLanguage.LoadLanguage(form, form.GetType());
+        }
+
+        /// <summary> 
+        /// 获取枚举值的描述文本 
+        /// </summary> 
+        /// <param name="value"></param> 
+        /// <returns></returns> 
+        //public static string GetMessage(MsgDef value)
+        //{
+        //    FieldInfo fi = value.GetType().GetField(value.ToString());
+        //    DescriptionAttribute[] attributes =
+        //        (DescriptionAttribute[])fi.GetCustomAttributes(
+        //        typeof(DescriptionAttribute), false);
+        //    if (m_CurLanguage == LanguageType.Chinese || attributes.Length <= 0)
+        //        return value.ToString();
+        //    else
+        //        return attributes[0].Description;
+        //    //return (attributes.Length > 0) ? attributes[0].Description : value.ToString();
+        //}
+        //private static string GetMessage(object value)
+        //{
+        //    if (value == null)
+        //        return string.Empty;
+        //    FieldInfo fi = value.GetType().GetField(value.ToString());
+        //    if(fi == null)
+        //        return string.Empty; 
+        //    OtherLangAttribute[] attributes =
+        //        (OtherLangAttribute[])fi.GetCustomAttributes(
+        //        typeof(OtherLangAttribute), false);
+        //    if (m_CurLanguage == LanguageType.Chinese || attributes.Length <= 0)
+        //        return value.ToString();
+        //    else if (m_CurLanguage == LanguageType.English)
+        //        return attributes[0].DescriptionArr[0];
+        //    else
+        //        return attributes[0].DescriptionArr[1];
+        //    //return (attributes.Length > 0) ? attributes[0].Description : value.ToString();
+        //}
+
+        /// <summary> 
+        /// 获取枚举值的描述文本 
+        /// </summary> 
+        /// <param name="value"></param> 
+        /// <returns></returns> 
+        //public static string GetMessage(string str, Type type)
+        //{
+        //    if (m_CurLanguage == LanguageType.Chinese)
+        //        return str;
+        //    else
+        //        return GetMessage(ConvertToEnum(str, type));
+        //}
+
+        //public static string GetDefMsg(MsgDef msgDef)
+        //{
+        //    return GetMessage(msgDef);
+        //}
+
+        private static string GetMessageFrDict(string msgDef)
+        {
+            //return GetMessage(ConvertToMsgDef(msgDef));            
+            if (m_MultiLangDict.Keys.Contains(msgDef))
+            {
+                if (m_CurLanguage == LanguageType.English)
+                    return m_MultiLangDict[msgDef][0];
+                else if(m_CurLanguage == LanguageType.Vietnamese)
+                    return m_MultiLangDict[msgDef][1];
+            }
+            return msgDef;            
+        }
+
+        public static string GetMessage(params string[] msgDef)
+        {
+            //return GetMessage(ConvertToMsgDef(msgDef));    
+            string msg = string.Empty;
+            for (int i = 0; i < msgDef.Length; i++)
+            {
+                if (i != 0 && m_CurLanguage == LanguageType.English)
+                    msg += " ";
+                msg += GetMessageFrDict(msgDef[i]);
+            }
+            return msg;
+        }
+
+
+        /// <summary> 
+        /// 获取枚举值的描述文本 
+        /// </summary> 
+        /// <param name="value"></param> 
+        /// <returns></returns> 
+        private static MsgDef ConvertToMsgDef(string str)
+        {
+            MsgDef msg = MsgDef.None;
+            try
+            {
+                msg = (MsgDef)Enum.Parse(typeof(MsgDef), str);
+            }
+            catch (Exception ex)
+            {
+                //BzMessageBox.Show(ex.Message);
+                return msg;
+            }
+            return msg;
+        }
+        private static object ConvertToEnum(string str, Type type)
+        {
+            object msg = null;
+            try
+            {
+                msg = Enum.Parse(type, str);
+            }
+            catch (Exception ex)
+            {
+                //BzMessageBox.Show(ex.Message);
+                return msg;
+            }
+            return msg;
+        }
+
+        #region load File
+        /// <summary>
+        /// 读取多语言的文件
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <param name="text"></param>     
+        public static bool ReadMultiLangFile(string filePath)
+        {
+            m_MultiLangDict.Clear();
+            if (!File.Exists(filePath))
+                return false;
+            int version = 0;
+            if (filePath.Contains(".xlsx"))
+                version = 1;
+
+            IWorkbook workBook;
+            ISheet sheet;
+            FileStream fs;
+            try
+            {
+                fs = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+            }
+            catch
+            {
+                return false;
+            }
+
+            if (version == 0)
+                workBook = new HSSFWorkbook(fs);
+            else
+                workBook = new XSSFWorkbook(fs);
+
+
+            sheet = workBook.GetSheetAt(0);
+
+            // 从第一行开始读取
+            for (int i = 1; i <= sheet.LastRowNum; i++)
+            {
+                IRow rw = sheet.GetRow(i);
+                if (rw == null)
+                    continue;
+                if (rw.Cells.Count > 0 && rw.Cells[0].ToString() != string.Empty)
+                {
+                    string keyStr = rw.Cells[0].ToString();
+                    string valueStr = string.Empty;
+                    UnifyFormat(ref keyStr);  
+                    List<string> otherLangList = new List<string>();
+                    // 英语
+                    if (rw.Cells.Count > 1 && rw.Cells[1].ToString() != string.Empty)
+                    {
+                        valueStr = rw.Cells[1].ToString();
+                        UnifyFormat(ref valueStr);
+                        otherLangList.Add(valueStr);
+                    }
+                    else
+                    {
+                        otherLangList.Add(keyStr.ToString());
+                    }
+                    // 越南语
+                    if (rw.Cells.Count > 2 && rw.Cells[2].ToString() != string.Empty)
+                    {
+                        valueStr = rw.Cells[2].ToString();
+                        UnifyFormat(ref valueStr);
+                        otherLangList.Add(valueStr);
+                    }
+                    else
+                    {
+                        otherLangList.Add(keyStr.ToString());
+                    }
+  
+                    if (!m_MultiLangDict.Keys.Contains(keyStr))
+                        m_MultiLangDict.Add(keyStr, otherLangList);
+                }
+
+            }
+            fs.Close();
+            return true;
+        }
+
+        private static void UnifyFormat(ref string input)
+        {
+            if (input.Contains("\\\\"))
+                input = input.Replace("\\\\", "\\");
+        }
+
+        public static void LoadFile(String filePath)
+        {
+            IWorkbook workbook = null;
+            FileStream fs = null;
+            try
+            {
+                using (fs = File.OpenRead(filePath))
+                {
+                    // 2007版本  
+                    if (filePath.IndexOf(".xlsx") > 0)
+                        workbook = new XSSFWorkbook(fs);
+                    // 2003版本  
+                    else if (filePath.IndexOf(".xls") > 0)
+                        workbook = new HSSFWorkbook(fs);
+
+                    LoadSetting(workbook);
+                    LoadCagetory(workbook);
+                    LoadPositionName(workbook);
+                    workbook.Close();
+                }
+            }
+            catch
+            {
+            }
+        }
+
+        private static void LoadSetting(IWorkbook wb)
+        {
+            ISheet sheet = null;
+            if (wb != null)
+            {
+                sheet = wb.GetSheet("setting");
+                if (sheet == null) return;
+                for (int i = 1; i <= sheet.LastRowNum; i++)
+                {
+                    string key = sheet.GetRow(i).Cells[0].ToString();
+                    IRow row = sheet.GetRow(i);
+                    if (string.IsNullOrEmpty(key) || row.Cells.Count != 3) continue;
+                    if (settingDic.ContainsKey(key)) continue;
+                    MultiLanguage.settingDic.Add(key, new Language() { Chinese = key, English = sheet.GetRow(i).Cells[1].ToString(), Vietnamese = sheet.GetRow(i).Cells[2].ToString() });
+                }
+            }
+        }
+
+        private static void LoadCagetory(IWorkbook wb)
+        {
+            ISheet sheet = null;
+            if (wb != null)
+            {
+                sheet = wb.GetSheet("category");
+                if (sheet == null) return;
+                for (int i = 1; i <= sheet.LastRowNum; i++)
+                {
+                    string key = sheet.GetRow(i).Cells[0].ToString();
+                    if (string.IsNullOrEmpty(key)) continue;
+                    MultiLanguage.categoryDic.Add(key, new Language() { Chinese = key, English = sheet.GetRow(i).Cells[1].ToString(), Vietnamese = sheet.GetRow(i).Cells[2].ToString() });
+                }
+            }
+        }
+
+        private static void LoadPositionName(IWorkbook wb)
+        {
+            ISheet sheet = null;
+            if (wb != null)
+            {
+                sheet = wb.GetSheet("positionName");
+                if (sheet == null) return;
+                for (int i = 1; i <= sheet.LastRowNum; i++)
+                {
+                    string key = sheet.GetRow(i).Cells[0].ToString();
+                    if (string.IsNullOrEmpty(key)) continue;
+                    MultiLanguage.positionName.Add(key, new Language() { Chinese = key, English = sheet.GetRow(i).Cells[1].ToString(), Vietnamese = sheet.GetRow(i).Cells[0].ToString() });
+                }
+            }
+        }
+
+        public static string GetSettingName(string name)
+        {
+            if (!MultiLanguage.settingDic.ContainsKey(name)) return name;
+            switch (MultiLanguage.CurrentLanguage)
+            {
+                case LanguageType.Chinese:
+                    return MultiLanguage.settingDic[name].Chinese;
+                case LanguageType.English:
+                    return MultiLanguage.settingDic[name].English;
+                case LanguageType.Vietnamese:
+                    return MultiLanguage.settingDic[name].Vietnamese;
+                default:
+                    return MultiLanguage.settingDic[name].Chinese;
+            }
+        }
+
+        #endregion
+    }
+}

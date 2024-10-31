@@ -1,0 +1,157 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using ACS.SPiiPlusNET;
+
+namespace XCore
+{
+    public class XDo : XObject
+    {
+        public ACS.SPiiPlusNET.Api Acs2;
+
+        private XCard card;
+        private int channel;
+        private int actDoId;
+        private string name;
+        private DOSTSTYPE m_STS;
+        private string cardname;
+
+        public XDo(XCard card, int channel, int actDoId, string name,string cardname)
+        {
+            this.card = card;
+            this.channel = channel;
+            this.actDoId = actDoId;
+            this.name = name;
+            this.cardname = cardname;
+            
+        }
+
+        public int CardId { get; set; }
+
+        public int TaskId { get; set; }
+
+        private string m_DoVarName;
+
+        public string DoVarInAcs 
+        {
+            set
+            {
+                m_DoVarName = value;
+            }
+            get
+            {
+                return m_DoVarName;
+            }
+        }
+
+        public long Update()
+        {
+
+            int sts = 0;
+
+            int value;
+
+            value = XDevice.Instance.FindCardById(CardId).GetDo(channel, actDoId, ref sts);
+            m_STS = (DOSTSTYPE)sts;
+            return 1;
+        }
+
+        public int[] D0_Data = new int[200];
+        public int SetDo(DOSTSTYPE sts)
+        {
+            XDevice.Instance.FindCardById(CardId).SetDo(channel, actDoId, (int)sts);
+            //if (actDoId <= 16)
+            //{
+            //    string abc=null ;
+            //    int value = Convert.ToInt32(XDevice.Instance.FindCardById(0).ReadStringScalar(abc));
+            //    value = value ^ (1 << actDoId);    //Index 这一位异或1，  也就是取反
+            //    XDevice.Instance.FindCardById(0).WriteGlobalVariable("dout0", Convert.ToString(value));
+            //}
+            //else if (actDoId <= 32)
+            //{
+            //    int value = Convert.ToInt32(XDevice.Instance.FindCardById(0).ReadStringScalar("dout1"));
+            //    value = value ^ (1 << (actDoId - 16));    //Index 这一位异或1，  也就是取反
+            //    XDevice.Instance.FindCardById(0).WriteGlobalVariable("dout1", Convert.ToString(value));
+            //}
+            //else if (actDoId <= 48)
+            //{
+            //    int value = Convert.ToInt32(XDevice.Instance.FindCardById(0).ReadStringScalar("dout2"));
+            //    value = value ^ (1 << (actDoId - 32));    //Index 这一位异或1，  也就是取反
+            //    XDevice.Instance.FindCardById(0).WriteGlobalVariable("dout2", Convert.ToString(value));
+            //}
+            //else if (actDoId <= 64)
+            //{
+            //    int value = Convert.ToInt32(XDevice.Instance.FindCardById(0).ReadStringScalar("dout3"));
+            //    value = value ^ (1 << (actDoId - 48));    //Index 这一位异或1，  也就是取反
+            //    XDevice.Instance.FindCardById(0).WriteGlobalVariable("dout3", Convert.ToString(value));
+            //}
+
+            return 0;
+        }
+
+
+        //private int GetDo(ref int sts)
+        //{
+        //    return card.GetDo(channel, actDoId, ref sts);
+
+        //    for (int a = 0; a <= 4; a++)
+        //    {
+        //        int value = 0;
+        //        value = Convert.ToInt32(XDevice.Instance.FindCardById(0).ReadStringScalar("dout"));
+
+        //        for (int i = 0; i <= 7; i++)
+        //        {
+        //            bool status = (value & (1 << i)) != 0;
+        //            sts = status ? 1 : 0;
+        //            D0_Data[i] = sts;
+        //        }
+        //    }
+
+        //    sts = D0_Data[actDoId];
+        //    return 0;
+        //}
+
+        public DOSTSTYPE STS
+        {
+            get
+            {
+                lock (this)
+                {
+                    return m_STS;
+                }
+            }
+        }
+
+        public int ActId
+        {
+            get
+            {
+                return actDoId;
+            }
+        }
+
+        public int Channel
+        {
+            get { return channel; }
+            set { channel = value; }
+        }
+
+        public int SetId { get; set; }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+        }
+        public string CardName
+        {
+            get
+            {
+                return cardname;
+            }
+        }
+    }
+}

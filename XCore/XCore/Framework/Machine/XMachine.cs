@@ -1,0 +1,356 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Windows.Forms;
+
+namespace XCore
+{
+    public enum MachineModeType
+    {
+        Production,
+        Engineering,
+        CPK,
+        GRR,
+        None
+    }
+    public sealed class XMachine : XMachineEventHandler
+    {
+        public Dictionary<XDi, bool> signalDoor = new Dictionary<XDi, bool>();
+        public List<XDi> signalEStop = new List<XDi>();
+        public List<XDi> signalTempCtrl = new List<XDi>();
+        private bool m_DoorEnabled;
+        private bool m_SafeDoorEStop;
+        private bool m_TempCtrlEnabled;
+        private XDi signalReset = null;
+        private XDi signalStart = null;
+        private XDi signalStop = null;
+        private XDi signalAir = null;
+
+        private bool eStop
+        {
+            get { return GetEStopState(); }
+        }
+
+        private bool lastEStop;
+        private MachineModeType machinemode = MachineModeType.Production;
+        private Thread _thread;
+        private static readonly XMachine instance = new XMachine();
+
+        XMachine()
+        {
+
+        }
+        public static XMachine Instance
+        {
+            get { return instance; }
+        }
+        public MachineModeType MachineMode
+        {
+            get { return machinemode; }
+            set { machinemode = value; }
+        }
+        public override int HandleEvent(XEvent xEvent)
+        {
+            switch (xEvent.EventID)
+            {
+                case XEventID.SIGNAL:
+                    PrimOnSignal();
+                    break;
+            }
+            return 0;
+        }
+        public void Start()
+        {
+            Stop();
+            if (signalEStop != null)
+            {
+                foreach (XDi estop in signalEStop)
+                {
+                    XDevice.Instance.CardMap[estop.CardId].Update();
+                    estop.Update();
+                }
+            }
+            _thread = new Thread(new ThreadStart(T_PrimOnSignal));
+            _thread.IsBackground = true;
+            _thread.Start();
+        }
+
+        public void Stop()
+        {
+            if (this._thread != null)
+            {
+                this._thread.Abort();
+            }
+        }
+        private void T_PrimOnSignal()
+        {
+            while (true)
+            {
+                #region
+                if (signalEStop != null)
+                {
+                    if (eStop == true && lastEStop == false)
+                    {
+                        foreach (XStation station in XStationManager.Instance.Stations.Values)
+                        {
+                            PostEventEStop(station);
+                        }
+                        XEventArgs e = new XEventArgs();
+                        e.StationId = 0;
+                        e.AlarmLevel = (int)XAlarmLevel.STOP;
+                        XController.Instance.AlarmEventServer.PostEvent(XAlarmReporter.Instance, XEventID.ESTOP, e, null, true);
+                    }
+                    else if (eStop == false && lastEStop == true)
+                    {
+                        foreach (XStation station in XStationManager.Instance.Stations.Values)
+                        {
+                            PostEvent(station, XEventID.WAITRESET);
+                        }
+                    }
+                    lastEStop = eStop;
+                }
+
+                if (eStop == false)
+                {
+                    if (signalReset != null)
+                    {
+                        if (signalReset.STS == DISTSTYPE.HIGH)
+                        {
+                            System.Threading.Thread.Sleep(3000);
+                            if (signalReset.STS == DISTSTYPE.HIGH)
+                            {
+
+                                foreach (XStation station in XStationManager.Instance.Stations.Values)
+                                {
+                                    PostEvent(station, XEventID.RST);
+                                    PostEvent(station, XEventID.RESET);
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+                #endregion
+                if (signalStart != null)
+                {
+                    if (signalStart.STS == DISTSTYPE.HIGH)
+                    {
+                        foreach (XStation station in XStationManager.Instance.Stations.Values)
+                        {
+                            PostEvent(station, XEventID.START);
+                        }
+                    }
+                }
+
+                // 安全门检查
+                #region 安全门
+                int count = 0;
+                foreach (KeyValuePair<XDi,bool> di in signalDoor)
+                {
+                    ++count;
+                    if (m_DictDoorDiCheck.Keys.Contains(di.Key) && !m_DictDoorDiCheck[di.Key])
+                    {
+                        continue;
+                    }
+                    DISTSTYPE diKeySts = DISTSTYPE.LOW;
+                    di.Key.GetDi(ref diKeySts);
+                    if (diKeySts == DISTSTYPE.LOW)
+                    {
+                        //如果未开启安全门并且不是料仓门，不用处理
+                        if ((!this.m_DoorEnabled)&&(!di.Value))
+                        {
+                            continue;
+                        }
+                        if (this.m_SafeDoorEStop)
+                        {
+                            foreach (XStation station in XStationManager.Instance.Stations.Values)
+                            {
+                                //安全门急停ByICT
+                                List<XCard> cardList = XDevice.Instance.FindCardByCardType(CardType.ACS);
+                                if (cardList.Count > 0)
+                                {
+                                    for (int i = 0; i < cardList.Count; i++)
+                                    {
+                                        cardList[i].StopBufferAll();
+                                        cardList[i].EStopAll();
+                                    }
+                                }
+
+                                station.Stop();
+                                station.SetState(XStationState.STOP);
+                                PostEvent(station, XAlarmLevel.STOP, XAlarmId.DOOR_OPEN, count, true, di.Key.Name);
+                                //}
+                            }
+                        }
+                        else
+                        {
+                            foreach (XStation station in XStationManager.Instance.Stations.Values)
+                            {
+                                if (station.State == XStationState.RUNNING)
+                                {
+                                    station.Pause();
+                                    station.SetState(XStationState.PAUSE);
+                                    PostEvent(station, XAlarmLevel.PAUSE, XAlarmId.DOOR_OPEN, count, true,di.Key.Name);
+                                }
+                                else if (station.State == XStationState.RESETING)
+                                {
+                                    station.Stop();
+                                    station.SetState(XStationState.STOP);
+                                    PostEvent(station, XAlarmLevel.STOP, XAlarmId.DOOR_OPEN, count, true, di.Key.Name);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #endregion
+
+                #region Air
+                if (signalAir != null)
+                {
+                    if (signalAir.STS == DISTSTYPE.LOW)
+                    {
+                        foreach (XStation station in XStationManager.Instance.Stations.Values)
+                        {
+                            if (station.State == XStationState.RUNNING)
+                            {
+                                //station.Pause();
+                                station.SetState(XStationState.PAUSE);
+                                PostEvent(station, XAlarmLevel.PAUSE, XAlarmId.AIR_LOW);
+                            }
+                            else if (station.State == XStationState.RESETING)
+                            {
+                                station.Stop();
+                                station.SetState(XStationState.STOP);
+
+                                PostEvent(station, XAlarmLevel.STOP, XAlarmId.AIR_LOW);
+                            }
+                        }
+                    }
+                }
+                #endregion
+
+                //// 温控IO检查@ljz 20190730 
+                //if (this.m_TempCtrlEnabled)
+                //{
+                //    TempCtrlReportAlarm();
+                //}
+
+                if (signalStop != null)
+                {
+                    if (signalStop.PLS == true)
+                    {
+                        foreach (XStation station in XStationManager.Instance.Stations.Values)
+                        {
+                            PostEvent(station, XEventID.STOPMUSTRESET, true);
+                        }
+                    }
+                }
+
+                Thread.Sleep(10);
+            }
+
+        }
+        
+        private int PrimOnSignal()
+        {
+            return 0;
+        }
+
+        public void AddEStopDi(int setDiId)
+        {
+            if (signalEStop.Contains(XDevice.Instance.FindDiById(setDiId)))
+                return;
+            signalEStop.Add(XDevice.Instance.FindDiById(setDiId));
+        }
+
+        public void AddDoorDi(int setDiId,bool IsEleDoor)
+        {
+            if (!signalDoor.Keys.Contains(XDevice.Instance.FindDiById(setDiId)))
+                signalDoor.Add(XDevice.Instance.FindDiById(setDiId), IsEleDoor);
+        }
+
+
+        public void RemoveDoorDi(int setDiId)
+        {
+            if (signalDoor.Keys.Contains(XDevice.Instance.FindDiById(setDiId)))
+                signalDoor.Remove(XDevice.Instance.FindDiById(setDiId));
+        }
+
+        public void AddTempCtrlDi(int setDiId)
+        {
+            if (!signalTempCtrl.Contains(XDevice.Instance.FindDiById(setDiId)))
+                signalTempCtrl.Add(XDevice.Instance.FindDiById(setDiId));
+        }
+
+        public void SetResetDi(int setDiId)
+        {
+            signalReset = XDevice.Instance.FindDiById(setDiId);
+        }
+
+        public void SetStartDi(int setDiId)
+        {
+            signalStart = XDevice.Instance.FindDiById(setDiId);
+        }
+
+        public void SetStopDi(int setDiId)
+        {
+            signalStop = XDevice.Instance.FindDiById(setDiId);
+        }
+
+        public void SetAirDi(int setDiId)
+        {
+            signalAir = XDevice.Instance.FindDiById(setDiId);
+        }
+
+        public bool DoorEnabled
+        {
+            get { return this.m_DoorEnabled; }
+            set { this.m_DoorEnabled = value; }
+        }
+
+        public bool SafeDoorEStop
+        {
+            get { return this.m_SafeDoorEStop; }
+            set { this.m_SafeDoorEStop = value; }
+        }
+
+        private bool GetEStopState()
+        {
+            foreach (XDi eStop in signalEStop)
+            {
+                if (eStop.STS == DISTSTYPE.LOW)
+                {
+                    return true;
+                }
+                else
+                    continue;
+
+            }
+            return false;
+            
+        }
+        public object m_lock = new object();
+        private Dictionary<XDi,bool> m_DictDoorDiCheck=new Dictionary<XDi,bool>();
+        public Dictionary<XDi, bool> DictDoorDiCheck
+        {
+            get { return m_DictDoorDiCheck; }
+        }
+
+        public void EnableDoorDiCheck(int diId,bool enable)
+        {
+            XDi di = XDevice.Instance.FindDiById(diId);
+            lock (m_lock)
+              {
+                 if (!m_DictDoorDiCheck.Keys.Contains(di))
+                       m_DictDoorDiCheck.Add(di,true);
+                 m_DictDoorDiCheck[di] = enable;
+              }
+        }
+
+
+    }
+}
