@@ -2299,3 +2299,20 @@ E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\TCPLib\obj\Debug\TCPLib.csproj.CoreCo
 E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\TCPLib\obj\Debug\TCPLib.csproj.Up2Date
 E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\TCPLib\obj\Debug\TCPLib.dll
 E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\TCPLib\obj\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\NPOI.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\MiniExcel.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\NPOI.OOXML.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\obj\Debug\TCPLib.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\obj\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\TCPLib\obj\Debug\TCPLib.pdb

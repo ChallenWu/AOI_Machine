@@ -81,6 +81,7 @@
     <Compile Include="Data\DataBaseManager.cs" />
     <Compile Include="Data\DataFormatClass.cs" />
     <Compile Include="Data\DataServerManager.cs" />
+    <Compile Include="Data\Model\ModelSettings.cs" />
     <Compile Include="Data\SQLiteHelper.cs" />
     <Compile Include="Device\CCD_Inspection.cs" />
     <Compile Include="Device\ICW_Scanner.cs" />

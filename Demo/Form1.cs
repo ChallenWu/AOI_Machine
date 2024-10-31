@@ -49,7 +49,7 @@ namespace Demo
             //menuButton_Login11.TextButtton = "User1";
 
             //Đặt window thành maximized
-            this.WindowState = FormWindowState.Maximized;
+            //this.WindowState = FormWindowState.Maximized;
             OriginFormSize = new Rectangle(this.Location.X, this.Location.Y, this.Width, this.Height);
             this.MinimumSize = this.Size;
 

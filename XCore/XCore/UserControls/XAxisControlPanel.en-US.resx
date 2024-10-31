@@ -189,10 +189,10 @@
     <value>34, 17</value>
   </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 203</value>
+    <value>0, 201</value>
   </data>
   <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 22</value>
+    <value>365, 22</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 16</value>
@@ -215,38 +215,20 @@
   <data name="Comb_AxisNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 24</value>
   </data>
-  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 9pt</value>
-  </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
-  </data>
-  <data name="label15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 9pt</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 12</value>
   </data>
-  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 9pt</value>
-  </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 12</value>
-  </data>
-  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 9pt</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 12</value>
   </data>
-  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 9pt</value>
-  </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
-  </data>
-  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 9pt</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 12</value>
@@ -258,12 +240,9 @@
     <value>53, 26</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>367, 203</value>
+    <value>365, 201</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>SimSun, 12pt</value>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>365, 223</value>
   </data>
 </root>

@@ -121,27 +121,28 @@
   <data name="textBox_Acc.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PB_MEL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
+  <data name="label8.Text" xml:space="preserve">
+    <value>ASTP</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 155</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
   </data>
-  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="bt_JOG_N.Text" xml:space="preserve">
+    <value>JOG</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Btn_Back.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>ASTP</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 155</value>
@@ -160,6 +161,9 @@
   </data>
   <data name="&gt;&gt;Bar_Vel.ZOrder" xml:space="preserve">
     <value>32</value>
+  </data>
+  <data name="&gt;&gt;PB_PEL.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 225</value>
@@ -194,11 +198,11 @@
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 171</value>
   </data>
-  <data name="&gt;&gt;Bar_Vel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;PB_MEL.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PB_MEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
   </data>
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -230,7 +234,6 @@
   <data name="&gt;&gt;Btn_Forward.Name" xml:space="preserve">
     <value>Btn_Forward</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bt_JOG_P.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
@@ -246,8 +249,8 @@
   <data name="Btn_Forward.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;Comb_AxisNo.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;Btn_Forward.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_ClearError.Name" xml:space="preserve">
     <value>btn_ClearError</value>
@@ -261,8 +264,8 @@
   <data name="&gt;&gt;LB_AxisNo.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Btn_Back.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="Btn_Back.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 46</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 20</value>
@@ -275,6 +278,9 @@
   </data>
   <data name="PB_SVON.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 122</value>
+  </data>
+  <data name="PB_ORG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 122</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>28</value>
@@ -294,8 +300,8 @@
   <data name="PB_PEL.Location" type="System.Drawing.Point, System.Drawing">
     <value>116, 122</value>
   </data>
-  <data name="&gt;&gt;Btn_Forward.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="Btn_Home.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 50</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -312,11 +318,11 @@
   <data name="&gt;&gt;PB_SVON.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PB_SVON.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="PB_PEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -324,8 +330,8 @@
   <data name="label14.Text" xml:space="preserve">
     <value>异常停止</value>
   </data>
-  <data name="LB_AxisNo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
   </data>
   <data name="&gt;&gt;label14.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -333,8 +339,8 @@
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 155</value>
   </data>
   <data name="&gt;&gt;PB_MEL.ZOrder" xml:space="preserve">
     <value>10</value>
@@ -345,51 +351,14 @@
   <data name="label1.Text" xml:space="preserve">
     <value>label1</value>
   </data>
+  <data name="PB_SVON.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
   <data name="Comb_AxisNo.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>70, 98</value>
-  </data>
-  <data name="Btn_Home.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
   </data>
   <data name="Comb_AxisNo.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 28</value>
@@ -399,6 +368,9 @@
   </data>
   <data name="label11.Text" xml:space="preserve">
     <value>使能</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;label16.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -415,14 +387,14 @@
   <data name="label15.Text" xml:space="preserve">
     <value>报警</value>
   </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+  <data name="Bar_Vel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 56</value>
   </data>
   <data name="&gt;&gt;label15.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PB_ASTP.Name" xml:space="preserve">
-    <value>PB_ASTP</value>
+  <data name="&gt;&gt;Btn_Back.ZOrder" xml:space="preserve">
+    <value>23</value>
   </data>
   <data name="&gt;&gt;bt_JOG_P.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -463,20 +435,14 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>29</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 155</value>
-  </data>
   <data name="Btn_Stop.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>SVON</value>
   </data>
-  <data name="&gt;&gt;Btn_Forward.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Btn_Back.ZOrder" xml:space="preserve">
-    <value>23</value>
+  <data name="&gt;&gt;Btn_Forward.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="statusStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -504,9 +470,6 @@
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -562,8 +525,8 @@
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -577,11 +540,11 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
+  <data name="&gt;&gt;Comb_AxisNo.Name" xml:space="preserve">
+    <value>Comb_AxisNo</value>
+  </data>
   <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
   </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
@@ -607,8 +570,8 @@
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 7</value>
   </data>
-  <data name="&gt;&gt;textBox_Acc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
   <data name="PB_PEL.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -643,11 +606,45 @@
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
   </data>
-  <data name="Btn_Back.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 46</value>
-  </data>
-  <data name="&gt;&gt;Comb_AxisNo.Name" xml:space="preserve">
-    <value>Comb_AxisNo</value>
+  <data name="Btn_Home.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
   <data name="&gt;&gt;label13.Parent" xml:space="preserve">
     <value>panel1</value>
@@ -657,6 +654,9 @@
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>22</value>
+  </data>
+  <data name="&gt;&gt;PB_ASTP.Name" xml:space="preserve">
+    <value>PB_ASTP</value>
   </data>
   <data name="Btn_Home.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -709,9 +709,6 @@
   <data name="Btn_Back.Text" xml:space="preserve">
     <value>-</value>
   </data>
-  <data name="Bar_Vel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 56</value>
-  </data>
   <data name="&gt;&gt;toolStripStatusLabel1.Name" xml:space="preserve">
     <value>toolStripStatusLabel1</value>
   </data>
@@ -739,11 +736,14 @@
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
+  <data name="Btn_Stop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="PB_MEL.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;Bar_Vel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Btn_Home.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -751,14 +751,17 @@
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="bt_JOG_P.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;bt_JOG_P.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_Acc.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 15</value>
@@ -775,8 +778,8 @@
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
   </data>
-  <data name="PB_ORG.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 122</value>
+  <data name="&gt;&gt;Btn_Home.Name" xml:space="preserve">
+    <value>Btn_Home</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>轴号</value>
@@ -784,11 +787,17 @@
   <data name="PB_ORG.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
+  <data name="&gt;&gt;textBox_Acc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="PB_SVON.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
   <data name="Bar_Vel.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>26</value>
@@ -805,14 +814,17 @@
   <data name="bt_JOG_P.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;PB_ASTP.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="LB_AxisNo.Text" xml:space="preserve">
-    <value>0：</value>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
   <data name="Btn_Forward.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
@@ -822,12 +834,6 @@
   </data>
   <data name="Btn_Home.Text" xml:space="preserve">
     <value>回零</value>
-  </data>
-  <data name="bt_JOG_N.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 46</value>
-  </data>
-  <data name="&gt;&gt;PB_ASTP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Btn_Stop.Location" type="System.Drawing.Point, System.Drawing">
     <value>307, 5</value>
@@ -853,8 +859,11 @@
   <data name="textBox_Acc.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 30</value>
   </data>
-  <data name="Btn_Home.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 50</value>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LB_Pos.Name" xml:space="preserve">
+    <value>LB_Pos</value>
   </data>
   <data name="LB_Home.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 20</value>
@@ -904,11 +913,8 @@
   <data name="label12.Text" xml:space="preserve">
     <value>负极限</value>
   </data>
-  <data name="PB_PEL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="&gt;&gt;PB_PEL.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="LB_AxisNo.Text" xml:space="preserve">
+    <value>0：</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>181, 155</value>
@@ -991,8 +997,8 @@
   <data name="&gt;&gt;label16.Name" xml:space="preserve">
     <value>label16</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="LB_AxisNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 20</value>
   </data>
   <data name="&gt;&gt;textBox_Acc.Name" xml:space="preserve">
     <value>textBox_Acc</value>
@@ -1003,8 +1009,8 @@
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;Btn_Home.Name" xml:space="preserve">
-    <value>Btn_Home</value>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>panel1</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1039,8 +1045,8 @@
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="&gt;&gt;bt_JOG_N.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="bt_JOG_P.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1087,11 +1093,11 @@
   <data name="&gt;&gt;PB_ASTP.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>panel1</value>
+  <data name="&gt;&gt;PB_ASTP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;bt_JOG_N.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;statusStrip1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1108,9 +1114,6 @@
   <data name="Btn_Forward.Location" type="System.Drawing.Point, System.Drawing">
     <value>245, 5</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>167, 20</value>
   </data>
@@ -1120,16 +1123,13 @@
   <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
     <value>SimSun, 9pt</value>
   </data>
-  <data name="Btn_Stop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="bt_JOG_N.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 46</value>
   </data>
   <data name="&gt;&gt;Btn_Back.Name" xml:space="preserve">
     <value>Btn_Back</value>
   </data>
-  <data name="&gt;&gt;LB_Pos.Name" xml:space="preserve">
-    <value>LB_Pos</value>
-  </data>
-  <data name="&gt;&gt;textBox_Acc.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Comb_AxisNo.Parent" xml:space="preserve">
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label8.Type" xml:space="preserve">
@@ -1138,8 +1138,8 @@
   <data name="&gt;&gt;label15.Name" xml:space="preserve">
     <value>label15</value>
   </data>
-  <data name="bt_JOG_N.Text" xml:space="preserve">
-    <value>JOG</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>panel1</value>

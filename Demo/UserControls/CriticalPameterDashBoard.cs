@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Demo.UserControls
 {
-    public partial class CriticalPameterDashBoard : UserControlBase
+    public partial class CriticalPameterDashBoard : UserControl
     {
         public CriticalPameterDashBoard()
         {
