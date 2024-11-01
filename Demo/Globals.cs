@@ -54,8 +54,6 @@ namespace Demo
         public static SettingICT SettingICT_PD = new SettingICT();  
         public static SettingICT SettingICT_DOE = new SettingICT();
 
-        public static DebugDlg DebugFrom;
-
         public static event EventHandler AutoRunChangeSettingHandle;
 
         public static event EventHandler SetStateTop;

@@ -184,3 +184,4 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\Demo\obj\Debug\Fukang_AOI_Ma
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\Demo\obj\Debug\Fukang_A.EC0D8BCF.Up2Date
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\Demo\obj\Debug\Demo.exe
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\Demo\obj\Debug\Demo.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\Demo\obj\Debug\Demo.UserControls.AxisControl.resources

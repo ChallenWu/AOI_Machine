@@ -51,7 +51,7 @@ namespace Demo
         }
         #endregion
         Thread thread;
-
+        private static readonly object obj = new object();
         #region Property
         private Socket sock;
 
@@ -122,10 +122,11 @@ namespace Demo
         {
             while(true)
             {
-                ReadWord(DevideCode.D, 100, out D100);
-                ReadWord(DevideCode.D, 110, out D110);
-                ReadWord(DevideCode.D, 200, out D200);
-                ReadWord(DevideCode.D, 210, out D210);                
+                //ReadWord(DevideCode.D, 100, out D100);
+                //ReadWord(DevideCode.D, 110, out D110);
+                //ReadWord(DevideCode.D, 200, out D200);
+                //ReadWord(DevideCode.D, 210, out D210);
+                //Thread.Sleep(10);
             }
         }
         public int Open(string IP, int Port)
@@ -176,134 +177,138 @@ namespace Demo
         }
         public int WriteWord(DevideCode _devCode, int _devNumber, short _shValue)
         {
-            //binary code
-            int result = -1;
-            if (sock == null)
+            lock(obj)
             {
+                //binary code
+                int result = -1;
+                if (sock == null)
+                {
+                    return result;
+                }
+                if (sock.Connected == false)
+                {
+                    return result;
+                }
+                //Chuẩn bị dữ liệu gửi xuống PLC
+                List<byte> lstSendData = new List<byte>();
+                //1.Sub header:5000  [2bytes]
+                lstSendData.Add(0x50);
+                lstSendData.Add(0x00);
+
+                //2.Access router 5 byte
+                //2.1 Network number
+                lstSendData.Add((byte)this.networkNo);
+                //2.2 PC No
+                lstSendData.Add((byte)this.pcNo);
+                //2.3 Request IO No
+                lstSendData.Add(0xFF);
+                lstSendData.Add(0x03);
+                //2.4 Station No
+                lstSendData.Add((byte)this.stationNo);
+
+                //3.Request data lenght = [2bytes]
+                //monitor timer + command + subcommand + request data
+                lstSendData.Add(0x0E);
+                lstSendData.Add(0x00);
+
+                //4. Monitoring time : [2 byte] 9-10: 16x250 = 4s
+                lstSendData.Add(0x00);
+                lstSendData.Add(0x00);
+
+                //5.Request item
+                //5.1 Command: Device Write
+                lstSendData.Add(0x01);
+                lstSendData.Add(0x14);
+                //5.2.Sub Command: select Word  to write data
+                lstSendData.Add(0x00);
+                lstSendData.Add(0x00);
+                //5.3 Head Device No: Đọc thanh ghi số bao nhiêu : 3 byte
+                int headNumber = _devNumber;
+                for (int i = 0; i < 3; i++)
+                {
+                    byte a = (byte)(headNumber >> 8 * i);
+                    lstSendData.Add(a);
+                }
+                //5.4 Device Code
+                lstSendData.Add((byte)_devCode);
+                //5.5 Number of Device: Số lượng thanh ghi đọc: 1 thanh ghi
+                int numberOfDevice = 1;
+                for (int i = 0; i < 2; i++)
+                {
+                    byte a = (byte)(numberOfDevice >> 8 * i);
+                    lstSendData.Add(a);
+                }
+                //5.6 Write Data: Ghi dữ liệu vào thanh ghi
+                short value = _shValue;
+                for (int i = 0; i < 2; i++)
+                {
+                    byte a = (byte)(value >> 8 * i);
+                    lstSendData.Add(a);
+                }
+                //Tính số lượng byte gửi. Data Lenght
+                int noOfDataByte = lstSendData.Count - 9;
+                byte[] bytes = BitConverter.GetBytes(noOfDataByte);
+                lstSendData[7] = bytes[0];
+                lstSendData[8] = bytes[1];
+
+                //Gửi đi
+                sock.Send(lstSendData.ToArray());
+                //Nhận về 
+                byte[] rcvData = new byte[1024];
+                sock.Receive(rcvData);
+
+                List<byte> lstRcv = new List<byte>();
+                lstRcv.AddRange(rcvData);
+                //Subheader
+                if (lstRcv[0] != 0xD0 || lstRcv[1] != 0x00)
+                {
+                    throw new Exception("SLMP get error Sub Header");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //Check Acess Route
+                //Network No
+                if (lstRcv[0] != 0x00)
+                {
+                    throw new Exception("SLMP get error Network No");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //PC No
+                if (lstRcv[0] != (byte)this.pcNo)
+                {
+                    throw new Exception("SMLP get error PC No");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //Module IO
+                if (lstRcv[0] != 0xFF || lstRcv[1] != 0x03)
+                {
+                    throw new Exception("SLMP get error Module IO");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //Station No
+                if (lstRcv[0] != 0x00)
+                {
+                    throw new Exception("SLMP get error Module IO");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //Reponse Data Length
+                short dataLenght = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1] }, 0);
+                if (dataLenght < 2)
+                //Data Lenght = Endcode + Response Data
+                // nếu < báo lỗi
+                {
+                    throw new Exception("SLMP get error Data Lenght");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //End Code: 2 byte
+                if (lstRcv[0] != 0x00 || lstRcv[1] != 0x00)
+                {
+                    throw new Exception(string.Format("SLMP get error: {0} {1}", lstRcv[1], lstRcv[0]));
+                }
+                lstRcv.RemoveRange(0, 2);
+                result = 0;
                 return result;
             }
-            if (sock.Connected == false)
-            {
-                return result;
-            }
-            //Chuẩn bị dữ liệu gửi xuống PLC
-            List<byte> lstSendData = new List<byte>();
-            //1.Sub header:5000  [2bytes]
-            lstSendData.Add(0x50);
-            lstSendData.Add(0x00);
-
-            //2.Access router 5 byte
-            //2.1 Network number
-            lstSendData.Add((byte)this.networkNo);
-            //2.2 PC No
-            lstSendData.Add((byte)this.pcNo);
-            //2.3 Request IO No
-            lstSendData.Add(0xFF);
-            lstSendData.Add(0x03);
-            //2.4 Station No
-            lstSendData.Add((byte)this.stationNo);
-
-            //3.Request data lenght = [2bytes]
-            //monitor timer + command + subcommand + request data
-            lstSendData.Add(0x0E);
-            lstSendData.Add(0x00);
-
-            //4. Monitoring time : [2 byte] 9-10: 16x250 = 4s
-            lstSendData.Add(0x00);
-            lstSendData.Add(0x00);
-
-            //5.Request item
-            //5.1 Command: Device Write
-            lstSendData.Add(0x01);
-            lstSendData.Add(0x14);
-            //5.2.Sub Command: select Word  to write data
-            lstSendData.Add(0x00);
-            lstSendData.Add(0x00);
-            //5.3 Head Device No: Đọc thanh ghi số bao nhiêu : 3 byte
-            int headNumber = _devNumber;
-            for (int i = 0; i < 3; i++)
-            {
-                byte a = (byte)(headNumber >> 8 * i);
-                lstSendData.Add(a);
-            }
-            //5.4 Device Code
-            lstSendData.Add((byte)_devCode);
-            //5.5 Number of Device: Số lượng thanh ghi đọc: 1 thanh ghi
-            int numberOfDevice = 1;
-            for (int i = 0; i < 2; i++)
-            {
-                byte a = (byte)(numberOfDevice >> 8 * i);
-                lstSendData.Add(a);
-            }
-            //5.6 Write Data: Ghi dữ liệu vào thanh ghi
-            short value = _shValue;
-            for (int i = 0; i < 2; i++)
-            {
-                byte a = (byte)(value >> 8 * i);
-                lstSendData.Add(a);
-            }
-            //Tính số lượng byte gửi. Data Lenght
-            int noOfDataByte = lstSendData.Count - 9;
-            byte[] bytes = BitConverter.GetBytes(noOfDataByte);
-            lstSendData[7] = bytes[0];
-            lstSendData[8] = bytes[1];
-
-            //Gửi đi
-            sock.Send(lstSendData.ToArray());
-            //Nhận về 
-            byte[] rcvData = new byte[1024];
-            sock.Receive(rcvData);
-
-            List<byte> lstRcv = new List<byte>();
-            lstRcv.AddRange(rcvData);
-            //Subheader
-            if (lstRcv[0] != 0xD0 || lstRcv[1] != 0x00)
-            {
-                throw new Exception("SLMP get error Sub Header");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Check Acess Route
-            //Network No
-            if (lstRcv[0] != 0x00)
-            {
-                throw new Exception("SLMP get error Network No");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //PC No
-            if (lstRcv[0] != (byte)this.pcNo)
-            {
-                throw new Exception("SMLP get error PC No");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //Module IO
-            if (lstRcv[0] != 0xFF || lstRcv[1] != 0x03)
-            {
-                throw new Exception("SLMP get error Module IO");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Station No
-            if (lstRcv[0] != 0x00)
-            {
-                throw new Exception("SLMP get error Module IO");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //Reponse Data Length
-            short dataLenght = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1] }, 0);
-            if (dataLenght < 2 )
-            //Data Lenght = Endcode + Response Data
-            // nếu < báo lỗi
-            {
-                throw new Exception("SLMP get error Data Lenght");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //End Code: 2 byte
-            if (lstRcv[0] != 0x00 || lstRcv[1] != 0x00)
-            {
-                throw new Exception(string.Format("SLMP get error: {0} {1}", lstRcv[1], lstRcv[0]));
-            }
-            lstRcv.RemoveRange(0, 2);
-            result = 0;
-            return result;
+            
         }
         public int WriteDoubleWord(DevideCode _devCode, int _devNumber, int _shValue)
         {
@@ -437,127 +442,133 @@ namespace Demo
         }
         public int ReadWord(DevideCode _devCode, int _devNumber, out short _shValue)
         {
-            int result = -1;
-            _shValue = 0;
-            if (sock == null)
+            lock (obj)
             {
+                int result = -1;
+                _shValue = 0;
+                if (sock == null)
+                {
+                    return result;
+                }
+                if (sock.Connected == false)
+                {
+                    return result;
+                }
+                //Chuẩn bị dữ liệu gửi xuống PLC
+                List<byte> lstSendData = new List<byte>();
+                //1.Sub header:5000
+                lstSendData.Add(0x50);
+                lstSendData.Add(0x00);
+
+                //2.Access router 5 byte
+                //2.1 Network number
+                lstSendData.Add((byte)this.networkNo);
+                //2.2 PC No
+                lstSendData.Add((byte)this.pcNo);
+                //2.3 Request IO No
+                lstSendData.Add(0xFF);
+                lstSendData.Add(0x03);
+                //2.4 Station No
+                lstSendData.Add((byte)this.stationNo);
+
+                //3.Request data lenght
+                lstSendData.Add(0x00);
+                lstSendData.Add(0x00);
+
+                //4. Monitoring time : 2 byte 9-10: 16x250 = 4s
+                lstSendData.Add(0x10);
+                lstSendData.Add(0x00);
+
+                //5.Request item
+                //5.1 Command: Lệnh đọc dữ liệu 0401
+                lstSendData.Add(0x01);
+                lstSendData.Add(0x04);
+                //5.2.Sub Command:
+                lstSendData.Add(0x00);
+                lstSendData.Add(0x00);
+                //5.3 Head Device No: Đọc thanh ghi số bao nhiêu : 3 byte
+                int headNumber = _devNumber;
+                for (int i = 0; i < 3; i++)
+                {
+                    byte a = (byte)(headNumber >> 8 * i);
+                    lstSendData.Add(a);
+                }
+                //5.4 Device Code
+                lstSendData.Add((byte)_devCode);
+                //5.5 Number of Device: Số lượng thanh ghi đọc: 1 thanh ghi
+                int numberOfDevice = 1;
+                for (int i = 0; i < 2; i++)
+                {
+                    byte a = (byte)(numberOfDevice >> 8 * i);
+                    lstSendData.Add(a);
+                }
+
+                //Tính số lượng byte gửi
+                int noOfDataByte = lstSendData.Count - 9;
+                byte[] bytes = BitConverter.GetBytes(noOfDataByte);
+                lstSendData[7] = bytes[0];
+                lstSendData[8] = bytes[1];
+
+                //Gửi đi
+                sock.Send(lstSendData.ToArray());
+
+
+                //Nhận về 
+                byte[] rcvData = new byte[1024];
+                sock.Receive(rcvData);
+
+                List<byte> lstRcv = new List<byte>();
+                lstRcv.AddRange(rcvData);
+                //Subheader
+                if (lstRcv[0] != 0xD0 || lstRcv[1] != 0x00)
+                {
+                    throw new Exception("SLMP get error Sub Header");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //Check Acess Route
+                //Network No
+                if (lstRcv[0] != (byte)this.networkNo)
+                {
+                    throw new Exception("SLMP get error Network No");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //PC No
+                if (lstRcv[0] != (byte)this.pcNo)
+                {
+                    throw new Exception("SMLP get error PC No");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //Module IO
+                if (lstRcv[0] != 0xFF || lstRcv[1] != 0x03)
+                {
+                    throw new Exception("SLMP get error Module IO");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //Station No
+                if (lstRcv[0] != (byte)this.stationNo)
+                {
+                    throw new Exception("SLMP get error Module IO");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //Reponse Data Length
+                short dataLenght = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1] }, 0);
+                if (dataLenght < 4)
+                {
+                    throw new Exception("SLMP get error Data Lenght");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //End Code
+                if (lstRcv[0] != 0x00 || lstRcv[1] != 0x00)
+                {
+                    throw new Exception(string.Format("SLMP get error: {0} {1}", lstRcv[1], lstRcv[0]));
+                }
+                lstRcv.RemoveRange(0, 2);
+                //Lấy dữ liệu
+                _shValue = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1], 0 }, 0);
+                result = 0;
                 return result;
             }
-            if (sock.Connected == false)
-            {
-                return result;
-            }
-            //Chuẩn bị dữ liệu gửi xuống PLC
-            List<byte> lstSendData = new List<byte>();
-            //1.Sub header:5000
-            lstSendData.Add(0x50);
-            lstSendData.Add(0x00);
-
-            //2.Access router 5 byte
-            //2.1 Network number
-            lstSendData.Add((byte)this.networkNo);
-            //2.2 PC No
-            lstSendData.Add((byte)this.pcNo);
-            //2.3 Request IO No
-            lstSendData.Add(0xFF);
-            lstSendData.Add(0x03);
-            //2.4 Station No
-            lstSendData.Add((byte)this.stationNo);
-
-            //3.Request data lenght
-            lstSendData.Add(0x00);
-            lstSendData.Add(0x00);
-
-            //4. Monitoring time : 2 byte 9-10: 16x250 = 4s
-            lstSendData.Add(0x10);
-            lstSendData.Add(0x00);
-
-            //5.Request item
-            //5.1 Command: Lệnh đọc dữ liệu 0401
-            lstSendData.Add(0x01);
-            lstSendData.Add(0x04);
-            //5.2.Sub Command:
-            lstSendData.Add(0x00);
-            lstSendData.Add(0x00);
-            //5.3 Head Device No: Đọc thanh ghi số bao nhiêu : 3 byte
-            int headNumber = _devNumber;
-            for (int i = 0; i < 3; i++)
-            {
-                byte a = (byte)(headNumber >> 8 * i);
-                lstSendData.Add(a);
-            }
-            //5.4 Device Code
-            lstSendData.Add((byte)_devCode);
-            //5.5 Number of Device: Số lượng thanh ghi đọc: 1 thanh ghi
-            int numberOfDevice = 1;
-            for (int i = 0; i < 2; i++)
-            {
-                byte a = (byte)(numberOfDevice >> 8 * i);
-                lstSendData.Add(a);
-            }
-
-            //Tính số lượng byte gửi
-            int noOfDataByte = lstSendData.Count - 9;
-            byte[] bytes = BitConverter.GetBytes(noOfDataByte);
-            lstSendData[7] = bytes[0];
-            lstSendData[8] = bytes[1];
-
-            //Gửi đi
-            sock.Send(lstSendData.ToArray());
-            //Nhận về 
-            byte[] rcvData = new byte[1024];
-            sock.Receive(rcvData);
-
-            List<byte> lstRcv = new List<byte>();
-            lstRcv.AddRange(rcvData);
-            //Subheader
-            if (lstRcv[0] != 0xD0 || lstRcv[1] != 0x00)
-            {
-                throw new Exception("SLMP get error Sub Header");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Check Acess Route
-            //Network No
-            if (lstRcv[0] != (byte)this.networkNo)
-            {
-                throw new Exception("SLMP get error Network No");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //PC No
-            if (lstRcv[0] != (byte)this.pcNo)
-            {
-                throw new Exception("SMLP get error PC No");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //Module IO
-            if (lstRcv[0] != 0xFF || lstRcv[1] != 0x03)
-            {
-                throw new Exception("SLMP get error Module IO");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Station No
-            if (lstRcv[0] != (byte)this.stationNo)
-            {
-                throw new Exception("SLMP get error Module IO");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //Reponse Data Length
-            short dataLenght = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1] }, 0);
-            if (dataLenght < 4)
-            {
-                throw new Exception("SLMP get error Data Lenght");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //End Code
-            if (lstRcv[0] != 0x00 || lstRcv[1] != 0x00)
-            {
-                throw new Exception(string.Format("SLMP get error: {0} {1}", lstRcv[1], lstRcv[0]));
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Lấy dữ liệu
-            _shValue = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1], 0 }, 0);
-            result = 0;
-            return result;
+            
         }
         public int ReadDoubleWord(DevideCode _devCode, int _devNumber, out short _shValue)
         {
@@ -824,421 +835,432 @@ namespace Demo
         }
         public int WriteBit(DevideCode _devCode, int _devNumber, bool _bValue)
         {
-            int result = -1;
-            if (sock == null)
+            lock(obj)
             {
-                return result;
-            }
-            if (sock.Connected == false)
-            {
-                return result;
-            }
-            //Chuẩn bị dữ liệu gửi xuống PLC
-            List<byte> lstSendData = new List<byte>();
-            //1.Sub header:5000
-            lstSendData.Add(0x50);
-            lstSendData.Add(0x00);
-
-            //2.Access router 5 byte
-            //2.1 Network number
-            lstSendData.Add((byte)this.networkNo);
-            //2.2 PC No
-            lstSendData.Add((byte)this.pcNo);
-            //2.3 Request IO No
-            lstSendData.Add(0xFF);
-            lstSendData.Add(0x03);
-            //2.4 Station No
-            lstSendData.Add((byte)this.stationNo);
-
-            //3.Request data lenght
-            lstSendData.Add(0x00);
-            lstSendData.Add(0x00);
-
-            //4. Monitoring time : 2 byte 9-10: 16x250 = 4s
-            lstSendData.Add(0x10);
-            lstSendData.Add(0x00);
-
-            //5.Request item
-            //5.1 Command: Device Write
-            lstSendData.Add(0x01);
-            lstSendData.Add(0x14);
-            //5.2.Sub Command:
-            lstSendData.Add(0x01);
-            lstSendData.Add(0x00);
-            //5.3 Head Device No: Đọc thanh ghi số bao nhiêu : 3 byte
-            int headNumber = _devNumber;
-            for (int i = 0; i < 3; i++)
-            {
-                byte a = (byte)(headNumber >> 8 * i);
-                lstSendData.Add(a);
-            }
-            //5.4 Device Code
-            lstSendData.Add((byte)_devCode);
-            //5.5 Number of Device: Số lượng thanh ghi đọc: 1 thanh ghi
-            int numberOfDevice = 1;
-            for (int i = 0; i < 2; i++)
-            {
-                byte a = (byte)(numberOfDevice >> 8 * i);
-                lstSendData.Add(a);
-            }
-            //5.6 Write Data: Ghi dữ liệu vào thanh ghi
-            if (_bValue)
-            {
-                lstSendData.Add(0x10);
-            }
-            else
-            {
+                int result = -1;
+                if (sock == null)
+                {
+                    return result;
+                }
+                if (sock.Connected == false)
+                {
+                    return result;
+                }
+                //Chuẩn bị dữ liệu gửi xuống PLC
+                List<byte> lstSendData = new List<byte>();
+                //1.Sub header:5000
+                lstSendData.Add(0x50);
                 lstSendData.Add(0x00);
-            }
-            //Tính số lượng byte gửi
-            int noOfDataByte = lstSendData.Count - 9;
-            byte[] bytes = BitConverter.GetBytes(noOfDataByte);
-            lstSendData[7] = bytes[0];
-            lstSendData[8] = bytes[1];
+                //2.Access router 5 byte
+                //2.1 Network number
+                lstSendData.Add((byte)this.networkNo);
+                //2.2 PC No
+                lstSendData.Add((byte)this.pcNo);
+                //2.3 Request IO No
+                lstSendData.Add(0xFF);
+                lstSendData.Add(0x03);
+                //2.4 Station No
+                lstSendData.Add((byte)this.stationNo);
+                //3.Request data lenght
+                lstSendData.Add(0x00);
+                lstSendData.Add(0x00);
 
-            //Gửi đi
-            sock.Send(lstSendData.ToArray());
-            //Nhận về 
-            byte[] rcvData = new byte[1024];
-            sock.Receive(rcvData);
+                //4. Monitoring time : 2 byte 9-10: 16x250 = 4s
+                lstSendData.Add(0x10);
+                lstSendData.Add(0x00);
 
-            List<byte> lstRcv = new List<byte>();
-            lstRcv.AddRange(rcvData);
-            //Subheader
-            if (lstRcv[0] != 0xD0 || lstRcv[1] != 0x00)
-            {
-                throw new Exception("SLMP get error Sub Header");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Check Acess Route
-            //Network No
-            if (lstRcv[0] != (byte)this.networkNo)
-            {
-                throw new Exception("SLMP get error Network No");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //PC No
-            if (lstRcv[0] != (byte)this.pcNo)
-            {
-                throw new Exception("SMLP get error PC No");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //Module IO
-            if (lstRcv[0] != 0xFF || lstRcv[1] != 0x03)
-            {
-                throw new Exception("SLMP get error Module IO");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Station No
-            if (lstRcv[0] != (byte)this.stationNo)
-            {
-                throw new Exception("SLMP get error Module IO");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //Reponse Data Length
-            short dataLenght = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1] }, 0);
-            if (dataLenght < 2)
-            //Data Lenght = Endcode + Response Data
-            // nếu <2 báo lỗi
-            {
-                throw new Exception("SLMP get error Data Lenght");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //End Code: 2 byte
-            if (lstRcv[0] != 0x00 || lstRcv[1] != 0x00)
-            {
-                throw new Exception(string.Format("SLMP get error: {0} {1}", lstRcv[1], lstRcv[0]));
-            }
-            lstRcv.RemoveRange(0, 2);
-            result = 0;
-            return result;
+                //5.Request item
+                //5.1 Command: Device Write
+                lstSendData.Add(0x01);
+                lstSendData.Add(0x14);
+                //5.2.Sub Command:
+                lstSendData.Add(0x01);
+                lstSendData.Add(0x00);
+                //5.3 Head Device No: Đọc thanh ghi số bao nhiêu : 3 byte
+                int headNumber = _devNumber;
+                for (int i = 0; i < 3; i++)
+                {
+                    byte a = (byte)(headNumber >> 8 * i);
+                    lstSendData.Add(a);
+                }
+                //5.4 Device Code
+                lstSendData.Add((byte)_devCode);
+                //5.5 Number of Device: Số lượng thanh ghi đọc: 1 thanh ghi
+                int numberOfDevice = 1;
+                for (int i = 0; i < 2; i++)
+                {
+                    byte a = (byte)(numberOfDevice >> 8 * i);
+                    lstSendData.Add(a);
+                }
+                //5.6 Write Data: Ghi dữ liệu vào thanh ghi
+                if (_bValue)
+                {
+                    lstSendData.Add(0x10);
+                }
+                else
+                {
+                    lstSendData.Add(0x00);
+                }
+                //Tính số lượng byte gửi
+                int noOfDataByte = lstSendData.Count - 9;
+                byte[] bytes = BitConverter.GetBytes(noOfDataByte);
+                lstSendData[7] = bytes[0];
+                lstSendData[8] = bytes[1];
+
+                //Gửi đi
+                sock.Send(lstSendData.ToArray());
+                //Nhận về 
+                byte[] rcvData = new byte[1024];
+                sock.Receive(rcvData);
+
+                List<byte> lstRcv = new List<byte>();
+                lstRcv.AddRange(rcvData);
+                //Subheader
+                if (lstRcv[0] != 0xD0 || lstRcv[1] != 0x00)
+                {
+                    throw new Exception("SLMP get error Sub Header");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //Check Acess Route
+                //Network No
+                if (lstRcv[0] != (byte)this.networkNo)
+                {
+                    throw new Exception("SLMP get error Network No");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //PC No
+                if (lstRcv[0] != (byte)this.pcNo)
+                {
+                    throw new Exception("SMLP get error PC No");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //Module IO
+                if (lstRcv[0] != 0xFF || lstRcv[1] != 0x03)
+                {
+                    throw new Exception("SLMP get error Module IO");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //Station No
+                if (lstRcv[0] != (byte)this.stationNo)
+                {
+                    throw new Exception("SLMP get error Module IO");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //Reponse Data Length
+                short dataLenght = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1] }, 0);
+                if (dataLenght < 2)
+                //Data Lenght = Endcode + Response Data
+                // nếu <2 báo lỗi
+                {
+                    throw new Exception("SLMP get error Data Lenght");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //End Code: 2 byte
+                if (lstRcv[0] != 0x00 || lstRcv[1] != 0x00)
+                {
+                    throw new Exception(string.Format("SLMP get error: {0} {1}", lstRcv[1], lstRcv[0]));
+                }
+                lstRcv.RemoveRange(0, 2);
+                result = 0;
+                return result;
+            }    
+            
         }
         public int ReadBit(DevideCode _devCode, int _devNumber, bool _bValue)
         {
-            int result = -1;
-            if (sock == null)
+            lock(obj)
             {
-                return result;
-            }
-            if (sock.Connected == false)
-            {
-                return result;
-            }
-            //Chuẩn bị dữ liệu gửi xuống PLC
-            List<byte> lstSendData = new List<byte>();
-            //1.Sub header:5000
-            lstSendData.Add(0x50);
-            lstSendData.Add(0x00);
-
-            //2.Access router 5 byte
-            //2.1 Network number
-            lstSendData.Add((byte)this.networkNo);
-            //2.2 PC No
-            lstSendData.Add((byte)this.pcNo);
-            //2.3 Request IO No
-            lstSendData.Add(0xFF);
-            lstSendData.Add(0x03);
-            //2.4 Station No
-            lstSendData.Add((byte)this.stationNo);
-
-            //3.Request data lenght
-            lstSendData.Add(0x00);
-            lstSendData.Add(0x00);
-
-            //4. Monitoring time : 2 byte 9-10: 16x250 = 4s
-            lstSendData.Add(0x10);
-            lstSendData.Add(0x00);
-
-            //5.Request item
-            //5.1 Command: Device Write
-            lstSendData.Add(0x01);
-            lstSendData.Add(0x14);
-            //5.2.Sub Command:
-            lstSendData.Add(0x01);
-            lstSendData.Add(0x00);
-            //5.3 Head Device No: Đọc thanh ghi số bao nhiêu : 3 byte
-            int headNumber = _devNumber;
-            for (int i = 0; i < 3; i++)
-            {
-                byte a = (byte)(headNumber >> 8 * i);
-                lstSendData.Add(a);
-            }
-            //5.4 Device Code
-            lstSendData.Add((byte)_devCode);
-            //5.5 Number of Device: Số lượng thanh ghi đọc: 1 thanh ghi
-            int numberOfDevice = 1;
-            for (int i = 0; i < 2; i++)
-            {
-                byte a = (byte)(numberOfDevice >> 8 * i);
-                lstSendData.Add(a);
-            }
-            //5.6 Write Data: Ghi dữ liệu vào thanh ghi
-            if (_bValue)
-            {
-                lstSendData.Add(0x10);
-            }
-            else
-            {
+                int result = -1;
+                if (sock == null)
+                {
+                    return result;
+                }
+                if (sock.Connected == false)
+                {
+                    return result;
+                }
+                //Chuẩn bị dữ liệu gửi xuống PLC
+                List<byte> lstSendData = new List<byte>();
+                //1.Sub header:5000
+                lstSendData.Add(0x50);
                 lstSendData.Add(0x00);
-            }
-            //Tính số lượng byte gửi
-            int noOfDataByte = lstSendData.Count - 9;
-            byte[] bytes = BitConverter.GetBytes(noOfDataByte);
-            lstSendData[7] = bytes[0];
-            lstSendData[8] = bytes[1];
 
-            //Gửi đi
-            sock.Send(lstSendData.ToArray());
-            //Nhận về 
-            byte[] rcvData = new byte[1024];
-            sock.Receive(rcvData);
+                //2.Access router 5 byte
+                //2.1 Network number
+                lstSendData.Add((byte)this.networkNo);
+                //2.2 PC No
+                lstSendData.Add((byte)this.pcNo);
+                //2.3 Request IO No
+                lstSendData.Add(0xFF);
+                lstSendData.Add(0x03);
+                //2.4 Station No
+                lstSendData.Add((byte)this.stationNo);
 
-            List<byte> lstRcv = new List<byte>();
-            lstRcv.AddRange(rcvData);
-            //Subheader
-            if (lstRcv[0] != 0xD0 || lstRcv[1] != 0x00)
-            {
-                throw new Exception("SLMP get error Sub Header");
+                //3.Request data lenght
+                lstSendData.Add(0x00);
+                lstSendData.Add(0x00);
+
+                //4. Monitoring time : 2 byte 9-10: 16x250 = 4s
+                lstSendData.Add(0x10);
+                lstSendData.Add(0x00);
+
+                //5.Request item
+                //5.1 Command: Device Write
+                lstSendData.Add(0x01);
+                lstSendData.Add(0x14);
+                //5.2.Sub Command:
+                lstSendData.Add(0x01);
+                lstSendData.Add(0x00);
+                //5.3 Head Device No: Đọc thanh ghi số bao nhiêu : 3 byte
+                int headNumber = _devNumber;
+                for (int i = 0; i < 3; i++)
+                {
+                    byte a = (byte)(headNumber >> 8 * i);
+                    lstSendData.Add(a);
+                }
+                //5.4 Device Code
+                lstSendData.Add((byte)_devCode);
+                //5.5 Number of Device: Số lượng thanh ghi đọc: 1 thanh ghi
+                int numberOfDevice = 1;
+                for (int i = 0; i < 2; i++)
+                {
+                    byte a = (byte)(numberOfDevice >> 8 * i);
+                    lstSendData.Add(a);
+                }
+                //5.6 Write Data: Ghi dữ liệu vào thanh ghi
+                if (_bValue)
+                {
+                    lstSendData.Add(0x10);
+                }
+                else
+                {
+                    lstSendData.Add(0x00);
+                }
+                //Tính số lượng byte gửi
+                int noOfDataByte = lstSendData.Count - 9;
+                byte[] bytes = BitConverter.GetBytes(noOfDataByte);
+                lstSendData[7] = bytes[0];
+                lstSendData[8] = bytes[1];
+
+                //Gửi đi
+                sock.Send(lstSendData.ToArray());
+                //Nhận về 
+                byte[] rcvData = new byte[1024];
+                sock.Receive(rcvData);
+
+                List<byte> lstRcv = new List<byte>();
+                lstRcv.AddRange(rcvData);
+                //Subheader
+                if (lstRcv[0] != 0xD0 || lstRcv[1] != 0x00)
+                {
+                    throw new Exception("SLMP get error Sub Header");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //Check Acess Route
+                //Network No
+                if (lstRcv[0] != (byte)this.networkNo)
+                {
+                    throw new Exception("SLMP get error Network No");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //PC No
+                if (lstRcv[0] != (byte)this.pcNo)
+                {
+                    throw new Exception("SMLP get error PC No");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //Module IO
+                if (lstRcv[0] != 0xFF || lstRcv[1] != 0x03)
+                {
+                    throw new Exception("SLMP get error Module IO");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //Station No
+                if (lstRcv[0] != (byte)this.stationNo)
+                {
+                    throw new Exception("SLMP get error Module IO");
+                }
+                lstRcv.RemoveRange(0, 1);
+                //Reponse Data Length
+                short dataLenght = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1] }, 0);
+                if (dataLenght < 2)
+                //Data Lenght = Endcode + Response Data
+                // nếu <4 báo lỗi
+                {
+                    throw new Exception("SLMP get error Data Lenght");
+                }
+                lstRcv.RemoveRange(0, 2);
+                //End Code: 2 byte
+                if (lstRcv[0] != 0x00 || lstRcv[1] != 0x00)
+                {
+                    throw new Exception(string.Format("SLMP get error: {0} {1}", lstRcv[1], lstRcv[0]));
+                }
+                lstRcv.RemoveRange(0, 2);
+                result = 0;
+                return result;
             }
-            lstRcv.RemoveRange(0, 2);
-            //Check Acess Route
-            //Network No
-            if (lstRcv[0] != (byte)this.networkNo)
-            {
-                throw new Exception("SLMP get error Network No");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //PC No
-            if (lstRcv[0] != (byte)this.pcNo)
-            {
-                throw new Exception("SMLP get error PC No");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //Module IO
-            if (lstRcv[0] != 0xFF || lstRcv[1] != 0x03)
-            {
-                throw new Exception("SLMP get error Module IO");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Station No
-            if (lstRcv[0] != (byte)this.stationNo)
-            {
-                throw new Exception("SLMP get error Module IO");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //Reponse Data Length
-            short dataLenght = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1] }, 0);
-            if (dataLenght < 2)
-            //Data Lenght = Endcode + Response Data
-            // nếu <4 báo lỗi
-            {
-                throw new Exception("SLMP get error Data Lenght");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //End Code: 2 byte
-            if (lstRcv[0] != 0x00 || lstRcv[1] != 0x00)
-            {
-                throw new Exception(string.Format("SLMP get error: {0} {1}", lstRcv[1], lstRcv[0]));
-            }
-            lstRcv.RemoveRange(0, 2);
-            result = 0;
-            return result;
+           
         }
         public int ReadMultiBit(DevideCode _devCode, int _devNumber, int count, out List<bool> _lstValue)
         {
-            int result = -1;
-            _lstValue = new List<bool>();
-            if (sock == null)
+            lock (this)
             {
-                return result;
-            }
-            if (sock.Connected == false)
-            {
-                return result;
-            }
-            //Chuẩn bị dữ liệu gửi xuống PLC
-            List<byte> lstSendData = new List<byte>();
-            //1.Sub header:5000
-            lstSendData.Add(0x50);
-            lstSendData.Add(0x00);
+                    int result = -1;
+                    _lstValue = new List<bool>();
+                    if (sock == null)
+                    {
+                        return result;
+                    }
+                    if (sock.Connected == false)
+                    {
+                        return result;
+                    }
+                    //Chuẩn bị dữ liệu gửi xuống PLC
+                    List<byte> lstSendData = new List<byte>();
+                    //1.Sub header:5000
+                    lstSendData.Add(0x50);
+                    lstSendData.Add(0x00);
 
-            //2.Access router 5 byte
-            //2.1 Network number
-            lstSendData.Add((byte)this.networkNo);
-            //2.2 PC No
-            lstSendData.Add((byte)this.pcNo);
-            //2.3 Request IO No
-            lstSendData.Add(0xFF);
-            lstSendData.Add(0x03);
-            //2.4 Station No
-            lstSendData.Add((byte)this.stationNo);
+                    //2.Access router 5 byte
+                    //2.1 Network number
+                    lstSendData.Add((byte)this.networkNo);
+                    //2.2 PC No
+                    lstSendData.Add((byte)this.pcNo);
+                    //2.3 Request IO No
+                    lstSendData.Add(0xFF);
+                    lstSendData.Add(0x03);
+                    //2.4 Station No
+                    lstSendData.Add((byte)this.stationNo);
 
-            //3.Request data lenght
-            lstSendData.Add(0x00);
-            lstSendData.Add(0x00);
+                    //3.Request data lenght
+                    lstSendData.Add(0x00);
+                    lstSendData.Add(0x00);
 
-            //4. Monitoring time : 2 byte 9-10: 16x250 = 4s
-            lstSendData.Add(0x10);
-            lstSendData.Add(0x00);
+                    //4. Monitoring time : 2 byte 9-10: 16x250 = 4s
+                    lstSendData.Add(0x10);
+                    lstSendData.Add(0x00);
 
-            //5.Request item
-            //5.1 Command: Device Write
-            lstSendData.Add(0x01);
-            lstSendData.Add(0x14);
-            //5.2.Sub Command:
-            lstSendData.Add(0x01);
-            lstSendData.Add(0x00);
-            //5.3 Head Device No: Đọc thanh ghi số bao nhiêu : 3 byte
-            int headNumber = _devNumber;
-            for (int i = 0; i < 3; i++)
-            {
-                byte a = (byte)(headNumber >> 8 * i);
-                lstSendData.Add(a);
-            }
-            //5.4 Device Code
-            lstSendData.Add((byte)_devCode);
-            //5.5 Number of Device: Đọc bao nhiêu bit
-            int numberOfDevice = count;
-            for (int i = 0; i < 2; i++)
-            {
-                byte a = (byte)(numberOfDevice >> 8 * i);
-                lstSendData.Add(a);
-            }
+                    //5.Request item
+                    //5.1 Command: Device Write
+                    lstSendData.Add(0x01);
+                    lstSendData.Add(0x14);
+                    //5.2.Sub Command:
+                    lstSendData.Add(0x01);
+                    lstSendData.Add(0x00);
+                    //5.3 Head Device No: Đọc thanh ghi số bao nhiêu : 3 byte
+                    int headNumber = _devNumber;
+                    for (int i = 0; i < 3; i++)
+                    {
+                        byte a = (byte)(headNumber >> 8 * i);
+                        lstSendData.Add(a);
+                    }
+                    //5.4 Device Code
+                    lstSendData.Add((byte)_devCode);
+                    //5.5 Number of Device: Đọc bao nhiêu bit
+                    int numberOfDevice = count;
+                    for (int i = 0; i < 2; i++)
+                    {
+                        byte a = (byte)(numberOfDevice >> 8 * i);
+                        lstSendData.Add(a);
+                    }
 
-            //Tính số lượng byte gửi
-            int noOfDataByte = lstSendData.Count - 9;
-            byte[] bytes = BitConverter.GetBytes(noOfDataByte);
-            lstSendData[7] = bytes[0];
-            lstSendData[8] = bytes[1];
+                    //Tính số lượng byte gửi
+                    int noOfDataByte = lstSendData.Count - 9;
+                    byte[] bytes = BitConverter.GetBytes(noOfDataByte);
+                    lstSendData[7] = bytes[0];
+                    lstSendData[8] = bytes[1];
 
-            //Gửi đi
-            sock.Send(lstSendData.ToArray());
-            //Nhận về 
-            byte[] rcvData = new byte[1024];
-            sock.Receive(rcvData);
+                    //Gửi đi
+                    sock.Send(lstSendData.ToArray());
+                    //Nhận về 
+                    byte[] rcvData = new byte[1024];
+                    sock.Receive(rcvData);
 
-            List<byte> lstRcv = new List<byte>();
-            lstRcv.AddRange(rcvData);
-            //Subheader
-            if (lstRcv[0] != 0xD0 || lstRcv[1] != 0x00)
-            {
-                throw new Exception("SLMP get error Sub Header");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Check Acess Route
-            //Network No
-            if (lstRcv[0] != (byte)this.networkNo)
-            {
-                throw new Exception("SLMP get error Network No");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //PC No
-            if (lstRcv[0] != (byte)this.pcNo)
-            {
-                throw new Exception("SMLP get error PC No");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //Module IO
-            if (lstRcv[0] != 0xFF || lstRcv[1] != 0x03)
-            {
-                throw new Exception("SLMP get error Module IO");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Station No
-            if (lstRcv[0] != (byte)this.stationNo)
-            {
-                throw new Exception("SLMP get error Module IO");
-            }
-            lstRcv.RemoveRange(0, 1);
-            //Reponse Data Length
-            short dataLenght = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1] }, 0);
-            if (dataLenght < 2)
-            //Data Lenght = Endcode + Response Data
-            {
-                throw new Exception("SLMP get error Data Lenght");
-            }
-            lstRcv.RemoveRange(0, 2);
-            //End Code: 2 byte
-            if (lstRcv[0] != 0x00 || lstRcv[1] != 0x00)
-            {
-                throw new Exception(string.Format("SLMP get error: {0} {1}", lstRcv[1], lstRcv[0]));
-            }
-            lstRcv.RemoveRange(0, 2);
-            //Lấy dữ liệu
-            int byteCount = count / 2 + count % 2;
+                    List<byte> lstRcv = new List<byte>();
+                    lstRcv.AddRange(rcvData);
+                    //Subheader
+                    if (lstRcv[0] != 0xD0 || lstRcv[1] != 0x00)
+                    {
+                        throw new Exception("SLMP get error Sub Header");
+                    }
+                    lstRcv.RemoveRange(0, 2);
+                    //Check Acess Route
+                    //Network No
+                    if (lstRcv[0] != (byte)this.networkNo)
+                    {
+                        throw new Exception("SLMP get error Network No");
+                    }
+                    lstRcv.RemoveRange(0, 1);
+                    //PC No
+                    if (lstRcv[0] != (byte)this.pcNo)
+                    {
+                        throw new Exception("SMLP get error PC No");
+                    }
+                    lstRcv.RemoveRange(0, 1);
+                    //Module IO
+                    if (lstRcv[0] != 0xFF || lstRcv[1] != 0x03)
+                    {
+                        throw new Exception("SLMP get error Module IO");
+                    }
+                    lstRcv.RemoveRange(0, 2);
+                    //Station No
+                    if (lstRcv[0] != (byte)this.stationNo)
+                    {
+                        throw new Exception("SLMP get error Module IO");
+                    }
+                    lstRcv.RemoveRange(0, 1);
+                    //Reponse Data Length
+                    short dataLenght = BitConverter.ToInt16(new byte[] { lstRcv[0], lstRcv[1] }, 0);
+                    if (dataLenght < 2)
+                    //Data Lenght = Endcode + Response Data
+                    {
+                        throw new Exception("SLMP get error Data Lenght");
+                    }
+                    lstRcv.RemoveRange(0, 2);
+                    //End Code: 2 byte
+                    if (lstRcv[0] != 0x00 || lstRcv[1] != 0x00)
+                    {
+                        throw new Exception(string.Format("SLMP get error: {0} {1}", lstRcv[1], lstRcv[0]));
+                    }
+                    lstRcv.RemoveRange(0, 2);
+                    //Lấy dữ liệu
+                    int byteCount = count / 2 + count % 2;
 
-            for (int i = 0; i < byteCount; i++)
-            {
-                //0x10 >> 4bit kết quả được nhận sẽ là 0x01
-                int a = lstRcv[i] >> 4;
-                if (a == 0)
-                {
-                    _lstValue.Add(false);
-                }
-                else
-                {
-                    _lstValue.Add(true);
-                }
-                //Ví dụ 0x11 & 0x0f
-                // 0x11 = 0001 0001
-                // 0x0f = 0000 1111
-                // KQ   = 0000 0001
-                if (_lstValue.Count >= count)
-                {
-                    break;
-                }
-                int b = lstRcv[i] & 0x0F;
-                if (b == 0)
-                {
-                    _lstValue.Add(false);
-                }
-                else
-                {
-                    _lstValue.Add(true);
-                }
+                    for (int i = 0; i < byteCount; i++)
+                    {
+                        //0x10 >> 4bit kết quả được nhận sẽ là 0x01
+                        int a = lstRcv[i] >> 4;
+                        if (a == 0)
+                        {
+                            _lstValue.Add(false);
+                        }
+                        else
+                        {
+                            _lstValue.Add(true);
+                        }
+                        //Ví dụ 0x11 & 0x0f
+                        // 0x11 = 0001 0001
+                        // 0x0f = 0000 1111
+                        // KQ   = 0000 0001
+                        if (_lstValue.Count >= count)
+                        {
+                            break;
+                        }
+                        int b = lstRcv[i] & 0x0F;
+                        if (b == 0)
+                        {
+                            _lstValue.Add(false);
+                        }
+                        else
+                        {
+                            _lstValue.Add(true);
+                        }
+                    }
+                    result = 0;
+                    return result;
+               
             }
-            result = 0;
-            return result;
+            
         }
     }
 }

@@ -28,7 +28,6 @@ namespace Demo.Task
         Dictionary<string, string> lstSN = new Dictionary<string, string>();
 
         byte[] scanlead_cmd = { 0x02, 0xF4, 0x03 };
-
         public override void Initialize()
         {
             InitialTask();
@@ -82,9 +81,10 @@ namespace Demo.Task
                 if (Globals.SettingICT.PLC_Connect)
                 {
                     if(SLMP.Instance.Open() < 0)
-                    { 
-                        BzMessagebox.Show(MultiLanguage.GetMessage("Không thể kết nối tới Fx5U. Reset thất bại"));
-                        WriteCTLog("Không thể kết nối tới Fx5U. Reset thất bại");
+                    {
+                        var content = "Không thể kết nối tới Fx5U. Reset thất bại";
+                        ShowAlarm(XAlarmId.CONNECT_PLC_FAILURE);
+                        WriteCTLog(content);
                         return;
                     }
                 }
@@ -93,6 +93,7 @@ namespace Demo.Task
                 SetStep("Reset Complete", MyColor.Green);
                 SetStation_StateWaitRun();
                 WriteCTLog("Hoàn thành reset");
+                PageEngineering.Instance.UpdateTextBox("Hoàn thành reset Task70");
                 homeDoneTaskNum++;
 
                 if (homeDoneTaskNum == RequestHomeTaskNum)
@@ -101,12 +102,11 @@ namespace Demo.Task
             }
             catch (Exception e)
             {
-                //MessageBox.Show("Error");
+                
             }
 
 
         }
-
         protected override void Running(object runMode)
         {
             switch ((StationRunMode)runMode)
@@ -158,16 +158,14 @@ namespace Demo.Task
             {
                 case RunState.WaitCarrierInSignal:
                     SetStep("WaitCarrierInSignal", Color.Green);
-                    Random rd = new Random();
-                    i = rd.Next(100);
-                    Thread.Sleep(i);
-                    //Read barcode 
-                    if(SLMP.Instance.D110 == 1)
+                    short DValue;
+                    SLMP.Instance.ReadWord(DevideCode.D, 110, out DValue);
+                    if(DValue == 1)
+                    //if(SLMP.Instance.D110 == 1)
                     {
                         WriteCTLog("PLC >> PC: Register D110 = 1");
-                        //reset thanh ghi
                         SLMP.Instance.WriteWord(DevideCode.D, 110, 0);
-                        //Record Log
+                        //Record thời điểm bắt đầu
                         AudioSystem.UCM.Units[0].StartTime = DateTime.Now;
                         DateTime startdt = DateTime.Now;
                         Console.WriteLine(startdt.ToString());
@@ -185,7 +183,7 @@ namespace Demo.Task
                     //Inspection product => Send to CCD
                 case RunState.Inspection:
                     SetStep("Inspection", Color.Green);
-                    WriteCTLog("PC >> CCD: cmd CC,46 ");
+                    WriteCTLog("PC >> CCD: Inspection product command CC,46 ");
                     string cmd = "CC,46";
                     if(TriggerKenyceSN(cmd, out CCDResult) >= 0)
                     {
@@ -284,15 +282,13 @@ namespace Demo.Task
                         {
                             //Scan ma OK
                             SLMP.Instance.WriteWord(DevideCode.D, 110, 1);
-                            //Insert task MES here
-                            //Scan OK, send result to Plc to go next step
-                            MessageBox.Show("Next");
                             Thread.Sleep(100);
                             m_runStep = RunState.TriggerScanner_P4;
                         }
                         else
                         {
                             //send NG to PLC
+                            PageEngineering.Instance.UpdateTextBox("PC -> PLC: Send D110 = 2. Scan label NG");
                             SLMP.Instance.WriteWord(DevideCode.D, 110, 2);
                             m_runStep = RunState.TriggerScanner_P3;
                         }
@@ -313,11 +309,7 @@ namespace Demo.Task
                         string scanresult = "";
                         if (TriggerScanner(scanlead_cmd, out scanresult) >= 0)
                         {
-                            //Scan ma OK
                             SLMP.Instance.WriteWord(DevideCode.D, 110, 1);
-                            //Insert task MES here
-
-                            //Scan OK, send result to Plc to go next step
                             Thread.Sleep(100);
                             m_runStep = RunState.WaitCarrierInSignal;
                         }
@@ -356,10 +348,11 @@ namespace Demo.Task
                 return true;
             }
         }
+        #endregion
+
+        #region SQL 
         private void WriteDataToSQLite(string result)
         {
-            //UnitMessage UM = new UnitMessage();
-
             AudioSystem.UCM.Units[0].HiveState = 1;
             AudioSystem.UCM.Units[0].UnitSN = SN;
             AudioSystem.UCM.Units[0].ComponentSN = "ABC";
@@ -367,7 +360,6 @@ namespace Demo.Task
             AudioSystem.UCM.Units[0].EndTime = DateTime.Now;
             AudioSystem.UCM.Units[0].CT = (AudioSystem.UCM.Units[0].EndTime - AudioSystem.UCM.Units[0].StartTime).TotalSeconds;
 
-            //Xac dinh san pham la ca ngay hay ca dem
             DateTime enddt = DateTime.Now;
             if (AudioSystem.UCM.Units[0].StartTime.Hour >= 8 && AudioSystem.UCM.Units[0].StartTime.Hour <= 20)
                 AudioSystem.UCM.Units[0].Shift = "DS";
@@ -378,14 +370,14 @@ namespace Demo.Task
             PageProduction.Instance.Async_IO_Refresh(AudioSystem.UCM, 0);
         }
         #endregion
+
         #region CCD
         protected int TriggerKenyceSN(string cmd, out string Data)
         {
             UpCCDScanSN:
             int iRetCCD = 0;
             Data = "";
-            Thread.Sleep(Globals.SettingOption.上相机稳停时间);
-
+            Thread.Sleep(100);
             KeyenceService.Instance.WriteCmd(cmd, 0);
 
             SetStep("Waiting to receive camera feedback data...", MyColor.LightGreen);
@@ -421,7 +413,7 @@ namespace Demo.Task
                     KeyenceService.Instance.RecData = KeyenceService.Instance.RecData.Substring(index);
                     return true;
                 }
-                 if (KeyenceService.Instance.RecData.Length == Globals.SettingOption.载具SN长度)
+                 if (KeyenceService.Instance.RecData.Length == Globals.SettingICT.SN_Lenght)
                     return true;
                
                 if (sw.ElapsedMilliseconds > timeOutMs)

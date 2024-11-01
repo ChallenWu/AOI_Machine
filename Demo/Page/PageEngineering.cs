@@ -13,12 +13,23 @@ using Demo.Device;
 using AutoStudio.Core.Tools;
 using HB_IWatch;
 using Demo.UserControls;
+using System.Threading;
 
 
 namespace Demo.Page
 {
     public partial class PageEngineering : UserControlBase
     {
+        private static PageEngineering instance;
+        public static PageEngineering Instance
+        {
+            get
+            {
+                if (instance == null || instance.IsDisposed)
+                    instance = new PageEngineering();
+                return instance;
+            }
+        }
         public PageEngineering()
         {
             InitializeComponent();
@@ -27,7 +38,7 @@ namespace Demo.Page
             this.switchButton1.ON += SwitchButton1_ON;
             this.switchButton1.OFF += SwitchButton1_OFF;
             Init();
-            timer1.Interval = 2000;
+            timer1.Interval = 100;
             timer1.Start();
         }
 
@@ -43,10 +54,31 @@ namespace Demo.Page
             this.comboBox_Mode.SelectedIndex = 0;
         }
 
+        public void UpdateTextBox(string content)
+        {
+                UpdateText($"{DateTime.Now.ToString("yyyy-MM-dd HH:mm:dd:ss")}: {content}");
+        } 
+
+        private void UpdateText(string text)
+        {
+            // Kiểm tra nếu InvokeRequired là true, tức là đang gọi từ thread khác
+            if (txtLogEngineer.InvokeRequired)
+            {
+                // Sử dụng Invoke để thực thi UpdateText trên UI thread
+                txtLogEngineer.Invoke(new Action(() => txtLogEngineer.Text += text + "\r\n"));
+            }
+            else
+            {
+                // Nếu không cần Invoke, cập nhật trực tiếp
+                txtLogEngineer.Text += text + "\r\n";
+            }
+        }
+
         private void ComboBox_Mode_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Chon runMode
             var st1 = XStationManager.Instance.FindStationById((int)StationId.Scanner).State;
+
             if (st1 == XStationState.RUNNING || st1 == XStationState.PAUSE)
             {
                 switch (Globals.RUNMODE)
@@ -70,7 +102,6 @@ namespace Demo.Page
                         this.comboBox_Mode.SelectedIndex = 0;
                         break;
                 }
-                //this.comboBox_Mode.SelectedIndex = 0;
                 BzMessagebox.Show(("There is a task currently running.\n Please stop the device before switching modes."),
                     "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -102,18 +133,11 @@ namespace Demo.Page
 
         private void SwitchButton1_OFF()
         {
-            //if (Globals.DebugFrom != null)
-            //{
-            //    Globals.DebugFrom.Close();
-            //}
             DebugDlg.Instance.Close();
         }
 
         private void SwitchButton1_ON()
         {
-            //Globals.DebugFrom = null;
-            //Globals.DebugFrom = new DebugDlg();
-            //Globals.DebugFrom.Show();
             DebugDlg.Instance.Show();
         }
         private int iCunt = 0;

@@ -63,6 +63,26 @@ namespace Demo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _add {
+            get {
+                object obj = ResourceManager.GetObject("_add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _down {
+            get {
+                object obj = ResourceManager.GetObject("_down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _lampGray20 {
             get {
                 object obj = ResourceManager.GetObject("_lampGray20", resourceCulture);
@@ -86,6 +106,66 @@ namespace Demo.Properties {
         internal static System.Drawing.Bitmap _lampRed20 {
             get {
                 object obj = ResourceManager.GetObject("_lampRed20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _left {
+            get {
+                object obj = ResourceManager.GetObject("_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _minus {
+            get {
+                object obj = ResourceManager.GetObject("_minus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _right {
+            get {
+                object obj = ResourceManager.GetObject("_right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _rotate_antiClock {
+            get {
+                object obj = ResourceManager.GetObject("_rotate_antiClock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _rotate_clock {
+            get {
+                object obj = ResourceManager.GetObject("_rotate_clock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _up {
+            get {
+                object obj = ResourceManager.GetObject("_up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

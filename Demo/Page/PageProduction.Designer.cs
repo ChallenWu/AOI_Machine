@@ -92,7 +92,7 @@
             // stn1
             // 
             this.stn1.HIVEConnected = false;
-            this.stn1.Location = new System.Drawing.Point(751, 448);
+            this.stn1.Location = new System.Drawing.Point(749, 448);
             this.stn1.Main_SW_Path = null;
             this.stn1.MESConnected = false;
             this.stn1.MS_Hash = null;
@@ -100,7 +100,7 @@
             this.stn1.NewBackColor = System.Drawing.Color.LightGray;
             this.stn1.PDCAConnected = false;
             this.stn1.SiteName = null;
-            this.stn1.Size = new System.Drawing.Size(341, 213);
+            this.stn1.Size = new System.Drawing.Size(338, 216);
             this.stn1.STNName = "";
             this.stn1.SW_Version = "";
             this.stn1.TabIndex = 12;

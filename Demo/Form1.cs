@@ -33,17 +33,19 @@ namespace Demo
     public partial class Form1 : Form
     {
         private Dictionary<newMenuButton, Control> pageMap = new Dictionary<newMenuButton, Control>();
-        private PageEngineering PageEngineering;
+        //public PageEngineering PageEngineering;
         private Stopwatch SW_Mouse = new Stopwatch();
         private int MouseX = 0;
         private int MouseY = 0;
         public Form1()
         {
-
+            //var mainPage = PageEngineering.Instance;
             //Cài đặt đa ngôn ngữ
             MultiLanguage.ReadMultiLangFile("Language.xlsx");
             MultiLanguage.LoadFile("Language.xlsx");
             MultiLanguage.RegisterForms(this);
+
+
 
             InitializeComponent();
             //menuButton_Login11.TextButtton = "User1";
@@ -55,6 +57,7 @@ namespace Demo
 
 
             Globals.BindDevice();
+
             //Tạo đường dẫn các file
             Globals.CreateAllDirectory();
 
@@ -69,8 +72,7 @@ namespace Demo
 
             XMachine.Instance.Start(); // Machine IO System Start
 
-            CsvServer.Instance.Start();       // Excel 引擎啟動 
-            
+            CsvServer.Instance.Start();       // Excel 引擎啟動             
 
             if (Globals.SettingICT.CCD_Using)
             {
@@ -98,12 +100,10 @@ namespace Demo
 
             //Khởi tạo các task
             InitTask();
-
+            PageEngineering.Instance.UpdateTextBox("Init T");
             //Set run mode
             this.switchButton_Version.SetText(MultiLanguage.GetMessage(Globals.RUNMODE.ToString()));
             this.switchButton_Version.SetColor(MyColor.Green);
-
-            button1.Image = Image.FromFile("../../NewUI/HIVE_Idle.png");
             //Load dữ liệu từ SQLite
             DataServerManager.Instance.Load();
 
@@ -113,6 +113,7 @@ namespace Demo
                 lblLevel.Text = "Level: " + level;
             };
 
+            PageEngineering.Instance.UpdateTextBox("Open Software");
 
         }
 
@@ -141,7 +142,10 @@ namespace Demo
         {
             this.menuButton_Start.SetBackColor(MyColor.Green, MyColor.None);
             this.menuButton_Pause.SetBackColor(MyColor.Blue, MyColor.None);
-            this.menuButton_Stop.SetBackColor(MyColor.Red, MyColor.None);
+            this.menuButton_Stop.SetBackColor(MyColor.Red, MyColor.None);           
+
+
+
 
             pageMap.Add(menuButton_Login, PageLogin.Instance);
             pageMap.Add(menuButton_Alarm, PageAlarm.Instance);
@@ -150,7 +154,9 @@ namespace Demo
             pageMap.Add(menuButton_Vison, PageVision.Instance);
             pageMap.Add(menuButton_Setting, PageSetting.Instance);           
 
-            PageEngineering = new PageEngineering();
+            //PageEngineering = new PageEngineering();
+
+            
             
             foreach (KeyValuePair<newMenuButton, Control> kvp in pageMap)
             {
@@ -239,7 +245,7 @@ namespace Demo
                     }
                     //Globals.isEnableCPK = false;
                     this.pageContainer.Controls.Clear();
-                    this.pageContainer.Controls.Add(PageEngineering);
+                    this.pageContainer.Controls.Add(PageEngineering.Instance);
 
                     break;
                 case ModeType.Production:
@@ -257,8 +263,7 @@ namespace Demo
                     }
                     this.pageContainer.Controls.Clear();
                     if (Globals.SettingOption.A是否开启PDCA == false)
-                        MessageBox.Show("PDCA chưa được kích hoạt", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                        MessageBox.Show("PDCA chưa được kích hoạt", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);                        
                     break;
             }
             XMachine.Instance.MachineMode = (MachineModeType)mode;
@@ -314,6 +319,8 @@ namespace Demo
         bool isReseting;
         private void menuButton_Start_Click(object sender, EventArgs e)
         {
+            PageEngineering.Instance.UpdateTextBox("Click Start");
+
             //Kiểm tra cửa an toàn
             if (!CheckSafeDoor())
             {
@@ -363,7 +370,7 @@ namespace Demo
                 {
                     //Đổi trạng thái button
                     HBMachine.Instance.UploadMachineStateMessage(HB_IWatch.MachineSts.Running);
-                    button1.Image = Image.FromFile("../../NewUI/HIVE_Running.png");
+                    //button1.Image = Image.FromFile("../../NewUI/HIVE_Running.png");
                     //Ghi log
                     Globals.WriteCoverCTLog("The user presses the start button, the mode is:" + Globals.RUNMODE);
                     var runMode = StationRunMode.AutoRun;
@@ -411,7 +418,7 @@ namespace Demo
                     XStationManager.Instance.FindStationById((int)StationId.Scanner).Reset();
                     Globals.WriteCoverCTLog("User presses the reset button");
                     HBMachine.Instance.UploadMachineStateMessage(HB_IWatch.MachineSts.Idle);
-                    button1.Image = Image.FromFile("../../NewUI/HIVE_Idle.png");
+                    //button1.Image = Image.FromFile("../../NewUI/HIVE_Idle.png");
                 }
             }
         }
@@ -485,7 +492,7 @@ namespace Demo
 
                 HBMachine.Instance.SetMachineStatus(HB_IWatch.MachineSts.Idle);
                 HBMachine.Instance.UploadMachineStateMessage(HB_IWatch.MachineSts.Idle);
-                button1.Image = Image.FromFile("../../NewUI/HIVE_Idle.png");
+                //button1.Image = Image.FromFile("../../NewUI/HIVE_Idle.png");
                 Globals.WriteCoverCTLog("User presses the stop button");
             }
         }
@@ -541,7 +548,7 @@ namespace Demo
             if (st1 == XStationState.PAUSE)
             {
                 HBMachine.Instance.UploadMachineStateMessage(HB_IWatch.MachineSts.Running);
-                button1.Image = Image.FromFile("../../NewUI/HIVE_Running.png");
+                //button1.Image = Image.FromFile("../../NewUI/HIVE_Running.png");
                 XStationManager.Instance.Continue();
                 this.menuButton_Start.IsSelect(true);
                 Globals.WriteCoverCTLog("The user presses the pause button and the device continues to run automatically");
@@ -549,7 +556,7 @@ namespace Demo
             else
             {
                 HBMachine.Instance.UploadMachineStateMessage(HB_IWatch.MachineSts.Idle);
-                button1.Image = Image.FromFile("../../NewUI/HIVE_Idle.png");
+                //button1.Image = Image.FromFile("../../NewUI/HIVE_Idle.png");
                 XStationManager.Instance.Pause();
                 this.menuButton_Start.IsSelect(false);
                 Globals.WriteCoverCTLog("The user presses the pause button and the device pauses");
@@ -684,9 +691,5 @@ namespace Demo
             }
         }
         Rectangle OriginFormSize;
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

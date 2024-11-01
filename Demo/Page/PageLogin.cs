@@ -113,8 +113,7 @@ namespace Demo.Page
             {
                 errorProvider1.Clear();
                 AdminUserPrivilige();
-                UserAccountControl.currentAccount = UserAccountControl.Administrator;
-
+                UserAccountControl.currentAccount = UserAccountControl.Administrator;                
                 RequestUpdateLabel(comboBox_User.SelectedItem.ToString(), "Admin Level");
 
             }

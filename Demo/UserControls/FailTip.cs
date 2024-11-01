@@ -23,7 +23,7 @@ namespace HB_IWatch
         public FailTip(string message, bool IsCancelVisable = true, bool IsIgnoreVisible = false, int timeout = -1, bool IsokVisable = true)
         {
             InitializeComponent();
-            if (message.Contains(XAlarmReporter.Instance.SystemAlarms[XAlarmId.料仓料槽无料].Description))
+            if (message.Contains(XAlarmReporter.Instance.SystemAlarms[XAlarmId.DOOR_OPEN].Description))
             {
                 this.StartPosition = FormStartPosition.Manual;
                 this.Top = 100;

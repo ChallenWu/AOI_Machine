@@ -15,7 +15,8 @@ namespace Demo.UserControls
 
         public event EventHandler OnClicked;
         private Color colorSelected = Color.FromArgb(0x66, 0xD9, 0x38);
-        private Color colorUnselected = Color.FromArgb(0xEA, 0xEA, 0xEB);
+        //private Color colorUnselected = Color.FromArgb(0xEA, 0xEA, 0xEB);
+        private Color colorUnselected = Color.FromArgb(0xCF, 0xCF, 0xCF);
         private bool selected;
 
         public newMenuButton()
@@ -25,6 +26,7 @@ namespace Demo.UserControls
             this.Click += MenuButton_Click;
             this.label1.Click += MenuButton_Click;
             this.pictureBox1.Click += MenuButton_Click;
+            this.BackColor = Color.FromArgb(0xCF, 0xCF, 0xCF);
         }
         private void MenuButton_Click(object sender, EventArgs e)
         {

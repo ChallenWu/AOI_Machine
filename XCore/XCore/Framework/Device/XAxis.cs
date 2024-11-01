@@ -526,6 +526,5 @@ namespace XCore
         Up_Down,
         Rotate,
         Rotate_antiClock
-
     }
 }

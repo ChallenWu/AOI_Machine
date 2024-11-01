@@ -33,10 +33,10 @@ namespace XCore
             e.StringValue = text;
             XController.Instance.EventServer.PostEvent(xStation, XEventID.ALARM, e, null, true);
 
-            if ((sysAlarmId == XAlarmId.DOOR_OPEN || sysAlarmId == XAlarmId.AIR_LOW || sysAlarmId == XAlarmId.温控器异常) && (xStation.StationId == 0 || xStation.StationId == 1))
+            if ((sysAlarmId == XAlarmId.DOOR_OPEN || sysAlarmId == XAlarmId.AIR_LOW) && (xStation.StationId == 0 || xStation.StationId == 1))
                 XController.Instance.AlarmEventServer.PostEvent(XAlarmReporter.Instance, XEventID.ALARM, e, null, true);
 
-            if (sysAlarmId != XAlarmId.DOOR_OPEN && sysAlarmId != XAlarmId.AIR_LOW && sysAlarmId != XAlarmId.温控器异常)
+            if (sysAlarmId != XAlarmId.DOOR_OPEN && sysAlarmId != XAlarmId.AIR_LOW )
                 XController.Instance.AlarmEventServer.PostEvent(XAlarmReporter.Instance, XEventID.ALARM, e, null, true);
 
         }

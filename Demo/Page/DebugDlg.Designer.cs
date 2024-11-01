@@ -163,9 +163,8 @@
             this.btnConnectScanner = new System.Windows.Forms.Button();
             this.btnDisconnectScanner = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.xAxisControlPanel1 = new XCore.XAxisControlPanel();
-            this.xPositionTable1 = new XCore.XPositionTable();
-            this.sqLiteCommand1 = new System.Data.SQLite.SQLiteCommand();
+            this.axisControl1 = new Demo.UserControls.AxisControl();
+            this.xAxisStatusTable1 = new XCore.XAxisStatusTable();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -182,7 +181,8 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xAxisStatusTable1 = new XCore.XAxisStatusTable();
+            this.xPositionTable1 = new XCore.XPositionTable();
+            this.sqLiteCommand1 = new System.Data.SQLite.SQLiteCommand();
             this.tabControlDisplay.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -275,7 +275,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(981, 655);
+            this.tabPage6.Size = new System.Drawing.Size(178, 38);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Module 2";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -285,7 +285,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 24);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(981, 655);
+            this.tabPage7.Size = new System.Drawing.Size(178, 38);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "Module 3";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -294,7 +294,7 @@
             // 
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(981, 655);
+            this.tabPage8.Size = new System.Drawing.Size(178, 38);
             this.tabPage8.TabIndex = 3;
             this.tabPage8.Text = "Module 4";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -680,7 +680,7 @@
             // txt_Test
             // 
             this.txt_Test.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txt_Test.Location = new System.Drawing.Point(600, 559);
+            this.txt_Test.Location = new System.Drawing.Point(605, 559);
             this.txt_Test.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_Test.Multiline = true;
             this.txt_Test.Name = "txt_Test";
@@ -691,7 +691,7 @@
             // txt_Mes
             // 
             this.txt_Mes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txt_Mes.Location = new System.Drawing.Point(4, 559);
+            this.txt_Mes.Location = new System.Drawing.Point(3, 559);
             this.txt_Mes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_Mes.Multiline = true;
             this.txt_Mes.Name = "txt_Mes";
@@ -702,7 +702,7 @@
             // txt_MesCreate
             // 
             this.txt_MesCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txt_MesCreate.Location = new System.Drawing.Point(4, 6);
+            this.txt_MesCreate.Location = new System.Drawing.Point(4, 11);
             this.txt_MesCreate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_MesCreate.Multiline = true;
             this.txt_MesCreate.Name = "txt_MesCreate";
@@ -745,7 +745,7 @@
             // 
             // btn_Send
             // 
-            this.btn_Send.Location = new System.Drawing.Point(344, 6);
+            this.btn_Send.Location = new System.Drawing.Point(348, 8);
             this.btn_Send.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Send.Name = "btn_Send";
             this.btn_Send.Size = new System.Drawing.Size(184, 62);
@@ -1546,9 +1546,9 @@
             // 
             // tabControl1
             // 
+            this.tabControl1.Controls.Add(this.tabMES);
             this.tabControl1.Controls.Add(this.tabComScanner);
             this.tabControl1.Controls.Add(this.tabPLCDevice);
-            this.tabControl1.Controls.Add(this.tabMES);
             this.tabControl1.Controls.Add(this.tabPDCA);
             this.tabControl1.Controls.Add(this.tabSQL);
             this.tabControl1.Controls.Add(this.tabControlDisplay);
@@ -1722,10 +1722,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.axisControl1);
             this.tabPage1.Controls.Add(this.xAxisStatusTable1);
             this.tabPage1.Controls.Add(this.groupBox13);
             this.tabPage1.Controls.Add(this.dataGridView2);
-            this.tabPage1.Controls.Add(this.xAxisControlPanel1);
             this.tabPage1.Controls.Add(this.xPositionTable1);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
@@ -1735,31 +1735,23 @@
             this.tabPage1.Text = "MotionPLC";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // xAxisControlPanel1
+            // axisControl1
             // 
-            this.xAxisControlPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.xAxisControlPanel1.Font = new System.Drawing.Font("SimSun", 12F);
-            this.xAxisControlPanel1.Location = new System.Drawing.Point(616, 7);
-            this.xAxisControlPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.xAxisControlPanel1.MaximumSize = new System.Drawing.Size(367, 225);
-            this.xAxisControlPanel1.MinimumSize = new System.Drawing.Size(367, 225);
-            this.xAxisControlPanel1.Name = "xAxisControlPanel1";
-            this.xAxisControlPanel1.Size = new System.Drawing.Size(367, 225);
-            this.xAxisControlPanel1.TabIndex = 6;
-            this.xAxisControlPanel1.TaskId = 70;
+            this.axisControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.axisControl1.Location = new System.Drawing.Point(620, 8);
+            this.axisControl1.MaximumSize = new System.Drawing.Size(367, 225);
+            this.axisControl1.MinimumSize = new System.Drawing.Size(367, 225);
+            this.axisControl1.Name = "axisControl1";
+            this.axisControl1.Size = new System.Drawing.Size(367, 225);
+            this.axisControl1.TabIndex = 11;
             // 
-            // xPositionTable1
+            // xAxisStatusTable1
             // 
-            this.xPositionTable1.Location = new System.Drawing.Point(7, 6);
-            this.xPositionTable1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.xPositionTable1.Name = "xPositionTable1";
-            this.xPositionTable1.Size = new System.Drawing.Size(602, 398);
-            this.xPositionTable1.TabIndex = 2;
-            this.xPositionTable1.TaskId = 70;
-            // 
-            // sqLiteCommand1
-            // 
-            this.sqLiteCommand1.CommandText = null;
+            this.xAxisStatusTable1.Location = new System.Drawing.Point(619, 239);
+            this.xAxisStatusTable1.Name = "xAxisStatusTable1";
+            this.xAxisStatusTable1.Size = new System.Drawing.Size(370, 165);
+            this.xAxisStatusTable1.TabIndex = 10;
+            this.xAxisStatusTable1.TaskId = 1;
             // 
             // groupBox13
             // 
@@ -1913,13 +1905,18 @@
             this.Column3.HeaderText = "Note";
             this.Column3.Name = "Column3";
             // 
-            // xAxisStatusTable1
+            // xPositionTable1
             // 
-            this.xAxisStatusTable1.Location = new System.Drawing.Point(619, 239);
-            this.xAxisStatusTable1.Name = "xAxisStatusTable1";
-            this.xAxisStatusTable1.Size = new System.Drawing.Size(370, 165);
-            this.xAxisStatusTable1.TabIndex = 10;
-            this.xAxisStatusTable1.TaskId = 1;
+            this.xPositionTable1.Location = new System.Drawing.Point(10, 6);
+            this.xPositionTable1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.xPositionTable1.Name = "xPositionTable1";
+            this.xPositionTable1.Size = new System.Drawing.Size(602, 398);
+            this.xPositionTable1.TabIndex = 2;
+            this.xPositionTable1.TaskId = 70;
+            // 
+            // sqLiteCommand1
+            // 
+            this.sqLiteCommand1.CommandText = null;
             // 
             // DebugDlg
             // 
@@ -2111,7 +2108,13 @@
         private System.Windows.Forms.Button btnDisconnectScanner;
         private System.Windows.Forms.TabPage tabPage1;
         private XCore.XPositionTable xPositionTable1;
-        private XCore.XAxisControlPanel xAxisControlPanel1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Data.SQLite.SQLiteCommand sqLiteCommand1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private UserControls.AxisControl axisControl1;
+        private XCore.XAxisStatusTable xAxisStatusTable1;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
@@ -2124,11 +2127,5 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Data.SQLite.SQLiteCommand sqLiteCommand1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private XCore.XAxisStatusTable xAxisStatusTable1;
     }
 }

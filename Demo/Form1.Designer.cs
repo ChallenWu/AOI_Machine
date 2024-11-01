@@ -226,7 +226,6 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.BackColor = System.Drawing.SystemColors.Control;
-            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel3.Controls.Add(this.menuButton_Home, 0, 0);
@@ -302,73 +301,73 @@
             // 
             // menuButton_Home
             // 
-            this.menuButton_Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
+            this.menuButton_Home.BackColor = System.Drawing.Color.Silver;
             this.menuButton_Home.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuButton_Home.ImageShow = global::Demo.Properties.Resources.home;
-            this.menuButton_Home.Location = new System.Drawing.Point(4, 4);
+            this.menuButton_Home.Location = new System.Drawing.Point(3, 3);
             this.menuButton_Home.Name = "menuButton_Home";
             this.menuButton_Home.Selected = false;
-            this.menuButton_Home.Size = new System.Drawing.Size(181, 61);
+            this.menuButton_Home.Size = new System.Drawing.Size(182, 62);
             this.menuButton_Home.TabIndex = 14;
             this.menuButton_Home.TextButtton = "Home";
             // 
             // menuButton_Setting
             // 
-            this.menuButton_Setting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
+            this.menuButton_Setting.BackColor = System.Drawing.Color.Silver;
             this.menuButton_Setting.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuButton_Setting.ImageShow = global::Demo.Properties.Resources.setting;
-            this.menuButton_Setting.Location = new System.Drawing.Point(4, 72);
+            this.menuButton_Setting.Location = new System.Drawing.Point(3, 71);
             this.menuButton_Setting.Name = "menuButton_Setting";
             this.menuButton_Setting.Selected = false;
-            this.menuButton_Setting.Size = new System.Drawing.Size(181, 61);
+            this.menuButton_Setting.Size = new System.Drawing.Size(182, 62);
             this.menuButton_Setting.TabIndex = 15;
             this.menuButton_Setting.TextButtton = "Setting";
             // 
             // menuButton_Vison
             // 
-            this.menuButton_Vison.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
+            this.menuButton_Vison.BackColor = System.Drawing.Color.Silver;
             this.menuButton_Vison.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuButton_Vison.ImageShow = global::Demo.Properties.Resources.vision;
-            this.menuButton_Vison.Location = new System.Drawing.Point(4, 140);
+            this.menuButton_Vison.Location = new System.Drawing.Point(3, 139);
             this.menuButton_Vison.Name = "menuButton_Vison";
             this.menuButton_Vison.Selected = false;
-            this.menuButton_Vison.Size = new System.Drawing.Size(181, 61);
+            this.menuButton_Vison.Size = new System.Drawing.Size(182, 62);
             this.menuButton_Vison.TabIndex = 16;
             this.menuButton_Vison.TextButtton = "Vision";
             // 
             // menuButton_Alarm
             // 
-            this.menuButton_Alarm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
+            this.menuButton_Alarm.BackColor = System.Drawing.Color.Silver;
             this.menuButton_Alarm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuButton_Alarm.ImageShow = global::Demo.Properties.Resources.alarm;
-            this.menuButton_Alarm.Location = new System.Drawing.Point(4, 208);
+            this.menuButton_Alarm.Location = new System.Drawing.Point(3, 207);
             this.menuButton_Alarm.Name = "menuButton_Alarm";
             this.menuButton_Alarm.Selected = false;
-            this.menuButton_Alarm.Size = new System.Drawing.Size(181, 61);
+            this.menuButton_Alarm.Size = new System.Drawing.Size(182, 62);
             this.menuButton_Alarm.TabIndex = 17;
             this.menuButton_Alarm.TextButtton = "Alarm";
             // 
             // menuButton_Chart
             // 
-            this.menuButton_Chart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
+            this.menuButton_Chart.BackColor = System.Drawing.Color.Silver;
             this.menuButton_Chart.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuButton_Chart.ImageShow = global::Demo.Properties.Resources.chart;
-            this.menuButton_Chart.Location = new System.Drawing.Point(4, 276);
+            this.menuButton_Chart.Location = new System.Drawing.Point(3, 275);
             this.menuButton_Chart.Name = "menuButton_Chart";
             this.menuButton_Chart.Selected = false;
-            this.menuButton_Chart.Size = new System.Drawing.Size(181, 61);
+            this.menuButton_Chart.Size = new System.Drawing.Size(182, 62);
             this.menuButton_Chart.TabIndex = 18;
             this.menuButton_Chart.TextButtton = "Chart";
             // 
             // menuButton_Login
             // 
-            this.menuButton_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
+            this.menuButton_Login.BackColor = System.Drawing.Color.Silver;
             this.menuButton_Login.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuButton_Login.ImageShow = global::Demo.Properties.Resources.user;
-            this.menuButton_Login.Location = new System.Drawing.Point(4, 344);
+            this.menuButton_Login.Location = new System.Drawing.Point(3, 343);
             this.menuButton_Login.Name = "menuButton_Login";
             this.menuButton_Login.Selected = false;
-            this.menuButton_Login.Size = new System.Drawing.Size(181, 61);
+            this.menuButton_Login.Size = new System.Drawing.Size(182, 62);
             this.menuButton_Login.TabIndex = 13;
             this.menuButton_Login.TextButtton = "User Manager";
             // 
@@ -385,7 +384,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.pnHeader.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();

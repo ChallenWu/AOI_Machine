@@ -49,10 +49,10 @@
             this.netWorkWatcher1 = new Demo.NetWorkWatcher();
             this.switchButton1 = new Demo.SwitchButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtLogEngineer = new System.Windows.Forms.TextBox();
             this.btnSafeDoor = new System.Windows.Forms.Button();
             this.btnEMG = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -239,13 +239,33 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtLogEngineer);
             this.panel1.Controls.Add(this.xStationStateBar1);
             this.panel1.Controls.Add(this.xTaskStepBar1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(645, 661);
             this.panel1.TabIndex = 112;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 81);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 16);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "MainLog";
+            // 
+            // txtLogEngineer
+            // 
+            this.txtLogEngineer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogEngineer.Location = new System.Drawing.Point(8, 102);
+            this.txtLogEngineer.Multiline = true;
+            this.txtLogEngineer.Name = "txtLogEngineer";
+            this.txtLogEngineer.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtLogEngineer.Size = new System.Drawing.Size(634, 556);
+            this.txtLogEngineer.TabIndex = 4;
             // 
             // btnSafeDoor
             // 
@@ -264,24 +284,6 @@
             this.btnEMG.TabIndex = 114;
             this.btnEMG.Text = "EMG";
             this.btnEMG.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(8, 102);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(634, 556);
-            this.textBox1.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 16);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "MainLog";
             // 
             // PageEngineering
             // 
@@ -340,6 +342,6 @@
         private System.Windows.Forms.Button btnSafeDoor;
         private System.Windows.Forms.Button btnEMG;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLogEngineer;
     }
 }

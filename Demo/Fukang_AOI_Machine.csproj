@@ -178,6 +178,12 @@
     <Compile Include="UserControls\Alarm_Duration.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UserControls\AxisControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AxisControl.Designer.cs">
+      <DependentUpon>AxisControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ChartIO_Update.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -354,6 +360,9 @@
     <EmbeddedResource Include="UserControls\Alarm_Duration.resx">
       <DependentUpon>Alarm_Duration.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AxisControl.resx">
+      <DependentUpon>AxisControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ChartIO_Update.resx">
       <DependentUpon>ChartIO_Update.cs</DependentUpon>
     </EmbeddedResource>
@@ -431,45 +440,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="NewUI\Alarm_Alerted.png" />
-    <Content Include="NewUI\Alarm_De_energized.png" />
-    <Content Include="NewUI\Alarm_Disabled.png" />
-    <Content Include="NewUI\Alarm_Energized.png" />
-    <Content Include="NewUI\Audio_Logo.png" />
-    <Content Include="NewUI\Config_De_energized.png" />
-    <Content Include="NewUI\Config_Disabled.png" />
-    <Content Include="NewUI\Config_Energized.png" />
-    <Content Include="NewUI\Data_De_energized.png" />
-    <Content Include="NewUI\Data_Disabled.png" />
-    <Content Include="NewUI\Data_Energized.png" />
-    <Content Include="NewUI\HIVE_Disabled.png" />
-    <Content Include="NewUI\HIVE_DT.png" />
-    <Content Include="NewUI\HIVE_Engineering.png" />
-    <Content Include="NewUI\HIVE_Idle.png" />
-    <Content Include="NewUI\HIVE_Plan_DT.png" />
-    <Content Include="NewUI\HIVE_Running.png" />
-    <Content Include="NewUI\Home_De_energized.png" />
-    <Content Include="NewUI\Home_Disabled.png" />
-    <Content Include="NewUI\Home_Energized.png" />
-    <Content Include="NewUI\Level1.png" />
-    <Content Include="NewUI\Level2.png" />
-    <Content Include="NewUI\Level3.png" />
-    <Content Include="NewUI\No_login.png" />
-    <Content Include="NewUI\Paused_De_energized.png" />
-    <Content Include="NewUI\Paused_Disabled.png" />
-    <Content Include="NewUI\Paused_Energized.png" />
-    <Content Include="NewUI\Running_De_energized.png" />
-    <Content Include="NewUI\Running_Disabled.png" />
-    <Content Include="NewUI\Running_Energized.png" />
-    <Content Include="NewUI\Setting_De_energized.png" />
-    <Content Include="NewUI\Setting_Disabled.png" />
-    <Content Include="NewUI\Setting_Energized.png" />
-    <Content Include="NewUI\Stopped_De_energized.png" />
-    <Content Include="NewUI\Stopped_Disabled.png" />
-    <Content Include="NewUI\Stopped_Energized.png" />
-    <Content Include="NewUI\Vision_De_energized.png" />
-    <Content Include="NewUI\Vision_Disabled.png" />
-    <Content Include="NewUI\Vision_Energized.png" />
     <Content Include="Resources\alarm.png" />
     <Content Include="Resources\chart.png" />
     <Content Include="Resources\home.png" />
@@ -482,6 +452,14 @@
     <Content Include="Resources\stop.png" />
     <Content Include="Resources\user.png" />
     <Content Include="Resources\vision.png" />
+    <Content Include="Resources\_add.png" />
+    <Content Include="Resources\_minus.png" />
+    <None Include="Resources\_up.png" />
+    <None Include="Resources\_rotate_antiClock.png" />
+    <None Include="Resources\_rotate_clock.png" />
+    <None Include="Resources\_right.png" />
+    <None Include="Resources\_down.png" />
+    <None Include="Resources\_left.png" />
     <None Include="Resources\_lampRed20.png" />
     <None Include="Resources\_lampGray20.png" />
     <None Include="Resources\_lampGreen20.png" />
