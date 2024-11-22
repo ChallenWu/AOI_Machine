@@ -60,10 +60,10 @@ namespace Demo.Device
             }
             try
             {
-                    port.Open();
-                    IsConnected = true;
-                    port.DataReceived += Port_DataReceived;
-                    return true;
+                port.Open();
+                IsConnected = true;
+                port.DataReceived += Port_DataReceived;
+                return true;
             }
             catch (Exception ex)
             {
@@ -83,7 +83,7 @@ namespace Demo.Device
         private void Port_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             StrData = port.ReadLine();
-            DebugDlg.Instance.DataReceivedHandler(StrData);
+            DebugDlg.Instance.UpdateUIText(StrData);
         }
         public string ReadQR()
         {

@@ -29,47 +29,47 @@ namespace Demo
             this.errorProvider_DiffPassWord.Clear();
             if (UserAccountControl.IsRepeatCount(txt_Account.Text))
             {
-                this.errorProvider_DiffPassWord.SetError(txt_Account, "用户已存在");
+                this.errorProvider_DiffPassWord.SetError(txt_Account, "Người dùng đã tồn tại");
                 return;
             }
 
             if (txt_Account.Text == "")
             {
-                this.errorProvider_DiffPassWord.SetError(txt_Account, "账号不能为空");
+                this.errorProvider_DiffPassWord.SetError(txt_Account, "Tài khoản không thể trống");
                 return;
             }
 
             if (txt_Name.Text == "")
             {
-                this.errorProvider_DiffPassWord.SetError(txt_Name, "姓名不能为空");
+                this.errorProvider_DiffPassWord.SetError(txt_Name, "Tên không thể trống");
                 return;
             }
 
             if (txt_PassWord1.Text == "")
             {
-                this.errorProvider_DiffPassWord.SetError(txt_PassWord1, "密码不能为空");
+                this.errorProvider_DiffPassWord.SetError(txt_PassWord1, "Mật khẩu không thể trống");
                 return;
             }
 
             if (txt_PassWord1.Text != txt_PassWord2.Text)
             {
-                this.errorProvider_DiffPassWord.SetError(txt_PassWord2, "输入密码不一致");
+                this.errorProvider_DiffPassWord.SetError(txt_PassWord2, "Mật khẩu đầu vào không nhất quán");
                 return;
             }
 
             Match mInfo = Regex.Match(txt_Account.Text.Substring(0, 1), @"^[A-Za-z]+$");
             if (!mInfo.Success) //如果是英文
             {
-                this.errorProvider_DiffPassWord.SetError(txt_Account, "账号第一位必须为字母！");
+                this.errorProvider_DiffPassWord.SetError(txt_Account, "Chữ số đầu tiên của số tài khoản phải là chữ cái！");
                 return;
             }
 
             UserAccount account = new UserAccount(txt_Account.Text, txt_Name.Text, txt_PassWord1.Text);
             if (!UserAccountControl.AddAccount(account))
-                BzMessagebox.Show(MultiLanguage.GetMessage("注册失败"));
+                BzMessagebox.Show(MultiLanguage.GetMessage("Đăng ký không thành công"));
             else
             {
-                BzMessagebox.Show(MultiLanguage.GetMessage("注册成功"));
+                BzMessagebox.Show(MultiLanguage.GetMessage("Đăng ký thành công"));
                 if (OnRegisterSuccess != null)
                     OnRegisterSuccess();
             }

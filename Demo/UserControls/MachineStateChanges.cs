@@ -142,10 +142,10 @@ namespace Demo.UserControls
             {
 
                 #region 读表处理；
-                /*没有行数的情况；*/
+                /*No row number；*/
                 if (DataSourceTable.Rows.Count == 0)
                 {
-                    ///假如一行数据都没有为空；那就空数据；
+                    //If no row of data is empty, then empty data;
                     for (int i = 0; i < DaysNum; i++)
                     {
                         _dicBarData.Add(DateTime.Now.AddDays(1 - DaysNum + i).ToString(), dTemp);
@@ -154,10 +154,10 @@ namespace Demo.UserControls
                 }
 
                 /*************************************************/
-                /*有行数的情况；行数不一定够7行即7天，数据补充；*/
-                string keyDate = DataSourceTable.Rows[rowNum - 1][0].ToString();//得到最新日期；
+                /*Có trường hợp số hàng; số hàng có thể không đủ cho 7 hàng hoặc 7 ngày, dữ liệu được bổ sung;*/
+                string keyDate = DataSourceTable.Rows[rowNum - 1][0].ToString();//Lấy ngày mới nhất;
                 DateTime dtTemp;
-                dtTemp = Convert.ToDateTime(keyDate);//转换成dateTime格式；
+                dtTemp = Convert.ToDateTime(keyDate);//Convert to dateTime format;
                 string sTemp;
                 for (int i = 0; i < DaysNum - rowNum; i++)
                 {
@@ -167,38 +167,46 @@ namespace Demo.UserControls
 
 
                 /****************************************************/
+                double[] abc = new double[5];
+                //Vòng quét 7D
                 for (int i = 0; i < rowNum; i++)
                 {
+                    
                     string key;
-                    key = ((DateTime)DataSourceTable.Rows[i][0]).ToString("yyyy/MM/dd");//日期；
-                    //第1/2/3/4/5列分别代表running/idle/Eng/PlannedDown/Down;
+                    key = ((DateTime)DataSourceTable.Rows[i][0]).ToString("yyyy/MM/dd");
+                    //1/2/3/4/5 đại diện cho trạng thái running/idle/Engineering/PlannedDown/Downtime;
                     double[] db1 = new double[5];
                     for (int j = 1; j < DataSourceTable.Columns.Count; j++)
                     {
                         double d1 = 0.0;
                         double d2 = 0.0;
+                        //Lấy dữ liệu từ bảng dt
                         d1 = (double)DataSourceTable.Rows[i][j];
-
+                        //Quy đổi theo tỷ lệ số phút trong ngày
                         d2 = Math.Round(d1 / 1440, 3);
 
 
                         if (d2 > 1)
-                        { d2 = 0; }
+                        {
+                            abc[j-1] = d2 - 1;
+                            d2 = 1;                            
+                        }
+                        //cũ là = 0;
 
                         if (d2 < 0)
-                        { d2 = 0; }
-
+                        { d2 = 0;}
 
                         db1[j - 1] = d2;
+                        //Console.WriteLine(db1[j - 1]);
                     }
 
 
 
                     DateTime tem = (DateTime)(DataSourceTable.Rows[i][0]);
 
-                    ///What to do if the percentage of idle time is still greater than 1?
+                    //What to do if the percentage of idle time is still greater than 1?
                     for (int j = 0; j < 5; j++)
-                    {
+                    {                       
                         if (db1[j] == 1)
                         {
                             db1[j] = 2 - db1[0] - db1[1] - db1[2] - db1[3] - db1[4];
@@ -206,7 +214,7 @@ namespace Demo.UserControls
                         }
                     }
 
-
+                    //runing + engineer + plandown + dowtime = idle time
                     double dTemp2 = db1[0] + db1[2] + db1[3] + db1[4];
                     //double dTemp2 = db1[1];
                     if (dTemp2 > 1)
@@ -237,10 +245,6 @@ namespace Demo.UserControls
                     {
                         db1[1] = 1 - dTemp2;
                     }
-
-
-
-
 
                     /////其余时间算作idle时间；这是idle时间占比；
                     //if (i < rowNum - 1)
@@ -281,26 +285,7 @@ namespace Demo.UserControls
                 _errorMessage = ex.ToString();
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
         #endregion
-
-        private void chart1_MouseHover(object sender, EventArgs e)
-        {
-           
-
-        }
 
         private void chart1_MouseHover(object sender, MouseEventArgs e)
         {
@@ -363,7 +348,6 @@ namespace Demo.UserControls
         Hive运行时间数据表读报错,
         Hive运行时间数据表行数少于1,
         Hive运行时间数据表列数少于1,
-
     }
 
     public class HiveColor

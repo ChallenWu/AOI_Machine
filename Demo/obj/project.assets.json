@@ -41,7 +41,7 @@
           }
         }
       },
-      "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
+      "Stub.System.Data.SQLite.Core.NetFramework/1.0.119": {
         "type": "package",
         "compile": {
           "lib/net46/System.Data.SQLite.dll": {
@@ -57,21 +57,21 @@
           "buildTransitive/net46/Stub.System.Data.SQLite.Core.NetFramework.targets": {}
         }
       },
-      "System.Data.SQLite/1.0.118": {
+      "System.Data.SQLite/1.0.119": {
         "type": "package",
         "dependencies": {
-          "System.Data.SQLite.Core": "[1.0.118]",
-          "System.Data.SQLite.EF6": "[1.0.118]",
-          "System.Data.SQLite.Linq": "[1.0.118]"
+          "System.Data.SQLite.Core": "[1.0.119]",
+          "System.Data.SQLite.EF6": "[1.0.119]",
+          "System.Data.SQLite.Linq": "[1.0.119]"
         }
       },
-      "System.Data.SQLite.Core/1.0.118": {
+      "System.Data.SQLite.Core/1.0.119": {
         "type": "package",
         "dependencies": {
-          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.118]"
+          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.119]"
         }
       },
-      "System.Data.SQLite.EF6/1.0.118": {
+      "System.Data.SQLite.EF6/1.0.119": {
         "type": "package",
         "dependencies": {
           "EntityFramework": "6.4.4"
@@ -83,13 +83,22 @@
           "lib/net46/System.Data.SQLite.EF6.dll": {}
         }
       },
-      "System.Data.SQLite.Linq/1.0.118": {
+      "System.Data.SQLite.Linq/1.0.119": {
         "type": "package",
         "compile": {
           "lib/net46/System.Data.SQLite.Linq.dll": {}
         },
         "runtime": {
           "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      },
+      "OVisionPro/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/OVisionPro.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OVisionPro.dll": {}
         }
       }
     },
@@ -133,7 +142,7 @@
           }
         }
       },
-      "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
+      "Stub.System.Data.SQLite.Core.NetFramework/1.0.119": {
         "type": "package",
         "compile": {
           "lib/net46/System.Data.SQLite.dll": {
@@ -149,21 +158,21 @@
           "buildTransitive/net46/Stub.System.Data.SQLite.Core.NetFramework.targets": {}
         }
       },
-      "System.Data.SQLite/1.0.118": {
+      "System.Data.SQLite/1.0.119": {
         "type": "package",
         "dependencies": {
-          "System.Data.SQLite.Core": "[1.0.118]",
-          "System.Data.SQLite.EF6": "[1.0.118]",
-          "System.Data.SQLite.Linq": "[1.0.118]"
+          "System.Data.SQLite.Core": "[1.0.119]",
+          "System.Data.SQLite.EF6": "[1.0.119]",
+          "System.Data.SQLite.Linq": "[1.0.119]"
         }
       },
-      "System.Data.SQLite.Core/1.0.118": {
+      "System.Data.SQLite.Core/1.0.119": {
         "type": "package",
         "dependencies": {
-          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.118]"
+          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.119]"
         }
       },
-      "System.Data.SQLite.EF6/1.0.118": {
+      "System.Data.SQLite.EF6/1.0.119": {
         "type": "package",
         "dependencies": {
           "EntityFramework": "6.4.4"
@@ -175,13 +184,22 @@
           "lib/net46/System.Data.SQLite.EF6.dll": {}
         }
       },
-      "System.Data.SQLite.Linq/1.0.118": {
+      "System.Data.SQLite.Linq/1.0.119": {
         "type": "package",
         "compile": {
           "lib/net46/System.Data.SQLite.Linq.dll": {}
         },
         "runtime": {
           "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      },
+      "OVisionPro/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/OVisionPro.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OVisionPro.dll": {}
         }
       }
     },
@@ -225,7 +243,7 @@
           }
         }
       },
-      "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
+      "Stub.System.Data.SQLite.Core.NetFramework/1.0.119": {
         "type": "package",
         "compile": {
           "lib/net46/System.Data.SQLite.dll": {
@@ -241,21 +259,21 @@
           "buildTransitive/net46/Stub.System.Data.SQLite.Core.NetFramework.targets": {}
         }
       },
-      "System.Data.SQLite/1.0.118": {
+      "System.Data.SQLite/1.0.119": {
         "type": "package",
         "dependencies": {
-          "System.Data.SQLite.Core": "[1.0.118]",
-          "System.Data.SQLite.EF6": "[1.0.118]",
-          "System.Data.SQLite.Linq": "[1.0.118]"
+          "System.Data.SQLite.Core": "[1.0.119]",
+          "System.Data.SQLite.EF6": "[1.0.119]",
+          "System.Data.SQLite.Linq": "[1.0.119]"
         }
       },
-      "System.Data.SQLite.Core/1.0.118": {
+      "System.Data.SQLite.Core/1.0.119": {
         "type": "package",
         "dependencies": {
-          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.118]"
+          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.119]"
         }
       },
-      "System.Data.SQLite.EF6/1.0.118": {
+      "System.Data.SQLite.EF6/1.0.119": {
         "type": "package",
         "dependencies": {
           "EntityFramework": "6.4.4"
@@ -267,13 +285,22 @@
           "lib/net46/System.Data.SQLite.EF6.dll": {}
         }
       },
-      "System.Data.SQLite.Linq/1.0.118": {
+      "System.Data.SQLite.Linq/1.0.119": {
         "type": "package",
         "compile": {
           "lib/net46/System.Data.SQLite.Linq.dll": {}
         },
         "runtime": {
           "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      },
+      "OVisionPro/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/OVisionPro.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OVisionPro.dll": {}
         }
       }
     },
@@ -317,7 +344,7 @@
           }
         }
       },
-      "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
+      "Stub.System.Data.SQLite.Core.NetFramework/1.0.119": {
         "type": "package",
         "compile": {
           "lib/net46/System.Data.SQLite.dll": {
@@ -333,21 +360,21 @@
           "buildTransitive/net46/Stub.System.Data.SQLite.Core.NetFramework.targets": {}
         }
       },
-      "System.Data.SQLite/1.0.118": {
+      "System.Data.SQLite/1.0.119": {
         "type": "package",
         "dependencies": {
-          "System.Data.SQLite.Core": "[1.0.118]",
-          "System.Data.SQLite.EF6": "[1.0.118]",
-          "System.Data.SQLite.Linq": "[1.0.118]"
+          "System.Data.SQLite.Core": "[1.0.119]",
+          "System.Data.SQLite.EF6": "[1.0.119]",
+          "System.Data.SQLite.Linq": "[1.0.119]"
         }
       },
-      "System.Data.SQLite.Core/1.0.118": {
+      "System.Data.SQLite.Core/1.0.119": {
         "type": "package",
         "dependencies": {
-          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.118]"
+          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.119]"
         }
       },
-      "System.Data.SQLite.EF6/1.0.118": {
+      "System.Data.SQLite.EF6/1.0.119": {
         "type": "package",
         "dependencies": {
           "EntityFramework": "6.4.4"
@@ -359,13 +386,22 @@
           "lib/net46/System.Data.SQLite.EF6.dll": {}
         }
       },
-      "System.Data.SQLite.Linq/1.0.118": {
+      "System.Data.SQLite.Linq/1.0.119": {
         "type": "package",
         "compile": {
           "lib/net46/System.Data.SQLite.Linq.dll": {}
         },
         "runtime": {
           "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      },
+      "OVisionPro/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/OVisionPro.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OVisionPro.dll": {}
         }
       }
     },
@@ -409,7 +445,7 @@
           }
         }
       },
-      "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
+      "Stub.System.Data.SQLite.Core.NetFramework/1.0.119": {
         "type": "package",
         "compile": {
           "lib/net46/System.Data.SQLite.dll": {
@@ -425,21 +461,21 @@
           "buildTransitive/net46/Stub.System.Data.SQLite.Core.NetFramework.targets": {}
         }
       },
-      "System.Data.SQLite/1.0.118": {
+      "System.Data.SQLite/1.0.119": {
         "type": "package",
         "dependencies": {
-          "System.Data.SQLite.Core": "[1.0.118]",
-          "System.Data.SQLite.EF6": "[1.0.118]",
-          "System.Data.SQLite.Linq": "[1.0.118]"
+          "System.Data.SQLite.Core": "[1.0.119]",
+          "System.Data.SQLite.EF6": "[1.0.119]",
+          "System.Data.SQLite.Linq": "[1.0.119]"
         }
       },
-      "System.Data.SQLite.Core/1.0.118": {
+      "System.Data.SQLite.Core/1.0.119": {
         "type": "package",
         "dependencies": {
-          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.118]"
+          "Stub.System.Data.SQLite.Core.NetFramework": "[1.0.119]"
         }
       },
-      "System.Data.SQLite.EF6/1.0.118": {
+      "System.Data.SQLite.EF6/1.0.119": {
         "type": "package",
         "dependencies": {
           "EntityFramework": "6.4.4"
@@ -451,13 +487,22 @@
           "lib/net46/System.Data.SQLite.EF6.dll": {}
         }
       },
-      "System.Data.SQLite.Linq/1.0.118": {
+      "System.Data.SQLite.Linq/1.0.119": {
         "type": "package",
         "compile": {
           "lib/net46/System.Data.SQLite.Linq.dll": {}
         },
         "runtime": {
           "lib/net46/System.Data.SQLite.Linq.dll": {}
+        }
+      },
+      "OVisionPro/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/OVisionPro.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OVisionPro.dll": {}
         }
       }
     }
@@ -550,10 +595,10 @@
         "packageIcon.png"
       ]
     },
-    "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
-      "sha512": "oKvqJyhos18gUWQ7DphJwke15HsmXjcfaYm/qymJDkXHraqwDy0BqYMbbwDSJ/bmcbhug3jQEZ1N1FjynGFFyg==",
+    "Stub.System.Data.SQLite.Core.NetFramework/1.0.119": {
+      "sha512": "8b4SbSXAxXJ8tfn6bnBu0m+HXMZvkE+BfogUKITRFm+snxfT5BTK7fLZaAsNoFX8DkBBjtCEDd+ajWkcyu55QA==",
       "type": "package",
-      "path": "stub.system.data.sqlite.core.netframework/1.0.118",
+      "path": "stub.system.data.sqlite.core.netframework/1.0.119",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -592,36 +637,36 @@
         "lib/net46/System.Data.SQLite.dll",
         "lib/net46/System.Data.SQLite.dll.altconfig",
         "lib/net46/System.Data.SQLite.xml",
-        "stub.system.data.sqlite.core.netframework.1.0.118.nupkg.sha512",
+        "stub.system.data.sqlite.core.netframework.1.0.119.nupkg.sha512",
         "stub.system.data.sqlite.core.netframework.nuspec"
       ]
     },
-    "System.Data.SQLite/1.0.118": {
-      "sha512": "lm+Qc7SxuMNl/HpyAbJhQng+snqUs38jaC+GvKoYm5/w+RCTspvM6aFvdWXn6+yhntJR8FnbPWZ7oi2K4UL2vQ==",
+    "System.Data.SQLite/1.0.119": {
+      "sha512": "JSOJpnBf9goMnxGTJFGCmm6AffxgtpuXNXV5YvWO8UNC2zwd12qkUe5lAbnY+2ohIkIukgIjbvR1RA/sWILv3w==",
       "type": "package",
-      "path": "system.data.sqlite/1.0.118",
+      "path": "system.data.sqlite/1.0.119",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "system.data.sqlite.1.0.118.nupkg.sha512",
+        "system.data.sqlite.1.0.119.nupkg.sha512",
         "system.data.sqlite.nuspec"
       ]
     },
-    "System.Data.SQLite.Core/1.0.118": {
-      "sha512": "2V1PsfBeqWlZxF/VtB8lQKPfDBayCU8zD5Xc3Mq7cILOa2ZqpPDSwMP0fTfk1gtGSStSk//DxKiGy6zwCQs7Uw==",
+    "System.Data.SQLite.Core/1.0.119": {
+      "sha512": "bhQB8HVtRA+OOYw8UTD1F1kU+nGJ0/OZvH1JmlVUI4bGvgVEWeX1NcHjA765NvUoRVuCPlt8PrEpZ1thSsk1jg==",
       "type": "package",
-      "path": "system.data.sqlite.core/1.0.118",
+      "path": "system.data.sqlite.core/1.0.119",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "system.data.sqlite.core.1.0.118.nupkg.sha512",
+        "system.data.sqlite.core.1.0.119.nupkg.sha512",
         "system.data.sqlite.core.nuspec"
       ]
     },
-    "System.Data.SQLite.EF6/1.0.118": {
-      "sha512": "6OqO3OA8tej0BidxjYxutfR2HlodiYAA3qU4BtYe/wQdXJ75rumiAr9inYJaxFkwgGb8jW1qyFy953ZFyCOe8A==",
+    "System.Data.SQLite.EF6/1.0.119": {
+      "sha512": "BwwgCSeA80gsxdXtU7IQEBrN9kQXWQrD11hNYOJZbXBBI1C4r7hA4QhBAalO1nzijXikthGRUADIEMI3nlucLA==",
       "type": "package",
-      "path": "system.data.sqlite.ef6/1.0.118",
+      "path": "system.data.sqlite.ef6/1.0.119",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -647,7 +692,7 @@
         "lib/net451/System.Data.SQLite.EF6.dll",
         "lib/net46/System.Data.SQLite.EF6.dll",
         "lib/netstandard2.1/System.Data.SQLite.EF6.dll",
-        "system.data.sqlite.ef6.1.0.118.nupkg.sha512",
+        "system.data.sqlite.ef6.1.0.119.nupkg.sha512",
         "system.data.sqlite.ef6.nuspec",
         "tools/net40/install.ps1",
         "tools/net45/install.ps1",
@@ -655,10 +700,10 @@
         "tools/net46/install.ps1"
       ]
     },
-    "System.Data.SQLite.Linq/1.0.118": {
-      "sha512": "8cPMubj5tEvoa5Mu/wQaisUnrG9NcoMGFh6B9zDUxnTXuGACi+vwEqIIX+njdFJYPIJrnmGEiHV1T+Lr3YH7jg==",
+    "System.Data.SQLite.Linq/1.0.119": {
+      "sha512": "tkzb9aKEiQd18UW8VS6+vGtrkhcp4mjHg/AAKwNN8u7aWoBswquOnU07016MfTXyBUAR67mepWUhFC8zqNdPnA==",
       "type": "package",
-      "path": "system.data.sqlite.linq/1.0.118",
+      "path": "system.data.sqlite.linq/1.0.119",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -677,15 +722,21 @@
         "lib/net45/System.Data.SQLite.Linq.dll",
         "lib/net451/System.Data.SQLite.Linq.dll",
         "lib/net46/System.Data.SQLite.Linq.dll",
-        "system.data.sqlite.linq.1.0.118.nupkg.sha512",
+        "system.data.sqlite.linq.1.0.119.nupkg.sha512",
         "system.data.sqlite.linq.nuspec"
       ]
+    },
+    "OVisionPro/1.0.0": {
+      "type": "project",
+      "path": "../OVisionPro/OVisionPro.csproj",
+      "msbuildProject": "../OVisionPro/OVisionPro.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
       "Newtonsoft.Json >= 13.0.3",
-      "System.Data.SQLite >= 1.0.118"
+      "OVisionPro >= 1.0.0",
+      "System.Data.SQLite >= 1.0.119"
     ]
   },
   "packageFolders": {
@@ -694,11 +745,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\20241031\\Demo\\Fukang_AOI_Machine.csproj",
+      "projectUniqueName": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\Demo\\Fukang_AOI_Machine.csproj",
       "projectName": "Demo",
-      "projectPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\20241031\\Demo\\Fukang_AOI_Machine.csproj",
+      "projectPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\Demo\\Fukang_AOI_Machine.csproj",
       "packagesPath": "C:\\Users\\52Hz\\.nuget\\packages\\",
-      "outputPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\20241031\\Demo\\obj\\",
+      "outputPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\Demo\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -714,7 +765,11 @@
       },
       "frameworks": {
         "net472": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\OVisionPro\\OVisionPro.csproj": {
+              "projectPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\OVisionPro\\OVisionPro.csproj"
+            }
+          }
         }
       },
       "restoreAuditProperties": {
@@ -732,7 +787,7 @@
           },
           "System.Data.SQLite": {
             "target": "Package",
-            "version": "[1.0.118, )"
+            "version": "[1.0.119, )"
           }
         }
       }

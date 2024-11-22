@@ -74,6 +74,9 @@
     <Compile Include="ADLINK\APS168.cs" />
     <Compile Include="ADLINK\APS_Define.cs" />
     <Compile Include="ADLINK\Dask.cs" />
+    <Compile Include="Config\TABLEHEAD.cs" />
+    <Compile Include="Config\XModelManager.cs" />
+    <Compile Include="Config\XModels.cs" />
     <Compile Include="Config\XSettingManager.cs" />
     <Compile Include="Framework\Alarm\Logger\XLogger.cs" />
     <Compile Include="Framework\Alarm\XAlarmEventArgs.cs" />
@@ -140,6 +143,24 @@
     </Compile>
     <Compile Include="UserControls\XDoTable.designer.cs">
       <DependentUpon>XDoTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\XPositionModelChange.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\XPositionModelChange.Designer.cs">
+      <DependentUpon>XPositionModelChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\XPositionModelsConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\XPositionModelsConfirm.Designer.cs">
+      <DependentUpon>XPositionModelsConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\XPositionModelsTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\XPositionModelsTable.Designer.cs">
+      <DependentUpon>XPositionModelsTable.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\XSettingGrid.cs">
       <SubType>UserControl</SubType>
@@ -245,6 +266,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\XDoTable.resx">
       <DependentUpon>XDoTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\XPositionModelChange.resx">
+      <DependentUpon>XPositionModelChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\XPositionModelsConfirm.resx">
+      <DependentUpon>XPositionModelsConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\XPositionModelsTable.resx">
+      <DependentUpon>XPositionModelsTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\XSettingGrid.resx">
       <DependentUpon>XSettingGrid.cs</DependentUpon>

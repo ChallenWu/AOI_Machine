@@ -12,9 +12,17 @@ using BoTech;
 using static NPOI.HSSF.Util.HSSFColor;
 using System.Data;
 using NPOI.SS.Formula.Functions;
+using System.Diagnostics;
 
 namespace HB_IWatch
 {
+
+    enum StationRunMode
+    {
+        EmptyRun,
+        AutoRun,
+        CPK_Inspection,
+    }
     public enum MachineSts
     {
         /// <summary>
@@ -113,13 +121,15 @@ namespace HB_IWatch
         /// </summary>
         /// <param name="hs"></param>
         /// <returns></returns>
-        public string UploadMachineStateMessage(MachineSts hs)
+        public string UploadMachineStateMessage(MachineSts machineStatus)
         {
-            DataTable temDt = DataServerManager.Instance.SelectLastMachineState();
-            HiveMessage hm = new HiveMessage() { HappenTime = DateTime.Now, MachineState = (int)hs, PreviousState = 0, TimeDuration = 0 };
+            //Lấy trạng thái previousStatus từ SQLite
+            DataTable temDt = DataServerManager.Instance.SelectLastMachineState();  
 
+            HiveMessage hm = new HiveMessage() { HappenTime = DateTime.Now, MachineState = (int)machineStatus, PreviousState = 0, TimeDuration = 0 };
 
-            #region 修改
+            #region Modify data
+            //Không có dữ liệu nào được đọc ra
             if (temDt.Rows.Count <= 0)
             {
                 DataServerManager.Instance.InsertMachineState(hm);
@@ -128,35 +138,58 @@ namespace HB_IWatch
             {
                 DateTime dtt = (DateTime)temDt.Rows[0][1];
                 hm.PreviousState = (int)temDt.Rows[0][3];
-                /*禁用；*/
-                //hm.TimeDuration = (hm.HappenTime - dtt).Ticks;
-                /*禁用；*/
-
-
-                /*新增；*/
                 try
                 {
-                    if (hm.HappenTime.Date.Day - dtt.Day == 1)
-                    {
-                        //如果隔天；向数据库插入一条状态不变的数据；
-                        hm.TimeDuration = (dtt.Date.AddDays(1) - dtt).Ticks;
-                        //edit
-                        hm.TimeDuration = (long)((hm.HappenTime - dtt).TotalSeconds);
+                    var intDay = hm.HappenTime.Date.Day - dtt.Day;
+                    //if (intDay == 1)
+                    //{
+                    //    //for(int i = 0; i < temDt.Rows.Count;)
+                    //    //If the next day, insert a piece of data with unchanged status into the database;
+                    //    hm.TimeDuration = (long)(hm.HappenTime - dtt).TotalSeconds;
+                    //    hm.MachineState = (int)temDt.Rows[0][3];
+                    //    DataServerManager.Instance.InsertMachineState(hm);
 
-                        hm.MachineState = (int)temDt.Rows[0][3];
-                        DataServerManager.Instance.InsertMachineState(hm);
-                    }
-                    else if ((hm.HappenTime.Date.Day - dtt.Day == 0))
+
+                    //}
+                    if (intDay == 0)
                     {
-                        //如果是一天内的生产；
-                        hm.TimeDuration = (hm.HappenTime - dtt).Ticks;
-                        hm.TimeDuration = (long)((hm.HappenTime - dtt).TotalSeconds);
+                        //If it is produced within one day;
+                        hm.TimeDuration = (long)(hm.HappenTime - dtt).TotalSeconds;
                         //edit
                         DataServerManager.Instance.InsertMachineState(hm);
                     }
                     else
                     {
-                        //多天数据不处理；
+                        //Multiple days of data will be insert a status on 00:00:00 AM everyday
+                        if (intDay >= 1)
+                        {
+                            if (intDay > 7)
+                                intDay = 7;
+
+                            //Bù vào thời điểm trống các ngày
+                            for (int i = 0; i < intDay; i++)
+                            {
+                                //Lấy dữ liệu trạng thái gần nhất
+                                temDt = DataServerManager.Instance.SelectLastMachineState();
+                                //Tính thời điểm
+
+                                var transday = DateTime.Now.AddDays(-intDay + 1 +  i).Date.AddSeconds(-1);
+                                hm.TimeDuration = (long)(transday - (DateTime)temDt.Rows[0][1]).TotalSeconds;
+                                //Trạng thái thiết bị
+                                hm.MachineState = (int)temDt.Rows[0][3];
+                                //Thời gian insert
+                                hm.HappenTime = transday;
+                                //Insert trạng thái vào sql
+                                DataServerManager.Instance.InsertMachineState(hm);
+                            }
+
+
+                            temDt = DataServerManager.Instance.SelectLastMachineState();
+                            hm.HappenTime = DateTime.Now;
+                            hm.TimeDuration = (long)(DateTime.Now - (DateTime)temDt.Rows[0][1]).TotalSeconds;
+                            hm.MachineState = (int)machineStatus;
+                            DataServerManager.Instance.InsertMachineState(hm);
+                        }
                     }
                 }
                 catch
@@ -222,11 +255,16 @@ namespace HB_IWatch
 
         // 显示错误对话框
         public DialogResult ShowError(string ErrCode, string strDescription, string AlarmLevel, string Solution, string szType = "", 
-                                      string OKText = "Confirm", string CancelText = "Stop", string IgnoreText = "Inorge", 
+                                      string OKText = "Retry", string CancelText = "Stop", string IgnoreText = "Inorge", 
                                       int timeout = -1, bool topmost = false)
         {
             lock (obj)
             {
+
+                if (XTask.OnPauseActive != null)
+                    XTask.OnPauseActive(null, null);
+
+
                 DateTime startTime = DateTime.Now;
                 bool isOKVisable = (OKText != "");
                 bool isCancalVisable = (CancelText != "");
@@ -234,27 +272,24 @@ namespace HB_IWatch
                 DateTime lastAlarmEndTime = DateTime.Now;
 
                 //Dung giao dien NewFailTip
-                AlarmCode AC = new AlarmCode(); 
+                AlarmCode alarmCode = new AlarmCode();
                 //ID code
-                AC.ErrorCode = ErrCode;
-                AC.ErrorCatrgory = szType;
-                AC.MessageEn = strDescription;
-                AC.Severity = AlarmLevel;
-                AC.DealtMethod = Solution;
+                alarmCode.ErrorCode = ErrCode;
+                alarmCode.ErrorCategory = szType;
+                alarmCode.MessageEn = strDescription;
+                alarmCode.Severity = AlarmLevel;
+                alarmCode.DealtMethod = Solution;
                 //AC.EndTime = AC.HappenTime.AddSeconds(1);
 
-                AlarmMessage Am = new AlarmMessage() { EffectiveHappenTime = DateTime.Now, HappenTime = DateTime.Now, AlarmSerialNumber = DateTime.Now.ToString("yyyyMMddHHmmssffffff") };
-                if (AC.ErrorCode.Length >= 1)
-                    Am.NowAlarm = AC;
+                AlarmMessage Am = new AlarmMessage() { EffectiveHappenTime = DateTime.Now, HappenTime = DateTime.Now,
+                                                       AlarmSerialNumber = DateTime.Now.ToString("yyyyMMddHHmmssffffff") };
+                if (alarmCode.ErrorCode.Length >= 1)
+                    Am.NowAlarm = alarmCode;
                 Am.EndTime = Am.HappenTime.AddSeconds(1);
 
                 //Add dữ liệu lỗi vào SQLite
                 DataServerManager.Instance.InsertAlarmON(Am);
-
                 UploadMachineStateMessage(MachineSts.Downtime);
-
-
-
                 //Dung giao dien FailTip
                 FailTip ft = new FailTip(strDescription, isCancalVisable, isIgnoreVisable, timeout, isOKVisable);
                 ft.SelectAll();
@@ -274,35 +309,21 @@ namespace HB_IWatch
 
                 ft.ShowDialog();
                 ft.WaitOne();
+                //if(ft.ShowDialog() == DialogResult.OK)
 
                 //还原设备状态
                 //if (ft.DialogResult == DialogResult.OK || ft.DialogResult == DialogResult.Ignore || ft.DialogResult == DialogResult.Cancel)
-                //    SetMachineStatus(bkupSts);
+                    //SetMachineStatus(bkupSts);
                 RecoverMachineStatus();
-                //if (!Globals.Offline && Globals.SettingOption.是否开启报警上传)
-                //{
-                //    SIPLink sIPLink = new SIPLink();
-                //    sIPLink.Process_MALARMTIME(startTime, DateTime.Now, szType, strDescription);
-                //    if (sIPLink.WaitResult() < 0)
-                //    {
-                //        MessageBox.Show(sIPLink.RepliedStr);
-                //    }
-                //}
-                if (ft.DialogResult == DialogResult.Cancel)
+                if (ft.DialogResult == DialogResult.Cancel || ft.DialogResult == DialogResult.Ignore)
                 {
-                    //if (!Globals.Offline && Globals.SettingOption.是否开启宕机上传 && Globals.停止状态 == 1)
-                    //{
-                    //    SIPLink sIPLink = new SIPLink();
-                    //    sIPLink.Process_MDOWNTIME(true, strDescription);
-                    //    if (sIPLink.WaitResult() < 0)
-                    //    {
-                    //        MessageBox.Show(sIPLink.RepliedStr);
-                    //    }
-                    //    Globals.停止状态 = 1;
-                    //    Globals.写设备状态();
-                    //}
+                    //if (XTask.OnStopActive != null)
+                    //    XTask.OnStopActive(null, null);
                 }
-
+                if (ft.DialogResult == DialogResult.OK)
+                {
+                    XStationManager.Instance.Continue();
+                }
                 //Update thời gian xử lý lỗi                
                 DateTime now = DateTime.Now;
                 Am.EffectiveHappenTime = Am.EffectiveHappenTime >= lastAlarmEndTime ? Am.EffectiveHappenTime : lastAlarmEndTime;
@@ -314,8 +335,6 @@ namespace HB_IWatch
                     Am.EndTime = DateTime.Now;
                 }
                 DataServerManager.Instance.UpdateAlarm(Am);
-
-
                 return ft.DialogResult;
             }
         }

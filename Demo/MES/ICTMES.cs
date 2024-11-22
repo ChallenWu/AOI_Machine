@@ -13,36 +13,9 @@ using System.Windows.Forms;
 
 namespace BoTech
 {
-    public class ICTMES
+    public class MES
     {
         private static string URL = "http://10.191.246.244/api/gate"; //api/Assy10.191.246.244
-
-       
-        //private static string Post(string url, string postData)
-        //{
-        //    try
-        //    {
-        //        var request = (HttpWebRequest)WebRequest.Create(url);
-
-        //        var data = Encoding.ASCII.GetBytes(postData);
-        //        request.Method = "POST";
-        //        request.ContentType = "application/x-www-form-urlencoded";
-        //        request.ContentLength = data.Length;
-
-        //        using (var stream = request.GetRequestStream())
-        //        {
-        //            stream.Write(data, 0, data.Length);
-        //        }
-        //        var response = (HttpWebResponse)request.GetResponse();
-        //        var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
-        //        return responseString;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return "-1";
-        //    }
-        //}
-
 
         private static string ParsToString(Dictionary<string,string> Pars)
         {
@@ -58,37 +31,34 @@ namespace BoTech
             }
             return sb.ToString();
         }
-
-
         private static string[] SplitString(string needSplitstring, string searchstring)
         {
             string temp = needSplitstring.Replace(searchstring, ",");
             return temp.Split(',');
         }
-
-
-        #region BE010-1
-        public static bool AssyCheck(UCMessage UCM,int unitindex,out BackMessage bm)
+        #region Fuyu mes
+        //AssyCheck > collectTest > AssyGo
+        public static bool AssyCheck_AOI(string SN, out BackMessage bm)
         {
-            AssyCheckData ACD = new AssyCheckData();
-            ACD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            ACD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;           
-            ACD.serial_Number = UCM.UC_SN;
-            ACD.machine = "";
-            ACD.toolingNo = "";
-            ACD.lotNo = UCM.Units[unitindex].TR_NO; 
-            ACD.kpsn = "";
-            ACD.reelNo = "";
-            ACD.workOrder = AudioSystem.AudioMachineMessage.MES.workOrder;
+            AssyCheck_AOI assyCheck = new AssyCheck_AOI();
+            assyCheck.empNo = "6E72TEST";
+            assyCheck.terminalName = "ITKS_EXX-3FT-MES-XXX";
+            assyCheck.serial_Number = SN;
+            assyCheck.machine = "";
+            assyCheck.toolingNo = "";
+            assyCheck.lotNo = "";
+            assyCheck.kpsn = "";
+            assyCheck.reelNo = "";
+            assyCheck.workOrder = "WO0011";
 
-            string jsonData = JsonConvert.SerializeObject(ACD, Formatting.Indented);//设置json显示格式
-            //WriteLog("PC-->MES AssyCheck" +jsonData.Replace("\\r", "").Replace("\\n", ""));
+            string jsonData = JsonConvert.SerializeObject(assyCheck, Formatting.Indented);//Set the json display format
+            WriteLog("PC-->MES AssyCheck" +jsonData.Replace("\\r", "").Replace("\\n", ""));
             string backMessage = "";
             BackMessage BM = new BackMessage();
-            if (HttpPost(jsonData, ref backMessage,PostType.AssyCheck))
+            if (HttpPost(jsonData, ref backMessage, PostType.AssyCheck))
             {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage,BM.GetType());
-                //WriteLog("MES-->PC AssyCheck" + backMessage);
+                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
+                WriteLog("MES-->PC AssyCheck" + backMessage);
                 bm = BM;
                 if (BM.Result == "true")
                     return true;
@@ -97,152 +67,13 @@ namespace BoTech
             }
             else
             {
-                //WriteLog("MES-->PC AssyCheck" + backMessage);
-                bm = BM;
-                return false;
-            }               
-        }
-
-        public static bool AssyGo(UCMessage UCM, int unitindex, out BackMessage bm)
-        {
-            AssyGoData AGD = new AssyGoData();
-            AGD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            AGD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            AGD.serial_Number = UCM.Units[unitindex].UnitSN;
-            AGD.machine = "";
-            AGD.toolingNo = UCM.UC_SN;
-            AGD.lotNo = UCM.Units[unitindex].TR_NO;
-            AGD.kpsn = "";
-            AGD.reelNo = "";
-            AGD.workOrder = AudioSystem.AudioMachineMessage.MES.workOrder;
-
-            string jsonData = JsonConvert.SerializeObject(AGD, Formatting.Indented);//设置json显示格式
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES AssyGo" + jsonData.Replace("\\r", "").Replace("\\n", ""));
-            if (HttpPost(jsonData, ref backMessage,PostType.AssyGo))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC AssyGo" + backMessage);
-                bm = BM;
-                if (BM.Result == "true")
-                    return true;
-                else
-                    return false;
-            }
-            else
-            {
-                //WriteLog("MES-->PC AssyGo" + backMessage);
-                bm = BM;
-                return false;
-            }
-        }
- 
-        public static bool GetCmdResult(UCMessage UCM, int unitindex,string pCMd, out BackMessage bm)
-        {
-            GetCmdResultData GCRD = new GetCmdResultData();
-            GCRD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            GCRD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            GCRD.serial_Number = UCM.Units[unitindex].WO;
-            GCRD.machine = "";
-            GCRD.toolingNo = "";
-            GCRD.lotNo = "";
-            GCRD.kpsn = "";
-            GCRD.workOrder = UCM.Units[unitindex].WO;
-            GCRD.cavity = "";
-            GCRD.testData = "";
-            GCRD.results = "";
-            GCRD.status = "";
-            GCRD.pCmd = pCMd;
-            GCRD.defectCode = "";
-
-
-            string jsonData = JsonConvert.SerializeObject(GCRD, Formatting.Indented);//设置json显示格式
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES GetCmdResult" + jsonData.Replace("\\r", "").Replace("\\n", ""));
-            if (HttpPost( jsonData, ref backMessage,PostType.GetCmdResult))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC GetCmdResult" + backMessage);
-                bm = BM;
-
-                if (BM.Result == "true")
-                    return true;
-                else
-                    return false;
-            }
-            else
-            {
-                //WriteLog("MES-->PC GetCmdResult" + backMessage);
+                WriteLog("MES-->PC AssyCheck" + backMessage);
                 bm = BM;
                 return false;
             }
         }
 
-        /*用于查询载具有没有解绑；*/
-        /// <summary>
-        /// 返回true,说明有穴位SN没解绑；否则应该是false;
-        /// </summary>
-        /// <param name="UCM"></param>
-        /// <param name="unitindex"></param>
-        /// <param name="pCMd"></param>
-        /// <param name="bm"></param>
-        /// <returns></returns>
-        public static bool GetCmdResult_RFID(UCMessage UCM, int unitindex, string pCMd, out BackMessage bm)
-        {
-            GetCmdResultData GCRD = new GetCmdResultData();
-            GCRD.empNo = "";
-            GCRD.terminalName = "";
-            GCRD.serial_Number = UCM.UC_SN;
-            GCRD.machine = "";
-            GCRD.toolingNo = "";
-            GCRD.lotNo = "";
-            GCRD.kpsn = "";
-            GCRD.workOrder = "";
-            GCRD.cavity = "";
-            GCRD.testData = "";
-            GCRD.results = "";
-            GCRD.status = "";
-            GCRD.pCmd = pCMd;
-            GCRD.defectCode = "";
-
-
-            string jsonData = JsonConvert.SerializeObject(GCRD, Formatting.Indented);//设置json显示格式
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES GetCmdResult" + jsonData.Replace("\\r", "").Replace("\\n", ""));
-            if (HttpPost(jsonData, ref backMessage, PostType.GetCmdResult))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC GetCmdResult" + backMessage);
-                bm = BM;
-                if (BM.RetMsg.Contains("RFID NOT LINK SN"))
-                {
-                    return false;
-                }
-                else
-                {
-                    return true;
-                }
-                //if (BM.Result == "true")
-                //    // return true;
-                //    return false;
-                //else
-                //    //return false;
-                //    return true;
-            }
-            else
-            {
-                //WriteLog("MES-->PC GetCmdResult" + backMessage);
-                bm = BM;
-                return false;
-            }
-        }
-
-
-
-        public static bool CollectTest(UCMessage UCM, int unitindex, out BackMessage bm)
+        public static bool CollectTest_AOI(UCMessage UCM, int unitindex, out BackMessage bm)
         {
             //Hashtable testData = new Hashtable();
             Dictionary<string, string> testData = new Dictionary<string, string>();
@@ -252,12 +83,11 @@ namespace BoTech
             testData.Add("uut_stop", UCM.Units[unitindex].EndTime.ToString("yyyy-MM-dd HH:mm:ss"));
             testData.Add("limits_version", "v1.0");//v1.0
             testData.Add("software_name", "BZ1.0");
-            testData.Add("software_version", AudioSystem.AudioMachineMessage.SW_version.Trim());
-            testData.Add("station_id", AudioSystem.AudioMachineMessage.MES.terminalName);
+            testData.Add("software_version", "V1.0");
+            testData.Add("station_id", "L304");
             testData.Add("fixture_id", UCM.UC_SN);
             string testDataStr = ParsToString(testData);
 
-            //Hashtable results = new Hashtable();
             Dictionary<string, string> results = new Dictionary<string, string>();
             results.Add("lower_limit", "0.5");
             results.Add("parametric_key", "");
@@ -273,27 +103,16 @@ namespace BoTech
             string resulrsStr = ParsToString(results);
 
             CollectTestData CTD = new CollectTestData();
-            CTD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            CTD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            CTD.serial_Number = UCM.Units[unitindex].UnitSN;
-            CTD.machine = "";
-            CTD.toolingNo = UCM.UC_SN;
-            CTD.lotNo = UCM.Units[unitindex].TR_NO; //UCM.TR_Lot_No;
-            CTD.kpsn = "";
-            CTD.workOrder = AudioSystem.AudioMachineMessage.MES.workOrder;
-            CTD.cavity = (unitindex + 1).ToString();
-            CTD.testData = testDataStr;
-            CTD.results = resulrsStr;
-            CTD.collectType = AudioSystem.AudioMachineMessage.MES.collectType;
+   
 
             string jsonData = JsonConvert.SerializeObject(CTD, Formatting.Indented);//设置json显示格式
             string backMessage = "";
             BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES CollectTest" + jsonData.Replace("\\r", "").Replace("\\n", ""));
+            WriteLog("PC-->MES CollectTest" + jsonData.Replace("\\r", "").Replace("\\n", ""));
             if (HttpPost(jsonData, ref backMessage, PostType.CollectTestData))
             {
                 BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC CollectTest" + backMessage);
+                WriteLog("MES-->PC CollectTest" + backMessage);
                 bm = BM;
 
                 if (BM.Result == "true")
@@ -303,75 +122,33 @@ namespace BoTech
             }
             else
             {
-                //WriteLog("MES-->PC CollectTest" + backMessage);
+                WriteLog("MES-->PC CollectTest" + backMessage);
                 bm = BM;
                 return false;
             }
         }
-        #endregion
 
-
-        #region TI040;
-        public static bool AssyCheck_TI040(UCMessage UCM, int unitindex, out BackMessage bm)
-        {
-            AssyCheckData ACD = new AssyCheckData();
-            ACD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            ACD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            ACD.serial_Number = UCM.Units[unitindex].UnitSN;
-            ACD.machine = "";
-            ACD.toolingNo = "";
-            ACD.lotNo = "";
-            ACD.kpsn = "";
-            ACD.reelNo = "";
-            ACD.workOrder = "";// AudioSystem.AudioMachineMessage.MES.workOrder;
-
-            string jsonData = JsonConvert.SerializeObject(ACD, Formatting.Indented);//设置json显示格式
-            //WriteLog("PC-->MES AssyCheck" +jsonData.Replace("\\r", "").Replace("\\n", ""));
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            if (HttpPost(jsonData, ref backMessage, PostType.AssyCheck))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC AssyCheck" + backMessage);
-                bm = BM;
-                if (BM.Result == "true")
-                    return true;
-                else
-                    return false;
-            }
-            else
-            {
-                //WriteLog("MES-->PC AssyCheck" + backMessage);
-                bm = BM;
-                return false;
-            }
-
-
-
-        }
-
-
-        public static bool AssyGo_TI040(UCMessage UCM, int unitindex, out BackMessage bm)
+        public static bool AssyGo_AOI(ProductInfor Unit, out BackMessage bm)
         {
             AssyGoData AGD = new AssyGoData();
-            AGD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            AGD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            AGD.serial_Number = UCM.Units[unitindex].UnitSN;
+            AGD.empNo = AudioSystem.InforMachine.MES.empNo;
+            AGD.terminalName = AudioSystem.InforMachine.MES.terminalName;
+            AGD.serial_Number = Unit.UnitSN;
             AGD.machine = "";
             AGD.toolingNo = "";
             AGD.lotNo = "";
             AGD.kpsn = "";
             AGD.reelNo = "";
-            AGD.workOrder = "";// AudioSystem.AudioMachineMessage.MES.workOrder;
+            AGD.workOrder = "";
 
-            string jsonData = JsonConvert.SerializeObject(AGD, Formatting.Indented);//设置json显示格式
+            string jsonData = JsonConvert.SerializeObject(AGD, Formatting.Indented);//mã hóa thành file Json
             string backMessage = "";
             BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES AssyGo" + jsonData.Replace("\\r", "").Replace("\\n", ""));
+            WriteLog("PC-->MES AssyGo" + jsonData.Replace("\\r", "").Replace("\\n", ""));
             if (HttpPost(jsonData, ref backMessage, PostType.AssyGo))
             {
                 BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC AssyGo" + backMessage);
+                WriteLog("MES-->PC AssyGo" + backMessage);
                 bm = BM;
                 if (BM.Result == "true")
                     return true;
@@ -380,196 +157,18 @@ namespace BoTech
             }
             else
             {
-                //WriteLog("MES-->PC AssyGo" + backMessage);
+                WriteLog("MES-->PC AssyGo" + backMessage);
                 bm = BM;
                 return false;
             }
 
 
-        }
-
-        /// <summary>
-        /// TI040;
-        /// </summary>
-        /// <param name="UCM"></param>
-        /// <param name="unitindex"></param>
-        /// <param name="pCMd"></param>
-        /// <param name="bm"></param>
-        /// <returns></returns>
-        public static bool GetCmdResult_TI040(UCMessage UCM, int unitindex, string pCMd, out BackMessage bm)
-        {
-            GetCmdResultData GCRD = new GetCmdResultData();
-            GCRD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            GCRD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            GCRD.serial_Number = UCM.UC_SN;
-            GCRD.machine = "";
-            GCRD.toolingNo = "";
-            GCRD.lotNo = "";
-            GCRD.kpsn = "";
-            GCRD.workOrder = "";// UCM.Units[unitindex].WO;//TI040这个可以没有；
-            GCRD.cavity = "";
-            GCRD.testData = "";
-            GCRD.results = "";
-            GCRD.status = "";
-            GCRD.pCmd = pCMd;
-            GCRD.defectCode = "";
-
-            string jsonData = JsonConvert.SerializeObject(GCRD, Formatting.Indented);//设置json显示格式
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES GetCmdResult" + jsonData.Replace("\\r", "").Replace("\\n", ""));
-            if (HttpPost(jsonData, ref backMessage, PostType.GetCmdResult))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC GetCmdResult" + backMessage);
-                bm = BM;
-
-                if (BM.Result == "true")
-                    return true;
-                else
-                    return false;
-            }
-            else
-            {
-                //WriteLog("MES-->PC GetCmdResult" + backMessage);
-                bm = BM;
-                return false;
-            }
-        }
-
-
-        public static bool CollectTest_TI040(UCMessage UCM, int unitindex, out BackMessage bm)
-        {
-            //Hashtable testData = new Hashtable();
-            Dictionary<string, string> testData = new Dictionary<string, string>();
-            testData.Add("test_result", UCM.Units[unitindex].Pass);
-            testData.Add("unit_sn", UCM.Units[unitindex].UnitSN);
-            testData.Add("uut_start", UCM.Units[unitindex].StartTime.ToString("yyyy-MM-dd HH:mm:ss"));
-            testData.Add("uut_stop", UCM.Units[unitindex].EndTime.ToString("yyyy-MM-dd HH:mm:ss"));
-            testData.Add("limits_version", "v1.0");//v1.0
-            testData.Add("software_name", "BZ1.0");
-            testData.Add("software_version", AudioSystem.AudioMachineMessage.SW_version.Trim());
-            testData.Add("station_id", AudioSystem.AudioMachineMessage.MES.terminalName);
-            testData.Add("fixture_id", UCM.UC_SN);
-            string testDataStr = ParsToString(testData);
-
-            //Hashtable results = new Hashtable();
-            Dictionary<string, string> results = new Dictionary<string, string>();
-            results.Add("lower_limit", "0.5");
-            results.Add("parametric_key", "");
-            results.Add("priority", "");
-            results.Add("result", UCM.Units[unitindex].Pass);
-            results.Add("sub_sub_test", "");
-            results.Add("sub_test", "");
-            results.Add("units", "Mpa");
-            results.Add("upper_limit", "0.7");
-            results.Add("value", "0.6");
-            results.Add("Message", "");
-            if (AudioSystem.ladRead.Mode == 3 && AudioSystem.HiveStateIndex == 4)
-            {
-                results.Add("Tray_Turnover_Time", (AudioSystem.ChangeTray_CT / 10).ToString());
-                results.Add("Installation_Time", (AudioSystem.Unit_set_CT / 10).ToString());
-            }
-            
-            string resulrsStr = ParsToString(results);
-
-            CollectTestData CTD = new CollectTestData();
-            CTD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            CTD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            CTD.serial_Number = UCM.Units[unitindex].UnitSN;
-            CTD.machine = "";
-            CTD.toolingNo = UCM.UC_SN;//"";
-            CTD.lotNo = "";
-            CTD.kpsn = "";
-            CTD.workOrder = "";// AudioSystem.AudioMachineMessage.MES.workOrder;
-            CTD.cavity = (unitindex + 1).ToString();
-            CTD.testData = testDataStr;
-            CTD.results = resulrsStr;
-            CTD.collectType = AudioSystem.AudioMachineMessage.MES.collectType;
-
-            string jsonData = JsonConvert.SerializeObject(CTD, Formatting.Indented);//设置json显示格式
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES CollectTest" + jsonData.Replace("\\r", "").Replace("\\n", ""));
-            if (HttpPost(jsonData, ref backMessage, PostType.CollectTestData))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC CollectTest" + backMessage);
-                bm = BM;
-                if (BM.Result == "true")
-                    return true;
-                else
-                    return false;
-            }
-            else
-            {
-                //WriteLog("MES-->PC CollectTest" + backMessage);
-                bm = BM;
-                return false;
-            }
         }
         #endregion
-
-
-        /// <summary>
-        /// 获得OP权限；
-        /// </summary>
-        /// <param name="UCM"></param>
-        /// <param name="unitindex"></param>
-        /// <param name="pCMd"></param>
-        /// <param name="bm"></param>
-        /// <returns></returns>
-        public static bool GetOpAccess(string pCMd, out BackMessage bm,string badgeID)
-        {
-            GetCmdResultData GCRD = new GetCmdResultData();
-            GCRD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            GCRD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            GCRD.serial_Number = badgeID;///
-            GCRD.machine = "";
-            GCRD.toolingNo = "";
-            GCRD.lotNo = "";
-            GCRD.kpsn = "";
-            GCRD.workOrder = "";// AudioSystem.AudioMachineMessage.MES.workOrder;
-            GCRD.cavity = "";
-            GCRD.testData = "";
-            GCRD.results = "";
-            GCRD.status = "";
-            GCRD.pCmd = pCMd;
-            GCRD.defectCode = "";
-
-
-            string jsonData = JsonConvert.SerializeObject(GCRD, Formatting.Indented);//设置json显示格式
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES GetCmdResult" + jsonData.Replace("\\r", "").Replace("\\n", ""));
-            if (HttpPost(jsonData, ref backMessage, PostType.GetCmdResult))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC GetCmdResult" + backMessage);
-                bm = BM;
-
-                if (BM.Result == "true")
-                { return true; }
-                else
-                    return false;
-            }
-            else
-            {
-                //WriteLog("MES-->PC GetCmdResult" + backMessage);
-                bm = BM;
-                return false;
-            }
-        }
-
-
         public static bool HttpPost(string SendData,ref string BackMessage, PostType pt = PostType.AssyCheck, string Url="")
         {
             BackMessage = "";
             string tUrl = "";
-            //if (Url.Length<10)
-            //    tUrl = URL+ "/"+pt.ToString();
-            //else
-            //    tUrl = Url;
             tUrl = URL;
             WriteLog("PC-->MES " + pt .ToString()+ " [" +tUrl+"] " + SendData.Replace("\\r", "").Replace("\\n", ""));
             try
@@ -616,372 +215,12 @@ namespace BoTech
         private static void  WriteLog(string log)
         {
             string MES_log = @"D:\MES_log\";
-            //string filePath = FilePath.mFilePath.BZ_MachineLogPath + DateTime.Now.ToString("yyyyMMdd");
             string filePath = MES_log + DateTime.Now.ToString("yyyyMMdd");
             string fileName = filePath + "\\MES_Hour" + DateTime.Now.ToString("HH") + ".txt";
-            //Ghi du lieu vao trong file text
-            //logServer.Instance.WriteLine(filePath, fileName, DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff ") + log);
-
             string str = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss:fff") + " => " + log;
             CsvServer.Instance.WriteLine(fileName, str);
-
         }
-
-
     }
-
-
-    public class ICTMES_TI
-    {
-        private static string URL = "http://10.33.30.55:8080/api/Assy";
-
-        public static string[] TestDataUpload(string tt, string str1, string str2, string str3, string str4)
-        {
-            var SS = new string[3];
-
-            Hashtable pars = new Hashtable();
-            pars.Add("SN", "");//从产品上读取到的条码信息 
-            pars.Add("lineNumber", "");
-            pars.Add("station", "");
-            pars.Add("machineNO", "");
-            pars.Add("testData", str1);//测试数据 
-            pars.Add("testResult", str2);//测试结果 
-            pars.Add("softwareVER", str4);//程序版本
-            pars.Add("moName", "");
-            pars.Add("coilWinding", str3);//绕线机编号 
-            pars.Add("axis", "");//绕线机轴号 
-            string postData = ParsToString(pars);
-            string ret = Post("http://172.19.144.1:8011/CE012.asmx/TestDataUploadOne", postData);
-            if (ret == "-1")
-            {
-                SS[0] = "-1";
-                SS[1] = "MES服务器连接异常！";
-            }
-            else
-            {
-                string[] SNArry;
-                SNArry = SplitString(ret, "<string>");
-                if (SNArry.Length >= 2)
-                {
-                    SS[0] = SplitString(SNArry[1], "</string>")[0];//MES返回0代表OK，其他则失败
-                    SS[1] = SplitString(SNArry[2], "</string>")[0];
-                }
-                else
-                {
-                    SS[0] = "-1";
-                    SS[1] = "MES服务器返回数据异常！";
-                }
-            }
-            return SS;
-        }
-
-        private static string Post(string url, string postData)
-        {
-            try
-            {
-                var request = (HttpWebRequest)WebRequest.Create(url);
-
-                var data = Encoding.ASCII.GetBytes(postData);
-                request.Method = "POST";
-                request.ContentType = "application/x-www-form-urlencoded";
-                request.ContentLength = data.Length;
-
-                using (var stream = request.GetRequestStream())
-                {
-                    stream.Write(data, 0, data.Length);
-                }
-                var response = (HttpWebResponse)request.GetResponse();
-                var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
-                return responseString;
-            }
-            catch (Exception)
-            {
-                return "-1";
-            }
-        }
-        private static string ParsToString(Hashtable Pars)
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (string k in Pars.Keys)
-            {
-                if (sb.Length > 0)
-                {
-                    sb.Append("$");
-                }
-                //sb.Append(HttpUtility.UrlEncode(k) + "=" + HttpUtility.UrlEncode(Pars[k].ToString()));
-                sb.Append(k.ToString() + "=" + Pars[k].ToString());
-            }
-            return sb.ToString();
-        }
-        private static string[] SplitString(string needSplitstring, string searchstring)
-        {
-            string temp = needSplitstring.Replace(searchstring, ",");
-            return temp.Split(',');
-        }
-        public static bool AssyCheck(UCMessage UCM, int unitindex, out BackMessage bm)
-        {
-            AssyCheckData ACD = new AssyCheckData();
-            ACD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            ACD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            ACD.serial_Number = UCM.Units[unitindex].UnitSN;
-            ACD.machine = "";
-            ACD.toolingNo = "";
-            ACD.lotNo = "";
-            ACD.kpsn = "";
-            ACD.reelNo = "";
-            ACD.workOrder = AudioSystem.AudioMachineMessage.MES.workOrder;
-
-            string jsonData = JsonConvert.SerializeObject(ACD, Formatting.Indented);//设置json显示格式
-            //WriteLog("PC-->MES AssyCheck" +jsonData.Replace("\\r", "").Replace("\\n", ""));
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            if (HttpPost(jsonData, ref backMessage, PostType.AssyCheck))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC AssyCheck" + backMessage);
-                bm = BM;
-                if (BM.Result == "true")
-                    return true;
-                else
-                    return false;
-            }
-            else
-            {
-                //WriteLog("MES-->PC AssyCheck" + backMessage);
-                bm = BM;
-                return false;
-            }
-
-
-
-        }
-        public static bool AssyGo(UCMessage UCM, int unitindex, out BackMessage bm)
-        {
-            AssyGoData AGD = new AssyGoData();
-            AGD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            AGD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            AGD.serial_Number = UCM.Units[unitindex].UnitSN;
-            AGD.machine = "";
-            AGD.toolingNo = "";
-            AGD.lotNo = "";
-            AGD.kpsn = "";
-            AGD.reelNo = "";
-            AGD.workOrder = AudioSystem.AudioMachineMessage.MES.workOrder;
-
-            string jsonData = JsonConvert.SerializeObject(AGD, Formatting.Indented);//设置json显示格式
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES AssyGo" + jsonData.Replace("\\r", "").Replace("\\n", ""));
-            if (HttpPost(jsonData, ref backMessage, PostType.AssyGo))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC AssyGo" + backMessage);
-                bm = BM;
-                if (BM.Result == "true")
-                    return true;
-                else
-                    return false;
-            }
-            else
-            {
-                //WriteLog("MES-->PC AssyGo" + backMessage);
-                bm = BM;
-                return false;
-            }
-
-
-        }
-        public static bool GetCmdResult(UCMessage UCM, int unitindex, string pCMd, out BackMessage bm)
-        {
-            GetCmdResultData GCRD = new GetCmdResultData();
-            GCRD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            GCRD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            GCRD.serial_Number = UCM.UC_SN;
-            GCRD.machine = "";
-            GCRD.toolingNo = "";
-            GCRD.lotNo = "";
-            GCRD.kpsn = "";
-            GCRD.workOrder = "";
-            GCRD.cavity = "";
-            GCRD.testData = "";
-            GCRD.results = "";
-            GCRD.status = "";
-            GCRD.pCmd = pCMd;
-            GCRD.defectCode = "";
-
-
-            string jsonData = JsonConvert.SerializeObject(GCRD, Formatting.Indented);//设置json显示格式
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES GetCmdResult" + jsonData.Replace("\\r", "").Replace("\\n", ""));
-            if (HttpPost(jsonData, ref backMessage, PostType.GetCmdResult))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC GetCmdResult" + backMessage);
-                bm = BM;
-
-                if (BM.Result == "true")
-                    return true;
-                else
-                    return false;
-            }
-            else
-            {
-                //WriteLog("MES-->PC GetCmdResult" + backMessage);
-                bm = BM;
-                return false;
-            }
-        }
-        public static bool CollectTest(UCMessage UCM, int unitindex, out BackMessage bm)
-        {
-
-
-            //CollectTestData.TestData CTD_TD = new CollectTestData.TestData();
-            //CTD_TD.test_result = "";
-            //CTD_TD.unit_sn = "";
-            //CTD_TD.uut_start = "";
-            //CTD_TD.uut_stop = "";
-            //CTD_TD.limits_version = "";
-            //CTD_TD.software_name = "";
-            //CTD_TD.software_version = "";
-            //CTD_TD.station_id = "";
-            //CTD_TD.fixture_id = "";
-
-            //CollectTestData.Results CTD_R = new CollectTestData.Results();
-            //CTD_R.lower_limit = "";
-            //CTD_R.parametric_key = "";
-            //CTD_R.priority = "";
-            //CTD_R.result = "";
-            //CTD_R.sub_sub_test = "";
-            //CTD_R.sub_test = "";
-            //CTD_R.test = "";
-            //CTD_R.upper_limit = "";
-            //CTD_R.value = "";
-            //CTD_R.Message = "";
-            Hashtable testData = new Hashtable();
-            //UCM.Units[unitindex].Pass = "PASS";
-            testData.Add("test_result", UCM.Units[unitindex].Pass);
-            testData.Add("unit_sn", UCM.Units[unitindex].UnitSN);
-            testData.Add("uut_start", UCM.Units[unitindex].StartTime.ToString("yyyy-MM-dd HH:mm:ss"));
-            testData.Add("uut_stop", UCM.Units[unitindex].EndTime.ToString("yyyy-MM-dd HH:mm:ss"));
-            testData.Add("limits_version", "v1.0");
-            testData.Add("software_name", "BZ1.0");
-            testData.Add("software_version", AudioSystem.AudioMachineMessage.SW_version.Trim());
-            testData.Add("station_id", AudioSystem.AudioMachineMessage.MES.terminalName);
-            testData.Add("fixture_id", AudioSystem.AudioMachineMessage.MES.terminalName);
-            string testDataStr = ParsToString(testData);
-
-            Hashtable results = new Hashtable();
-            results.Add("lower_limit", "0.5");
-            results.Add("parametric_key", "");
-            results.Add("priority", "");
-            results.Add("result", "PASS");
-            results.Add("sub_sub_test", "");
-            results.Add("sub_test", "");
-            results.Add("test", "Air_Pressure");
-            results.Add("units", "Mpa");
-            results.Add("upper_limit", "0.7");
-            results.Add("value", "0.6");
-            results.Add("Message", "");
-            string resulrsStr = ParsToString(results);
-
-            CollectTestData CTD = new CollectTestData();
-            CTD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            CTD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
-            CTD.serial_Number = UCM.Units[unitindex].UnitSN;
-            CTD.machine = "";
-            CTD.toolingNo = "";
-            CTD.lotNo = "";
-            CTD.kpsn = "";
-            CTD.workOrder = AudioSystem.AudioMachineMessage.MES.workOrder;
-            CTD.cavity = (unitindex + 1).ToString();
-            CTD.testData = testDataStr;
-            CTD.results = resulrsStr;
-            CTD.collectType = AudioSystem.AudioMachineMessage.MES.collectType;
-
-            string jsonData = JsonConvert.SerializeObject(CTD, Formatting.Indented);//设置json显示格式
-            string backMessage = "";
-            BackMessage BM = new BackMessage();
-            //WriteLog("PC-->MES CollectTest" + jsonData.Replace("\\r", "").Replace("\\n", ""));
-            if (HttpPost(jsonData, ref backMessage, PostType.CollectTestData))
-            {
-                BM = (BackMessage)JsonConvert.DeserializeObject(backMessage, BM.GetType());
-                //WriteLog("MES-->PC CollectTest" + backMessage);
-                bm = BM;
-                if (BM.Result == "true")
-                    return true;
-                else
-                    return false;
-            }
-            else
-            {
-                //WriteLog("MES-->PC CollectTest" + backMessage);
-                bm = BM;
-                return false;
-            }
-        }
-
-        public static bool HttpPost(string SendData, ref string BackMessage, PostType pt = PostType.AssyCheck, string Url = "")
-        {
-            BackMessage = "";
-            string tUrl = "";
-            if (Url.Length < 10)
-                tUrl = URL + "/" + pt.ToString();
-            else
-                tUrl = Url;
-            WriteLog("PC-->MES " + pt.ToString() + " [" + tUrl + "] " + SendData.Replace("\\r", "").Replace("\\n", ""));
-            try
-            {
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(tUrl);
-                request.Method = "POST";
-                byte[] bytes = Encoding.UTF8.GetBytes(SendData);
-                request.ContentType = "application/json"; /*"application/x-www-form-urlencoded; charset=UTF-8";*/
-                request.ContentLength = bytes.Length;
-                Stream myResponseStream = request.GetRequestStream();
-                myResponseStream.Write(bytes, 0, bytes.Length);
-
-                HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-                StreamReader myStreamReader = new StreamReader(response.GetResponseStream(), Encoding.UTF8);
-                string retString = myStreamReader.ReadToEnd();
-
-                BackMessage = retString;
-                WriteLog("MES-->PC " + pt.ToString() + " " + BackMessage + "\r\n");
-                myStreamReader.Close();
-                myResponseStream.Close();
-                if (response != null)
-                {
-                    response.Close();
-                }
-                if (request != null)
-                {
-                    request.Abort();
-                }
-                return true;
-            }
-            catch (Exception ex)
-            {
-                BackMessage = $"{{\"Result\":false,\"RetMsg\":\"Funtion(HttpPost) catch aError:{ex.Message.ToString()}\"}}";
-                WriteLog("MES-->PC " + pt.ToString() + " " + BackMessage + "\r\n");
-                return false;
-            }
-            finally
-            {
-
-            }
-
-        }
-
-        private static void WriteLog(string log)
-        {
-            //string filePath = FilePath.mFilePath.BZ_MachineLogPath + DateTime.Now.ToString("yyyyMMdd");
-            //string fileName = "\\MES_Hour" + DateTime.Now.ToString("HH") + ".txt";
-            //logServer.Instance.WriteLine(filePath, fileName, DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss.fff ") + log);
-        }
-
-
-    }
-
-
 
     public enum PostType
     {
@@ -1002,9 +241,6 @@ namespace BoTech
         MGID_GETSN_FROM_CAVITY,
         GET_OP_ACCESS,
     }
-
-
-
     public class AssyCheckData
     {
         /// <summary>
@@ -1291,11 +527,11 @@ namespace BoTech
     public class BackMessage
     {
         /// <summary>
-        /// 通信结果
+        /// Kết quả
         /// </summary>
         public string Result { get; set; }
         /// <summary>
-        /// 返回详细信息
+        /// Thông tin Mes gửi trả về
         /// </summary>
         public string RetMsg { get; set; }
     }
@@ -1307,7 +543,61 @@ namespace BoTech
 
         //public Dictionary<string, string> SerializeData = new Dictionary<string, string> { };
         public string SerializeData { get; set; }
+    }
+    public class EquipmentStage
+    {
+        public int cmd { get; set; }
+        public string machine { get; set; }
+        public string mainSn { get; set; }
+        public string SerializeData { get; set; }
+        public Dictionary<string, string> lstSerialNumber { get; set; }
+    }
+    public class AssyCheck_AOI
+    {
+        /// <summary>
+        /// Tên người vận hành
+        /// </summary>
+        public string empNo {  get; set; }
+        /// <summary>
+        /// tên máy trạm
+        /// </summary>
+        public string terminalName {  get; set; }
+        /// <summary>
+        /// Số sê-ri sản phẩm
+        /// </summary>
+        public string serial_Number { get; set; }
+        /// <summary>
+        /// Mã máy
+        /// </summary>
+        public string machine {  set; get; }
+        /// <summary>
+        /// Mã của tool đang dùng trên máy
+        /// </summary>
+        public string toolingNo { get; set; }
+        /// <summary>
+        /// Batch material
+        /// </summary>
+        public string lotNo {  get; set; }
+        /// <summary>
+        /// Mã vật liệu sử dụng
+        /// </summary>
+        public string kpsn {  get; set; }
+        /// <summary>
+        /// Mã cuộn liệu
+        /// </summary>
+        public string reelNo { get; set; }  
+        /// <summary>
+        /// Mã làm việc
+        /// </summary>
+        public string workOrder {  get; set; }
 
-
+    }
+    public class AssyGo_AOI
+    {
+        public string cmd { set; get; }
+        public string lineCode { set; get; }
+        public string machineName { set; get; }
+        public string snProduct { set; get; }
+        public Dictionary<string, string> dic { get; set; } //List 12 SN được gán trên sản phẩm
     }
 }

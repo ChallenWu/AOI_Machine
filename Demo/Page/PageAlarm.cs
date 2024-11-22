@@ -15,6 +15,8 @@ using Demo.UserControls;
 using Demo.Task;
 using HB_IWatch;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using OfficeOpenXml;
+using System.IO;
 
 namespace Demo.Page
 {
@@ -84,7 +86,6 @@ namespace Demo.Page
             {
                 m_asyncHandled.Add(i,true); 
             }
-
         }
 
 
@@ -211,7 +212,7 @@ namespace Demo.Page
                 return;
             }
             filePath += @"\Alarm" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".xlsx";
-            //EPPlusHelper.DataSetToExcel(ds, filePath);
+            DataSetToExcel(ds, filePath);
             //DataTable dt = EPH.ExcelToDataTable(filePath);
             //DataSet dss = EPPlusHelper.ExcelToDataSet(filePath);
         }
@@ -375,7 +376,7 @@ namespace Demo.Page
 
         private void btnCloseAll_Click(object sender, EventArgs e)
         {
-            //NewFailTipShow.Instance.CloseAll();
+            NewFailTipShow.Instance.CloseAll();
         }
 
 
@@ -394,8 +395,21 @@ namespace Demo.Page
 
         }
 
-        //Luu data ra bang excel
-        private void btn_Save_Click(object sender, EventArgs e)
+        bool isSelectTime = false;
+
+        private void dTP_StartTime_MouseDown(object sender, MouseEventArgs e)
+        {
+            isSelectTime = true;
+        }
+
+        private void dT_Statiistic1_DoubleClick(object sender, EventArgs e)
+        {
+            isSelectTime = false;
+            StatusRefreshTimer.Start();
+
+        }
+
+        private void btn_Save_Click_1(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
             if (DT_StatisticsTable != null)
@@ -416,31 +430,42 @@ namespace Demo.Page
                 return;
             }
             filePath += @"\Alarm" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".xlsx";
-            //EPPlusHelper.DataSetToExcel(ds, filePath);
-            //DataTable dt = EPH.ExcelToDataTable(filePath);
-            //DataSet dss = EPPlusHelper.ExcelToDataSet(filePath);
+            DataSetToExcel(ds, filePath);
         }
-
-
-        bool isSelectTime = false;
-
-
-        private void dTP_StartTime_MouseDown(object sender, MouseEventArgs e)
+        public static bool DataSetToExcel(DataSet sourceSet, string filePath)
         {
-            isSelectTime = true;
+
+            try
+            {
+                if (File.Exists(filePath))
+                    File.Delete(filePath);
+                using (ExcelPackage package = new ExcelPackage(new System.IO.FileInfo(filePath)))
+                {
+                    for (int k = 0; k < sourceSet.Tables.Count; k++)
+                    {
+                        string tableName = sourceSet.Tables[k].TableName;
+                        if (tableName.Length <= 0)
+                            tableName = k.ToString();
+                        ExcelWorksheet ws = package.Workbook.Worksheets.Add(tableName);
+                        for (int i = 0; i < sourceSet.Tables[k].Columns.Count; i++)
+                        {
+
+
+                            ws.Cells[1, i + 1].Value = sourceSet.Tables[k].Columns[i].ColumnName.ToString();
+                            for (int j = 0; j < sourceSet.Tables[k].Rows.Count; j++)
+                            {
+                                ws.Cells[j + 2, i + 1].Value = sourceSet.Tables[k].Rows[j][i].ToString();
+                            }
+                        }
+                        package.Save();
+                    }
+                }
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
-
-        private void dT_Statiistic1_DoubleClick(object sender, EventArgs e)
-        {
-            isSelectTime = false;
-            StatusRefreshTimer.Start();
-
-        }
-
-
-        //private void AlarmPage_Load(object sender, EventArgs e)
-        //{
-        //    FormScaleFunc(2);
-        //}
     }
 }

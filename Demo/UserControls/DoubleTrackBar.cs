@@ -27,9 +27,12 @@ namespace UCTest
         private string _dtNewestTime = DateTime.Now.ToString(DateTimeFormate);//获取数据库dataTable里的当前时间，此时间是滑动条最新值；
         private int _TrackBarFontSize = 8;//滑动条日期字体大小设置，默认8号字体大小；
 
-        private const int m_MinSize = 10;//最小控件尺寸； 
-        private const int m_TrackSize = 3;//轨道宽度；
-       
+        //private const int m_MinSize = 10;//最小控件尺寸； 
+        //private const int m_TrackSize = 3;//轨道宽度；
+
+        private const int m_MinSize = 1;//最小控件尺寸； 
+        private const int m_TrackSize = 1;//轨道宽度；
+
 
         private int _controlHeight = 10;//默认控件高度为10；
         private string _errorMessage; //报错信息，可读可写属性；
@@ -39,9 +42,9 @@ namespace UCTest
         private double m_dbRate = 0;  //比例
         private Point m_lastMouseLocation;   //鼠标坐标最后位置
         private double m_dbMinimum = 0;  //滑动条最小值；不可修改；
-        private double m_dbMaximum = 100;  //滑动条最大值；不可修改；
+        private double m_dbMaximum = 10000;  //滑动条最大值；不可修改；
         private double m_dbValue1 = 0;  //滑块1初始值；
-        private double m_dbValue2 = 100;//滑块2初始值；
+        private double m_dbValue2 = 10000;//滑块2初始值；
         #endregion
 
 
@@ -60,7 +63,7 @@ namespace UCTest
         /// <summary>
         /// 数据查询起始时间；
         /// </summary>
-        [Description("数据回溯时间1")]
+        [Description("Data backtracking time 1")]
         public DateTime DateStartValue1
         {
             get { return _dateStartValue1; }
@@ -77,7 +80,7 @@ namespace UCTest
         /// <summary>
         /// 数据查询第二段时间；
         /// </summary>
-        [Description("数据回溯时间2")]
+        [Description("Data backtracking time 2")]
         public DateTime DateEndValue2
         {
             get { return _dateEndValue2; }
@@ -130,7 +133,7 @@ namespace UCTest
         /// <summary>
         /// 数据回溯天数；
         /// </summary>
-        [Description("数据回溯天数")]
+        [Description("Data back-dating days")]
         public int CheckDays
         {
             get { return _checkDays; }
@@ -150,7 +153,7 @@ namespace UCTest
         /// <summary>
         /// 设备状态数据表；
         /// </summary>
-        [Description("数据源最新时间")]
+        [Description("Latest time of data source")]
         public string  DataTableNewestTime
         {
             get
@@ -233,7 +236,7 @@ namespace UCTest
         /// <summary>
         /// 控件高度（水平）/宽度（垂直）
         /// </summary>
-        [Description(" 控件高度（水平）/宽度（垂直）")]
+        [Description(" Kiểm soát chiều cao (ngang)/chiều rộng (dọc)")]
         public int ControlHeight
         {
             get { return _controlHeight; }
@@ -515,20 +518,17 @@ namespace UCTest
             DateTime dtTempStart = dtNew.AddDays(-7);
             double rate = 0.0;
             int weekSec = 7 * 24 * 3600;
-            rate = 100.0 / (weekSec);
-
+            rate = 10000.0 / (weekSec);
             double iSec = dtTemp.Subtract(dtTempStart).TotalSeconds;
             double dLength = 0.0;
             dLength = iSec * rate;
-            if (dLength > 100)
-            { dLength = 100; }
+            if (dLength > 10000)
+            { dLength = 10000; }
             if (dLength < 0)
             {
                 dLength = 0;
             }
-
-            return Math.Round(dLength,1);
-
+            return Math.Round(dLength, 1);
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -677,8 +677,9 @@ namespace UCTest
                 #endregion
 
                 #region 
-                double dValue1Rate = Math.Round(Value1 / (Maximum - Minimum), 1);
-                double dValue2Rate = Math.Round(Value2 / (Maximum - Minimum), 1);
+                double dValue1Rate = Math.Round(Value1 / (Maximum - Minimum), 10);
+                double dValue2Rate = Math.Round(Value2 / (Maximum - Minimum), 10);
+
 
                 IFormatProvider culture = new CultureInfo("en-US", true);
                 DateTime dtCheckEnd = DateTime.ParseExact(_dtNewestTime, DateTimeFormate, culture);
@@ -690,28 +691,16 @@ namespace UCTest
                 DateTime dTimeValue2 = dtCheckStart.AddSeconds(iSecondValue2);
                 _dateEndValue2 = dTimeValue2;
 
-                //string strDispDateStart;
-                //strDispDateStart = dTimeValue1.ToString(DateTimeFormate);
-                //string strDispDateEnd;
-                //strDispDateEnd = dTimeValue2.ToString(DateTimeFormate);
 
-                //RectangleF startRect = new RectangleF((int)left, trackTop - 20, 200, 300);
-                //RectangleF endRect = new RectangleF((int)right - 120, trackTop - 20, 200, 300);
-                //Font m_TrackBarFont = new Font("Arial", _TrackBarFontSize, FontStyle.Regular);//滑块日期字体；
-
-
-                //e.Graphics.DrawString(strDispDateStart, m_TrackBarFont, Brushes.Black, startRect);
-                //e.Graphics.DrawString(strDispDateEnd, m_TrackBarFont, Brushes.Black, endRect);
-
-                //m_TrackBarFont.Dispose();
-
-
-                //if (ValueChanged_event != null)
-                //{ ValueChanged_event(strDispDateStart, strDispDateEnd); }
-                //if (ValueChanged_Event != null)
-                //{ ValueChanged_Event(dTimeValue1, dTimeValue2); }
-
-
+                //IFormatProvider culture = new CultureInfo("en-US", true);
+                //DateTime dtCheckEnd = DateTime.ParseExact(_dtNewestTime, DateTimeFormate, culture);
+                //DateTime dtCheckStart = dtCheckEnd.AddDays(-_checkDays);
+                //double iSecondValue1 = dValue1Rate * _checkDays * 24;
+                //double iSecondValue2 = dValue2Rate * _checkDays * 24;
+                //DateTime dTimeValue1 = dtCheckStart.AddHours(iSecondValue1);
+                //_dateStartValue1 = dTimeValue1;
+                //DateTime dTimeValue2 = dtCheckStart.AddHours(iSecondValue2);
+                //_dateEndValue2 = dTimeValue2;
 
 
                 _errorMessage = "";

@@ -43,9 +43,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Pa_Unit = new System.Windows.Forms.Panel();
             this.Lbl_Unit = new System.Windows.Forms.Label();
-            this.chartIO_Update1 = new Demo.UserControls.ChartIO_Update();
             this.dataEachUnit1 = new Demo.UserControls.DataEachUnit();
             this.StatusRefreshTimer = new System.Windows.Forms.Timer(this.components);
+            this.btnExport = new System.Windows.Forms.Button();
+            this.chartIO_Update1 = new Demo.UserControls.ChartIO_Update();
+            this.chkRealTimeChart = new System.Windows.Forms.CheckBox();
+            this.btn_Query = new System.Windows.Forms.Button();
+            this.cbModel = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.Pa_Unit.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +71,7 @@
             this.panel1.Controls.Add(this.Pa_Unit);
             this.panel1.Location = new System.Drawing.Point(880, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 656);
+            this.panel1.Size = new System.Drawing.Size(209, 579);
             this.panel1.TabIndex = 5;
             // 
             // lbl_CT
@@ -186,33 +190,14 @@
             // 
             // Lbl_Unit
             // 
-            this.Lbl_Unit.AutoSize = true;
+            this.Lbl_Unit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Lbl_Unit.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Unit.Location = new System.Drawing.Point(38, 31);
-            this.Lbl_Unit.MaximumSize = new System.Drawing.Size(150, 0);
+            this.Lbl_Unit.Location = new System.Drawing.Point(0, 0);
             this.Lbl_Unit.Name = "Lbl_Unit";
-            this.Lbl_Unit.Size = new System.Drawing.Size(105, 18);
+            this.Lbl_Unit.Size = new System.Drawing.Size(179, 86);
             this.Lbl_Unit.TabIndex = 0;
             this.Lbl_Unit.Text = "FVMDXXXXXXX";
-            this.Lbl_Unit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // chartIO_Update1
-            // 
-            this.chartIO_Update1.CheckDays = 7;
-            this.chartIO_Update1.CheckDays2 = 7;
-            this.chartIO_Update1.DoubleBarCurrentTime = new System.DateTime(2024, 8, 9, 13, 46, 22, 754);
-            this.chartIO_Update1.DoubleBarCurrentTime2 = new System.DateTime(2024, 8, 9, 13, 46, 22, 754);
-            this.chartIO_Update1.IsSelectDay = true;
-            this.chartIO_Update1.IsSelectIO = true;
-            this.chartIO_Update1.IsSelectTime = false;
-            this.chartIO_Update1.Location = new System.Drawing.Point(0, 0);
-            this.chartIO_Update1.Name = "chartIO_Update1";
-            this.chartIO_Update1.Size = new System.Drawing.Size(874, 466);
-            this.chartIO_Update1.TabIndex = 7;
-            this.chartIO_Update1.TrackEndTime = new System.DateTime(2024, 8, 9, 13, 46, 22, 0);
-            this.chartIO_Update1.TrackEndTime2 = new System.DateTime(2024, 8, 9, 13, 46, 22, 0);
-            this.chartIO_Update1.TrackStartTime = new System.DateTime(2024, 8, 2, 13, 46, 22, 0);
-            this.chartIO_Update1.TrackStartTime2 = new System.DateTime(2024, 8, 2, 13, 46, 22, 0);
+            this.Lbl_Unit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataEachUnit1
             // 
@@ -228,11 +213,71 @@
             this.StatusRefreshTimer.Interval = 3000;
             this.StatusRefreshTimer.Tick += new System.EventHandler(this.StatusRefreshTimer_Tick);
             // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(917, 611);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(124, 37);
+            this.btnExport.TabIndex = 8;
+            this.btnExport.Text = "Export Excel";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click_1);
+            // 
+            // chartIO_Update1
+            // 
+            this.chartIO_Update1.DoubleBarCurrentTime = new System.DateTime(2024, 11, 11, 15, 32, 29, 208);
+            this.chartIO_Update1.IsSelectDay = true;
+            this.chartIO_Update1.IsSelectIO = true;
+            this.chartIO_Update1.IsSelectTime = false;
+            this.chartIO_Update1.Location = new System.Drawing.Point(3, 3);
+            this.chartIO_Update1.Name = "chartIO_Update1";
+            this.chartIO_Update1.RealTimeTracking = false;
+            this.chartIO_Update1.Size = new System.Drawing.Size(871, 463);
+            this.chartIO_Update1.TabIndex = 9;
+            this.chartIO_Update1.TrackEndTime = new System.DateTime(2024, 8, 9, 10, 20, 52, 0);
+            this.chartIO_Update1.TrackStartTime = new System.DateTime(2024, 8, 9, 10, 21, 0, 0);
+            // 
+            // chkRealTimeChart
+            // 
+            this.chkRealTimeChart.AutoSize = true;
+            this.chkRealTimeChart.Checked = true;
+            this.chkRealTimeChart.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkRealTimeChart.Location = new System.Drawing.Point(391, 12);
+            this.chkRealTimeChart.Name = "chkRealTimeChart";
+            this.chkRealTimeChart.Size = new System.Drawing.Size(67, 17);
+            this.chkRealTimeChart.TabIndex = 10;
+            this.chkRealTimeChart.Text = "Realtime";
+            this.chkRealTimeChart.UseVisualStyleBackColor = true;
+            // 
+            // btn_Query
+            // 
+            this.btn_Query.Location = new System.Drawing.Point(467, 7);
+            this.btn_Query.Name = "btn_Query";
+            this.btn_Query.Size = new System.Drawing.Size(57, 25);
+            this.btn_Query.TabIndex = 24;
+            this.btn_Query.Text = "Query";
+            this.btn_Query.UseVisualStyleBackColor = true;
+            this.btn_Query.Click += new System.EventHandler(this.btn_Query_Click);
+            // 
+            // cbModel
+            // 
+            this.cbModel.FormattingEnabled = true;
+            this.cbModel.Items.AddRange(new object[] {
+            "All Model"});
+            this.cbModel.Location = new System.Drawing.Point(256, 9);
+            this.cbModel.Name = "cbModel";
+            this.cbModel.Size = new System.Drawing.Size(121, 21);
+            this.cbModel.TabIndex = 25;
+            // 
             // PageChart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cbModel);
+            this.Controls.Add(this.btn_Query);
+            this.Controls.Add(this.chkRealTimeChart);
             this.Controls.Add(this.chartIO_Update1);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.dataEachUnit1);
             this.Controls.Add(this.panel1);
             this.Name = "PageChart";
@@ -240,8 +285,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.Pa_Unit.ResumeLayout(false);
-            this.Pa_Unit.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -262,7 +307,11 @@
         private System.Windows.Forms.Panel Pa_Unit;
         private System.Windows.Forms.Label Lbl_Unit;
         private UserControls.DataEachUnit dataEachUnit1;
-        private UserControls.ChartIO_Update chartIO_Update1;
         private System.Windows.Forms.Timer StatusRefreshTimer;
+        private System.Windows.Forms.Button btnExport;
+        private UserControls.ChartIO_Update chartIO_Update1;
+        private System.Windows.Forms.CheckBox chkRealTimeChart;
+        private System.Windows.Forms.Button btn_Query;
+        private System.Windows.Forms.ComboBox cbModel;
     }
 }

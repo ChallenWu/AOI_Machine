@@ -34,6 +34,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SerialPortLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SerialPortLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
@@ -42,6 +46,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="XCore">
+      <HintPath>..\XCore\XCore\bin\Debug\XCore.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Message.cs" />
@@ -53,16 +60,6 @@
     <Compile Include="SimpleTcpClient.cs" />
     <Compile Include="SimpleTcpClient2.cs" />
     <Compile Include="SimpleTcpServer.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SerialPortLib\SerialPortLib.csproj">
-      <Project>{3e92904c-6c66-4557-89ab-53cc78be54f9}</Project>
-      <Name>SerialPortLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\XCore\XCore\XCore.csproj">
-      <Project>{fb48cd97-6691-4853-a7bf-69ddb35f3363}</Project>
-      <Name>XCore</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

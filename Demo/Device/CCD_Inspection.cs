@@ -31,14 +31,14 @@ namespace HB_IWatch
 
         public void Connect()
         {
-            try
-            {
-              simpleTcpClient.Connect(Globals.SettingICT.CCD_IP, Globals.SettingICT.CCD_Port);
-            }
-            catch
-            {
+            //try
+            //{
+            //  simpleTcpClient.Connect(Globals.SettingICT.CCD_IP, Globals.SettingICT.CCD_Port);
+            //}
+            //catch
+            //{
 
-            }
+            //}
         }
 
         public void DisConnect()

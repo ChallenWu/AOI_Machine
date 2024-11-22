@@ -128,6 +128,7 @@ namespace Demo.Page
                     Globals.RUNMODE = MachineRunMode.NormalRun;
                     break;
             }
+            //Update UI 
             Globals.SetTopState();
         }
 
@@ -150,32 +151,30 @@ namespace Demo.Page
         {
             bool safeDoorSts = true;
 
+            //Kiểm tra cửa an toàn
             foreach (KeyValuePair<XDi, bool> kvp in XMachine.Instance.signalDoor)
             {
                 if (XMachine.Instance.DictDoorDiCheck.Keys.Contains(kvp.Key) && !XMachine.Instance.DictDoorDiCheck[kvp.Key])
                 {
                     continue;
                 }
-
                 DISTSTYPE diKeySts = DISTSTYPE.LOW;
                 kvp.Key.GetDi(ref diKeySts);
 
                 if (diKeySts == DISTSTYPE.LOW)
                 {
-                    if (((!Globals.SettingOption.IsOpensafeDoor()) && (!kvp.Value)) || Globals.Offline)
-                        continue;
-                    else
-                    {
-                        safeDoorSts = false;
-                        break;
-                    }
+                    //if (((!Globals.SettingOption.IsOpensafeDoor()) && (!kvp.Value)) || Globals.Offline)
+                    //    continue;
+                    //else
+                    //{
+                    //    safeDoorSts = false;
+                    //    break;
+                    //}
                 }
             }
 
             this.btnSafeDoor.BackColor = safeDoorSts ? MyColor.Green : MyColor.Red;
-            /////@ljz20191022
-            //if (Globals.SettingOption.是否开启安全门保护)
-            //{
+
             if (!safeDoorSts && iCunt == 0)
             {
 
@@ -183,7 +182,7 @@ namespace Demo.Page
                 if (m_asyncHandled[0])
                 {
                     m_asyncHandled[0] = false;
-                    string erro = "安全门已经打开，请关门";
+                    string erro = "Cửa an toàn đang mở";
                     HBMachine.Instance.ShowErroAsync(XAlarmId.DOOR_OPEN.ToString(), MultiLanguage.GetMessage(erro),"error","Đóng cửa an toàn",
                                                     "安全门报警", MultiLanguage.GetMessage("确认"), "", "", 
                                                     new XCore.CallbackAction(() => { m_asyncHandled[0] = true; return true; }), true);

@@ -438,8 +438,8 @@ namespace DataBaseManager
                     {
                         _connection.Open();
                     }
-                    Console.WriteLine(_connection.ConnectionString);
-                    Console.WriteLine(_connection.ToString());
+                    //Console.WriteLine(_connection.ConnectionString);
+                    //Console.WriteLine(_connection.ToString());
                     //Open();
                    // commandText = "SELECT * from machinedata.unitall";
                     using (SQLiteCommand cmd = new SQLiteCommand(commandText, _connection))

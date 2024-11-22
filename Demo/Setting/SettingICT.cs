@@ -9,7 +9,7 @@ using XCore.Framework.MultiLang;
 
 namespace Demo.Setting
 {
-    class SettingICT:XSetting
+    class SettingICT : XSetting
     {
         #region PLC_Setting
         [MyProperty("PLC_Connect", "PLC_Setting")]
@@ -42,7 +42,7 @@ namespace Demo.Setting
         {
             get
             {
-                return GetNodeValue("PLC_Port","2000");
+                return GetNodeValue("PLC_Port", "2000");
             }
             set
             {
@@ -75,12 +75,14 @@ namespace Demo.Setting
                 SetNodeValue("CCD_IP", value);
             }
         }
+
+
         [MyProperty("CCD_Port", "CCD_Setting")]
         public int CCD_Port
         {
             get
             {
-                return GetNodeValue("CCD_Port", 9999 );
+                return GetNodeValue("CCD_Port", 9999);
             }
             set
             {
@@ -182,7 +184,7 @@ namespace Demo.Setting
             }
         }
         #endregion
-        #region Scanner_Setting
+        #region Safedoor
         [MyProperty("Safedoor", "Parameter")]
         public bool Safedoor
         {
@@ -195,6 +197,19 @@ namespace Demo.Setting
                 SetNodeValue("Safedoor", value);
             }
         }
+        [MyProperty("CheckDummySN", "Parameter")]
+        public bool CheckDummySN
+        {
+            get
+            {
+                return GetNodeValue("CheckDummySN", false);
+            }
+            set
+            {
+                SetNodeValue("CheckDummySN", value);
+            }
+        }
+
         #endregion
     }
 }

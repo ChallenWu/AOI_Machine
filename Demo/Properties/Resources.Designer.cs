@@ -133,6 +133,16 @@ namespace Demo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _ok {
+            get {
+                object obj = ResourceManager.GetObject("_ok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _right {
             get {
                 object obj = ResourceManager.GetObject("_right", resourceCulture);
@@ -156,6 +166,16 @@ namespace Demo.Properties {
         internal static System.Drawing.Bitmap _rotate_clock {
             get {
                 object obj = ResourceManager.GetObject("_rotate_clock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _start {
+            get {
+                object obj = ResourceManager.GetObject("_start", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

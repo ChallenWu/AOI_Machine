@@ -1,0 +1,5 @@
+2024/11/16 15:24:24:670 => Station4 => AlarmCode:10001 => Category:SafetyError => Cửa an toàn
+2024/11/16 15:26:02:948 => Station4 => AlarmCode:10001 => Category:SafetyError => Cửa an toàn
+2024/11/16 15:29:34:087 => Station4 => AlarmCode:10001 => Category:SafetyError => Cửa an toàn
+2024/11/16 15:29:35:022 => Station4 => AlarmCode:10001 => Category:SafetyError => Cửa an toàn
+2024/11/16 15:29:51:736 => Station4 => AlarmCode:10001 => Category:SafetyError => Cửa an toàn

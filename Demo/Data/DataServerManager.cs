@@ -11,6 +11,7 @@ using BoTech;
 using NPOI.SS.UserModel;
 using NPOI.SS.Formula.Functions;
 using System.Net.NetworkInformation;
+using Demo;
 
 namespace BoTech
 {
@@ -73,7 +74,7 @@ namespace BoTech
         {
             string[] colName = new string[] { "AlarmSerialNumber", "HappenTime", "EffectiveHappenTime", "EndTime", "Days", "ErrorCode", "ErrorCategory", "Duration", "DurationCategory", "ErrorMessageE", "ErrorMessageC", "DealtMethod" };
             string[] colValues = new string[] { AM.AlarmSerialNumber,AM.HappenTime.ToString("yyyy-MM-dd HH:mm:ss"),AM.EffectiveHappenTime.ToString("yyyy-MM-dd HH:mm:ss"), AM.EndTime.ToString("yyyy-MM-dd HH:mm:ss"),  AM.EndTime.ToString("yyyy-MM-dd"),
-                                                AM.NowAlarm.ErrorCode, AM.NowAlarm.ErrorCatrgory, AM.Duration.ToString(),AM.DurationCatigory.ToString(), AM.NowAlarm.MessageEn, AM.NowAlarm.MessageCn, AM.NowAlarm.DealtMethod };
+                                                AM.NowAlarm.ErrorCode, AM.NowAlarm.ErrorCategory, AM.Duration.ToString(),AM.DurationCatigory.ToString(), AM.NowAlarm.MessageEn, AM.NowAlarm.MessageCn, AM.NowAlarm.DealtMethod };
 
             DBH.InsertStandardValues(alarmTableName, colName, colValues);
         }
@@ -95,7 +96,7 @@ namespace BoTech
                 AM.DurationCatigory = 25;
             string[] colName = new string[] { "AlarmSerialNumber", "HappenTime", "EffectiveHappenTime", "EndTime", "Days", "ErrorCode", "ErrorCategory", "Duration", "DurationCategory", "ErrorMessageE", "ErrorMessageC", "DealtMethod" };
             string[] colValues = new string[] { AM.AlarmSerialNumber,AM.HappenTime.ToString("yyyy-MM-dd HH:mm:ss"),AM.EffectiveHappenTime.ToString("yyyy-MM-dd HH:mm:ss"), AM.EndTime.ToString("yyyy-MM-dd HH:mm:ss"),  AM.EndTime.ToString("yyyy-MM-dd"),
-                                                AM.NowAlarm.ErrorCode, AM.NowAlarm.ErrorCatrgory, AM.Duration.ToString(),AM.DurationCatigory.ToString(), AM.NowAlarm.MessageEn, AM.NowAlarm.MessageCn, AM.NowAlarm.DealtMethod };
+                                                AM.NowAlarm.ErrorCode, AM.NowAlarm.ErrorCategory, AM.Duration.ToString(),AM.DurationCatigory.ToString(), AM.NowAlarm.MessageEn, AM.NowAlarm.MessageCn, AM.NowAlarm.DealtMethod };
 
             DBH.UpdateValues(alarmTableName, colName, colValues, "AlarmSerialNumber", AM.AlarmSerialNumber);
         }
@@ -211,6 +212,25 @@ namespace BoTech
             }
 
         }
+        public void InsertUnitMessage(ProductMessage ucm, int unitIndes)
+        {
+            try
+            {
+                ProductInfor UM = ucm.Unit;
+                DateTime now = DateTime.Now;
+                string[] colName = new string[] { "Model","HappenTime", "Days", "Hours", "Shift", "Unit_SN", "Component_SN", "Start_Time", "End_Time", "Pass", "CT", "Hive_State" };
+                string[] colValues = new string[] {UM.ModelProduct, now.ToString("yyyy-MM-dd HH:mm:ss"),now.ToString("yyyy-MM-dd") , now.ToString("HH"),
+                                               UM.Shift, UM.UnitSN, ucm.UC_SN, UM.StartTime.ToString("yyyy-MM-dd HH:mm:ss"),UM.EndTime.ToString("yyyy-MM-dd HH:mm:ss"), UM.Pass, UM.CT.ToString("f2"), UM.HiveState.ToString() };
+                //创建数据表
+                //dbh.CreateTable("test001", colName, colTypes);    
+                DBH.InsertStandardValues(unitTableName, colName, colValues);
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+        }
 
 
         public DataTable Select_8H(DateTime start, DateTime end)
@@ -227,9 +247,11 @@ namespace BoTech
 
 
         /****************************************************/
+
+        //CycleTime
         public DataTable Select7DavgCT(DateTime startTime)
         {
-            //   7D  小时平均CT
+            //   7D  CT trung bình hàng giờ
             DataTable dt = null;
             StringBuilder sb = new StringBuilder();
             sb.Append($"select avg(CT),Shift from {unitTableName} where  Days='{startTime.ToString("yyyy-MM-dd")}' and Shift='DS' ");
@@ -241,8 +263,7 @@ namespace BoTech
             {
                 sb.Append($"union all select avg(CT),Shift from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='NS' ");
             }
-            Console.WriteLine(sb.ToString());
-            //sb.Append(";");
+            sb.Append(";");
             try
             {
                 dt = DBH.SelectValues(sb.ToString()).Tables[0];
@@ -255,18 +276,48 @@ namespace BoTech
             return dt;
         }
 
-        public DataTable Select24HDavgCT(DateTime startTime)
+        public DataTable SelectMultiDayCT(DateTime startTime, DateTime endTime)
         {
-
-            //   24H  小时平均CT
+            //CT trung bình 
             DataTable dt = null;
             StringBuilder sb = new StringBuilder();
-            sb.Append($"select avg(CT),'{startTime.Hour}' as Hours from {unitTableName} where  End_Time>='{startTime.ToString("yyyy-MM-dd HH:00:00")}' and End_Time<'{startTime.AddHours(1).ToString("yyyy-MM-dd HH:00:00")}' ");
-
-
-            for (int i = 0; i < 23; i++)
+            var Day = (endTime.Date - startTime.Date).Days + 1;
+            if(Day >= 30)
             {
-                //sb.Append($"union all select avg(CT),'{startTime.AddHours(-(i + 1)).Hour}' as Hours from machinedata.{unitTableName} where  End_Time>='{startTime.AddHours(-(i + 1)).ToString("yyyy-MM-dd HH:00:00")}' and End_Time<'{startTime.AddHours(-i).ToString("yyyy-MM-dd HH:00:00")}' ");
+                Day = 30;
+            }
+            sb.Append($"select avg(CT),Shift from {unitTableName} where  Days='{endTime.ToString("yyyy-MM-dd")}' and Shift='DS' ");
+            for (int i = 1; i < Day; i++)
+            {
+                sb.Append($"union all select avg(CT),Shift from {unitTableName} where  Days='{endTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='DS' ");
+            }
+            for (int i = 0; i < Day; i++)
+            {
+                sb.Append($"union all select avg(CT),Shift from {unitTableName} where  Days='{endTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='NS' ");
+            }
+            sb.Append(";");
+            try
+            {
+                dt = DBH.SelectValues(sb.ToString()).Tables[0];
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+            return dt;
+        }
+
+        public DataTable Select24HDavgCT(string Model, DateTime startTime)
+        {
+            DataTable dt = null;
+            StringBuilder sb = new StringBuilder();            
+            sb.Append($"select avg(CT),'{startTime.Hour}' as Hours from {unitTableName} " +
+                        $"where  End_Time>='{startTime.ToString("yyyy-MM-dd HH:00:00")}' " +
+                        $"and End_Time<'{startTime.AddHours(1).ToString("yyyy-MM-dd HH:00:00")}'");
+
+            for (int i = 0; i < 24; i++)
+            {               
                 sb.Append($"union all select avg(CT),'{startTime.AddHours((i + 1)).Hour}' as Hours from {unitTableName} where  End_Time>='{startTime.AddHours((i + 1)).ToString("yyyy-MM-dd HH:00:00")}' and End_Time<'{startTime.AddHours(i + 2).ToString("yyyy-MM-dd HH:00:00")}' ");
             }
             sb.Append(";");
@@ -274,25 +325,96 @@ namespace BoTech
             dt = DBH.SelectValues(sb.ToString()).Tables[0];
             int x = dt.Rows.Count;
             return dt;
-
         }
 
 
-        /*统计7D产量；*/
+
+        public DataTable Select24hInDay(DateTime startTime)
+        {
+            DataTable dt = null;
+            StringBuilder sb = new StringBuilder();
+
+            string dateOnly = startTime.ToString("yyyy-MM-dd");
+
+            sb.Append($"select avg(CT), 0 as Hours from {unitTableName} where End_Time >= '{dateOnly} 00:00:00' and End_Time < '{dateOnly} 01:00:00' ");
+
+            // Truy vấn cho các giờ tiếp theo từ 1h đến 23h
+            for (int i = 1; i < 24; i++)
+            {
+                sb.Append($"union all select avg(CT), {i} as Hours from {unitTableName} where End_Time >= '{dateOnly} {i:00}:00:00' and End_Time < '{dateOnly} {i + 1:00}:00:00' ");
+            }
+            sb.Append(";");
+            string str = sb.ToString();
+            dt = DBH.SelectValues(sb.ToString()).Tables[0];
+            int x = dt.Rows.Count;
+            return dt;
+        }
+        /*Thống kê đầu ra 7D;*/
         public DataTable Count7DayYield(DateTime startTime)
         {
             //DataBaseHelper dataBaseHelper = new DataBaseHelper();
             //   7D  小时平均CT
             DataTable dt = null;
             StringBuilder sb = new StringBuilder();
-            sb.Append($"select Count(*),Days,Shift from {unitTableName} where  Days='{startTime.ToString("yyyy-MM-dd")}' and Shift='DS' ");
+            sb.Append($"select Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.ToString("yyyy-MM-dd")}' and Shift='DS' and PASS = 'PASS' ");
+            sb.Append("union all ");
+            sb.Append($"select Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.ToString("yyyy-MM-dd")}' and Shift='DS' and PASS = 'FAIL' ");
+
             for (int i = 1; i < 7; i++)
             {
-                sb.Append($"union all select all Count(*),Days,Shift from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='DS' ");
+                sb.Append($"union all select all Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='DS' and Pass ='PASS' ");
+                sb.Append($"union all select all Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='DS' and Pass ='FAIL' ");
             }
             for (int i = 0; i < 7; i++)
             {
-                sb.Append($"union all select Count(*),Days,Shift from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='NS' ");
+                sb.Append($"union all select Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='NS' and Pass ='PASS' ");
+                sb.Append($"union all select Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='NS' and Pass ='FAIL' ");
+            }
+            sb.Append(";");
+            string str = sb.ToString();
+            dt = DBH.SelectValues(sb.ToString()).Tables[0];
+            return dt;
+        }
+        public DataTable CountDayYield(DateTime startTime)
+        {
+            DataTable dt = null;
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"select Count(*),Days,PASS from {unitTableName} where Days='{startTime.ToString("yyyy-MM-dd")}' and PASS = 'PASS' ");
+
+            for (int i = 1; i < 7; i++)
+            {
+                sb.Append($"union all select all Count(*),Days,PASS from {unitTableName} where Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Pass ='PASS' ");
+            }
+            for (int i = 0; i < 7; i++)
+            {
+                sb.Append($"union all select Count(*),Days,PASS from {unitTableName} where Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Pass ='FAIL' ");
+            }
+            sb.Append(";");
+            string str = sb.ToString();
+            dt = DBH.SelectValues(sb.ToString()).Tables[0];
+            return dt;
+        }
+
+        public DataTable CountMultiDayYield(DateTime startTime,DateTime endTime)
+        {
+            //   7D  小时平均CT
+            DataTable dt = null;
+            StringBuilder sb = new StringBuilder();
+            var Day = (endTime.Date - startTime.Date).Days + 1;
+
+            if (Day >= 30)
+            {
+                Day = 30;
+            }
+            sb.Append($"select Count(*),Days,Pass from {unitTableName} where Days='{endTime.ToString("yyyy-MM-dd")}' and Pass ='PASS' ");
+
+            for (int i = 1; i < Day; i++)
+            {
+                sb.Append($"union all select all Count(*),Days ,Pass from {unitTableName} where  Days='{endTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Pass ='PASS' ");
+            }
+            for (int i = 0; i < Day; i++)
+            {
+                sb.Append($"union all select Count(*),Days, Pass from {unitTableName} where  Days='{endTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Pass ='FAIL' ");
             }
             sb.Append(";");
             string str = sb.ToString();
@@ -310,8 +432,38 @@ namespace BoTech
 
             for (int i = 0; i < 23; i++)
             {
-                sb.Append($"union all select Count(*),'{startTime.AddHours((i + 1)).Hour}' as Hours from {unitTableName} where  End_Time>='{startTime.AddHours((i + 1)).ToString("yyyy-MM-dd HH:00:00")}' and End_Time<'{startTime.AddHours(i + 2).ToString("yyyy-MM-dd HH:00:00")}' ");
+                sb.Append($"union all select Count(*),'{startTime.AddHours((i + 1)).Hour}' as Hours from {unitTableName} " +
+                          $"where  End_Time>='{startTime.AddHours((i + 1)).ToString("yyyy-MM-dd HH:00:00")}' " +
+                          $"and End_Time<'{startTime.AddHours(i + 2).ToString("yyyy-MM-dd HH:00:00")}' ");
             }
+            sb.Append(";");
+            string str = sb.ToString();
+            dt = DBH.SelectValues(sb.ToString()).Tables[0];
+            int x = dt.Rows.Count;
+            return dt;
+        }
+
+        public DataTable Count24HourYield(DateTime startTime, int a)
+        {
+            DataTable dt = null;
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"select Count(*), Pass,'{startTime.Hour}' as Hours from {unitTableName} where Pass = 'PASS' " +
+                      $"and End_Time >= '{startTime.ToString("yyyy-MM-dd HH:00:00")}' " +
+                      $"and End_Time < '{startTime.AddHours(1).ToString("yyyy-MM-dd HH:00:00")}' ");
+
+            for (int i = 0; i < 23; i++)
+            {
+                sb.Append($"union all select Count(*), Pass,'{startTime.AddHours((i + 1)).Hour}' as Hours from {unitTableName} " +
+                          $"where End_Time >='{startTime.AddHours((i + 1)).ToString("yyyy-MM-dd HH:00:00")}' " +
+                          $"and End_Time<'{startTime.AddHours(i + 2).ToString("yyyy-MM-dd HH:00:00")}' and Pass = 'PASS' ");
+            }
+            for (int i = 0; i < 24; i++)
+            {
+                sb.Append($"union all select Count(*), Pass,'{startTime.AddHours((i)).Hour}' as Hours from {unitTableName}" +
+                          $" where  End_Time >= '{startTime.AddHours((i)).ToString("yyyy-MM-dd HH:00:00")}' " +
+                          $" and End_Time < '{startTime.AddHours(i + 1).ToString("yyyy-MM-dd HH:00:00")}' and Pass = 'FAIL' ");
+            }
+
             sb.Append(";");
             string str = sb.ToString();
             dt = DBH.SelectValues(sb.ToString()).Tables[0];
@@ -349,6 +501,26 @@ namespace BoTech
             return dt;
         }
 
+        public DataTable MonitorMassProduct(DateTime start, DateTime end)
+        {
+            DataTable dt = null;
+            string Command = "";
+            Command = $"select HappenTime,Shift,Unit_SN,Component_SN,Start_Time,End_Time,Pass,CT,Hive_State,Model from {unitTableName} where HappenTime between '{start.ToString("yyyy-MM-dd HH:mm:ss")}' and '{end.ToString("yyyy-MM-dd HH:mm:ss")}' order by  HappenTime  desc";
+
+            dt = DBH.SelectValues(Command).Tables[0];
+            return dt;
+        }
+
+        public DataTable MonitorMassProduct(string Model, DateTime start, DateTime end)
+        {
+            DataTable dt = null;
+            string Command = "";
+            Command = $"select HappenTime,Shift,Unit_SN,Component_SN,Start_Time,End_Time,Pass,CT,Hive_State,Model from {unitTableName} where Model = '{Model}' and HappenTime between '{start.ToString("yyyy-MM-dd HH:mm:ss")}' and '{end.ToString("yyyy-MM-dd HH:mm:ss")}' order by  HappenTime  desc";
+
+            dt = DBH.SelectValues(Command).Tables[0];
+            return dt;
+        }
+
 
         public DataTable SelectDurationUnit2(DateTime start, DateTime end)
         {
@@ -375,6 +547,8 @@ namespace BoTech
             return dt;
 
         }
+
+        
 
         public DataTable SelectLastProduct()
         {
@@ -427,7 +601,7 @@ namespace BoTech
             DataTable dt = null;
             string Command = "";
 
-            Command = $"select Days,PreviousState,count(*),sum(TimeSpan) from {machineStateTableName} where HappenTime between '{start.ToString("yyyy-MM-dd HH:mm:ss")}' and '{end.ToString("yyyy-MM-dd HH:mm:ss")}' group by Days,PreviousState order by Days";
+            Command = $"select Days,PreviousState,count(*),sum(TimeSpan) from {machineStateTableName} where HappenTime between '{start.ToString("yyyy-MM-dd")}' and '{end.ToString("yyyy-MM-dd HH:mm:ss")}' group by Days,PreviousState order by Days";
 
             dt = DBH.SelectValues(Command).Tables[0];
             return dt;
@@ -477,6 +651,14 @@ namespace BoTech
 
         //    DBH.InsertStandardValues(operationLogTableName, colName, colValues);
         //}
+         
+        public void InsertOperationLog(string OperationMessage)
+        {
+            string[] colName = new string[] { "HappenTime", "User_Name", "JobTitle", "OperationMessage" };
+            string[] colValues = new string[] { DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"), UserAccountControl.currentAccount.Name, UserAccountControl.currentAccount.UserPermission.ToString(), OperationMessage };
+
+            DBH.InsertStandardValues(operationLogTableName, colName, colValues);
+        }
 
         public DataTable SelectOperationLog(DateTime start, DateTime end)
         {

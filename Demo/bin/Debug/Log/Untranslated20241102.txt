@@ -1,0 +1,1514 @@
+Emergency
+Stop
+Safetydoor
+Stop
+Curtain sensor
+Stop
+Axis Servo On Fail
+Stop
+Axis Negative Limit
+Stop
+Axis Alarm
+Stop
+Axis Positive Limit
+Stop
+Axis Alarm
+Stop
+Axis Alarm
+Stop
+DI Error
+Stop
+Init Card Err
+Stop
+Load Card paramter Err
+Stop
+Supply Air Err
+Stop
+Parameter_Abnormality
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+Confirm to start reset?
+Confirm
+Confirm
+Confirm to start reset?
+Confirm
+Confirm
+Confirm that the machine is stopped?
+Tips
+Confirm to start reset?
+Confirm
+Confirm
+Confirm to start reset?
+Confirm
+Confirm
+Reset Complete
+Hoàn thành reset
+Tips
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Tips
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Confirm that the machine is stopped?
+Tips
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Stop Runing Task 70
+Confirm to start reset?
+Confirm
+Confirm
+Reset Complete
+Hoàn thành reset
+Tips
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Tips
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Tips
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+Pause Task 70
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+Confirm that the machine is stopped?
+Tips
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+WaitCarrierInSignal
+Stop Runing Task 70
+Bạn có chắc chắn thoát khỏi phần mềm không?
+Promt
+Promt
+Emergency
+Stop
+Safetydoor
+Stop
+Curtain sensor
+Stop
+Axis Servo On Fail
+Stop
+Axis Negative Limit
+Stop
+Axis Alarm
+Stop
+Axis Positive Limit
+Stop
+Axis Alarm
+Stop
+Axis Alarm
+Stop
+DI Error
+Stop
+Init Card Err
+Stop
+Load Card paramter Err
+Stop
+Supply Air Err
+Stop
+Parameter_Abnormality
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+XAxis
+YAxis
+ZAxis
+RAxis
+XAxis
+YAxis
+ZAxis
+RAxis
+XAxis
+YAxis
+ZAxis
+RAxis
+Emergency
+Stop
+Safetydoor
+Stop
+Curtain sensor
+Stop
+Axis Servo On Fail
+Stop
+Axis Negative Limit
+Stop
+Axis Alarm
+Stop
+Axis Positive Limit
+Stop
+Axis Alarm
+Stop
+Axis Alarm
+Stop
+DI Error
+Stop
+Init Card Err
+Stop
+Load Card paramter Err
+Stop
+Supply Air Err
+Stop
+Parameter_Abnormality
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+XAxis
+YAxis
+ZAxis
+RAxis
+Emergency
+Stop
+Safetydoor
+Stop
+Curtain sensor
+Stop
+Axis Servo On Fail
+Stop
+Axis Negative Limit
+Stop
+Axis Alarm
+Stop
+Axis Positive Limit
+Stop
+Axis Alarm
+Stop
+Axis Alarm
+Stop
+DI Error
+Stop
+Init Card Err
+Stop
+Load Card paramter Err
+Stop
+Supply Air Err
+Stop
+Parameter_Abnormality
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+XAxis
+YAxis
+ZAxis
+RAxis
+Emergency
+Stop
+Safetydoor
+Stop
+Curtain sensor
+Stop
+Axis Servo On Fail
+Stop
+Axis Negative Limit
+Stop
+Axis Alarm
+Stop
+Axis Positive Limit
+Stop
+Axis Alarm
+Stop
+Axis Alarm
+Stop
+DI Error
+Stop
+Init Card Err
+Stop
+Load Card paramter Err
+Stop
+Supply Air Err
+Stop
+Parameter_Abnormality
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+Safetydoor
+SafetyDoorAlarm
+Stop
+Safetydoor
+Parameter_Abnormality
+ConfigAlarm
+Stop
+Safetydoor
+Parameter_Abnormality
+ConfigAlarm
+Stop
+Safetydoor
+Bạn có chắc chắn thoát khỏi phần mềm không?
+Promt
+Promt
+Emergency
+Stop
+Safetydoor
+Stop
+Curtain sensor
+Stop
+Axis Servo On Fail
+Stop
+Axis Negative Limit
+Stop
+Axis Alarm
+Stop
+Axis Positive Limit
+Stop
+Axis Alarm
+Stop
+Axis Alarm
+Stop
+DI Error
+Stop
+Init Card Err
+Stop
+Load Card paramter Err
+Stop
+Supply Air Err
+Stop
+Parameter_Abnormality
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun

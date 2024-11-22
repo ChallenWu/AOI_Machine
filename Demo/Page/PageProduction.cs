@@ -1,5 +1,4 @@
-﻿//using AutoStudio.Core.Views.Regions;
-using BoTech;
+﻿using BoTech;
 using Demo.UserControls;
 using System;
 using System.Collections.Generic;
@@ -11,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Net.NetworkInformation;
+using Demo.Setting;
 
 namespace Demo.Page
 {
@@ -27,12 +28,6 @@ namespace Demo.Page
             }
         }
         
-        //public event  Action<string,string> UpdateUserName;
-
-        //public void RequestUpdateLabel(string user, string value)
-        //{
-        //    UpdateUserName?.Invoke(user, value);
-        //}
         public PageProduction()
         {
             InitializeComponent();   
@@ -56,9 +51,9 @@ namespace Demo.Page
             //this.stn1.SiteName = AudioSystem.AudioMachineMessage.Site;
             //this.stn1.Vender = AudioSystem.AudioMachineMessage.Vendor;
 
-            ////Ouput đường dẫn file
-            //AudioSystem.AudioMachineMessage.Main_SW_Path = Application.StartupPath + @"\Demo.exe";
-            //string[] tem = AudioSystem.AudioMachineMessage.Main_SW_Path.Split('\\');
+            //Ouput đường dẫn file
+            AudioSystem.InforMachine.Main_SW_Path = Application.StartupPath + @"\Demo.exe";
+            string[] tem = AudioSystem.InforMachine.Main_SW_Path.Split('\\');
 
             //if (tem.Length > 3)
             //{
@@ -70,19 +65,19 @@ namespace Demo.Page
 
         private static void LoadMachineMessage()
         {
-            AudioSystem.AudioMachineMessage.Main_SW_Path = Application.StartupPath + @"\Demo.exe";
-            AudioSystem.AudioMachineMessage.MS_Hash = GetFileHash.SHA1(Application.StartupPath + @"\Demo.exe");
+            AudioSystem.InforMachine.Main_SW_Path = Application.StartupPath + @"\Demo.exe";
+            AudioSystem.InforMachine.MS_Hash = GetFileHash.SHA1(Application.StartupPath + @"\Demo.exe");
             try
             {
                     string visionFile = @"D:\CCD\BE010\CCDAlignMentSystem\CCDAlignMentSystem\bin\Debug\CCDAlignMentSystem.exe";
                     if (File.Exists(visionFile))
                     {
-                        AudioSystem.AudioMachineMessage.VS_Hash = GetFileHash.SHA1(visionFile);
+                        AudioSystem.InforMachine.VS_Hash = GetFileHash.SHA1(visionFile);
                     }
                     else
                     {
                         string visionTemp = Application.StartupPath + @"\CCDAlignMentSystem.exe";
-                        AudioSystem.AudioMachineMessage.VS_Hash = GetFileHash.SHA1(visionTemp);
+                        AudioSystem.InforMachine.VS_Hash = GetFileHash.SHA1(visionTemp);
                     }
             }
             catch (Exception ex)
@@ -94,7 +89,7 @@ namespace Demo.Page
 
         private void RefreshSTN()
         {
-        //    IniSTN();
+           IniSTN();
 
 
         //    if (AudioSystem.AudioMachineMessage.Station == AudioSystem.MachineName_BE010_1)
@@ -138,8 +133,6 @@ namespace Demo.Page
         //        AudioSystem.isHiveOk = false;
         //        this.stn1.HIVEConnected = false;
         //    }
-
-
         }
 
         #endregion
@@ -177,7 +170,15 @@ namespace Demo.Page
                                 NGunit += Convert.ToInt32(dt.Rows[i][1]);
                         }
                         this.iO_Summary.Input_Output = (OKunit + 1).ToString() + "/" + (OKunit + 1 + NGunit).ToString();
-                        this.iO_Summary.Yield = ((OKunit + 1) * 100.0 / (OKunit + 1 + NGunit)).ToString("f2") + "%";
+                        
+                        if (OKunit == 0 && NGunit ==0)
+                            {
+                            this.iO_Summary.Yield = "0"+ "%";
+                        }
+                        else
+                        {
+                            this.iO_Summary.Yield = (OKunit * 100.0 / (OKunit + NGunit)).ToString("f2") + "%";
+                        }    
                         OKunit = 0;
                         NGunit = 0;
                         DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd HH") + ":0:0", out dtt);
@@ -191,7 +192,7 @@ namespace Demo.Page
                             else
                                 NGunit = Convert.ToInt32(dt.Rows[i][1]);
                         }
-
+                        
                         this.iO_Summary.CT = (ucm.Units[unitIndex].CT).ToString("f2");
 
                         //if (currentUCSN != ucm.UC_SN)
@@ -235,7 +236,9 @@ namespace Demo.Page
                 //DataTable dt = DataServerManager.Instance.SelectUPHData(dtStart, DateTime.Now);
 
                 DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd HH") + ":0:0", out dtt);//request per hour
+
                 DataTable dt = DataServerManager.Instance.SelectUPHData(dtt, DateTime.Now);
+                //Select last product
                 DataTable dt1 = DataServerManager.Instance.SelectLastProduct();
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
@@ -246,13 +249,21 @@ namespace Demo.Page
                 }
                 //if ((OKunit + NGunit) == 0)
                 //{ return; }
-                this.iO_Summary.SN = dt1.Rows[0][5].ToString();
+                this.iO_Summary.SN = dt1.Rows[0][6].ToString();
 
 
                 this.iO_Summary.Input_Output = OKunit.ToString() + "/" + NGunit.ToString();
                 this.iO_Summary.Pass_Fail = OKunit.ToString() + "/" + NGunit.ToString();
                 this.iO_Summary.UPH = (OKunit + NGunit).ToString();
-                this.iO_Summary.Yield = (OKunit * 100.0 / (OKunit + NGunit)).ToString("f2") + "%";
+
+                if (OKunit == 0 && NGunit == 0)
+                {
+                    this.iO_Summary.Yield = "0" + "%";
+                }
+                else
+                {
+                    this.iO_Summary.Yield = (OKunit * 100.0 / (OKunit + NGunit)).ToString("f2") + "%";
+                }
 
                 PageChart.Instance.Async_UnitDaily(this.iO_Summary);
             }
@@ -351,6 +362,44 @@ namespace Demo.Page
                 this.StatusRefreshTimer.Start();
             }
 
+
+            //Ping PLC
+            if (PingIpOrDomainName("127.0.0.1"))
+            {
+                pnPLCStatus.BackColor = Color.Green;
+            }
+            else
+            {
+                pnPLCStatus.BackColor = Color.Red;
+            }
+
+            //Ping MES
+            if (PingIpOrDomainName("127.0.0.1"))
+            {
+                pnMESStatus.BackColor = Color.Green;
+            }
+            else
+            {
+                pnMESStatus.BackColor = Color.Red;
+            }
+            //Ping ICW
+            if (PingIpOrDomainName("127.0.0.1"))
+            {
+                pnICWStatus.BackColor = Color.Green;
+            }
+            else
+            {
+                pnICWStatus.BackColor = Color.Red;
+            }
+            //Ping CCD
+            //if (PingIpOrDomainName(Globals.SettingICT.ScanLead_IP))
+            //{
+            //    pnCCDStatus.BackColor = Color.Green;
+            //}
+            //else
+            //{
+            //    pnCCDStatus.BackColor = Color.Red;
+            //}
         }
 
         #region    MachineStateChange
@@ -359,7 +408,7 @@ namespace Demo.Page
             //Get database data
             DateTime now = DateTime.Now;
             //DateTime now = new DateTime(2024, 1, 29);
-            DateTime before = now.AddDays(-7).AddHours(-1);
+            DateTime before = now.AddDays(-6).AddHours(-1);
             DataTable mscTable = DataServerManager.Instance.SelectMachineState(before, now);
 
 
@@ -389,7 +438,11 @@ namespace Demo.Page
             }
             #endregion
 
-            #region 数据转换
+            #region chuyển đổi dữ liệu
+            //Lấy dữ liệu từ bảng dt SQL ra
+
+
+
             for (int i = 0; i < mscTable.Rows.Count; i++)
             {
                 DateTime rowTime = (DateTime)mscTable.Rows[i][0];
@@ -397,20 +450,38 @@ namespace Demo.Page
                 int colum = (int)mscTable.Rows[i][1];
                 if (row >= 0 && colum > 0)
                 {
-                    dt.Rows[row][colum] = TimeSpan.FromTicks(Convert.ToInt64(mscTable.Rows[i][3])).TotalMinutes;
+                    //dt.Rows[row][colum] = TimeSpan.FromTicks(Convert.ToInt64(mscTable.Rows[i][3])).TotalMinutes;
                     //edit
+                    //Console.WriteLine(mscTable.Rows[i][3].ToString());
                     dt.Rows[row][colum] = TimeSpan.FromSeconds(Convert.ToInt64(mscTable.Rows[i][3])).TotalMinutes;
 
                 }
             }
-
-
-
-
             #endregion
 
             //dataGridView1.DataSource = dt;
-            //刷新界面
+
+            //Refresh interface
+            //Xử lý dữ liệu bảng dt trên khi import vào chart
+            //TimeSpan date1 = now - now.Date;
+            //double timeDiff = date1.TotalMinutes;
+            //for (int i = 6; i >= 0; i--)
+            //{
+            //    for (int j = 1; j < 6; j++) //Tính giá trị các cột
+            //    {
+            //        if (Convert.ToDouble(dt.Rows[i][j]) > 1440)
+            //        {
+            //            dt.Rows[i - 1][j] = Convert.ToDouble(dt.Rows[i - 1][j]) + (Convert.ToDouble(dt.Rows[i][j]) - 1440);
+            //            if (i == 6) // Ngày hiện tại
+            //            {
+            //                dt.Rows[i][j] = timeDiff;
+            //            }
+            //            else
+            //                dt.Rows[i][j] = 1440;
+            //        }
+            //    }
+            //}
+
             this.machineStateChanges1.Refresh(dt);
 
         }
@@ -789,5 +860,80 @@ namespace Demo.Page
         }
         #endregion
 
+        #region Ping Domain
+        public static bool PingIpOrDomainName(string strIpOrDName)
+        {
+            try
+            {
+                Ping objPingSender = new Ping();
+
+                PingOptions objPinOptions = new PingOptions();
+
+                objPinOptions.DontFragment = true;
+
+                string data = "";
+
+                byte[] buffer = Encoding.UTF8.GetBytes(data);
+
+                int intTimeout = 120;
+
+                PingReply objPinReply = objPingSender.Send(strIpOrDName, intTimeout, buffer, objPinOptions);
+
+                string strInfo = objPinReply.Status.ToString();
+
+                if (strInfo == "Success")
+                {
+                    return true;
+                }
+
+                else
+                {
+                    return false;
+                }
+
+            }
+
+            catch (Exception)
+            {
+
+                return false;
+
+            }
+
+        }
+        #endregion
+
+        #region Button
+        private void btnOpenImage_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var filePath = @"E:\VDB\VisionDB";
+                if (Directory.Exists(filePath))
+                {
+                    System.Diagnostics.Process.Start(filePath);
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btnOpenReport_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var filePath = "E:\\HB_Record\\Report";
+                if (Directory.Exists(filePath))
+                {
+                    System.Diagnostics.Process.Start(filePath);
+                }
+            }
+            catch (Exception)
+            {
+            }
+        }
+        #endregion
     }
 }

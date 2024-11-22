@@ -29,13 +29,20 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pageContainer = new System.Windows.Forms.Panel();
             this.pnHeader = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pnModel = new System.Windows.Forms.Panel();
+            this.lbModelRun = new System.Windows.Forms.Label();
+            this.menuButton_Start = new Demo.MenuButton();
+            this.menuButton_Stop = new Demo.MenuButton();
+            this.menuButton_Pause = new Demo.MenuButton();
+            this.pnEQMStatus = new System.Windows.Forms.Panel();
+            this.lbEQMStatus = new System.Windows.Forms.Label();
             this.pnUser = new System.Windows.Forms.Panel();
             this.lblLevel = new System.Windows.Forms.Label();
             this.lblUser = new System.Windows.Forms.Label();
@@ -44,10 +51,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.switchButton_Version = new Demo.SwitchButton();
-            this.menuButton_Start = new Demo.MenuButton();
-            this.menuButton_Stop = new Demo.MenuButton();
-            this.menuButton_Pause = new Demo.MenuButton();
             this.menuButton_Home = new Demo.UserControls.newMenuButton();
             this.menuButton_Setting = new Demo.UserControls.newMenuButton();
             this.menuButton_Vison = new Demo.UserControls.newMenuButton();
@@ -58,6 +61,8 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.pnModel.SuspendLayout();
+            this.pnEQMStatus.SuspendLayout();
             this.pnUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -68,6 +73,7 @@
             // pageContainer
             // 
             this.pageContainer.BackColor = System.Drawing.SystemColors.Control;
+            this.pageContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pageContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageContainer.Location = new System.Drawing.Point(197, 3);
             this.pageContainer.Name = "pageContainer";
@@ -106,9 +112,9 @@
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(257, 0);
+            this.label1.Location = new System.Drawing.Point(315, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(513, 94);
+            this.label1.Size = new System.Drawing.Size(455, 94);
             this.label1.TabIndex = 17;
             this.label1.Text = "AOI Machine";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -130,23 +136,95 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.switchButton_Version);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.pnModel);
             this.panel1.Controls.Add(this.menuButton_Start);
             this.panel1.Controls.Add(this.menuButton_Stop);
             this.panel1.Controls.Add(this.menuButton_Pause);
+            this.panel1.Controls.Add(this.pnEQMStatus);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(452, 82);
             this.panel1.TabIndex = 18;
             // 
-            // button1
+            // pnModel
             // 
-            this.button1.Location = new System.Drawing.Point(16, 47);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 32);
-            this.button1.TabIndex = 14;
-            this.button1.UseVisualStyleBackColor = true;
+            this.pnModel.BackColor = System.Drawing.Color.IndianRed;
+            this.pnModel.Controls.Add(this.lbModelRun);
+            this.pnModel.Location = new System.Drawing.Point(16, 48);
+            this.pnModel.Name = "pnModel";
+            this.pnModel.Size = new System.Drawing.Size(150, 31);
+            this.pnModel.TabIndex = 17;
+            // 
+            // lbModelRun
+            // 
+            this.lbModelRun.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbModelRun.Location = new System.Drawing.Point(0, 0);
+            this.lbModelRun.Name = "lbModelRun";
+            this.lbModelRun.Size = new System.Drawing.Size(150, 31);
+            this.lbModelRun.TabIndex = 0;
+            this.lbModelRun.Text = "Model";
+            this.lbModelRun.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // menuButton_Start
+            // 
+            this.menuButton_Start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
+            this.menuButton_Start.BackgroundImage = global::Demo.Properties.Resources.start;
+            this.menuButton_Start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.menuButton_Start.Location = new System.Drawing.Point(197, 3);
+            this.menuButton_Start.MaximumSize = new System.Drawing.Size(67, 73);
+            this.menuButton_Start.MinimumSize = new System.Drawing.Size(67, 73);
+            this.menuButton_Start.Name = "menuButton_Start";
+            this.menuButton_Start.Selected = false;
+            this.menuButton_Start.Size = new System.Drawing.Size(67, 73);
+            this.menuButton_Start.TabIndex = 6;
+            this.menuButton_Start.Click += new System.EventHandler(this.menuButton_Start_Click);
+            // 
+            // menuButton_Stop
+            // 
+            this.menuButton_Stop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
+            this.menuButton_Stop.BackgroundImage = global::Demo.Properties.Resources.stop;
+            this.menuButton_Stop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.menuButton_Stop.Location = new System.Drawing.Point(366, 3);
+            this.menuButton_Stop.MaximumSize = new System.Drawing.Size(67, 73);
+            this.menuButton_Stop.MinimumSize = new System.Drawing.Size(67, 73);
+            this.menuButton_Stop.Name = "menuButton_Stop";
+            this.menuButton_Stop.Selected = false;
+            this.menuButton_Stop.Size = new System.Drawing.Size(67, 73);
+            this.menuButton_Stop.TabIndex = 8;
+            this.menuButton_Stop.Click += new System.EventHandler(this.menuButton_Stop_Click);
+            // 
+            // menuButton_Pause
+            // 
+            this.menuButton_Pause.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
+            this.menuButton_Pause.BackgroundImage = global::Demo.Properties.Resources.pause;
+            this.menuButton_Pause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.menuButton_Pause.Location = new System.Drawing.Point(279, 3);
+            this.menuButton_Pause.MaximumSize = new System.Drawing.Size(67, 73);
+            this.menuButton_Pause.MinimumSize = new System.Drawing.Size(67, 73);
+            this.menuButton_Pause.Name = "menuButton_Pause";
+            this.menuButton_Pause.Selected = false;
+            this.menuButton_Pause.Size = new System.Drawing.Size(67, 73);
+            this.menuButton_Pause.TabIndex = 7;
+            this.menuButton_Pause.Click += new System.EventHandler(this.menuButton_Pause_Click);
+            // 
+            // pnEQMStatus
+            // 
+            this.pnEQMStatus.BackColor = System.Drawing.Color.LawnGreen;
+            this.pnEQMStatus.Controls.Add(this.lbEQMStatus);
+            this.pnEQMStatus.Location = new System.Drawing.Point(16, 4);
+            this.pnEQMStatus.Name = "pnEQMStatus";
+            this.pnEQMStatus.Size = new System.Drawing.Size(150, 37);
+            this.pnEQMStatus.TabIndex = 16;
+            // 
+            // lbEQMStatus
+            // 
+            this.lbEQMStatus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbEQMStatus.Location = new System.Drawing.Point(0, 0);
+            this.lbEQMStatus.Name = "lbEQMStatus";
+            this.lbEQMStatus.Size = new System.Drawing.Size(150, 37);
+            this.lbEQMStatus.TabIndex = 0;
+            this.lbEQMStatus.Text = "Mode: Normal Run";
+            this.lbEQMStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnUser
             // 
@@ -181,7 +259,7 @@
             this.pictureBox1.Image = global::Demo.Properties.Resources.images;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(248, 87);
+            this.pictureBox1.Size = new System.Drawing.Size(306, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
@@ -247,57 +325,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(188, 680);
             this.tableLayoutPanel3.TabIndex = 13;
-            // 
-            // switchButton_Version
-            // 
-            this.switchButton_Version.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.switchButton_Version.Location = new System.Drawing.Point(15, 9);
-            this.switchButton_Version.Name = "switchButton_Version";
-            this.switchButton_Version.Size = new System.Drawing.Size(151, 35);
-            this.switchButton_Version.STS = false;
-            this.switchButton_Version.TabIndex = 9;
-            // 
-            // menuButton_Start
-            // 
-            this.menuButton_Start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
-            this.menuButton_Start.BackgroundImage = global::Demo.Properties.Resources.start;
-            this.menuButton_Start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.menuButton_Start.Location = new System.Drawing.Point(197, 3);
-            this.menuButton_Start.MaximumSize = new System.Drawing.Size(67, 73);
-            this.menuButton_Start.MinimumSize = new System.Drawing.Size(67, 73);
-            this.menuButton_Start.Name = "menuButton_Start";
-            this.menuButton_Start.Selected = false;
-            this.menuButton_Start.Size = new System.Drawing.Size(67, 73);
-            this.menuButton_Start.TabIndex = 6;
-            this.menuButton_Start.Click += new System.EventHandler(this.menuButton_Start_Click);
-            // 
-            // menuButton_Stop
-            // 
-            this.menuButton_Stop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
-            this.menuButton_Stop.BackgroundImage = global::Demo.Properties.Resources.stop;
-            this.menuButton_Stop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.menuButton_Stop.Location = new System.Drawing.Point(366, 3);
-            this.menuButton_Stop.MaximumSize = new System.Drawing.Size(67, 73);
-            this.menuButton_Stop.MinimumSize = new System.Drawing.Size(67, 73);
-            this.menuButton_Stop.Name = "menuButton_Stop";
-            this.menuButton_Stop.Selected = false;
-            this.menuButton_Stop.Size = new System.Drawing.Size(67, 73);
-            this.menuButton_Stop.TabIndex = 8;
-            this.menuButton_Stop.Click += new System.EventHandler(this.menuButton_Stop_Click);
-            // 
-            // menuButton_Pause
-            // 
-            this.menuButton_Pause.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
-            this.menuButton_Pause.BackgroundImage = global::Demo.Properties.Resources.pause;
-            this.menuButton_Pause.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.menuButton_Pause.Location = new System.Drawing.Point(279, 3);
-            this.menuButton_Pause.MaximumSize = new System.Drawing.Size(67, 73);
-            this.menuButton_Pause.MinimumSize = new System.Drawing.Size(67, 73);
-            this.menuButton_Pause.Name = "menuButton_Pause";
-            this.menuButton_Pause.Selected = false;
-            this.menuButton_Pause.Size = new System.Drawing.Size(67, 73);
-            this.menuButton_Pause.TabIndex = 7;
-            this.menuButton_Pause.Click += new System.EventHandler(this.menuButton_Pause_Click);
             // 
             // menuButton_Home
             // 
@@ -379,6 +406,7 @@
             this.ClientSize = new System.Drawing.Size(1389, 792);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -390,6 +418,8 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.pnModel.ResumeLayout(false);
+            this.pnEQMStatus.ResumeLayout(false);
             this.pnUser.ResumeLayout(false);
             this.pnUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -404,10 +434,8 @@
         private Demo.MenuButton menuButton_Start;
         private Demo.MenuButton menuButton_Pause;
         private Demo.MenuButton menuButton_Stop;
-        private Demo.SwitchButton switchButton_Version;
         private System.Windows.Forms.Panel pageContainer;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel pnUser;
         private System.Windows.Forms.Label lblLevel;
         private System.Windows.Forms.Label lblUser;
@@ -426,6 +454,10 @@
         private UserControls.newMenuButton menuButton_Vison;
         private UserControls.newMenuButton menuButton_Alarm;
         private UserControls.newMenuButton menuButton_Chart;
+        private System.Windows.Forms.Panel pnEQMStatus;
+        private System.Windows.Forms.Label lbEQMStatus;
+        private System.Windows.Forms.Panel pnModel;
+        private System.Windows.Forms.Label lbModelRun;
     }
 }
 

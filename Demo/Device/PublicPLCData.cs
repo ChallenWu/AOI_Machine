@@ -64,34 +64,34 @@ namespace Demo.Device
         }
         private bool GetPlcData()
         {
-            if(Connect() != true)
-            {
-                BzMessagebox.Show("Connect Error");
-            }
-            else
-            {
-                 result = ModbusApiH5U.ReadValueInt16(SoftElemType.REGI_H5U_D, (int)triggerRegister_D).Result;
-            }
+            //if(Connect() != true)
+            //{
+            //    BzMessagebox.Show("Connect Error");
+            //}
+            //else
+            //{
+            //     result = ModbusApiH5U.ReadValueInt16(SoftElemType.REGI_H5U_D, (int)triggerRegister_D).Result;
+            //}
             return true;
         }
-        bool Connect()
-        {
-            try
-            {
-                if(ModbusApiH5U.IsConnected)
-                {
-                    return true;
-                }
+        //bool Connect()
+        //{
+        //    //try
+        //    //{
+        //    //    if(ModbusApiH5U.IsConnected)
+        //    //    {
+        //    //        return true;
+        //    //    }
 
-                if (ModbusApiH5U.PLCConnect(Globals.SettingICT.PLC_IP, 1))
-                    return true;
-                else
-                    return false;
-            }
-            catch
-            {
-                return false;
-            }
-        }
+        //    //    if (ModbusApiH5U.PLCConnect(Globals.SettingICT.PLC_IP, 1))
+        //    //        return true;
+        //    //    else
+        //    //        return false;
+        //    //}
+        //    //catch
+        //    //{
+        //    //    return false;
+        //    //}
+        //}
     }
 }

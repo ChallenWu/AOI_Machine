@@ -218,9 +218,9 @@ namespace XCore
                     lastStsMap[readIdx] = temp;
                 }
             }
-            catch
+            catch (Exception)
             {
-
+                Console.WriteLine("bug");
             }
 
         }

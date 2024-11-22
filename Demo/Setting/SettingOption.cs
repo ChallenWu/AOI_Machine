@@ -463,12 +463,12 @@ namespace HB_IWatch
             }
         }
         //swh added @20201112
-        [MyProperty("压力值_压力限制_温度_温度限制", "C_设备信息"), ReadOnly(true)]
-        public double[] 压力值_压力限制_温度_温度限制
-        {
-            get { return XConvert.Str2DoubleG(settingMap["TempAndPressure"], ','); }
-            set { settingMap["TempAndPressure"] = XConvert.DoubleG2Str(value, ","); }
-        }
+        //[MyProperty("压力值_压力限制_温度_温度限制", "C_设备信息"), ReadOnly(true)]
+        //public double[] 压力值_压力限制_温度_温度限制
+        //{
+        //    get { return XConvert.Str2DoubleG(settingMap["TempAndPressure"], ','); }
+        //    set { settingMap["TempAndPressure"] = XConvert.DoubleG2Str(value, ","); }
+        //}
 
         //***********D_设备信息**************//
         #endregion
@@ -1996,7 +1996,7 @@ namespace HB_IWatch
             //    }
             //}
             //else
-                return false;
+            return false;
         }
     }
 }

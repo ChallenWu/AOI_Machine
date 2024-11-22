@@ -97,7 +97,7 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage Setting;
-        private XCore.XSettingGrid xSettingGrid_ICT;
-        private XCore.XSettingGrid xSettingGrid_SettingOption;
+        internal XCore.XSettingGrid xSettingGrid_ICT;
+        internal XCore.XSettingGrid xSettingGrid_SettingOption;
     }
 }

@@ -49,6 +49,7 @@
             this.netWorkWatcher1 = new Demo.NetWorkWatcher();
             this.switchButton1 = new Demo.SwitchButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtLogEngineer = new System.Windows.Forms.TextBox();
             this.btnSafeDoor = new System.Windows.Forms.Button();
@@ -58,15 +59,15 @@
             // 
             // xStationStateBar1
             // 
-            this.xStationStateBar1.Location = new System.Drawing.Point(8, 12);
+            this.xStationStateBar1.Location = new System.Drawing.Point(16, 12);
             this.xStationStateBar1.Name = "xStationStateBar1";
-            this.xStationStateBar1.Size = new System.Drawing.Size(238, 32);
+            this.xStationStateBar1.Size = new System.Drawing.Size(292, 32);
             this.xStationStateBar1.StationId = 4;
             this.xStationStateBar1.TabIndex = 2;
             // 
             // xTaskStepBar1
             // 
-            this.xTaskStepBar1.Location = new System.Drawing.Point(314, 12);
+            this.xTaskStepBar1.Location = new System.Drawing.Point(335, 12);
             this.xTaskStepBar1.Name = "xTaskStepBar1";
             this.xTaskStepBar1.Size = new System.Drawing.Size(292, 32);
             this.xTaskStepBar1.TabIndex = 3;
@@ -120,27 +121,27 @@
             // 
             // btnPLCStatus
             // 
-            this.btnPLCStatus.Location = new System.Drawing.Point(926, 257);
+            this.btnPLCStatus.Location = new System.Drawing.Point(884, 271);
             this.btnPLCStatus.Name = "btnPLCStatus";
-            this.btnPLCStatus.Size = new System.Drawing.Size(114, 37);
+            this.btnPLCStatus.Size = new System.Drawing.Size(90, 37);
             this.btnPLCStatus.TabIndex = 99;
             this.btnPLCStatus.Text = "PLC";
             this.btnPLCStatus.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(926, 336);
+            this.button2.Location = new System.Drawing.Point(884, 336);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 37);
+            this.button2.Size = new System.Drawing.Size(90, 37);
             this.button2.TabIndex = 100;
             this.button2.Text = "CCD";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(926, 403);
+            this.button3.Location = new System.Drawing.Point(990, 271);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(114, 37);
+            this.button3.Size = new System.Drawing.Size(90, 37);
             this.button3.TabIndex = 101;
             this.button3.Text = "MES";
             this.button3.UseVisualStyleBackColor = true;
@@ -238,6 +239,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(235)))));
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txtLogEngineer);
             this.panel1.Controls.Add(this.xStationStateBar1);
@@ -247,11 +249,21 @@
             this.panel1.Size = new System.Drawing.Size(645, 661);
             this.panel1.TabIndex = 112;
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(3, 388);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox1.Size = new System.Drawing.Size(634, 269);
+            this.textBox1.TabIndex = 6;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 81);
+            this.label1.Location = new System.Drawing.Point(5, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 16);
             this.label1.TabIndex = 5;
@@ -260,11 +272,11 @@
             // txtLogEngineer
             // 
             this.txtLogEngineer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogEngineer.Location = new System.Drawing.Point(8, 102);
+            this.txtLogEngineer.Location = new System.Drawing.Point(3, 80);
             this.txtLogEngineer.Multiline = true;
             this.txtLogEngineer.Name = "txtLogEngineer";
             this.txtLogEngineer.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtLogEngineer.Size = new System.Drawing.Size(634, 556);
+            this.txtLogEngineer.Size = new System.Drawing.Size(634, 302);
             this.txtLogEngineer.TabIndex = 4;
             // 
             // btnSafeDoor
@@ -273,7 +285,7 @@
             this.btnSafeDoor.Name = "btnSafeDoor";
             this.btnSafeDoor.Size = new System.Drawing.Size(77, 30);
             this.btnSafeDoor.TabIndex = 113;
-            this.btnSafeDoor.Text = "Safe Door";
+            this.btnSafeDoor.Text = "Safedoor";
             this.btnSafeDoor.UseVisualStyleBackColor = true;
             // 
             // btnEMG
@@ -343,5 +355,6 @@
         private System.Windows.Forms.Button btnEMG;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtLogEngineer;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

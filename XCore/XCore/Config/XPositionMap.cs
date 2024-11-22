@@ -12,6 +12,7 @@ namespace XCore
         private string name_path;
         private string root;
         private string node;
+
         public XPositionMap(string path, string name_path, string root, string node)
         {
             this.path = path;

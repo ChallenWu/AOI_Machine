@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="ACS.SPiiPlusNET">
       <HintPath>..\XCore\XCore\bin\Debug\ACS.SPiiPlusNET.dll</HintPath>
@@ -45,6 +48,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\AutoStudio.Core.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="MiniExcel">
       <HintPath>..\XCore\XCore\bin\Debug\MiniExcel.dll</HintPath>
     </Reference>
@@ -53,6 +59,9 @@
     </Reference>
     <Reference Include="NPOI.OOXML">
       <HintPath>..\XCore\XCore\bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp">
+      <HintPath>..\OVisionPro\bin\Debug\OpenCvSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -70,8 +79,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\TCPLib\bin\Debug\TCPLib.dll</HintPath>
     </Reference>
-    <Reference Include="XCore, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="XCore">
       <HintPath>..\XCore\XCore\bin\Debug\XCore.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -81,7 +89,9 @@
     <Compile Include="Data\DataBaseManager.cs" />
     <Compile Include="Data\DataFormatClass.cs" />
     <Compile Include="Data\DataServerManager.cs" />
+    <Compile Include="Data\Model\LoadModel.cs" />
     <Compile Include="Data\Model\ModelSettings.cs" />
+    <Compile Include="Data\Model\ModelStore.cs" />
     <Compile Include="Data\SQLiteHelper.cs" />
     <Compile Include="Device\CCD_Inspection.cs" />
     <Compile Include="Device\ICW_Scanner.cs" />
@@ -104,10 +114,7 @@
     <Compile Include="Id\DoId.cs" />
     <Compile Include="Id\GlobalsAutoConfig.cs" />
     <Compile Include="Id\TaskId.cs" />
-    <Compile Include="MES\Fukang_MES.cs" />
-    <Compile Include="MES\GTKMES.cs" />
     <Compile Include="MES\ICTMES.cs" />
-    <Compile Include="MES\MESManager.cs" />
     <Compile Include="Motion.cs" />
     <Compile Include="MotorSpeed.cs" />
     <Compile Include="MyColor.cs" />
@@ -162,15 +169,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Id\SettingId.cs" />
-    <Compile Include="Setting\SettingCalibration.cs" />
     <Compile Include="Setting\SettingICT.cs" />
-    <Compile Include="Setting\SettingNozzlesCompensation.cs" />
     <Compile Include="Setting\SettingOption.cs" />
     <Compile Include="Id\StationId.cs" />
-    <Compile Include="Data\AudioSystem.cs" />
-    <Compile Include="StationRunMode.cs" />
+    <Compile Include="MES\AudioSystem.cs" />
     <Compile Include="Task\ETask.cs" />
+    <Compile Include="Task\PropertyConverter .cs" />
     <Compile Include="Task\Task70_Scanner.cs" />
+    <Compile Include="Task\ValueProviderAttribute .cs" />
     <Compile Include="UserAccountControl.cs" />
     <Compile Include="UserControls\AlarmLogShow.cs">
       <SubType>UserControl</SubType>
@@ -210,12 +216,6 @@
     </Compile>
     <Compile Include="UserControls\DoubleTrackBar.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UserControls\DoubleTrackBarNew.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UserControls\DoubleTrackBarNew.Designer.cs">
-      <DependentUpon>DoubleTrackBarNew.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\DT Statiistic.cs">
       <SubType>UserControl</SubType>
@@ -317,6 +317,7 @@
     <Compile Include="UserControls\UserControlRegister.Designer.cs">
       <DependentUpon>UserControlRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="XML.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -440,6 +441,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1.ico" />
     <Content Include="Resources\alarm.png" />
     <Content Include="Resources\chart.png" />
     <Content Include="Resources\home.png" />
@@ -454,6 +456,8 @@
     <Content Include="Resources\vision.png" />
     <Content Include="Resources\_add.png" />
     <Content Include="Resources\_minus.png" />
+    <None Include="Resources\_start.png" />
+    <None Include="Resources\_ok.png" />
     <None Include="Resources\_up.png" />
     <None Include="Resources\_rotate_antiClock.png" />
     <None Include="Resources\_rotate_clock.png" />
@@ -472,9 +476,14 @@
       <Version>13.0.3</Version>
     </PackageReference>
     <PackageReference Include="System.Data.SQLite">
-      <Version>1.0.118</Version>
+      <Version>1.0.119</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\OVisionPro\OVisionPro.csproj">
+      <Project>{FA718659-207A-4E72-B388-79B496D26D8A}</Project>
+      <Name>OVisionPro</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,6 +10,7 @@ using XCore;
 using HB_IWatch;
 using Demo.Page;
 using Demo.Setting;
+using AutoStudio.Core.Views.CustomControls;
 
 namespace Demo
 {
@@ -38,19 +39,11 @@ namespace Demo
         //Tạo ra các setting cần thiết trong folder Settings
 
         //Setting chạy runing lúc thường và lúc chạy DOE
-        public static SettingOption SettingOption;
+        public static SettingOption SettingOption= new SettingOption();
         public static SettingOption SettingOption_PD = new SettingOption();
         public static SettingOption SettingOption_DOE = new SettingOption();
 
-        public static SettingCalibration SettingCalibration;
-        public static SettingCalibration SettingCalibration_PD = new SettingCalibration();
-        public static SettingCalibration SettingCalibration_DOE = new SettingCalibration();
-
-        public static SettingNozzlesCompensation SettingNozzlesCompensation;
-        public static SettingNozzlesCompensation SettingNozzlesCompensation_PD = new SettingNozzlesCompensation();
-        public static SettingNozzlesCompensation SettingNozzlesCompensation_DOE = new SettingNozzlesCompensation();
-
-        public static SettingICT SettingICT;
+        public static SettingICT SettingICT = new SettingICT();
         public static SettingICT SettingICT_PD = new SettingICT();  
         public static SettingICT SettingICT_DOE = new SettingICT();
 
@@ -63,13 +56,6 @@ namespace Demo
         public static event EventHandler OnStopActive;
 
         public static event EventHandler FlowStateEvent;
-
-        //Đường dẫn thư mục chứa config
-
-
-        //public delegate void SendInfoToGridViewShow(Dictionary<Enum_UpData, string> keys, string mesState);
-
-        //public static SendInfoToGridViewShow SendInfoToGridViewShowDelegate;
 
         public delegate void ClearGridViewData();
 
@@ -112,33 +98,30 @@ namespace Demo
         {
             #region Loading configuration information
             //Tạo đường link cho các path setting
-            Globals.SettingOption_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingOption_PD.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingOption");
-            Globals.SettingCalibration_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingCalibration_PD.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingLeftAssemble");
-            Globals.SettingNozzlesCompensation_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingOption_PD.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingOption");
-            
+            Globals.SettingOption_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingOption_PD.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingOption");                      
             Globals.SettingICT_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingICT.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingOption");
             #endregion
 
             #region Bind Setting
             // Đọc file config lên setting trong phần mềm
-            // Add setting vào từng ID  khai báo trong enum
-            XSettingManager.Instance.BindSetting((int)SettingId.选项_PD, SettingOption_PD, SettingId.选项_PD.ToString());
-            XSettingManager.Instance.BindSetting((int)SettingId.标定参数_PD, SettingCalibration_PD, SettingCalibration_PD.ToString());
-            XSettingManager.Instance.BindSetting((int)SettingId.标定参数_PD,SettingNozzlesCompensation_PD, SettingId.吸头补偿参数_PD.ToString());
-            
+            XSettingManager.Instance.BindSetting((int)SettingId.选项_PD, SettingOption_PD, SettingId.选项_PD.ToString());            
             XSettingManager.Instance.BindSetting((int)SettingId.ICT,SettingICT_PD, SettingICT_PD.ToString());
             #endregion
             //Load setting vào instance
-            XSettingManager.Instance.LoadSettings();
+            //XSettingManager.Instance.LoadSettings();
             //Add setting to machine or mode DOE
             if (true)
             {
                 SettingICT = SettingICT_PD;
                 SettingOption = SettingOption_PD;
+                //SettingICT = XML.ReadFileFromXml("D:\\AOI_Config\\Setting\\SettingICT.xml", SettingICT);
+                //Globals.SettingICT.path = "D:\\AOI_Config\\Setting\\SettingICT.xml";
+                //SettingOption = XML.ReadFileFromXml("D:\\AOI_Config\\Setting\\SettingOption_PD.xml", SettingOption);
+                
             }
             //Đổi ngôn ngữ
-            MultiLanguage.ChangeLanguage(Globals.SettingOption.语言, true);
-            Globals.SettingOption.语言 = LanguageType.English;
+            //MultiLanguage.ChangeLanguage(Globals.SettingOption.语言, true);
+            //Globals.SettingOption.语言 = LanguageType.English;
             //Bind dữ liệu
             GlobalsAutoConfig.BindDevice();
             //Update thông số tốc độ Axis
@@ -147,7 +130,7 @@ namespace Demo
             //Tạo các station id
             XController.Instance.StationId = -1;
             XStationManager.Instance.BindStation((int)StationId.Scanner, StationId.Scanner.ToString());
-            //Gán công việc cho các station id
+            //Gán task cho tứng station
             XStationManager.Instance.FindStationById((int)StationId.Scanner).BindTask((int)TaskId.Task70_ScannerBox);
             #endregion
 
@@ -157,6 +140,9 @@ namespace Demo
             //Gán tọa độ cho từng task
             XPositionManager.Instance.BindPositionTableByTaskId((int)TaskId.Task70_ScannerBox);
             XPositionManager.Instance.LoadPositionSet();
+
+            //XModelManager.Instance.SetModelXmlPathAndRoot("D:\\AOI_Config\\Position\\", "Models.xml", "models", Dir_BackUpConfigPosition, 
+            //(int)TaskId.Task70_ScannerBox, "Position.xml", "PositionName.xml", "Position", Dir_BackUpConfigPosition);
             #endregion
             //Cau hinh tin hieu
             #region binding EMG,Stop,Door signal
@@ -324,15 +310,12 @@ namespace Demo
         {
             //Globals.SettingCalibration = Globals.SettingCalibration_PD;
             SettingOption = SettingOption_PD;
-            Globals.SettingCalibration = Globals.SettingCalibration_PD;
         }
         public static bool IsDOEPCB = false;
 
         public static void AddDOECompensationXYR()
         {
             SettingOption = SettingOption_PD;
-            Globals.SettingCalibration = Globals.SettingCalibration_PD;
-            //SettingOption = SettingOption_DOE;
         }
     }
 }

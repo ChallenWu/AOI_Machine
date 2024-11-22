@@ -39,15 +39,15 @@ namespace HB_IWatch
             this.button2.Visible = IsCancelVisable;
             this.button3.Visible = IsIgnoreVisible;
 
-            if (Globals.SettingOption.是否开启蜂鸣器)
-            {
-                //if (XDevice.Instance.FindDoById((int)DoId.蜂鸣).STS == false)
-                {
-                    XDevice.Instance.FindDoById((int)DoId.蜂鸣).SetDo(DOSTSTYPE.HIGH);
-                    Thread.Sleep(500);
-                    XDevice.Instance.FindDoById((int)DoId.蜂鸣).SetDo(DOSTSTYPE.LOW);
-                }
-            }
+            //if (Globals.SettingOption.是否开启蜂鸣器)
+            //{
+            //    //if (XDevice.Instance.FindDoById((int)DoId.蜂鸣).STS == false)
+            //    {
+            //        XDevice.Instance.FindDoById((int)DoId.蜂鸣).SetDo(DOSTSTYPE.HIGH);
+            //        Thread.Sleep(500);
+            //        XDevice.Instance.FindDoById((int)DoId.蜂鸣).SetDo(DOSTSTYPE.LOW);
+            //    }
+            //}
 
             //CallBackDiId = callBackDiId;
             //if (CallBackDiId >= 0)

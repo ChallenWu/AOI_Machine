@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA718659-207A-4E72-B388-79B496D26D8A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OVisionPro</RootNamespace>
+    <AssemblyName>OVisionPro</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.4.10.0.20240616\lib\netstandard2.0\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include=".env\Globals.cs" />
+    <Compile Include="Apps\Controls\ParamConfigControl.cs" />
+    <Compile Include="Apps\Models\Block\XBlock.cs" />
+    <Compile Include="Apps\Models\Block\XBlockManager.cs" />
+    <Compile Include="Apps\Models\Param\XParameter.cs" />
+    <Compile Include="Apps\Models\Param\XParameterManager.cs" />
+    <Compile Include="Apps\Models\ToolSetting.cs" />
+    <Compile Include="Apps\Models\WorkSpaceData.cs" />
+    <Compile Include="Apps\Tools\BlobTool.cs" />
+    <Compile Include="Apps\Tools\FilterTool.cs" />
+    <Compile Include="Apps\Tools\ToolBase.cs" />
+    <Compile Include="Apps\Tools\tools.cs" />
+    <Compile Include="Apps\Tools\ToolsProcess.cs" />
+    <Compile Include="Apps\Views\UserControls\ucBlockAdvandce.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucBlockAdvandce.Designer.cs">
+      <DependentUpon>ucBlockAdvandce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucBlockBasic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucBlockBasic.Designer.cs">
+      <DependentUpon>ucBlockBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucHomeVision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucHomeVision.Designer.cs">
+      <DependentUpon>ucHomeVision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucVisionConfiguration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucVisionConfiguration.Designer.cs">
+      <DependentUpon>ucVisionConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucVisionUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucVisionUI.Designer.cs">
+      <DependentUpon>ucVisionUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucVisionUIFooter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucVisionUIFooter.Designer.cs">
+      <DependentUpon>ucVisionUIFooter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucVisionUIHeader.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucVisionUIHeader.Designer.cs">
+      <DependentUpon>ucVisionUIHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\createSpeedDraw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\createSpeedDraw.Designer.cs">
+      <DependentUpon>createSpeedDraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DraggableUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DraggableWidget.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\PannelLink.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Core\OutVisionObject.cs" />
+    <Compile Include="VisionStart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DataService.cs" />
+    <Compile Include="Services\Event.cs" />
+    <Compile Include="Services\EventTask.cs" />
+    <Compile Include="Services\ImageProcessing\ImageTool.cs" />
+    <Compile Include="Services\Task\XTask.cs" />
+    <Compile Include="Services\Task\XTaskManager.cs" />
+    <Compile Include="Utils\XFileExcel.cs" />
+    <Compile Include="Utils\XFileJson.cs" />
+    <Compile Include="Utils\XFileXml.cs" />
+    <Compile Include="Utils\XFileYaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".env\settings.xml" />
+    <Content Include="Assets\Icons\error.png" />
+    <Content Include="Assets\Icons\info.png" />
+    <Content Include="Assets\Icons\link.png" />
+    <Content Include="Assets\Icons\link1.png" />
+    <Content Include="Assets\Icons\link2.png" />
+    <Content Include="Assets\Icons\question.png" />
+    <Content Include="Assets\Icons\_add.png" />
+    <Content Include="Assets\Icons\_alarmH.png" />
+    <Content Include="Assets\Icons\_alarmL.png" />
+    <Content Include="Assets\Icons\_back.png" />
+    <Content Include="Assets\Icons\_bozhon.png" />
+    <Content Include="Assets\Icons\_clear.png" />
+    <Content Include="Assets\Icons\_deleteFile.png" />
+    <Content Include="Assets\Icons\_done.png" />
+    <Content Include="Assets\Icons\_down.png" />
+    <Content Include="Assets\Icons\_error.png" />
+    <Content Include="Assets\Icons\_event.png" />
+    <Content Include="Assets\Icons\_fail.png" />
+    <Content Include="Assets\Icons\_focus.png" />
+    <Content Include="Assets\Icons\_home.png" />
+    <Content Include="Assets\Icons\_lampBlue20.png" />
+    <Content Include="Assets\Icons\_lampGray20.png" />
+    <Content Include="Assets\Icons\_lampGreen20.png" />
+    <Content Include="Assets\Icons\_lampOrange20.png" />
+    <Content Include="Assets\Icons\_lampRed20.png" />
+    <Content Include="Assets\Icons\_left.png" />
+    <Content Include="Assets\Icons\_login.png" />
+    <Content Include="Assets\Icons\_minus.png" />
+    <Content Include="Assets\Icons\_newFile.png" />
+    <Content Include="Assets\Icons\_next.png" />
+    <Content Include="Assets\Icons\_ok.png" />
+    <Content Include="Assets\Icons\_org.png" />
+    <Content Include="Assets\Icons\_pause.png" />
+    <Content Include="Assets\Icons\_right.png" />
+    <Content Include="Assets\Icons\_rotate_antiClock.png" />
+    <Content Include="Assets\Icons\_rotate_clock.png" />
+    <Content Include="Assets\Icons\_setting.png" />
+    <Content Include="Assets\Icons\_smile.png" />
+    <Content Include="Assets\Icons\_start.png" />
+    <Content Include="Assets\Icons\_stop.png" />
+    <Content Include="Assets\Icons\_table.png" />
+    <Content Include="Assets\Icons\_teach.png" />
+    <Content Include="Assets\Icons\_up.png" />
+    <Content Include="Assets\Icons\_userAdmin.jpg" />
+    <Content Include="Assets\Icons\_userAdmin.png" />
+    <Content Include="Assets\Icons\_userOp.jpg" />
+    <Content Include="Assets\Icons\_userOp.png" />
+    <Content Include="Assets\Icons\_wait.png" />
+    <Content Include="Assets\Icons\博众logo 样式.ico" />
+    <Content Include="Assets\Images\linkicon.png" />
+    <Content Include="Assets\Images\linkicon2.png" />
+    <Content Include="Assets\Images\linkicon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Apps\Views\UserControls\ucBlockBasic.resx">
+      <DependentUpon>ucBlockBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\UserControls\ucHomeVision.resx">
+      <DependentUpon>ucHomeVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\UserControls\ucVisionUI.resx">
+      <DependentUpon>ucVisionUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\UserControls\ucVisionUIFooter.resx">
+      <DependentUpon>ucVisionUIFooter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\UserControls\ucVisionUIHeader.resx">
+      <DependentUpon>ucVisionUIHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Apps\Views\Buttons\" />
+    <Folder Include="Apps\Views\Dialogs\" />
+    <Folder Include="Apps\Views\Labels\" />
+    <Folder Include="Services\MachineLearning\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

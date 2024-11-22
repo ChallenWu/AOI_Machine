@@ -36,7 +36,7 @@ namespace Demo.Device
                 {
                     if (_instance == null)
                     {
-                        _instance = new ScannerComm(Globals.SettingICT.COM_Port.ToString(),null);
+                        _instance = new ScannerComm("1111",null);
                     }
                 }
 

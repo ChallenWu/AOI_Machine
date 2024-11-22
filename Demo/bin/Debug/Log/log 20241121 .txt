@@ -1,0 +1,43 @@
+2024/11/21 11:19:51:922 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:20:01:331 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:20:05:607 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:20:30:878 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:20:37:838 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:20:51:260 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:21:35:418 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:21:50:795 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:21:57:226 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:22:02:926 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:22:56:831 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:23:07:795 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:23:11:565 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:27:02:498 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:27:09:349 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:27:13:083 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:27:35:332 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:28:22:289 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:29:38:500 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:29:51:179 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:29:57:383 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:30:05:109 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:32:00:374 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:32:10:493 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:32:35:360 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:34:30:774 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:34:44:362 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:34:58:069 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:35:05:121 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:35:06:397 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:35:18:200 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:35:19:375 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:35:39:103 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:35:40:294 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:35:50:339 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:35:56:649 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:35:57:976 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:45:48:419 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:45:56:533 => Station4 => AlarmCode:10019 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/11/21 11:46:04:644 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:46:06:288 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner
+2024/11/21 11:46:49:460 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:CCD reply data overtime
+2024/11/21 11:46:53:010 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Error Scanner

@@ -58,9 +58,6 @@ namespace BoTech
         GRR,
         SCS,
     }
-
-
-
     public class SensorCom
     {
         public string PLCAddressType;
@@ -85,7 +82,7 @@ namespace BoTech
         public string PLCAddress;
         public string PLCAddress2;
         public string ErrorCode;
-        public string ErrorCatrgory;
+        public string ErrorCategory;
         public string Severity;
         public string MessageEn;
         public string MessageCn;
@@ -112,7 +109,7 @@ namespace BoTech
         public string WritePLCAddress;
     }
 
-
+    //Machine State
     public class HiveMessage
     {
         public DateTime HappenTime { get; set; }
@@ -128,18 +125,54 @@ namespace BoTech
         //public AccountInfo AI { get; set; }
         public string OperationMessage { get; set; }
     }
+
+    //Dữ liệu 1 sản phẩm
     public class UCMessage
     {
         public string UC_SN { get; set; } = "";
         public string TR_Lot_No { get; set; }
         public UnitMessage[] Units { get; set; } = new UnitMessage[] { new UnitMessage(), new UnitMessage(), new UnitMessage(), new UnitMessage() };
-
-        public string OpID;//添加OP卡号；
+        public string OpID;
 
     }
-    public class UnitMessage
-    {
 
+    public class ProductMessage
+    {
+        public string UC_SN { get; set; } = "";
+        public string TR_Lot_No { get; set; }
+        public ProductInfor Unit { get; set; } = new ProductInfor();
+        public string OpID;
+
+    }
+
+    public class ProductInfor
+    {
+        public string serialNumber { get; set; } = "";
+        public string LotID { get; set; }
+
+        public Dictionary<string, string> listSerialNumber = new Dictionary<string, string>();
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
+        public double CT { get; set; }
+        public int HiveState { get; set; }
+        public string UnitSN { get; set; }
+        public string ComponentSN { get; set; }
+        public string Shift { get; set; }
+        public string Pass { get; set; }
+        public string WO { get; set; }
+        public string STNID { get; set; }
+        public string TR_NO { get; set; }
+        public bool CanStart { get; set; }
+        public string CarrierPath { get; set; }
+        public string UnitPath { get; set; }
+        public string workPath { get; set; }
+        public string TR_Lot_No_Path { get; set; }
+
+        public string ModelProduct {  get; set; }
+    }
+
+    public class UnitMessage    
+    {
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public double CT { get; set; }
@@ -268,9 +301,5 @@ namespace BoTech
         {
             public string Dirver { get; set; }
         }
-
-
     }
-
-
 }

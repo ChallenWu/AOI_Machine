@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NPOI.SS.Formula.Functions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,11 +27,14 @@ namespace Demo.UserControls
         private int taskId = 1;
         private Dictionary<int, PictureBox> pictureBoxMap = new Dictionary<int, PictureBox>();
 
-        Dictionary<string, PLC> axisDictionary;
+        private Dictionary<string, PLC> axisDictionary;
         public event EventHandler RestEventHandler;
         int Manual_JogFwd, Manual_JogBack,  Manual_InchFwd, Manual_InchBack, Manual_Speed, Manual_InchDistance;
         int Manual_Home, Manual_Stop, Manual_Emg, Manual_ClearError, Manual_ServoOn;
-        int Signal_ZeroLimit, Signal_NegativeLimit, Signal_PositiveLimit, Signal_Error, Signal_Moving;
+        int signal_isServoOn, signal_isHomeOK, signal_ZeroLimit, signal_isNegLimit, signal_isPosLimit, signal_Err, signal_Moving;
+        bool m_IsServoOn, m_IsHomeOK,m_ZeroLimit, m_IsNegLimit, m_IsPosLimit, m_Err, m_Moving;
+        
+
         public AxisControl()
         {
             InitializeComponent();
@@ -47,7 +51,17 @@ namespace Demo.UserControls
                 JogBack1 = 5001,
                 InchBack1 = 5002,
                 InchFwd1 = 5003,
-                ServoOn1 = 5008
+                ServoOn1 = 5008,
+                //Signal 
+                IsServoOn = 5000,
+                IsHomeOK = 5001,
+                IsZeroLimit1 = 5002,
+                IsNegativeLimit1 = 5003,
+                IsPositiveLimit1 = 5004,
+                IsErrors1 = 5005,
+                IsMoving = 5006
+
+
             };
             PLC YAxis = new PLC() {
                 Home1 = 5104,
@@ -60,7 +74,16 @@ namespace Demo.UserControls
                 JogBack1 = 5101,
                 InchBack1 = 5102,
                 InchFwd1 = 5103,
-                ServoOn1 = 5108
+                ServoOn1 = 5108,
+                //Signal 
+                IsServoOn = 5100,
+                IsHomeOK = 5101,
+                IsZeroLimit1 =5102,
+                IsNegativeLimit1 = 5103,
+                IsPositiveLimit1 = 5104,
+                IsErrors1 = 5105,
+                IsMoving = 5106
+
             };
             PLC ZAxis = new PLC() {
                 Home1 = 5204,
@@ -73,7 +96,15 @@ namespace Demo.UserControls
                 JogBack1 = 5201,
                 InchBack1 = 5202,
                 InchFwd1 = 5203,
-                ServoOn1 = 5208
+                ServoOn1 = 5208,
+                //Signal 
+                IsServoOn = 5200,
+                IsHomeOK = 5201,
+                IsZeroLimit1 = 5202,
+                IsNegativeLimit1 = 5203,
+                IsPositiveLimit1 = 5204,
+                IsErrors1 = 5205,
+                IsMoving = 5206
             };
             PLC RAxis = new PLC() {
                 Home1 = 5304,
@@ -86,7 +117,15 @@ namespace Demo.UserControls
                 JogBack1 = 5301,
                 InchBack1 = 5302,
                 InchFwd1 = 5303,
-                ServoOn1 = 5308
+                ServoOn1 = 5308,
+                //Signal 
+                IsServoOn = 5300,
+                IsHomeOK = 5301,
+                IsZeroLimit1 = 5302,
+                IsNegativeLimit1 = 5303,
+                IsPositiveLimit1 = 5304,
+                IsErrors1 = 5305,
+                IsMoving = 5306
             };
 
             axisDictionary = new Dictionary<string, PLC>
@@ -113,12 +152,12 @@ namespace Demo.UserControls
             }
             InitialDistance();
             InitialVel();
-            ChangeButton_Image(Comb_AxisNo.SelectedItem.ToString());           
-            
+            ChangeButton_Image(Comb_AxisNo.SelectedItem.ToString());
+            InitialDatagridView();
         }
-
         class PLC
         {
+            
             //ActiveButton
             private int InchFwd;
             private int InchBack;
@@ -130,17 +169,18 @@ namespace Demo.UserControls
             private int ClearErrors;
             private int ServoOn;
             //Signal
-            private int ZeroLimit;
-            private int NegativeLimit;
-            private int PositiveLimit;
-            private int Errors;
-            private int Moving;
-            private int InitalFinish;
+            private int IsZeroLimit;
+            private int IsNegativeLimit;
+            private int IsPositiveLimit;
+            private int IsErrors;
+            private int isMoving;
+            private int isHomeOK;
+            private int isServoOn;
             
             //Register
             private int SpeedJog;
             private int InchDis;
-            private double CurrentPosition;
+            private int currentPosition;
 
 
             public int JogForwrd1 { get => JogForwrd; set => JogForwrd = value; }
@@ -154,6 +194,14 @@ namespace Demo.UserControls
             public int InchBack1 { get => InchBack; set => InchBack = value; }
             public int ClearErrors1 { get => ClearErrors; set => ClearErrors = value; }
             public int ServoOn1 { get => ServoOn; set => ServoOn = value; }
+            public int IsZeroLimit1 { get => IsZeroLimit; set => IsZeroLimit = value; }
+            public int IsNegativeLimit1 { get => IsNegativeLimit; set => IsNegativeLimit = value; }
+            public int IsPositiveLimit1 { get => IsPositiveLimit; set => IsPositiveLimit = value; }
+            public int IsErrors1 { get => IsErrors; set => IsErrors = value; }
+            public int IsMoving { get => isMoving; set => isMoving = value; }
+            public int IsHomeOK { get => isHomeOK; set => isHomeOK = value; }
+            public int IsServoOn { get => isServoOn; set => isServoOn = value; }
+            public int CurrentPosition { get => currentPosition; set => currentPosition = value; }
         }
 
         private void bt_JOG_N_MouseDown(object sender, MouseEventArgs e)
@@ -248,7 +296,6 @@ namespace Demo.UserControls
             this.Bar_Vel.Value = 10;
             this.label1.Text = "10mm/s";
             m_Vel = 10;
-
             textBox_Acc.Text = "1000";
         }
 
@@ -303,6 +350,217 @@ namespace Demo.UserControls
             this.Manual_InchDistance = plc.InchDis1;
             this.Manual_ClearError = plc.ClearErrors1;
             this.Manual_ServoOn = plc.ServoOn1;
+
+            //Signal
+            this.signal_isServoOn = plc.ServoOn1;
+            this.signal_ZeroLimit = plc.IsZeroLimit1;
+            this.signal_Moving = plc.IsMoving;
+            this.signal_isNegLimit = plc.IsNegativeLimit1;
+            this.signal_isPosLimit = plc.IsPositiveLimit1;
+            this.signal_Err = plc.IsErrors1;
+            this.signal_isHomeOK = plc.Home1;
+        }
+
+        // ServoOn, HomeOK, Limit +, ,Origin , Limit - , Alarm, Moving
+        private string[] ColumnsHeaderText = new string[10] { "Id", "Name", "POS", "SVON", "HMOK", "MEL", "ORG", "PEL", "ALM", "ASTP" };
+        private int[] ColumnsWidth = new int[8] { 22, 22, 22, 22, 22, 22, 22, 30 };
+        private void InitialDatagridView()
+        {
+            try
+            {
+                dataGridView1.AllowUserToAddRows = false;
+                dataGridView1.AllowUserToDeleteRows = false;
+                dataGridView1.AllowUserToOrderColumns = false;
+                dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dataGridView1.RowHeadersVisible = false;
+
+                dataGridView1.Columns.Add(new DataGridViewTextBoxColumn());
+                dataGridView1.Columns.Add(new DataGridViewTextBoxColumn());
+                dataGridView1.Columns.Add(new DataGridViewTextBoxColumn());
+                //Tạo số cột
+                for (int i = 3; i < ColumnsHeaderText.Length; i++)
+                {
+                    dataGridView1.Columns.Add(new DataGridViewImageColumn());
+                }
+                //Tạo chiều dài và header từng cột
+                dataGridView1.Columns[0].Width = 15;
+                for (int i = 0; i < ColumnsHeaderText.Length; i++)
+                {
+                    dataGridView1.Columns[i].HeaderText = ColumnsHeaderText[i];
+                    dataGridView1.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
+                    if (i > 2)
+                    {
+                        dataGridView1.Columns[i].Width = ColumnsWidth[i - 3];
+                    }
+                }
+                //Thêm dữ liệu vào từng hàng và cột trong header
+                InitDgv();
+                m_Timer = new Timer();
+                m_Timer.Interval = 1000;
+                m_Timer.Tick += M_Timer_Tick;
+                m_Timer.Start();
+            }
+            catch (Exception ex)
+            {
+
+            }
+            
+        }
+
+        private void M_Timer_Tick(object sender, EventArgs e)
+        {
+            DateUpdate();
+        }
+
+        private void DateUpdate()
+        {
+            try
+            {
+
+
+                if (Comb_AxisNo.Items.Count > 0)
+                {
+
+                    bool[] axisSts = new bool[] { m_IsServoOn, m_IsNegLimit, m_IsHomeOK, m_IsPosLimit, m_Err, m_Moving};
+
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_isServoOn, out m_IsServoOn);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_isHomeOK, out m_IsHomeOK);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_isPosLimit, out m_IsPosLimit);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_isNegLimit, out m_IsNegLimit);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_ZeroLimit, out m_ZeroLimit);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_Moving, out m_Moving);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_Err, out m_Err);
+
+                    LB_AxisNo.Text = m_AxisId.ToString() + ":";
+
+
+                    for (int i = 0; i < 6; i++)
+                    {
+                        if (i < 5)
+                        {
+                            if (axisSts[i] == true)
+                            {
+                                if (i == 0)
+                                {
+                                    pictureBoxMap[i].BackgroundImage = Properties.Resources._lampGreen20;
+                                }
+                                else
+                                {
+                                    pictureBoxMap[i].BackgroundImage = Properties.Resources._lampRed20;
+                                }
+                            }
+                            else
+                            {
+                                pictureBoxMap[i].BackgroundImage = Properties.Resources._lampGray20;
+                            }
+                        }
+                        else
+                        {
+                            if (axisSts[i] == true)
+                            {
+                                LB_Home.Text = MultiLanguage.GetMessage("Initial OK");
+                                LB_Home.ForeColor = Color.Black;
+                            }
+                            else
+                            {
+                                LB_Home.Text = MultiLanguage.GetMessage("Not Initial");
+                                LB_Home.ForeColor = Color.Red;
+                            }
+                        }
+                    }
+                }
+
+                foreach (var item in axisDictionary)
+                {
+                    string axisId = item.Key;
+                    //bool IsSVON;
+                    if (axisDictionary.TryGetValue(axisId, out PLC plc))
+                    {
+                        bool IsSVON, IsHomeOK, IsPositiveLimit1 , IsNegativeLimit1, IsZeroLimit1, IsMoving, IsErrors1;
+                        int curPos;
+                        // Read each bit status from the device
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsServoOn, out IsSVON);
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsHomeOK, out IsHomeOK);
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsPositiveLimit1, out IsPositiveLimit1);
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsNegativeLimit1, out IsNegativeLimit1);
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsZeroLimit1, out IsZeroLimit1);
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsMoving, out IsMoving);
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsErrors1, out IsErrors1);
+                        SLMP.Instance.ReadDoubleWord(DevideCode.D, plc.CurrentPosition, out curPos);
+
+                        stsMap[axisId] = new bool[7]
+                        {
+                            IsSVON, IsHomeOK, IsPositiveLimit1, IsNegativeLimit1, IsZeroLimit1, IsMoving, IsErrors1
+                        };
+
+                        //stsMap[axisId][0] = IsSVON;
+
+                        foreach (DataGridViewRow dr in dataGridView1.Rows)
+                        {
+                            if (dr.Cells[1].Value?.ToString() == axisId) // Ensure axisId matches the row
+                            {
+                                dr.Cells[2].Value = curPos;
+                                for (int i = 0; i < 7; i++)
+                                {
+                                    // Update cell visuals based on the status transitions
+                                    if (stsMap[axisId][i] && !lastStsMap[axisId][i])
+                                    {
+                                        //dr.Cells[i + 3].Value = (i < 3) ? Properties.Resources._lampGreen20 : Properties.Resources._lampRed20;
+                                        dr.Cells[i + 3].Value = Properties.Resources._lampGreen20;
+                                    }
+                                    else if (!stsMap[axisId][i] && lastStsMap[axisId][i])
+                                    {
+                                        dr.Cells[i + 3].Value = Properties.Resources._lampGray20;
+                                    }
+                                }
+                                lastStsMap[axisId] = new bool[7];
+                                Array.Copy(stsMap[axisId], lastStsMap[axisId], 7);
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+        }
+
+        private Dictionary<string, bool[]> stsMap = new Dictionary<string, bool[]>();
+        private Dictionary<string, bool[]> lastStsMap = new Dictionary<string, bool[]>();
+        private void InitDgv()
+        {
+            try
+            {
+                foreach (var item in axisDictionary)
+                {
+                    dataGridView1.Rows.Clear();
+                    stsMap.Clear(); 
+                    lastStsMap.Clear();
+                    foreach (var kvp in axisDictionary)
+                    {
+                        DataGridViewRow dr = new DataGridViewRow();
+                        dr.Cells.Add(new DataGridViewTextBoxCell());
+                        dr.Cells.Add(new DataGridViewTextBoxCell());
+                        dr.Cells.Add(new DataGridViewTextBoxCell());
+                        dr.Cells[1].Value = kvp.Key;
+                        dr.Cells[2].Value = 0;
+                        for (int i = 3; i < 10; i++)
+                        {
+                            dr.Cells.Add(new DataGridViewImageCell());
+                            dr.Cells[i].Value = Properties.Resources._lampGray20;
+                        }
+                        dataGridView1.Rows.Add(dr);
+                        stsMap.Add(kvp.Key, new bool[7] { false, false, false, false, false, false, false });
+                        lastStsMap.Add(kvp.Key, new bool[7] { false, false, false, false, false, false, false });
+                    }
+                }
+            }
+            catch
+            {
+
+            }
         }
     }
 }

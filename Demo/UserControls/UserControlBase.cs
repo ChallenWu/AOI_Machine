@@ -28,7 +28,7 @@ namespace Demo.UserControls
         }
         private void UserControlBase_Resize(object sender, EventArgs e)
         {
-            if (this.Width == 1 || this.Height == 1) return;
+            if (this.Width < 100 || this.Height < 100) return;
             Ratio_Width = this.Width / (float)OriginFormSize.Width;
             Ratio_Height = this.Height / (float)OriginFormSize.Height;
             AutoResize(this);

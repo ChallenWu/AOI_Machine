@@ -27,18 +27,32 @@ using System.Security.Principal;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using AutoStudio.Forms.GUI_Forms;
 using NPOI.SS.UserModel;
+using Models;
+using System.Diagnostics.Eventing.Reader;
+using AutoStudio.Core.Views.CustomControls;
 
 namespace Demo
 {
     public partial class Form1 : Form
     {
         private Dictionary<newMenuButton, Control> pageMap = new Dictionary<newMenuButton, Control>();
-        //public PageEngineering PageEngineering;
         private Stopwatch SW_Mouse = new Stopwatch();
         private int MouseX = 0;
         private int MouseY = 0;
+        public static List<string> lstModelNumber = new List<string>();
+
+
+        
+        Rectangle OriginFormSize;
         public Form1()
         {
+
+            //Lấy dữ liệu model sử dụng
+            LoadModel.StartUp();
+
+            
+
+
             //var mainPage = PageEngineering.Instance;
             //Cài đặt đa ngôn ngữ
             MultiLanguage.ReadMultiLangFile("Language.xlsx");
@@ -48,8 +62,6 @@ namespace Demo
 
 
             InitializeComponent();
-            //menuButton_Login11.TextButtton = "User1";
-
             //Đặt window thành maximized
             //this.WindowState = FormWindowState.Maximized;
             OriginFormSize = new Rectangle(this.Location.X, this.Location.Y, this.Width, this.Height);
@@ -81,29 +93,37 @@ namespace Demo
                     BzMessagebox.Show(MultiLanguage.GetMessage("CCD connection failed! ", "\r\n",
                                                                "Please check the network connection and restart the program"));
             }
-
+            ;
             if (Globals.SettingICT.Scanner_Using)
             {
                 if (Globals.SettingICT.ScanLead)
                 {
                     Scanner_TCP.Instance.Connect();  // Connect Scanner using TCP_IP
                     if (!Scanner_TCP.Instance.Connected)
-                        BzMessagebox.Show(MultiLanguage.GetMessage("Scanner connection failed!","\r\n",
+                        BzMessagebox.Show(MultiLanguage.GetMessage("Scanner connection failed!", "\r\n",
                                                                     "Please check the network connection and restart the program"));
                 }
             }
             //Khởi tạo thông tin các Pages
             InitPages();
+            //foreach (var item in ModelStore.GetModelInfoList())
+            //{
+            //    lstModelNumber.Add(item.Name);
+            //}
+            //Globals.SettingICT.ListModel = lstModelNumber;
+            //PageSetting.Instance.xSettingGrid_ICT.TextName = "ModelParam";
+
+            //PageSetting.Instance.xSettingGrid_ICT.SelectedObject(Globals.SettingICT);
+            //PageSetting.Instance.xSettingGrid_SettingOption.SelectedObject(Globals.SettingOption);
 
             this.StartPosition = FormStartPosition.CenterScreen;
             this.FormClosing += new FormClosingEventHandler(MainDlg_FormClosing);
 
             //Khởi tạo các task
             InitTask();
-            PageEngineering.Instance.UpdateTextBox("Init T");
             //Set run mode
-            this.switchButton_Version.SetText(MultiLanguage.GetMessage(Globals.RUNMODE.ToString()));
-            this.switchButton_Version.SetColor(MyColor.Green);
+            this.lbEQMStatus.Text = MultiLanguage.GetMessage(Globals.RUNMODE.ToString());
+            this.pnEQMStatus.BackColor = MyColor.Green;
             //Load dữ liệu từ SQLite
             DataServerManager.Instance.Load();
 
@@ -113,8 +133,9 @@ namespace Demo
                 lblLevel.Text = "Level: " + level;
             };
 
-            PageEngineering.Instance.UpdateTextBox("Open Software");
+            PageEngineering.Instance.UpdateTextBox("Complete Initilize control Page");
 
+            this.lbModelRun.Text = LoadModel.appSettings.currentModel;
         }
 
         private void InitTask()
@@ -134,36 +155,31 @@ namespace Demo
 
         private void Instance_OnAlarmReportSave(XAlarmEventArgs args)
         {
-            
+
         }
 
-       
+
         private void InitPages()
         {
             this.menuButton_Start.SetBackColor(MyColor.Green, MyColor.None);
             this.menuButton_Pause.SetBackColor(MyColor.Blue, MyColor.None);
-            this.menuButton_Stop.SetBackColor(MyColor.Red, MyColor.None);           
-
-
-
+            this.menuButton_Stop.SetBackColor(MyColor.Red, MyColor.None);
 
             pageMap.Add(menuButton_Login, PageLogin.Instance);
             pageMap.Add(menuButton_Alarm, PageAlarm.Instance);
             pageMap.Add(menuButton_Chart, PageChart.Instance);
             pageMap.Add(menuButton_Home, PageProduction.Instance);
             pageMap.Add(menuButton_Vison, PageVision.Instance);
-            pageMap.Add(menuButton_Setting, PageSetting.Instance);           
+            pageMap.Add(menuButton_Setting, PageSetting.Instance);
 
             //PageEngineering = new PageEngineering();
 
-            
-            
             foreach (KeyValuePair<newMenuButton, Control> kvp in pageMap)
             {
-               
+
                 kvp.Value.Location = new Point(0, 0);
                 kvp.Key.OnClicked += Key_OnClicked;
-            }        
+            }
             menuButton_Home.Selected = true;
 
 
@@ -175,13 +191,13 @@ namespace Demo
                 this.pageContainer.Controls.Add(pageMap[menuButton_Home]);
             };
 
-            var page = (PageLogin)pageMap[menuButton_Login];            
+            var page = (PageLogin)pageMap[menuButton_Login];
             page.ONShowPage += ShowModePage;
         }
 
         private void Key_OnClicked(object sender, EventArgs e)
         {
-            newMenuButton menuClicked = sender as newMenuButton;            
+            newMenuButton menuClicked = sender as newMenuButton;
 
             ((UserControlBase)pageMap[menuClicked]).Dock = DockStyle.Fill;
 
@@ -216,19 +232,14 @@ namespace Demo
 
                     kvp.Key.Selected = true;
                     this.pageContainer.Controls.Clear();
-                    this.pageContainer.Controls.Add(pageMap[kvp.Key]);
+                    this.pageContainer.Controls.Add(pageMap[kvp.Key]);                    
                 }
                 else
                 {
                     kvp.Key.Selected = false;
                 }
             }
-        }
 
-        public void UpdateLabel(string user, string level)
-        {
-            lblUser.Text = "User: " + user;
-            lblLevel.Text = "Level: " + level;
         }
 
         private void ShowModePage(ModeType mode)
@@ -249,7 +260,7 @@ namespace Demo
 
                     break;
                 case ModeType.Production:
-                    this.pageContainer.Controls.Clear();                   
+                    this.pageContainer.Controls.Clear();
                     this.pageContainer.Controls.Add(pageMap[menuButton_Home]);
                     //Globals.isEnableCPK = false;
                     ((PageLogin)pageMap[menuButton_Login]).NoneUserPrivilige();
@@ -262,8 +273,8 @@ namespace Demo
                         return;
                     }
                     this.pageContainer.Controls.Clear();
-                    if (Globals.SettingOption.A是否开启PDCA == false)
-                        MessageBox.Show("PDCA chưa được kích hoạt", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);                        
+                    //if (Globals.SettingOption.A是否开启PDCA == false)
+                    //    MessageBox.Show("PDCA chưa được kích hoạt", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
             }
             XMachine.Instance.MachineMode = (MachineModeType)mode;
@@ -293,10 +304,10 @@ namespace Demo
             }
             if (menuClicked.Name == menuButton_Home.Name)
             {
-               ((PageLogin)pageMap[menuButton_Login]).NoneUserPrivilige();
+                ((PageLogin)pageMap[menuButton_Login]).NoneUserPrivilige();
                 UserAccountControl.currentAccount = UserAccountControl.Operator;
-                lblUser.Text = "User: None";
-                lblLevel.Text = "Level: Operator";
+                lblUser.Text = $"User: {UserAccountControl.currentAccount.Name}";
+                lblLevel.Text =$"Level: {UserAccountControl.currentAccount.UserPermission}";
             }
 
             foreach (KeyValuePair<newMenuButton, Control> kvp in pageMap)
@@ -369,13 +380,13 @@ namespace Demo
                 if (BzMessagebox.Show("Are you sure to start AutoRun? \r\nRun mode：" + Globals.RUNMODE.ToString(), "Tips", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
                 {
                     //Đổi trạng thái button
-                    HBMachine.Instance.UploadMachineStateMessage(HB_IWatch.MachineSts.Running);
-                    //button1.Image = Image.FromFile("../../NewUI/HIVE_Running.png");
+                    HBMachine.Instance.UploadMachineStateMessage(MachineSts.Running);
+                    
                     //Ghi log
                     Globals.WriteCoverCTLog("The user presses the start button, the mode is:" + Globals.RUNMODE);
                     var runMode = StationRunMode.AutoRun;
                     //Chọn chế chạy của thiết bị
-                    if (Globals.RUNMODE == MachineRunMode.NormalRun || 
+                    if (Globals.RUNMODE == MachineRunMode.NormalRun ||
                         Globals.RUNMODE == MachineRunMode.Entire_Machine_Dry_Run)
                     {
                         XStationManager.Instance.FindStationById((int)StationId.Scanner).Start(runMode);
@@ -386,7 +397,7 @@ namespace Demo
                     }
                     else if (Globals.RUNMODE == MachineRunMode.Assemble_Dry_Run)
                     {
-                        XStationManager.Instance.FindStationById((int)StationId.Scanner).Start(runMode);                        
+                        XStationManager.Instance.FindStationById((int)StationId.Scanner).Start(runMode);
                     }
                     else
                     {
@@ -417,8 +428,7 @@ namespace Demo
                     XStationManager.Instance.FindStationById((int)StationId.Scanner).Stop();
                     XStationManager.Instance.FindStationById((int)StationId.Scanner).Reset();
                     Globals.WriteCoverCTLog("User presses the reset button");
-                    HBMachine.Instance.UploadMachineStateMessage(HB_IWatch.MachineSts.Idle);
-                    //button1.Image = Image.FromFile("../../NewUI/HIVE_Idle.png");
+                    HBMachine.Instance.UploadMachineStateMessage(MachineSts.Idle);
                 }
             }
         }
@@ -437,13 +447,13 @@ namespace Demo
 
                 if (diKeySts == DISTSTYPE.LOW)
                 {
-                    if (!Globals.SettingICT.Safedoor && (!kvp.Value))
-                        continue;
-                    else
-                    {
-                        safeDoorSts = false;
-                        break;
-                    }
+                    //if (!Globals.SettingICT.Safedoor && (!kvp.Value))
+                    //    continue;
+                    //else
+                    //{
+                    //    safeDoorSts = false;
+                    //    break;
+                    //}
                 }
             }
             return safeDoorSts;
@@ -455,19 +465,19 @@ namespace Demo
 
         public static bool parameterControl()
         {
-            //Sử dụng hệ thống để kiểm soát parameter của thiết bị
-            if(!Globals.SettingOption.是否开启参数管控)
-                return true;
-            try
-            {
-                return true;
-            }
-            catch (Exception ex) 
-            {
-                MessageBox.Show(ex.ToString());
-                return false;
-            }
-
+            //Sử dụng hệ thống MES để kiểm soát parameter của thiết bị
+            //if (!Globals.SettingOption.是否开启参数管控)
+            //    return true;
+            //try
+            //{
+            //    return true;
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.ToString());
+            //    return false;
+            //}
+            return true;
         }
 
         private void menuButton_Stop_Click(object sender, EventArgs e)
@@ -490,9 +500,8 @@ namespace Demo
                 this.menuButton_Pause.IsSelect(false);
                 this.menuButton_Stop.IsSelect(true);
 
-                HBMachine.Instance.SetMachineStatus(HB_IWatch.MachineSts.Idle);
-                HBMachine.Instance.UploadMachineStateMessage(HB_IWatch.MachineSts.Idle);
-                //button1.Image = Image.FromFile("../../NewUI/HIVE_Idle.png");
+                HBMachine.Instance.SetMachineStatus(MachineSts.Idle);
+                HBMachine.Instance.UploadMachineStateMessage(MachineSts.Idle);
                 Globals.WriteCoverCTLog("User presses the stop button");
             }
         }
@@ -500,23 +509,24 @@ namespace Demo
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             //DateTime dtt = DateTime.Now.AddSeconds(-1);
-            DataTable temDt = DataServerManager.Instance.SelectLastMachineState();
-            HiveMessage hm = new HiveMessage() { HappenTime = DateTime.Now };
+            //DataTable temDt = DataServerManager.Instance.SelectLastMachineState();
+            //HiveMessage hm = new HiveMessage() { HappenTime = DateTime.Now };
 
-            if (temDt.Rows.Count <= 0)
-            {
+            //if (temDt.Rows.Count <= 0)
+            //{
 
-            }
-            else
-            {
-                DateTime dtt = (DateTime)temDt.Rows[0][1];
-                hm.PreviousState = (int)temDt.Rows[0][3];
-                hm.MachineState = (int)temDt.Rows[0][3];
-                hm.TimeDuration = (long)((hm.HappenTime - dtt).TotalSeconds);
-            }
-            DataServerManager.Instance.InsertMachineState(hm);
+            //}
+            //else
+            //{
+            //    DateTime dtt = (DateTime)temDt.Rows[0][1];
+            //    hm.PreviousState = (int)temDt.Rows[0][3];
+            //    hm.MachineState = (int)temDt.Rows[0][3];
+            //    hm.TimeDuration = (long)((hm.HappenTime - dtt).TotalSeconds);
+            //}
+            //DataServerManager.Instance.InsertMachineState(hm);
+
+            HBMachine.Instance.UploadMachineStateMessage(MachineSts.Idle);
         }
-
         private void menuButton_Pause_Click(object sender, EventArgs e)
         {
             if (!CheckSafeDoor())
@@ -547,16 +557,14 @@ namespace Demo
             var st1 = XStationManager.Instance.FindStationById((int)StationId.Scanner).State;
             if (st1 == XStationState.PAUSE)
             {
-                HBMachine.Instance.UploadMachineStateMessage(HB_IWatch.MachineSts.Running);
-                //button1.Image = Image.FromFile("../../NewUI/HIVE_Running.png");
+                HBMachine.Instance.UploadMachineStateMessage(MachineSts.Running);
                 XStationManager.Instance.Continue();
                 this.menuButton_Start.IsSelect(true);
                 Globals.WriteCoverCTLog("The user presses the pause button and the device continues to run automatically");
             }
             else
             {
-                HBMachine.Instance.UploadMachineStateMessage(HB_IWatch.MachineSts.Idle);
-                //button1.Image = Image.FromFile("../../NewUI/HIVE_Idle.png");
+                HBMachine.Instance.UploadMachineStateMessage(MachineSts.Idle);
                 XStationManager.Instance.Pause();
                 this.menuButton_Start.IsSelect(false);
                 Globals.WriteCoverCTLog("The user presses the pause button and the device pauses");
@@ -564,7 +572,6 @@ namespace Demo
 
             this.menuButton_Stop.IsSelect(false);
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             Globals.SetStateTop += Globals_SetStateTop;
@@ -575,23 +582,23 @@ namespace Demo
             Globals.OnStopActive += this.OnStopRunning;
             timer1.Start();
         }
-        //Doi trang thai thiet bi
         private void Globals_SetStateTop(object sender, EventArgs e)
         {
             try
             {
                 this.BeginInvoke(new Action(() =>
                 {
-                    this.switchButton_Version.SetText(MultiLanguage.GetMessage(Globals.RUNMODE.ToString()));
+                    this.lbEQMStatus.Text = MultiLanguage.GetMessage(Globals.RUNMODE.ToString());
+                    this.lbModelRun.Text = LoadModel.appSettings.currentModel;
                     if (Globals.RUNMODE == MachineRunMode.NormalRun)
                     {
-                        this.switchButton_Version.SetColor(MyColor.Green);
+                        this.pnEQMStatus.BackColor = Color.Lime;
                     }
                     else
                     {
-                        this.switchButton_Version.SetColor(MyColor.Red);
+                        this.pnEQMStatus.BackColor = MyColor.Red;
                     }
-                }));
+                }));                
             }
             catch
             {
@@ -605,7 +612,6 @@ namespace Demo
                 BeginInvoke(new EventHandler(OnPauseActive), new object[] { sender, e });
                 return;
             }
-
 
             XStationManager.Instance.Pause();
 
@@ -626,7 +632,6 @@ namespace Demo
             HBMachine.Instance.SetMachineStatus(HB_IWatch.MachineSts.Idle);
             Globals.WriteCoverCTLog("The device switches to the stopped state");
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             try
@@ -657,7 +662,6 @@ namespace Demo
                 throw (new Exception("MainDlg Trigger Exception:" + ex.Message));
             }
         }
-
         private void menuButton_OpenReport_Click(object sender, EventArgs e)
         {
             try
@@ -667,13 +671,11 @@ namespace Demo
                 {
                     System.Diagnostics.Process.Start(filePath);
                 }
-                //this.menuButton_OpenReport.IsSelect(false);
             }
             catch (Exception)
             {
             }
         }
-
         private void menuButtonCamerImage_Click(object sender, EventArgs e)
         {
             try
@@ -683,13 +685,13 @@ namespace Demo
                 {
                     System.Diagnostics.Process.Start(filePath);
                 }
-               // this.menuButtonCamerImage.IsSelect(false);
             }
             catch (Exception)
             {
 
             }
         }
-        Rectangle OriginFormSize;
+        
     }
+
 }

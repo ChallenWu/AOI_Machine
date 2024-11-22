@@ -29,6 +29,7 @@ namespace Demo
             this.name = name;
             this.passWord = password;
             this.userPermission = Privilige.Engineer;
+            
 
             UserAccount_DIc.Add("Account", account);
             UserAccount_DIc.Add("Name", name);
@@ -97,6 +98,7 @@ namespace Demo
                 return this.passWord;
             }
         }
+        
 
         public Privilige UserPermission
         {

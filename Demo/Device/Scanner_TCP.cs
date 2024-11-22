@@ -1,5 +1,8 @@
-﻿using System;
+﻿using BoTech;
+using Demo.Page;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -31,7 +34,10 @@ namespace Demo.Device
         {
             try
             {
-                simpleTcpClient1.Connect(Globals.SettingICT.ScanLead_IP, Globals.SettingICT.ScanLead_Port);
+                if(!simpleTcpClient1.Connected)
+                {
+                    //simpleTcpClient1.Connect(Globals.SettingICT.ScanLead_IP, Globals.SettingICT.ScanLead_Port);
+                }                     
             }
             catch
             {
@@ -64,6 +70,27 @@ namespace Demo.Device
         public AutoResetEvent are_DataRecerveDone = new AutoResetEvent(false);
 
         private object mutex = new object();
+
+        public void WriteCmd(string cmd, ushort duration)
+        {
+            lock (mutex)
+            {
+                if (duration > 0)
+                {
+                    Thread.Sleep(duration);
+                }
+                if (simpleTcpClient1.Connected == false)
+                {
+
+                    return;
+                }
+
+                RecData = null;
+                RecDatas = null;
+                are_DataRecerveDone = new AutoResetEvent(false);
+                simpleTcpClient1.Write(cmd);
+            }
+        }
         public void WriteCmd(byte[] cmd, ushort duration)
         {
             lock (mutex)
@@ -97,10 +124,13 @@ namespace Demo.Device
                 {
                     RecDatas = result.Split(',');
                     RecData = result;
+                    DebugDlg.Instance.Update_TCP(RecData);
                 }
                 else
                 {
+
                     RecData = result;
+                    DebugDlg.Instance.Update_TCP(RecData);
                 }
 
                 are_DataRecerveDone.Set();

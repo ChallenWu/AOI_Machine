@@ -14,13 +14,13 @@ using BoTech;
 
 namespace Demo.Task
 {
-    public enum WP_STATE
-    {
-        PART_FREE = 0,   // 没有产品
-        PART_NEW = 1,    // 载具从上工位进入到该工位
-        PART_WORKED = 4, // 拿到结果后，改为Worked
-        PART_FOR_WORK = 5  // 上料OK信号
-    }
+    //public enum WP_STATE
+    //{
+    //    PART_FREE = 0,   // 没有产品
+    //    PART_NEW = 1,    // 载具从上工位进入到该工位
+    //    PART_WORKED = 4, // 拿到结果后，改为Worked
+    //    PART_FOR_WORK = 5  // 上料OK信号
+    //}
     public enum Home_State
     {
         Homing,
@@ -37,7 +37,7 @@ namespace Demo.Task
     class ETask : XTask
     {
         protected object m_runStep = 0;
-        protected WP_STATE m_partState = WP_STATE.PART_FREE;
+        //protected WP_STATE m_partState = WP_STATE.PART_FREE;
         public static int homeDoneTaskNum = 0;
         //Số task thực hiện
         public static int RequestHomeTaskNum
@@ -46,11 +46,11 @@ namespace Demo.Task
             get { return 1; }
         }
 
-        public WP_STATE PartState
-        {
-            get { return m_partState; }
-            set { m_partState = value; }
-        }
+        //public WP_STATE PartState
+        //{
+        //   // get { return m_partState; }
+        //    //set { m_partState = value; }
+        //}
 
         public ETask(string path)
             : base(path)
@@ -69,8 +69,6 @@ namespace Demo.Task
             CsvServer.Instance.WriteLine(path, str);
         }
 
-        
-        //Thông báo lỗi protected
         protected DialogResult ShowAlarm(XAlarmId alarmId, string szDetail = "", int timeout = -1)
         {
             //Liệt kê dữ liệu báo lỗi

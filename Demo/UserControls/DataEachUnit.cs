@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Demo.UserControls
 {
-        public partial class DataEachUnit : UserControlBase
+        public partial class DataEachUnit : UserControl
     {
             public DataEachUnit()
             {
@@ -25,7 +25,7 @@ namespace Demo.UserControls
             private string _errormessage = string.Empty;
             public string ErrorMessage { get { return _errormessage; } }//错误/异常信息   只读属性
 
-            [Category("GUI属性"), Description("图表显示的信息内容（列数组）")]
+            [Category("GUI Properties"), Description("The information displayed in the chart (column array)")]
             public int[] ShowColumn { get; set; }//图表显示的信息内容（列数组）
 
             //public DataTable SuorceData { get; set; }//图标数据源
@@ -55,9 +55,9 @@ namespace Demo.UserControls
                     //Array.Reverse(ShowColumn);
                     DataTable mydt = dt;
                     int mindex = mydt.Columns.Count;
-                    bool[] showbool = new bool[mindex];//用于判断是否显示列
-                    if (ShowColumn != null && ShowColumn.Length > 0) //显示列数组为空，则默认显示全部列
-                    {
+                    bool[] showbool = new bool[mindex];//Used to determine whether to display the column
+                if (ShowColumn != null && ShowColumn.Length > 0) //If the display column array is empty, all columns will be displayed by default.
+                {
                         for (int i = 0; i < ShowColumn.Length; i++)
                         {
                             showbool[ShowColumn[i]] = true;
@@ -71,7 +71,7 @@ namespace Demo.UserControls
                         this.dataGridView1.DataSource = mydt;
                         DataTable dtresult = (DataTable)this.dataGridView1.DataSource;
                         //Edit: Xếp thời gian gần nhất lên đầu để truy xuất
-                        dataGridView1.Sort(dataGridView1.Columns[4], ListSortDirection.Descending);
+                        dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Descending);
                         if (Refreshed_event != null)
                             Refreshed_event(dtresult);
 
@@ -79,11 +79,10 @@ namespace Demo.UserControls
                     }
                     else
                     {
-
                         this.dataGridView1.DataSource = mydt;
                         DataTable dtresult = (DataTable)this.dataGridView1.DataSource;
                         //Edit: Xếp thời gian gần nhất lên đầu để truy xuất
-                        dataGridView1.Sort(dataGridView1.Columns[4], ListSortDirection.Descending);
+                        dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Descending);
                         this.dataGridView1.ClearSelection();
                         if (Refreshed_event != null)
                             Refreshed_event(dtresult);

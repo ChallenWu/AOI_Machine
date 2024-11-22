@@ -137,79 +137,97 @@
             // 
             // lbl_Vender
             // 
+            this.lbl_Vender.AutoSize = true;
             this.lbl_Vender.Location = new System.Drawing.Point(172, 32);
             this.lbl_Vender.Name = "lbl_Vender";
             this.lbl_Vender.Size = new System.Drawing.Size(28, 13);
             this.lbl_Vender.TabIndex = 2;
             this.lbl_Vender.Text = "AAA";
+            this.lbl_Vender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_SW
             // 
+            this.lbl_SW.AutoSize = true;
             this.lbl_SW.Location = new System.Drawing.Point(93, 50);
             this.lbl_SW.Name = "lbl_SW";
             this.lbl_SW.Size = new System.Drawing.Size(154, 13);
             this.lbl_SW.TabIndex = 2;
             this.lbl_SW.Text = "AAA_X.X.X.X_YYMMDD_POR";
+            this.lbl_SW.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_MSP
             // 
+            this.lbl_MSP.AutoSize = true;
             this.lbl_MSP.Location = new System.Drawing.Point(107, 70);
             this.lbl_MSP.Name = "lbl_MSP";
             this.lbl_MSP.Size = new System.Drawing.Size(120, 13);
             this.lbl_MSP.TabIndex = 2;
             this.lbl_MSP.Text = "C:/path/path/name.exe";
+            this.lbl_MSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_MH
             // 
+            this.lbl_MH.AutoSize = true;
             this.lbl_MH.Location = new System.Drawing.Point(72, 90);
             this.lbl_MH.Name = "lbl_MH";
             this.lbl_MH.Size = new System.Drawing.Size(193, 13);
             this.lbl_MH.TabIndex = 2;
             this.lbl_MH.Text = "84f684f85f12a6f8aas1f68f4as4aw54da";
+            this.lbl_MH.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_Site
             // 
+            this.lbl_Site.AutoSize = true;
             this.lbl_Site.Location = new System.Drawing.Point(51, 32);
             this.lbl_Site.Name = "lbl_Site";
             this.lbl_Site.Size = new System.Drawing.Size(35, 13);
             this.lbl_Site.TabIndex = 2;
             this.lbl_Site.Text = "XXXX";
+            this.lbl_Site.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
+            this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label4.Location = new System.Drawing.Point(121, 32);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Vendor:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label8
             // 
+            this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label8.Location = new System.Drawing.Point(15, 50);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 13);
             this.label8.TabIndex = 1;
             this.label8.Text = "SW Version:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10
             // 
+            this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label10.Location = new System.Drawing.Point(15, 70);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(79, 13);
             this.label10.TabIndex = 1;
             this.label10.Text = "Main SW Path:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
             // 
+            this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.label6.Location = new System.Drawing.Point(15, 90);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 1;
             this.label6.Text = "MS_Hash:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
@@ -220,16 +238,18 @@
             this.label2.Size = new System.Drawing.Size(33, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Site:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl_STN
             // 
+            this.lbl_STN.AutoSize = true;
             this.lbl_STN.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.lbl_STN.Location = new System.Drawing.Point(107, 9);
             this.lbl_STN.Name = "lbl_STN";
             this.lbl_STN.Size = new System.Drawing.Size(57, 13);
             this.lbl_STN.TabIndex = 0;
             this.lbl_STN.Text = "STN01 #1";
-            this.lbl_STN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_STN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // STN
             // 

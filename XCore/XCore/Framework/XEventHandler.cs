@@ -33,10 +33,10 @@ namespace XCore
             e.StringValue = text;
             XController.Instance.EventServer.PostEvent(xStation, XEventID.ALARM, e, null, true);
 
-            if ((sysAlarmId == XAlarmId.DOOR_OPEN || sysAlarmId == XAlarmId.AIR_LOW) && (xStation.StationId == 0 || xStation.StationId == 1))
+            if ((sysAlarmId == XAlarmId.DOOR_OPEN || sysAlarmId == XAlarmId.AIR_LOW || sysAlarmId == XAlarmId.ESTOP) && (xStation.StationId == 0 || xStation.StationId == 1))
                 XController.Instance.AlarmEventServer.PostEvent(XAlarmReporter.Instance, XEventID.ALARM, e, null, true);
 
-            if (sysAlarmId != XAlarmId.DOOR_OPEN && sysAlarmId != XAlarmId.AIR_LOW )
+            if (sysAlarmId != XAlarmId.DOOR_OPEN && sysAlarmId != XAlarmId.AIR_LOW && sysAlarmId != XAlarmId.ESTOP)
                 XController.Instance.AlarmEventServer.PostEvent(XAlarmReporter.Instance, XEventID.ALARM, e, null, true);
 
         }
@@ -66,7 +66,6 @@ namespace XCore
             }
             XController.Instance.AlarmEventServer.PostEvent(XAlarmReporter.Instance, XEventID.ALARM, e, null, true);
         }
-
         public virtual int HandleEvent(XEvent xEvent)
         {
             return -1;

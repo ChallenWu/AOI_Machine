@@ -6091,6 +6091,35 @@ E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\XCore\XCore\obj\Debug\en-US\XCore.res
 E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\XCore\XCore\obj\Debug\XCore.csproj.Up2Date
 E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\XCore\XCore\obj\Debug\XCore.dll
 E:\01.Cong viec\01.Cong viec\06.FUKANG\AOI\XCore\XCore\obj\Debug\XCore.pdb
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\bin\Debug\XCore.dll
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\bin\Debug\XCore.pdb
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelsTable.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.csproj.CopyComplete
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.dll
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.pdb
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelsConfirm.resources
+C:\Users\Administrator\Downloads\BZC9200AOIMachine-UI1\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelChange.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\bin\Debug\XCore.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\bin\Debug\XCore.pdb
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
@@ -6102,6 +6131,9 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.XDiTable.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelChange.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelsConfirm.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelsTable.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
@@ -6118,3 +6150,63 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\en-US\
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.csproj.Up2Date
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\XCore\XCore\obj\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelChange.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelsConfirm.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelsTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelChange.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelsConfirm.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelsTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb

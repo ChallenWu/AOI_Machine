@@ -49,7 +49,7 @@ namespace Demo.Page
 
             modeMap.Add(this.switchButton_Production, ModeType.Production);
             modeMap.Add(this.switchButton_Engineering, ModeType.Engineering);
-            modeMap.Add(this.switchButton_CPKGRR, ModeType.CPK);
+            //modeMap.Add(this.switchButton_CPKGRR, ModeType.CPK);
             //modeMap.Add(this.switchButtonGRR, ModeType.GRR);
 
             foreach (SwitchButton item in modeMap.Keys)
@@ -64,7 +64,7 @@ namespace Demo.Page
 
         private void item_Trigger(SwitchButton button)
         {
-
+            
             foreach (SwitchButton item in modeMap.Keys)
             {
                 if (button != item)
@@ -100,6 +100,7 @@ namespace Demo.Page
                     OthersLoginCheck();
                     break;
             }
+            RequestUpdateLabel(UserAccountControl.currentAccount.Account, UserAccountControl.currentAccount.UserPermission.ToString());
             foreach (XSetting setting in XSettingManager.Instance.SettingMap.Values)
             {
                 setting.UserAccountName = "_" + comboBox_User.Text; ;
@@ -114,7 +115,7 @@ namespace Demo.Page
                 errorProvider1.Clear();
                 AdminUserPrivilige();
                 UserAccountControl.currentAccount = UserAccountControl.Administrator;                
-                RequestUpdateLabel(comboBox_User.SelectedItem.ToString(), "Admin Level");
+                RequestUpdateLabel(UserAccountControl.currentAccount.Account , "Admin");
 
             }
             else
@@ -155,7 +156,7 @@ namespace Demo.Page
         private void OthersLoginCheck()
         {
             if (!UserAccountControl.AllUserAccounts.ContainsKey(comboBox_User.Text))
-                errorProvider1.SetError(comboBox_User, MultiLanguage.GetMessage("用户不存在"));
+                errorProvider1.SetError(comboBox_User, MultiLanguage.GetMessage("User does not exist"));
             else
             {
                 if (UserAccountControl.AllUserAccounts[comboBox_User.Text].PassWord == textBox_Password.Text)
@@ -163,10 +164,10 @@ namespace Demo.Page
                     errorProvider1.Clear();
                     EngineerPrivilige();
                     UserAccountControl.currentAccount = UserAccountControl.AllUserAccounts[comboBox_User.Text];
-                    RequestUpdateLabel(comboBox_User.SelectedItem.ToString(), "Engineer Level");
+                    RequestUpdateLabel(UserAccountControl.currentAccount.Name, UserAccountControl.currentAccount.UserPermission.ToString());
                 }
                 else
-                    errorProvider1.SetError(textBox_Password, MultiLanguage.GetMessage("密码错误"));
+                    errorProvider1.SetError(textBox_Password, MultiLanguage.GetMessage("Wrong password"));
             }
 
 

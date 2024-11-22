@@ -2953,3 +2953,142 @@ YAxis
 ZAxis
 RAxis
 Question
+Emergency
+Stop
+Safetydoor
+Stop
+Curtain sensor
+Stop
+Axis Servo On Fail
+Stop
+Axis Negative Limit
+Stop
+Axis Alarm
+Stop
+Axis Positive Limit
+Stop
+Axis Alarm
+Stop
+Axis Alarm
+Stop
+DI Error
+Stop
+Init Card Err
+Stop
+Load Card paramter Err
+Stop
+Supply Air Err
+Stop
+Parameter_Abnormality
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+Emergency
+Stop
+Safetydoor
+Stop
+Curtain sensor
+Stop
+Axis Servo On Fail
+Stop
+Axis Negative Limit
+Stop
+Axis Alarm
+Stop
+Axis Positive Limit
+Stop
+Axis Alarm
+Stop
+Axis Alarm
+Stop
+DI Error
+Stop
+Init Card Err
+Stop
+Load Card paramter Err
+Stop
+Supply Air Err
+Stop
+Parameter_Abnormality
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+Emergency
+Stop
+Safetydoor
+Stop
+Curtain sensor
+Stop
+Axis Servo On Fail
+Stop
+Axis Negative Limit
+Stop
+Axis Alarm
+Stop
+Axis Positive Limit
+Stop
+Axis Alarm
+Stop
+Axis Alarm
+Stop
+DI Error
+Stop
+Init Card Err
+Stop
+Load Card paramter Err
+Stop
+Supply Air Err
+Stop
+Parameter_Abnormality
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+Confirm to start reset?
+Confirm
+Confirm
+Emergency
+Stop
+Safetydoor
+Stop
+Curtain sensor
+Stop
+Axis Servo On Fail
+Stop
+Axis Negative Limit
+Stop
+Axis Alarm
+Stop
+Axis Positive Limit
+Stop
+Axis Alarm
+Stop
+Axis Alarm
+Stop
+DI Error
+Stop
+Init Card Err
+Stop
+Load Card paramter Err
+Stop
+Supply Air Err
+Stop
+Parameter_Abnormality
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun

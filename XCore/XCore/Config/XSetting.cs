@@ -18,7 +18,7 @@ namespace XCore
         protected ConcurrentDictionary<string, string> settingMap = new ConcurrentDictionary<string, string>();
         //增加参数改动记录LOG
         protected ConcurrentDictionary<string, string> settingMap_temp = new ConcurrentDictionary<string, string>();
-        protected string path;
+        public string path;
         protected string root;
         protected string copyPath;
         
@@ -239,6 +239,7 @@ namespace XCore
                 return defaultValue;
             }
         }
+
         public int GetNodeValue(string nodeName, int defaultValue)
         {
             try
@@ -252,6 +253,7 @@ namespace XCore
                 return defaultValue;
             }
         }
+
         public double GetNodeValue(string nodeName, double defaultValue)
         {
             if (settingMap.Keys.Contains(nodeName))
@@ -272,7 +274,6 @@ namespace XCore
                 defaultValue = new double[valueArr.Length];
                 for (int i = 0; i < valueArr.Length; i++)
                     defaultValue[i] = double.Parse(valueArr[i]);
-
                 return defaultValue;
             }
             else
@@ -289,6 +290,7 @@ namespace XCore
                 return defaultValue;
             }
         }
+
         public string[] GetNodeValue(string nodeName, string[] defaultValue)
         {
             try
@@ -315,6 +317,7 @@ namespace XCore
                 return defaultValue;
             }
         }
+
         public object obj = new object();
         private void WriteLog(string line)
         {

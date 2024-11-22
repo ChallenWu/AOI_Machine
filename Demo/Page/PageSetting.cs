@@ -13,6 +13,7 @@ using HB_IWatch;
 using Demo.UserControls;
 using System.Data.Entity.Infrastructure;
 using Newtonsoft.Json;
+using BoTech;
 
 namespace Demo.Page
 {
@@ -46,6 +47,7 @@ namespace Demo.Page
             this.xSettingGrid_ICT.SaveOkEventHandler += UpDateGlobalsSettings;
             this.xSettingGrid_ICT.SaveOkEventHandler += Form1.OnparameterChanged;
             Globals.AutoRunChangeSettingHandle += UpDateGlobalsSettings;
+
             this.xSettingGrid_SettingOption.SaveOkEventHandler += UpDateGlobalsSettings;
             Globals.AutoRunChangeSettingHandle += Form1.OnparameterChanged;
         }
@@ -56,14 +58,20 @@ namespace Demo.Page
             XMachine.Instance.SafeDoorEStop = Globals.SettingOption.是否开启安全门急停复位;
             UpDateCompensationSettings(Globals.IsDOEPCB);
 
+
         }
         private void UpDateGlobalsSettings(object sender, EventArgs e)
         {
             UpDateCompensationSettings(Globals.IsDOEPCB);
         }
 
+        /// <summary>
+        /// Update lại data setting
+        /// </summary>
+        /// <param name="IsDOE"></param>
         private void UpDateCompensationSettings(bool IsDOE)
         {
+            DataServerManager.Instance.InsertOperationLog("Thay đổi parameter Config");
             if (IsDOE)
             {
                 this.xSettingGrid_SettingOption.Id = (int)SettingId.选项_DOE;
@@ -79,7 +87,6 @@ namespace Demo.Page
         }
 
         #region Load Model
-
         private void InitDataGrid()
         {
         }

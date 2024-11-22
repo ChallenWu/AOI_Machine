@@ -95,21 +95,25 @@ namespace XCore
         {
             //ID lỗi, loại lỗi, miêu tả lỗi, 
             #region System
-            RegisterAlarm(XAlarmId.ESTOP, AlarmCategory.PLCAlarm, "Emergency", "","Stop");
-            RegisterAlarm(XAlarmId.DOOR_OPEN, AlarmCategory.SafetyDoorAlarm, "Safetydoor", "", "Stop");
-            RegisterAlarm(XAlarmId.CURTAIN_ACT, AlarmCategory.SafetyDoorAlarm, "Curtain sensor", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_SERVON_FAIL, AlarmCategory.PLCAlarm, "Axis Servo On Fail", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_ASTP, AlarmCategory.PLCAlarm, "Axis Negative Limit", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_ALM, AlarmCategory.PLCAlarm, "Axis Alarm", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_PEL, AlarmCategory.PLCAlarm, "Axis Positive Limit", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_MEL, AlarmCategory.PLCAlarm, "Axis Alarm", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_POSERROR, AlarmCategory.PLCAlarm, "Axis Alarm", "", "Stop");
-            RegisterAlarm(XAlarmId.WAITDI_TIMEOUT, AlarmCategory.PLCAlarm, "DI Error", "", "Stop");
-            RegisterAlarm(XAlarmId.CARD_INIT_FAIL, AlarmCategory.ConfigAlarm, "Init Card Err", "", "Stop");
-            RegisterAlarm(XAlarmId.CARD_LOAD_PARAM_FAIL, AlarmCategory.ConfigAlarm, "Load Card paramter Err", "", "Stop");
-            RegisterAlarm(XAlarmId.AIR_LOW, AlarmCategory.PLCAlarm, "Supply Air Err", "", "Stop");
-            RegisterAlarm(XAlarmId.Parameter_Abnormality, AlarmCategory.ConfigAlarm, XAlarmId.Parameter_Abnormality.ToString(), "", "Stop");
+            RegisterAlarm(XAlarmId.ESTOP, AlarmCategory.SafetyError, "EMG đang tác động", "Retry","Stop","Continue");
+            RegisterAlarm(XAlarmId.DOOR_OPEN, AlarmCategory.SafetyError, "Cửa an toàn", "", "Stop");
+            RegisterAlarm(XAlarmId.CURTAIN_ACT, AlarmCategory.SafetyError, "Cảm biến an toàn", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_SERVON_FAIL, AlarmCategory.MotionError, "Servo On Fail", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_ASTP, AlarmCategory.MotionError, "Trục dừng bất thường", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_ALM, AlarmCategory.MotionError, "Báo lỗi Servo", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_PEL, AlarmCategory.MotionError, "Lỗi Limit+", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_MEL, AlarmCategory.MotionError, "Lỗi Limit-", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_POSERROR, AlarmCategory.MotionError, "Quá tọa độ trục", "", "Stop");
+            RegisterAlarm(XAlarmId.WAITDI_TIMEOUT, AlarmCategory.SensorError, "Timeout tín hiệu DI", "", "Stop");
+            RegisterAlarm(XAlarmId.AIR_LOW, AlarmCategory.AirError, "Khí vào không đủ", "Thử lại", "Dừng lại","Bỏ qua");
             #endregion
+
+            #region CCD
+            RegisterAlarm(XAlarmId.CCD_Error, AlarmCategory.VisionError, "Lỗi CCD", "", "Stop");
+            RegisterAlarm(XAlarmId.BarCode_Err, AlarmCategory.ScanningError, "Lỗi Barcode", "", "Stop");
+            RegisterAlarm(XAlarmId.Write_PLC_Err, AlarmCategory.PLCError, "Lỗi ghi dữ liệu xuống PLC", "Thử lại", "Stop", "Bỏ qua");
+            RegisterAlarm(XAlarmId.SerialNumber_Dummy, AlarmCategory.ScanningError, "Dữ liệu sản phẩm bị trùng sản phẩm trước", "Thử lại", "Stop", "Bỏ qua");
+
         }
 
         public Dictionary<XAlarmId, XAlarmEventArgs> SystemAlarms
@@ -158,6 +162,8 @@ namespace XCore
                             string append = "";
                             switch (alarmId)
                             {
+                                case 0:
+                                    break;
                                 case (int)XAlarmId.AXIS_SERVON_FAIL:
                                     append = "(AxisId:" + xEvent.EventArgs.IntValue + "[" +
                                         XDevice.Instance.FindAxisById(xEvent.EventArgs.IntValue).Name + "])";
@@ -196,10 +202,7 @@ namespace XCore
                                         + state + ")";
                                     description = SystemAlarms[(XAlarmId)alarmId].Description + append;
                                     break;
-                                case 0:
 
-
-                                    break;
                                 case (int)XAlarmId.DOOR_OPEN:
                                     append = "安全门" +"\"" + xEvent.EventArgs.StringValue  + "\""+ "被打开";
                                     description = SystemAlarms[(XAlarmId)alarmId].Description + append;
@@ -212,7 +215,8 @@ namespace XCore
                                     append = xEvent.EventArgs.StringValue;
                                     description = SystemAlarms[(XAlarmId)alarmId].Description + append;
                                     break;
-                            }                            
+                            }
+                            
                         }
                         break;
                     case XEventID.ESTOP:
@@ -331,16 +335,21 @@ namespace XCore
 
     public enum AlarmCategory
     {
-        SafetyDoorAlarm,
-        PLCAlarm,
-        CCDAlarm,
-        ScanerAlarm,
-        ConfigAlarm
+        MES_Error,
+        SafetyError,
+        ScanningError,
+        VisionError,
+        CylinderError,
+        MotionError,
+        SensorError,
+        PDIError,
+        AirError,
+        PLCError
     }
 
     public enum XAlarmId
     {
-        //NONE,
+        NONE,
         // System
         ESTOP = 10000,
         DOOR_OPEN,
@@ -359,19 +368,10 @@ namespace XCore
         RST,
         WAIT_MOTION_TIMEOUT,
         Parameter_Abnormality,
-
-        // CCD
-        CONNECT_CCD_FAIL =20000,
-        OUT_OF_STANDARD_SPEC,
-        // SCANNER
-        CONNECT_SCANNER_FAIL = 20100,
-        OUT_OF_LENGHT,
-        SN_NOT_MATCH,
-        //PLC
-        CONNECT_PLC_FAILURE = 20200,
-        WRITE_PLC_FAILURE,
-        READ_PLC_FAILUTE
-
+        CCD_Error,
+        BarCode_Err,    
+        Write_PLC_Err,
+        SerialNumber_Dummy,
 
     }
 
@@ -389,5 +389,5 @@ namespace XCore
         Yellow,
         Green
     }
-    
+    #endregion
 }

@@ -1,0 +1,5788 @@
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+NormalRun
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Confirm to start reset?
+Confirm
+Confirm
+Reset Complete
+Hoàn thành reset
+Tips
+WaitCarrierInSignal
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Confirm that the machine is stopped?
+Tips
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Stop Task
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Confirm to start reset?
+Confirm
+Confirm
+Reset Complete
+Hoàn thành reset
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Confirm to start reset?
+Confirm
+Confirm
+Reset Complete
+Hoàn thành reset
+Tips
+WaitCarrierInSignal
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+WARNING
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+WARNING
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+WARNING
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+WARNING
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Confirm that the machine is stopped?
+Tips
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Stop Task
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Confirm to start reset?
+Confirm
+Confirm
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Timeout tín hiệu DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Stop
+Lỗi CCD
+Stop
+NormalRun
+NormalRun
+Assemble_Dry_Run
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection

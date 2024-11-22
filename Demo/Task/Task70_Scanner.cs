@@ -1,9 +1,11 @@
 ﻿using BoTech;
 using Demo.Device;
 using Demo.Page;
+using Demo.Setting;
 using HB_IWatch;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
@@ -19,13 +21,16 @@ namespace Demo.Task
     class Task70_Scanner : ETask
     {
         protected DialogResult result;
-        public static string SN = "";
+        public static string serialNumber = "";
         public int intResult = 0;
         public int i;
-        public static string CCDResult = "";       
-
-        //SerialNumber
-        Dictionary<string, string> lstSN = new Dictionary<string, string>();
+        public static string CCDResult = "";
+        public static int PLC_CarrierInSignal = 100;
+        ProductInfor pd = new ProductInfor();
+        BackMessage messageResponse;
+        private Dictionary<string,string> lstSerialNumber = new Dictionary<string,string>();
+        string data;
+        protected XAlarmId m_AsmError = XAlarmId.NONE;
 
         byte[] scanlead_cmd = { 0x02, 0xF4, 0x03 };
         public override void Initialize()
@@ -44,13 +49,14 @@ namespace Demo.Task
         RunState m_runStep = new RunState();
         private enum RunState
         {
+            Home,
             WaitCarrierInSignal,
-            Inspection,
-            TriggerScanner_P1,
-            TriggerScanner_P2,
-            TriggerScanner_P3,
-            TriggerScanner_P4,           
-            Home
+            CheckSNDummy,
+            AssyCheck,
+            Capture_Image_1,
+            Capture_Image_2,
+            Read_SN_Product,
+            POST_Mes
         }
         public override void Exit()
         {
@@ -71,19 +77,15 @@ namespace Demo.Task
         protected override void Homing()
         {
             try
-            {
+            {                
                 WriteCTLog("PC Reset Task 70");
-                //Connect ICW_Scanner
-                //ICW_Scanner.Instance.Connect();
-
-                //Connect Mitsu Plc
-
+                PageEngineering.Instance.UpdateTextBox("User reset task 70");
                 if (Globals.SettingICT.PLC_Connect)
                 {
-                    if(SLMP.Instance.Open() < 0)
+                    if (SLMP.Instance.Open() < 0)
                     {
                         var content = "Không thể kết nối tới Fx5U. Reset thất bại";
-                        ShowAlarm(XAlarmId.CONNECT_PLC_FAILURE);
+                        ShowAlarm(XAlarmId.CARD_INIT_FAIL);
                         WriteCTLog(content);
                         return;
                     }
@@ -111,14 +113,25 @@ namespace Demo.Task
         {
             switch ((StationRunMode)runMode)
             {
+                case StationRunMode.EmptyRun:
+                    break;
                 case StationRunMode.AutoRun:
                     SetStep("WaitCarrierInSignal", Color.Green);
                     AutoRun();
                     break;
+                case StationRunMode.CPK_Inspection:
+                    SetStep("CPK_Inspection Runing", Color.Orange);
+                    PageEngineering.Instance.UpdateTextBox("Chạy chế độ test CPK Inspection");
+                    CalibrationInspection();
+                    break;
                 default:
                     break;
             }
-            SetStep("Stop Running", MyColor.Green);
+        }
+
+        private static void CalibrationInspection()
+        {
+            
         }
 
         private void AutoRun()
@@ -126,16 +139,16 @@ namespace Demo.Task
             mIsExecuatingAuto = true;
             while (true)
             {
-                Thread.Sleep(10); 
+                Thread.Sleep(10);
 
                 if(StopRun)
                 {
-                    SetStep("Stop Task70", Color.Green);
+                    SetStep("Stop Task", Color.Red);
                     break;
                 }                    
                 if(PauseRun)
                 {
-                    SetStep("Pause Task70", Color.Green);
+                    SetStep("Pause Task", Color.Green);
                     Thread.Sleep(10);
                     continue;
                 }
@@ -153,184 +166,218 @@ namespace Demo.Task
         }
         private void PerformAutoRun()
         {
-            //Step Auto
             switch ((RunState)m_runStep)
             {
                 case RunState.WaitCarrierInSignal:
-                    SetStep("WaitCarrierInSignal", Color.Green);
-                    short DValue;
-                    SLMP.Instance.ReadWord(DevideCode.D, 110, out DValue);
-                    if(DValue == 1)
-                    //if(SLMP.Instance.D110 == 1)
+                    result = ShowAlarm(XAlarmId.Write_PLC_Err);
+                    //Thử đọc lại
+                    if(result == DialogResult.OK)
                     {
-                        WriteCTLog("PLC >> PC: Register D110 = 1");
-                        SLMP.Instance.WriteWord(DevideCode.D, 110, 0);
-                        //Record thời điểm bắt đầu
-                        AudioSystem.UCM.Units[0].StartTime = DateTime.Now;
-                        DateTime startdt = DateTime.Now;
-                        Console.WriteLine(startdt.ToString());
-                        SN = "";
-                        SetStep("Inspection", Color.Green);
-                        m_runStep = RunState.Inspection;
+                        m_runStep = RunState.CheckSNDummy;
                     }
-                    if(SLMP.Instance.D110 == 2)
+                    if(result == DialogResult.Cancel)
                     {
-                        WriteCTLog("PLC >> PC: Register D110 = 2");
-                        SLMP.Instance.WriteWord(DevideCode.D, 100, 0);
-                        m_runStep = RunState.TriggerScanner_P1;
+                        return;
+                    }
+                    if(result == DialogResult.Ignore)
+                    {
+                        m_runStep = RunState.CheckSNDummy;
+                    }                
+
+
+                    SetStep("Wait Carrier In", Color.Green);
+                    short CarrierSignal_Value = 0;
+                    SLMP.Instance.ReadWord(DevideCode.D, PLC_CarrierInSignal, out CarrierSignal_Value);
+                    if(CarrierSignal_Value == 1)
+                    {
+                        AudioSystem.UCM.Units[0].StartTime = DateTime.Now;
+                        m_runStep = RunState.CheckSNDummy;
                     }
                     break;
-                    //Inspection product => Send to CCD
-                case RunState.Inspection:
-                    SetStep("Inspection", Color.Green);
-                    WriteCTLog("PC >> CCD: Inspection product command CC,46 ");
-                    string cmd = "CC,46";
-                    if(TriggerKenyceSN(cmd, out CCDResult) >= 0)
+                    //Kiểm tra xem sản phẩm có đúng trạm không.
+                case RunState.CheckSNDummy:
+                    SetStep("PC >> CCD get SN", Color.Green);                               
+                    if (TriggerScanner(scanlead_cmd, out serialNumber))
                     {
-                        string[] arr = CCDResult.Split(',');
-                        //inspect result OK
-                        if (arr[3] == "OK")
+                        SetStep("check SN Dummy State",Color.Green);
+                        if (Globals.SettingICT.CheckDummySN)
                         {
-                            WriteCTLog("Inspection OK");
-                            m_runStep = RunState.TriggerScanner_P1;
-                            SLMP.Instance.WriteWord(DevideCode.D, 110, 1);
-                            WriteCTLog("PC >> PLC: D110 = 1");
+                            //Lấy dữ liệu sản phẩm cuối cùng
+                            DataTable data = DataServerManager.Instance.SelectLastProduct();
+                            if (serialNumber == data.Rows[0][1].ToString())
+                            {
+                                result = ShowAlarm(XAlarmId.Write_PLC_Err, "Write data to PLC failure");
+                                //Xóa lỗi, báo sản phẩm NG
+                                if (result == DialogResult.Cancel)
+                                {
+                                    m_runStep = RunState.WaitCarrierInSignal;
+                                    WriteCTLog("PLC >> PC: Write D110 = 1");
+                                    if (SLMP.Instance.WriteWord(DevideCode.D, PLC_CarrierInSignal, 0) == -1)
+                                    {
+                                        ShowAlarm(XAlarmId.Write_PLC_Err);
+                                        return;
+                                    }
+                                }
+                                //Đọc lại mã code
+                                if (result == DialogResult.Yes)
+                                {
+                                    return;
+                                }
+                            }
+                            if (Globals.RUNMODE != Globals.MachineRunMode.Assemble_Dry_Run)
+                            {
+                                m_runStep = RunState.AssyCheck;
+                            }
+                            else
+                            {
+                                m_runStep = RunState.Capture_Image_1;
+                            }
                         }
-                        else
+                        SetStep("PC >> MES get Station", Color.Green);
+                    }    
+                    else
+                    {
+                        SetStep("Read serial number fail", Color.Red);
+                        result = ShowAlarm(XAlarmId.CCD_Error, "Error Scanner");
+                        //Thử lại
+                        if (result == DialogResult.OK)
                         {
-                            WriteCTLog("Inspection NG");
-                            //Error to plc
-                            SLMP.Instance.WriteWord(DevideCode.D, 110, 2);
-                            WriteCTLog("PC >> PLC: D110 = 2");
-                            SetStep("WaitCarrierInSignal", Color.Green);
-                            m_runStep = RunState.WaitCarrierInSignal;
+                            m_runStep = RunState.CheckSNDummy;
+                        }   
+                        //Dừng lại
+                        else if (result == DialogResult.Cancel)
+                        {
+                            //if (OnPauseActive != null)
+                            //    OnPauseActive(null, null);
+                            SLMP.Instance.WriteWord(DevideCode.D, PLC_CarrierInSignal, 0);
+                            return;
                         }
+
+                    }    
+                    break;
+                case RunState.AssyCheck:
+                    if (MES.AssyCheck_AOI(serialNumber, out messageResponse))
+                    {
+                        SetStep("MES >> PC: Correct Station, ", Color.Green);
+                        m_runStep = RunState.Capture_Image_1;
                     }
                     else
                     {
+                        //Wrong station
+                        SetStep("MES >> PC: Wrong Station", Color.Red);
+                        if (SLMP.Instance.WriteWord(DevideCode.D, PLC_CarrierInSignal, 0) == -1)
+                        {
+                            result = ShowAlarm(XAlarmId.Write_PLC_Err, "Write data to PLC failure");
+                        }
                         m_runStep = RunState.WaitCarrierInSignal;
                     }
-
-                    break ;
-                    //Inspect ok, then scan barcode
-                case RunState.TriggerScanner_P1:
-                    SetStep("Reading Scanner_P1", Color.Green);
-                    if (SLMP.Instance.D100 == 1)
-                    {
-                        
-                        SLMP.Instance.WriteWord(DevideCode.D, 100, 1);
-                        string scanresult = "";
-                        if (TriggerScanner(scanlead_cmd, out scanresult) >= 0)
-                        {
-                            //Scan ma OK
-                            SLMP.Instance.WriteWord(DevideCode.D, 110, 1);
-                            //Insert task MES here
-
-                            //Scan OK, send result to Plc to go next step
-                            Thread.Sleep(100);
-                            m_runStep = RunState.TriggerScanner_P2;
-                        }
-                        else
-                        {
-                            SLMP.Instance.WriteWord(DevideCode.D, 110, 2);
-                            m_runStep = RunState.TriggerScanner_P1;
-                        }
-                    }
-                    else if (SLMP.Instance.D100== 2)
-                    {
-                        SLMP.Instance.WriteWord(DevideCode.D, 100, 0);
-                        m_runStep = RunState.TriggerScanner_P2;
-                    }
-
                     break;
-                case RunState.TriggerScanner_P2:
-                    SetStep("Reading Scanner_P2", Color.Green);
-                    if (SLMP.Instance.D100 == 1)
-                    {
-                        SLMP.Instance.WriteWord(DevideCode.D, 100, 0);
-                        string scanresult = "";
-                        if (TriggerScanner(scanlead_cmd, out scanresult) >= 0)
-                        {
-
-                            //Scan ma OK
-                            SLMP.Instance.WriteWord(DevideCode.D, 110, 1);
-                            //Insert task MES here
-                            //Scan OK, send result to Plc to go next step
-                            Thread.Sleep(100);
-                            m_runStep = RunState.TriggerScanner_P3;
-                        }
-                        else
-                        {
-                            SLMP.Instance.WriteWord(DevideCode.D, 110, 1);
-                            m_runStep = RunState.TriggerScanner_P1;
-                        }
-                    }
-                    else if (SLMP.Instance.D100 == 2)
-                    {
-                        SLMP.Instance.WriteWord(DevideCode.D, 100, 0);
-                        m_runStep = RunState.TriggerScanner_P3;
-                    }
+                case RunState.Capture_Image_1:
+                    SetStep("Capture Image 1", Color.Green);
+                    //Run chương trình cam 1
                     Thread.Sleep(100);
+                    m_runStep = RunState.Capture_Image_2;
                     break;
-                case RunState.TriggerScanner_P3:
-                    SetStep("Reading Scanner_P3", Color.Green);
-                    if (SLMP.Instance.D100 == 1)
-                    {
-                        SLMP.Instance.WriteWord(DevideCode.D, 100, 0);
-                        string scanresult = "";
-                        if (TriggerScanner(scanlead_cmd, out scanresult) >= 0)
-                        {
-                            //Scan ma OK
-                            SLMP.Instance.WriteWord(DevideCode.D, 110, 1);
-                            Thread.Sleep(100);
-                            m_runStep = RunState.TriggerScanner_P4;
-                        }
-                        else
-                        {
-                            //send NG to PLC
-                            PageEngineering.Instance.UpdateTextBox("PC -> PLC: Send D110 = 2. Scan label NG");
-                            SLMP.Instance.WriteWord(DevideCode.D, 110, 2);
-                            m_runStep = RunState.TriggerScanner_P3;
-                        }
-                    }
-                    else if (SLMP.Instance.D100 == 2)
-                    {
-                        SLMP.Instance.WriteWord(DevideCode.D, 100, 0);
-                        m_runStep = RunState.TriggerScanner_P4;
-                    }
+
+                case RunState.Capture_Image_2:
+                    SetStep("Capture Image 2", Color.Green);
+                    //Run chương trình cam 2
                     Thread.Sleep(100);
+                    m_runStep = RunState.Read_SN_Product;
                     break;
-                case RunState.TriggerScanner_P4:
-                    SetStep("Trigger Scanner Position 4", Color.Green);
-                    if (SLMP.Instance.D100 == 1)
+
+                case RunState.Read_SN_Product:
+                    //Đọc dữ liệu trên PLC
+                    SLMP.Instance.ReadWord(DevideCode.D, PLC_CarrierInSignal, out CarrierSignal_Value);
+                    if(CarrierSignal_Value == 1)
                     {
-                        WriteCTLog("PLC >> PC: D100 = 1");
-                        SLMP.Instance.WriteWord(DevideCode.D, 100, 0);
-                        string scanresult = "";
-                        if (TriggerScanner(scanlead_cmd, out scanresult) >= 0)
+                        //Đọc mã vị trí 1
+                        if(TriggerScanner(scanlead_cmd, out data))
                         {
-                            SLMP.Instance.WriteWord(DevideCode.D, 110, 1);
-                            Thread.Sleep(100);
-                            m_runStep = RunState.WaitCarrierInSignal;
+                            string[] dataSpilit = data.Split(',');
+                            lstSerialNumber.Add("SN1", dataSpilit[0]);
+                        } 
+                        else
+                        {
+                            ShowAlarm(XAlarmId.BarCode_Err);
+                        }
+                    } 
+                    if(CarrierSignal_Value == 2)
+                    {
+                        if (TriggerScanner(scanlead_cmd, out data))
+                        {
+                            string[] dataSpilit = data.Split(',');
+                            lstSerialNumber.Add("SN2", dataSpilit[0]);
+                        }                      
+                        else
+                        {
+                            ShowAlarm(XAlarmId.BarCode_Err);
+                        }
+                    }
+                    if(CarrierSignal_Value == 3)
+                    {
+                        if (TriggerScanner(scanlead_cmd, out data))
+                        {
+                            string[] dataSpilit = data.Split(',');
+                            lstSerialNumber.Add("SN3", dataSpilit[0]);
                         }
                         else
                         {
-                            SLMP.Instance.WriteWord(DevideCode.D, 110, 2);
-                            m_runStep = RunState.TriggerScanner_P4;
+                            ShowAlarm(XAlarmId.BarCode_Err);
                         }
-                    }
-                    else if (SLMP.Instance.D100 == 2)
+                    }    
+                    if(CarrierSignal_Value == 4)
                     {
-                        SLMP.Instance.WriteWord(DevideCode.D, 100, 0);
-                        m_runStep = RunState.WaitCarrierInSignal;
+                        if (TriggerScanner(scanlead_cmd, out data))
+                        {
+                            string[] dataSpilit = data.Split(',');
+                            lstSerialNumber.Add("SN4", dataSpilit[0]);
+                        }
+                        else
+                        {
+                            ShowAlarm(XAlarmId.BarCode_Err);
+                        }
+                    }   
+                    if(CarrierSignal_Value == 5)
+                    {
+                        if (TriggerScanner(scanlead_cmd, out data))
+                        {
+                            string[] dataSpilit = data.Split(',');
+                            lstSerialNumber.Add("SN5", dataSpilit[0]);
+                            //Đọc giá trị cuối cùng rồi gửi lên hệ thống Mes
+                            m_runStep = RunState.POST_Mes;
+                        }
+                        else
+                        {
+                            ShowAlarm(XAlarmId.BarCode_Err);
+                        }    
+
                     }
-                        Thread.Sleep(100);
+                    SLMP.Instance.WriteWord(DevideCode.D, PLC_CarrierInSignal, 0);
                     break;
+                case RunState.POST_Mes:
+                    SetStep("PC > MES : Send SN to Mes System", Color.Green);
+                    pd.listSerialNumber = lstSerialNumber;
+                    if (MES.AssyGo_AOI(pd, out messageResponse))
+                    {
+                        WriteProductDataToSQL("PASS");
+                        SLMP.Instance.WriteWord(DevideCode.D, PLC_CarrierInSignal, 1);
+                    }
+                    else
+                    {
+                        WriteProductDataToSQL("FAIL");
+                        SLMP.Instance.WriteWord(DevideCode.D, PLC_CarrierInSignal, 0);
+                    }
+                    m_runStep = RunState.WaitCarrierInSignal;
+                    break;
+               
                 default:
                     break;
             }
 
         }
+       
+       
         #region ICW_Serial Port
         private bool ReadSN()
         {
@@ -344,33 +391,11 @@ namespace Demo.Task
             }
             else
             {
-                SN = ret;
+                serialNumber = ret;
                 return true;
             }
         }
         #endregion
-
-        #region SQL 
-        private void WriteDataToSQLite(string result)
-        {
-            AudioSystem.UCM.Units[0].HiveState = 1;
-            AudioSystem.UCM.Units[0].UnitSN = SN;
-            AudioSystem.UCM.Units[0].ComponentSN = "ABC";
-            AudioSystem.UCM.Units[0].Pass = result;
-            AudioSystem.UCM.Units[0].EndTime = DateTime.Now;
-            AudioSystem.UCM.Units[0].CT = (AudioSystem.UCM.Units[0].EndTime - AudioSystem.UCM.Units[0].StartTime).TotalSeconds;
-
-            DateTime enddt = DateTime.Now;
-            if (AudioSystem.UCM.Units[0].StartTime.Hour >= 8 && AudioSystem.UCM.Units[0].StartTime.Hour <= 20)
-                AudioSystem.UCM.Units[0].Shift = "DS";
-            else
-                AudioSystem.UCM.Units[0].Shift = "NS";
-
-            DataServerManager.Instance.InsertUnitMessage(AudioSystem.UCM, 0);
-            PageProduction.Instance.Async_IO_Refresh(AudioSystem.UCM, 0);
-        }
-        #endregion
-
         #region CCD
         protected int TriggerKenyceSN(string cmd, out string Data)
         {
@@ -413,9 +438,9 @@ namespace Demo.Task
                     KeyenceService.Instance.RecData = KeyenceService.Instance.RecData.Substring(index);
                     return true;
                 }
-                 if (KeyenceService.Instance.RecData.Length == Globals.SettingICT.SN_Lenght)
+                if (KeyenceService.Instance.RecData.Length == Globals.SettingICT.SN_Lenght)
                     return true;
-               
+
                 if (sw.ElapsedMilliseconds > timeOutMs)
                     return false;
                 Thread.Sleep(3);
@@ -423,35 +448,35 @@ namespace Demo.Task
             while (true);    
         }
         #endregion
-        #region Scanlead Scanner
-        protected int TriggerScanner(byte[] cmd, out string Data)
+        #region Scanner
+        protected bool TriggerScanner(byte[] cmd, out string Data)
         {
             UpCCDScanSN:
             int iRetCCD = 0;
             Data = "";
-            Thread.Sleep(Globals.SettingOption.上相机稳停时间);
+            Thread.Sleep(200);
 
             Scanner_TCP.Instance.WriteCmd(cmd, 0);
 
             SetStep("Waiting to receive camera feedback data...", MyColor.LightGreen);
-            if (Scanner_TCP.Instance.are_DataRecerveDone.WaitOne(10000) == false) // wait CCD reponse within 10sec
+            if (Scanner_TCP.Instance.are_DataRecerveDone.WaitOne(5000) == false) // wait CCD reponse within 10sec
             {
                 SetStep("Camera feedback data timeout!", MyColor.LightRed);
                 WriteLog("Camera feedback data timeout!");
-                MultiLanguage.GetMessage("Camera feedback data timeout");
-                return -1;
+                iRetCCD = TriggerKeyenceError(MultiLanguage.GetMessage("相机反馈数据超时"));
+                return false;
             }
             SetStep("Parsing camera data…", MyColor.LightGreen);
-            if (!WaitScannerData())
+            if (WaitScannerData() == false)
             {
-                MultiLanguage.GetMessage("The camera feedback data format of this command is incorrect");
+                iRetCCD = TriggerKeyenceError(cmd + "-" + MultiLanguage.GetMessage("该命令的相机反馈数据格式错误"));
                 if (iRetCCD == 1)
                     goto UpCCDScanSN;
                 else
-                    return -1;
+                    return false;
             }
             Data = Scanner_TCP.Instance.RecData.ToString();           
-            return 0;
+            return true;
         }
         public bool WaitScannerData(int timeOutMs = 3000)
         {
@@ -459,10 +484,11 @@ namespace Demo.Task
             sw.Start();
             do
             {
-                //So sanh chuoi du lieu
-                if (Scanner_TCP.Instance.RecData.Length > 5 && Scanner_TCP.Instance.RecData.Contains("SPX"))
+                //So sánh chuỗi dữ liệu
+                if (Scanner_TCP.Instance.RecData.Length > 5 && Scanner_TCP.Instance.RecData.Contains("SPXVN"))
                 {
                     int index = Scanner_TCP.Instance.RecData.IndexOf("SPXVN");
+                    //Ngắt đi những ký tự không cần thiết
                     Scanner_TCP.Instance.RecData = Scanner_TCP.Instance.RecData.Substring(index);
                     return true;
                 }
@@ -476,33 +502,78 @@ namespace Demo.Task
             while (true);
         }
 
-        private bool AddSNtoList(string str)
+
+        protected int TriggerKeyenceError(string strTitle, XAlarmId alarmId = XAlarmId.CCD_Error)
+        {
+            SetStep(strTitle, MyColor.LightRed);
+            m_AsmError = alarmId;
+            DialogResult ret = ShowAlarmEx((XAlarmId)m_AsmError, strTitle);// ReportError(true, "", strTitle);
+            if (ret == DialogResult.OK)
+            {
+                Thread.Sleep(500);
+                return 1;
+            }
+            else if (ret == DialogResult.Ignore)
+            {
+                return 2;
+            }
+            else if (ret == DialogResult.Abort)
+                return 99;
+            else
+            {
+                return -1;
+            }
+        }
+
+        protected DialogResult ShowAlarmEx(XAlarmId alarmId, string szDetail = "")
+        {
+            return ShowAlarm(alarmId, szDetail, -1);
+        }
+
+        private bool AddSerialNumberToList(string str)
         {
             string[] kq = str.Split(',');
             foreach (string k in kq)
             {
                 if (k.Contains("A"))
                 {
-                    lstSN.Add("SN1", k);
+                    lstSerialNumber.Add("SN1", k);
                 }
                 if (k.Contains("B"))
                 {
-                    lstSN.Add("SN2", k);
+                    lstSerialNumber.Add("SN2", k);
                 }
                 if (k.Contains("C"))
                 {
-                    lstSN.Add("SN3", k);
+                    lstSerialNumber.Add("SN3", k);
                 }
                 if (k.Contains("D"))
                 {
-                    lstSN.Add("SN4", k);
+                    lstSerialNumber.Add("SN4", k);
                 }
             }
             return true;
         }
         #endregion
-        #region MES
+        #region SQL Querry
+        private void WriteProductDataToSQL(string result)
+        {
+            AudioSystem.UCM.Units[0].HiveState = 1;
+            AudioSystem.UCM.Units[0].UnitSN = serialNumber;
+            AudioSystem.UCM.Units[0].ComponentSN = "ABC";
+            AudioSystem.UCM.Units[0].Pass = result;
+            AudioSystem.UCM.Units[0].EndTime = DateTime.Now;
+            AudioSystem.UCM.Units[0].CT = (AudioSystem.UCM.Units[0].EndTime - AudioSystem.UCM.Units[0].StartTime).TotalSeconds;
 
+            DateTime enddt = DateTime.Now;
+            if (AudioSystem.UCM.Units[0].StartTime.Hour >= 8 && AudioSystem.UCM.Units[0].StartTime.Hour <= 20)
+                AudioSystem.UCM.Units[0].Shift = "DS";
+            else
+                AudioSystem.UCM.Units[0].Shift = "NS";
+
+            DataServerManager.Instance.InsertUnitMessage(AudioSystem.UCM, 0);
+            PageProduction.Instance.Async_IO_Refresh(AudioSystem.UCM, 0);
+        }
         #endregion
 
         private void WriteCTLog(string message)

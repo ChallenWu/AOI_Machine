@@ -42,6 +42,7 @@
             this.alarmLogShow1 = new BoTech.AlarmLogShow();
             this.alarm_Duration1 = new BoTech.Alarm_Duration();
             this.dT_Statiistic1 = new BoTech.DT_Statiistic();
+            this.xStationStateBar1 = new XCore.XStationStateBar();
             this.SuspendLayout();
             // 
             // StatusRefreshTimer
@@ -87,6 +88,7 @@
             this.btn_Save.TabIndex = 24;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = true;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click_1);
             // 
             // btn_Query
             // 
@@ -184,10 +186,19 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(217)))), ((int)(((byte)(56))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(72)))), ((int)(((byte)(134)))))};
             // 
+            // xStationStateBar1
+            // 
+            this.xStationStateBar1.Location = new System.Drawing.Point(903, 327);
+            this.xStationStateBar1.Name = "xStationStateBar1";
+            this.xStationStateBar1.Size = new System.Drawing.Size(185, 34);
+            this.xStationStateBar1.StationId = 4;
+            this.xStationStateBar1.TabIndex = 25;
+            // 
             // PageAlarm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.xStationStateBar1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dTP_StartTime);
             this.Controls.Add(this.label1);
@@ -222,5 +233,6 @@
         private System.Windows.Forms.Button btnCloseAll;
         private System.Windows.Forms.Button TriggerAlarm;
         private System.Windows.Forms.DateTimePicker dTP_EndTime;
+        private XCore.XStationStateBar xStationStateBar1;
     }
 }

@@ -25,6 +25,7 @@ namespace XCore
         {
 
         }
+
         public static XPositionManager Instance
         {
             get { return instance; }
@@ -51,19 +52,28 @@ namespace XCore
 
             if (XXml.FindChildInParent(PositionXml_Path, PositionXml_Root, node) == false)
             {
-                XXml.NewElement(XPositionManager.Instance.PositionXml_Path,
-                   XPositionManager.Instance.PositionXml_Root,
-                   XPositionManager.Instance.PositionSet[setTaskId].Node,
-                   "");
-                XXml.NewElement(XPositionManager.Instance.PositionXml_Path,
-                    XPositionManager.Instance.PositionXml_Root + "//" + XPositionManager.Instance.PositionSet[setTaskId].Node,
-                    AXISID,
-                    "");
-                XXml.UpdateInnerText(XPositionManager.Instance.PositionXml_Path,
-                 XPositionManager.Instance.PositionXml_Root + "//" + XPositionManager.Instance.PositionSet[setTaskId].Node + "//" + XPositionManager.AXISID,
-                 XConvert.IntG2Str(XTaskManager.Instance.FindTaskById(setTaskId).AxisMap.Keys.ToArray(), ","));
+                XXml.NewElement(XPositionManager.Instance.PositionXml_Path, XPositionManager.Instance.PositionXml_Root, XPositionManager.Instance.PositionSet[setTaskId].Node,"");
+                XXml.NewElement(XPositionManager.Instance.PositionXml_Path, XPositionManager.Instance.PositionXml_Root + "//" + XPositionManager.Instance.PositionSet[setTaskId].Node, AXISID, "");
+                XXml.UpdateInnerText(XPositionManager.Instance.PositionXml_Path, XPositionManager.Instance.PositionXml_Root + "//" + XPositionManager.Instance.PositionSet[setTaskId].Node + "//" + XPositionManager.AXISID,XConvert.IntG2Str(XTaskManager.Instance.FindTaskById(setTaskId).AxisMap.Keys.ToArray(), ","));
             }
-            
+            return 0;
+        }
+
+        public int BindPositionTableByTaskIdTry(int setTaskId)
+        {
+            if (positionSet.ContainsKey(setTaskId) == false)
+            {
+                return -1;
+            }
+            string node = TABLEHEAD + setTaskId.ToString();
+            XPositionMap table = new XPositionMap(dir_positionXml + file_positionXml, dir_positionXml + file_positionNameXml, root_positionXml, node);
+            if (XXml.FindChildInParent(PositionXml_Path, PositionXml_Root, node) == false)
+            {
+                XXml.NewElement(XPositionManager.Instance.PositionXml_Path, XPositionManager.Instance.PositionXml_Root, XPositionManager.Instance.PositionSet[setTaskId].Node, "");
+                XXml.NewElement(XPositionManager.Instance.PositionXml_Path, XPositionManager.Instance.PositionXml_Root + "//" + XPositionManager.Instance.PositionSet[setTaskId].Node, AXISID, "");
+                XXml.UpdateInnerText(XPositionManager.Instance.PositionXml_Path, XPositionManager.Instance.PositionXml_Root + "//" + XPositionManager.Instance.PositionSet[setTaskId].Node + "//" + XPositionManager.AXISID, XConvert.IntG2Str(XTaskManager.Instance.FindTaskById(setTaskId).AxisMap.Keys.ToArray(), ","));
+            }
+            positionSet[setTaskId] = table;
             return 0;
         }
 
@@ -78,7 +88,6 @@ namespace XCore
         }
 
         public void LoadPositionSet()
-        
         {
             foreach (KeyValuePair<int, XPositionMap> kvp in positionSet)
             {

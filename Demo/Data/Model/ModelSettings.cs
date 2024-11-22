@@ -1,35 +1,84 @@
-﻿using System;
+﻿using AutoStudio.Core.Tools;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Demo.Data.Model
+namespace Models
 {
+    /// <summary>
+    /// Các thông số dành cho model 
+    /// </summary>
     class ModelSettings
     {
-        public const String Default_Model = "default";
-        public string modelName { get; set; }
-        public PLCPosition position { get; set; }
-    }
-    class PLCPosition
-    {
-        //Tọa độ chạy
-        private int float_X;
-        private int float_Y;
-        private int float_Z;
-        private int float_R;
-        public int Float_X { get => float_X; set => float_X = value; }
-        public int Float_Y { get => float_Y; set => float_Y = value; }
-        public int Float_Z { get => float_Z; set => float_Z = value; }
-        public int Float_R { get => float_R; set => float_R = value; }
+        public const String Default_Model = "model_default";
+        public String modelName { get; set; }
+        public List<PLC_Point> points { get; set; }
+        public DateTime updateTime { get; set; }
 
-        public PLCPosition()
+        public ModelSettings()
+        {
+            this.updateTime = DateTime.Now;
+            this.modelName = Default_Model;
+            points = new List<PLC_Point>();
+        }
+        public ModelSettings Clone()
+        {
+            return new ModelSettings
             {
-            this.Float_X = 0;
-            this.Float_Y = 0;
-            this.Float_Z = 0;
-            this.Float_R = 0;
+                modelName = this.modelName,
+                updateTime = this.updateTime,
+                points = this.points
+            };
+        }
+        public String ToJson()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
+
+        public static ModelSettings FromJson(String js)
+        {
+            var j = JsonConvert.DeserializeObject<ModelSettings>(js);
+            return j;
+        }
+
+        public Boolean HasSameModel(ModelSettings x)
+        {
+            if (this.modelName != null && x != null && this.modelName.Equals(x.modelName))
+            {
+                return true;
             }
+            return false;
+        }
     }
-}
+     class PLC_Point
+    {
+        public string Name { get; set; } = "Point_1";
+        public double x { get; set; } = 0;
+        public double y { get; set; } = 0;
+        public double z { get; set; } = 0;
+        public double r { get; set; } = 0;
+    }
+
+    class AppSettings
+    {
+        public String currentModel { get; set; }
+        public AppSettings()
+        {
+            currentModel = ModelSettings.Default_Model;
+        }
+
+        public static AppSettings FromJSON(String js)
+        {
+            var j = JsonConvert.DeserializeObject<AppSettings>(js);
+            return j;
+        }
+        public String ToJSON()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
+    }
+ }

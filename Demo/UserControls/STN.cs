@@ -16,7 +16,7 @@ namespace Demo.UserControls
         public STN()
         {
             InitializeComponent();
-            this.AutoScaleMode = AutoScaleMode.Font;
+            //this.AutoScaleMode = AutoScaleMode.Font;
         }
 
         public event Action<object, EventArgs> SensorPageCLick;

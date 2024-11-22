@@ -102,13 +102,13 @@
             this.doubleTrackBar1.BackColor = System.Drawing.Color.LightGray;
             this.doubleTrackBar1.CheckDays = 7;
             this.doubleTrackBar1.ControlHeight = 10;
-            this.doubleTrackBar1.DataTableNewestTime = "08/10/2024 09:24:54";
-            this.doubleTrackBar1.DateEndValue2 = new System.DateTime(2024, 8, 10, 9, 24, 54, 0);
-            this.doubleTrackBar1.DateStartValue1 = new System.DateTime(2024, 8, 3, 9, 24, 54, 0);
+            this.doubleTrackBar1.DataTableNewestTime = "11/13/2024 16:43:44";
+            this.doubleTrackBar1.DateEndValue2 = new System.DateTime(2024, 11, 13, 16, 43, 44, 0);
+            this.doubleTrackBar1.DateStartValue1 = new System.DateTime(2024, 11, 6, 16, 43, 44, 0);
             this.doubleTrackBar1.IsSlider2Enable = true;
             this.doubleTrackBar1.LabelPlaces = ((uint)(1u));
             this.doubleTrackBar1.Location = new System.Drawing.Point(341, 30);
-            this.doubleTrackBar1.MinimumSize = new System.Drawing.Size(10, 10);
+            this.doubleTrackBar1.MinimumSize = new System.Drawing.Size(1, 10);
             this.doubleTrackBar1.Name = "doubleTrackBar1";
             this.doubleTrackBar1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             this.doubleTrackBar1.SelectTrackColor = System.Drawing.Color.DarkGray;
@@ -126,7 +126,7 @@
             this.doubleTrackBar1.TrackColor = System.Drawing.Color.White;
             this.doubleTrackBar1.TrackSelectedMode = UCTest.DoubleTrackBar.emTrackBarSelectedMode.Inner;
             this.doubleTrackBar1.Value1 = 0D;
-            this.doubleTrackBar1.Value2 = 100D;
+            this.doubleTrackBar1.Value2 = 10000D;
             // 
             // MachineErrorStatistics
             // 

@@ -6,6 +6,9 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using NPOI.SS.Formula.Functions;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace XCore
 {
@@ -37,7 +40,7 @@ namespace XCore
                 }
             }
         }
-        public void SelectedObject<T>(T Object )
+        public void SelectedObject<T>(T Object)
         {
             this.propertyGrid1.SelectedObject = Object;
         }

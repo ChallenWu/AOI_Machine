@@ -34,6 +34,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Name = "RoundPanel";
+            this.Size = new System.Drawing.Size(97, 80);
             this.ResumeLayout(false);
 
         }

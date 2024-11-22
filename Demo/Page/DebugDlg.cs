@@ -18,6 +18,8 @@ using BoTech;
 using System.Runtime.InteropServices.ComTypes;
 using Newtonsoft.Json;
 using System.Collections;
+using Models;
+using HB_IWatch;
 
 namespace Demo.Page
 {
@@ -34,9 +36,8 @@ namespace Demo.Page
         public DebugDlg()
         {
             InitializeComponent();
-            timer1.Start();
             this.StartPosition = FormStartPosition.CenterScreen;
-            
+            InitDgv();
         }
         private static DebugDlg instance;
         public static DebugDlg Instance
@@ -49,25 +50,18 @@ namespace Demo.Page
             }
         }
 
-        //Update UI
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-
-        }
-
-
         #region Inovance PLC
         private void btnConnectPLC_Click(object sender, EventArgs e)
         {
             if (!ModbusApiH5U.IsConnected)
             {
                 //PublicPLCData.Instance._ModbusApiH5U.PLCConnect("192.168.250.11", 1);
-                var ip = Globals.SettingICT.PLC_IP;
-                var kq = PublicPLCData.Instance.ModbusApiH5U.PLCConnect(ip, 1);
-                if (kq)
-                {
+                //var ip = Globals.SettingICT.PLC_IP;
+                //var kq = PublicPLCData.Instance.ModbusApiH5U.PLCConnect(ip, 1);
+                //if (kq)
+                //{
 
-                }
+                //}
             }
         }
         private void btnDisconnectPLC_Click(object sender, EventArgs e)
@@ -76,8 +70,8 @@ namespace Demo.Page
         }
         private void btnWritePLC_Click(object sender, EventArgs e)
         {
-            short value = short.Parse(textBox4.Text);
-            ModbusApiH5U.WriteValueInt16(SoftElemType.REGI_H5U_D, PublicPLCData.triggerRegister_D, value);
+            //short value = short.Parse(textBox4.Text);
+            //ModbusApiH5U.WriteValueInt16(SoftElemType.REGI_H5U_D, PublicPLCData.triggerRegister_D, value);
         }
         #endregion
 
@@ -116,7 +110,7 @@ namespace Demo.Page
             DateTime after = now.AddMinutes(1);
             am = new AlarmMessage() { HappenTime = now, EffectiveHappenTime = now, EndTime = after, Duration = 5.8, DurationCatigory = 5, AlarmSerialNumber = DateTime.Now.ToString("yyyyMMddHHmmssfff") };
             am.NowAlarm.ErrorCode = "Alarm0001";
-            am.NowAlarm.ErrorCatrgory = "Safety";
+            am.NowAlarm.ErrorCategory = "Safety";
             am.NowAlarm.MessageEn = "SafetyAlaem";
             am.NowAlarm.MessageCn = "安全门报警";
             am.NowAlarm.DealtMethod = "Close the door";
@@ -168,9 +162,9 @@ namespace Demo.Page
         #region Unit
         private void UnitIn_Click(object sender, EventArgs e)
         {
-            UnitMessage UM = new UnitMessage() { StartTime = DateTime.Now, EndTime = DateTime.Now.AddMinutes(-1), CT = 60.0, HiveState = 1, UnitSN = "Test00001", ComponentSN = "tttttjfsb", Shift = "NS", Pass = "PASS" };
-            UCMessage ucm = new UCMessage();
-            ucm.Units[0] = UM;
+            ProductInfor UM = new ProductInfor() { StartTime = DateTime.Now, ModelProduct = LoadModel.appSettings.currentModel, EndTime = DateTime.Now.AddMinutes(-1), CT = 60.0, HiveState = 1, UnitSN = "Test00001", ComponentSN = "tttttjfsb", Shift = "NS", Pass = "PASS" };
+            ProductMessage ucm = new ProductMessage();
+            ucm.Unit = UM;
             DataServerManager.Instance.InsertUnitMessage(ucm, 0);
         }
 
@@ -262,16 +256,15 @@ namespace Demo.Page
         }
 
         // Phương thức cập nhật giao diện người dùng
-        private  void UpdateUIText(string text)
+        public void UpdateUIText(string text)
         {
             if (txtLog.InvokeRequired)
             {
                 // Sử dụng Invoke để thực hiện cập nhật trên UI thread
-                txtLog.Invoke(new Action(() => txtLog.Text = text));
+                txtLog.Invoke(new Action(() => txtLog.Text += text));
             }
             else
-            {
-                // Nếu đã ở trên UI thread, cập nhật trực tiếp
+            {                
                 if (!string.IsNullOrEmpty(text))
                     txtLog.Text += text;
                 txtLog.Update();
@@ -279,9 +272,20 @@ namespace Demo.Page
             }
         }
 
-        public  void DataReceivedHandler(string strData)
+        public void Update_TCP(string text)
         {
-            UpdateUIText(strData);
+            if(textBox1.InvokeRequired)
+            {
+                textBox1.Invoke(new Action(() => textBox1.Text += text + "\r\n"));
+            }
+            else
+            { 
+                if (!string.IsNullOrEmpty(text))
+                {
+                    textBox1.Text += text + "\r\n";
+                }
+            }
+                  
         }
         #region PLC Mitsubishi
         private void btn_Connect_Click(object sender, EventArgs e)
@@ -300,7 +304,7 @@ namespace Demo.Page
         {
             try
             {
-
+                SLMP.Instance.WriteWord(DevideCode.D, 5000, 100);
             }
             catch (Exception ex)
             {
@@ -312,7 +316,7 @@ namespace Demo.Page
         {
             try
             {
-
+                SLMP.Instance.WriteWord(DevideCode.D, 5000, 1000);
             }
             catch (Exception ex)
             {
@@ -352,7 +356,7 @@ namespace Demo.Page
             string sendData = txt_MesCreate.Text.Trim();
             this.txt_Mes.Text = "PC-->Mes: " + sendData;
             string back = "";
-            if (ICTMES.HttpPost(sendData, ref back, PT))
+            if (MES.HttpPost(sendData, ref back, PT))
             {
                 this.txt_Mes.Text += "\r\nMes-->PC: " + back;
             }
@@ -362,10 +366,10 @@ namespace Demo.Page
 
         private void btn_checkLoggin_Click(object sender, EventArgs e)
         {
-            //PT = PostType.AssyCheck;
-            //this.lbl_empNo.BackColor = Color.LightGreen;
-            //this.lbl_terminalName.BackColor = Color.LightGreen;
-            //this.lbl_SerialNumber.BackColor = Color.LightGreen;
+            PT = PostType.AssyCheck;
+            this.lbl_empNo.BackColor = Color.LightGreen;
+            this.lbl_terminalName.BackColor = Color.LightGreen;
+            this.lbl_SerialNumber.BackColor = Color.LightGreen;
 
             CheckLogin Check_login = new CheckLogin();
             //Dictionary<string, string> tmp = new Dictionary<string, string> { };
@@ -388,15 +392,15 @@ namespace Demo.Page
             this.lbl_SerialNumber.BackColor = Color.LightGreen;
 
             AssyCheckData ACD = new AssyCheckData();
-            ACD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            ACD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
+            ACD.empNo = AudioSystem.InforMachine.MES.empNo;
+            ACD.terminalName = AudioSystem.InforMachine.MES.terminalName;
             ACD.serial_Number = "TEBRCP2087000T";
             ACD.machine = "";
             ACD.toolingNo = "";
             ACD.lotNo = "";
             ACD.kpsn = "";
             ACD.reelNo = "";
-            ACD.workOrder = AudioSystem.AudioMachineMessage.MES.workOrder;
+            ACD.workOrder = AudioSystem.InforMachine.MES.workOrder;
             string jsonData = JsonConvert.SerializeObject(ACD, Formatting.Indented);
             this.txt_MesCreate.Text = jsonData;
         }
@@ -408,15 +412,15 @@ namespace Demo.Page
             this.lbl_terminalName.BackColor = Color.LightGreen;
             this.lbl_SerialNumber.BackColor = Color.LightGreen;
             AssyGoData AGD = new AssyGoData();
-            AGD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            AGD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
+            AGD.empNo = AudioSystem.InforMachine.MES.empNo;
+            AGD.terminalName = AudioSystem.InforMachine.MES.terminalName;
             AGD.serial_Number = "TEBRCP2087000T";
             AGD.machine = "";
             AGD.toolingNo = "";
             AGD.lotNo = "";
             AGD.kpsn = "";
             AGD.reelNo = "";
-            AGD.workOrder = AudioSystem.AudioMachineMessage.MES.workOrder;
+            AGD.workOrder = AudioSystem.InforMachine.MES.workOrder;
 
             string jsonData = JsonConvert.SerializeObject(AGD, Formatting.Indented);//设置json显示格式
             this.txt_MesCreate.Text = jsonData;
@@ -430,8 +434,8 @@ namespace Demo.Page
             this.lbl_SerialNumber.BackColor = Color.LightGreen;
             this.lbl_pCmd.BackColor = Color.LightGreen;
             GetCmdResultData GCRD = new GetCmdResultData();
-            GCRD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            GCRD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
+            GCRD.empNo = AudioSystem.InforMachine.MES.empNo;
+            GCRD.terminalName = AudioSystem.InforMachine.MES.terminalName;
             GCRD.serial_Number = "";
             GCRD.machine = "";
             GCRD.toolingNo = "";
@@ -444,7 +448,6 @@ namespace Demo.Page
             GCRD.status = "";
             GCRD.pCmd = cb_pCmd.Text.Trim();
             GCRD.defectCode = "";
-
 
             string jsonData = JsonConvert.SerializeObject(GCRD, Formatting.Indented);//设置json显示格式
             this.txt_MesCreate.Text = jsonData;
@@ -465,8 +468,8 @@ namespace Demo.Page
             pars.Add("uut_stop", "2022-10-24 10:04:25");
             pars.Add("limits_version", "v1.0");
             pars.Add("software_name", "BZ1.0");
-            pars.Add("software_version", AudioSystem.AudioMachineMessage.SW_version);
-            pars.Add("station_id", AudioSystem.AudioMachineMessage.MES.terminalName);
+            pars.Add("software_version", AudioSystem.InforMachine.SW_version);
+            pars.Add("station_id", AudioSystem.InforMachine.MES.terminalName);
             pars.Add("fixture_id", "");
             string postData = ParsToString(pars);
             this.txt_Test.Text = postData;
@@ -502,8 +505,8 @@ namespace Demo.Page
             this.lbl_collectType.BackColor = Color.LightGreen;
 
             CollectTestData CTD = new CollectTestData();
-            CTD.empNo = AudioSystem.AudioMachineMessage.MES.empNo;
-            CTD.terminalName = AudioSystem.AudioMachineMessage.MES.terminalName;
+            CTD.empNo = AudioSystem.InforMachine.MES.empNo;
+            CTD.terminalName = AudioSystem.InforMachine.MES.terminalName;
             CTD.serial_Number = "KSXXXXXX000T";
             CTD.machine = "";
             CTD.toolingNo = "";
@@ -513,11 +516,31 @@ namespace Demo.Page
             CTD.cavity = "";
             CTD.testData = "";
             CTD.results = "";
-            CTD.collectType = AudioSystem.AudioMachineMessage.MES.collectType;
+            CTD.collectType = AudioSystem.InforMachine.MES.collectType;
 
             string jsonData = JsonConvert.SerializeObject(CTD, Formatting.Indented);
             this.txt_MesCreate.Text = jsonData;
         }
+
+        private void btnGetStation_Click(object sender, EventArgs e)
+        {
+            PT = PostType.AssyCheck;
+            this.lbl_empNo.BackColor = Color.LightGreen;
+            this.lbl_terminalName.BackColor = Color.LightGreen;
+            this.lbl_SerialNumber.BackColor = Color.LightGreen;
+
+            EquipmentStage EqmState = new EquipmentStage();
+            Dictionary<string, string> tmp = new Dictionary<string, string> { };
+            tmp.Add("user", "0797039");
+            tmp.Add("pwd", "123456a");
+            EqmState.SerializeData = "{\"user\":\"0791347\",\"pwd\":\"0791347X\"}";
+            EqmState.cmd = 2;
+            EqmState.machine = "AOIMachine";  
+            EqmState.lstSerialNumber = tmp;
+            string jsonData = JsonConvert.SerializeObject(EqmState, Formatting.Indented);
+            this.txt_MesCreate.Text = jsonData;
+        }
+
 
         private static string ParsToString(Hashtable Pars)
         {
@@ -528,14 +551,351 @@ namespace Demo.Page
                 {
                     sb.Append("$");
                 }
-                //sb.Append(HttpUtility.UrlEncode(k) + "=" + HttpUtility.UrlEncode(Pars[k].ToString()));
                 sb.Append(k.ToString() + "=" + Pars[k].ToString());
             }
             return sb.ToString();
         }
 
         #endregion
+
+        #region PLC Mitsu & Position Model
+
+        private string[] dgvModelHeader = new string[3] { "No", "Model", "Comment" };
+        private int[] ColumnsWidth = new int[3] { 22, 22, 50 };
+        private void InitDgv()
+        {
+
+            try
+            {
+                //Update model
+                dgvModel.AllowUserToAddRows = false;
+                dgvModel.AllowUserToDeleteRows = false;
+                dgvModel.AllowUserToOrderColumns = false;
+                dgvModel.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dgvModel.RowHeadersVisible = false;
+                this.tbCurrentModel.Text = LoadModel.appSettings.currentModel;
+                this.tbSelectModel.Text = "";
+
+                this.dgvModel.DataSource = null;
+                this.dgvModel.DataSource = ModelStore.GetModelInfoList();
+                dgvModel.Refresh();
+
+                //Update Positions
+                dgvPositions.AllowUserToAddRows = false;
+                dgvPositions.AllowUserToDeleteRows = false;
+                dgvPositions.AllowUserToOrderColumns = false;
+                dgvPositions.MultiSelect = false;
+                dgvPositions.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dgvPositions.RowHeadersVisible = false;
+
+                dgvPositions.DataSource = null;
+                dgvPositions.DataSource = LoadModel.currentModel.points;
+                dgvPositions.MultiSelect = false;
+                dgvPositions.Refresh();
+                dgvPositions.Rows[0].Selected = true;
+
+                DataGridViewRow firstRow = dgvPositions.Rows[0]; // Lấy hàng đầu tiên
+                // Lấy dữ liệu từ các cột của hàng đầu tiên
+                name = firstRow.Cells["Name"].Value?.ToString() ?? string.Empty;
+                X = Convert.ToInt32(firstRow.Cells["x"].Value ?? 0);
+                Y= Convert.ToInt32(firstRow.Cells["y"].Value ?? 0);
+                Z = Convert.ToInt32(firstRow.Cells["z"].Value ?? 0);
+                R = Convert.ToInt32(firstRow.Cells["r"].Value ?? 0);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+        private void btnSaveModel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(MessageBox.Show($"Bạn muốn tạo thêm model {tbModelName.Text} từ {tbSelectModel.Text} không", "Create",MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    // Check if the new Model name existing:
+                    if (ModelStore.GetModelSettings(this.tbModelName.Text) != null)
+                    {
+                        MessageBox.Show("The new Package name already existed! Please choose another name!");
+                        return;
+                    }
+
+                    // Save:
+                    //var model = LoadModel.currentModel.Clone();
+                    ModelSettings model = new ModelSettings();
+                    model.modelName = this.tbModelName.Text;
+                    model.updateTime = DateTime.Now;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        model.points.Add(new PLC_Point
+                        {
+                            Name = $"Point{i}",
+                            x = 0,
+                            y = 0,
+                            z = 0
+                        });
+                    }
+                    ModelStore.UpdateModelSettings(model);
+                    // Reload models:
+                    this.InitDgv();
+                }   
+
+            }
+            catch (Exception ex)
+            {
+                
+            }
+        }
+        private void LoadDataToDataPoint(ModelSettings Name)
+        {            
+            dgvPositions.DataSource = Name.points;
+        }
+
+        private void LoadDataToDataModel(List<ModelSettings> models)
+        {
+            dgvModel.Rows.Clear();
+            for (int i = 0; i < models.Count; i++)
+            {
+                {
+                    dgvModel.Rows.Add(i, models[i].modelName, models[i].updateTime);
+                }
+            }
+        }
+        #endregion
+
+        private void dgvModel_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string modelName = dgvModel.CurrentRow.Cells[1].Value.ToString();
+                this.tbSelectModel.Text = modelName;
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+
+        private void btnLoadModel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (MessageBox.Show("Are you sure to load new Model?", "Note",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    var loadedModel = ModelStore.GetModelSettings(this.tbSelectModel.Text);
+                    if (loadedModel != null)
+                    {
+                         LoadModel.ReplaceModel(loadedModel);
+                         InitDgv();
+                         Globals.SetTopState();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+               
+            }
+        }
+
+        string name;
+        //Tọa độ
+        int X, Y, Z, R;
+        //Thanh ghi 
+        int X_Positions = 5000, Y_Positions = 5002, Z_Positions = 5004, R_Positions = 5006, Run = 5000;
+
+        private void btnDeleteModel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Confirm:
+                if (MessageBox.Show("Are you sure to delete the selected Package?", "Note",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question,
+                        MessageBoxDefaultButton.Button1) != DialogResult.Yes)
+                {
+                    return;
+                }
+
+                // Delete:
+                var model = this.tbSelectModel.Text;
+                if (this.tbCurrentModel.Text.Equals(model))
+                {
+                    MessageBox.Show("You cannot delete current model!");
+                    return;
+                }
+
+                ModelStore.DeleteModel(model);
+                // Reload models:
+                InitDgv();
+            }
+            catch (Exception ex)
+            {
+                
+            }
+        }
+
+        private void btnSendCmd_Click(object sender, EventArgs e)
+        {
+            //byte[] cmd = { 0x02, 0xF4, 0x03 };
+            string cmd = "start";
+            Scanner_TCP.Instance.WriteCmd(cmd, 10);
+            if (Scanner_TCP.Instance.are_DataRecerveDone.WaitOne(3000) == false)
+            {
+                BzMessagebox.Show(MultiLanguage.GetMessage("相机数据反馈超时"), MultiLanguage.GetMessage("错误"), System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Warning);
+                return;
+            }
+            textBox1.Text = Scanner_TCP.Instance.RecData;
+        }
+
+        private void btnPassStation_Click(object sender, EventArgs e)
+        {
+            this.lbl_test.BackColor = Color.LightGreen;
+            this.lbl_value.BackColor = Color.LightGreen;
+            Hashtable pars = new Hashtable();
+            Dictionary<string, string> productSN = new Dictionary<string, string>();
+            productSN.Add("Serial1", "45451ewq");
+            productSN.Add("Serial2", "45451ewq");
+            productSN.Add("Serial3", "45451ewq");
+            string jsonData = JsonConvert.SerializeObject(productSN, Formatting.Indented);
+            this.txt_MesCreate.Text = jsonData;
+            //string postData = ParsToString(productSN);
+            this.txt_Test.Text = jsonData;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            SLMP.Instance.WriteString(DevideCode.D, 5000, "abcd");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            var recData = "";
+            SLMP.Instance.ReadString(DevideCode.D,5000,4,out recData);
+            if (recData != "") 
+            {
+                MessageBox.Show(recData);                
+            }
+            
+        }
+
+        private void btnTCPConnect_Click(object sender, EventArgs e)
+        {
+            Scanner_TCP.Instance.Connect();
+        }
+
+        /// <summary>
+        /// Chạy điểm bằng chế độ manual
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            // Hiển thị thông tin của hàng được chọn (hoặc xử lý khác)
+            if(MessageBox.Show($"Bạn có muốn chạy đến điểm {name}","Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                //MessageBox.Show($"Selected Row:\nName: {name}, x: {X}, y: {Y}, z: {Z}, r: {R}");
+                SLMP.Instance.WriteDoubleWord(DevideCode.D, X_Positions, X);
+                SLMP.Instance.WriteDoubleWord(DevideCode.D, Y_Positions, Y);
+                SLMP.Instance.WriteDoubleWord(DevideCode.D , Z_Positions, Z);
+                SLMP.Instance.WriteDoubleWord(DevideCode.D,R_Positions, R); 
+                SLMP.Instance.WriteBit(DevideCode.M, Run, true);
+                Thread.Sleep(50);
+            }    
+            
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            // Confirm:
+            if (MessageBox.Show("Are you sure to saving (override) all changes of the current Package?", "Note",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    // Save:
+                    LoadModel.currentModel.updateTime = DateTime.Now;
+                    UpdatePointsFromDataGridView();
+                    ModelStore.UpdateModelSettings(LoadModel.currentModel);
+                }            
+        }
+
+        //Cập nhật giá trị mới vào 
+        private void UpdatePointsFromDataGridView()
+        {
+            for (int i = 0; i < dgvPositions.Rows.Count; i++)
+            {
+                // Kiểm tra hàng có hợp lệ (không phải hàng trống cuối cùng)
+                if (dgvPositions.Rows[i].IsNewRow)
+                    continue;
+
+                // Lấy đối tượng PLC_Point tương ứng từ danh sách points
+                PLC_Point point = LoadModel.currentModel.points[i];
+
+                // Cập nhật các giá trị từ DataGridView vào đối tượng PLC_Point
+                point.Name = dgvPositions.Rows[i].Cells["Name"].Value?.ToString() ?? string.Empty;
+                point.x = Convert.ToInt32(dgvPositions.Rows[i].Cells["x"].Value ?? 0);
+                point.y = Convert.ToInt32(dgvPositions.Rows[i].Cells["y"].Value ?? 0);
+                point.z = Convert.ToInt32(dgvPositions.Rows[i].Cells["z"].Value ?? 0);
+                point.r = Convert.ToInt32(dgvPositions.Rows[i].Cells["r"].Value ?? 0);
+            }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            PLC_Point newPoint = new PLC_Point
+            {
+                Name = "Point" + LoadModel.currentModel.points.Count,
+                x =0, 
+                y = 0,
+                z = 0,
+                r = 0
+            };
+
+            // Thêm đối tượng vào danh sách points
+            LoadModel.currentModel.points.Add(newPoint);
+            InitDgv();
+
+        }
+        
+        private void dgvPositions_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Kiểm tra chỉ số hàng để đảm bảo không phải tiêu đề hoặc hàng trống cuối cùng
+            if (e.RowIndex >= 0 && e.ColumnIndex == 0)
+            {
+                // Lấy hàng mà người dùng click vào
+                DataGridViewRow selectedRow = dgvPositions.Rows[e.RowIndex];
+                // Lấy giá trị từ các ô trong hàng đó
+                name = selectedRow.Cells["Name"].Value?.ToString() ?? string.Empty;
+                X = Convert.ToInt32(selectedRow.Cells["x"].Value ?? 0);
+                Y = Convert.ToInt32(selectedRow.Cells["y"].Value ?? 0);
+                Z = Convert.ToInt32(selectedRow.Cells["z"].Value ?? 0);
+                R = Convert.ToInt32(selectedRow.Cells["r"].Value ?? 0);
+            }
+        }
+
+        private bool CheckMachineRunSts()
+        {
+            if (HBMachine.Instance.IsMachineRunning())
+            {
+                BzMessagebox.Show(MultiLanguage.GetMessage("当前有任务正在运行", "\n", "请停止设备运行后再修改参数"),
+                    MultiLanguage.GetMessage("警告"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            return false;
+        }
     }
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
