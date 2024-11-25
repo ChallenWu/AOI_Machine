@@ -174,9 +174,7 @@
     <Compile Include="Id\StationId.cs" />
     <Compile Include="MES\AudioSystem.cs" />
     <Compile Include="Task\ETask.cs" />
-    <Compile Include="Task\PropertyConverter .cs" />
     <Compile Include="Task\Task70_Scanner.cs" />
-    <Compile Include="Task\ValueProviderAttribute .cs" />
     <Compile Include="UserAccountControl.cs" />
     <Compile Include="UserControls\AlarmLogShow.cs">
       <SubType>UserControl</SubType>
@@ -274,6 +272,12 @@
     </Compile>
     <Compile Include="UserControls\newMenuButton.Designer.cs">
       <DependentUpon>newMenuButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Popup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RoundPanel.cs">
       <SubType>UserControl</SubType>
@@ -405,6 +409,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\newMenuButton.resx">
       <DependentUpon>newMenuButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Popup.resx">
+      <DependentUpon>Popup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\RoundPanel.resx">
       <DependentUpon>RoundPanel.cs</DependentUpon>

@@ -1,6 +1,8 @@
 ﻿using HB_IWatch;
+using Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -142,9 +144,6 @@ namespace Demo.Setting
                 SetNodeValue("ScanLead_Port", value);
             }
         }
-
-
-
         [MyProperty("ICW_Port", "Scanner_Setting")]
         public COM COM_Port
         {
@@ -157,8 +156,6 @@ namespace Demo.Setting
                 SetNodeValue("COM_Port", (int)value);
             }
         }
-
-
         [MyProperty("SerialNumber_Lenght", "Scanner_Setting")]
         public int SN_Lenght
         {
@@ -198,6 +195,7 @@ namespace Demo.Setting
             }
         }
         [MyProperty("CheckDummySN", "Parameter")]
+        [Description("Kiểm tra xem có bị trùng SN với sản phẩm trước đó không")]
         public bool CheckDummySN
         {
             get
@@ -207,6 +205,21 @@ namespace Demo.Setting
             set
             {
                 SetNodeValue("CheckDummySN", value);
+            }
+        }
+
+        [MyProperty("Model", "A_Model")]
+        [Description("Show model đang chạy")]
+        public string ModelName
+        {
+            get
+            {
+                return LoadModel.currentModel.modelName;
+                //return GetNodeValue("ModelName", $"{LoadModel.currentModel.modelName}");
+            }
+            set
+            {
+                //SetNodeValue("ModelName", LoadModel.currentModel.modelName);
             }
         }
 

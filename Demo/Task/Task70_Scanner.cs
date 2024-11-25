@@ -56,7 +56,8 @@ namespace Demo.Task
             Capture_Image_1,
             Capture_Image_2,
             Read_SN_Product,
-            POST_Mes
+            POST_Mes,
+            Send_NG_To_PLC
         }
         public override void Exit()
         {
@@ -94,12 +95,12 @@ namespace Demo.Task
                 m_runStep = RunState.WaitCarrierInSignal;
                 SetStep("Reset Complete", MyColor.Green);
                 SetStation_StateWaitRun();
-                WriteCTLog("Hoàn thành reset");
+                WriteCTLog("Hoàn thành reset Task70");
                 PageEngineering.Instance.UpdateTextBox("Hoàn thành reset Task70");
                 homeDoneTaskNum++;
 
                 if (homeDoneTaskNum == RequestHomeTaskNum)
-                    BzMessagebox.Show(MultiLanguage.GetMessage("Hoàn thành reset"));
+                    BzMessagebox.Show(MultiLanguage.GetMessage("Hoàn thành reset thiết bị"));
                  
             }
             catch (Exception e)
@@ -169,20 +170,21 @@ namespace Demo.Task
             switch ((RunState)m_runStep)
             {
                 case RunState.WaitCarrierInSignal:
-                    result = ShowAlarm(XAlarmId.Write_PLC_Err);
-                    //Thử đọc lại
-                    if(result == DialogResult.OK)
-                    {
-                        m_runStep = RunState.CheckSNDummy;
-                    }
-                    if(result == DialogResult.Cancel)
-                    {
-                        return;
-                    }
-                    if(result == DialogResult.Ignore)
-                    {
-                        m_runStep = RunState.CheckSNDummy;
-                    }                
+
+                    //result = ShowAlarm(XAlarmId.Write_PLC_Err);
+                    ////Thử đọc lại
+                    //if(result == DialogResult.OK)
+                    //{
+                    //    m_runStep = RunState.CheckSNDummy;
+                    //}
+                    //if(result == DialogResult.Cancel)
+                    //{
+                    //    return;
+                    //}
+                    //if(result == DialogResult.Ignore)
+                    //{
+                    //    m_runStep = RunState.CheckSNDummy;
+                    //}                
 
 
                     SetStep("Wait Carrier In", Color.Green);
@@ -299,6 +301,7 @@ namespace Demo.Task
                         } 
                         else
                         {
+                            WriteLog("Barcode >> PC : Đọc mã 1 lỗi!");
                             ShowAlarm(XAlarmId.BarCode_Err);
                         }
                     } 
@@ -311,6 +314,7 @@ namespace Demo.Task
                         }                      
                         else
                         {
+                            WriteLog("Barcode >> PC : Đọc mã 2 lỗi!");
                             ShowAlarm(XAlarmId.BarCode_Err);
                         }
                     }
@@ -323,6 +327,7 @@ namespace Demo.Task
                         }
                         else
                         {
+                            WriteLog("Barcode >> PC : Đọc mã 3 lỗi!");
                             ShowAlarm(XAlarmId.BarCode_Err);
                         }
                     }    
@@ -335,6 +340,7 @@ namespace Demo.Task
                         }
                         else
                         {
+                            WriteLog("Barcode >> PC : Đọc mã 4 lỗi!");
                             ShowAlarm(XAlarmId.BarCode_Err);
                         }
                     }   
@@ -349,6 +355,7 @@ namespace Demo.Task
                         }
                         else
                         {
+                            WriteLog("Barcode >> PC : Đọc mã 5 lỗi!");
                             ShowAlarm(XAlarmId.BarCode_Err);
                         }    
 
@@ -463,13 +470,13 @@ namespace Demo.Task
             {
                 SetStep("Camera feedback data timeout!", MyColor.LightRed);
                 WriteLog("Camera feedback data timeout!");
-                iRetCCD = TriggerKeyenceError(MultiLanguage.GetMessage("相机反馈数据超时"));
+                iRetCCD = TriggerKeyenceError(MultiLanguage.GetMessage("Camera feedback data timeout"));
                 return false;
             }
             SetStep("Parsing camera data…", MyColor.LightGreen);
             if (WaitScannerData() == false)
             {
-                iRetCCD = TriggerKeyenceError(cmd + "-" + MultiLanguage.GetMessage("该命令的相机反馈数据格式错误"));
+                iRetCCD = TriggerKeyenceError(cmd + "-" + MultiLanguage.GetMessage("The camera feedback data format of this command is incorrect"));
                 if (iRetCCD == 1)
                     goto UpCCDScanSN;
                 else
@@ -478,6 +485,7 @@ namespace Demo.Task
             Data = Scanner_TCP.Instance.RecData.ToString();           
             return true;
         }
+        //Kiểm tra format của SN
         public bool WaitScannerData(int timeOutMs = 3000)
         {
             Stopwatch sw = new Stopwatch();
@@ -558,7 +566,7 @@ namespace Demo.Task
         #region SQL Querry
         private void WriteProductDataToSQL(string result)
         {
-            AudioSystem.UCM.Units[0].HiveState = 1;
+            AudioSystem.UCM.Units[0].HiveState = (int)MachineSts.Running;
             AudioSystem.UCM.Units[0].UnitSN = serialNumber;
             AudioSystem.UCM.Units[0].ComponentSN = "ABC";
             AudioSystem.UCM.Units[0].Pass = result;

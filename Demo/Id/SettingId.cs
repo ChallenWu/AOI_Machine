@@ -8,7 +8,7 @@ namespace XCore
     public enum SettingId
     {
         [OtherLang("Option")]
-        选项_PD = 1,
+        Option_PD = 1,
         [OtherLang("Calib Param")]
         标定参数_PD = 2, // 运动
         [OtherLang("Nozzle Comp Param")]
@@ -44,7 +44,22 @@ namespace XCore
         [OtherLang("Option Param")]
         选项_DOE = 18,
         [OtherLang("Option ICT")]
-        ICT = 20
+        ICT = 20,
+        [OtherLang("Option for model1")]
+        Option_model1 = 100,
+        [OtherLang("Option for model2")]
+        Option_model2,
+        [OtherLang("Option for model 3")]
+        Option_model3,
+        [OtherLang("Paramter for model 1")]
+        Paramter_Model = 200,
+        [OtherLang("Paramter for model 2")]
+        Fii_Model2,
+        [OtherLang("Paramter for model 3")]
+        Fii_Model3
+
+
+
 
     }
 }

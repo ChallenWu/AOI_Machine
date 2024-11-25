@@ -139,6 +139,15 @@ namespace Demo.Page
 
         private void SwitchButton1_ON()
         {
+            //Chon runMode
+            var st1 = XStationManager.Instance.FindStationById((int)StationId.Scanner).State;
+
+            if (st1 == XStationState.RUNNING || st1 == XStationState.PAUSE)
+            {
+                BzMessagebox.Show(("There is a task currently running.\n Please stop the device before switching modes."),
+                    "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             DebugDlg.Instance.Show();
         }
         private int iCunt = 0;
@@ -150,7 +159,6 @@ namespace Demo.Page
         private void timer1_Tick(object sender, EventArgs e)
         {
             bool safeDoorSts = true;
-
             //Kiểm tra cửa an toàn
             foreach (KeyValuePair<XDi, bool> kvp in XMachine.Instance.signalDoor)
             {
@@ -183,8 +191,8 @@ namespace Demo.Page
                 {
                     m_asyncHandled[0] = false;
                     string erro = "Cửa an toàn đang mở";
-                    HBMachine.Instance.ShowErroAsync(XAlarmId.DOOR_OPEN.ToString(), MultiLanguage.GetMessage(erro),"error","Đóng cửa an toàn",
-                                                    "安全门报警", MultiLanguage.GetMessage("确认"), "", "", 
+                    HBMachine.Instance.ShowErroAsync(XAlarmId.DOOR_OPEN.ToString(), MultiLanguage.GetMessage(erro),"Error","Cửa an toàn đang bị mở ra",
+                                                    "Safety Door is Opened", MultiLanguage.GetMessage("Confirm"), "", "", 
                                                     new XCore.CallbackAction(() => { m_asyncHandled[0] = true; return true; }), true);
                 }
             }

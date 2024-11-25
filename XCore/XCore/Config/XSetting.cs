@@ -21,12 +21,15 @@ namespace XCore
         public string path;
         protected string root;
         protected string copyPath;
-        
+        protected string directorPath;
+        protected string directorcopyPath;
         public void SetPathAndRoot(string path, string root,string copyPath="")
         {
             this.path = path;
             this.root = root;
             this.copyPath = copyPath;
+            this.directorPath = Path.GetDirectoryName(this.path);
+            this.directorcopyPath = Path.GetDirectoryName(this.copyPath);
         }
 
         public string Name;
@@ -35,7 +38,12 @@ namespace XCore
 
         public int LoadSetting()
         {
-            if (!File.Exists(path))  // 如果路径不存在，需要创建一个新文件
+            if (Directory.Exists(directorPath) == false)
+            {
+                Directory.CreateDirectory(directorPath);
+            }
+
+            if (!File.Exists(path))  // if not exist, will save a new file but the folder need create first
             {
                 XmlDocument doc = new XmlDocument();
                 XmlElement root = doc.CreateElement(this.root);
@@ -78,6 +86,11 @@ namespace XCore
         {
             try
             {
+                if (Directory.Exists(directorcopyPath) == false)
+                {
+                    Directory.CreateDirectory(directorcopyPath);
+                }
+                    
                 string tempstr = copyPath + DateTime.Now.ToString("yyyyMMdd_HH_mm_ss") + UserAccountName + ".xml";
                 if (copyPath != "")
                 {

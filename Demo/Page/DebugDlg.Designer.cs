@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DebugDlg));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabControlDisplay = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -121,6 +122,17 @@
             this.lbl_empNo = new System.Windows.Forms.Label();
             this.tabPLCDevice = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox_Adr3 = new System.Windows.Forms.TextBox();
@@ -172,13 +184,18 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnDownloadPoint = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnAddPoints = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnDeletePoints = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.dgvPositions = new System.Windows.Forms.DataGridView();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnLoadModel = new System.Windows.Forms.Button();
             this.btnDeleteModel = new System.Windows.Forms.Button();
-            this.btnSaveModel = new System.Windows.Forms.Button();
+            this.btnCreateModel = new System.Windows.Forms.Button();
             this.tbModelName = new System.Windows.Forms.TextBox();
             this.tbSelectModel = new System.Windows.Forms.TextBox();
             this.tbCurrentModel = new System.Windows.Forms.TextBox();
@@ -188,17 +205,6 @@
             this.dgvModel = new System.Windows.Forms.DataGridView();
             this.axisControl1 = new Demo.UserControls.AxisControl();
             this.sqLiteCommand1 = new System.Data.SQLite.SQLiteCommand();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabControlDisplay.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -215,6 +221,7 @@
             this.groupBox4.SuspendLayout();
             this.tabPLCDevice.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -230,7 +237,6 @@
             this.tabControl3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvModel)).BeginInit();
-            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlDisplay
@@ -1310,6 +1316,110 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "PLC Mitsubishi";
             // 
+            // groupBox13
+            // 
+            this.groupBox13.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox13.Controls.Add(this.label6);
+            this.groupBox13.Controls.Add(this.textBox2);
+            this.groupBox13.Controls.Add(this.button6);
+            this.groupBox13.Controls.Add(this.label22);
+            this.groupBox13.Controls.Add(this.textBox3);
+            this.groupBox13.Controls.Add(this.textBox4);
+            this.groupBox13.Controls.Add(this.label23);
+            this.groupBox13.Controls.Add(this.label24);
+            this.groupBox13.Controls.Add(this.button7);
+            this.groupBox13.Controls.Add(this.textBox5);
+            this.groupBox13.Location = new System.Drawing.Point(415, 409);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(561, 254);
+            this.groupBox13.TabIndex = 55;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Write";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(43, 35);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 15);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "Address";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(100, 35);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(75, 21);
+            this.textBox2.TabIndex = 41;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(327, 35);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(88, 23);
+            this.button6.TabIndex = 43;
+            this.button6.Text = "Write String";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(196, 71);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(38, 15);
+            this.label22.TabIndex = 50;
+            this.label22.Text = "Value";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(100, 71);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(75, 21);
+            this.textBox3.TabIndex = 44;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(240, 71);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(75, 21);
+            this.textBox4.TabIndex = 49;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(43, 71);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(51, 15);
+            this.label23.TabIndex = 45;
+            this.label23.Text = "Address";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(196, 35);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(38, 15);
+            this.label24.TabIndex = 48;
+            this.label24.Text = "Value";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(327, 71);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(88, 23);
+            this.button7.TabIndex = 46;
+            this.button7.Text = "ReadString";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(240, 35);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(75, 21);
+            this.textBox5.TabIndex = 47;
+            // 
             // groupBox12
             // 
             this.groupBox12.BackColor = System.Drawing.SystemColors.Control;
@@ -1803,12 +1913,16 @@
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.toolStripSeparator1,
             this.toolStripButton3,
             this.toolStripSeparator4,
+            this.btnDownloadPoint,
+            this.toolStripSeparator2,
+            this.btnAddPoints,
+            this.toolStripSeparator3,
+            this.btnDeletePoints,
             this.toolStripButton4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -1842,13 +1956,55 @@
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 40);
             // 
+            // btnDownloadPoint
+            // 
+            this.btnDownloadPoint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnDownloadPoint.Image = ((System.Drawing.Image)(resources.GetObject("btnDownloadPoint.Image")));
+            this.btnDownloadPoint.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDownloadPoint.Name = "btnDownloadPoint";
+            this.btnDownloadPoint.Size = new System.Drawing.Size(23, 37);
+            this.btnDownloadPoint.Text = "toolStripButton1";
+            this.btnDownloadPoint.Click += new System.EventHandler(this.btnDownloadPoint_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 40);
+            // 
+            // btnAddPoints
+            // 
+            this.btnAddPoints.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnAddPoints.Image = global::Demo.Properties.Resources._add;
+            this.btnAddPoints.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnAddPoints.Name = "btnAddPoints";
+            this.btnAddPoints.Size = new System.Drawing.Size(23, 37);
+            this.btnAddPoints.Text = "toolStripButton1";
+            this.btnAddPoints.Click += new System.EventHandler(this.btnAddPoints_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 40);
+            // 
+            // btnDeletePoints
+            // 
+            this.btnDeletePoints.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnDeletePoints.Image = global::Demo.Properties.Resources._minus;
+            this.btnDeletePoints.ImageTransparentColor = System.Drawing.Color.Linen;
+            this.btnDeletePoints.Name = "btnDeletePoints";
+            this.btnDeletePoints.Size = new System.Drawing.Size(23, 37);
+            this.btnDeletePoints.Text = "toolStripButton2";
+            this.btnDeletePoints.Click += new System.EventHandler(this.btnDeletePoints_Click);
+            // 
             // toolStripButton4
             // 
+            this.toolStripButton4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton4.Image = global::Demo.Properties.Resources._ok;
+            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(23, 37);
+            this.toolStripButton4.Size = new System.Drawing.Size(34, 37);
             this.toolStripButton4.Text = "toolStripButton4";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
@@ -1864,7 +2020,7 @@
             // tabControl3
             // 
             this.tabControl3.Controls.Add(this.tabPage2);
-            this.tabControl3.Location = new System.Drawing.Point(620, 7);
+            this.tabControl3.Location = new System.Drawing.Point(620, 6);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
             this.tabControl3.Size = new System.Drawing.Size(367, 289);
@@ -1874,7 +2030,7 @@
             // 
             this.tabPage2.Controls.Add(this.btnLoadModel);
             this.tabPage2.Controls.Add(this.btnDeleteModel);
-            this.tabPage2.Controls.Add(this.btnSaveModel);
+            this.tabPage2.Controls.Add(this.btnCreateModel);
             this.tabPage2.Controls.Add(this.tbModelName);
             this.tabPage2.Controls.Add(this.tbSelectModel);
             this.tabPage2.Controls.Add(this.tbCurrentModel);
@@ -1895,7 +2051,7 @@
             this.btnLoadModel.Name = "btnLoadModel";
             this.btnLoadModel.Size = new System.Drawing.Size(99, 38);
             this.btnLoadModel.TabIndex = 22;
-            this.btnLoadModel.Text = "Load";
+            this.btnLoadModel.Text = "Load Model";
             this.btnLoadModel.UseVisualStyleBackColor = true;
             this.btnLoadModel.Click += new System.EventHandler(this.btnLoadModel_Click);
             // 
@@ -1905,19 +2061,19 @@
             this.btnDeleteModel.Name = "btnDeleteModel";
             this.btnDeleteModel.Size = new System.Drawing.Size(99, 38);
             this.btnDeleteModel.TabIndex = 19;
-            this.btnDeleteModel.Text = "Delete";
+            this.btnDeleteModel.Text = "Delete Model";
             this.btnDeleteModel.UseVisualStyleBackColor = true;
             this.btnDeleteModel.Click += new System.EventHandler(this.btnDeleteModel_Click);
             // 
-            // btnSaveModel
+            // btnCreateModel
             // 
-            this.btnSaveModel.Location = new System.Drawing.Point(19, 192);
-            this.btnSaveModel.Name = "btnSaveModel";
-            this.btnSaveModel.Size = new System.Drawing.Size(99, 40);
-            this.btnSaveModel.TabIndex = 18;
-            this.btnSaveModel.Text = "Save";
-            this.btnSaveModel.UseVisualStyleBackColor = true;
-            this.btnSaveModel.Click += new System.EventHandler(this.btnSaveModel_Click);
+            this.btnCreateModel.Location = new System.Drawing.Point(19, 192);
+            this.btnCreateModel.Name = "btnCreateModel";
+            this.btnCreateModel.Size = new System.Drawing.Size(99, 40);
+            this.btnCreateModel.TabIndex = 18;
+            this.btnCreateModel.Text = "Create Model";
+            this.btnCreateModel.UseVisualStyleBackColor = true;
+            this.btnCreateModel.Click += new System.EventHandler(this.btnSaveModel_Click);
             // 
             // tbModelName
             // 
@@ -1990,110 +2146,6 @@
             // 
             this.sqLiteCommand1.CommandText = null;
             // 
-            // groupBox13
-            // 
-            this.groupBox13.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox13.Controls.Add(this.label6);
-            this.groupBox13.Controls.Add(this.textBox2);
-            this.groupBox13.Controls.Add(this.button6);
-            this.groupBox13.Controls.Add(this.label22);
-            this.groupBox13.Controls.Add(this.textBox3);
-            this.groupBox13.Controls.Add(this.textBox4);
-            this.groupBox13.Controls.Add(this.label23);
-            this.groupBox13.Controls.Add(this.label24);
-            this.groupBox13.Controls.Add(this.button7);
-            this.groupBox13.Controls.Add(this.textBox5);
-            this.groupBox13.Location = new System.Drawing.Point(415, 409);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(561, 254);
-            this.groupBox13.TabIndex = 55;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Write";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(43, 35);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 15);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Address";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(100, 35);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(75, 21);
-            this.textBox2.TabIndex = 41;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(327, 35);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 23);
-            this.button6.TabIndex = 43;
-            this.button6.Text = "Write String";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(196, 71);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(38, 15);
-            this.label22.TabIndex = 50;
-            this.label22.Text = "Value";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(100, 71);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(75, 21);
-            this.textBox3.TabIndex = 44;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(240, 71);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(75, 21);
-            this.textBox4.TabIndex = 49;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(43, 71);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(51, 15);
-            this.label23.TabIndex = 45;
-            this.label23.Text = "Address";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(196, 35);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(38, 15);
-            this.label24.TabIndex = 48;
-            this.label24.Text = "Value";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(327, 71);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 23);
-            this.button7.TabIndex = 46;
-            this.button7.Text = "ReadString";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(240, 35);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(75, 21);
-            this.textBox5.TabIndex = 47;
-            // 
             // DebugDlg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2128,6 +2180,8 @@
             this.groupBox4.PerformLayout();
             this.tabPLCDevice.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.groupBox11.ResumeLayout(false);
@@ -2150,8 +2204,6 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvModel)).EndInit();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2292,7 +2344,7 @@
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btnDeleteModel;
-        private System.Windows.Forms.Button btnSaveModel;
+        private System.Windows.Forms.Button btnCreateModel;
         private System.Windows.Forms.TextBox tbModelName;
         private System.Windows.Forms.TextBox tbSelectModel;
         private System.Windows.Forms.TextBox tbCurrentModel;
@@ -2327,5 +2379,10 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton btnDownloadPoint;
+        private System.Windows.Forms.ToolStripButton btnAddPoints;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton btnDeletePoints;
     }
 }

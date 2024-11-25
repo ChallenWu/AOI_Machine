@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,7 +15,7 @@ namespace Models
     /// </summary>
     class ModelSettings
     {
-        public const String Default_Model = "model_default";
+        public const String Default_Model = "model1";
         public String modelName { get; set; }
         public List<PLC_Point> points { get; set; }
         public DateTime updateTime { get; set; }
@@ -56,11 +57,19 @@ namespace Models
     }
      class PLC_Point
     {
+        //Name point
         public string Name { get; set; } = "Point_1";
-        public double x { get; set; } = 0;
-        public double y { get; set; } = 0;
-        public double z { get; set; } = 0;
-        public double r { get; set; } = 0;
+        //Tọa độ
+        public int x { get; set; } = 0;
+        public int y { get; set; } = 0;
+        public int z { get; set; } = 0;
+        public int r { get; set; } = 0;
+        //Thanh ghi PLC
+        public int X_Reg { get; set; }
+        public int Y_Reg { get; set; }
+        public int Z_Reg { get; set; }
+        public int R_Reg { get; set; }  
+               
     }
 
     class AppSettings

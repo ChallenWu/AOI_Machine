@@ -11,11 +11,15 @@ using HB_IWatch;
 using Demo.Page;
 using Demo.Setting;
 using AutoStudio.Core.Views.CustomControls;
+using Models;
+using System.Xml.Linq;
+using AutoStudio.Forms;
 
 namespace Demo
 {
     class Globals
     {
+        public static int indexModel = 0;
         public enum MachineRunMode
         {
             NormalRun,
@@ -39,13 +43,21 @@ namespace Demo
         //Tạo ra các setting cần thiết trong folder Settings
 
         //Setting chạy runing lúc thường và lúc chạy DOE
-        public static SettingOption SettingOption= new SettingOption();
+        public static SettingOption SettingOption;
         public static SettingOption SettingOption_PD = new SettingOption();
         public static SettingOption SettingOption_DOE = new SettingOption();
 
-        public static SettingICT SettingICT = new SettingICT();
+        public static SettingOption Setting_Model1 = new SettingOption();
+        public static SettingOption Setting_Model2 = new SettingOption();
+        public static SettingOption Setting_Model3 = new SettingOption();        
+
+        public static SettingICT SettingICT;
         public static SettingICT SettingICT_PD = new SettingICT();  
         public static SettingICT SettingICT_DOE = new SettingICT();
+
+        public static SettingICT Parameter_mode1 = new SettingICT();
+        public static SettingICT Parameter_mode2 = new SettingICT();
+        public static SettingICT Parameter_mode3 = new SettingICT();
 
         public static event EventHandler AutoRunChangeSettingHandle;
 
@@ -94,31 +106,73 @@ namespace Demo
         public static int StopStatus = 1;
 
         public static MotorSpeed motorSpeed = new MotorSpeed();
-        public static void BindDevice()
+
+        public static void CreateModelFolder()
         {
+            Setting_Model1 = new SettingOption();
+            Parameter_mode1 = new SettingICT();
+
+
+            XSettingManager.Instance.SettingMap.Clear();
+            //XSettingManager.Instance.sett.Clear();
             #region Loading configuration information
             //Tạo đường link cho các path setting
-            Globals.SettingOption_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingOption_PD.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingOption");                      
-            Globals.SettingICT_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingICT.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingOption");
+            //Globals.SettingOption_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingOption_PD.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingOption");
+            //Globals.SettingICT_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingICT.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingOption");
+
+            Globals.Setting_Model1.SetPathAndRoot($"D:\\AOI_Config\\Setting\\{LoadModel.currentModel.modelName}\\SettingOption_Model.xml", "Setting", Globals.Dir_Record_BackupConfig + $"\\{LoadModel.currentModel.modelName}\\" + "SettingOption");
+            Globals.Parameter_mode1.SetPathAndRoot($"D:\\AOI_Config\\Setting\\{LoadModel.currentModel.modelName}\\Paramter_Model.xml", "Setting", Globals.Dir_Record_BackupConfig + $"\\{LoadModel.currentModel.modelName}\\" + "SettingOption");
             #endregion
 
             #region Bind Setting
-            // Đọc file config lên setting trong phần mềm
-            XSettingManager.Instance.BindSetting((int)SettingId.选项_PD, SettingOption_PD, SettingId.选项_PD.ToString());            
-            XSettingManager.Instance.BindSetting((int)SettingId.ICT,SettingICT_PD, SettingICT_PD.ToString());
+            // Bind các setting theo id được đặt trong file enum
+            // XSettingManager.Instance.BindSetting((int)SettingId.Option_PD, SettingOption_PD, SettingId.Option_PD.ToString());
+            //XSettingManager.Instance.BindSetting((int)SettingId.ICT, SettingICT_PD, SettingICT_PD.ToString());
+
+            var lst = ModelStore.GetModelInfoList();
+
+            foreach (var model in lst)
+            {
+                if (model.Name == LoadModel.currentModel.modelName)
+                {
+                    indexModel = model.Index;
+                }
+            }
+            //Console.WriteLine($"id Option {(int)SettingId.Option_model1 +indexModel}");
+            //Console.WriteLine($"id Parameter {(int)SettingId.Paramter_Model + indexModel}");
+
+            XSettingManager.Instance.BindSetting((int)SettingId.Option_model1 + indexModel, Setting_Model1, SettingId.Option_model1.ToString());
+            XSettingManager.Instance.BindSetting((int)SettingId.Paramter_Model + indexModel, Parameter_mode1, SettingId.Paramter_Model.ToString());
+
             #endregion
             //Load setting vào instance
-            //XSettingManager.Instance.LoadSettings();
+            XSettingManager.Instance.LoadSettings();
+        }        
+        public static void BindDevice()
+        {
+            CreateModelFolder();
             //Add setting to machine or mode DOE
-            if (true)
-            {
-                SettingICT = SettingICT_PD;
-                SettingOption = SettingOption_PD;
-                //SettingICT = XML.ReadFileFromXml("D:\\AOI_Config\\Setting\\SettingICT.xml", SettingICT);
-                //Globals.SettingICT.path = "D:\\AOI_Config\\Setting\\SettingICT.xml";
-                //SettingOption = XML.ReadFileFromXml("D:\\AOI_Config\\Setting\\SettingOption_PD.xml", SettingOption);
-                
-            }
+            //Chạy chế độ DOE
+
+            SettingICT = Parameter_mode1;
+            SettingOption = Setting_Model1;
+
+
+           // ChangeParaterForEachModel();
+
+
+
+
+            //if (Globals.IsDOE)
+            //    AddDOECompensationXYR();
+            //else
+            //    AddPDCompensationXYR();
+
+            //SettingICT = SettingICT_PD;
+            //SettingOption = SettingOption_PD;
+
+
+
             //Đổi ngôn ngữ
             //MultiLanguage.ChangeLanguage(Globals.SettingOption.语言, true);
             //Globals.SettingOption.语言 = LanguageType.English;
@@ -308,14 +362,22 @@ namespace Demo
         }
         public static void AddPDCompensationXYR()
         {
-            //Globals.SettingCalibration = Globals.SettingCalibration_PD;
             SettingOption = SettingOption_PD;
         }
-        public static bool IsDOEPCB = false;
+        public static bool IsDOE = false;
 
         public static void AddDOECompensationXYR()
         {
-            SettingOption = SettingOption_PD;
+            SettingOption = SettingOption_DOE;
+        }
+
+        public static void ChangeParaterForEachModel()
+        {
+            
+            SettingOption = Setting_Model1;
+            SettingICT = Parameter_mode1;
+            Console.WriteLine(SettingICT.PLC_IP);
+            return;
         }
     }
 }

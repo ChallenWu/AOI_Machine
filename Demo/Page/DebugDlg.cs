@@ -20,7 +20,9 @@ using Newtonsoft.Json;
 using System.Collections;
 using Models;
 using HB_IWatch;
-
+using Demo.UserControls;
+using Demo.Setting;
+using System.IO;
 namespace Demo.Page
 {
     public partial class DebugDlg : Form
@@ -596,7 +598,7 @@ namespace Demo.Page
 
                 DataGridViewRow firstRow = dgvPositions.Rows[0]; // Lấy hàng đầu tiên
                 // Lấy dữ liệu từ các cột của hàng đầu tiên
-                name = firstRow.Cells["Name"].Value?.ToString() ?? string.Empty;
+                SlectedPoint = firstRow.Cells["Name"].Value?.ToString() ?? string.Empty;
                 X = Convert.ToInt32(firstRow.Cells["x"].Value ?? 0);
                 Y= Convert.ToInt32(firstRow.Cells["y"].Value ?? 0);
                 Z = Convert.ToInt32(firstRow.Cells["z"].Value ?? 0);
@@ -615,6 +617,11 @@ namespace Demo.Page
             {
                 if(MessageBox.Show($"Bạn muốn tạo thêm model {tbModelName.Text} từ {tbSelectModel.Text} không", "Create",MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
+                    if(this.tbModelName.Text == "")
+                    {
+                        MessageBox.Show("Tên model không được để trống");
+                        return;
+                    }    
                     // Check if the new Model name existing:
                     if (ModelStore.GetModelSettings(this.tbModelName.Text) != null)
                     {
@@ -631,15 +638,13 @@ namespace Demo.Page
                     {
                         model.points.Add(new PLC_Point
                         {
-                            Name = $"Point{i}",
-                            x = 0,
-                            y = 0,
-                            z = 0
+                            Name = $"Point{i}"
                         });
                     }
                     ModelStore.UpdateModelSettings(model);
                     // Reload models:
                     this.InitDgv();
+                    //Globals.CreateModelFolder();
                 }   
 
             }
@@ -688,9 +693,16 @@ namespace Demo.Page
                     var loadedModel = ModelStore.GetModelSettings(this.tbSelectModel.Text);
                     if (loadedModel != null)
                     {
-                         LoadModel.ReplaceModel(loadedModel);
-                         InitDgv();
-                         Globals.SetTopState();
+                        LoadModel.ReplaceModel(loadedModel);
+                        InitDgv();
+                        Globals.SetTopState();
+                        Globals.CreateModelFolder();
+                        //Thread.Sleep(1000);
+                        Popup popup = new Popup("Uploading", 1000);
+                        popup.ShowDialog();
+                        PageSetting.Instance.UpDateCompensationSettings();
+                        popup = new Popup("Finish loading new model", 100);
+                        popup.ShowDialog();
                     }
                 }
             }
@@ -700,7 +712,7 @@ namespace Demo.Page
             }
         }
 
-        string name;
+        string SlectedPoint;
         //Tọa độ
         int X, Y, Z, R;
         //Thanh ghi 
@@ -725,14 +737,15 @@ namespace Demo.Page
                     MessageBox.Show("You cannot delete current model!");
                     return;
                 }
-
+                string folderPath = $"D:\\AOI_Config\\Setting\\{model}";
+                Directory.Delete(folderPath, true);
                 ModelStore.DeleteModel(model);
                 // Reload models:
                 InitDgv();
             }
             catch (Exception ex)
             {
-                
+                Console.WriteLine(ex.Message);
             }
         }
 
@@ -780,6 +793,61 @@ namespace Demo.Page
             
         }
 
+        private void btnDownloadPoint_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Bạn có muốn tải dữ liệu điểm xuống PLC","Question",MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                foreach (var i in LoadModel.currentModel.points)
+                {
+                    SLMP.Instance.WriteDoubleWord(DevideCode.D, i.X_Reg, i.x);
+                    SLMP.Instance.WriteDoubleWord(DevideCode.D, i.Y_Reg, i.y);
+                    SLMP.Instance.WriteDoubleWord(DevideCode.D, i.R_Reg, i.r);
+                    SLMP.Instance.WriteDoubleWord(DevideCode.D, i.Z_Reg, i.z);
+                }
+            }    
+        }
+
+        private void btnAddPoints_Click(object sender, EventArgs e)
+        {
+            //Thêm điểm vào trong listPoint
+            var pointname = "Point" + LoadModel.currentModel.points.Count;
+
+            foreach (var x in LoadModel.currentModel.points)
+            {
+                if (x.Name.Equals(pointname))
+                {
+                    MessageBox.Show("Trùng tên với 1 điểm đã cho. Xin hãy tạo lại điểm khác");
+                    return;
+                }
+            }
+
+
+            PLC_Point newPoint = new PLC_Point
+            {
+                Name = pointname,
+            };
+
+            // Thêm đối tượng vào danh sách points
+            LoadModel.currentModel.points.Add(newPoint);
+            InitDgv();
+        }
+
+        private void btnDeletePoints_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Bạn có muốn xóa điểm {SlectedPoint} không ");
+            var newList = new List<PLC_Point>();
+            for (int i = 0; i < LoadModel.currentModel.points.Count; i++)
+            {
+                if (!LoadModel.currentModel.points[i].Name.Equals(SlectedPoint))
+                {
+                    newList.Add(LoadModel.currentModel.points[i]);
+                }
+            }
+            //Cập nhật lại listPoint tạm thời
+            LoadModel.currentModel.points = newList;
+            InitDgv();
+        }
+
         private void btnTCPConnect_Click(object sender, EventArgs e)
         {
             Scanner_TCP.Instance.Connect();
@@ -793,13 +861,13 @@ namespace Demo.Page
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             // Hiển thị thông tin của hàng được chọn (hoặc xử lý khác)
-            if(MessageBox.Show($"Bạn có muốn chạy đến điểm {name}","Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if(MessageBox.Show($"Bạn có muốn chạy đến điểm {SlectedPoint}","Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 //MessageBox.Show($"Selected Row:\nName: {name}, x: {X}, y: {Y}, z: {Z}, r: {R}");
                 SLMP.Instance.WriteDoubleWord(DevideCode.D, X_Positions, X);
                 SLMP.Instance.WriteDoubleWord(DevideCode.D, Y_Positions, Y);
-                SLMP.Instance.WriteDoubleWord(DevideCode.D , Z_Positions, Z);
-                SLMP.Instance.WriteDoubleWord(DevideCode.D,R_Positions, R); 
+                SLMP.Instance.WriteDoubleWord(DevideCode.D, Z_Positions, Z);
+                SLMP.Instance.WriteDoubleWord(DevideCode.D, R_Positions, R); 
                 SLMP.Instance.WriteBit(DevideCode.M, Run, true);
                 Thread.Sleep(50);
             }    
@@ -854,7 +922,6 @@ namespace Demo.Page
             // Thêm đối tượng vào danh sách points
             LoadModel.currentModel.points.Add(newPoint);
             InitDgv();
-
         }
         
         private void dgvPositions_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -865,7 +932,7 @@ namespace Demo.Page
                 // Lấy hàng mà người dùng click vào
                 DataGridViewRow selectedRow = dgvPositions.Rows[e.RowIndex];
                 // Lấy giá trị từ các ô trong hàng đó
-                name = selectedRow.Cells["Name"].Value?.ToString() ?? string.Empty;
+                SlectedPoint = selectedRow.Cells["Name"].Value?.ToString() ?? string.Empty;
                 X = Convert.ToInt32(selectedRow.Cells["x"].Value ?? 0);
                 Y = Convert.ToInt32(selectedRow.Cells["y"].Value ?? 0);
                 Z = Convert.ToInt32(selectedRow.Cells["z"].Value ?? 0);

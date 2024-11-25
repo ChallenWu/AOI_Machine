@@ -318,3 +318,4 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debu
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_A.EC0D8BCF.Up2Date
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources

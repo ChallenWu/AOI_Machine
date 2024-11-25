@@ -66,9 +66,6 @@ namespace Models
             }
         }
 
-
-
-
         public static void SaveCurrentModelSettings()
         {
             ModelStore.UpdateModelSettings(currentModel);
@@ -87,7 +84,7 @@ namespace Models
                 {
                     currentModel = model;
                     appSettings.currentModel = model.modelName;
-                    // Save appSettings:
+                    //Save appSettings:
                     SaveAppSettings();
                 }
             }

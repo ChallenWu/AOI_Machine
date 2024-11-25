@@ -227,7 +227,7 @@
             // 
             // textBox_Acc
             // 
-            this.textBox_Acc.Location = new System.Drawing.Point(242, 126);
+            this.textBox_Acc.Location = new System.Drawing.Point(245, 126);
             this.textBox_Acc.Name = "textBox_Acc";
             this.textBox_Acc.Size = new System.Drawing.Size(53, 20);
             this.textBox_Acc.TabIndex = 25;

@@ -36,8 +36,8 @@ namespace OVisionPro.apps.views
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabVSC9200 = new System.Windows.Forms.TabPage();
-            this.tabVSBZ0010 = new System.Windows.Forms.TabPage();
             this.ucBlockBasic1 = new OVisionPro.apps.Views.UserControls.ucBlockBasic();
+            this.tabVSBZ0010 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabVSHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -127,6 +127,14 @@ namespace OVisionPro.apps.views
             this.tabVSC9200.Text = "CVSC9200";
             this.tabVSC9200.UseVisualStyleBackColor = true;
             // 
+            // ucBlockBasic1
+            // 
+            this.ucBlockBasic1.Location = new System.Drawing.Point(388, 179);
+            this.ucBlockBasic1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucBlockBasic1.Name = "ucBlockBasic1";
+            this.ucBlockBasic1.Size = new System.Drawing.Size(160, 208);
+            this.ucBlockBasic1.TabIndex = 3;
+            // 
             // tabVSBZ0010
             // 
             this.tabVSBZ0010.Location = new System.Drawing.Point(4, 22);
@@ -136,14 +144,6 @@ namespace OVisionPro.apps.views
             this.tabVSBZ0010.TabIndex = 2;
             this.tabVSBZ0010.Text = "BZ0010";
             this.tabVSBZ0010.UseVisualStyleBackColor = true;
-            // 
-            // ucBlockBasic1
-            // 
-            this.ucBlockBasic1.Location = new System.Drawing.Point(388, 179);
-            this.ucBlockBasic1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ucBlockBasic1.Name = "ucBlockBasic1";
-            this.ucBlockBasic1.Size = new System.Drawing.Size(160, 208);
-            this.ucBlockBasic1.TabIndex = 3;
             // 
             // VisionUI
             // 

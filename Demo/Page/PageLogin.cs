@@ -165,6 +165,7 @@ namespace Demo.Page
                     EngineerPrivilige();
                     UserAccountControl.currentAccount = UserAccountControl.AllUserAccounts[comboBox_User.Text];
                     RequestUpdateLabel(UserAccountControl.currentAccount.Name, UserAccountControl.currentAccount.UserPermission.ToString());
+                    XMachine.Instance.MachineMode = MachineModeType.Engineering;
                 }
                 else
                     errorProvider1.SetError(textBox_Password, MultiLanguage.GetMessage("Wrong password"));
@@ -319,7 +320,6 @@ namespace Demo.Page
         {
             UpdateLabelRequested?.Invoke(user, level); // Kích hoạt sự kiện
         }
-
     }
 
 

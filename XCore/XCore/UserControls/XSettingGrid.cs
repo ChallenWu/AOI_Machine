@@ -21,6 +21,8 @@ namespace XCore
         public XSettingGrid()
         {
             InitializeComponent();
+            propertyGrid1.HelpVisible = true; // Hiển thị phần description
+            propertyGrid1.PropertySort = PropertySort.Categorized; // Nhóm theo danh mục
         }
         public bool Locked
         {
@@ -33,7 +35,16 @@ namespace XCore
             set
             {
                 this.id = value;
-                this.propertyGrid1.SelectedObject = XSettingManager.Instance.FindSettingById(this.id);
+                try
+                {
+                    //propertyGrid1.SelectedObject = null;
+                    var newobject = XSettingManager.Instance.FindSettingById(this.id);
+                    this.propertyGrid1.SelectedObject = newobject;
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                }
                 if (XSettingManager.Instance.FindSettingById(this.id) != null)
                 {
                     this.toolStripLabel1.Text = XSettingManager.Instance.FindSettingById(this.id).Name;

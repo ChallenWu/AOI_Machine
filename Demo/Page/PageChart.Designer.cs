@@ -251,9 +251,9 @@
             // 
             // btn_Query
             // 
-            this.btn_Query.Location = new System.Drawing.Point(467, 7);
+            this.btn_Query.Location = new System.Drawing.Point(460, 7);
             this.btn_Query.Name = "btn_Query";
-            this.btn_Query.Size = new System.Drawing.Size(57, 25);
+            this.btn_Query.Size = new System.Drawing.Size(57, 24);
             this.btn_Query.TabIndex = 24;
             this.btn_Query.Text = "Query";
             this.btn_Query.UseVisualStyleBackColor = true;
@@ -264,7 +264,7 @@
             this.cbModel.FormattingEnabled = true;
             this.cbModel.Items.AddRange(new object[] {
             "All Model"});
-            this.cbModel.Location = new System.Drawing.Point(256, 9);
+            this.cbModel.Location = new System.Drawing.Point(253, 10);
             this.cbModel.Name = "cbModel";
             this.cbModel.Size = new System.Drawing.Size(121, 21);
             this.cbModel.TabIndex = 25;

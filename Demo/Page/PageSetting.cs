@@ -14,6 +14,9 @@ using Demo.UserControls;
 using System.Data.Entity.Infrastructure;
 using Newtonsoft.Json;
 using BoTech;
+using Models;
+using NPOI.SS.Formula.Functions;
+using Demo.Setting;
 
 namespace Demo.Page
 {
@@ -33,8 +36,10 @@ namespace Demo.Page
         public PageSetting()
         {
             InitializeComponent();
-            UpDateCompensationSettings(Globals.IsDOEPCB);
-            InitDataGrid();
+            this.xSettingGrid_SettingOption.Id = (int)SettingId.Option_model1 + Globals.indexModel;
+            this.xSettingGrid_ICT.Id = (int)SettingId.Paramter_Model  + Globals.indexModel;
+            //UpDateCompensationSettings(LoadModel.currentModel.modelName);
+           // propertyGrid1.SelectedObject = LoadModel.currentModel;
         }
 
 
@@ -42,54 +47,63 @@ namespace Demo.Page
         private void PageSetting_Load(object sender, EventArgs e)
         {
             this.xSettingGrid_SettingOption.SaveOkEventHandler += xSettingGrid_SettingOption_SaveOkEventHandler;
-            this.xSettingGrid_SettingOption.SaveOkEventHandler += Form1.OnparameterChanged;
+            this.xSettingGrid_SettingOption.SaveOkEventHandler += UpDateGlobalsSettings;
+            //this.xSettingGrid_SettingOption.SaveOkEventHandler += Form1.OnparameterChanged;
 
             this.xSettingGrid_ICT.SaveOkEventHandler += UpDateGlobalsSettings;
-            this.xSettingGrid_ICT.SaveOkEventHandler += Form1.OnparameterChanged;
-            Globals.AutoRunChangeSettingHandle += UpDateGlobalsSettings;
+           // this.xSettingGrid_ICT.SaveOkEventHandler += Form1.OnparameterChanged;
 
-            this.xSettingGrid_SettingOption.SaveOkEventHandler += UpDateGlobalsSettings;
-            Globals.AutoRunChangeSettingHandle += Form1.OnparameterChanged;
+            Globals.AutoRunChangeSettingHandle += UpDateGlobalsSettings;
+            //Globals.AutoRunChangeSettingHandle += Form1.OnparameterChanged;
         }
 
         private void xSettingGrid_SettingOption_SaveOkEventHandler(object sender, EventArgs e)
         {
             XMachine.Instance.DoorEnabled = Globals.SettingOption.IsOpensafeDoor();
             XMachine.Instance.SafeDoorEStop = Globals.SettingOption.是否开启安全门急停复位;
-            UpDateCompensationSettings(Globals.IsDOEPCB);
+            UpDateCompensationSettings();
 
 
         }
         private void UpDateGlobalsSettings(object sender, EventArgs e)
         {
-            UpDateCompensationSettings(Globals.IsDOEPCB);
+            UpDateCompensationSettings();
         }
 
         /// <summary>
         /// Update lại data setting
         /// </summary>
         /// <param name="IsDOE"></param>
-        private void UpDateCompensationSettings(bool IsDOE)
+        public void UpDateCompensationSettings()
         {
             DataServerManager.Instance.InsertOperationLog("Thay đổi parameter Config");
-            if (IsDOE)
-            {
-                this.xSettingGrid_SettingOption.Id = (int)SettingId.选项_DOE;
-                this.xSettingGrid_ICT.Id=(int)SettingId.ICT;
-                Globals.AddDOECompensationXYR();
-            }
-            else
-            {
-                this.xSettingGrid_SettingOption.Id = (int)SettingId.选项_PD;
-                this.xSettingGrid_ICT.Id = (int)SettingId.ICT;
-                Globals.AddPDCompensationXYR();
-            }
+
+            //Globals.CreateModelFolder();
+
+            //Console.WriteLine($"id Option {(int)SettingId.Option_model1 + Globals.indexModel}");
+            //Console.WriteLine($"id Parameter {(int)SettingId.Paramter_Model + Globals.indexModel}");
+
+            this.xSettingGrid_SettingOption.Id = (int)SettingId.Option_model1 + Globals.indexModel;
+            this.xSettingGrid_ICT.Id = (int)SettingId.Paramter_Model + Globals.indexModel;
+
+            Globals.ChangeParaterForEachModel();
         }
 
-        #region Load Model
-        private void InitDataGrid()
-        {
-        }
-        #endregion
+              
+
+
+            //if (IsDOE)
+            //{
+            //    this.xSettingGrid_SettingOption.Id = (int)SettingId.选项_DOE;
+            //    this.xSettingGrid_ICT.Id=(int)SettingId.ICT;
+               
+            //}
+            //else
+            //{
+            //    this.xSettingGrid_SettingOption.Id = (int)SettingId.Option_PD;
+            //    this.xSettingGrid_ICT.Id = (int)SettingId.ICT;
+            //    Globals.AddPDCompensationXYR();
+            //}
+        //}
     }
 }
