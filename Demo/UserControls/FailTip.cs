@@ -44,7 +44,9 @@ namespace HB_IWatch
             this.button2.Visible = IsCancelVisable;
             this.button3.Visible = IsIgnoreVisible;
 
-            //Bật còi 
+            //Bật còi, báo lỗi về plc
+            //PC > PLC : ghi bit alarm.
+
             //if (Globals.SettingOption.是否开启蜂鸣器)
             //{
             //    //if (XDevice.Instance.FindDoById((int)DoId.蜂鸣).STS == false)
@@ -67,25 +69,50 @@ namespace HB_IWatch
         //Tiếp tục
         private void button1_Click(object sender, EventArgs e)
         {
-            this.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.unnaturalClosed = false;
-            this._are.Set();
-            this.Close();
+            //this.DialogResult = System.Windows.Forms.DialogResult.OK;
+            //this.unnaturalClosed = false;
+            //this._are.Set();
+            //this.Close();
+            SafeCloseDialog(DialogResult.OK);
         }
 
         //Cancel
         private void button2_Click(object sender, EventArgs e)
         {
-            this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.unnaturalClosed = false;
-            this._are.Set();
-            this.Close();
+            //this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            //this.unnaturalClosed = false;
+            //this._are.Set();
+            //this.Close();
+            SafeCloseDialog(DialogResult.Cancel);
+        }
+
+        public void SafeCloseDialog(DialogResult result)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke((MethodInvoker)(() =>
+                {
+                    this.DialogResult = result; // Thiết lập kết quả
+                    this.unnaturalClosed = false;
+                    this._are.Set();
+                    this.Close(); // Đóng dialog
+                }));
+            }
+            else
+            {
+                this.DialogResult = result; // Thiết lập kết quả
+                this.unnaturalClosed = false;
+                this._are.Set();
+                this.Close(); // Đóng dialog
+            }
         }
 
         public bool WaitOne()
         {
             return _are.WaitOne();
         }
+
+
 
         public void SetSubmitText(string text)
         {
@@ -117,10 +144,11 @@ namespace HB_IWatch
         //Next
         private void button3_Click(object sender, EventArgs e)
         {
-            this.DialogResult = System.Windows.Forms.DialogResult.Ignore;
-            this.unnaturalClosed = false;
-            this._are.Set();
-            this.Close();
+            //this.DialogResult = System.Windows.Forms.DialogResult.Ignore;
+            //this.unnaturalClosed = false;
+            //this._are.Set();
+            //this.Close();
+            SafeCloseDialog(DialogResult.Ignore);
         }
 
         private void m_Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)

@@ -467,5 +467,10 @@ namespace Demo.Page
                 return false;
             }
         }
+
+        private void btnCloseAlarm_Click(object sender, EventArgs e)
+        {
+            HBMachine.Instance.CancelAlarmForm();
+        }
     }
 }

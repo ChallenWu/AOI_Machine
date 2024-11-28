@@ -26,7 +26,7 @@ namespace Demo.Task
         public int i;
         public static string CCDResult = "";
         public static int PLC_CarrierInSignal = 100;
-        ProductInfor pd = new ProductInfor();
+        ProductInformation pd;
         BackMessage messageResponse;
         private Dictionary<string,string> lstSerialNumber = new Dictionary<string,string>();
         string data;
@@ -192,7 +192,8 @@ namespace Demo.Task
                     SLMP.Instance.ReadWord(DevideCode.D, PLC_CarrierInSignal, out CarrierSignal_Value);
                     if(CarrierSignal_Value == 1)
                     {
-                        AudioSystem.UCM.Units[0].StartTime = DateTime.Now;
+                        pd = new ProductInformation();
+                        AudioSystem.UCM.Unit.StartTime = DateTime.Now;
                         m_runStep = RunState.CheckSNDummy;
                     }
                     break;
@@ -254,7 +255,6 @@ namespace Demo.Task
                             SLMP.Instance.WriteWord(DevideCode.D, PLC_CarrierInSignal, 0);
                             return;
                         }
-
                     }    
                     break;
                 case RunState.AssyCheck:
@@ -291,100 +291,59 @@ namespace Demo.Task
                 case RunState.Read_SN_Product:
                     //Đọc dữ liệu trên PLC
                     SLMP.Instance.ReadWord(DevideCode.D, PLC_CarrierInSignal, out CarrierSignal_Value);
-                    if(CarrierSignal_Value == 1)
+                    if(CarrierSignal_Value != 0 || CarrierSignal_Value != 5)
                     {
-                        //Đọc mã vị trí 1
                         if(TriggerScanner(scanlead_cmd, out data))
                         {
-                            string[] dataSpilit = data.Split(',');
-                            lstSerialNumber.Add("SN1", dataSpilit[0]);
+                            addSNtoList(data);
                         } 
                         else
                         {
                             WriteLog("Barcode >> PC : Đọc mã 1 lỗi!");
                             ShowAlarm(XAlarmId.BarCode_Err);
                         }
-                    } 
-                    if(CarrierSignal_Value == 2)
-                    {
-                        if (TriggerScanner(scanlead_cmd, out data))
-                        {
-                            string[] dataSpilit = data.Split(',');
-                            lstSerialNumber.Add("SN2", dataSpilit[0]);
-                        }                      
-                        else
-                        {
-                            WriteLog("Barcode >> PC : Đọc mã 2 lỗi!");
-                            ShowAlarm(XAlarmId.BarCode_Err);
-                        }
-                    }
-                    if(CarrierSignal_Value == 3)
-                    {
-                        if (TriggerScanner(scanlead_cmd, out data))
-                        {
-                            string[] dataSpilit = data.Split(',');
-                            lstSerialNumber.Add("SN3", dataSpilit[0]);
-                        }
-                        else
-                        {
-                            WriteLog("Barcode >> PC : Đọc mã 3 lỗi!");
-                            ShowAlarm(XAlarmId.BarCode_Err);
-                        }
-                    }    
-                    if(CarrierSignal_Value == 4)
-                    {
-                        if (TriggerScanner(scanlead_cmd, out data))
-                        {
-                            string[] dataSpilit = data.Split(',');
-                            lstSerialNumber.Add("SN4", dataSpilit[0]);
-                        }
-                        else
-                        {
-                            WriteLog("Barcode >> PC : Đọc mã 4 lỗi!");
-                            ShowAlarm(XAlarmId.BarCode_Err);
-                        }
-                    }   
+                    }  
                     if(CarrierSignal_Value == 5)
                     {
                         if (TriggerScanner(scanlead_cmd, out data))
                         {
-                            string[] dataSpilit = data.Split(',');
-                            lstSerialNumber.Add("SN5", dataSpilit[0]);
+                            addSNtoList(data);
                             //Đọc giá trị cuối cùng rồi gửi lên hệ thống Mes
                             m_runStep = RunState.POST_Mes;
                         }
                         else
                         {
                             WriteLog("Barcode >> PC : Đọc mã 5 lỗi!");
-                            ShowAlarm(XAlarmId.BarCode_Err);
+                            ShowAlarm(XAlarmId.BarCode_Err, "Đọc mã 5 lỗi");
                         }    
 
                     }
                     SLMP.Instance.WriteWord(DevideCode.D, PLC_CarrierInSignal, 0);
                     break;
+
                 case RunState.POST_Mes:
                     SetStep("PC > MES : Send SN to Mes System", Color.Green);
-                    pd.listSerialNumber = lstSerialNumber;
-                    if (MES.AssyGo_AOI(pd, out messageResponse))
+                    //Đấy dữ liệu lên hệ thống
+
+                    if (MES.AssyGo_AOI(AudioSystem.UCM.Unit, out messageResponse))
                     {
                         WriteProductDataToSQL("PASS");
+                        WriteCTLog("Đẩy dữ liệu lên hệ thống MES thành công.");
                         SLMP.Instance.WriteWord(DevideCode.D, PLC_CarrierInSignal, 1);
                     }
                     else
                     {
                         WriteProductDataToSQL("FAIL");
+                        WriteCTLog("Đẩy dữ liệu lên hệ thống MES lỗi.");
                         SLMP.Instance.WriteWord(DevideCode.D, PLC_CarrierInSignal, 0);
                     }
                     m_runStep = RunState.WaitCarrierInSignal;
-                    break;
-               
+                    break;               
                 default:
                     break;
             }
 
         }
-       
-       
         #region ICW_Serial Port
         private bool ReadSN()
         {
@@ -403,7 +362,7 @@ namespace Demo.Task
             }
         }
         #endregion
-        #region CCD
+        #region Comunication with CCD device
         protected int TriggerKenyceSN(string cmd, out string Data)
         {
             UpCCDScanSN:
@@ -461,7 +420,7 @@ namespace Demo.Task
             UpCCDScanSN:
             int iRetCCD = 0;
             Data = "";
-            Thread.Sleep(200);
+            Thread.Sleep(100);
 
             Scanner_TCP.Instance.WriteCmd(cmd, 0);
 
@@ -500,7 +459,7 @@ namespace Demo.Task
                     Scanner_TCP.Instance.RecData = Scanner_TCP.Instance.RecData.Substring(index);
                     return true;
                 }
-                if (Scanner_TCP.Instance.RecData.Length == Globals.SettingOption.载具SN长度)
+                if (Scanner_TCP.Instance.RecData.Length == Globals.SettingICT.SN_Lenght)
                     return true;
 
                 if (sw.ElapsedMilliseconds > timeOutMs)
@@ -509,8 +468,6 @@ namespace Demo.Task
             }
             while (true);
         }
-
-
         protected int TriggerKeyenceError(string strTitle, XAlarmId alarmId = XAlarmId.CCD_Error)
         {
             SetStep(strTitle, MyColor.LightRed);
@@ -532,32 +489,27 @@ namespace Demo.Task
                 return -1;
             }
         }
-
         protected DialogResult ShowAlarmEx(XAlarmId alarmId, string szDetail = "")
         {
             return ShowAlarm(alarmId, szDetail, -1);
         }
 
-        private bool AddSerialNumberToList(string str)
+        private bool addSNtoList(string str)
         {
             string[] kq = str.Split(',');
             foreach (string k in kq)
             {
                 if (k.Contains("A"))
                 {
-                    lstSerialNumber.Add("SN1", k);
+                    AudioSystem.UCM.Unit.serialNumber1 = k;
                 }
                 if (k.Contains("B"))
                 {
-                    lstSerialNumber.Add("SN2", k);
+                    AudioSystem.UCM.Unit.serialNumber2 = k;
                 }
                 if (k.Contains("C"))
                 {
-                    lstSerialNumber.Add("SN3", k);
-                }
-                if (k.Contains("D"))
-                {
-                    lstSerialNumber.Add("SN4", k);
+                    AudioSystem.UCM.Unit.serialNumber3 = k;
                 }
             }
             return true;
@@ -566,20 +518,21 @@ namespace Demo.Task
         #region SQL Querry
         private void WriteProductDataToSQL(string result)
         {
-            AudioSystem.UCM.Units[0].HiveState = (int)MachineSts.Running;
-            AudioSystem.UCM.Units[0].UnitSN = serialNumber;
-            AudioSystem.UCM.Units[0].ComponentSN = "ABC";
-            AudioSystem.UCM.Units[0].Pass = result;
-            AudioSystem.UCM.Units[0].EndTime = DateTime.Now;
-            AudioSystem.UCM.Units[0].CT = (AudioSystem.UCM.Units[0].EndTime - AudioSystem.UCM.Units[0].StartTime).TotalSeconds;
+            AudioSystem.UCM.Unit.HiveState = (int)MachineSts.Running;
+            AudioSystem.UCM.Unit.UnitSN = serialNumber;
+            AudioSystem.UCM.Unit.ComponentSN = "ABC";
+            AudioSystem.UCM.Unit.Pass = result;
+            AudioSystem.UCM.Unit.EndTime = DateTime.Now;
+            AudioSystem.UCM.Unit.CT = (AudioSystem.UCM.Unit.EndTime - AudioSystem.UCM.Unit.StartTime).TotalSeconds;           
 
             DateTime enddt = DateTime.Now;
-            if (AudioSystem.UCM.Units[0].StartTime.Hour >= 8 && AudioSystem.UCM.Units[0].StartTime.Hour <= 20)
-                AudioSystem.UCM.Units[0].Shift = "DS";
+            if (AudioSystem.UCM.Unit.StartTime.Hour >= 8 && AudioSystem.UCM.Unit.StartTime.Hour <= 20)
+                AudioSystem.UCM.Unit.Shift = "DS";
             else
-                AudioSystem.UCM.Units[0].Shift = "NS";
-
+                AudioSystem.UCM.Unit.Shift = "NS";
+            //Insert vào sql 
             DataServerManager.Instance.InsertUnitMessage(AudioSystem.UCM, 0);
+            //Async UI
             PageProduction.Instance.Async_IO_Refresh(AudioSystem.UCM, 0);
         }
         #endregion

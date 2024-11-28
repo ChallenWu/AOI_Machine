@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OVisionPro.apps.Views.UserControls
-{
-    public partial class ucBlockBasic : UserControl
+namespace OVisionPro
+{ 
+    public partial class ucBlockBasic : RoundedUserControl
     {
         // variables store to dragg
         private bool isDragging = false;
@@ -28,10 +28,14 @@ namespace OVisionPro.apps.Views.UserControls
         private Size originalSizeR;
         private Size originalPanelSizeR;
         private Size originalPanelSizeL;
+        private string blockID = "ToolNameNone";
+        private List<Globals.ToolTypleData> blockInputTypes;
+        private List<Globals.ToolTypleData> blockOutputTypes;
 
         public ucBlockBasic()
         {
             InitializeComponent();
+            this.lblBlockID.Text = blockID;
             originalIconL = lblR.Image;
             originalSizeL = lblR.Image.Size;
 
@@ -40,7 +44,26 @@ namespace OVisionPro.apps.Views.UserControls
 
             originalPanelSizeR = pnHeaderBlock.Size;
             originalPanelLocationR = pnHeaderBlock.Location;
-            draggablePanel = pnHeaderBlock;
+            //draggablePanel = pnHeaderBlock;
+            //this.Paint += new PaintEventHandler(DrawTitle);
+        }
+
+        public ucBlockBasic(string blockID)
+        {
+            InitializeComponent();
+            this.blockID = blockID;
+            this.lblBlockID.Text = blockID;
+            originalIconL = lblR.Image;
+            originalSizeL = lblR.Image.Size;
+
+            originalIconR = lblR.Image;
+            originalSizeR = lblR.Image.Size;
+
+            originalPanelSizeR = pnHeaderBlock.Size;
+            originalPanelLocationR = pnHeaderBlock.Location;
+            //draggablePanel = pnHeaderBlock;
+
+            //this.Paint += new PaintEventHandler(DrawTitle);
         }
 
         private void lblR_MouseEnter(object sender, EventArgs e)
@@ -95,6 +118,7 @@ namespace OVisionPro.apps.Views.UserControls
 
         private void DraggablePanel_MouseDown(object sender, MouseEventArgs e)
         {
+            this.SuspendLayout();  // Tạm dừng layout
             isDragging = true;
             lastCursor = Cursor.Position;
             lastControl = this.Location;
@@ -112,6 +136,27 @@ namespace OVisionPro.apps.Views.UserControls
         private void DraggablePanel_MouseUp(object sender, MouseEventArgs e)
         {
             isDragging = false;
+            this.ResumeLayout();  // Khôi phục layout sau khi kéo xong
+        }
+
+
+        private void pnHeaderBlock_Paint(object sender, PaintEventArgs e)
+        {
+            Control control = sender as Control;
+            control?.BringToFront();
+        }
+
+        private void pnHeaderBlock_Click(object sender, EventArgs e)
+        {
+            this.BringToFront();
+        }
+
+        private void pnHeaderBlock_DoubleClick(object sender, EventArgs e)
+        {
+
+            //DialogAdjustWidget dialog = new DialogAdjustWidget();
+            //dialog.StartPosition = FormStartPosition.CenterParent;  // Đặt vị trí dialog ở trung tâm của form cha
+            //DialogResult result = dialog.ShowDialog();  // Hiển thị dialog theo kiểu modal
         }
     }
 }

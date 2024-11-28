@@ -132,7 +132,6 @@ namespace BoTech
         public string UC_SN { get; set; } = "";
         public string TR_Lot_No { get; set; }
         public UnitMessage[] Units { get; set; } = new UnitMessage[] { new UnitMessage(), new UnitMessage(), new UnitMessage(), new UnitMessage() };
-        public string OpID;
 
     }
 
@@ -140,17 +139,12 @@ namespace BoTech
     {
         public string UC_SN { get; set; } = "";
         public string TR_Lot_No { get; set; }
-        public ProductInfor Unit { get; set; } = new ProductInfor();
-        public string OpID;
-
+        public ProductInformation Unit { get; set; } = new ProductInformation();
     }
 
-    public class ProductInfor
+    public class ProductInformation
     {
-        public string serialNumber { get; set; } = "";
         public string LotID { get; set; }
-
-        public Dictionary<string, string> listSerialNumber = new Dictionary<string, string>();
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
         public double CT { get; set; }
@@ -167,8 +161,11 @@ namespace BoTech
         public string UnitPath { get; set; }
         public string workPath { get; set; }
         public string TR_Lot_No_Path { get; set; }
-
-        public string ModelProduct {  get; set; }
+        public string ModelProduct { get; set; }
+        public string serialNumber1 { get; set; }
+        public string serialNumber2 { get; set; }
+        public string serialNumber3 { get; set; }
+        
     }
 
     public class UnitMessage    
@@ -184,7 +181,6 @@ namespace BoTech
         public string WO { get; set; }
         public string STNID { get; set; }
         public string TR_NO { get; set; }
-        //public AccountInfo AIF { get; set; }
         public bool CanStart { get; set; }
         public string CarrierPath { get; set; }
         public string UnitPath { get; set; }

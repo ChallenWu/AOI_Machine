@@ -144,7 +144,7 @@ namespace Demo.Page
 
         string currentUCSN = "";
         //DateTime lastUCTime = DateTime.Now;
-        public void Async_IO_Refresh(UCMessage ucm, int unitIndex)
+        public void Async_IO_Refresh(ProductMessage ucm, int unitIndex)
         {
             try
             {
@@ -193,7 +193,7 @@ namespace Demo.Page
                                 NGunit = Convert.ToInt32(dt.Rows[i][1]);
                         }
                         
-                        this.iO_Summary.CT = (ucm.Units[unitIndex].CT).ToString("f2");
+                        this.iO_Summary.CT = (ucm.Unit.CT).ToString("f2");
 
                         //if (currentUCSN != ucm.UC_SN)
                         //{
@@ -206,8 +206,8 @@ namespace Demo.Page
 
                         //this.iO_Summary.UPH = (3600/double.Parse(iO_Summary.CT)).ToString("f2");
 
-                        this.iO_Summary.SN = ucm.Units[unitIndex].UnitSN;
-                        this.iO_Summary.UnitStatus = ucm.Units[unitIndex].Pass == "PASS" ? true : false;
+                        this.iO_Summary.SN = ucm.Unit.UnitSN;
+                        this.iO_Summary.UnitStatus = ucm.Unit.Pass == "PASS" ? true : false;
                         PageChart.Instance.Async_UnitDaily(this.iO_Summary);
 
 

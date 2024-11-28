@@ -30,6 +30,7 @@ using NPOI.SS.UserModel;
 using Models;
 using System.Diagnostics.Eventing.Reader;
 using AutoStudio.Core.Views.CustomControls;
+using OVisionPro;
 
 namespace Demo
 {
@@ -136,6 +137,15 @@ namespace Demo
             PageEngineering.Instance.UpdateTextBox("Complete Initilize control Page");
 
             this.lbModelRun.Text = LoadModel.appSettings.currentModel;
+
+            //Load model process image
+            //XVisionManager.Instance.Initialize();
+            //ImageToolC9200 C9200 = new ImageToolC9200();
+            //XVisionManager.Instance.FilterToolIns = C9200;
+            ////XCCDHIK.Instance.CCDInstance.Close()
+            //XVisionManager.Instance.AddTaskRun("Model1", 0, C9200.ExecStep1);
+            //XVisionManager.Instance.AddTaskRun("Model1", 1, C9200.ExecStep2);
+            //XVisionManager.Instance.SetSelectModelRun("Model1");
         }
 
         private void InitTask()
@@ -229,7 +239,6 @@ namespace Demo
             {
                 if (kvp.Key.Name == menuClicked.Name)
                 {
-
                     kvp.Key.Selected = true;
                     this.pageContainer.Controls.Clear();
                     this.pageContainer.Controls.Add(pageMap[kvp.Key]);                    
@@ -330,15 +339,18 @@ namespace Demo
         bool isReseting;
         private void menuButton_Start_Click(object sender, EventArgs e)
         {
-            PageEngineering.Instance.UpdateTextBox("Click Start");
+            StartProgram();
+        }
 
+        public void StartProgram()
+        {
+            PageEngineering.Instance.UpdateTextBox("Click Start");
             //Kiểm tra cửa an toàn
             if (!CheckSafeDoor())
             {
                 MessageBox.Show("Cửa an toàn đang mở. Vui lòng đóng cửa an toàn và thử lại.");
                 return;
             }
-
             try
             {
                 if (!CsvServer.Instance.Server.IsAlive)
@@ -353,14 +365,11 @@ namespace Demo
                 MessageBox.Show(ex.ToString());
                 return;
             }
-
             //Đặt lại trạng thái của các button Pause và Stop
             this.menuButton_Pause.IsSelect(false);
             this.menuButton_Stop.IsSelect(false);
-
             //Kiểm tra trạng thái của các TaskId
             var st1 = XStationManager.Instance.FindStationById((int)StationId.Scanner).State;
-
             //Nếu đã reset xong
             if (st1 == XStationState.WAITRUN || st1 == XStationState.PAUSE)
             {
@@ -381,7 +390,7 @@ namespace Demo
                 {
                     //Đổi trạng thái button
                     HBMachine.Instance.UploadMachineStateMessage(MachineSts.Running);
-                    
+
                     //Ghi log
                     Globals.WriteCoverCTLog("The user presses the start button, the mode is:" + Globals.RUNMODE);
                     var runMode = StationRunMode.AutoRun;
@@ -482,8 +491,13 @@ namespace Demo
 
         private void menuButton_Stop_Click(object sender, EventArgs e)
         {
+            StopProgram();
+        }
+
+        public void StopProgram()
+        {
             if (BzMessagebox.Show(MultiLanguage.GetMessage("Confirm that the machine is stopped?"), "Tips",
-                                         MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
+                             MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 if (HBMachine.Instance.IsMachineRunning())
                 {
@@ -529,6 +543,11 @@ namespace Demo
         }
         private void menuButton_Pause_Click(object sender, EventArgs e)
         {
+            PauseProgram();
+        }
+
+        public void PauseProgram()
+        {
             if (!CheckSafeDoor())
             {
                 MessageBox.Show("Cửa an toàn đã được mở. Vui lòng đóng cửa an toàn và thử lại.");
@@ -548,11 +567,11 @@ namespace Demo
                 return;
             }
 
-            if (InvokeRequired)
-            {
-                BeginInvoke(new EventHandler(menuButton_Pause_Click), new object[] { sender, e });
-                return;
-            }
+            //if (InvokeRequired)
+            //{
+            //    BeginInvoke(new EventHandler(menuButton_Pause_Click), new object[] { sender, e });
+            //    return;
+            //}
 
             var st1 = XStationManager.Instance.FindStationById((int)StationId.Scanner).State;
             if (st1 == XStationState.PAUSE)
@@ -575,8 +594,8 @@ namespace Demo
         private void Form1_Load(object sender, EventArgs e)
         {
             Globals.SetStateTop += Globals_SetStateTop;
-            XTask.OnPauseActive += this.OnPauseActive;
-            XTask.OnStopActive += this.OnStopRunning;
+            XCore.XTask.OnPauseActive += this.OnPauseActive;
+            XCore.XTask.OnStopActive += this.OnStopRunning;
 
             Globals.OnPauseActive += this.OnPauseActive;
             Globals.OnStopActive += this.OnStopRunning;

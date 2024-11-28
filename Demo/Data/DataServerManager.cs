@@ -216,11 +216,12 @@ namespace BoTech
         {
             try
             {
-                ProductInfor UM = ucm.Unit;
+                ProductInformation UM = ucm.Unit;
                 DateTime now = DateTime.Now;
-                string[] colName = new string[] { "Model","HappenTime", "Days", "Hours", "Shift", "Unit_SN", "Component_SN", "Start_Time", "End_Time", "Pass", "CT", "Hive_State" };
+                string[] colName = new string[] { "Model","HappenTime", "Days", "Hours", "Shift", "Unit_SN", "Component_SN", "SerialNumber1", "SerialNumber2", "SerialNumber3", "Start_Time", "End_Time", "Pass", "CT", "Hive_State" };
                 string[] colValues = new string[] {UM.ModelProduct, now.ToString("yyyy-MM-dd HH:mm:ss"),now.ToString("yyyy-MM-dd") , now.ToString("HH"),
-                                               UM.Shift, UM.UnitSN, ucm.UC_SN, UM.StartTime.ToString("yyyy-MM-dd HH:mm:ss"),UM.EndTime.ToString("yyyy-MM-dd HH:mm:ss"), UM.Pass, UM.CT.ToString("f2"), UM.HiveState.ToString() };
+                                                   UM.Shift, UM.UnitSN, ucm.UC_SN, UM.serialNumber1, UM.serialNumber2, UM.serialNumber3,
+                                                    UM.StartTime.ToString("yyyy-MM-dd HH:mm:ss"),UM.EndTime.ToString("yyyy-MM-dd HH:mm:ss"), UM.Pass, UM.CT.ToString("f2"), UM.HiveState.ToString() };
                 //创建数据表
                 //dbh.CreateTable("test001", colName, colTypes);    
                 DBH.InsertStandardValues(unitTableName, colName, colValues);

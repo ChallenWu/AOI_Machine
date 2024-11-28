@@ -6191,9 +6191,6 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\o
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelChange.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelsConfirm.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.UserControls.XPositionModelsTable.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources

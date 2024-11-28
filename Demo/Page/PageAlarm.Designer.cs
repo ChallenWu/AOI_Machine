@@ -36,7 +36,7 @@
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Query = new System.Windows.Forms.Button();
             this.cb_Alarm = new System.Windows.Forms.ComboBox();
-            this.btnCloseAll = new System.Windows.Forms.Button();
+            this.btnCloseAlarm = new System.Windows.Forms.Button();
             this.TriggerAlarm = new System.Windows.Forms.Button();
             this.dTP_EndTime = new System.Windows.Forms.DateTimePicker();
             this.alarmLogShow1 = new BoTech.AlarmLogShow();
@@ -108,14 +108,15 @@
             this.cb_Alarm.Size = new System.Drawing.Size(135, 21);
             this.cb_Alarm.TabIndex = 22;
             // 
-            // btnCloseAll
+            // btnCloseAlarm
             // 
-            this.btnCloseAll.Location = new System.Drawing.Point(970, 6);
-            this.btnCloseAll.Name = "btnCloseAll";
-            this.btnCloseAll.Size = new System.Drawing.Size(64, 25);
-            this.btnCloseAll.TabIndex = 20;
-            this.btnCloseAll.Text = "CloseAll";
-            this.btnCloseAll.UseVisualStyleBackColor = true;
+            this.btnCloseAlarm.Location = new System.Drawing.Point(967, 6);
+            this.btnCloseAlarm.Name = "btnCloseAlarm";
+            this.btnCloseAlarm.Size = new System.Drawing.Size(64, 25);
+            this.btnCloseAlarm.TabIndex = 20;
+            this.btnCloseAlarm.Text = "CloseAll";
+            this.btnCloseAlarm.UseVisualStyleBackColor = true;
+            this.btnCloseAlarm.Click += new System.EventHandler(this.btnCloseAlarm_Click);
             // 
             // TriggerAlarm
             // 
@@ -208,7 +209,7 @@
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.btn_Query);
             this.Controls.Add(this.cb_Alarm);
-            this.Controls.Add(this.btnCloseAll);
+            this.Controls.Add(this.btnCloseAlarm);
             this.Controls.Add(this.TriggerAlarm);
             this.Controls.Add(this.dTP_EndTime);
             this.Name = "PageAlarm";
@@ -230,7 +231,7 @@
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Query;
         private System.Windows.Forms.ComboBox cb_Alarm;
-        private System.Windows.Forms.Button btnCloseAll;
+        private System.Windows.Forms.Button btnCloseAlarm;
         private System.Windows.Forms.Button TriggerAlarm;
         private System.Windows.Forms.DateTimePicker dTP_EndTime;
         private XCore.XStationStateBar xStationStateBar1;

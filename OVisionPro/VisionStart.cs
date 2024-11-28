@@ -7,13 +7,9 @@ using OpenCvSharp;
 
 namespace OVisionPro
 {
-    class VisionStart
+    public class VisionStart
     {
-        public Dictionary<string, OutVisionObject> VisionResult = new Dictionary<string, OutVisionObject>();
         private static List<Task> taskVision = new List<Task>();
-
-        public Globals.TaskID toolRunstep1 = new Globals.TaskID();
-        public Globals.TaskID toolRunstep2 = new Globals.TaskID();
 
         private static void clearTaskVision()
         {
@@ -36,7 +32,7 @@ namespace OVisionPro
             taskVision.Add(Task.Run(() =>
             {
                 Console.WriteLine("Running Capture 1.");
-                DoAction1();
+                //ImageToolC9200.Instance.ExecToolModel1();
             }));
             // Chờ tất cả các Task hoàn thành
             Task.WaitAll(taskVision.ToArray());

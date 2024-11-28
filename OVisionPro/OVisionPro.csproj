@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\OpenCvSharp4.runtime.win.4.10.0.20241108\build\netstandard\OpenCvSharp4.runtime.win.props" Condition="Exists('..\packages\OpenCvSharp4.runtime.win.4.10.0.20241108\build\netstandard\OpenCvSharp4.runtime.win.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,8 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +24,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,17 +34,30 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
-      <HintPath>..\packages\OpenCvSharp4.4.10.0.20240616\lib\netstandard2.0\OpenCvSharp.dll</HintPath>
+    <Reference Include="MvCameraControl.Net, Version=4.4.1.3, Culture=neutral, PublicKeyToken=a3c7c5e3a730cd12, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Services\Core\CCD\MvCameraControl.Net.dll</HintPath>
     </Reference>
+    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.4.10.0.20241108\lib\netstandard2.0\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.Extensions.4.10.0.20241108\lib\netstandard2.0\OpenCvSharp.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.8.0.0\lib\net462\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -57,16 +75,68 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="YamlDotNet, Version=16.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\YamlDotNet.16.2.0\lib\net47\YamlDotNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include=".env\Globals.cs" />
+    <Compile Include="Apps\Views\class\CustomPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\class\PictureBoxCtrl.cs" />
+    <Compile Include="Apps\Views\class\TextBoxDragFile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\class\ZoomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\class\RoundedPanelDragBasic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\class\RoundUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\class\RoundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Apps\Controls\ParamConfigControl.cs" />
-    <Compile Include="Apps\Models\Block\XBlock.cs" />
-    <Compile Include="Apps\Models\Block\XBlockManager.cs" />
-    <Compile Include="Apps\Models\Param\XParameter.cs" />
-    <Compile Include="Apps\Models\Param\XParameterManager.cs" />
-    <Compile Include="Apps\Models\ToolSetting.cs" />
-    <Compile Include="Apps\Models\WorkSpaceData.cs" />
+    <Compile Include="Apps\Views\UserControls\cvFunction.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\cvFunction.Designer.cs">
+      <DependentUpon>cvFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucBlockBasic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucBlockBasic.Designer.cs">
+      <DependentUpon>ucBlockBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucPictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucPictureBox.Designer.cs">
+      <DependentUpon>ucPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucPropertyGridBlockBasic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\UserControls\ucPropertyGridBlockBasic.Designer.cs">
+      <DependentUpon>ucPropertyGridBlockBasic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Core\CCD\HikCam.cs" />
+    <Compile Include="Services\Core\CCD\XCCD.cs" />
+    <Compile Include="Services\Core\CCD\XVisionManager.cs" />
+    <Compile Include="Services\Core\Parameters\XObjectParameter.cs" />
+    <Compile Include="Services\Core\Parameters\XParameter.cs" />
+    <Compile Include="Services\Core\Parameters\XParameterManager.cs" />
     <Compile Include="Apps\Tools\BlobTool.cs" />
     <Compile Include="Apps\Tools\FilterTool.cs" />
     <Compile Include="Apps\Tools\ToolBase.cs" />
@@ -78,23 +148,11 @@
     <Compile Include="Apps\Views\UserControls\ucBlockAdvandce.Designer.cs">
       <DependentUpon>ucBlockAdvandce.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apps\Views\UserControls\ucBlockBasic.cs">
+    <Compile Include="Apps\Views\UserControls\ucVisionPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Apps\Views\UserControls\ucBlockBasic.Designer.cs">
-      <DependentUpon>ucBlockBasic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Apps\Views\UserControls\ucHomeVision.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Apps\Views\UserControls\ucHomeVision.Designer.cs">
-      <DependentUpon>ucHomeVision.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Apps\Views\UserControls\ucVisionConfiguration.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Apps\Views\UserControls\ucVisionConfiguration.Designer.cs">
-      <DependentUpon>ucVisionConfiguration.cs</DependentUpon>
+    <Compile Include="Apps\Views\UserControls\ucVisionPage.Designer.cs">
+      <DependentUpon>ucVisionPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Apps\Views\UserControls\ucVisionUI.cs">
       <SubType>UserControl</SubType>
@@ -120,6 +178,12 @@
     <Compile Include="Apps\Views\XWidgets\createSpeedDraw.Designer.cs">
       <DependentUpon>createSpeedDraw.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidget.Designer.cs">
+      <DependentUpon>DialogSettingWidget.cs</DependentUpon>
+    </Compile>
     <Compile Include="Apps\Views\XWidgets\DraggableUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -134,13 +198,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Services\Core\OutVisionObject.cs" />
+    <Compile Include="Services\Core\cvX.cs" />
+    <Compile Include="Services\ImageProcessing\ImageToolBase.cs" />
     <Compile Include="VisionStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DataService.cs" />
     <Compile Include="Services\Event.cs" />
     <Compile Include="Services\EventTask.cs" />
-    <Compile Include="Services\ImageProcessing\ImageTool.cs" />
     <Compile Include="Services\Task\XTask.cs" />
     <Compile Include="Services\Task\XTaskManager.cs" />
     <Compile Include="Utils\XFileExcel.cs" />
@@ -150,12 +214,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".env\settings.xml" />
+    <Content Include="Assets\caro.png" />
+    <Content Include="Assets\Icons\Delete.png" />
     <Content Include="Assets\Icons\error.png" />
     <Content Include="Assets\Icons\info.png" />
     <Content Include="Assets\Icons\link.png" />
     <Content Include="Assets\Icons\link1.png" />
     <Content Include="Assets\Icons\link2.png" />
     <Content Include="Assets\Icons\question.png" />
+    <Content Include="Assets\Icons\selection-resize.png" />
+    <Content Include="Assets\Icons\Zoom In.png" />
+    <Content Include="Assets\Icons\Zoom Out.png" />
     <Content Include="Assets\Icons\_add.png" />
     <Content Include="Assets\Icons\_alarmH.png" />
     <Content Include="Assets\Icons\_alarmL.png" />
@@ -199,16 +268,29 @@
     <Content Include="Assets\Icons\_userOp.png" />
     <Content Include="Assets\Icons\_wait.png" />
     <Content Include="Assets\Icons\博众logo 样式.ico" />
+    <Content Include="Assets\Images\caro2.jpg" />
+    <Content Include="Assets\Images\caro3.jpg" />
+    <Content Include="Assets\Images\caro4.jpg" />
     <Content Include="Assets\Images\linkicon.png" />
     <Content Include="Assets\Images\linkicon2.png" />
     <Content Include="Assets\Images\linkicon3.png" />
+    <Content Include="Services\Core\CCD\MvCameraControl.Net.dll" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Apps\Views\UserControls\cvFunction.resx">
+      <DependentUpon>cvFunction.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\Views\UserControls\ucBlockBasic.resx">
       <DependentUpon>ucBlockBasic.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Apps\Views\UserControls\ucHomeVision.resx">
-      <DependentUpon>ucHomeVision.cs</DependentUpon>
+    <EmbeddedResource Include="Apps\Views\UserControls\ucPictureBox.resx">
+      <DependentUpon>ucPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\UserControls\ucPropertyGridBlockBasic.resx">
+      <DependentUpon>ucPropertyGridBlockBasic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\UserControls\ucVisionPage.resx">
+      <DependentUpon>ucVisionPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\Views\UserControls\ucVisionUI.resx">
       <DependentUpon>ucVisionUI.cs</DependentUpon>
@@ -219,15 +301,25 @@
     <EmbeddedResource Include="Apps\Views\UserControls\ucVisionUIHeader.resx">
       <DependentUpon>ucVisionUIHeader.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\XWidgets\CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\XWidgets\DialogSettingWidget.resx">
+      <DependentUpon>DialogSettingWidget.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Apps\Logs\" />
+    <Folder Include="Apps\Models\" />
     <Folder Include="Apps\Views\Buttons\" />
     <Folder Include="Apps\Views\Dialogs\" />
+    <Folder Include="Apps\Views\Form\" />
     <Folder Include="Apps\Views\Labels\" />
+    <Folder Include="Assets\Debug\" />
     <Folder Include="Services\MachineLearning\" />
   </ItemGroup>
   <ItemGroup>
@@ -235,4 +327,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\OpenCvSharp4.runtime.win.4.10.0.20241108\build\netstandard\OpenCvSharp4.runtime.win.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCvSharp4.runtime.win.4.10.0.20241108\build\netstandard\OpenCvSharp4.runtime.win.props'))" />
+  </Target>
 </Project>

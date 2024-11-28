@@ -13,6 +13,7 @@ using static NPOI.HSSF.Util.HSSFColor;
 using System.Data;
 using NPOI.SS.Formula.Functions;
 using System.Diagnostics;
+using System.Threading;
 
 namespace HB_IWatch
 {
@@ -63,8 +64,10 @@ namespace HB_IWatch
         private List<MachineSts> ListBackupMcSts = new List<MachineSts>();
 
         private DoId m_Light = DoId.绿灯;
-        private Timer LightFlash = new Timer();
+        //private Timer LightFlash = new Timer();
         private bool m_isFlash;
+
+        FailTip ft;
 
         private HBMachine()
         {
@@ -233,8 +236,6 @@ namespace HB_IWatch
 
                 ft.SelectAll();
                 ft.SetSubmitText(OKText);
-                ft.SelectAll();
-                ft.SetSubmitText(OKText);
 
 
                 //供料机异步报警暂时不切换三色灯状态，上下料仓都没有物料会报警
@@ -264,14 +265,12 @@ namespace HB_IWatch
                 if (XTask.OnPauseActive != null)
                     XTask.OnPauseActive(null, null);
 
-
                 DateTime startTime = DateTime.Now;
                 bool isOKVisable = (OKText != "");
                 bool isCancalVisable = (CancelText != "");
                 bool isIgnoreVisable = (IgnoreText != "");
                 DateTime lastAlarmEndTime = DateTime.Now;
 
-                //Dung giao dien NewFailTip
                 AlarmCode alarmCode = new AlarmCode();
                 //ID code
                 alarmCode.ErrorCode = ErrCode;
@@ -291,7 +290,7 @@ namespace HB_IWatch
                 DataServerManager.Instance.InsertAlarmON(Am);
                 UploadMachineStateMessage(MachineSts.Downtime);
                 //Dung giao dien FailTip
-                FailTip ft = new FailTip(strDescription, isCancalVisable, isIgnoreVisable, timeout, isOKVisable);
+                ft = new FailTip(strDescription, isCancalVisable, isIgnoreVisable, timeout, isOKVisable);
                 ft.SelectAll();
                 if (isOKVisable || (!isCancalVisable && !isIgnoreVisable))
                     ft.SetSubmitText(OKText);
@@ -304,21 +303,28 @@ namespace HB_IWatch
 
                 //Lưu trạng thái lỗi
                 AddBackupMcStatus(curSts);
-                //Bật đèn báo hiệu alarm
+                //Set trạng thái thiết bị
                 SetMachineStatus(MachineSts.Downtime);
 
+
+              
+
                 ft.ShowDialog();
+
+
+
+
                 ft.WaitOne();
                 //if(ft.ShowDialog() == DialogResult.OK)
 
                 //还原设备状态
                 //if (ft.DialogResult == DialogResult.OK || ft.DialogResult == DialogResult.Ignore || ft.DialogResult == DialogResult.Cancel)
                     //SetMachineStatus(bkupSts);
+                //Set lại trạng thái máy
                 RecoverMachineStatus();
                 if (ft.DialogResult == DialogResult.Cancel || ft.DialogResult == DialogResult.Ignore)
                 {
-                    //if (XTask.OnStopActive != null)
-                    //    XTask.OnStopActive(null, null);
+                    
                 }
                 if (ft.DialogResult == DialogResult.OK)
                 {
@@ -477,6 +483,37 @@ namespace HB_IWatch
                 return true;
             }
             return false;
+        }
+
+        public void CancelAlarmForm()
+        {
+            if(ft != null && !ft.IsDisposed && ft.IsHandleCreated)
+            {
+                ft.Invoke((MethodInvoker)(() =>
+                {
+                    ft.SafeCloseDialog(DialogResult.Cancel);
+                }));
+            }
+        }
+        public void RetryAlarmForm()
+        {
+            if (ft != null && !ft.IsDisposed && ft.IsHandleCreated)
+            {
+                ft.Invoke((MethodInvoker)(() =>
+                {
+                    ft.SafeCloseDialog(DialogResult.OK);
+                }));
+            }
+        }
+        public void IgnoreAlarmForm()
+        {
+            if (ft != null && !ft.IsDisposed && ft.IsHandleCreated)
+            {
+                ft.Invoke((MethodInvoker)(() =>
+                {
+                    ft.SafeCloseDialog(DialogResult.Ignore);
+                }));
+            }
         }
         #endregion
     }

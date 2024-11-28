@@ -23,6 +23,7 @@ using HB_IWatch;
 using Demo.UserControls;
 using Demo.Setting;
 using System.IO;
+using OpenCvSharp.XImgProc;
 namespace Demo.Page
 {
     public partial class DebugDlg : Form
@@ -40,6 +41,8 @@ namespace Demo.Page
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             InitDgv();
+            
+
         }
         private static DebugDlg instance;
         public static DebugDlg Instance
@@ -164,7 +167,8 @@ namespace Demo.Page
         #region Unit
         private void UnitIn_Click(object sender, EventArgs e)
         {
-            ProductInfor UM = new ProductInfor() { StartTime = DateTime.Now, ModelProduct = LoadModel.appSettings.currentModel, EndTime = DateTime.Now.AddMinutes(-1), CT = 60.0, HiveState = 1, UnitSN = "Test00001", ComponentSN = "tttttjfsb", Shift = "NS", Pass = "PASS" };
+            ProductInformation UM = new ProductInformation() { StartTime = DateTime.Now, ModelProduct = LoadModel.appSettings.currentModel, serialNumber1 = "AX001", serialNumber2 = "AX002", serialNumber3 = "AX003",
+                                                                EndTime = DateTime.Now.AddMinutes(-1), CT = 60.0, HiveState = 1, UnitSN = "Test00001", ComponentSN = "tttttjfsb", Shift = "NS", Pass = "PASS" };
             ProductMessage ucm = new ProductMessage();
             ucm.Unit = UM;
             DataServerManager.Instance.InsertUnitMessage(ucm, 0);
@@ -249,12 +253,12 @@ namespace Demo.Page
 
         private void DebugDlg_FormClosing(object sender, FormClosingEventArgs e)
         {
-            timer1.Stop();
+            timer1.Stop();            
         }
 
         private void DebugDlg_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+            timer1.Start();            
         }
 
         // Phương thức cập nhật giao diện người dùng
@@ -314,7 +318,7 @@ namespace Demo.Page
             }
         }
 
-        private async void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             try
             {
@@ -326,7 +330,7 @@ namespace Demo.Page
             }
         }
 
-        private async void button4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             try
             {
@@ -338,7 +342,7 @@ namespace Demo.Page
             }
         }
 
-        private async void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             try
             {
@@ -677,7 +681,7 @@ namespace Demo.Page
                 string modelName = dgvModel.CurrentRow.Cells[1].Value.ToString();
                 this.tbSelectModel.Text = modelName;
             }
-            catch (Exception ex)
+            catch
             {
 
             }
@@ -698,10 +702,10 @@ namespace Demo.Page
                         Globals.SetTopState();
                         Globals.CreateModelFolder();
                         //Thread.Sleep(1000);
-                        Popup popup = new Popup("Uploading", 1000);
+                        Popup popup = new Popup("Uploading...", 1500);
                         popup.ShowDialog();
                         PageSetting.Instance.UpDateCompensationSettings();
-                        popup = new Popup("Finish loading new model", 100);
+                        popup = new Popup("Finish loading new model", 500);
                         popup.ShowDialog();
                     }
                 }
@@ -846,6 +850,24 @@ namespace Demo.Page
             //Cập nhật lại listPoint tạm thời
             LoadModel.currentModel.points = newList;
             InitDgv();
+        }
+
+        private void btnReadCurrentPoint_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show($"Bạn có ghi tọa độ hiện tại vào {SlectedPoint}", "Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                
+                //SLMP.Instance.ReadDoubleWord(DevideCode.D, X_Positions, X);
+                //SLMP.Instance.ReadDoubleWord(DevideCode.D, Y_Positions, Y);
+                //SLMP.Instance.ReadDoubleWord(DevideCode.D, Z_Positions, Z);
+                //SLMP.Instance.ReadDoubleWord(DevideCode.D, R_Positions, R);
+                Thread.Sleep(50);
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //axisControl1.stopPlcThread = SLMP.Instance.IsConnect;
         }
 
         private void btnTCPConnect_Click(object sender, EventArgs e)

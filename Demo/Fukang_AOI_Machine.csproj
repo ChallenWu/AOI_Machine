@@ -95,6 +95,7 @@
     <Compile Include="Data\SQLiteHelper.cs" />
     <Compile Include="Device\CCD_Inspection.cs" />
     <Compile Include="Device\ICW_Scanner.cs" />
+    <Compile Include="Device\ImageToolC9200.cs" />
     <Compile Include="Device\MobusApiH5U.cs" />
     <Compile Include="Device\PublicPLCData.cs" />
     <Compile Include="Device\ScannerComm.cs" />

@@ -174,8 +174,8 @@ namespace Demo
 
 
             //Đổi ngôn ngữ
-            //MultiLanguage.ChangeLanguage(Globals.SettingOption.语言, true);
-            //Globals.SettingOption.语言 = LanguageType.English;
+            MultiLanguage.ChangeLanguage(Globals.SettingOption.语言, true);
+            Globals.SettingOption.语言 = LanguageType.English;
             //Bind dữ liệu
             GlobalsAutoConfig.BindDevice();
             //Update thông số tốc độ Axis

@@ -10,7 +10,7 @@ using static OVisionPro.Globals;
 
 namespace OVisionPro
 {
-    class XTask
+    public class XTask
     {
         // onStep để display current step while RUN 
         // be will add on wigets
@@ -20,7 +20,6 @@ namespace OVisionPro
         private RunState taskstate = new RunState();
 
         protected int LastStartTime;
-        protected int StartTimeForEmptyRun;
 
         [DllImport("kernel32", ExactSpelling = true, CharSet = CharSet.Ansi, SetLastError = true)]
         public static extern int GetTickCount();
@@ -94,7 +93,7 @@ namespace OVisionPro
         /// <summary>
         /// 任务运行，需用户重写
         /// </summary>
-        protected virtual void Running(object runMode) { }
+        public virtual void Running(object runMode) { }
         /// <summary>
         /// 任务复位，需用户重写
         /// </summary>

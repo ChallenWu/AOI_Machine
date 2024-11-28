@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OVisionPro
 {
-    public sealed class XTaskManager
+    class XTaskManager
     {
         private Dictionary<int, XTask> tasks = new Dictionary<int, XTask>();
 

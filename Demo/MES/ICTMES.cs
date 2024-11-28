@@ -128,7 +128,7 @@ namespace BoTech
             }
         }
 
-        public static bool AssyGo_AOI(ProductInfor Unit, out BackMessage bm)
+        public static bool AssyGo_AOI(ProductInformation Unit, out BackMessage bm)
         {
             AssyGoData AGD = new AssyGoData();
             AGD.empNo = AudioSystem.InforMachine.MES.empNo;

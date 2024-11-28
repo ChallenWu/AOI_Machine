@@ -13958,6 +13958,36 @@
             <typeparam name="T"></typeparam>
             <returns></returns>
         </member>
+        <member name="M:OpenCvSharp.Mat.DisposeManaged">
+            <inheritdoc/>
+        </member>
+        <member name="T:OpenCvSharp.Mat.ArrayPinningLifetime">
+            <summary>
+            Pins an array and unpins it when all references are released.
+            </summary>
+        </member>
+        <member name="M:OpenCvSharp.Mat.ArrayPinningLifetime.#ctor(System.Array)">
+            <summary>
+            Creates an instance of the <see cref="T:OpenCvSharp.Mat.ArrayPinningLifetime"/> class.
+            </summary>
+            <param name="array">The array to be pinned.</param>
+        </member>
+        <member name="P:OpenCvSharp.Mat.ArrayPinningLifetime.DataPtr">
+            <summary>
+            Gets the data pointer of the pinned <see cref="T:System.Array"/>.
+            </summary>
+            <exception cref="T:System.ObjectDisposedException">Thrown when the handle has been deallocated.</exception>
+        </member>
+        <member name="M:OpenCvSharp.Mat.ArrayPinningLifetime.Ref">
+            <summary>Increments the reference count of the pinned array.</summary>
+            <returns>Returns a reference to this <see cref="T:OpenCvSharp.Mat.ArrayPinningLifetime"/> instance.</returns>
+        </member>
+        <member name="M:OpenCvSharp.Mat.ArrayPinningLifetime.Dispose">
+            <summary>
+            Decrements the reference count of the pinned array. If the reference count reaches zero, the array will be
+            unpinned.
+            </summary>
+        </member>
         <member name="M:OpenCvSharp.Mat.Abs">
             <summary>
             Computes absolute value of each matrix element

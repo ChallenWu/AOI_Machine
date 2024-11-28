@@ -21,8 +21,10 @@ namespace BoTech
         //Thông tin thiết bị
         public static MachineMessage InforMachine = new MachineMessage();
         // Thông tin sản phẩm
-        public static UCMessage UCM = new UCMessage();
-        public static ProductInfor Infor = new ProductInfor();
+        /// <summary>
+        /// public static UCMessage UCM = new UCMessage();
+        /// </summary>
+        public static ProductMessage UCM = new ProductMessage();
         #endregion     
 
         #region Custom color constants
@@ -37,6 +39,9 @@ namespace BoTech
         public static Color Color_PauseBtn = Color.LightBlue;
         public static Color Color_Alarm = Color.Red;
         #endregion
+        /// <summary>
+        /// Thông tin cơ bản của thiết bị
+        /// </summary>
         public class MachineMessage
         {            
             public string ProType = "E-SKU";

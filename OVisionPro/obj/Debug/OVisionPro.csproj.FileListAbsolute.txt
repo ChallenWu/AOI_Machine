@@ -1,5 +1,3 @@
-E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.apps.Views.UserControls.ucBlockBasic.resources
-E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.apps.views.VisionUI.resources
 E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
 E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
 E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
@@ -45,97 +43,573 @@ D:\Projects\2.CSharp\BZ\VisionProj\AOIPro\OVisionPro\bin\Debug\System.Numerics.V
 D:\Projects\2.CSharp\BZ\VisionProj\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Projects\2.CSharp\BZ\VisionProj\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
 D:\Projects\2.CSharp\BZ\VisionProj\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\bin\Debug\OVisionPro.dll.config
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\bin\Debug\OVisionPro.dll
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\bin\Debug\OVisionPro.pdb
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\bin\Debug\System.Buffers.dll
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\bin\Debug\System.Memory.dll
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\OVisionPro.apps.Views.UserControls.ucBlockBasic.resources
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\OVisionPro.ucHomeVision.resources
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\OVisionPro.apps.views.VisionUI.resources
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\OVisionPro.dll
-C:\Users\52Hz\Documents\Zalo Received Files\OVisionPro\OVisionPro\obj\Debug\OVisionPro.pdb
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\OVisionPro.dll.config
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\OVisionPro.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\OVisionPro.pdb
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\OpenCvSharp.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\System.Buffers.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\System.Memory.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\OpenCvSharp.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\System.Buffers.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\System.Memory.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\OVisionPro.apps.Views.UserControls.ucBlockBasic.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\OVisionPro.ucHomeVision.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\OVisionPro.apps.views.VisionUI.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\OVisionPro.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\20241031\OVisionPro\obj\Debug\OVisionPro.pdb
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\OVisionPro.dll.config
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\OVisionPro.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\OVisionPro.pdb
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\OpenCvSharp.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\System.Buffers.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\System.Memory.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\OpenCvSharp.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\System.Buffers.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\System.Memory.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.apps.Views.UserControls.ucBlockBasic.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.ucHomeVision.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.apps.views.VisionUI.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CopyComplete
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CopyComplete
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogAdjustWidget.resources
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogAdjustWidget.resources
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\BZ\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+E:\BZ\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+E:\BZ\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+E:\BZ\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+E:\BZ\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+E:\BZ\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CopyComplete
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+E:\BZ\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+E:\BZ\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+E:\BZ\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogAdjustWidget.resources
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+D:\Projects\2.CSharp\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\2.CSharp\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200 组装自动化线 DFM\AOI_C9200 组装自动化线 DFM\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.XWidgets.CustomMessageBox.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.XWidgets.CustomMessageBox.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.XWidgets.CustomMessageBox.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CopyComplete
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.ucPictureBox.resources
+C:\Users\Administrator\Documents\Zalo Received Files\AOIPro (2)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+C:\Users\Admin\Documents\Zalo Received Files\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.ucPictureBox.resources
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.ucPictureBox.resources
+E:\BZ\AOIPro\OVisionPro\obj\Debug\OVisionPro.CustomMessageBox.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.ucPictureBox.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.CustomMessageBox.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.ucPictureBox.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.CustomMessageBox.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CopyComplete
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\YamlDotNet.dll
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\YamlDotNet.xml
+E:\BZ\AOIPro (1)\AOIPro\OVisionPro\bin\Debug\MvCameraControl.Net.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\MvCameraControl.Net.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\YamlDotNet.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\bin\Debug\YamlDotNet.xml
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.ucPictureBox.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.CustomMessageBox.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\MvCameraControl.Net.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\YamlDotNet.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\bin\Debug\YamlDotNet.xml
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.ucPictureBox.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.CustomMessageBox.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CopyComplete
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+E:\BZ\AOIPro2511\AOIPro\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\MvCameraControl.Net.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\YamlDotNet.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\bin\Debug\YamlDotNet.xml
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.ucPictureBox.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.CustomMessageBox.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+D:\Projects\2.CSharp\AOIPro25112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll.config
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\OVisionPro.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\OVisionPro.pdb
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\MvCameraControl.Net.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Buffers.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Memory.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\YamlDotNet.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.xml
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Buffers.xml
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Drawing.Common.xml
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Memory.xml
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\bin\Debug\YamlDotNet.xml
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.ucPictureBox.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.CustomMessageBox.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.csproj.CopyComplete
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.dll
+E:\BZ\AOIPro26112024\AOIPro\OVisionPro\obj\Debug\OVisionPro.pdb
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\OVisionPro.dll.config
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\OVisionPro.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\OVisionPro.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\MvCameraControl.Net.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\OpenCvSharp.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\OpenCvSharp.Extensions.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Buffers.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Drawing.Common.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Memory.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Numerics.Vectors.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\YamlDotNet.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\OpenCvSharp.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\OpenCvSharp.Extensions.xml
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Buffers.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Drawing.Common.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Drawing.Common.xml
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Memory.xml
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Numerics.Vectors.xml
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\YamlDotNet.xml
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.csproj.AssemblyReference.cache
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.apps.Views.UserControls.ucBlockBasic.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.ucHomeVision.resources
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.apps.views.VisionUI.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.cvFunction.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.ucBlockBasic.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.Apps.Views.UserControls.ucPictureBox.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.ucPropertyGridBlockBasic.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.ucVisionPage.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.VisionUI.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIFooter.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\AoIMachinE.apps.views.UserControls.ucVisionUIHeader.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.CustomMessageBox.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.DialogSettingWidget.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.Properties.Resources.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.csproj.GenerateResource.cache
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.csproj.CoreCompileInputs.cache
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.csproj.Up2Date
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\obj\Debug\OVisionPro.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\OVisionPro\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll

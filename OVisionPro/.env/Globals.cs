@@ -7,14 +7,46 @@ using System.Threading.Tasks;
 
 namespace OVisionPro
 {
-    class Globals
+    public class Globals
     {
+        public enum Permission
+        {
+            user,
+            admin
+        }
+
         public enum RunState
         {
             stopping,
             running,
             idling,
             pausing,
+        }
+
+        public enum ToolTypleData
+        {
+            Img,
+            Pos,
+            Doublue,
+            Str,
+            Float,
+            Line,
+        }
+
+        public Dictionary<ToolTypleData, Type> ToolTypleDataVals = new Dictionary<ToolTypleData, Type>()
+        {
+            { ToolTypleData.Img, typeof(Mat) },
+            { ToolTypleData.Pos, typeof(Tuple<int, int>) },
+            { ToolTypleData.Str, typeof(string) },
+            { ToolTypleData.Doublue, typeof(double) },
+            { ToolTypleData.Float, typeof(float) },
+            { ToolTypleData.Line, typeof(Tuple<int, int, int, int>) },
+        };
+
+        public enum RunMode
+        {
+            production,
+            debug,
         }
 
         public enum TaskID
@@ -24,13 +56,5 @@ namespace OVisionPro
             EdgeTool,
             ThresholdTool
         }
-        public List<Type> InputDataType = new List<Type>
-        {
-            typeof(int),
-            typeof(double),
-            typeof(string),
-            typeof(bool),
-            typeof(Mat)
-        };
     }
 }

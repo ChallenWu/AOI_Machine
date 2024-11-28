@@ -9,6 +9,7 @@ using System.Threading;
 using Demo.Device;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
 namespace Demo
 {
     /// <summary>
@@ -62,6 +63,7 @@ namespace Demo
         private int networkNo;
         private int pcNo;
         private int stationNo;
+        public bool IsConnect { get;set; }
 
         public string IpAddress { get => ipAddress; set => ipAddress = value; }
         public int PortNo { get => portNo; set => portNo = value; }
@@ -75,11 +77,12 @@ namespace Demo
         //Hàm dựng
         public SLMP()
         {
-            this.portNo = int.Parse("1222");
-            this.ipAddress = "";
+            this.portNo = int.Parse(Globals.SettingICT.PLC_Port);
+            this.ipAddress = Globals.SettingICT.PLC_IP;
             this.networkNo = 0x00;
             this.pcNo = 0xff;
             this.stationNo = 0x00;
+            this.IsConnect = false;
         }
         #endregion
         public int Open()
@@ -97,18 +100,20 @@ namespace Demo
             }
             try
             {
-                sock.Connect(this.ipAddress, this.portNo);
+                sock.Connect(Globals.SettingICT.PLC_IP, int.Parse(Globals.SettingICT.PLC_Port));
                 if (sock.Connected)
                 {
-                    thread = new Thread(new ThreadStart(AlwaysRun));
-                    thread.IsBackground = true;
-                    thread.Start();
+                    IsConnect = true;
+                    //thread = new Thread(new ThreadStart(AlwaysRun));
+                    //thread.IsBackground = true;
+                    //thread.Start();
                     result = 0;
                 }
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                Trace.WriteLine(e.Message);
+                //MessageBox.Show(e.Message);
             }
             return result;
         }
@@ -147,6 +152,7 @@ namespace Demo
                 sock.Connect(IP, Port);
                 if (sock.Connected)
                 {
+                    IsConnect =  true;
                     result = 0;
                 }
             }

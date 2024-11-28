@@ -319,3 +319,15 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debu
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.pdb
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\MvCameraControl.Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll

@@ -184,12 +184,14 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnDownloadPoint = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAddPoints = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnDeletePoints = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.btnReadCurrentPoint = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnDownloadPoint = new System.Windows.Forms.ToolStripButton();
             this.dgvPositions = new System.Windows.Forms.DataGridView();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -203,8 +205,8 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.dgvModel = new System.Windows.Forms.DataGridView();
-            this.axisControl1 = new Demo.UserControls.AxisControl();
             this.sqLiteCommand1 = new System.Data.SQLite.SQLiteCommand();
+            this.axisControl1 = new Demo.UserControls.AxisControl();
             this.tabControlDisplay.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -238,6 +240,10 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvModel)).BeginInit();
             this.SuspendLayout();
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // tabControlDisplay
             // 
@@ -299,7 +305,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(178, 38);
+            this.tabPage6.Size = new System.Drawing.Size(981, 655);
             this.tabPage6.TabIndex = 0;
             this.tabPage6.Text = "Module 2";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -309,7 +315,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 24);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(178, 38);
+            this.tabPage7.Size = new System.Drawing.Size(981, 655);
             this.tabPage7.TabIndex = 1;
             this.tabPage7.Text = "Module 3";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -318,7 +324,7 @@
             // 
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(178, 38);
+            this.tabPage8.Size = new System.Drawing.Size(981, 655);
             this.tabPage8.TabIndex = 3;
             this.tabPage8.Text = "Module 4";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1918,12 +1924,14 @@
             this.toolStripSeparator1,
             this.toolStripButton3,
             this.toolStripSeparator4,
-            this.btnDownloadPoint,
-            this.toolStripSeparator2,
             this.btnAddPoints,
             this.toolStripSeparator3,
             this.btnDeletePoints,
-            this.toolStripButton4});
+            this.toolStripSeparator5,
+            this.toolStripButton4,
+            this.btnReadCurrentPoint,
+            this.toolStripSeparator2,
+            this.btnDownloadPoint});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(605, 40);
@@ -1956,21 +1964,6 @@
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 40);
             // 
-            // btnDownloadPoint
-            // 
-            this.btnDownloadPoint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnDownloadPoint.Image = ((System.Drawing.Image)(resources.GetObject("btnDownloadPoint.Image")));
-            this.btnDownloadPoint.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDownloadPoint.Name = "btnDownloadPoint";
-            this.btnDownloadPoint.Size = new System.Drawing.Size(23, 37);
-            this.btnDownloadPoint.Text = "toolStripButton1";
-            this.btnDownloadPoint.Click += new System.EventHandler(this.btnDownloadPoint_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 40);
-            // 
             // btnAddPoints
             // 
             this.btnAddPoints.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -1996,6 +1989,11 @@
             this.btnDeletePoints.Text = "toolStripButton2";
             this.btnDeletePoints.Click += new System.EventHandler(this.btnDeletePoints_Click);
             // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 40);
+            // 
             // toolStripButton4
             // 
             this.toolStripButton4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -2007,6 +2005,31 @@
             this.toolStripButton4.Size = new System.Drawing.Size(34, 37);
             this.toolStripButton4.Text = "toolStripButton4";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // btnReadCurrentPoint
+            // 
+            this.btnReadCurrentPoint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnReadCurrentPoint.Image = ((System.Drawing.Image)(resources.GetObject("btnReadCurrentPoint.Image")));
+            this.btnReadCurrentPoint.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnReadCurrentPoint.Name = "btnReadCurrentPoint";
+            this.btnReadCurrentPoint.Size = new System.Drawing.Size(23, 37);
+            this.btnReadCurrentPoint.Text = "toolStripButton1";
+            this.btnReadCurrentPoint.Click += new System.EventHandler(this.btnReadCurrentPoint_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 40);
+            // 
+            // btnDownloadPoint
+            // 
+            this.btnDownloadPoint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnDownloadPoint.Image = ((System.Drawing.Image)(resources.GetObject("btnDownloadPoint.Image")));
+            this.btnDownloadPoint.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnDownloadPoint.Name = "btnDownloadPoint";
+            this.btnDownloadPoint.Size = new System.Drawing.Size(23, 37);
+            this.btnDownloadPoint.Text = "toolStripButton1";
+            this.btnDownloadPoint.Click += new System.EventHandler(this.btnDownloadPoint_Click);
             // 
             // dgvPositions
             // 
@@ -2132,19 +2155,19 @@
             this.dgvModel.TabIndex = 12;
             this.dgvModel.SelectionChanged += new System.EventHandler(this.dgvModel_SelectionChanged);
             // 
+            // sqLiteCommand1
+            // 
+            this.sqLiteCommand1.CommandText = null;
+            // 
             // axisControl1
             // 
             this.axisControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.axisControl1.Location = new System.Drawing.Point(620, 302);
+            this.axisControl1.Location = new System.Drawing.Point(620, 303);
             this.axisControl1.MaximumSize = new System.Drawing.Size(369, 379);
             this.axisControl1.MinimumSize = new System.Drawing.Size(369, 379);
             this.axisControl1.Name = "axisControl1";
             this.axisControl1.Size = new System.Drawing.Size(369, 379);
             this.axisControl1.TabIndex = 11;
-            // 
-            // sqLiteCommand1
-            // 
-            this.sqLiteCommand1.CommandText = null;
             // 
             // DebugDlg
             // 
@@ -2384,5 +2407,7 @@
         private System.Windows.Forms.ToolStripButton btnAddPoints;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btnDeletePoints;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton btnReadCurrentPoint;
     }
 }
