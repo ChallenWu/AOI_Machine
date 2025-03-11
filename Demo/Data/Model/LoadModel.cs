@@ -58,6 +58,7 @@ namespace Models
             {
                 String filePath = Path.Combine(Directory.GetCurrentDirectory(), APP_SETTINGS_FILE_NAME);
                 var js = appSettings.ToJSON();
+                ModelStore.UpdateModelSettings(LoadModel.currentModel);
                 File.WriteAllText(filePath, js);
             }
             catch (Exception ex)

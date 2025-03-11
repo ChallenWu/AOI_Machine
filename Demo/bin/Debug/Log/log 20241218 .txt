@@ -1,0 +1,23 @@
+2024/12/18 16:27:17:113 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 16:28:51:653 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 16:34:20:176 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 16:36:47:014 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 16:56:41:319 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 16:58:13:282 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 17:19:48:281 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 17:27:37:919 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 18:23:19:328 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 18:25:15:082 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 18:29:44:461 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 18:47:20:545 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 18:49:59:180 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Demo.Task.Task70_Scanner.RunVisionTool2(Mat Image) in C:\Users\CTOS\Desktop\AOI_Machine\Demo\Task\Task70_Scanner.cs:line 1036
+2024/12/18 18:53:14:732 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Demo.Task.Task70_Scanner.RunVisionTool2(Mat Image) in C:\Users\CTOS\Desktop\AOI_Machine\Demo\Task\Task70_Scanner.cs:line 1036
+2024/12/18 18:59:40:675 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Inspection fail
+2024/12/18 19:06:29:000 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Demo.Task.Task70_Scanner.RunVisionTool1(Mat Image) in C:\Users\CTOS\Desktop\AOI_Machine\Demo\Task\Task70_Scanner.cs:line 956
+2024/12/18 19:06:40:170 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Demo.Task.Task70_Scanner.RunVisionTool2(Mat Image) in C:\Users\CTOS\Desktop\AOI_Machine\Demo\Task\Task70_Scanner.cs:line 1036
+2024/12/18 19:07:52:279 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:System.NullReferenceException: Object reference not set to an instance of an object.
+   at Demo.Task.Task70_Scanner.RunVisionTool1(Mat Image) in C:\Users\CTOS\Desktop\AOI_Machine\Demo\Task\Task70_Scanner.cs:line 957

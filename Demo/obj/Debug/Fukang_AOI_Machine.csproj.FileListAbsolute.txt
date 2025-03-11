@@ -239,46 +239,20 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\Demo\bin\Debug\NPOI.OOXML
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\Demo\bin\Debug\NPOI.OpenXml4Net.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe.config
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.pdb
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\EntityFramework.SqlServer.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\EntityFramework.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\Newtonsoft.Json.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.EF6.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.Linq.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\ACS.SPiiPlusNET.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.Core.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\EPPlus.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\MiniExcel.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OOXML.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\XCore.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OpenXml4Net.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.pdb
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll.config
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.pdb
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\XCore.pdb
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.xml
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\en-US\XCore.resources.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.AssemblyReference.cache
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.SuggestedBindingRedirects.cache
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe.config
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Form1.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.DebugDlg.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageAlarm.resources
@@ -306,6 +280,7 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debu
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.NetWorkWatcher.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.newMenuButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.STN.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.SwitchButton.resources
@@ -315,19 +290,730 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debu
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserAccountRegister.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.GenerateResource.cache
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\EntityFramework.SqlServer.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\EntityFramework.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.EF6.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.Linq.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.Core.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\EPPlus.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.pdb
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_A.EC0D8BCF.Up2Date
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.pdb
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\MvCameraControl.Net.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.xml
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.pdb
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.SuggestedBindingRedirects.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe.config
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\dll\x86\OpenCvSharpExtern.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\dll\x86\opencv_videoio_ffmpeg4100.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\dll\x86\opencv_ffmpeg400.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\dll\x64\OpenCvSharpExtern.dll
-E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\dll\x64\opencv_videoio_ffmpeg4100_64.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\dll\x64\opencv_ffmpeg400_64.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Blob.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Blob.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.UserInterface.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.UserInterface.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\Demo.exe.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\Demo.exe
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\Demo.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\EntityFramework.SqlServer.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\EntityFramework.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\Newtonsoft.Json.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\OpenCvSharp.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.EF6.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.Linq.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\AutoStudio.Core.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\AutoStudio.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\EPPlus.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\MiniExcel.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\MvCameraControl.Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\NPOI.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\NPOI.OOXML.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\OVisionPro.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Buffers.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Memory.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\NPOI.OpenXml4Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\OVisionPro.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\OVisionPro.dll.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Buffers.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Memory.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.SuggestedBindingRedirects.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.exe.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.Form1.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.Page.DebugDlg.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.Page.PageAlarm.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.Page.PageChart.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.Page.PageEngineering.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.Page.PageLogin.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.Page.PageProduction.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.Page.PageSetting.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.Page.PageVision.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\BoTech.AlarmLogShow.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\BoTech.Alarm_Duration.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.AxisControl.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.ChartIO_Update.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.CriticalPameterDashBoard.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataEachUnit.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataGripSQL.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\BoTech.DT_Statiistic.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTipEx.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.IO_Summary.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineErrorStatistics.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineStateChanges.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.MenuButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.NetWorkWatcher.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.newMenuButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.STN.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.SwitchButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.TrackBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserAccountManager.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserControls.UserControlBase.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.UserAccountRegister.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Fukang_A.EC0D8BCF.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.exe
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\obj\Debug\Demo.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\OpenCvSharp.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_MachineCOP\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\EntityFramework.SqlServer.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\EntityFramework.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\Newtonsoft.Json.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.EF6.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.Linq.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.Core.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\EPPlus.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\MiniExcel.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\MvCameraControl.Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OOXML.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OpenXml4Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.SuggestedBindingRedirects.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Form1.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.DebugDlg.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageAlarm.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageChart.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageEngineering.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageLogin.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageProduction.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageSetting.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageVision.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.AlarmLogShow.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.Alarm_Duration.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.AxisControl.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.ChartIO_Update.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.CriticalPameterDashBoard.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataEachUnit.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataGripSQL.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.DT_Statiistic.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTipEx.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.IO_Summary.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineErrorStatistics.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineStateChanges.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.MenuButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.NetWorkWatcher.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.newMenuButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.STN.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.SwitchButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.TrackBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserAccountManager.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.UserControlBase.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserAccountRegister.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_A.EC0D8BCF.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe.config
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\EntityFramework.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.EF6.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.Core.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\EPPlus.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\MiniExcel.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\MvCameraControl.Net.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OOXML.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\XCore.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OpenXml4Net.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll.config
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\XCore.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\bin\Debug\en-US\XCore.resources.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.AssemblyReference.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe.config
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Form1.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.DebugDlg.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageAlarm.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageChart.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageEngineering.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageLogin.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageProduction.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageSetting.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageVision.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Properties.Resources.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.AlarmLogShow.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.Alarm_Duration.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.AxisControl.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.ChartIO_Update.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.CriticalPameterDashBoard.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataEachUnit.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataGripSQL.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.DT_Statiistic.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTip.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTipEx.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.IO_Summary.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineErrorStatistics.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineStateChanges.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.MenuButton.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.NetWorkWatcher.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.newMenuButton.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.STN.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.SwitchButton.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.TrackBar.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserAccountManager.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.UserControlBase.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserAccountRegister.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.GenerateResource.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CoreCompileInputs.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CopyComplete
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\EntityFramework.SqlServer.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\EntityFramework.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\Newtonsoft.Json.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.EF6.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.Linq.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.Core.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\EPPlus.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\MiniExcel.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\MvCameraControl.Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OOXML.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OpenXml4Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.SuggestedBindingRedirects.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Form1.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.DebugDlg.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageAlarm.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageChart.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageEngineering.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageLogin.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageProduction.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageSetting.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageVision.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.AlarmLogShow.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.Alarm_Duration.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.AxisControl.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.ChartIO_Update.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.CriticalPameterDashBoard.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataEachUnit.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataGripSQL.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.DT_Statiistic.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTipEx.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.IO_Summary.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineErrorStatistics.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineStateChanges.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.MenuButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.NetWorkWatcher.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.newMenuButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.STN.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.SwitchButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.TrackBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserAccountManager.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.UserControlBase.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserAccountRegister.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_A.EC0D8BCF.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.SuggestedBindingRedirects.cache
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.exe.config
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Form1.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.DebugDlg.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageAlarm.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageChart.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageEngineering.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageLogin.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageProduction.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageSetting.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Page.PageVision.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.Properties.Resources.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.AlarmLogShow.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.Alarm_Duration.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.AxisControl.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.ChartIO_Update.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.CriticalPameterDashBoard.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataEachUnit.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataGripSQL.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\BoTech.DT_Statiistic.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTip.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTipEx.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.IO_Summary.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineErrorStatistics.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineStateChanges.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.MenuButton.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.NetWorkWatcher.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.newMenuButton.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.STN.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.SwitchButton.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.TrackBar.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserAccountManager.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserControls.UserControlBase.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Demo.UserAccountRegister.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.GenerateResource.cache
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CoreCompileInputs.cache
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe.config
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.exe
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\Demo.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.Core.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\AutoStudio.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\EPPlus.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\MiniExcel.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\MvCameraControl.Net.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\Newtonsoft.Json.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OOXML.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\XCore.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\NPOI.OpenXml4Net.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.xml
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OpenCvSharp.Extensions.xml
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\OVisionPro.dll.config
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Buffers.xml
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.xml
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Memory.xml
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.xml
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\TCPLib.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\XCore.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\bin\Debug\en-US\XCore.resources.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CopyComplete
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\Demo.exe.config
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\Demo.exe
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\Demo.pdb
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\AutoStudio.Core.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\AutoStudio.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\EPPlus.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\MiniExcel.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\MvCameraControl.Net.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\NPOI.OOXML.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Buffers.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Memory.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\TCPLib.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\XCore.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\OpenCvSharp.pdb
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\OpenCvSharp.xml
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Buffers.xml
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.pdb
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.xml
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Memory.xml
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\TCPLib.pdb
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\XCore.pdb
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\bin\Debug\en-US\XCore.resources.dll
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.SuggestedBindingRedirects.cache
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.exe.config
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Form1.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.DebugDlg.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageAlarm.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageChart.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageEngineering.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageLogin.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageProduction.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageSetting.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageVision.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Properties.Resources.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\BoTech.AlarmLogShow.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\BoTech.Alarm_Duration.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.AxisControl.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.ChartIO_Update.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.CriticalPameterDashBoard.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataEachUnit.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataGripSQL.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\BoTech.DT_Statiistic.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTip.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTipEx.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.IO_Summary.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineErrorStatistics.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineStateChanges.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.MenuButton.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.NetWorkWatcher.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.newMenuButton.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.STN.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.SwitchButton.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.TrackBar.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserAccountManager.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.UserControlBase.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserAccountRegister.resources
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Fukang_A.EC0D8BCF.Up2Date
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.exe
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.pdb
+C:\Users\Administrator\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.Edit_Vision.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\Demo.exe.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\Demo.exe
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\Demo.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\Newtonsoft.Json.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\AutoStudio.Core.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\AutoStudio.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\EPPlus.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\MiniExcel.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\MvCameraControl.Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\NPOI.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\NPOI.OOXML.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Buffers.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Memory.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\NPOI.OpenXml4Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Buffers.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Memory.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.SuggestedBindingRedirects.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.exe.config
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Form1.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Page.DebugDlg.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Page.Edit_Vision.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Page.PageAlarm.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Page.PageChart.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Page.PageEngineering.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Page.PageLogin.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Page.PageProduction.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Page.PageSetting.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Page.PageVision.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\BoTech.AlarmLogShow.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\BoTech.Alarm_Duration.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.AxisControl.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.ChartIO_Update.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.CriticalPameterDashBoard.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataEachUnit.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataGripSQL.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\BoTech.DT_Statiistic.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTipEx.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.IO_Summary.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineErrorStatistics.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineStateChanges.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.MenuButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.NetWorkWatcher.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.newMenuButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.STN.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.SwitchButton.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.TrackBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserAccountManager.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserControls.UserControlBase.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.UserAccountRegister.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Fukang_A.EC0D8BCF.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.exe
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\Demo.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\Demo\obj\Debug\PasteLabelMachine.Controls.ViewEditCCD.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\Demo.exe.config
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\Demo.exe
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\Demo.pdb
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\AutoStudio.Core.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\AutoStudio.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\EPPlus.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\MiniExcel.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\MvCameraControl.Net.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\NPOI.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\NPOI.OOXML.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Buffers.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Data.SQLite.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Memory.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\TCPLib.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\XCore.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\YamlDotNet.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\ACS.SPiiPlusNET.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Buffers.xml
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.pdb
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Drawing.Common.xml
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Memory.xml
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\TCPLib.pdb
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\XCore.pdb
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\YamlDotNet.xml
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\bin\Debug\en-US\XCore.resources.dll
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.AssemblyReference.cache
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.SuggestedBindingRedirects.cache
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.exe.config
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Form1.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.DebugDlg.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.Edit_Vision.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageAlarm.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageChart.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageEngineering.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageLogin.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageProduction.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageSetting.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Page.PageVision.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.Properties.Resources.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\BoTech.AlarmLogShow.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\BoTech.Alarm_Duration.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.AxisControl.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.ChartIO_Update.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.CriticalPameterDashBoard.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataEachUnit.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.DataGripSQL.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\BoTech.DT_Statiistic.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTip.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\HB_IWatch.FailTipEx.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.IO_Summary.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineErrorStatistics.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.MachineStateChanges.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.MenuButton.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.NetWorkWatcher.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.NewFailTip.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.newMenuButton.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\HB_IWatch.Popup.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.RoundPanel.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.STN.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.SwitchButton.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.TrackBar.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserAccountManager.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserControls.UserControlBase.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.UserAccountRegister.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\PasteLabelMachine.Controls.ViewEditCCD.resources
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.GenerateResource.cache
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CoreCompileInputs.cache
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Fukang_AOI_Machine.csproj.CopyComplete
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.exe
+C:\Users\CTOS\Desktop\AOI_Machine\Demo\obj\Debug\Demo.pdb

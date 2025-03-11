@@ -80,7 +80,7 @@ namespace XCore
                 return;
             }
             BzMessagebox.Show(MultiLanguage.GetSettingName(name) + ":" + min.ToString() + "--" + max.ToString(),
-                    MultiLanguage.GetMessage("参数设置超出范围"), MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    "Parameter setting out of range", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         public int SaveSetting()
         {
@@ -113,7 +113,7 @@ namespace XCore
                     {
                         if (kvp.Key == kkvp.Key && kvp.Value != kkvp.Value)
                         {
-                            string line = UserAccountName + "账户下:" + kkvp.Key + "值由" + kkvp.Value + "改为" + kvp.Value;
+                            string line = UserAccountName + "Account:" + kkvp.Key + "Value by" + kkvp.Value + "Change to" + kvp.Value;
                             WriteLog(line);
                         }
                     }
@@ -152,7 +152,7 @@ namespace XCore
             }
             catch (Exception ex)
             {
-                System.Windows.Forms.MessageBox.Show(ex.ToString(), "错误", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+                System.Windows.Forms.MessageBox.Show(ex.ToString(), "Warning", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                 Trace.WriteLine(ex, this.GetType().ToString());
                 return -1;
             }

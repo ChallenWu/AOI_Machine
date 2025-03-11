@@ -1,0 +1,8 @@
+2024/12/10 15:31:33:110 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Lỗi CCD, kiểm tra sản phẩm fail
+2024/12/10 15:32:54:192 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Lỗi CCD, kiểm tra sản phẩm fail
+2024/12/10 15:46:12:614 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Kiểm tra sản phẩm fail
+2024/12/10 15:46:13:832 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Kiểm tra sản phẩm fail
+2024/12/10 15:46:28:416 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Kiểm tra sản phẩm fail
+2024/12/10 15:46:30:051 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Kiểm tra sản phẩm fail
+2024/12/10 15:46:45:685 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Kiểm tra sản phẩm fail
+2024/12/10 15:46:47:284 => Station4 => AlarmCode:10017 => Category:VisionError => Lỗi CCD:Kiểm tra sản phẩm fail

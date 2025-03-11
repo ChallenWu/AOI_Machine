@@ -14,6 +14,9 @@ using AutoStudio.Core.Views.CustomControls;
 using Models;
 using System.Xml.Linq;
 using AutoStudio.Forms;
+using OpenCvSharp;
+using VisionTools;
+using System.Threading;
 
 namespace Demo
 {
@@ -23,7 +26,7 @@ namespace Demo
         public enum MachineRunMode
         {
             NormalRun,
-            Assemble_Dry_Run,
+            DryRun,
             Conveyor_Dry_Run,
             Entire_Machine_Dry_Run,
             Single_Reinspection
@@ -43,21 +46,23 @@ namespace Demo
         //Tạo ra các setting cần thiết trong folder Settings
 
         //Setting chạy runing lúc thường và lúc chạy DOE
-        public static SettingOption SettingOption;
-        public static SettingOption SettingOption_PD = new SettingOption();
-        public static SettingOption SettingOption_DOE = new SettingOption();
+        public static SettingMachine SettingOption;
+        public static SettingMachine SettingOption_PD = new SettingMachine();
+        public static SettingMachine SettingOption_DOE = new SettingMachine();
 
-        public static SettingOption Setting_Model1 = new SettingOption();
-        public static SettingOption Setting_Model2 = new SettingOption();
-        public static SettingOption Setting_Model3 = new SettingOption();        
+        public static SettingMachine Setting_Model = new SettingMachine();     
 
-        public static SettingICT SettingICT;
-        public static SettingICT SettingICT_PD = new SettingICT();  
-        public static SettingICT SettingICT_DOE = new SettingICT();
+        public static SettingParameter SettingParameter;
+        public static SettingParameter SettingICT_PD = new SettingParameter();  
+        public static SettingParameter SettingICT_DOE = new SettingParameter();
 
-        public static SettingICT Parameter_mode1 = new SettingICT();
-        public static SettingICT Parameter_mode2 = new SettingICT();
-        public static SettingICT Parameter_mode3 = new SettingICT();
+        public static SettingParameter Parameter_Model = new SettingParameter();
+        public static List<Edit_Vision> ListProcessCreatorUI = new List<Edit_Vision> ();
+        public static List<Process> ListProcess = new List<Process> ();
+
+        public static SettingCode SettingSerialNumber = new SettingCode();
+
+        public static bool isDryrun = false;
 
         public static event EventHandler AutoRunChangeSettingHandle;
 
@@ -74,8 +79,20 @@ namespace Demo
         public static ClearGridViewData ClearGridViewDataDelegate;
 
         public delegate void WaitTaskStop();
-        public static WaitTaskStop OnWaitTaskStop;        
+        public static WaitTaskStop OnWaitTaskStop;   
         
+        public static void AddProcessCreatorUI()
+        {
+            ListProcessCreatorUI.Add(new Edit_Vision()); 
+            ListProcessCreatorUI.Add(new Edit_Vision());
+            for (int i = 0; i < ListProcessCreatorUI.Count; i++)
+            {
+                ListProcessCreatorUI[i].Process = ListProcess[i];
+                ListProcessCreatorUI[i].processCreatorUI1.RunTool();
+            }
+        }
+
+
         public static void SetTopState()
         {
             if (SetStateTop != null)
@@ -107,21 +124,23 @@ namespace Demo
 
         public static MotorSpeed motorSpeed = new MotorSpeed();
 
+        public static bool OpenDebugForm = false;
         public static void CreateModelFolder()
         {
-            Setting_Model1 = new SettingOption();
-            Parameter_mode1 = new SettingICT();
-
+            Setting_Model = new SettingMachine();
+            Parameter_Model = new SettingParameter();
+            SettingSerialNumber = new SettingCode();
 
             XSettingManager.Instance.SettingMap.Clear();
             //XSettingManager.Instance.sett.Clear();
             #region Loading configuration information
             //Tạo đường link cho các path setting
-            //Globals.SettingOption_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingOption_PD.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingOption");
-            //Globals.SettingICT_PD.SetPathAndRoot("D:\\AOI_Config\\Setting\\SettingICT.xml", "Setting", Globals.Dir_Record_BackupConfig + "SettingOption");
+            var backupConfig = Globals.Dir_Record_BackupConfig + $"\\{LoadModel.currentModel.modelName}\\" + "SettingOption";
+            Globals.Setting_Model.SetPathAndRoot($"D:\\AOI_Config\\Setting\\{LoadModel.currentModel.modelName}\\SettingOption_Model.xml", "Setting", backupConfig);
+            Globals.Parameter_Model.SetPathAndRoot($"D:\\AOI_Config\\Setting\\{LoadModel.currentModel.modelName}\\Paramter_Model.xml", "Setting", backupConfig);
+            Globals.SettingSerialNumber.SetPathAndRoot($"D:\\AOI_Config\\Setting\\{LoadModel.currentModel.modelName}\\SerialNumber_Model.xml", "Setting", backupConfig);
 
-            Globals.Setting_Model1.SetPathAndRoot($"D:\\AOI_Config\\Setting\\{LoadModel.currentModel.modelName}\\SettingOption_Model.xml", "Setting", Globals.Dir_Record_BackupConfig + $"\\{LoadModel.currentModel.modelName}\\" + "SettingOption");
-            Globals.Parameter_mode1.SetPathAndRoot($"D:\\AOI_Config\\Setting\\{LoadModel.currentModel.modelName}\\Paramter_Model.xml", "Setting", Globals.Dir_Record_BackupConfig + $"\\{LoadModel.currentModel.modelName}\\" + "SettingOption");
+
             #endregion
 
             #region Bind Setting
@@ -138,11 +157,10 @@ namespace Demo
                     indexModel = model.Index;
                 }
             }
-            //Console.WriteLine($"id Option {(int)SettingId.Option_model1 +indexModel}");
-            //Console.WriteLine($"id Parameter {(int)SettingId.Paramter_Model + indexModel}");
 
-            XSettingManager.Instance.BindSetting((int)SettingId.Option_model1 + indexModel, Setting_Model1, SettingId.Option_model1.ToString());
-            XSettingManager.Instance.BindSetting((int)SettingId.Paramter_Model + indexModel, Parameter_mode1, SettingId.Paramter_Model.ToString());
+            XSettingManager.Instance.BindSetting((int)SettingId.Option_Model + indexModel, Setting_Model, SettingId.Option_Model.ToString());
+            XSettingManager.Instance.BindSetting((int)SettingId.Paramter_Model + indexModel, Parameter_Model, SettingId.Paramter_Model.ToString());
+           XSettingManager.Instance.BindSetting((int)SettingId.SerialNumber_Model + indexModel, SettingSerialNumber, SettingId.SerialNumber_Model.ToString());
 
             #endregion
             //Load setting vào instance
@@ -154,59 +172,98 @@ namespace Demo
             //Add setting to machine or mode DOE
             //Chạy chế độ DOE
 
-            SettingICT = Parameter_mode1;
-            SettingOption = Setting_Model1;
 
-
-           // ChangeParaterForEachModel();
-
-
-
+            SettingParameter = Parameter_Model;
+            SettingOption = Setting_Model;           
 
             //if (Globals.IsDOE)
             //    AddDOECompensationXYR();
             //else
             //    AddPDCompensationXYR();
 
-            //SettingICT = SettingICT_PD;
+            //SettingParameter = SettingICT_PD;
             //SettingOption = SettingOption_PD;
 
 
 
             //Đổi ngôn ngữ
-            MultiLanguage.ChangeLanguage(Globals.SettingOption.语言, true);
-            Globals.SettingOption.语言 = LanguageType.English;
-            //Bind dữ liệu
+            MultiLanguage.ChangeLanguage(Globals.SettingOption.LanguageType, true);
+            Globals.SettingOption.LanguageType = LanguageType.English;
+            //Gán dữ liệu vào chương trình chạy
             GlobalsAutoConfig.BindDevice();
             //Update thông số tốc độ Axis
             //XAxis.updateSpeed += motorSpeed.UpdateSpeedParameter;
-            #region Gan task
+
             //Tạo các station id
             XController.Instance.StationId = -1;
             XStationManager.Instance.BindStation((int)StationId.Scanner, StationId.Scanner.ToString());
-            //Gán task cho tứng station
+            //Gán task cho từng station
+            //Gán task70 vào station 4
+            //1 station có thể có nhiều task, báo trạng thái của state
             XStationManager.Instance.FindStationById((int)StationId.Scanner).BindTask((int)TaskId.Task70_ScannerBox);
-            #endregion
 
-            #region Gán tọa độ
+
             //Tạo đường dẫn file tọa độ
             XPositionManager.Instance.SetPositionXmlPathAndRoot("D:\\AOI_Config\\Position\\", "Position.xml", "PositionName.xml", "Position", Dir_BackUpConfigPosition);
             //Gán tọa độ cho từng task
             XPositionManager.Instance.BindPositionTableByTaskId((int)TaskId.Task70_ScannerBox);
+            //Load tọa độ
             XPositionManager.Instance.LoadPositionSet();
 
-            //XModelManager.Instance.SetModelXmlPathAndRoot("D:\\AOI_Config\\Position\\", "Models.xml", "models", Dir_BackUpConfigPosition, 
-            //(int)TaskId.Task70_ScannerBox, "Position.xml", "PositionName.xml", "Position", Dir_BackUpConfigPosition);
-            #endregion
             //Cau hinh tin hieu
-            #region binding EMG,Stop,Door signal
             //XMachine.Instance.AddEStopDi((int)DiId.)
             //XMachine.Instance.DoorEnabled = Globals.SettingOption.IsOpensafeDoor();
             //XMachine.Instance.SafeDoorEStop = Globals.SettingOption.是否开启安全门急停复位;
             //XMachine.Instance.AddDoorDi((int)DiId.主设备门禁1, false);
             //XMachine.Instance.AddDoorDi((int)DiId.主设备门禁3, false);
 
-            #endregion
+            LoadVisionTools();
+        }
+        public static void LoadVisionTools()
+        {
+            try
+            {
+                System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+                sw.Start();
+                string VisionPath = $"D:\\AOI_Config\\Setting\\{LoadModel.currentModel.modelName}\\VisionTools";
+                string[] visionTool = { "Capture1.vpj", "Capture2.vpj" };
+                for (int i = 0; i < visionTool.Length; i++)
+                {
+                    if (!File.Exists(Path.Combine(VisionPath, visionTool[i])))
+                    {
+                        Process process = new Process();
+                        process.Path = Path.Combine(VisionPath, visionTool[i]);
+                        process.Name = visionTool[i];
+                        CreateProcess(Edit_Vision.Instance.processCreatorUI1, process);
+                    }
+                }
+                Console.WriteLine("Create tool {0}",sw.ElapsedMilliseconds);
+                string[] vpjFiles = Directory.GetFiles(VisionPath, "*.vpj", SearchOption.AllDirectories);
+                foreach (string vpjFile in vpjFiles)
+                {
+                    Edit_Vision.Instance.processCreatorUI1.OpenProcessFile(vpjFile);
+                    ListProcess.Add(Edit_Vision.Instance.processCreatorUI1.ProcessDisplay.Process);                   
+                }
+                Console.WriteLine("load tool {0}", sw.ElapsedMilliseconds);
+
+
+                Thread thread = new Thread(() => AddProcessCreatorUI());
+                thread.IsBackground = true;
+                thread.Start();
+                Console.WriteLine("run tool {0}", sw.ElapsedMilliseconds);
+                sw.Stop();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+        public static void CreateProcess(ProcessCreatorUI processCreatorUI, Process process)
+        {
+
+            processCreatorUI.ProcessDisplay.Process = process;
+            bool num = processCreatorUI.serializer.SaveProcess(process, process.Path);
         }
 
         //Đường dẫn file config
@@ -215,6 +272,8 @@ namespace Demo
         public const string Dir_Record_PDCALog = Dir_Record + "PDCALog\\";
         public const string Dir_Record_MESLog = Dir_Record + "MESLog\\";
         public const string Dir_Task70 = Dir_Record + "Dir_Task70\\";
+
+        public const string Dir_SourceImage = "E:\\Vision\\";
         //Link backup
         public const string Dir_Record_BackupConfig = "E:\\BackupConfig\\Setting\\";
         public const string Dir_BackUpConfigPosition = "E:\\BackUpConfig\\Position\\";
@@ -354,12 +413,99 @@ namespace Demo
 
         public static MachineRunMode RUNMODE;
         //Ghi log main
-        public static void WriteCoverCTLog(string message)
+        public static void WriteMainLog(string message)
         {
             string path = Dir_Record_CoverLog + "//MainLog" + DateTime.Today.ToString("yyyyMMdd") + ".txt";
             string str = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss:fff") + " => " + message;
             CsvServer.Instance.WriteLine(path, str);
         }
+
+        public static void SaveImageToFolder(Mat source1, Mat source2, Mat ImageResult1, Mat ImageResult2, bool result)
+        {
+            System.Threading.Thread SaveImage = new System.Threading.Thread(new System.Threading.ThreadStart(()=>
+                {
+                    var url = Globals.Dir_SourceImage + LoadModel.currentModel.modelName + "\\" + DateTime.Now.ToString("yyyy_MM_dd");
+
+                    ClearOldImage(url);
+                    // "E:\\Vision\\";
+                    //Tạo đường dẫn cho path save image
+
+                    var source = url + "Pass" + "\\" + DateTime.Now.ToString("HH:00") + "\\";
+                    var fileOK = url + "OK" + "\\" + DateTime.Now.ToString("HH:00") + "\\";
+                    var fileNG = url + "NG" + "\\" + DateTime.Now.ToString("HH:00") + "\\";
+                    CreateDirectory(source);
+                    CreateDirectory(fileOK);
+                    CreateDirectory(fileNG);
+                    //Lưu ảnh gốc
+                    var fileName = source + DateTime.Now.ToString("HH_mm_ss_ff") + "_(1)" + ".jpg";
+                    source1.SaveImage(fileName);
+
+                    fileName = source + DateTime.Now.ToString("HH_mm_ss_ff") + "_(2)" + ".jpg";
+                    source2.SaveImage(fileName);
+
+                    //save image pass
+                    if (result)
+                    {
+                        //Lưu ảnh pass
+                        fileName = fileOK + DateTime.Now.ToString("HH_mm_ss_ff") + "_(1)" + ".jpg";
+                        if (ImageResult1 != null)
+                        {
+                            ImageResult1.SaveImage(fileName);
+                           // ImageResult1.Dispose();
+                        }
+                        fileName = fileOK + DateTime.Now.ToString("HH_mm_ss_ff") + "_(2)" + ".jpg";
+                        if (ImageResult2 != null)
+                        {
+                            ImageResult2.SaveImage(fileName);
+                            //ImageResult2.Dispose();
+                        }
+
+                    }
+                    else
+                    {
+                        // Lưu ảnh kiểm tra lỗi
+                        fileName = fileNG + DateTime.Now.ToString("HH_mm_ss_ff") + "_(1)" + ".jpg";
+                        if (ImageResult1 != null)
+                        {
+                            ImageResult1.SaveImage(fileName);
+                           // ImageResult1.Dispose();
+                        }
+
+                        fileName = fileNG + DateTime.Now.ToString("HH_mm_ss_ff") + "_(2)" + ".jpg";
+                        if (ImageResult2 != null)
+                        {
+                            ImageResult2.SaveImage(fileName);
+                           //ImageResult2.Dispose();
+
+                        }
+                    }
+                }            
+            ));
+            SaveImage.IsBackground = true;
+            SaveImage.Start();
+
+        }
+        //Clear old image depend on date
+        private static void ClearOldImage(string url)
+        {
+            DateTime now = DateTime.Now;
+            string[] fileList = Directory.GetDirectories(url);
+            for (int i = 0; i < fileList.Length; i++)
+            {
+                DirectoryInfo dir = new System.IO.DirectoryInfo(fileList[i]);
+                DateTime dt = dir.CreationTime;
+                int tep = (now - dt).Days;
+                if ((now - dt).Days > 30)
+                {
+                    try
+                    {
+                        Directory.Delete(fileList[i], true);
+                    }
+                    catch { }
+                }
+            }
+        }
+
         public static void AddPDCompensationXYR()
         {
             SettingOption = SettingOption_PD;
@@ -372,12 +518,47 @@ namespace Demo
         }
 
         public static void ChangeParaterForEachModel()
-        {
-            
-            SettingOption = Setting_Model1;
-            SettingICT = Parameter_mode1;
-            Console.WriteLine(SettingICT.PLC_IP);
+        {            
+            SettingOption = Setting_Model;
+            SettingParameter = Parameter_Model;
             return;
         }
+
+        public static List<HikCam> ListCams = new List<HikCam>();
+        public static int OpenCameraRet = -1;
+        public static HikCam Cam1;
+        public static bool ConnectCamera()
+        {
+            if(OpenCameraRet != -1)
+            {
+                return true;
+            }
+            Cam1 = new HikCam(Globals.SettingParameter.CCD_Name);
+            OpenCameraRet = Cam1.Open();
+            if(OpenCameraRet == -1)
+            {
+                return false;
+            }
+            Cam1.SetExposeTime(5000);
+            ListCams.Add(Cam1);
+            return true;
+
+        }
+
+        public static void DisconectCamera()
+        {
+            if(Cam1!= null)
+               Cam1.Close();
+        }
+
+        public static bool isMES = false;
+        public static bool isSn = false;
+        public static bool isPn = false;
+        public static bool isImage1 = false;
+        public static bool isImage2 = false;
+        public static bool AOI_Result = false;
+        public static bool isStation = false;
+
+
     }
 }

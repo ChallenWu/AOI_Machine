@@ -136,28 +136,28 @@ namespace XCore
             switch (sts)
             { 
                 case XStationState.ESTOP:
-                    button1.Text = MultiLanguage.GetMessage("急停按下")+">>>";
+                    button1.Text = MultiLanguage.GetMessage("ESTOP PRESS")+">>>";
                     break;
                 case XStationState.ALARM:
-                    button1.Text = MultiLanguage.GetMessage("发现报警")+">>>"+MultiLanguage.GetMessage("等待复位");
+                    button1.Text = MultiLanguage.GetMessage("ERROR")+">>>"+MultiLanguage.GetMessage("WAIT RESET ERROR");
                     break;
                 case XStationState.PAUSE:
-                    button1.Text = MultiLanguage.GetMessage("暂停中")+">>>"+MultiLanguage.GetMessage("等待运行");
+                    button1.Text = MultiLanguage.GetMessage("PAUSE")+">>>"+MultiLanguage.GetMessage("WAIT RUN");
                     break;
                 case XStationState.RESETING:
-                    button1.Text = MultiLanguage.GetMessage("复位中")+">>>";
+                    button1.Text = MultiLanguage.GetMessage("RESETTING")+">>>";
                     break;
                 case XStationState.RUNNING:
-                    button1.Text = MultiLanguage.GetMessage("运行中")+">>>";
+                    button1.Text = MultiLanguage.GetMessage("RUNNING")+">>>";
                     break;
                 case XStationState.STOP:
-                    button1.Text = MultiLanguage.GetMessage("停止")+">>>"+MultiLanguage.GetMessage("等待复位");
+                    button1.Text = MultiLanguage.GetMessage("STOP")+">>>"+MultiLanguage.GetMessage("WAIT RUN");
                     break;
                 case XStationState.WAITRESET:
-                    button1.Text = ">>>"+MultiLanguage.GetMessage("等待复位");
+                    button1.Text = ">>>"+MultiLanguage.GetMessage("WAIT RESET");
                     break;
                 case XStationState.WAITRUN:
-                    button1.Text = ">>>"+MultiLanguage.GetMessage("等待运行");
+                    button1.Text = ">>>"+MultiLanguage.GetMessage("WAIT RUN");
                     break;
             }
         }

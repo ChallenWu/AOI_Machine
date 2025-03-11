@@ -51,9 +51,9 @@ namespace Demo.Id
         }
         private static void BindTask()
         {
-            //Tao task 
+            //Khai báo task
             Task70_Scanner task70_ScannerInTask = new Task70_Scanner(Globals.Dir_Task70);
-            //Add task vào trong Task XCore
+            //Gắn task vào trong process
             XTaskManager.Instance.BindTask((int)TaskId.Task70_ScannerBox, task70_ScannerInTask, TaskId.Task70_ScannerBox.ToString());
 
         }

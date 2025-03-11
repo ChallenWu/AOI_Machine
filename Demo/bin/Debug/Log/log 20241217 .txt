@@ -1,0 +1,3 @@
+2024/12/17 10:14:52:785 => Station4 => AlarmCode:10019 => Category:ScanningError => Scanner không đọc được SN của sản phẩm
+2024/12/17 10:20:36:811 => Station4 => AlarmCode:10020 => Category:ScanningError => Scanner không đọc được SN của sản phẩm
+2024/12/17 10:28:26:610 => Station4 => AlarmCode:10020 => Category:ScanningError => Scanner không đọc được PN của sản phẩm

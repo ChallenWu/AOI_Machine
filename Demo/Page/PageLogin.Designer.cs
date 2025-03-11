@@ -56,9 +56,9 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(35, 108);
+            this.label1.Location = new System.Drawing.Point(35, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 28);
+            this.label1.Size = new System.Drawing.Size(150, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "User Name";
             // 
@@ -66,7 +66,7 @@
             // 
             this.comboBox_User.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_User.FormattingEnabled = true;
-            this.comboBox_User.Location = new System.Drawing.Point(40, 139);
+            this.comboBox_User.Location = new System.Drawing.Point(40, 128);
             this.comboBox_User.Name = "comboBox_User";
             this.comboBox_User.Size = new System.Drawing.Size(386, 28);
             this.comboBox_User.TabIndex = 1;
@@ -74,9 +74,9 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(35, 175);
+            this.label2.Location = new System.Drawing.Point(35, 162);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(150, 28);
+            this.label2.Size = new System.Drawing.Size(150, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
             // 
@@ -84,16 +84,17 @@
             // 
             this.textBox_Password.BackColor = System.Drawing.SystemColors.Window;
             this.textBox_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_Password.Location = new System.Drawing.Point(40, 206);
+            this.textBox_Password.Location = new System.Drawing.Point(40, 190);
             this.textBox_Password.Name = "textBox_Password";
             this.textBox_Password.Size = new System.Drawing.Size(386, 26);
             this.textBox_Password.TabIndex = 3;
             // 
             // button_Login
             // 
-            this.button_Login.Location = new System.Drawing.Point(40, 259);
+            this.button_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Login.Location = new System.Drawing.Point(40, 239);
             this.button_Login.Name = "button_Login";
-            this.button_Login.Size = new System.Drawing.Size(114, 62);
+            this.button_Login.Size = new System.Drawing.Size(114, 57);
             this.button_Login.TabIndex = 4;
             this.button_Login.Text = "Login";
             this.button_Login.UseVisualStyleBackColor = true;
@@ -101,9 +102,10 @@
             // 
             // btn_Register
             // 
-            this.btn_Register.Location = new System.Drawing.Point(176, 259);
+            this.btn_Register.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Register.Location = new System.Drawing.Point(176, 239);
             this.btn_Register.Name = "btn_Register";
-            this.btn_Register.Size = new System.Drawing.Size(114, 62);
+            this.btn_Register.Size = new System.Drawing.Size(114, 57);
             this.btn_Register.TabIndex = 5;
             this.btn_Register.Text = "Register";
             this.btn_Register.UseVisualStyleBackColor = true;
@@ -111,20 +113,21 @@
             // 
             // button_LogOut
             // 
-            this.button_LogOut.Location = new System.Drawing.Point(312, 259);
+            this.button_LogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_LogOut.Location = new System.Drawing.Point(312, 239);
             this.button_LogOut.Name = "button_LogOut";
-            this.button_LogOut.Size = new System.Drawing.Size(114, 62);
+            this.button_LogOut.Size = new System.Drawing.Size(114, 57);
             this.button_LogOut.TabIndex = 6;
-            this.button_LogOut.Text = "LogOut";
+            this.button_LogOut.Text = "Log Out";
             this.button_LogOut.UseVisualStyleBackColor = true;
             this.button_LogOut.Click += new System.EventHandler(this.button_LogOut_Click);
             // 
             // button_Exit
             // 
-            this.button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Exit.Location = new System.Drawing.Point(960, 602);
+            this.button_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.button_Exit.Location = new System.Drawing.Point(975, 556);
             this.button_Exit.Name = "button_Exit";
-            this.button_Exit.Size = new System.Drawing.Size(129, 62);
+            this.button_Exit.Size = new System.Drawing.Size(114, 57);
             this.button_Exit.TabIndex = 7;
             this.button_Exit.Text = "Exit";
             this.button_Exit.UseVisualStyleBackColor = true;
@@ -133,6 +136,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Controls.Add(this.roundPanel1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.comboBox_User);
@@ -143,7 +147,7 @@
             this.panel1.Controls.Add(this.btn_Register);
             this.panel1.Location = new System.Drawing.Point(608, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 339);
+            this.panel1.Size = new System.Drawing.Size(484, 313);
             this.panel1.TabIndex = 10;
             // 
             // roundPanel1
@@ -151,9 +155,9 @@
             this.roundPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.roundPanel1.BackgroundImage = global::Demo.Properties.Resources.user;
             this.roundPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundPanel1.Location = new System.Drawing.Point(28, 18);
+            this.roundPanel1.Location = new System.Drawing.Point(28, 17);
             this.roundPanel1.Name = "roundPanel1";
-            this.roundPanel1.Size = new System.Drawing.Size(75, 75);
+            this.roundPanel1.Size = new System.Drawing.Size(75, 69);
             this.roundPanel1.TabIndex = 7;
             // 
             // errorProvider1
@@ -166,56 +170,56 @@
             // 
             // switchButtonGRR
             // 
-            this.switchButtonGRR.Location = new System.Drawing.Point(162, 166);
+            this.switchButtonGRR.Location = new System.Drawing.Point(162, 153);
             this.switchButtonGRR.Name = "switchButtonGRR";
-            this.switchButtonGRR.Size = new System.Drawing.Size(210, 58);
+            this.switchButtonGRR.Size = new System.Drawing.Size(210, 54);
             this.switchButtonGRR.STS = false;
             this.switchButtonGRR.TabIndex = 12;
             // 
             // switchButton_CPKGRR
             // 
-            this.switchButton_CPKGRR.Location = new System.Drawing.Point(162, 240);
+            this.switchButton_CPKGRR.Location = new System.Drawing.Point(162, 222);
             this.switchButton_CPKGRR.Name = "switchButton_CPKGRR";
-            this.switchButton_CPKGRR.Size = new System.Drawing.Size(210, 58);
+            this.switchButton_CPKGRR.Size = new System.Drawing.Size(210, 54);
             this.switchButton_CPKGRR.STS = false;
             this.switchButton_CPKGRR.TabIndex = 11;
             // 
             // switchButton_Engineering
             // 
-            this.switchButton_Engineering.Location = new System.Drawing.Point(162, 92);
+            this.switchButton_Engineering.Location = new System.Drawing.Point(162, 85);
             this.switchButton_Engineering.Name = "switchButton_Engineering";
-            this.switchButton_Engineering.Size = new System.Drawing.Size(210, 58);
+            this.switchButton_Engineering.Size = new System.Drawing.Size(210, 54);
             this.switchButton_Engineering.STS = false;
             this.switchButton_Engineering.TabIndex = 9;
             // 
             // switchButton_Production
             // 
-            this.switchButton_Production.Location = new System.Drawing.Point(162, 18);
+            this.switchButton_Production.Location = new System.Drawing.Point(162, 17);
             this.switchButton_Production.Name = "switchButton_Production";
-            this.switchButton_Production.Size = new System.Drawing.Size(210, 58);
+            this.switchButton_Production.Size = new System.Drawing.Size(210, 54);
             this.switchButton_Production.STS = false;
             this.switchButton_Production.TabIndex = 8;
             // 
             // userAccountManager1
             // 
-            this.userAccountManager1.Location = new System.Drawing.Point(36, 347);
+            this.userAccountManager1.Location = new System.Drawing.Point(36, 320);
             this.userAccountManager1.Margin = new System.Windows.Forms.Padding(2);
             this.userAccountManager1.Name = "userAccountManager1";
-            this.userAccountManager1.Size = new System.Drawing.Size(526, 274);
+            this.userAccountManager1.Size = new System.Drawing.Size(526, 253);
             this.userAccountManager1.TabIndex = 13;
             // 
             // roundPanel2
             // 
             this.roundPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.roundPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.roundPanel2.Location = new System.Drawing.Point(608, 357);
+            this.roundPanel2.Location = new System.Drawing.Point(608, 330);
             this.roundPanel2.Name = "roundPanel2";
-            this.roundPanel2.Size = new System.Drawing.Size(484, 310);
+            this.roundPanel2.Size = new System.Drawing.Size(484, 286);
             this.roundPanel2.TabIndex = 14;
             // 
             // PageLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Controls.Add(this.userAccountManager1);
@@ -226,8 +230,9 @@
             this.Controls.Add(this.switchButton_Production);
             this.Controls.Add(this.button_Exit);
             this.Controls.Add(this.roundPanel2);
+            this.Font = new System.Drawing.Font("SimSun", 9F);
             this.Name = "PageLogin";
-            this.Size = new System.Drawing.Size(1092, 667);
+            this.Size = new System.Drawing.Size(1092, 616);
             this.Load += new System.EventHandler(this.PageLogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

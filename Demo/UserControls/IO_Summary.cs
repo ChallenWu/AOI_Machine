@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sunny.UI;
 
 namespace Demo
 {
@@ -63,6 +64,5 @@ namespace Demo
         {
             this.InvokeOnClick(this, EventArgs.Empty);
         }
-
     }
 }

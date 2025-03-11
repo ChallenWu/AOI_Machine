@@ -63,7 +63,7 @@ namespace XCore.Framework.MultiLang
         {
             return false;
         }
-        //通过重载下面这个属性，可以将属性在PropertyGrid中的显示设置成中文
+        //By overloading the following property, you can set the display of properties in PropertyGrid to Chinese
         public override string DisplayName
         {
             get
@@ -100,6 +100,25 @@ namespace XCore.Framework.MultiLang
                 else
                     return "";
             }
+
+        }
+        public override string Description
+        {
+            get
+            {
+                if (info != null)
+                {
+                    MyPropertyAttribute uicontrolattibute = (MyPropertyAttribute)Attribute.GetCustomAttribute(info, typeof(MyPropertyAttribute));
+                    if (uicontrolattibute != null)
+                        return uicontrolattibute.Description;
+                    else
+                    {
+                        return info.Name;
+                    }
+                }
+                else
+                    return "";
             }
         }
+    }     
 }

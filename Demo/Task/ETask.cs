@@ -64,7 +64,7 @@ namespace Demo.Task
             if (logMessage == message)
                 return;
             logMessage = message;
-            string path = LogPath + ((TaskId)TaskId).ToString() + DateTime.Today.ToString("yyyyMMdd") + ".txt";
+            string path = LogPath + ((TaskId)TaskId).ToString() + DateTime.Today.ToString("yyyyMMdd") + "ErrorLog.txt";
             string str = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss:fff") + " => " + message;
             CsvServer.Instance.WriteLine(path, str);
         }
@@ -91,7 +91,7 @@ namespace Demo.Task
 
             string szSeverity = XAlarmReporter.Instance.SystemAlarms[alarmId].AlarmLevel.ToString();
             string szSolution = XAlarmReporter.Instance.SystemAlarms[alarmId].Solution;
-
+            //Ghi log vào file
             WriteLog("Device error, error code:" + (int)alarmId + ", error message:" + alarmId.ToString() + ", " + szDescrip);
 
             

@@ -34,6 +34,8 @@ namespace Demo.Page
         private ModeType mode = 0;
         public Action<ModeType> ONShowPage;
 
+        public Action ShowResult;
+
         public PageLogin()
         {
             InitializeComponent();
@@ -116,11 +118,10 @@ namespace Demo.Page
                 AdminUserPrivilige();
                 UserAccountControl.currentAccount = UserAccountControl.Administrator;                
                 RequestUpdateLabel(UserAccountControl.currentAccount.Account , "Admin");
-
+                Globals.WriteMainLog($"{UserAccountControl.currentAccount.Name} login");
             }
             else
-                errorProvider1.SetError(textBox_Password, MultiLanguage.GetMessage("密码错误"));
-
+                errorProvider1.SetError(textBox_Password, MultiLanguage.GetMessage("Wrong password"));
         }
 
         private void BOTECHLoginCheck()
@@ -135,7 +136,7 @@ namespace Demo.Page
                 RequestUpdateLabel(comboBox_User.SelectedItem.ToString(), "BOTECH Level");
             }
             else
-                errorProvider1.SetError(textBox_Password, MultiLanguage.GetMessage("密码错误"));
+                errorProvider1.SetError(textBox_Password, MultiLanguage.GetMessage("Wrong password"));
         }
 
         private void OperatorLoginCheck()
@@ -146,11 +147,10 @@ namespace Demo.Page
                 OpUserPrivilige();
                 UserAccountControl.currentAccount = UserAccountControl.Operator;
                 UpdateUserResquest?.Invoke(comboBox_User.Text, "Operator");
-
                 RequestUpdateLabel(comboBox_User.SelectedItem.ToString(), "Operator Level");
             }
             else
-                errorProvider1.SetError(textBox_Password, MultiLanguage.GetMessage("密码错误"));
+                errorProvider1.SetError(textBox_Password, MultiLanguage.GetMessage("Wrong password"));
         }
 
         private void OthersLoginCheck()
@@ -166,12 +166,11 @@ namespace Demo.Page
                     UserAccountControl.currentAccount = UserAccountControl.AllUserAccounts[comboBox_User.Text];
                     RequestUpdateLabel(UserAccountControl.currentAccount.Name, UserAccountControl.currentAccount.UserPermission.ToString());
                     XMachine.Instance.MachineMode = MachineModeType.Engineering;
+                    Globals.WriteMainLog($"{UserAccountControl.currentAccount.Name} login");
                 }
                 else
                     errorProvider1.SetError(textBox_Password, MultiLanguage.GetMessage("Wrong password"));
             }
-
-
         }
 
 
@@ -243,28 +242,6 @@ namespace Demo.Page
             this.comboBox_User.SelectedIndex = 0;
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (BzMessagebox.Show(MultiLanguage.GetMessage("是否确认退出软件？"), MultiLanguage.GetMessage("提示"),
-                System.Windows.Forms.MessageBoxButtons.OKCancel, System.Windows.Forms.MessageBoxIcon.Question) == DialogResult.OK)
-            {
-                //XStationManager.Instance.FindStationById((int)StationId.扫码).Stop();
-                //XStationManager.Instance.FindStationById((int)StationId.支架组装).Stop();
-                //XStationManager.Instance.FindStationById((int)StationId.盖板组装).Stop();
-                //XStationManager.Instance.FindStationById((int)StationId.盖板供料).Stop();
-                //XStationManager.Instance.FindStationById((int)StationId.Station31_SupportMaterial).Stop();
-                //Carrier_FlowBack.Instance.StopConveyor();
-                //DataManager.Instance.currentyield.SaveCurrentYield();
-                //DataManager.Instance.dummySNManager.Save();
-                //DataManager.Instance.toosing.Save();//刷新抛料率
-                Application.Exit();
-                Environment.Exit(0);
-
-            }
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             NoneUserPrivilige();
@@ -296,25 +273,17 @@ namespace Demo.Page
 
         private void button_LogOut_Click(object sender, EventArgs e)
         {
-            if (BzMessagebox.Show(MultiLanguage.GetMessage("是否确认退出软件？"), MultiLanguage.GetMessage("提示"),
-                System.Windows.Forms.MessageBoxButtons.OKCancel, System.Windows.Forms.MessageBoxIcon.Question) == DialogResult.OK)
-            {
-                XStationManager.Instance.FindStationById((int)StationId.Scanner).Stop();
-                //XStationManager.Instance.FindStationById((int)StationId.扫码).Stop();
-                //XStationManager.Instance.FindStationById((int)StationId.支架组装).Stop();
-                //XStationManager.Instance.FindStationById((int)StationId.盖板组装).Stop();
-                //XStationManager.Instance.FindStationById((int)StationId.盖板供料).Stop();
-                //XStationManager.Instance.FindStationById((int)StationId.Station31_SupportMaterial).Stop();
-                //Carrier_FlowBack.Instance.StopConveyor();
-                //DataManager.Instance.currentyield.SaveCurrentYield();
-                //DataManager.Instance.dummySNManager.Save();
-                //DataManager.Instance.toosing.Save();//刷新抛料率
-                Application.Exit();
-                Environment.Exit(0);
-            }
+            NoneUserPrivilige();
+            //if (BzMessagebox.Show(MultiLanguage.GetMessage("Bạn có chắc chắn thoát khỏi phần mềm không?"), MultiLanguage.GetMessage("Confirm"),
+            //    System.Windows.Forms.MessageBoxButtons.OKCancel, System.Windows.Forms.MessageBoxIcon.Question) == DialogResult.OK)
+            //{
+            //    XStationManager.Instance.FindStationById((int)StationId.Scanner).Stop();
+            //    Application.Exit();
+            //    Environment.Exit(0);
+            //}
         }
 
-        public event Action<string, string> UpdateLabelRequested;
+        public event Action<string, string> UpdateLabelRequested; 
 
         public void RequestUpdateLabel(string user, string level)
         {

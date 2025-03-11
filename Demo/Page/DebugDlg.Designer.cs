@@ -28,17 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DebugDlg));
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.tabControlDisplay = new System.Windows.Forms.TabPage();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.xCardDiTable2 = new XCore.XCardDiTable();
-            this.xCardDoTable1 = new XCore.XCardDoTable();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabSQL = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -63,10 +53,6 @@
             this.MachineStateOuALL = new System.Windows.Forms.Button();
             this.MachineStateOu = new System.Windows.Forms.Button();
             this.MachineStateIn = new System.Windows.Forms.Button();
-            this.tabPDCA = new System.Windows.Forms.TabPage();
-            this.rtBox_PDCA_ReceivedData = new System.Windows.Forms.RichTextBox();
-            this.rtBox_PDCA_SendData = new System.Windows.Forms.RichTextBox();
-            this.bt_PDCA上传 = new System.Windows.Forms.Button();
             this.tabMES = new System.Windows.Forms.TabPage();
             this.btnPassStation = new System.Windows.Forms.Button();
             this.btnGetStation = new System.Windows.Forms.Button();
@@ -122,17 +108,7 @@
             this.lbl_empNo = new System.Windows.Forms.Label();
             this.tabPLCDevice = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox_Adr3 = new System.Windows.Forms.TextBox();
@@ -144,41 +120,51 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox_Value_3 = new System.Windows.Forms.TextBox();
+            this.tb_Plc = new System.Windows.Forms.TextBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.label16 = new System.Windows.Forms.Label();
             this.textBox_Adr_1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnReadBitPlc = new System.Windows.Forms.Button();
             this.textBox_Adr2 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnReadValuePlc = new System.Windows.Forms.Button();
             this.textBox_Value_1 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox_Value_2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.textBox_IP = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox_Port = new System.Windows.Forms.TextBox();
+            this.tb_PlcPort = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.btn_Connect = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabComScanner = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnClearTcp = new System.Windows.Forms.Button();
-            this.btnSendCmd = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnTCPConnect = new System.Windows.Forms.Button();
-            this.btnTCPDisconnect = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnClearCom = new System.Windows.Forms.Button();
-            this.btnTriggerScanner = new System.Windows.Forms.Button();
-            this.txtLog = new System.Windows.Forms.TextBox();
-            this.btnConnectScanner = new System.Windows.Forms.Button();
-            this.btnDisconnectScanner = new System.Windows.Forms.Button();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabModelSetting = new System.Windows.Forms.TabPage();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.lbSpeedR = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.trackBar3 = new System.Windows.Forms.TrackBar();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.lbSpeedZ = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.lbSpeedY = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.lbSpeedX = new System.Windows.Forms.Label();
+            this.bt_JOG_NX = new System.Windows.Forms.Button();
+            this.bt_JOG_PX = new System.Windows.Forms.Button();
+            this.trackBar0 = new System.Windows.Forms.TrackBar();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pnPositionData = new System.Windows.Forms.TableLayoutPanel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -188,10 +174,13 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.btnDeletePoints = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.btnReadCurrentPoint = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnWriteMode = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnDownloadPoint = new System.Windows.Forms.ToolStripButton();
+            this.btnReadAll = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnSavePoint = new System.Windows.Forms.ToolStripButton();
             this.dgvPositions = new System.Windows.Forms.DataGridView();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -205,11 +194,22 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.dgvModel = new System.Windows.Forms.DataGridView();
-            this.sqLiteCommand1 = new System.Data.SQLite.SQLiteCommand();
-            this.axisControl1 = new Demo.UserControls.AxisControl();
-            this.tabControlDisplay.SuspendLayout();
-            this.tabControl2.SuspendLayout();
-            this.tabPage5.SuspendLayout();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnCaptureImage = new Sunny.UI.UIButton();
+            this.uiButton1 = new Sunny.UI.UIButton();
+            this.btnLiveView = new Sunny.UI.UIButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSendCmd = new System.Windows.Forms.Button();
+            this.btnClearTcp = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tb_Light2_Sensitive = new System.Windows.Forms.TextBox();
+            this.tb_Light3_Sensitive = new System.Windows.Forms.TextBox();
+            this.tb_Light1_Sensitive = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.viewEditCCD1 = new PasteLabelMachine.Controls.ViewEditCCD();
             this.tabSQL.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -217,126 +217,44 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            this.tabPDCA.SuspendLayout();
             this.tabMES.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tabPLCDevice.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox13.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox11.SuspendLayout();
-            this.groupBox10.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabComScanner.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabModelSetting.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            this.groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar0)).BeginInit();
             this.panel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.pnPositionData.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPositions)).BeginInit();
             this.tabControl3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvModel)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // tabControlDisplay
-            // 
-            this.tabControlDisplay.Controls.Add(this.tabControl2);
-            this.tabControlDisplay.Location = new System.Drawing.Point(4, 24);
-            this.tabControlDisplay.Name = "tabControlDisplay";
-            this.tabControlDisplay.Padding = new System.Windows.Forms.Padding(3);
-            this.tabControlDisplay.Size = new System.Drawing.Size(995, 689);
-            this.tabControlDisplay.TabIndex = 4;
-            this.tabControlDisplay.Text = "IO Monitor PCI";
-            this.tabControlDisplay.UseVisualStyleBackColor = true;
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Controls.Add(this.tabPage8);
-            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl2.Location = new System.Drawing.Point(3, 3);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(989, 683);
-            this.tabControl2.TabIndex = 0;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.xCardDiTable2);
-            this.tabPage5.Controls.Add(this.xCardDoTable1);
-            this.tabPage5.Location = new System.Drawing.Point(4, 24);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(981, 655);
-            this.tabPage5.TabIndex = 2;
-            this.tabPage5.Text = "Module 1";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // xCardDiTable2
-            // 
-            this.xCardDiTable2.CardID = 1;
-            this.xCardDiTable2.CardName = "主设备1";
-            this.xCardDiTable2.Location = new System.Drawing.Point(4, 10);
-            this.xCardDiTable2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.xCardDiTable2.Name = "xCardDiTable2";
-            this.xCardDiTable2.Size = new System.Drawing.Size(459, 639);
-            this.xCardDiTable2.TabIndex = 1;
-            // 
-            // xCardDoTable1
-            // 
-            this.xCardDoTable1.CardID = 1;
-            this.xCardDoTable1.CardName = "主设备1";
-            this.xCardDoTable1.Location = new System.Drawing.Point(488, 18);
-            this.xCardDoTable1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.xCardDoTable1.Name = "xCardDoTable1";
-            this.xCardDoTable1.Size = new System.Drawing.Size(477, 631);
-            this.xCardDoTable1.TabIndex = 0;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 24);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(981, 655);
-            this.tabPage6.TabIndex = 0;
-            this.tabPage6.Text = "Module 2";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Location = new System.Drawing.Point(4, 24);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(981, 655);
-            this.tabPage7.TabIndex = 1;
-            this.tabPage7.Text = "Module 3";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 24);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(981, 655);
-            this.tabPage8.TabIndex = 3;
-            this.tabPage8.Text = "Module 4";
-            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // tabSQL
             // 
             this.tabSQL.Controls.Add(this.panel1);
-            this.tabSQL.Location = new System.Drawing.Point(4, 24);
+            this.tabSQL.Location = new System.Drawing.Point(4, 34);
             this.tabSQL.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabSQL.Name = "tabSQL";
             this.tabSQL.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabSQL.Size = new System.Drawing.Size(995, 689);
+            this.tabSQL.Size = new System.Drawing.Size(1176, 718);
             this.tabSQL.TabIndex = 2;
             this.tabSQL.Text = "SQL Querry";
             this.tabSQL.UseVisualStyleBackColor = true;
@@ -353,18 +271,18 @@
             this.panel1.Location = new System.Drawing.Point(4, 3);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(987, 683);
+            this.panel1.Size = new System.Drawing.Size(1168, 712);
             this.panel1.TabIndex = 5;
             // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.testOOL);
             this.groupBox7.Controls.Add(this.testIOL);
-            this.groupBox7.Location = new System.Drawing.Point(803, 9);
+            this.groupBox7.Location = new System.Drawing.Point(959, 9);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox7.Size = new System.Drawing.Size(168, 346);
+            this.groupBox7.Size = new System.Drawing.Size(174, 346);
             this.groupBox7.TabIndex = 2;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "OperationLog";
@@ -489,11 +407,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 361);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 361);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(972, 319);
+            this.dataGridView1.Size = new System.Drawing.Size(1158, 348);
             this.dataGridView1.TabIndex = 1;
             // 
             // groupBox8
@@ -503,7 +422,7 @@
             this.groupBox8.Controls.Add(this.UnitOut_7D);
             this.groupBox8.Controls.Add(this.UnitOut_8H);
             this.groupBox8.Controls.Add(this.UnitIn);
-            this.groupBox8.Location = new System.Drawing.Point(383, 9);
+            this.groupBox8.Location = new System.Drawing.Point(433, 9);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -572,11 +491,11 @@
             this.groupBox9.Controls.Add(this.MachineStateOuALL);
             this.groupBox9.Controls.Add(this.MachineStateOu);
             this.groupBox9.Controls.Add(this.MachineStateIn);
-            this.groupBox9.Location = new System.Drawing.Point(593, 9);
+            this.groupBox9.Location = new System.Drawing.Point(702, 9);
             this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox9.Size = new System.Drawing.Size(167, 346);
+            this.groupBox9.Size = new System.Drawing.Size(164, 346);
             this.groupBox9.TabIndex = 2;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "MachineState";
@@ -614,49 +533,6 @@
             this.MachineStateIn.UseVisualStyleBackColor = true;
             this.MachineStateIn.Click += new System.EventHandler(this.MachineStateIn_Click);
             // 
-            // tabPDCA
-            // 
-            this.tabPDCA.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPDCA.Controls.Add(this.rtBox_PDCA_ReceivedData);
-            this.tabPDCA.Controls.Add(this.rtBox_PDCA_SendData);
-            this.tabPDCA.Controls.Add(this.bt_PDCA上传);
-            this.tabPDCA.Location = new System.Drawing.Point(4, 24);
-            this.tabPDCA.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPDCA.Name = "tabPDCA";
-            this.tabPDCA.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPDCA.Size = new System.Drawing.Size(995, 689);
-            this.tabPDCA.TabIndex = 3;
-            this.tabPDCA.Text = "PDCA";
-            // 
-            // rtBox_PDCA_ReceivedData
-            // 
-            this.rtBox_PDCA_ReceivedData.Location = new System.Drawing.Point(493, 31);
-            this.rtBox_PDCA_ReceivedData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rtBox_PDCA_ReceivedData.Name = "rtBox_PDCA_ReceivedData";
-            this.rtBox_PDCA_ReceivedData.Size = new System.Drawing.Size(467, 295);
-            this.rtBox_PDCA_ReceivedData.TabIndex = 31;
-            this.rtBox_PDCA_ReceivedData.Text = "";
-            // 
-            // rtBox_PDCA_SendData
-            // 
-            this.rtBox_PDCA_SendData.Location = new System.Drawing.Point(9, 31);
-            this.rtBox_PDCA_SendData.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rtBox_PDCA_SendData.Name = "rtBox_PDCA_SendData";
-            this.rtBox_PDCA_SendData.Size = new System.Drawing.Size(445, 295);
-            this.rtBox_PDCA_SendData.TabIndex = 30;
-            this.rtBox_PDCA_SendData.Text = "";
-            // 
-            // bt_PDCA上传
-            // 
-            this.bt_PDCA上传.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_PDCA上传.Location = new System.Drawing.Point(50, 344);
-            this.bt_PDCA上传.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.bt_PDCA上传.Name = "bt_PDCA上传";
-            this.bt_PDCA上传.Size = new System.Drawing.Size(127, 46);
-            this.bt_PDCA上传.TabIndex = 29;
-            this.bt_PDCA上传.Text = "PDCA Upload";
-            this.bt_PDCA上传.UseVisualStyleBackColor = true;
-            // 
             // tabMES
             // 
             this.tabMES.BackColor = System.Drawing.SystemColors.Control;
@@ -690,11 +566,11 @@
             this.tabMES.Controls.Add(this.lbl_SerialNumber);
             this.tabMES.Controls.Add(this.lbl_terminalName);
             this.tabMES.Controls.Add(this.lbl_empNo);
-            this.tabMES.Location = new System.Drawing.Point(4, 24);
+            this.tabMES.Location = new System.Drawing.Point(4, 34);
             this.tabMES.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabMES.Name = "tabMES";
             this.tabMES.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabMES.Size = new System.Drawing.Size(995, 689);
+            this.tabMES.Size = new System.Drawing.Size(1176, 718);
             this.tabMES.TabIndex = 1;
             this.tabMES.Text = "MES";
             // 
@@ -734,29 +610,29 @@
             // txt_Test
             // 
             this.txt_Test.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txt_Test.Location = new System.Drawing.Point(605, 559);
+            this.txt_Test.Location = new System.Drawing.Point(668, 554);
             this.txt_Test.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_Test.Multiline = true;
             this.txt_Test.Name = "txt_Test";
             this.txt_Test.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_Test.Size = new System.Drawing.Size(367, 124);
+            this.txt_Test.Size = new System.Drawing.Size(503, 156);
             this.txt_Test.TabIndex = 341;
             // 
             // txt_Mes
             // 
             this.txt_Mes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txt_Mes.Location = new System.Drawing.Point(3, 559);
+            this.txt_Mes.Location = new System.Drawing.Point(4, 554);
             this.txt_Mes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_Mes.Multiline = true;
             this.txt_Mes.Name = "txt_Mes";
             this.txt_Mes.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txt_Mes.Size = new System.Drawing.Size(589, 124);
+            this.txt_Mes.Size = new System.Drawing.Size(656, 156);
             this.txt_Mes.TabIndex = 334;
             // 
             // txt_MesCreate
             // 
             this.txt_MesCreate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txt_MesCreate.Location = new System.Drawing.Point(4, 11);
+            this.txt_MesCreate.Location = new System.Drawing.Point(4, 6);
             this.txt_MesCreate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_MesCreate.Multiline = true;
             this.txt_MesCreate.Name = "txt_MesCreate";
@@ -766,7 +642,7 @@
             // 
             // btn_CollectCreate
             // 
-            this.btn_CollectCreate.Location = new System.Drawing.Point(657, 491);
+            this.btn_CollectCreate.Location = new System.Drawing.Point(856, 493);
             this.btn_CollectCreate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_CollectCreate.Name = "btn_CollectCreate";
             this.btn_CollectCreate.Size = new System.Drawing.Size(307, 55);
@@ -777,7 +653,7 @@
             // 
             // btn_GetCmdCreate
             // 
-            this.btn_GetCmdCreate.Location = new System.Drawing.Point(348, 491);
+            this.btn_GetCmdCreate.Location = new System.Drawing.Point(347, 11);
             this.btn_GetCmdCreate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_GetCmdCreate.Name = "btn_GetCmdCreate";
             this.btn_GetCmdCreate.Size = new System.Drawing.Size(184, 55);
@@ -799,7 +675,7 @@
             // 
             // btn_Send
             // 
-            this.btn_Send.Location = new System.Drawing.Point(348, 8);
+            this.btn_Send.Location = new System.Drawing.Point(348, 462);
             this.btn_Send.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_Send.Name = "btn_Send";
             this.btn_Send.Size = new System.Drawing.Size(184, 62);
@@ -830,7 +706,7 @@
             "AUTO_DELINKRFID",
             "GET_GLUE_USE_STATUS",
             "MGID_GETSN_FROM_CAVITY"});
-            this.cb_pCmd.Location = new System.Drawing.Point(348, 433);
+            this.cb_pCmd.Location = new System.Drawing.Point(347, 424);
             this.cb_pCmd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cb_pCmd.Name = "cb_pCmd";
             this.cb_pCmd.Size = new System.Drawing.Size(184, 23);
@@ -850,11 +726,11 @@
             this.groupBox5.Controls.Add(this.label59);
             this.groupBox5.Controls.Add(this.label60);
             this.groupBox5.Controls.Add(this.label61);
-            this.groupBox5.Location = new System.Drawing.Point(824, 16);
+            this.groupBox5.Location = new System.Drawing.Point(964, 18);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox5.Size = new System.Drawing.Size(148, 464);
+            this.groupBox5.Size = new System.Drawing.Size(207, 464);
             this.groupBox5.TabIndex = 332;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "results";
@@ -864,7 +740,7 @@
             this.btn_AssyResultCreate.Location = new System.Drawing.Point(9, 406);
             this.btn_AssyResultCreate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_AssyResultCreate.Name = "btn_AssyResultCreate";
-            this.btn_AssyResultCreate.Size = new System.Drawing.Size(131, 46);
+            this.btn_AssyResultCreate.Size = new System.Drawing.Size(190, 46);
             this.btn_AssyResultCreate.TabIndex = 311;
             this.btn_AssyResultCreate.Text = "Create\r\nresults";
             this.btn_AssyResultCreate.UseVisualStyleBackColor = true;
@@ -874,7 +750,7 @@
             // 
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label63.Location = new System.Drawing.Point(7, 387);
+            this.label63.Location = new System.Drawing.Point(7, 376);
             this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(53, 12);
@@ -1003,21 +879,21 @@
             this.groupBox4.Controls.Add(this.lbl_uutStart);
             this.groupBox4.Controls.Add(this.label48);
             this.groupBox4.Controls.Add(this.lbl_testResult);
-            this.groupBox4.Location = new System.Drawing.Point(661, 11);
+            this.groupBox4.Location = new System.Drawing.Point(741, 16);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox4.Size = new System.Drawing.Size(155, 469);
+            this.groupBox4.Size = new System.Drawing.Size(203, 469);
             this.groupBox4.TabIndex = 331;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "testData";
             // 
             // btn_testDataCreate
             // 
-            this.btn_testDataCreate.Location = new System.Drawing.Point(7, 411);
+            this.btn_testDataCreate.Location = new System.Drawing.Point(7, 408);
             this.btn_testDataCreate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_testDataCreate.Name = "btn_testDataCreate";
-            this.btn_testDataCreate.Size = new System.Drawing.Size(140, 42);
+            this.btn_testDataCreate.Size = new System.Drawing.Size(188, 42);
             this.btn_testDataCreate.TabIndex = 311;
             this.btn_testDataCreate.Text = "Create\r\nTestData";
             this.btn_testDataCreate.UseVisualStyleBackColor = true;
@@ -1301,130 +1177,42 @@
             // tabPLCDevice
             // 
             this.tabPLCDevice.Controls.Add(this.groupBox3);
-            this.tabPLCDevice.Location = new System.Drawing.Point(4, 24);
+            this.tabPLCDevice.Location = new System.Drawing.Point(4, 34);
             this.tabPLCDevice.Name = "tabPLCDevice";
-            this.tabPLCDevice.Size = new System.Drawing.Size(995, 689);
+            this.tabPLCDevice.Size = new System.Drawing.Size(1176, 718);
             this.tabPLCDevice.TabIndex = 5;
-            this.tabPLCDevice.Text = "PLC Device";
+            this.tabPLCDevice.Text = "External Device";
             this.tabPLCDevice.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox3.Controls.Add(this.groupBox13);
-            this.groupBox3.Controls.Add(this.groupBox12);
-            this.groupBox3.Controls.Add(this.groupBox11);
             this.groupBox3.Controls.Add(this.groupBox10);
-            this.groupBox3.Location = new System.Drawing.Point(9, 12);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(982, 669);
+            this.groupBox3.Size = new System.Drawing.Size(1176, 718);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "PLC Mitsubishi";
+            this.groupBox3.Text = "External Device";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // groupBox13
+            // groupBox10
             // 
-            this.groupBox13.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox13.Controls.Add(this.label6);
-            this.groupBox13.Controls.Add(this.textBox2);
-            this.groupBox13.Controls.Add(this.button6);
-            this.groupBox13.Controls.Add(this.label22);
-            this.groupBox13.Controls.Add(this.textBox3);
-            this.groupBox13.Controls.Add(this.textBox4);
-            this.groupBox13.Controls.Add(this.label23);
-            this.groupBox13.Controls.Add(this.label24);
-            this.groupBox13.Controls.Add(this.button7);
-            this.groupBox13.Controls.Add(this.textBox5);
-            this.groupBox13.Location = new System.Drawing.Point(415, 409);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(561, 254);
-            this.groupBox13.TabIndex = 55;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Write";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(43, 35);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 15);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Address";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(100, 35);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(75, 21);
-            this.textBox2.TabIndex = 41;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(327, 35);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 23);
-            this.button6.TabIndex = 43;
-            this.button6.Text = "Write String";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(196, 71);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(38, 15);
-            this.label22.TabIndex = 50;
-            this.label22.Text = "Value";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(100, 71);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(75, 21);
-            this.textBox3.TabIndex = 44;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(240, 71);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(75, 21);
-            this.textBox4.TabIndex = 49;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(43, 71);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(51, 15);
-            this.label23.TabIndex = 45;
-            this.label23.Text = "Address";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(196, 35);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(38, 15);
-            this.label24.TabIndex = 48;
-            this.label24.Text = "Value";
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(327, 71);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 23);
-            this.button7.TabIndex = 46;
-            this.button7.Text = "ReadString";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(240, 35);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(75, 21);
-            this.textBox5.TabIndex = 47;
+            this.groupBox10.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox10.Controls.Add(this.groupBox12);
+            this.groupBox10.Controls.Add(this.tb_Plc);
+            this.groupBox10.Controls.Add(this.groupBox11);
+            this.groupBox10.Controls.Add(this.label18);
+            this.groupBox10.Controls.Add(this.tb_PlcPort);
+            this.groupBox10.Controls.Add(this.label17);
+            this.groupBox10.Controls.Add(this.btn_Connect);
+            this.groupBox10.Location = new System.Drawing.Point(12, 20);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(527, 404);
+            this.groupBox10.TabIndex = 52;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "PLC";
             // 
             // groupBox12
             // 
@@ -1439,9 +1227,9 @@
             this.groupBox12.Controls.Add(this.label3);
             this.groupBox12.Controls.Add(this.button3);
             this.groupBox12.Controls.Add(this.textBox_Value_3);
-            this.groupBox12.Location = new System.Drawing.Point(415, 201);
+            this.groupBox12.Location = new System.Drawing.Point(13, 232);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(561, 202);
+            this.groupBox12.Size = new System.Drawing.Size(500, 152);
             this.groupBox12.TabIndex = 54;
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Write";
@@ -1530,22 +1318,30 @@
             this.textBox_Value_3.Size = new System.Drawing.Size(75, 21);
             this.textBox_Value_3.TabIndex = 47;
             // 
+            // tb_Plc
+            // 
+            this.tb_Plc.Location = new System.Drawing.Point(51, 29);
+            this.tb_Plc.Name = "tb_Plc";
+            this.tb_Plc.Size = new System.Drawing.Size(170, 21);
+            this.tb_Plc.TabIndex = 26;
+            this.tb_Plc.Text = "192.168.1.11";
+            // 
             // groupBox11
             // 
             this.groupBox11.BackColor = System.Drawing.SystemColors.Control;
             this.groupBox11.Controls.Add(this.label16);
             this.groupBox11.Controls.Add(this.textBox_Adr_1);
-            this.groupBox11.Controls.Add(this.button1);
+            this.groupBox11.Controls.Add(this.btnReadBitPlc);
             this.groupBox11.Controls.Add(this.textBox_Adr2);
             this.groupBox11.Controls.Add(this.label15);
-            this.groupBox11.Controls.Add(this.button2);
+            this.groupBox11.Controls.Add(this.btnReadValuePlc);
             this.groupBox11.Controls.Add(this.textBox_Value_1);
             this.groupBox11.Controls.Add(this.label14);
             this.groupBox11.Controls.Add(this.textBox_Value_2);
             this.groupBox11.Controls.Add(this.label13);
-            this.groupBox11.Location = new System.Drawing.Point(415, 20);
+            this.groupBox11.Location = new System.Drawing.Point(13, 96);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(561, 175);
+            this.groupBox11.Size = new System.Drawing.Size(500, 130);
             this.groupBox11.TabIndex = 53;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Read";
@@ -1566,15 +1362,15 @@
             this.textBox_Adr_1.Size = new System.Drawing.Size(75, 21);
             this.textBox_Adr_1.TabIndex = 31;
             // 
-            // button1
+            // btnReadBitPlc
             // 
-            this.button1.Location = new System.Drawing.Point(320, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 23);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Read Bit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnReadBitPlc.Location = new System.Drawing.Point(320, 35);
+            this.btnReadBitPlc.Name = "btnReadBitPlc";
+            this.btnReadBitPlc.Size = new System.Drawing.Size(88, 23);
+            this.btnReadBitPlc.TabIndex = 33;
+            this.btnReadBitPlc.Text = "Read Bit";
+            this.btnReadBitPlc.UseVisualStyleBackColor = true;
+            this.btnReadBitPlc.Click += new System.EventHandler(this.btnReadBitPlc_Click);
             // 
             // textBox_Adr2
             // 
@@ -1592,20 +1388,21 @@
             this.label15.TabIndex = 35;
             this.label15.Text = "Address";
             // 
-            // button2
+            // btnReadValuePlc
             // 
-            this.button2.Location = new System.Drawing.Point(320, 62);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 23);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "Read Value";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnReadValuePlc.Location = new System.Drawing.Point(320, 62);
+            this.btnReadValuePlc.Name = "btnReadValuePlc";
+            this.btnReadValuePlc.Size = new System.Drawing.Size(88, 23);
+            this.btnReadValuePlc.TabIndex = 36;
+            this.btnReadValuePlc.Text = "Read Value";
+            this.btnReadValuePlc.UseVisualStyleBackColor = true;
+            this.btnReadValuePlc.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox_Value_1
             // 
             this.textBox_Value_1.Location = new System.Drawing.Point(233, 35);
             this.textBox_Value_1.Name = "textBox_Value_1";
+            this.textBox_Value_1.ReadOnly = true;
             this.textBox_Value_1.Size = new System.Drawing.Size(75, 21);
             this.textBox_Value_1.TabIndex = 37;
             // 
@@ -1622,6 +1419,7 @@
             // 
             this.textBox_Value_2.Location = new System.Drawing.Point(233, 61);
             this.textBox_Value_2.Name = "textBox_Value_2";
+            this.textBox_Value_2.ReadOnly = true;
             this.textBox_Value_2.Size = new System.Drawing.Size(75, 21);
             this.textBox_Value_2.TabIndex = 39;
             // 
@@ -1634,39 +1432,6 @@
             this.label13.TabIndex = 40;
             this.label13.Text = "Value";
             // 
-            // groupBox10
-            // 
-            this.groupBox10.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox10.Controls.Add(this.textBox_IP);
-            this.groupBox10.Controls.Add(this.button5);
-            this.groupBox10.Controls.Add(this.label18);
-            this.groupBox10.Controls.Add(this.textBox_Port);
-            this.groupBox10.Controls.Add(this.label17);
-            this.groupBox10.Controls.Add(this.btn_Connect);
-            this.groupBox10.Location = new System.Drawing.Point(12, 20);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(397, 643);
-            this.groupBox10.TabIndex = 52;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Connect PLC";
-            // 
-            // textBox_IP
-            // 
-            this.textBox_IP.Location = new System.Drawing.Point(51, 29);
-            this.textBox_IP.Name = "textBox_IP";
-            this.textBox_IP.Size = new System.Drawing.Size(170, 21);
-            this.textBox_IP.TabIndex = 26;
-            this.textBox_IP.Text = "192.168.1.11";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(266, 29);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(93, 47);
-            this.button5.TabIndex = 51;
-            this.button5.Text = "Status";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -1676,13 +1441,13 @@
             this.label18.TabIndex = 27;
             this.label18.Text = "IP";
             // 
-            // textBox_Port
+            // tb_PlcPort
             // 
-            this.textBox_Port.Location = new System.Drawing.Point(51, 55);
-            this.textBox_Port.Name = "textBox_Port";
-            this.textBox_Port.Size = new System.Drawing.Size(170, 21);
-            this.textBox_Port.TabIndex = 28;
-            this.textBox_Port.Text = "2000";
+            this.tb_PlcPort.Location = new System.Drawing.Point(51, 55);
+            this.tb_PlcPort.Name = "tb_PlcPort";
+            this.tb_PlcPort.Size = new System.Drawing.Size(170, 21);
+            this.tb_PlcPort.TabIndex = 28;
+            this.tb_PlcPort.Text = "2000";
             // 
             // label17
             // 
@@ -1695,9 +1460,9 @@
             // 
             // btn_Connect
             // 
-            this.btn_Connect.Location = new System.Drawing.Point(51, 82);
+            this.btn_Connect.Location = new System.Drawing.Point(246, 28);
             this.btn_Connect.Name = "btn_Connect";
-            this.btn_Connect.Size = new System.Drawing.Size(75, 32);
+            this.btn_Connect.Size = new System.Drawing.Size(107, 45);
             this.btn_Connect.TabIndex = 30;
             this.btn_Connect.Text = "Connect";
             this.btn_Connect.UseVisualStyleBackColor = true;
@@ -1705,220 +1470,373 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabMES);
-            this.tabControl1.Controls.Add(this.tabComScanner);
             this.tabControl1.Controls.Add(this.tabPLCDevice);
-            this.tabControl1.Controls.Add(this.tabPDCA);
+            this.tabControl1.Controls.Add(this.tabModelSetting);
             this.tabControl1.Controls.Add(this.tabSQL);
-            this.tabControl1.Controls.Add(this.tabControlDisplay);
+            this.tabControl1.Controls.Add(this.tabMES);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.ItemSize = new System.Drawing.Size(120, 30);
+            this.tabControl1.Location = new System.Drawing.Point(0, 35);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1003, 717);
+            this.tabControl1.Size = new System.Drawing.Size(1184, 756);
+            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 0;
             // 
-            // tabComScanner
+            // tabModelSetting
             // 
-            this.tabComScanner.BackColor = System.Drawing.SystemColors.Control;
-            this.tabComScanner.Controls.Add(this.groupBox1);
-            this.tabComScanner.Controls.Add(this.groupBox2);
-            this.tabComScanner.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabComScanner.Location = new System.Drawing.Point(4, 24);
-            this.tabComScanner.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabComScanner.Name = "tabComScanner";
-            this.tabComScanner.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabComScanner.Size = new System.Drawing.Size(995, 689);
-            this.tabComScanner.TabIndex = 0;
-            this.tabComScanner.Text = "Scanner Device";
+            this.tabModelSetting.Controls.Add(this.label29);
+            this.tabModelSetting.Controls.Add(this.label24);
+            this.tabModelSetting.Controls.Add(this.label23);
+            this.tabModelSetting.Controls.Add(this.label22);
+            this.tabModelSetting.Controls.Add(this.label6);
+            this.tabModelSetting.Controls.Add(this.groupBox15);
+            this.tabModelSetting.Controls.Add(this.groupBox14);
+            this.tabModelSetting.Controls.Add(this.groupBox13);
+            this.tabModelSetting.Controls.Add(this.groupBox16);
+            this.tabModelSetting.Controls.Add(this.panel2);
+            this.tabModelSetting.Controls.Add(this.tabControl3);
+            this.tabModelSetting.Controls.Add(this.dgvModel);
+            this.tabModelSetting.Location = new System.Drawing.Point(4, 34);
+            this.tabModelSetting.Name = "tabModelSetting";
+            this.tabModelSetting.Padding = new System.Windows.Forms.Padding(3);
+            this.tabModelSetting.Size = new System.Drawing.Size(1176, 718);
+            this.tabModelSetting.TabIndex = 6;
+            this.tabModelSetting.Text = "Model Setting";
+            this.tabModelSetting.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // label29
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.btnClearTcp);
-            this.groupBox1.Controls.Add(this.btnSendCmd);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.btnTCPConnect);
-            this.groupBox1.Controls.Add(this.btnTCPDisconnect);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(14, 343);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(970, 340);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "TCP/IP";
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(754, 281);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(94, 15);
+            this.label29.TabIndex = 27;
+            this.label29.Text = "Current Position";
             // 
-            // btnClearTcp
+            // label24
             // 
-            this.btnClearTcp.Location = new System.Drawing.Point(835, 268);
-            this.btnClearTcp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnClearTcp.Name = "btnClearTcp";
-            this.btnClearTcp.Size = new System.Drawing.Size(117, 44);
-            this.btnClearTcp.TabIndex = 19;
-            this.btnClearTcp.Text = "Clear Textbox";
-            this.btnClearTcp.UseVisualStyleBackColor = true;
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(1003, 338);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(62, 15);
+            this.label24.TabIndex = 26;
+            this.label24.Text = "R: 0 pulse";
             // 
-            // btnSendCmd
+            // label23
             // 
-            this.btnSendCmd.Location = new System.Drawing.Point(835, 193);
-            this.btnSendCmd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnSendCmd.Name = "btnSendCmd";
-            this.btnSendCmd.Size = new System.Drawing.Size(117, 44);
-            this.btnSendCmd.TabIndex = 18;
-            this.btnSendCmd.Text = "Trigger";
-            this.btnSendCmd.UseVisualStyleBackColor = true;
-            this.btnSendCmd.Click += new System.EventHandler(this.btnSendCmd_Click);
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(799, 338);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(60, 15);
+            this.label23.TabIndex = 25;
+            this.label23.Text = "Z: 0 pulse";
             // 
-            // textBox1
+            // label22
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(8, 24);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(806, 310);
-            this.textBox1.TabIndex = 17;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(1003, 305);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(60, 15);
+            this.label22.TabIndex = 24;
+            this.label22.Text = "Y: 0 pulse";
             // 
-            // btnTCPConnect
+            // label6
             // 
-            this.btnTCPConnect.Location = new System.Drawing.Point(835, 29);
-            this.btnTCPConnect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnTCPConnect.Name = "btnTCPConnect";
-            this.btnTCPConnect.Size = new System.Drawing.Size(117, 44);
-            this.btnTCPConnect.TabIndex = 9;
-            this.btnTCPConnect.Text = "Connect";
-            this.btnTCPConnect.UseVisualStyleBackColor = true;
-            this.btnTCPConnect.Click += new System.EventHandler(this.btnTCPConnect_Click);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(799, 305);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 15);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "X: 0 pulse";
             // 
-            // btnTCPDisconnect
+            // groupBox15
             // 
-            this.btnTCPDisconnect.Location = new System.Drawing.Point(835, 113);
-            this.btnTCPDisconnect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnTCPDisconnect.Name = "btnTCPDisconnect";
-            this.btnTCPDisconnect.Size = new System.Drawing.Size(117, 44);
-            this.btnTCPDisconnect.TabIndex = 11;
-            this.btnTCPDisconnect.Text = "Disconnect";
-            this.btnTCPDisconnect.UseVisualStyleBackColor = true;
+            this.groupBox15.Controls.Add(this.lbSpeedR);
+            this.groupBox15.Controls.Add(this.button13);
+            this.groupBox15.Controls.Add(this.button14);
+            this.groupBox15.Controls.Add(this.trackBar3);
+            this.groupBox15.Location = new System.Drawing.Point(741, 627);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(422, 86);
+            this.groupBox15.TabIndex = 22;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Axis R";
             // 
-            // groupBox2
+            // lbSpeedR
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox2.Controls.Add(this.btnClearCom);
-            this.groupBox2.Controls.Add(this.btnTriggerScanner);
-            this.groupBox2.Controls.Add(this.txtLog);
-            this.groupBox2.Controls.Add(this.btnConnectScanner);
-            this.groupBox2.Controls.Add(this.btnDisconnectScanner);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(14, 6);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox2.Size = new System.Drawing.Size(970, 322);
-            this.groupBox2.TabIndex = 21;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "RS232";
+            this.lbSpeedR.AutoSize = true;
+            this.lbSpeedR.Location = new System.Drawing.Point(90, 60);
+            this.lbSpeedR.Name = "lbSpeedR";
+            this.lbSpeedR.Size = new System.Drawing.Size(62, 15);
+            this.lbSpeedR.TabIndex = 52;
+            this.lbSpeedR.Text = "100 mm/s";
+            this.lbSpeedR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnClearCom
+            // button13
             // 
-            this.btnClearCom.Location = new System.Drawing.Point(845, 262);
-            this.btnClearCom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnClearCom.Name = "btnClearCom";
-            this.btnClearCom.Size = new System.Drawing.Size(117, 44);
-            this.btnClearCom.TabIndex = 19;
-            this.btnClearCom.Text = "Clear Textbox";
-            this.btnClearCom.UseVisualStyleBackColor = true;
-            this.btnClearCom.Click += new System.EventHandler(this.btnClearCom_Click);
+            this.button13.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button13.Location = new System.Drawing.Point(254, 22);
+            this.button13.Margin = new System.Windows.Forms.Padding(4);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(55, 45);
+            this.button13.TabIndex = 48;
+            this.button13.Text = "JOG -";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button13_MouseDown);
+            this.button13.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button13_MouseUp);
             // 
-            // btnTriggerScanner
+            // button14
             // 
-            this.btnTriggerScanner.Location = new System.Drawing.Point(845, 187);
-            this.btnTriggerScanner.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnTriggerScanner.Name = "btnTriggerScanner";
-            this.btnTriggerScanner.Size = new System.Drawing.Size(117, 44);
-            this.btnTriggerScanner.TabIndex = 18;
-            this.btnTriggerScanner.Text = "Trigger";
-            this.btnTriggerScanner.UseVisualStyleBackColor = true;
-            this.btnTriggerScanner.Click += new System.EventHandler(this.btnTriggerScanner_Click);
+            this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button14.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button14.Location = new System.Drawing.Point(336, 21);
+            this.button14.Margin = new System.Windows.Forms.Padding(4);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(55, 46);
+            this.button14.TabIndex = 47;
+            this.button14.Text = "JOG +";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button14_MouseDown);
+            this.button14.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button14_MouseUp);
             // 
-            // txtLog
+            // trackBar3
             // 
-            this.txtLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLog.Location = new System.Drawing.Point(8, 24);
-            this.txtLog.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txtLog.Multiline = true;
-            this.txtLog.Name = "txtLog";
-            this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLog.Size = new System.Drawing.Size(806, 283);
-            this.txtLog.TabIndex = 17;
+            this.trackBar3.AutoSize = false;
+            this.trackBar3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.trackBar3.Location = new System.Drawing.Point(16, 21);
+            this.trackBar3.Margin = new System.Windows.Forms.Padding(4);
+            this.trackBar3.Maximum = 200;
+            this.trackBar3.Minimum = 10;
+            this.trackBar3.Name = "trackBar3";
+            this.trackBar3.Size = new System.Drawing.Size(212, 35);
+            this.trackBar3.TabIndex = 41;
+            this.trackBar3.Value = 100;
+            this.trackBar3.ValueChanged += new System.EventHandler(this.trackBar3_ValueChanged);
             // 
-            // btnConnectScanner
+            // groupBox14
             // 
-            this.btnConnectScanner.Location = new System.Drawing.Point(845, 23);
-            this.btnConnectScanner.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnConnectScanner.Name = "btnConnectScanner";
-            this.btnConnectScanner.Size = new System.Drawing.Size(117, 44);
-            this.btnConnectScanner.TabIndex = 9;
-            this.btnConnectScanner.Text = "Connect";
-            this.btnConnectScanner.UseVisualStyleBackColor = true;
-            this.btnConnectScanner.Click += new System.EventHandler(this.btnConnectScanner_Click);
+            this.groupBox14.Controls.Add(this.lbSpeedZ);
+            this.groupBox14.Controls.Add(this.button11);
+            this.groupBox14.Controls.Add(this.button12);
+            this.groupBox14.Controls.Add(this.trackBar2);
+            this.groupBox14.Location = new System.Drawing.Point(741, 540);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(422, 81);
+            this.groupBox14.TabIndex = 21;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Axis Z";
             // 
-            // btnDisconnectScanner
+            // lbSpeedZ
             // 
-            this.btnDisconnectScanner.Location = new System.Drawing.Point(845, 107);
-            this.btnDisconnectScanner.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnDisconnectScanner.Name = "btnDisconnectScanner";
-            this.btnDisconnectScanner.Size = new System.Drawing.Size(117, 44);
-            this.btnDisconnectScanner.TabIndex = 11;
-            this.btnDisconnectScanner.Text = "Disconnect";
-            this.btnDisconnectScanner.UseVisualStyleBackColor = true;
-            this.btnDisconnectScanner.Click += new System.EventHandler(this.btnDisconnectScanner_Click);
+            this.lbSpeedZ.AutoSize = true;
+            this.lbSpeedZ.Location = new System.Drawing.Point(90, 57);
+            this.lbSpeedZ.Name = "lbSpeedZ";
+            this.lbSpeedZ.Size = new System.Drawing.Size(62, 15);
+            this.lbSpeedZ.TabIndex = 51;
+            this.lbSpeedZ.Text = "100 mm/s";
+            this.lbSpeedZ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tabPage1
+            // button11
             // 
-            this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Controls.Add(this.tabControl3);
-            this.tabPage1.Controls.Add(this.dgvModel);
-            this.tabPage1.Controls.Add(this.axisControl1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(995, 689);
-            this.tabPage1.TabIndex = 6;
-            this.tabPage1.Text = "MotionPLC";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.button11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button11.Location = new System.Drawing.Point(254, 21);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(55, 45);
+            this.button11.TabIndex = 48;
+            this.button11.Text = "JOG -";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button11_MouseDown);
+            this.button11.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button11_MouseUp);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button12.Location = new System.Drawing.Point(336, 21);
+            this.button12.Margin = new System.Windows.Forms.Padding(4);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(55, 46);
+            this.button12.TabIndex = 47;
+            this.button12.Text = "JOG +";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button12_MouseDown);
+            this.button12.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button12_MouseUp);
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.AutoSize = false;
+            this.trackBar2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.trackBar2.Location = new System.Drawing.Point(16, 21);
+            this.trackBar2.Margin = new System.Windows.Forms.Padding(4);
+            this.trackBar2.Maximum = 200;
+            this.trackBar2.Minimum = 10;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(212, 32);
+            this.trackBar2.TabIndex = 41;
+            this.trackBar2.Value = 100;
+            this.trackBar2.ValueChanged += new System.EventHandler(this.trackBar2_ValueChanged);
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.lbSpeedY);
+            this.groupBox13.Controls.Add(this.button9);
+            this.groupBox13.Controls.Add(this.button10);
+            this.groupBox13.Controls.Add(this.trackBar1);
+            this.groupBox13.Location = new System.Drawing.Point(741, 449);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(422, 85);
+            this.groupBox13.TabIndex = 20;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Axis Y";
+            // 
+            // lbSpeedY
+            // 
+            this.lbSpeedY.AutoSize = true;
+            this.lbSpeedY.Location = new System.Drawing.Point(90, 58);
+            this.lbSpeedY.Name = "lbSpeedY";
+            this.lbSpeedY.Size = new System.Drawing.Size(62, 15);
+            this.lbSpeedY.TabIndex = 50;
+            this.lbSpeedY.Text = "100 mm/s";
+            this.lbSpeedY.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button9
+            // 
+            this.button9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button9.Location = new System.Drawing.Point(254, 24);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(55, 45);
+            this.button9.TabIndex = 48;
+            this.button9.Text = "JOG -";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button9_MouseDown);
+            this.button9.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button9_MouseUp);
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button10.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button10.Location = new System.Drawing.Point(336, 23);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(55, 46);
+            this.button10.TabIndex = 47;
+            this.button10.Text = "JOG +";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button10_MouseDown);
+            this.button10.MouseUp += new System.Windows.Forms.MouseEventHandler(this.button10_MouseUp);
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.AutoSize = false;
+            this.trackBar1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.trackBar1.Location = new System.Drawing.Point(16, 23);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(4);
+            this.trackBar1.Maximum = 200;
+            this.trackBar1.Minimum = 10;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(212, 31);
+            this.trackBar1.TabIndex = 41;
+            this.trackBar1.Value = 100;
+            this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.lbSpeedX);
+            this.groupBox16.Controls.Add(this.bt_JOG_NX);
+            this.groupBox16.Controls.Add(this.bt_JOG_PX);
+            this.groupBox16.Controls.Add(this.trackBar0);
+            this.groupBox16.Location = new System.Drawing.Point(741, 359);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(422, 84);
+            this.groupBox16.TabIndex = 19;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "Axis X";
+            // 
+            // lbSpeedX
+            // 
+            this.lbSpeedX.AutoSize = true;
+            this.lbSpeedX.Location = new System.Drawing.Point(90, 59);
+            this.lbSpeedX.Name = "lbSpeedX";
+            this.lbSpeedX.Size = new System.Drawing.Size(62, 15);
+            this.lbSpeedX.TabIndex = 49;
+            this.lbSpeedX.Text = "100 mm/s";
+            this.lbSpeedX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bt_JOG_NX
+            // 
+            this.bt_JOG_NX.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.bt_JOG_NX.Location = new System.Drawing.Point(253, 22);
+            this.bt_JOG_NX.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_JOG_NX.Name = "bt_JOG_NX";
+            this.bt_JOG_NX.Size = new System.Drawing.Size(55, 45);
+            this.bt_JOG_NX.TabIndex = 48;
+            this.bt_JOG_NX.Text = "JOG -";
+            this.bt_JOG_NX.UseVisualStyleBackColor = true;
+            this.bt_JOG_NX.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_JOG_NX_MouseDown);
+            this.bt_JOG_NX.MouseUp += new System.Windows.Forms.MouseEventHandler(this.bt_JOG_NX_MouseUp);
+            // 
+            // bt_JOG_PX
+            // 
+            this.bt_JOG_PX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bt_JOG_PX.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.bt_JOG_PX.Location = new System.Drawing.Point(335, 21);
+            this.bt_JOG_PX.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_JOG_PX.Name = "bt_JOG_PX";
+            this.bt_JOG_PX.Size = new System.Drawing.Size(55, 46);
+            this.bt_JOG_PX.TabIndex = 47;
+            this.bt_JOG_PX.Text = "JOG +";
+            this.bt_JOG_PX.UseVisualStyleBackColor = false;
+            this.bt_JOG_PX.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bt_JOG_PX_MouseDown);
+            this.bt_JOG_PX.MouseUp += new System.Windows.Forms.MouseEventHandler(this.bt_JOG_PX_MouseUp);
+            // 
+            // trackBar0
+            // 
+            this.trackBar0.AutoSize = false;
+            this.trackBar0.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.trackBar0.Location = new System.Drawing.Point(16, 21);
+            this.trackBar0.Margin = new System.Windows.Forms.Padding(4);
+            this.trackBar0.Maximum = 200;
+            this.trackBar0.Minimum = 10;
+            this.trackBar0.Name = "trackBar0";
+            this.trackBar0.Size = new System.Drawing.Size(212, 30);
+            this.trackBar0.TabIndex = 41;
+            this.trackBar0.Value = 100;
+            this.trackBar0.ValueChanged += new System.EventHandler(this.trackBar0_ValueChanged);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.tableLayoutPanel1);
+            this.panel2.Controls.Add(this.pnPositionData);
             this.panel2.Location = new System.Drawing.Point(9, 305);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(605, 376);
+            this.panel2.Size = new System.Drawing.Size(725, 427);
             this.panel2.TabIndex = 15;
             // 
-            // tableLayoutPanel1
+            // pnPositionData
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.toolStrip1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.dgvPositions, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.70213F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.29787F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(605, 376);
-            this.tableLayoutPanel1.TabIndex = 15;
+            this.pnPositionData.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.pnPositionData.ColumnCount = 1;
+            this.pnPositionData.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.pnPositionData.Controls.Add(this.toolStrip1, 0, 0);
+            this.pnPositionData.Controls.Add(this.dgvPositions, 0, 1);
+            this.pnPositionData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnPositionData.Location = new System.Drawing.Point(0, 0);
+            this.pnPositionData.Name = "pnPositionData";
+            this.pnPositionData.RowCount = 2;
+            this.pnPositionData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.859155F));
+            this.pnPositionData.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90.14085F));
+            this.pnPositionData.Size = new System.Drawing.Size(725, 427);
+            this.pnPositionData.TabIndex = 15;
             // 
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.toolStripSeparator1,
@@ -1928,13 +1846,16 @@
             this.toolStripSeparator3,
             this.btnDeletePoints,
             this.toolStripSeparator5,
-            this.toolStripButton4,
             this.btnReadCurrentPoint,
+            this.toolStripSeparator6,
+            this.btnWriteMode,
             this.toolStripSeparator2,
-            this.btnDownloadPoint});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.btnReadAll,
+            this.toolStripSeparator7,
+            this.btnSavePoint});
+            this.toolStrip1.Location = new System.Drawing.Point(1, 1);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(605, 40);
+            this.toolStrip1.Size = new System.Drawing.Size(723, 40);
             this.toolStrip1.TabIndex = 14;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -1955,8 +1876,8 @@
             this.toolStripButton3.Image = global::Demo.Properties.Resources._start;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 37);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(28, 37);
+            this.toolStripButton3.Text = "Run Point";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripSeparator4
@@ -1970,8 +1891,8 @@
             this.btnAddPoints.Image = global::Demo.Properties.Resources._add;
             this.btnAddPoints.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAddPoints.Name = "btnAddPoints";
-            this.btnAddPoints.Size = new System.Drawing.Size(23, 37);
-            this.btnAddPoints.Text = "toolStripButton1";
+            this.btnAddPoints.Size = new System.Drawing.Size(28, 37);
+            this.btnAddPoints.Text = "Add Point";
             this.btnAddPoints.Click += new System.EventHandler(this.btnAddPoints_Click);
             // 
             // toolStripSeparator3
@@ -1985,8 +1906,8 @@
             this.btnDeletePoints.Image = global::Demo.Properties.Resources._minus;
             this.btnDeletePoints.ImageTransparentColor = System.Drawing.Color.Linen;
             this.btnDeletePoints.Name = "btnDeletePoints";
-            this.btnDeletePoints.Size = new System.Drawing.Size(23, 37);
-            this.btnDeletePoints.Text = "toolStripButton2";
+            this.btnDeletePoints.Size = new System.Drawing.Size(28, 37);
+            this.btnDeletePoints.Text = "Delete Point";
             this.btnDeletePoints.Click += new System.EventHandler(this.btnDeletePoints_Click);
             // 
             // toolStripSeparator5
@@ -1994,59 +1915,80 @@
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 40);
             // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = global::Demo.Properties.Resources._ok;
-            this.toolStripButton4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(34, 37);
-            this.toolStripButton4.Text = "toolStripButton4";
-            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
-            // 
             // btnReadCurrentPoint
             // 
             this.btnReadCurrentPoint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnReadCurrentPoint.Image = ((System.Drawing.Image)(resources.GetObject("btnReadCurrentPoint.Image")));
+            this.btnReadCurrentPoint.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnReadCurrentPoint.Image = global::Demo.Properties.Resources.locatoe;
             this.btnReadCurrentPoint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnReadCurrentPoint.Name = "btnReadCurrentPoint";
-            this.btnReadCurrentPoint.Size = new System.Drawing.Size(23, 37);
-            this.btnReadCurrentPoint.Text = "toolStripButton1";
+            this.btnReadCurrentPoint.Size = new System.Drawing.Size(28, 37);
+            this.btnReadCurrentPoint.Text = "Current Position";
             this.btnReadCurrentPoint.Click += new System.EventHandler(this.btnReadCurrentPoint_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 40);
+            // 
+            // btnWriteMode
+            // 
+            this.btnWriteMode.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnWriteMode.Image = ((System.Drawing.Image)(resources.GetObject("btnWriteMode.Image")));
+            this.btnWriteMode.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnWriteMode.Name = "btnWriteMode";
+            this.btnWriteMode.Size = new System.Drawing.Size(28, 37);
+            this.btnWriteMode.Text = "Write down";
+            this.btnWriteMode.Click += new System.EventHandler(this.btnDownloadPoint_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 40);
             // 
-            // btnDownloadPoint
+            // btnReadAll
             // 
-            this.btnDownloadPoint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnDownloadPoint.Image = ((System.Drawing.Image)(resources.GetObject("btnDownloadPoint.Image")));
-            this.btnDownloadPoint.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnDownloadPoint.Name = "btnDownloadPoint";
-            this.btnDownloadPoint.Size = new System.Drawing.Size(23, 37);
-            this.btnDownloadPoint.Text = "toolStripButton1";
-            this.btnDownloadPoint.Click += new System.EventHandler(this.btnDownloadPoint_Click);
+            this.btnReadAll.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnReadAll.Image = global::Demo.Properties.Resources.upload_icon_174183;
+            this.btnReadAll.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnReadAll.Name = "btnReadAll";
+            this.btnReadAll.Size = new System.Drawing.Size(28, 37);
+            this.btnReadAll.Text = "Upload point";
+            this.btnReadAll.Click += new System.EventHandler(this.toolStripButton1_Click_1);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(6, 40);
+            // 
+            // btnSavePoint
+            // 
+            this.btnSavePoint.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnSavePoint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnSavePoint.Image = global::Demo.Properties.Resources.savetheapplication_guardar_2958;
+            this.btnSavePoint.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSavePoint.Name = "btnSavePoint";
+            this.btnSavePoint.Size = new System.Drawing.Size(28, 37);
+            this.btnSavePoint.Text = "Lưu file tọa độ";
+            this.btnSavePoint.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // dgvPositions
             // 
             this.dgvPositions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPositions.Location = new System.Drawing.Point(3, 47);
+            this.dgvPositions.Location = new System.Drawing.Point(4, 46);
             this.dgvPositions.Name = "dgvPositions";
-            this.dgvPositions.Size = new System.Drawing.Size(599, 319);
+            this.dgvPositions.RowHeadersWidth = 62;
+            this.dgvPositions.Size = new System.Drawing.Size(717, 361);
             this.dgvPositions.TabIndex = 13;
             this.dgvPositions.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPositions_CellClick);
             // 
             // tabControl3
             // 
             this.tabControl3.Controls.Add(this.tabPage2);
-            this.tabControl3.Location = new System.Drawing.Point(620, 6);
+            this.tabControl3.Location = new System.Drawing.Point(740, 3);
             this.tabControl3.Name = "tabControl3";
             this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(367, 289);
+            this.tabControl3.Size = new System.Drawing.Size(427, 265);
             this.tabControl3.TabIndex = 14;
             // 
             // tabPage2
@@ -2063,14 +2005,14 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(359, 261);
+            this.tabPage2.Size = new System.Drawing.Size(419, 237);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "Create Model";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // btnLoadModel
             // 
-            this.btnLoadModel.Location = new System.Drawing.Point(135, 192);
+            this.btnLoadModel.Location = new System.Drawing.Point(162, 181);
             this.btnLoadModel.Name = "btnLoadModel";
             this.btnLoadModel.Size = new System.Drawing.Size(99, 38);
             this.btnLoadModel.TabIndex = 22;
@@ -2080,7 +2022,7 @@
             // 
             // btnDeleteModel
             // 
-            this.btnDeleteModel.Location = new System.Drawing.Point(254, 192);
+            this.btnDeleteModel.Location = new System.Drawing.Point(288, 181);
             this.btnDeleteModel.Name = "btnDeleteModel";
             this.btnDeleteModel.Size = new System.Drawing.Size(99, 38);
             this.btnDeleteModel.TabIndex = 19;
@@ -2090,7 +2032,7 @@
             // 
             // btnCreateModel
             // 
-            this.btnCreateModel.Location = new System.Drawing.Point(19, 192);
+            this.btnCreateModel.Location = new System.Drawing.Point(37, 181);
             this.btnCreateModel.Name = "btnCreateModel";
             this.btnCreateModel.Size = new System.Drawing.Size(99, 40);
             this.btnCreateModel.TabIndex = 18;
@@ -2100,21 +2042,21 @@
             // 
             // tbModelName
             // 
-            this.tbModelName.Location = new System.Drawing.Point(113, 122);
+            this.tbModelName.Location = new System.Drawing.Point(148, 149);
             this.tbModelName.Name = "tbModelName";
             this.tbModelName.Size = new System.Drawing.Size(171, 21);
             this.tbModelName.TabIndex = 17;
             // 
             // tbSelectModel
             // 
-            this.tbSelectModel.Location = new System.Drawing.Point(113, 49);
+            this.tbSelectModel.Location = new System.Drawing.Point(148, 54);
             this.tbSelectModel.Name = "tbSelectModel";
             this.tbSelectModel.Size = new System.Drawing.Size(171, 21);
             this.tbSelectModel.TabIndex = 16;
             // 
             // tbCurrentModel
             // 
-            this.tbCurrentModel.Location = new System.Drawing.Point(113, 16);
+            this.tbCurrentModel.Location = new System.Drawing.Point(148, 21);
             this.tbCurrentModel.Name = "tbCurrentModel";
             this.tbCurrentModel.Size = new System.Drawing.Size(171, 21);
             this.tbCurrentModel.TabIndex = 15;
@@ -2122,27 +2064,30 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(22, 125);
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(43, 152);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(79, 15);
+            this.label21.Size = new System.Drawing.Size(89, 15);
             this.label21.TabIndex = 14;
             this.label21.Text = "Model Name";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(22, 52);
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(37, 57);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(79, 15);
+            this.label20.Size = new System.Drawing.Size(91, 15);
             this.label20.TabIndex = 11;
             this.label20.Text = "Select Model";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(22, 19);
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(37, 24);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(85, 15);
+            this.label19.Size = new System.Drawing.Size(98, 15);
             this.label19.TabIndex = 10;
             this.label19.Text = "Current Model";
             // 
@@ -2151,42 +2096,221 @@
             this.dgvModel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvModel.Location = new System.Drawing.Point(12, 10);
             this.dgvModel.Name = "dgvModel";
-            this.dgvModel.Size = new System.Drawing.Size(602, 286);
+            this.dgvModel.RowHeadersWidth = 62;
+            this.dgvModel.Size = new System.Drawing.Size(722, 282);
             this.dgvModel.TabIndex = 12;
             this.dgvModel.SelectionChanged += new System.EventHandler(this.dgvModel_SelectionChanged);
             // 
-            // sqLiteCommand1
+            // tabPage1
             // 
-            this.sqLiteCommand1.CommandText = null;
+            this.tabPage1.Controls.Add(this.btnCaptureImage);
+            this.tabPage1.Controls.Add(this.uiButton1);
+            this.tabPage1.Controls.Add(this.btnLiveView);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.groupBox2);
+            this.tabPage1.Controls.Add(this.viewEditCCD1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 34);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1176, 718);
+            this.tabPage1.TabIndex = 7;
+            this.tabPage1.Text = "Vision EditTool";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // axisControl1
+            // btnCaptureImage
             // 
-            this.axisControl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.axisControl1.Location = new System.Drawing.Point(620, 303);
-            this.axisControl1.MaximumSize = new System.Drawing.Size(369, 379);
-            this.axisControl1.MinimumSize = new System.Drawing.Size(369, 379);
-            this.axisControl1.Name = "axisControl1";
-            this.axisControl1.Size = new System.Drawing.Size(369, 379);
-            this.axisControl1.TabIndex = 11;
+            this.btnCaptureImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCaptureImage.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnCaptureImage.Location = new System.Drawing.Point(521, 609);
+            this.btnCaptureImage.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnCaptureImage.Name = "btnCaptureImage";
+            this.btnCaptureImage.Size = new System.Drawing.Size(117, 50);
+            this.btnCaptureImage.Style = Sunny.UI.UIStyle.Custom;
+            this.btnCaptureImage.TabIndex = 68;
+            this.btnCaptureImage.Text = "Capture";
+            this.btnCaptureImage.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnCaptureImage.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.btnCaptureImage.Click += new System.EventHandler(this.btnCapture_Click);
+            // 
+            // uiButton1
+            // 
+            this.uiButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.uiButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton1.Location = new System.Drawing.Point(7, 609);
+            this.uiButton1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiButton1.Name = "uiButton1";
+            this.uiButton1.Size = new System.Drawing.Size(117, 50);
+            this.uiButton1.Style = Sunny.UI.UIStyle.Custom;
+            this.uiButton1.TabIndex = 67;
+            this.uiButton1.Text = "Connect";
+            this.uiButton1.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uiButton1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // btnLiveView
+            // 
+            this.btnLiveView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLiveView.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnLiveView.Location = new System.Drawing.Point(146, 609);
+            this.btnLiveView.MinimumSize = new System.Drawing.Size(1, 1);
+            this.btnLiveView.Name = "btnLiveView";
+            this.btnLiveView.Size = new System.Drawing.Size(117, 50);
+            this.btnLiveView.Style = Sunny.UI.UIStyle.Custom;
+            this.btnLiveView.TabIndex = 66;
+            this.btnLiveView.Text = "Accquiring";
+            this.btnLiveView.TipsFont = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnLiveView.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.btnLiveView.Click += new System.EventHandler(this.btnLiveView_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnSendCmd);
+            this.groupBox1.Controls.Add(this.btnClearTcp);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Location = new System.Drawing.Point(646, 9);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(518, 565);
+            this.groupBox1.TabIndex = 65;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Scanner";
+            // 
+            // btnSendCmd
+            // 
+            this.btnSendCmd.Location = new System.Drawing.Point(7, 515);
+            this.btnSendCmd.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnSendCmd.Name = "btnSendCmd";
+            this.btnSendCmd.Size = new System.Drawing.Size(117, 44);
+            this.btnSendCmd.TabIndex = 56;
+            this.btnSendCmd.Text = "Trigger";
+            this.btnSendCmd.UseVisualStyleBackColor = true;
+            this.btnSendCmd.Click += new System.EventHandler(this.btnSendCmd_Click);
+            // 
+            // btnClearTcp
+            // 
+            this.btnClearTcp.Location = new System.Drawing.Point(394, 515);
+            this.btnClearTcp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnClearTcp.Name = "btnClearTcp";
+            this.btnClearTcp.Size = new System.Drawing.Size(117, 44);
+            this.btnClearTcp.TabIndex = 57;
+            this.btnClearTcp.Text = "Clear";
+            this.btnClearTcp.UseVisualStyleBackColor = true;
+            this.btnClearTcp.Click += new System.EventHandler(this.btnClearTcp_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(7, 21);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox1.Size = new System.Drawing.Size(504, 488);
+            this.textBox1.TabIndex = 53;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tb_Light2_Sensitive);
+            this.groupBox2.Controls.Add(this.tb_Light3_Sensitive);
+            this.groupBox2.Controls.Add(this.tb_Light1_Sensitive);
+            this.groupBox2.Controls.Add(this.button6);
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Location = new System.Drawing.Point(646, 583);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(518, 132);
+            this.groupBox2.TabIndex = 64;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Lighting Control";
+            // 
+            // tb_Light2_Sensitive
+            // 
+            this.tb_Light2_Sensitive.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Light2_Sensitive.Location = new System.Drawing.Point(9, 84);
+            this.tb_Light2_Sensitive.Name = "tb_Light2_Sensitive";
+            this.tb_Light2_Sensitive.Size = new System.Drawing.Size(100, 29);
+            this.tb_Light2_Sensitive.TabIndex = 65;
+            this.tb_Light2_Sensitive.Text = "2000";
+            this.tb_Light2_Sensitive.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tb_Light3_Sensitive
+            // 
+            this.tb_Light3_Sensitive.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.tb_Light3_Sensitive.Location = new System.Drawing.Point(286, 29);
+            this.tb_Light3_Sensitive.Name = "tb_Light3_Sensitive";
+            this.tb_Light3_Sensitive.Size = new System.Drawing.Size(100, 29);
+            this.tb_Light3_Sensitive.TabIndex = 64;
+            this.tb_Light3_Sensitive.Text = "255";
+            this.tb_Light3_Sensitive.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tb_Light1_Sensitive
+            // 
+            this.tb_Light1_Sensitive.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.tb_Light1_Sensitive.Location = new System.Drawing.Point(9, 33);
+            this.tb_Light1_Sensitive.Name = "tb_Light1_Sensitive";
+            this.tb_Light1_Sensitive.Size = new System.Drawing.Size(100, 29);
+            this.tb_Light1_Sensitive.TabIndex = 63;
+            this.tb_Light1_Sensitive.Text = "2000";
+            this.tb_Light1_Sensitive.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(392, 28);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(111, 31);
+            this.button6.TabIndex = 62;
+            this.button6.Text = "Light 3 ON";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(117, 31);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 31);
+            this.button2.TabIndex = 60;
+            this.button2.Text = "Light 1 ON";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(117, 82);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(111, 31);
+            this.button5.TabIndex = 61;
+            this.button5.Text = "Light 2 ON";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // viewEditCCD1
+            // 
+            this.viewEditCCD1.Location = new System.Drawing.Point(7, 9);
+            this.viewEditCCD1.Margin = new System.Windows.Forms.Padding(2);
+            this.viewEditCCD1.Name = "viewEditCCD1";
+            this.viewEditCCD1.Process = null;
+            this.viewEditCCD1.Size = new System.Drawing.Size(631, 565);
+            this.viewEditCCD1.TabIndex = 15;
             // 
             // DebugDlg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1003, 717);
+            this.ClientSize = new System.Drawing.Size(1184, 791);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MaximumSize = new System.Drawing.Size(1019, 756);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1199, 807);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1019, 756);
             this.Name = "DebugDlg";
-            this.Text = "DebugDlg";
+            this.ShowTitleIcon = true;
+            this.Style = Sunny.UI.UIStyle.Custom;
+            this.Text = "Debug";
+            this.ZoomScaleRect = new System.Drawing.Rectangle(15, 15, 1183, 768);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DebugDlg_FormClosing);
             this.Load += new System.EventHandler(this.DebugDlg_Load);
-            this.tabControlDisplay.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
             this.tabSQL.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
@@ -2194,7 +2318,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
-            this.tabPDCA.ResumeLayout(false);
             this.tabMES.ResumeLayout(false);
             this.tabMES.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -2203,23 +2326,29 @@
             this.groupBox4.PerformLayout();
             this.tabPLCDevice.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.tabComScanner.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
+            this.tabModelSetting.ResumeLayout(false);
+            this.tabModelSetting.PerformLayout();
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar0)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.pnPositionData.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPositions)).EndInit();
@@ -2227,20 +2356,16 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvModel)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.TabPage tabControlDisplay;
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage5;
-        private XCore.XCardDiTable xCardDiTable2;
-        private XCore.XCardDoTable xCardDoTable1;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TabPage tabSQL;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox6;
@@ -2265,10 +2390,6 @@
         private System.Windows.Forms.Button MachineStateOuALL;
         private System.Windows.Forms.Button MachineStateOu;
         private System.Windows.Forms.Button MachineStateIn;
-        private System.Windows.Forms.TabPage tabPDCA;
-        private System.Windows.Forms.RichTextBox rtBox_PDCA_ReceivedData;
-        private System.Windows.Forms.RichTextBox rtBox_PDCA_SendData;
-        private System.Windows.Forms.Button bt_PDCA上传;
         private System.Windows.Forms.TabPage tabMES;
         private System.Windows.Forms.Button btn_checkLoggin;
         private System.Windows.Forms.TextBox txt_Test;
@@ -2321,47 +2442,8 @@
         private System.Windows.Forms.Label lbl_terminalName;
         private System.Windows.Forms.Label lbl_empNo;
         private System.Windows.Forms.TabPage tabPLCDevice;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox_Value_4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox_Value_3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox_Adr4;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox_Adr3;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox_Value_2;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox_Value_1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox_Adr2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox_Adr_1;
-        private System.Windows.Forms.Button btn_Connect;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox_Port;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox_IP;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.TabPage tabComScanner;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnClearCom;
-        private System.Windows.Forms.Button btnTriggerScanner;
-        private System.Windows.Forms.TextBox txtLog;
-        private System.Windows.Forms.Button btnConnectScanner;
-        private System.Windows.Forms.Button btnDisconnectScanner;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Data.SQLite.SQLiteCommand sqLiteCommand1;
-        private UserControls.AxisControl axisControl1;
+        private System.Windows.Forms.TabPage tabModelSetting;
         private System.Windows.Forms.DataGridView dgvPositions;
         private System.Windows.Forms.DataGridView dgvModel;
         private System.Windows.Forms.TabControl tabControl3;
@@ -2379,35 +2461,91 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton btnSavePoint;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.Button btnLoadModel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnClearTcp;
-        private System.Windows.Forms.Button btnSendCmd;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnTCPConnect;
-        private System.Windows.Forms.Button btnTCPDisconnect;
+        private System.Windows.Forms.TableLayoutPanel pnPositionData;
         private System.Windows.Forms.Button btnGetStation;
         private System.Windows.Forms.Button btnPassStation;
-        private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton btnDownloadPoint;
+        private System.Windows.Forms.ToolStripButton btnWriteMode;
         private System.Windows.Forms.ToolStripButton btnAddPoints;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton btnDeletePoints;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton btnReadCurrentPoint;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.Button bt_JOG_NX;
+        private System.Windows.Forms.Button bt_JOG_PX;
+        private System.Windows.Forms.TrackBar trackBar0;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.TrackBar trackBar3;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbSpeedR;
+        private System.Windows.Forms.Label lbSpeedZ;
+        private System.Windows.Forms.Label lbSpeedY;
+        private System.Windows.Forms.Label lbSpeedX;
+        private System.Windows.Forms.ToolStripButton btnReadAll;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnSendCmd;
+        private System.Windows.Forms.Button btnClearTcp;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox tb_Light2_Sensitive;
+        private System.Windows.Forms.TextBox tb_Light3_Sensitive;
+        private System.Windows.Forms.TextBox tb_Light1_Sensitive;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button5;
+        private PasteLabelMachine.Controls.ViewEditCCD viewEditCCD1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox_Adr3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox_Adr4;
+        private System.Windows.Forms.TextBox textBox_Value_4;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox_Value_3;
+        private System.Windows.Forms.TextBox tb_Plc;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox_Adr_1;
+        private System.Windows.Forms.Button btnReadBitPlc;
+        private System.Windows.Forms.TextBox textBox_Adr2;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnReadValuePlc;
+        private System.Windows.Forms.TextBox textBox_Value_1;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox_Value_2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox tb_PlcPort;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button btn_Connect;
+        private System.Windows.Forms.Label label29;
+        private Sunny.UI.UIButton btnLiveView;
+        private Sunny.UI.UIButton btnCaptureImage;
+        private Sunny.UI.UIButton uiButton1;
     }
 }

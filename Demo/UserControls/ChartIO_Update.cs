@@ -17,16 +17,7 @@ namespace Demo.UserControls
         public ChartIO_Update()
         {
             InitializeComponent();
-            //reateChart();
         }
-
-        #region 事件定义
-
-        [Description("BarValueChange事件")]
-        public event Action<DateTime, DateTime> DoubleTrackValueChange;
-        [Description("BarValueChange事件")]
-        public event Action<DateTime, DateTime> DoubleTrackValueChange2;
-        #endregion
 
 
         #region 属性 
@@ -59,7 +50,7 @@ namespace Demo.UserControls
         #endregion
 
 
-        #region 滑动条1
+        #region Chart1
         private DateTime _BarEndTime = DateTime.Now;
         [Description("Newest Time")]
         public DateTime DoubleBarCurrentTime 
@@ -89,9 +80,24 @@ namespace Demo.UserControls
             }
             set
             {
+                if(dateTimePicker1_1.InvokeRequired)
+                {
+                    dateTimePicker1_1.Invoke( new Action(() => 
+                        {
+                            if (dateTimePicker1_1.Value < DoubleBarCurrentTime.AddDays(-6) || dateTimePicker1_1.Value > TrackEndTime)
+                            {
+                                dateTimePicker1_1.Value = value;
+                            }
+                            else
+                            {
+                                dateTimePicker1_1.Value = value;
+                            }
+                        }));
+                }
+                else
                 if (dateTimePicker1_1.Value < DoubleBarCurrentTime.AddDays(-6) || dateTimePicker1_1.Value > TrackEndTime)
                 {
-                    
+                    dateTimePicker1_1.Value = value;
                 }
                 else
                 {
@@ -114,13 +120,31 @@ namespace Demo.UserControls
             }
             set
             {
-
-                if (dateTimePicker1_2.Value < dateTimePicker1_1.Value || dateTimePicker1_2.Value > DoubleBarCurrentTime)
+                if (dateTimePicker1_2.InvokeRequired)
                 {
+                    dateTimePicker1_2.Invoke(new Action(() =>
+                        {
+
+                            if (dateTimePicker1_2.Value < dateTimePicker1_1.Value || dateTimePicker1_2.Value > DoubleBarCurrentTime)
+                            {
+                                dateTimePicker1_2.Value = value;
+                            }
+                            else
+                            {
+                                dateTimePicker1_2.Value = value;
+                            }
+                        }));
                 }
                 else
                 {
-                    dateTimePicker1_2.Value = value;
+                    if (dateTimePicker1_2.Value < dateTimePicker1_1.Value || dateTimePicker1_2.Value > DoubleBarCurrentTime)
+                    {
+                        dateTimePicker1_2.Value = value;
+                    }
+                    else
+                    {
+                        dateTimePicker1_2.Value = value;
+                    }
                 }
             }
         }
@@ -133,28 +157,58 @@ namespace Demo.UserControls
         {
             DateTime dTime = DateTime.Now;
             DoubleBarCurrentTime = dTime;
-
         }
 
 
         public void Refresh(Dictionary<string, double>[] dicCT, Dictionary<string, int>[] dicCount)
         {
-            InternalRefreshChart(dicCount, dicCT);
+            if(InvokeRequired)
+            {
+                Invoke(new Action(() =>
+                {
+                    InternalRefreshChart(dicCount, dicCT);
+                }
+                ));
+            }
+            else
+                InternalRefreshChart(dicCount, dicCT);
         }
 
 
 
         public void Clear()
         {
-            chart1.Series[0].Points.Clear();
-            chart1.Series[1].Points.Clear();
-            chart2.Series[0].Points.Clear();
-            chart2.Series[1].Points.Clear();
+            if(chart1.InvokeRequired)
+            {
+                chart1.Invoke(new Action(() =>
+                {
+                    chart1.Series[0].Points.Clear();
+                    chart1.Series[1].Points.Clear();
+                }));
+            }
+            else
+            {
+                chart1.Series[0].Points.Clear();
+                chart1.Series[1].Points.Clear();
+            }
 
+            if (chart2.InvokeRequired)
+            {
+                chart2.Invoke(new Action(() =>
+                {
+                    chart2.Series[0].Points.Clear();
+                    chart2.Series[1].Points.Clear();
+                }));
+            }
+            else
+            {
+                chart2.Series[0].Points.Clear();
+                chart2.Series[1].Points.Clear();
+            }
         }
 
 
-        /*用于表2中的DS/NS数量统计；*/
+        /*Được sử dụng cho số liệu thống kê số lượng DS/NS trong Bảng 2;*/
         private void InternalRefreshChart(Dictionary<string, int>[] dic, Dictionary<string, double>[] dicCT)
         {
             //Biểu đồ Yield
@@ -222,60 +276,27 @@ namespace Demo.UserControls
             }
         }
 
-        private void DoubleTrackChange()
-        {
-            if (DoubleTrackValueChange != null)
-            {
-                // DoubleTrackValueChange(this.doubleTrackBar1.DateStartValue1, this.doubleTrackBar1.DateEndValue2);
-            }
-
-        }
-
-        private void DoubleTrackChange2()
-        {
-            //if (DoubleTrackValueChange2 != null)
-            //    DoubleTrackValueChange2(this.doubleTrackBar2.DateStartValue1, this.doubleTrackBar2.DateEndValue2);
-        }
-
-
-
-
-
         private void SetChart1_Column()
         {
             chart1.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
             chart1.Series[1].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
             chart1.Series[0].MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.None;
             chart1.Series[1].MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.None;
-
-
-
-
         }
+
         private void SetChart1_Line()
         {
             chart1.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             chart1.Series[1].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             chart1.Series[0].MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
             chart1.Series[1].MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-
-
-            //chart1.ChartAreas[0].AxisY.LabelStyle.Format = "0%";
-            //chart1.Series[0].LabelFormat = "0%";
         }
-
-
-
-
-
 
         private void btn_IO_Click(object sender, EventArgs e)
         {
             _isSelectIO = true;
             btn_IO.BackColor = Color.White;
             btn_Tossing.BackColor = Color.LightGray;
-
-
             SetChart1_Line();
         }
 
@@ -299,68 +320,9 @@ namespace Demo.UserControls
             _isSelectDay = false;
             btn_Day.BackColor = Color.LightGray;
             btn_Hour.BackColor = Color.White;
-
         }
 
-
-        #region 时间选择功能；
-        private void dateTimePicker1_1_ValueChanged(object sender, EventArgs e)
-        {
-            DateTime dtTemp = dateTimePicker1_1.Value;
-            if (UpdateChart != null)
-            {
-                UpdateChart();
-            }
-
-
-            //if (dtTemp <= doubleTrackBar1.DateEndValue2 && dtTemp >= DoubleBarCurrentTime.AddDays(-7.5))
-            //{
-            //    doubleTrackBar1.DateStartValue1 = dateTimePicker1_1.Value;
-            //    if (UpdateChart != null)
-            //    {
-            //        UpdateChart();
-            //    }
-            //}
-        }
-
-        private void dateTimePicker1_2_ValueChanged(object sender, EventArgs e)
-        {
-            //DateTime dtTemp = dateTimePicker1_2.Value;
-            //if (dtTemp <= DoubleBarCurrentTime && dtTemp >= doubleTrackBar1.DateStartValue1)
-            //{
-            //    doubleTrackBar1.DateEndValue2 = dateTimePicker1_2.Value;
-            //}
-        }
-
-        private void dateTimePicker2_1_ValueChanged(object sender, EventArgs e)
-        {
-            //DateTime dtTemp = dateTimePicker2_1.Value;
-            //if (UpdateChart != null)
-            //{
-            //    UpdateChart();
-            //}
-            //if (dtTemp <= doubleTrackBar2.DateEndValue2 && dtTemp >= DoubleBarCurrentTime2.AddDays(-7.5))
-            //{
-            //    doubleTrackBar2.DateStartValue1 = dateTimePicker2_1.Value;
-
-            //}
-            //if (UpdateChart != null)
-            //{
-            //    UpdateChart();
-            //}
-        }
-
-        private void dateTimePicker2_2_ValueChanged(object sender, EventArgs e)
-        {
-            //DateTime dtTemp = dateTimePicker2_2.Value;
-            //if (dtTemp <= DoubleBarCurrentTime && dtTemp >= doubleTrackBar2.DateStartValue1)
-            //{
-            //    doubleTrackBar2.DateEndValue2 = dateTimePicker2_2.Value;
-
-
-            //}
-        }
-
+        #region Chức năng chọn khung thời gian
         public bool IsSelectTime
         {
             get; set;
@@ -379,7 +341,7 @@ namespace Demo.UserControls
         public event Action<DateTime> UpdateChart2;
         public event Action<DateTime, DateTime> UpdateChart1Event;
         public event Action<DateTime, DateTime> UpdateChart2Event;
-        private const string DateTimeFormate = "MM/dd/yyyy HH:mm:ss";//定义时间格式；
+        private const string DateTimeFormate = "MM/dd/yyyy HH:mm:ss";//Time format；
 
 
         private void chart1_DoubleClick(object sender, EventArgs e)

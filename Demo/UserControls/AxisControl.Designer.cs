@@ -107,24 +107,23 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(369, 357);
+            this.panel1.Size = new System.Drawing.Size(423, 426);
             this.panel1.TabIndex = 25;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(8, 183);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(354, 170);
+            this.dataGridView1.Size = new System.Drawing.Size(406, 240);
             this.dataGridView1.TabIndex = 41;
             // 
             // btn_ClearError
             // 
             this.btn_ClearError.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btn_ClearError.Location = new System.Drawing.Point(307, 65);
+            this.btn_ClearError.Location = new System.Drawing.Point(359, 67);
             this.btn_ClearError.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ClearError.Name = "btn_ClearError";
-            this.btn_ClearError.Size = new System.Drawing.Size(55, 50);
+            this.btn_ClearError.Size = new System.Drawing.Size(55, 43);
             this.btn_ClearError.TabIndex = 40;
             this.btn_ClearError.Text = "Clear ";
             this.btn_ClearError.UseVisualStyleBackColor = true;
@@ -192,7 +191,7 @@
             // bt_JOG_N
             // 
             this.bt_JOG_N.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_JOG_N.Location = new System.Drawing.Point(183, 67);
+            this.bt_JOG_N.Location = new System.Drawing.Point(233, 65);
             this.bt_JOG_N.Margin = new System.Windows.Forms.Padding(4);
             this.bt_JOG_N.Name = "bt_JOG_N";
             this.bt_JOG_N.Size = new System.Drawing.Size(55, 45);
@@ -206,10 +205,10 @@
             // 
             this.bt_JOG_P.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bt_JOG_P.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.bt_JOG_P.Location = new System.Drawing.Point(246, 67);
+            this.bt_JOG_P.Location = new System.Drawing.Point(296, 65);
             this.bt_JOG_P.Margin = new System.Windows.Forms.Padding(4);
             this.bt_JOG_P.Name = "bt_JOG_P";
-            this.bt_JOG_P.Size = new System.Drawing.Size(55, 46);
+            this.bt_JOG_P.Size = new System.Drawing.Size(55, 45);
             this.bt_JOG_P.TabIndex = 27;
             this.bt_JOG_P.Text = "JOG +";
             this.bt_JOG_P.UseVisualStyleBackColor = false;
@@ -235,7 +234,7 @@
             // Btn_Stop
             // 
             this.Btn_Stop.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Btn_Stop.Location = new System.Drawing.Point(307, 5);
+            this.Btn_Stop.Location = new System.Drawing.Point(359, 8);
             this.Btn_Stop.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Stop.Name = "Btn_Stop";
             this.Btn_Stop.Size = new System.Drawing.Size(55, 46);
@@ -247,7 +246,7 @@
             // Btn_Home
             // 
             this.Btn_Home.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Btn_Home.Location = new System.Drawing.Point(307, 126);
+            this.Btn_Home.Location = new System.Drawing.Point(359, 125);
             this.Btn_Home.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Home.Name = "Btn_Home";
             this.Btn_Home.Size = new System.Drawing.Size(55, 50);
@@ -267,7 +266,7 @@
             this.Comb_AxisNo.Location = new System.Drawing.Point(53, 4);
             this.Comb_AxisNo.Margin = new System.Windows.Forms.Padding(4);
             this.Comb_AxisNo.Name = "Comb_AxisNo";
-            this.Comb_AxisNo.Size = new System.Drawing.Size(124, 21);
+            this.Comb_AxisNo.Size = new System.Drawing.Size(163, 21);
             this.Comb_AxisNo.TabIndex = 22;
             this.Comb_AxisNo.SelectedIndexChanged += new System.EventHandler(this.Comb_AxisNo_SelectedIndexChanged);
             // 
@@ -286,7 +285,7 @@
             this.Comb_Distance.Location = new System.Drawing.Point(53, 34);
             this.Comb_Distance.Margin = new System.Windows.Forms.Padding(4);
             this.Comb_Distance.Name = "Comb_Distance";
-            this.Comb_Distance.Size = new System.Drawing.Size(124, 21);
+            this.Comb_Distance.Size = new System.Drawing.Size(163, 21);
             this.Comb_Distance.TabIndex = 2;
             // 
             // label8
@@ -302,7 +301,7 @@
             // 
             this.Btn_Back.Image = global::Demo.Properties.Resources._minus;
             this.Btn_Back.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Btn_Back.Location = new System.Drawing.Point(185, 5);
+            this.Btn_Back.Location = new System.Drawing.Point(235, 7);
             this.Btn_Back.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Back.Name = "Btn_Back";
             this.Btn_Back.Size = new System.Drawing.Size(53, 46);
@@ -325,7 +324,7 @@
             // 
             this.Btn_Forward.Image = global::Demo.Properties.Resources._add;
             this.Btn_Forward.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Btn_Forward.Location = new System.Drawing.Point(245, 5);
+            this.Btn_Forward.Location = new System.Drawing.Point(296, 7);
             this.Btn_Forward.Margin = new System.Windows.Forms.Padding(4);
             this.Btn_Forward.Name = "Btn_Forward";
             this.Btn_Forward.Size = new System.Drawing.Size(55, 46);
@@ -398,7 +397,7 @@
             this.Bar_Vel.Location = new System.Drawing.Point(12, 67);
             this.Bar_Vel.Margin = new System.Windows.Forms.Padding(4);
             this.Bar_Vel.Name = "Bar_Vel";
-            this.Bar_Vel.Size = new System.Drawing.Size(167, 45);
+            this.Bar_Vel.Size = new System.Drawing.Size(203, 45);
             this.Bar_Vel.TabIndex = 1;
             this.Bar_Vel.ValueChanged += new System.EventHandler(this.Bar_Vel_ValueChanged);
             // 
@@ -409,9 +408,9 @@
             this.LB_Home,
             this.LB_AxisNo,
             this.LB_Pos});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 357);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 426);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(369, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(423, 22);
             this.statusStrip1.TabIndex = 24;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -445,7 +444,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusStrip1);
             this.Name = "AxisControl";
-            this.Size = new System.Drawing.Size(369, 379);
+            this.Size = new System.Drawing.Size(423, 448);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

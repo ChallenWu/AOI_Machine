@@ -29,8 +29,8 @@ namespace OVisionPro
         private Size originalPanelSizeR;
         private Size originalPanelSizeL;
         private string blockID = "ToolNameNone";
-        private List<Globals.ToolTypleData> blockInputTypes;
-        private List<Globals.ToolTypleData> blockOutputTypes;
+        private List<visionGlob.ToolTypleData> blockInputTypes;
+        private List<visionGlob.ToolTypleData> blockOutputTypes;
 
         public ucBlockBasic()
         {

@@ -9,10 +9,11 @@ using System.Windows.Forms;
 using System.Threading;
 using XCore;
 using Demo;
+using Sunny.UI;
 
 namespace HB_IWatch
 {
-    public partial class FailTip : Form
+    public partial class FailTip : UIForm
     {
         private Color Red = Color.FromArgb(0xC8, 0x25, 0x06);
         private Color Green = Color.FromArgb(0xAE, 0xDA, 0x97);
@@ -23,6 +24,7 @@ namespace HB_IWatch
         public FailTip(string message, bool IsCancelVisable = true, bool IsIgnoreVisible = false, int timeout = -1, bool IsokVisable = true)
         {
             InitializeComponent();
+            var content = message.Split(':');
             if (message.Contains(XAlarmReporter.Instance.SystemAlarms[XAlarmId.DOOR_OPEN].Description))
             {
                 this.StartPosition = FormStartPosition.Manual;
@@ -37,9 +39,14 @@ namespace HB_IWatch
             this.MinimizeBox = false;
             this.MaximumSize = this.Size;
             this.MinimumSize = this.Size;
+            this.ControlBox = false;
+
+            this.tbStartTime.Text = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss:f");
             this.button1.BackColor = Green;
             this.BackColor = Red;
-            this.richTextBox1.Text = message;
+            this.tbErrorCode.Text = content[0];
+            this.richTextBox1.Text = content[1];
+            this.richTextBox2.Text = content[2];
             this.button1.Visible = IsokVisable;
             this.button2.Visible = IsCancelVisable;
             this.button3.Visible = IsIgnoreVisible;

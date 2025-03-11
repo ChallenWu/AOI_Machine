@@ -105,7 +105,7 @@ namespace Demo.Page
                 List<string> lTemp = new List<string>();
                 List<string> lTemp2 = new List<string>();
                 List<string> lTemp3 = new List<string>();
-                if (dt.Rows.Count < AudioSystem.Errors.Length)
+                if (dt.Rows.Count < SystemVariable.Errors.Length)
                 {
 
 
@@ -121,7 +121,7 @@ namespace Demo.Page
 
 
 
-                    lTemp2 = AudioSystem.Errors.ToList();
+                    lTemp2 = SystemVariable.Errors.ToList();
 
                     for (int i = 0; i < lTemp2.Count; i++)
                     {
@@ -318,7 +318,6 @@ namespace Demo.Page
                         dtt.Rows[i][j] = ((DateTime)dt.Rows[i][j]).ToString("yyyy-MM-dd HH:mm:ss.ff");
                     else
                         dtt.Rows[i][j] = dt.Rows[i][j];
-
                 }
             }
 
@@ -333,9 +332,15 @@ namespace Demo.Page
         {
            try
             {
+                if(UserAccountControl.currentAccount != UserAccountControl.Administrator)
+                {
+                    BzMessagebox.Show("Current permision can't trigger alarm. You need Adminstrator permision");
+                    return;
+                }
+
                 int i = cb_Alarm.SelectedIndex;
                 XAlarmId alarmId;                
-                if (cb_Alarm.SelectedIndex >= 0)
+                if (cb_Alarm.SelectedIndex > 0)
                     alarmId = (XAlarmId)Enum.Parse(typeof(XAlarmId), cb_Alarm.Text);
                 else
                     return;
@@ -345,14 +350,15 @@ namespace Demo.Page
                 string szErrCode;
                 string szType;
                 string szOk, szCancel, szIgnore;
-                string szDetail = "";
+                //string szDetail = "";
                 szDescrip = XAlarmReporter.Instance.SystemAlarms[alarmId].Description;
                 szType = XAlarmReporter.Instance.SystemAlarms[alarmId].Category.ToString();
                 szErrCode = XAlarmReporter.Instance.SystemAlarms[alarmId].Code.ToString();
                 //Cách giải quyết error
+                XAlarmReporter.Instance.SystemAlarms[alarmId].Solution.ToString();
                 string szSolution = XAlarmReporter.Instance.SystemAlarms[alarmId].Solution.ToString();
                 string szAlarmLevel = XAlarmReporter.Instance.SystemAlarms[alarmId].AlarmLevel.ToString();
-                szDescrip += ":" + szDetail;
+                //szDescrip = "Lỗi " + szDescrip + "\r\n" + "Cách xử lý: " + szSolution;
 
                 szOk = XAlarmReporter.Instance.SystemAlarms[alarmId].OkOptionText;
                 szCancel = XAlarmReporter.Instance.SystemAlarms[alarmId].CancelOptionText;
@@ -420,7 +426,7 @@ namespace Demo.Page
                 ds.Tables.Add(AlarmLogTable.Copy());
             string filePath = "";
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-            fbd.Description = "请选择保存路径";
+            fbd.Description = "Please select the save path";
             if (fbd.ShowDialog() == DialogResult.OK)
             {
                 filePath = fbd.SelectedPath;
@@ -471,6 +477,21 @@ namespace Demo.Page
         private void btnCloseAlarm_Click(object sender, EventArgs e)
         {
             HBMachine.Instance.CancelAlarmForm();
+        }
+
+        private void PageAlarm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dTP_EndTime_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

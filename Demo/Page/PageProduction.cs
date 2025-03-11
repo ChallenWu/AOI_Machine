@@ -12,6 +12,8 @@ using System.Windows.Forms;
 using System.IO;
 using System.Net.NetworkInformation;
 using Demo.Setting;
+using Demo.Device;
+using HB_IWatch;
 
 namespace Demo.Page
 {
@@ -44,40 +46,45 @@ namespace Demo.Page
             
             Version av = new Version(Application.ProductVersion);
             string tt = av.Major.ToString();
+            lbl_SW.Text = Globals.SettingOption.GetSoftVersion();
             //this.stn1.SW_Version = AudioSystem.AudioMachineMessage.SW_version.Trim();
             //this.stn1.STNName = AudioSystem.AudioMachineMessage.Station + " " + AudioSystem.AudioMachineMessage.MachineNo + "#";
 
             //this.stn1.MS_Hash = AudioSystem.AudioMachineMessage.MS_Hash;
             //this.stn1.SiteName = AudioSystem.AudioMachineMessage.Site;
             //this.stn1.Vender = AudioSystem.AudioMachineMessage.Vendor;
-
+            lbl_Site.Text = "FOXCON";
+            lbl_Vender.Text = "BZ";
             //Ouput đường dẫn file
-            AudioSystem.InforMachine.Main_SW_Path = Application.StartupPath + @"\Demo.exe";
-            string[] tem = AudioSystem.InforMachine.Main_SW_Path.Split('\\');
+            SystemVariable.InforMachine.Main_SW_Path = Application.StartupPath + @"\Demo.exe";
+            string[] tem = SystemVariable.InforMachine.Main_SW_Path.Split('\\');
 
-            //if (tem.Length > 3)
-            //{
-            //    this.stn1.Main_SW_Path = tem[0] + "\\" + tem[1] + "\\...\\" + tem[tem.Length - 1];
-            //}
-            //else
-            //    this.stn1.Main_SW_Path = AudioSystem.AudioMachineMessage.Main_SW_Path;
+
+            if (tem.Length > 3)
+            {
+                lbl_MSP.Text = tem[0] + "\\" + tem[1] + "\\...\\" + tem[tem.Length - 1];
+            }
+            else
+                lbl_MSP.Text = SystemVariable.InforMachine.Main_SW_Path;
+
+            
         }
 
         private static void LoadMachineMessage()
         {
-            AudioSystem.InforMachine.Main_SW_Path = Application.StartupPath + @"\Demo.exe";
-            AudioSystem.InforMachine.MS_Hash = GetFileHash.SHA1(Application.StartupPath + @"\Demo.exe");
+            SystemVariable.InforMachine.Main_SW_Path = Application.StartupPath + @"\Demo.exe";
+            SystemVariable.InforMachine.MS_Hash = GetFileHash.SHA1(Application.StartupPath + @"\Demo.exe");
             try
             {
                     string visionFile = @"D:\CCD\BE010\CCDAlignMentSystem\CCDAlignMentSystem\bin\Debug\CCDAlignMentSystem.exe";
                     if (File.Exists(visionFile))
                     {
-                        AudioSystem.InforMachine.VS_Hash = GetFileHash.SHA1(visionFile);
+                        SystemVariable.InforMachine.VS_Hash = GetFileHash.SHA1(visionFile);
                     }
                     else
                     {
                         string visionTemp = Application.StartupPath + @"\CCDAlignMentSystem.exe";
-                        AudioSystem.InforMachine.VS_Hash = GetFileHash.SHA1(visionTemp);
+                        SystemVariable.InforMachine.VS_Hash = GetFileHash.SHA1(visionTemp);
                     }
             }
             catch (Exception ex)
@@ -136,6 +143,7 @@ namespace Demo.Page
         }
 
         #endregion
+
         #region IO_Summary
         private void RefreshIO()
         {
@@ -160,8 +168,31 @@ namespace Demo.Page
                         int NGunit = 0;
                         DateTime dtt;
                         //DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd ") + "8:0:0", out dtt);
-                        DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd HH") + ":0:0", out dtt);//per hour
+
+                        var startTime = DateTime.Now;
+                        if(startTime.Hour > 7 && startTime.Hour < 21)
+                        {
+                            // ca ngày
+                            DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd ") + "8:0:0", out dtt);
+                        }    
+                        else
+                        {
+                            //ca đêm
+                            // nếu trong ngày
+                            if(startTime.Hour >19)
+                            {
+                                DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd ") + "20:0:0", out dtt);
+                            }    
+                            else
+                            {
+                                DateTime.TryParse(DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd ") + "20:0:0", out dtt);
+                            }    
+                        }    
+
+                        //DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd HH") + ":0:0", out dtt);//per hour                                                                 
+
                         DataTable dt = DataServerManager.Instance.SelectUPHData(dtt, DateTime.Now);
+                        
                         for (int i = 0; i < dt.Rows.Count; i++)
                         {
                             if ((string)dt.Rows[i][2] == "PASS")
@@ -169,11 +200,16 @@ namespace Demo.Page
                             else
                                 NGunit += Convert.ToInt32(dt.Rows[i][1]);
                         }
-                        this.iO_Summary.Input_Output = (OKunit + 1).ToString() + "/" + (OKunit + 1 + NGunit).ToString();
+                        
+                        this.iO_Summary.Input_Output = (OKunit + NGunit).ToString() + "/" + (OKunit).ToString();
                         
                         if (OKunit == 0 && NGunit ==0)
                             {
                             this.iO_Summary.Yield = "0"+ "%";
+                        }
+                        else if(OKunit != 0 && NGunit ==0)
+                        {
+                            this.iO_Summary.Yield = "100%";
                         }
                         else
                         {
@@ -181,9 +217,9 @@ namespace Demo.Page
                         }    
                         OKunit = 0;
                         NGunit = 0;
-                        DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd HH") + ":0:0", out dtt);
 
-                        dt = DataServerManager.Instance.SelectUPHData(dtt, DateTime.Now);
+                        //DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd HH") + ":0:0", out dtt);
+                        //dt = DataServerManager.Instance.SelectUPHData(dtt, DateTime.Now);
 
                         for (int i = 0; i < dt.Rows.Count; i++)
                         {
@@ -193,23 +229,36 @@ namespace Demo.Page
                                 NGunit = Convert.ToInt32(dt.Rows[i][1]);
                         }
                         
-                        this.iO_Summary.CT = (ucm.Unit.CT).ToString("f2");
+                        this.iO_Summary.CT = ucm.Unit.CT.ToString("f2");
 
                         //if (currentUCSN != ucm.UC_SN)
                         //{
                         //    this.iO_Summary.CT = (ucm.Units[unitIndex].CT).ToString("f2");
                         //}
 
-                        this.iO_Summary.Pass_Fail = (OKunit + 1).ToString() + "/" + NGunit.ToString();
+                        this.iO_Summary.Pass_Fail = OKunit.ToString() + "/" + NGunit.ToString();
 
-                        this.iO_Summary.UPH = (OKunit + 1 + NGunit).ToString();
+
+                        DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd HH") + ":0:0", out dtt);//per hour                                                                
+                        dt = DataServerManager.Instance.SelectUPHData(dtt, DateTime.Now);
+
+                        int OKperHour = 0, NGperHour = 0;
+                        for (int i = 0; i < dt.Rows.Count; i++)
+                        {
+                            if ((string)dt.Rows[i][2] == "PASS")
+                                OKperHour = Convert.ToInt32(dt.Rows[i][1]);
+                            else
+                                NGperHour = Convert.ToInt32(dt.Rows[i][1]);
+                        }
+
+                        this.iO_Summary.UPH = (OKperHour + NGperHour).ToString();
 
                         //this.iO_Summary.UPH = (3600/double.Parse(iO_Summary.CT)).ToString("f2");
 
                         this.iO_Summary.SN = ucm.Unit.UnitSN;
                         this.iO_Summary.UnitStatus = ucm.Unit.Pass == "PASS" ? true : false;
                         PageChart.Instance.Async_UnitDaily(this.iO_Summary);
-
+                        PageEngineering.Instance.Async_UnitDaily(this.iO_Summary);
 
 
                     }));
@@ -235,7 +284,28 @@ namespace Demo.Page
                 //DateTime dtStart = DsAndNsTimeSet.Instance.GetDayStartTime();
                 //DataTable dt = DataServerManager.Instance.SelectUPHData(dtStart, DateTime.Now);
 
-                DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd HH") + ":0:0", out dtt);//request per hour
+                var startTime = DateTime.Now;
+                if (startTime.Hour > 7 && startTime.Hour < 21)
+                {
+                    // ca ngày
+                    DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd ") + "8:0:0", out dtt);
+                }
+                else
+                {
+                    //ca đêm
+                    // nếu trong ngày
+                    if (startTime.Hour > 19)
+                    {
+                        DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd ") + "20:0:0", out dtt);
+                    }
+                    else
+                    {
+                        DateTime.TryParse(DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd ") + "20:0:0", out dtt);
+                    }
+                }
+
+
+                //DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd HH") + ":0:0", out dtt);//request per hour
 
                 DataTable dt = DataServerManager.Instance.SelectUPHData(dtt, DateTime.Now);
                 //Select last product
@@ -252,9 +322,12 @@ namespace Demo.Page
                 this.iO_Summary.SN = dt1.Rows[0][6].ToString();
 
 
-                this.iO_Summary.Input_Output = OKunit.ToString() + "/" + NGunit.ToString();
+                this.iO_Summary.Input_Output = OKunit.ToString() + "/" + (OKunit+ NGunit).ToString();
+                this.iO_Summary.Input_Output = (OKunit + NGunit).ToString() + "/" + (OKunit).ToString();
+
                 this.iO_Summary.Pass_Fail = OKunit.ToString() + "/" + NGunit.ToString();
-                this.iO_Summary.UPH = (OKunit + NGunit).ToString();
+
+
 
                 if (OKunit == 0 && NGunit == 0)
                 {
@@ -264,6 +337,25 @@ namespace Demo.Page
                 {
                     this.iO_Summary.Yield = (OKunit * 100.0 / (OKunit + NGunit)).ToString("f2") + "%";
                 }
+
+
+                //this.iO_Summary.UPH = (OKunit + NGunit).ToString();
+
+
+                DateTime.TryParse(DateTime.Now.ToString("yyyy-MM-dd HH") + ":0:0", out dtt);//per hour                                                                
+                dt = DataServerManager.Instance.SelectUPHData(dtt, DateTime.Now);
+
+                int OKperHour = 0, NGperHour = 0;
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    if ((string)dt.Rows[i][2] == "PASS")
+                        OKperHour = Convert.ToInt32(dt.Rows[i][1]);
+                    else
+                        NGperHour = Convert.ToInt32(dt.Rows[i][1]);
+                }
+
+                this.iO_Summary.UPH = (OKperHour + NGperHour).ToString();
+
 
                 PageChart.Instance.Async_UnitDaily(this.iO_Summary);
             }
@@ -382,7 +474,7 @@ namespace Demo.Page
             {
                 pnMESStatus.BackColor = Color.Red;
             }
-            //Ping ICW
+            //Ping Scanner
             if (PingIpOrDomainName("127.0.0.1"))
             {
                 pnICWStatus.BackColor = Color.Green;
@@ -391,15 +483,38 @@ namespace Demo.Page
             {
                 pnICWStatus.BackColor = Color.Red;
             }
-            //Ping CCD
-            //if (PingIpOrDomainName(Globals.SettingICT.ScanLead_IP))
-            //{
-            //    pnCCDStatus.BackColor = Color.Green;
-            //}
-            //else
-            //{
-            //    pnCCDStatus.BackColor = Color.Red;
-            //}
+
+            //Ping LR Light Controller
+            if (LR_Light.Instance.IsConnected)
+            {
+                pnLRLight.BackColor = Color.Green;
+            }
+            else
+            {
+                pnLRLight.BackColor = Color.Red;
+            }
+            //Ping Middle Light Controller
+            if (Mid_Light_TCP.Instance.Connected)
+            {
+                pnMiddleLight.BackColor = Color.Green;
+            }
+            else
+            {
+                pnMiddleLight.BackColor = Color.Red;
+            }
+            if (Globals.OpenCameraRet != -1)
+            {
+                pnCCDStatus.BackColor = Color.Green;
+            }
+            else
+            {
+                pnCCDStatus.BackColor = Color.Red;
+            }
+
+            DataTable temDt = DataServerManager.Instance.SelectLastMachineState();
+            var currentStatus = (int)temDt.Rows[0][3];
+            //MachineState state = (MachineState)currentStatus;
+            HBMachine.Instance.UploadMachineState(currentStatus);
         }
 
         #region    MachineStateChange
@@ -619,7 +734,7 @@ namespace Demo.Page
                 List<string> lTemp = new List<string>();
                 List<string> lTemp2 = new List<string>();
                 List<string> lTemp3 = new List<string>();
-                if (dt.Rows.Count < AudioSystem.Errors.Length)
+                if (dt.Rows.Count < SystemVariable.Errors.Length)
                 {
 
 
@@ -634,7 +749,7 @@ namespace Demo.Page
                     }
 
 
-                    lTemp2 = AudioSystem.Errors.ToList();
+                    lTemp2 = SystemVariable.Errors.ToList();
 
                     for (int i = 0; i < lTemp2.Count; i++)
                     {
@@ -908,7 +1023,7 @@ namespace Demo.Page
         {
             try
             {
-                var filePath = @"E:\VDB\VisionDB";
+                var filePath = @"E:\\Vision";
                 if (Directory.Exists(filePath))
                 {
                     System.Diagnostics.Process.Start(filePath);
@@ -924,7 +1039,7 @@ namespace Demo.Page
         {
             try
             {
-                var filePath = "E:\\HB_Record\\Report";
+                var filePath = "E:\\AOI_Record";
                 if (Directory.Exists(filePath))
                 {
                     System.Diagnostics.Process.Start(filePath);

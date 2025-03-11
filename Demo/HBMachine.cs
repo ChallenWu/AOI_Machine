@@ -41,7 +41,7 @@ namespace HB_IWatch
         /// <summary>
         /// machine happen need engineering or maintenance
         /// </summary>
-        Planned_downtime = 4,
+        Interlock = 4,
         /// <summary>
         /// machine in Stopped
         /// </summary>
@@ -61,13 +61,17 @@ namespace HB_IWatch
 
         public MachineSts CurSts { get { return curSts; } }
 
+        FailTip ft;
+
+        private List<FailTip> lstFailTip = new List<FailTip>();
+
         private List<MachineSts> ListBackupMcSts = new List<MachineSts>();
 
         private DoId m_Light = DoId.绿灯;
         //private Timer LightFlash = new Timer();
         private bool m_isFlash;
 
-        FailTip ft;
+
 
         private HBMachine()
         {
@@ -75,6 +79,7 @@ namespace HB_IWatch
             //LightFlash.Enabled = true;
             //LightFlash.Tick += new EventHandler(timer_LightFlash);
         }
+
         //private void timer_LightFlash(object sender, EventArgs e)
         //{
         //    if (m_isFlash)
@@ -115,6 +120,7 @@ namespace HB_IWatch
                     _HBMachine = new HBMachine();
 
                 }
+                
                 return _HBMachine;
             }
         }
@@ -127,10 +133,11 @@ namespace HB_IWatch
         public string UploadMachineStateMessage(MachineSts machineStatus)
         {
             //Lấy trạng thái previousStatus từ SQLite
-            DataTable temDt = DataServerManager.Instance.SelectLastMachineState();  
+
+            DataTable temDt = DataServerManager.Instance.SelectLastMachineState();
 
             HiveMessage hm = new HiveMessage() { HappenTime = DateTime.Now, MachineState = (int)machineStatus, PreviousState = 0, TimeDuration = 0 };
-
+            string id = temDt.Rows[0][0].ToString();
             #region Modify data
             //Không có dữ liệu nào được đọc ra
             if (temDt.Rows.Count <= 0)
@@ -141,25 +148,28 @@ namespace HB_IWatch
             {
                 DateTime dtt = (DateTime)temDt.Rows[0][1];
                 hm.PreviousState = (int)temDt.Rows[0][3];
+                DateTime oldTime = (DateTime)temDt.Rows[0][1];
                 try
                 {
-                    var intDay = hm.HappenTime.Date.Day - dtt.Day;
-                    //if (intDay == 1)
-                    //{
-                    //    //for(int i = 0; i < temDt.Rows.Count;)
-                    //    //If the next day, insert a piece of data with unchanged status into the database;
-                    //    hm.TimeDuration = (long)(hm.HappenTime - dtt).TotalSeconds;
-                    //    hm.MachineState = (int)temDt.Rows[0][3];
-                    //    DataServerManager.Instance.InsertMachineState(hm);
+                    TimeSpan time = hm.HappenTime.Date - dtt.Date;
+                    var intDay = time.Days;
 
-
-                    //}
+                    //var intDay = hm.HappenTime.Date.Day - dtt.Day;
                     if (intDay == 0)
                     {
-                        //If it is produced within one day;
-                        hm.TimeDuration = (long)(hm.HappenTime - dtt).TotalSeconds;
-                        //edit
-                        DataServerManager.Instance.InsertMachineState(hm);
+                        //Nếu cùng 1 trạng thái. thì ko insert mà chỉ sửa trạng thái gần nhất
+                        if (hm.MachineState == hm.PreviousState)
+                        {
+                            hm.TimeDuration = (long)(hm.HappenTime - dtt).TotalSeconds + (long)temDt.Rows[0][5];
+                            DataServerManager.Instance.UpdateMachineState(id, hm);
+                        }
+                        else
+                        {
+                            //If it is produced within one day;
+                            hm.TimeDuration = (long)(hm.HappenTime - dtt).TotalSeconds;
+                            //edit
+                            DataServerManager.Instance.InsertMachineState(hm);
+                        }
                     }
                     else
                     {
@@ -168,29 +178,102 @@ namespace HB_IWatch
                         {
                             if (intDay > 7)
                                 intDay = 7;
-
                             //Bù vào thời điểm trống các ngày
                             for (int i = 0; i < intDay; i++)
                             {
                                 //Lấy dữ liệu trạng thái gần nhất
                                 temDt = DataServerManager.Instance.SelectLastMachineState();
                                 //Tính thời điểm
-
-                                var transday = DateTime.Now.AddDays(-intDay + 1 +  i).Date.AddSeconds(-1);
-                                hm.TimeDuration = (long)(transday - (DateTime)temDt.Rows[0][1]).TotalSeconds;
+                                var lastTime = DateTime.Now.AddDays(-intDay + 1 + i).Date.AddSeconds(-1);
+                                hm.TimeDuration = (long)(lastTime - (DateTime)temDt.Rows[0][1]).TotalSeconds;
                                 //Trạng thái thiết bị
                                 hm.MachineState = (int)temDt.Rows[0][3];
                                 //Thời gian insert
-                                hm.HappenTime = transday;
+                                hm.HappenTime = lastTime;
                                 //Insert trạng thái vào sql
                                 DataServerManager.Instance.InsertMachineState(hm);
                             }
-
-
                             temDt = DataServerManager.Instance.SelectLastMachineState();
                             hm.HappenTime = DateTime.Now;
                             hm.TimeDuration = (long)(DateTime.Now - (DateTime)temDt.Rows[0][1]).TotalSeconds;
                             hm.MachineState = (int)machineStatus;
+                            DataServerManager.Instance.InsertMachineState(hm);
+                        }
+                    }
+                }
+                catch
+                { }
+            }
+            return "";
+        }
+
+        public string UploadMachineState(int machineStatus)
+        {
+            //Lấy trạng thái previousStatus từ SQLite
+
+            DataTable temDt = DataServerManager.Instance.SelectLastMachineState();
+
+            HiveMessage hm = new HiveMessage() { HappenTime = DateTime.Now, MachineState = machineStatus, PreviousState = 0, TimeDuration = 0 };
+            string id = temDt.Rows[0][0].ToString();
+            #region Modify data
+            //Không có dữ liệu nào được đọc ra
+            if (temDt.Rows.Count <= 0)
+            {
+                DataServerManager.Instance.InsertMachineState(hm);
+            }
+            else
+            {
+                DateTime dtt = (DateTime)temDt.Rows[0][1];
+                hm.PreviousState = (int)temDt.Rows[0][3];
+                DateTime oldTime = (DateTime)temDt.Rows[0][1];
+                try
+                {
+                    TimeSpan time = hm.HappenTime.Date - dtt.Date;
+                    var intDay = time.Days;
+
+                    //var intDay = hm.HappenTime.Date.Day - dtt.Day;
+                    if (intDay == 0)
+                    {
+                        //Nếu cùng 1 trạng thái. thì ko insert mà chỉ sửa trạng thái gần nhất
+                        if (hm.MachineState == hm.PreviousState)
+                        {
+                            hm.TimeDuration = (long)(hm.HappenTime - dtt).TotalSeconds + (long)temDt.Rows[0][5];
+                            DataServerManager.Instance.UpdateMachineState(id, hm);
+                        }
+                        else
+                        {
+                            //If it is produced within one day;
+                            hm.TimeDuration = (long)(hm.HappenTime - dtt).TotalSeconds;
+                            //edit
+                            DataServerManager.Instance.InsertMachineState(hm);
+                        }
+                    }
+                    else
+                    {
+                        //Multiple days of data will be insert a status on 00:00:00 AM everyday
+                        if (intDay >= 1)
+                        {
+                            if (intDay > 7)
+                                intDay = 7;
+                            //Bù vào thời điểm trống các ngày
+                            for (int i = 0; i < intDay; i++)
+                            {
+                                //Lấy dữ liệu trạng thái gần nhất
+                                temDt = DataServerManager.Instance.SelectLastMachineState();
+                                //Tính thời điểm
+                                var lastTime = DateTime.Now.AddDays(-intDay + 1 + i).Date.AddSeconds(-1);
+                                hm.TimeDuration = (long)(lastTime - (DateTime)temDt.Rows[0][1]).TotalSeconds;
+                                //Trạng thái thiết bị
+                                hm.MachineState = (int)temDt.Rows[0][3];
+                                //Thời gian insert
+                                hm.HappenTime = lastTime;
+                                //Insert trạng thái vào sql
+                                DataServerManager.Instance.InsertMachineState(hm);
+                            }
+                            temDt = DataServerManager.Instance.SelectLastMachineState();
+                            hm.HappenTime = DateTime.Now;
+                            hm.TimeDuration = (long)(DateTime.Now - (DateTime)temDt.Rows[0][1]).TotalSeconds;
+                            hm.MachineState = machineStatus;
                             DataServerManager.Instance.InsertMachineState(hm);
                         }
                     }
@@ -213,15 +296,11 @@ namespace HB_IWatch
 
         public void ShowErroAsync(string ErrCode, string strDescription, string szType, string AlarmLevel, string Solution, string OKText = "Confirm", string CancelText = "Stop", string IgnoreText = "Inorge", CallbackAction callbackAction = null, bool topmost = false)
         {
-            //Them errcode
-            Task task = new Task(() =>
+            Task.Run(() =>
             {
                 ShowError(ErrCode, strDescription, AlarmLevel, Solution, szType, OKText, CancelText, IgnoreText, -1, topmost);
-                if (callbackAction != null)
-                    callbackAction();
+                callbackAction?.Invoke();
             });
-
-            task.Start();
         }
 
         public void ShowDlgAsync(string strDescription, string OKText = "Confirm", CallbackAction callbackAction = null)
@@ -254,95 +333,113 @@ namespace HB_IWatch
             }
         }
 
-        // 显示错误对话框
-        public DialogResult ShowError(string ErrCode, string strDescription, string AlarmLevel, string Solution, string szType = "", 
-                                      string OKText = "Retry", string CancelText = "Stop", string IgnoreText = "Inorge", 
+        // Show Error Dialog
+        public DialogResult ShowError(string ErrCode, string strDescription, string AlarmLevel, string Solution, string szType = "",
+                                      string OKText = "Retry", string CancelText = "Stop", string IgnoreText = "Inorge",
                                       int timeout = -1, bool topmost = false)
         {
-            lock (obj)
+
+            if (XTask.OnPauseActive != null)
+                XTask.OnPauseActive(null, null);
+
+            DateTime startTime = DateTime.Now;
+            bool isOKVisable = (OKText != "");
+            bool isCancalVisable = (CancelText != "");
+            bool isIgnoreVisable = (IgnoreText != "");
+            DateTime lastAlarmEndTime = DateTime.Now;
+
+            AlarmCode alarmCode = new AlarmCode();
+            //ID code
+            alarmCode.ErrorCode = ErrCode;
+            alarmCode.ErrorCategory = szType;
+            alarmCode.MessageEn = strDescription;
+            alarmCode.Severity = AlarmLevel;
+            alarmCode.DealtMethod = Solution;
+
+            AlarmMessage Am = new AlarmMessage()
             {
+                EffectiveHappenTime = DateTime.Now,
+                HappenTime = DateTime.Now,
+                AlarmSerialNumber = DateTime.Now.ToString("yyyyMMddHHmmssffffff")
+            };
+            if (alarmCode.ErrorCode.Length >= 1)
+                Am.NowAlarm = alarmCode;
+            Am.EndTime = Am.HappenTime.AddSeconds(1);
 
-                if (XTask.OnPauseActive != null)
-                    XTask.OnPauseActive(null, null);
-
-                DateTime startTime = DateTime.Now;
-                bool isOKVisable = (OKText != "");
-                bool isCancalVisable = (CancelText != "");
-                bool isIgnoreVisable = (IgnoreText != "");
-                DateTime lastAlarmEndTime = DateTime.Now;
-
-                AlarmCode alarmCode = new AlarmCode();
-                //ID code
-                alarmCode.ErrorCode = ErrCode;
-                alarmCode.ErrorCategory = szType;
-                alarmCode.MessageEn = strDescription;
-                alarmCode.Severity = AlarmLevel;
-                alarmCode.DealtMethod = Solution;
-                //AC.EndTime = AC.HappenTime.AddSeconds(1);
-
-                AlarmMessage Am = new AlarmMessage() { EffectiveHappenTime = DateTime.Now, HappenTime = DateTime.Now,
-                                                       AlarmSerialNumber = DateTime.Now.ToString("yyyyMMddHHmmssffffff") };
-                if (alarmCode.ErrorCode.Length >= 1)
-                    Am.NowAlarm = alarmCode;
-                Am.EndTime = Am.HappenTime.AddSeconds(1);
-
-                //Add dữ liệu lỗi vào SQLite
-                DataServerManager.Instance.InsertAlarmON(Am);
-                UploadMachineStateMessage(MachineSts.Downtime);
-                //Dung giao dien FailTip
-                ft = new FailTip(strDescription, isCancalVisable, isIgnoreVisable, timeout, isOKVisable);
-                ft.SelectAll();
-                if (isOKVisable || (!isCancalVisable && !isIgnoreVisable))
-                    ft.SetSubmitText(OKText);
-                if (isCancalVisable)
-                    ft.SetCancelText(CancelText);
-                if (isIgnoreVisable)
-                    ft.SetIgnoreText(IgnoreText);
-
-                ft.TopMost = topmost;
-
-                //Lưu trạng thái lỗi
-                AddBackupMcStatus(curSts);
-                //Set trạng thái thiết bị
-                SetMachineStatus(MachineSts.Downtime);
-
-
-              
-
-                ft.ShowDialog();
-
-
-
-
-                ft.WaitOne();
-                //if(ft.ShowDialog() == DialogResult.OK)
-
-                //还原设备状态
-                //if (ft.DialogResult == DialogResult.OK || ft.DialogResult == DialogResult.Ignore || ft.DialogResult == DialogResult.Cancel)
-                    //SetMachineStatus(bkupSts);
-                //Set lại trạng thái máy
-                RecoverMachineStatus();
-                if (ft.DialogResult == DialogResult.Cancel || ft.DialogResult == DialogResult.Ignore)
-                {
-                    
-                }
-                if (ft.DialogResult == DialogResult.OK)
-                {
-                    XStationManager.Instance.Continue();
-                }
-                //Update thời gian xử lý lỗi                
-                DateTime now = DateTime.Now;
-                Am.EffectiveHappenTime = Am.EffectiveHappenTime >= lastAlarmEndTime ? Am.EffectiveHappenTime : lastAlarmEndTime;
-                lastAlarmEndTime = now;
-                Am.EndTime = now;
-
-                if (Am.EndTime.ToString("yyyy").Contains("0001"))
-                {
-                    Am.EndTime = DateTime.Now;
-                }
-                DataServerManager.Instance.UpdateAlarm(Am);
-                return ft.DialogResult;
+            //Add dữ liệu lỗi vào SQLite
+            DataServerManager.Instance.InsertAlarmON(Am);
+            UploadMachineStateMessage(MachineSts.Downtime);
+            //Dung giao dien FailTip
+            if (Solution != "")
+            {
+                strDescription = strDescription + ": " + Solution;
             }
+            else
+                strDescription = strDescription;
+
+            FailTip ft = new FailTip(strDescription, isCancalVisable, isIgnoreVisable, timeout, isOKVisable);
+            ft.SelectAll();
+            if (isOKVisable || (!isCancalVisable && !isIgnoreVisable))
+                ft.SetSubmitText(OKText);
+            if (isCancalVisable)
+                ft.SetCancelText(CancelText);
+            if (isIgnoreVisable)
+                ft.SetIgnoreText(IgnoreText);
+
+            ft.TopMost = topmost;
+
+            lstFailTip.Add(ft);
+
+            //Lưu trạng thái lỗi
+            AddBackupMcStatus(curSts);
+            //Set trạng thái thiết bị
+            SetMachineStatus(MachineSts.Downtime);
+            ft.ShowDialog();
+            ft.WaitOne();
+            //if(ft.ShowDialog() == DialogResult.OK)
+
+            //还原设备状态
+            //if (ft.DialogResult == DialogResult.OK || ft.DialogResult == DialogResult.Ignore || ft.DialogResult == DialogResult.Cancel)
+            //SetMachineStatus(bkupSts);
+            //Set lại trạng thái máy
+            RecoverMachineStatus();
+
+            //PC >> PLC Send Reset Err signal
+            if (Globals.SettingParameter.Async_HMI)
+            {
+                //Bit CLEAR ALARM trên HMI
+                SLMP.Instance.WriteBit(DevideCode.L, 0, true);
+                Thread.Sleep(50);
+                SLMP.Instance.WriteBit(DevideCode.L, 0, false);
+            }
+
+
+            //Dừng thiết bị
+            if (ft.DialogResult == DialogResult.Cancel)
+            {
+                XStationManager.Instance.Continue();
+            }
+
+            //Ấn thử lại hoặc bỏ qua lỗi
+            if (ft.DialogResult == DialogResult.OK || ft.DialogResult == DialogResult.Ignore)
+            {
+                if (lstFailTip.Count == 0)
+                    XStationManager.Instance.Continue();
+            }
+
+            //Update thời gian xử lý lỗi                
+            DateTime now = DateTime.Now;
+            //Am.EffectiveHappenTime = Am.EffectiveHappenTime >= lastAlarmEndTime ? Am.EffectiveHappenTime : lastAlarmEndTime;
+            //lastAlarmEndTime = now;
+            Am.EndTime = now;
+
+            if (Am.EndTime.ToString("yyyy").Contains("0001"))
+            {
+                Am.EndTime = DateTime.Now;
+            }
+            DataServerManager.Instance.UpdateAlarm(Am);
+            return ft.DialogResult;
+
         }
 
         // 显示警告对话框
@@ -387,15 +484,15 @@ namespace HB_IWatch
                         RemoveBackupMcSts(MachineSts.Downtime);
                         SetMachineStatus(MachineSts.Downtime);
                     }
-                    else if (ListBackupMcSts.Contains(MachineSts.Planned_downtime))
+                    else if (ListBackupMcSts.Contains(MachineSts.Interlock))
                     {
-                        RemoveBackupMcSts(MachineSts.Planned_downtime);
-                        SetMachineStatus(MachineSts.Planned_downtime);
+                        RemoveBackupMcSts(MachineSts.Interlock);
+                        SetMachineStatus(MachineSts.Interlock);
                     }
                     else if (ListBackupMcSts.Contains(MachineSts.Running))
                     {
                         SetMachineStatus(MachineSts.Running);
-                    }   
+                    }
                     else
                     {
                         SetMachineStatus(MachineSts.Idle);
@@ -478,7 +575,7 @@ namespace HB_IWatch
         public bool IsMachineRunning()
         {
             var st2 = XStationManager.Instance.FindStationById((int)StationId.Scanner).State;
-            if (st2 == XStationState.RUNNING || st2 == XStationState.PAUSE )
+            if (st2 == XStationState.RUNNING || st2 == XStationState.PAUSE)
             {
                 return true;
             }
@@ -487,13 +584,17 @@ namespace HB_IWatch
 
         public void CancelAlarmForm()
         {
-            if(ft != null && !ft.IsDisposed && ft.IsHandleCreated)
+            foreach (var ft in lstFailTip)
             {
-                ft.Invoke((MethodInvoker)(() =>
+                if (ft != null && !ft.IsDisposed && ft.IsHandleCreated)
                 {
-                    ft.SafeCloseDialog(DialogResult.Cancel);
-                }));
+                    ft.Invoke((MethodInvoker)(() =>
+                    {
+                        ft.SafeCloseDialog(DialogResult.Cancel);
+                    }));
+                }
             }
+
         }
         public void RetryAlarmForm()
         {
@@ -517,4 +618,6 @@ namespace HB_IWatch
         }
         #endregion
     }
+    #endregion
 }
+

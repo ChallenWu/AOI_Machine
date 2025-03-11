@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\OpenCvSharp4.runtime.win.4.10.0.20241108\build\netstandard\OpenCvSharp4.runtime.win.props" Condition="Exists('..\packages\OpenCvSharp4.runtime.win.4.10.0.20241108\build\netstandard\OpenCvSharp4.runtime.win.props')" />
+  <Import Project="..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props" Condition="Exists('..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -42,17 +42,36 @@
       <HintPath>Services\Core\CCD\MvCameraControl.Net.dll</HintPath>
     </Reference>
     <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
-      <HintPath>..\packages\OpenCvSharp4.4.10.0.20241108\lib\netstandard2.0\OpenCvSharp.dll</HintPath>
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Blob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.Blob.dll</HintPath>
     </Reference>
     <Reference Include="OpenCvSharp.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
-      <HintPath>..\packages\OpenCvSharp4.Extensions.4.10.0.20241108\lib\netstandard2.0\OpenCvSharp.Extensions.dll</HintPath>
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="OpenCvSharp.UserInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\lib\net461\OpenCvSharp.UserInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Serilog, Version=4.2.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.4.2.0\lib\net471\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.Async, Version=2.1.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.Sinks.Async.2.1.0\lib\net471\Serilog.Sinks.Async.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File, Version=6.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.Sinks.File.6.0.0\lib\net471\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=8.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.8.0.1\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Drawing.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -68,6 +87,12 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Threading.Channels, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.8.0.0\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -80,27 +105,57 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include=".env\Globals.cs" />
-    <Compile Include="Apps\Views\class\CustomPropertyGrid.cs">
+    <Compile Include=".env\visionGlob.cs" />
+    <Compile Include="Apps\Views\Class\ButtonDoDragStr.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Apps\Views\class\PictureBoxCtrl.cs" />
-    <Compile Include="Apps\Views\class\TextBoxDragFile.cs">
+    <Compile Include="Apps\Views\Class\ButtonImshow.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Apps\Views\class\ZoomPanel.cs">
+    <Compile Include="Apps\Views\Class\ButtonToolBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Apps\Views\class\RoundedPanelDragBasic.cs">
+    <Compile Include="Apps\Views\Class\CheckBoxImshow.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Apps\Views\class\RoundUserControl.cs">
+    <Compile Include="Apps\Views\Class\CustomPropertyGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\Class\FormUpdatePicCore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\Class\PictureBoxDragFile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\Class\TextBoxDragFileNorm.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\01. Core\Managers\XLogManager.cs" />
+    <Compile Include="Apps\Models\ShapesPics\ShapesPicBasic.cs" />
+    <Compile Include="Apps\Views\Class\ButtonDoDrag.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\Class\TextBoxDragFile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\Class\ToolsButtonControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\Class\toolstripCBB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\Class\ZoomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\Class\RoundedPanelDragBasic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\Class\RoundUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Apps\Views\class\RoundPanel.cs">
+    <Compile Include="Apps\Views\Class\RoundPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Apps\Controls\ParamConfigControl.cs" />
     <Compile Include="Apps\Views\UserControls\cvFunction.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,12 +167,6 @@
     </Compile>
     <Compile Include="Apps\Views\UserControls\ucBlockBasic.Designer.cs">
       <DependentUpon>ucBlockBasic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Apps\Views\UserControls\ucPictureBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Apps\Views\UserControls\ucPictureBox.Designer.cs">
-      <DependentUpon>ucPictureBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Apps\Views\UserControls\ucPropertyGridBlockBasic.cs">
       <SubType>UserControl</SubType>
@@ -131,17 +180,58 @@
     <Compile Include="Apps\Views\XWidgets\CustomMessageBox.Designer.cs">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Services\Core\CCD\HikCam.cs" />
-    <Compile Include="Services\Core\CCD\XCCD.cs" />
-    <Compile Include="Services\Core\CCD\XVisionManager.cs" />
-    <Compile Include="Services\Core\Parameters\XObjectParameter.cs" />
-    <Compile Include="Services\Core\Parameters\XParameter.cs" />
-    <Compile Include="Services\Core\Parameters\XParameterManager.cs" />
-    <Compile Include="Apps\Tools\BlobTool.cs" />
-    <Compile Include="Apps\Tools\FilterTool.cs" />
-    <Compile Include="Apps\Tools\ToolBase.cs" />
-    <Compile Include="Apps\Tools\tools.cs" />
-    <Compile Include="Apps\Tools\ToolsProcess.cs" />
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetROIs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetROIs.Designer.cs">
+      <DependentUpon>DialogSettingWidgetROIs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetHome.Designer.cs">
+      <DependentUpon>DialogSettingWidgetHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetLiveCCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetLiveCCD.Designer.cs">
+      <DependentUpon>DialogSettingWidgetLiveCCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetResultOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetResultOutput.Designer.cs">
+      <DependentUpon>DialogSettingWidgetResultOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetToolBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetToolBase.Designer.cs">
+      <DependentUpon>DialogSettingWidgetToolBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetToolTrainTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\DialogSettingWidgetToolTrainTemp.Designer.cs">
+      <DependentUpon>DialogSettingWidgetToolTrainTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apps\Views\XWidgets\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apps\Models\ShapesPics\ShapesPicROIs.cs" />
+    <Compile Include="Apps\Models\ShapesPics\ShapesPicToolBase.cs" />
+    <Compile Include="Services\02. CCD\HikCam.cs" />
+    <Compile Include="Services\02. CCD\mvControl.cs" />
+    <Compile Include="Services\02. CCD\XCCD.cs" />
+    <Compile Include="Services\01. Core\Managers\XImgPatternManager.cs" />
+    <Compile Include="Services\01. Core\Managers\XVisionManager.cs" />
+    <Compile Include="Services\01. Core\Managers\XObjectParameter.cs" />
+    <Compile Include="Services\01. Core\Managers\XParameter.cs" />
+    <Compile Include="Services\01. Core\Managers\XParameterManager.cs" />
     <Compile Include="Apps\Views\UserControls\ucBlockAdvandce.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,12 +268,6 @@
     <Compile Include="Apps\Views\XWidgets\createSpeedDraw.Designer.cs">
       <DependentUpon>createSpeedDraw.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apps\Views\XWidgets\DialogSettingWidget.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Apps\Views\XWidgets\DialogSettingWidget.Designer.cs">
-      <DependentUpon>DialogSettingWidget.cs</DependentUpon>
-    </Compile>
     <Compile Include="Apps\Views\XWidgets\DraggableUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,15 +282,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Services\Core\cvX.cs" />
-    <Compile Include="Services\ImageProcessing\ImageToolBase.cs" />
+    <Compile Include="Services\01. Core\cvX.cs" />
+    <Compile Include="Services\01. Core\Managers\XModels.cs" />
+    <Compile Include="Services\ImageProcessing\BASE\OBasicAlgorithm.cs" />
+    <Compile Include="Services\ImageProcessing\BASE\TemplateMatching\InteractMask.cs" />
+    <Compile Include="Services\ImageProcessing\BASE\TemplateMatching\PatternData.cs" />
+    <Compile Include="Services\ImageProcessing\BASE\TemplateMatching\TemplateMatch1.cs" />
+    <Compile Include="Services\ImageProcessing\BASE\TemplateMatching\TemplateMatch2.cs" />
+    <Compile Include="Services\ImageProcessing\BASE\TemplateMatching\TemplateMatch3.cs" />
+    <Compile Include="Services\ImageProcessing\ToolBase.cs" />
+    <Compile Include="Services\ImageProcessing\BASE\TemplateMatching\TemplateMatching.cs" />
+    <Compile Include="Services\templateMatch.cs" />
     <Compile Include="VisionStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DataService.cs" />
     <Compile Include="Services\Event.cs" />
     <Compile Include="Services\EventTask.cs" />
-    <Compile Include="Services\Task\XTask.cs" />
-    <Compile Include="Services\Task\XTaskManager.cs" />
+    <Compile Include="Services\01. Core\Task\XTask.cs" />
+    <Compile Include="Services\01. Core\Task\XTaskManager.cs" />
     <Compile Include="Utils\XFileExcel.cs" />
     <Compile Include="Utils\XFileJson.cs" />
     <Compile Include="Utils\XFileXml.cs" />
@@ -214,13 +307,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".env\settings.xml" />
-    <Content Include="Assets\caro.png" />
+    <Content Include="Assets\Icons\capture.png" />
     <Content Include="Assets\Icons\Delete.png" />
     <Content Include="Assets\Icons\error.png" />
+    <Content Include="Assets\Icons\icons8-live-48.png" />
+    <Content Include="Assets\Icons\icons8-live-96.png" />
+    <Content Include="Assets\Icons\icons8-reload-48.png" />
+    <Content Include="Assets\Icons\icons8-reload-96.png" />
+    <Content Include="Assets\Icons\icons8-save-100.png" />
+    <Content Include="Assets\Icons\icons8-save-48.png" />
+    <Content Include="Assets\Icons\icons8-save-50.png" />
+    <Content Include="Assets\Icons\icons8-save-96.png" />
     <Content Include="Assets\Icons\info.png" />
     <Content Include="Assets\Icons\link.png" />
     <Content Include="Assets\Icons\link1.png" />
     <Content Include="Assets\Icons\link2.png" />
+    <Content Include="Assets\Icons\live.png" />
     <Content Include="Assets\Icons\question.png" />
     <Content Include="Assets\Icons\selection-resize.png" />
     <Content Include="Assets\Icons\Zoom In.png" />
@@ -274,17 +376,17 @@
     <Content Include="Assets\Images\linkicon.png" />
     <Content Include="Assets\Images\linkicon2.png" />
     <Content Include="Assets\Images\linkicon3.png" />
-    <Content Include="Services\Core\CCD\MvCameraControl.Net.dll" />
+    <Content Include="Services\02. CCD\DLL\MvCameraControl.Net.dll" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Apps\Views\UserControls\cvFunction.resx">
       <DependentUpon>cvFunction.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\UserControls\ucBlockAdvandce.resx">
+      <DependentUpon>ucBlockAdvandce.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Apps\Views\UserControls\ucBlockBasic.resx">
       <DependentUpon>ucBlockBasic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Apps\Views\UserControls\ucPictureBox.resx">
-      <DependentUpon>ucPictureBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\Views\UserControls\ucPropertyGridBlockBasic.resx">
       <DependentUpon>ucPropertyGridBlockBasic.cs</DependentUpon>
@@ -294,6 +396,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\Views\UserControls\ucVisionUI.resx">
       <DependentUpon>ucVisionUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Apps\Views\UserControls\ucVisionUIFooter.resx">
       <DependentUpon>ucVisionUIFooter.cs</DependentUpon>
@@ -304,8 +407,26 @@
     <EmbeddedResource Include="Apps\Views\XWidgets\CustomMessageBox.resx">
       <DependentUpon>CustomMessageBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Apps\Views\XWidgets\DialogSettingWidget.resx">
-      <DependentUpon>DialogSettingWidget.cs</DependentUpon>
+    <EmbeddedResource Include="Apps\Views\XWidgets\DialogSettingWidgetROIs.resx">
+      <DependentUpon>DialogSettingWidgetROIs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\XWidgets\DialogSettingWidgetHome.resx">
+      <DependentUpon>DialogSettingWidgetHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\XWidgets\DialogSettingWidgetLiveCCD.resx">
+      <DependentUpon>DialogSettingWidgetLiveCCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\XWidgets\DialogSettingWidgetResultOutput.resx">
+      <DependentUpon>DialogSettingWidgetResultOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\XWidgets\DialogSettingWidgetToolBase.resx">
+      <DependentUpon>DialogSettingWidgetToolBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\XWidgets\DialogSettingWidgetToolTrainTemp.resx">
+      <DependentUpon>DialogSettingWidgetToolTrainTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apps\Views\XWidgets\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -313,24 +434,24 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Apps\Logs\" />
-    <Folder Include="Apps\Models\" />
-    <Folder Include="Apps\Views\Buttons\" />
-    <Folder Include="Apps\Views\Dialogs\" />
-    <Folder Include="Apps\Views\Form\" />
-    <Folder Include="Apps\Views\Labels\" />
-    <Folder Include="Assets\Debug\" />
+    <Folder Include="Services\ImageProcessing\BASE\FindCircles\" />
+    <Folder Include="Services\ImageProcessing\BASE\FindLines\" />
+    <Folder Include="Services\ImageProcessing\DLL\" />
     <Folder Include="Services\MachineLearning\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Assets\Icons\live.avif" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\OpenCvSharp4.runtime.win.4.10.0.20241108\build\netstandard\OpenCvSharp4.runtime.win.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCvSharp4.runtime.win.4.10.0.20241108\build\netstandard\OpenCvSharp4.runtime.win.props'))" />
+    <Error Condition="!Exists('..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCvSharp3-AnyCPU.4.0.0.20181129\build\OpenCvSharp3-AnyCPU.props'))" />
   </Target>
 </Project>

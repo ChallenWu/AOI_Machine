@@ -36,10 +36,11 @@
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Font = new System.Drawing.Font("SimSun", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 30);
+            this.button1.Size = new System.Drawing.Size(233, 38);
             this.button1.TabIndex = 0;
             this.button1.Text = "Task:Step";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -47,11 +48,13 @@
             // 
             // XTaskStepBar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "XTaskStepBar";
-            this.Size = new System.Drawing.Size(200, 30);
+            this.Size = new System.Drawing.Size(233, 38);
             this.ResumeLayout(false);
 
         }

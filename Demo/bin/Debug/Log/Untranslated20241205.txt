@@ -1,0 +1,10078 @@
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Confirm to start reset?
+Confirm
+Confirm
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+Reset Complete
+Hoàn thành Initilization
+Confirm that the machine is stopped?
+Tips
+Confirm to start reset?
+Confirm
+Confirm
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+Reset Complete
+Hoàn thành Initilization
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Error
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Error
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+NormalRun
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+NormalRun
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Confirm to start reset?
+Confirm
+Confirm
+Confirm to start reset?
+Confirm
+Confirm
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+Reset Complete
+Hoàn thành Initilization
+Confirm that the machine is stopped?
+Tips
+Confirm to start reset?
+Confirm
+Confirm
+Confirm to start reset?
+Confirm
+Confirm
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+Confirm that the machine is stopped?
+Tips
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+CylinderError
+Xóa lỗi
+Cửa an toàn
+EMG đang tác động
+SafetyError
+Retry
+Stop
+Continue
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+CylinderError
+Xóa lỗi
+Cửa an toàn
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+CylinderError
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+SafetyError
+Retry
+Stop
+Continue
+Cửa an toàn
+Cửa an toàn
+SafetyError
+Stop
+Cửa an toàn
+Cửa an toàn
+SafetyError
+Stop
+Cửa an toàn
+Cửa an toàn
+SafetyError
+Stop
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Cửa an toàn
+SafetyError
+Stop
+Cửa an toàn
+Cửa an toàn
+SafetyError
+Stop
+SafetyError
+Cửa an toàn
+Stop
+Cửa an toàn
+Cửa an toàn
+SafetyError
+Stop
+SafetyError
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+CylinderError
+Stop
+SafetyError
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Stop
+SafetyError
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+CylinderError
+Xóa lỗi
+Cửa an toàn
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+CylinderError
+Xóa lỗi
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Cửa an toàn
+SafetyError
+Stop
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+SafetyError
+Retry
+Stop
+Continue
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Stop
+SafetyError
+Cửa an toàn
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+Stop
+SafetyError
+Cửa an toàn
+Stop
+SafetyError
+Cửa an toàn
+Stop
+SafetyError
+Cửa an toàn
+Stop
+MotionError
+Trục dừng bất thường
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+Stop
+SafetyError
+Cửa an toàn
+Stop
+SafetyError
+Cửa an toàn
+Stop
+SafetyError
+Cảm biến an toàn
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+SafetyError
+Retry
+Stop
+Continue
+Cửa an toàn
+Cửa an toàn
+SafetyError
+Stop
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Stop
+SafetyError
+Cửa an toàn
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+Stop
+SafetyError
+Cửa an toàn
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+Cảm biến an toàn
+Stop
+EMG đang tác động
+Retry
+Stop
+Continue
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+Stop
+SafetyError
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+EMG đang tác động
+Retry
+Stop
+Continue
+Stop
+SafetyError
+EMG đang tác động
+Continue
+Retry
+EMG đang tác động
+Retry
+Stop
+Continue
+EMG đang tác động
+Retry
+Stop
+Continue
+EMG đang tác động
+Retry
+Stop
+Continue
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Cửa an toàn
+SafetyError
+Stop
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+CylinderError
+Xóa lỗi
+Cửa an toàn
+EMG đang tác động
+SafetyError
+Retry
+Stop
+Continue
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+CylinderError
+Xóa lỗi
+Cửa an toàn
+Cửa an toàn
+SafetyError
+Stop
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Confirm to start reset?
+Confirm
+Confirm
+Reset Complete
+Hoàn thành Initilization
+Tips
+WaitCarrierInSignal
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Confirm that the machine is stopped?
+Tips
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Stop Task
+Confirm to start reset?
+Confirm
+Confirm
+Reset Complete
+Hoàn thành Initilization
+Tips
+WaitCarrierInSignal
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Confirm that the machine is stopped?
+Tips
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Wait Carrier In
+Stop Task
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+NormalRun
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+NormalRun
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+NormalRun
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+CylinderError
+Xóa lỗi
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+CylinderError
+Xóa lỗi
+Cửa an toàn
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+CylinderError
+Xóa lỗi
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+CylinderError
+Xóa lỗi
+Cửa an toàn
+Cửa an toàn
+SafetyError
+Stop
+Cửa an toàn
+EMG đang tác động
+SafetyError
+Retry
+Stop
+Continue
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+SafetyError
+Retry
+Stop
+Continue
+Cửa an toàn
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+NormalRun
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+NormalRun
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Wrong password
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection

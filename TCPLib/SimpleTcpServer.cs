@@ -98,7 +98,7 @@ namespace TCPLib
 
             if (addr.AddressFamily == AddressFamily.InterNetwork)
             {
-                rankScore += 100;
+                rankScore += 100;               
             }
 
             // class A

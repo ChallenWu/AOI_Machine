@@ -6207,3 +6207,326 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\o
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.Up2Date
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CopyComplete
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CopyComplete
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.Up2Date
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CopyComplete
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+C:\Users\CTOS\Desktop\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+D:\AOI\20241220\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+D:\AOI\20241220\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+D:\AOI\20241220\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CopyComplete
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+D:\AOI\20241220\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CopyComplete
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CopyComplete
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+D:\AOI\20241226\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+D:\AOI\20241226\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+D:\AOI\20241226\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CopyComplete
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+D:\AOI\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.Properties.Resources.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.BzMessagebox.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisStatusTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XDoTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XSettingGrid.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTaskStepBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XStationStateBar.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XPositionTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTipDlg.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XAxisControlPanel.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XCardDiTable.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.XTimeoutTip.en-US.resources
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.GenerateResource.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\XCore\XCore\obj\Debug\XCore.pdb

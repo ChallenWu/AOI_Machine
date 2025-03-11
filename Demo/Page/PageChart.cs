@@ -1,7 +1,7 @@
 ﻿using BoTech;
 using Demo.UserControls;
 using HB_IWatch;
-
+using System.Diagnostics;
 
 //using Demo.Data;
 using System;
@@ -17,6 +17,7 @@ using System.IO;
 using OfficeOpenXml;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.DateTime;
 using Models;
+using System.Threading;
 
 namespace Demo.Page
 {
@@ -33,7 +34,6 @@ namespace Demo.Page
             }
         }
 
-
         public PageChart()
         {
             InitializeComponent();
@@ -42,7 +42,7 @@ namespace Demo.Page
             //BindColtrolsClick.BindControlClick(this);
             chartIO_Update1.UpdateChart += RefreshChart_IO_Hour;
             //chartIO_Update1.UpdateChart2 += RefreshChart_IO_HourCount_Func;
-            chkRealTimeChart.CheckedChanged += ChkRealTimeChart_CheckedChanged;
+            //chkRealTime.CheckedChanged += ChkRealTimeChart_CheckedChanged;
 
             var a = ModelStore.GetModelInfoList();
             foreach (var i in ModelStore.GetModelInfoList())
@@ -54,7 +54,7 @@ namespace Demo.Page
 
         private void ChkRealTimeChart_CheckedChanged(object sender, EventArgs e)
         {
-            if (chkRealTimeChart.Checked)
+            if (chkRealTime.Checked)
             {
                 this.StatusRefreshTimer.Start();
             }
@@ -70,9 +70,13 @@ namespace Demo.Page
         private DataTable ChartZhu7D;
         private DataTable ChartEachUnit;
 
+        /// <summary>
+        /// Chart tracktime within 2 days
+        /// </summary>
         public override void StartRefreshPage()
         {
-
+            chartIO_Update1.TrackStartTime = DateTime.Now.AddHours(-48);
+            chartIO_Update1.TrackEndTime = DateTime.Now;
             this.StatusRefreshTimer.Start();
         }
 
@@ -81,30 +85,36 @@ namespace Demo.Page
             this.StatusRefreshTimer.Stop();
         }
 
-        private void StatusRefreshTimer_Tick(object sender, EventArgs e)
+        public void RefeshAllChart()
         {
-            this.StatusRefreshTimer.Stop();
-
-            if (!chkRealTimeChart.Checked)
+            if (!chkRealTime.Checked)
+            {
                 return;
-
-            if (chkRealTimeChart.Checked)
-            {                
-                RefreshDEU(DateTime.Now.AddHours(-48), DateTime.Now);
             }    
+               
+
+            if (chkRealTime.Checked)
+            {
+                RefreshDEU(DateTime.Now.AddHours(-48), DateTime.Now);
+            }
             else
             {
                 var startTime = chartIO_Update1.TrackStartTime;
                 var endTime = chartIO_Update1.TrackEndTime;
-                if((endTime.Date - startTime.Date).Days > 30)
+                if ((endTime.Date - startTime.Date).Days > 30)
                 {
                     startTime = endTime.AddDays(-30);
-                }    
+                }
                 RefreshDEU(startTime, endTime);
-            }    
-                
-
+            }
             RefreshUI();
+        }
+        private void StatusRefreshTimer_Tick(object sender, EventArgs e)
+        {
+            this.StatusRefreshTimer.Stop();
+
+            RefeshAllChart();
+
             if (chartIO_Update1.IsSelectTime)
             {
 
@@ -121,9 +131,8 @@ namespace Demo.Page
             try
             {
                 DateTime dTime = DateTime.Now;
-                /*数据表中显示48小时数据；*/
                 //Chọn line chart và thống kê theo ngày
-                if (chkRealTimeChart.Checked)
+                if (chkRealTime.Checked)
                 {
                     chartIO_Update1.RealTimeTracking = true;
                 }
@@ -132,30 +141,33 @@ namespace Demo.Page
                     chartIO_Update1.RealTimeTracking = false;
                 }
 
+                //Line Chart
                 if (chartIO_Update1.IsSelectIO && chartIO_Update1.IsSelectDay)
                 {
-                    if (chkRealTimeChart.Checked)
+                    if (chkRealTime.Checked)
                     {
                         chartIO_Update1.DoubleBarCurrentTime = dTime;
                         chartIO_Update1.TrackStartTime = dTime.AddDays(-6);
                         chartIO_Update1.TrackEndTime = dTime;
-                    }   
+                    }
                     chartIO_Update1.Clear();
                     RefreshChart_IO_Day();
                 }
                 //Thông kê theo giờ
                 else if (chartIO_Update1.IsSelectIO && chartIO_Update1.IsSelectDay == false)
                 {
-                    if(chkRealTimeChart.Checked)
+                    if(chkRealTime.Checked)
                     {
                         chartIO_Update1.DoubleBarCurrentTime = dTime;                     
                     }
+
                     chartIO_Update1.Clear();
                     RefreshChart_IO_Hour();
                 }
+                //Bar Chart
                 else if (chartIO_Update1.IsSelectIO == false && chartIO_Update1.IsSelectDay)
                 {
-                    if (chkRealTimeChart.Checked)
+                    if (chkRealTime.Checked)
                     {
                         //Thời gian check hiện tại
                         chartIO_Update1.DoubleBarCurrentTime = dTime;
@@ -168,9 +180,10 @@ namespace Demo.Page
                     chartIO_Update1.Clear();
                     RefreshChart_IO_Day();
                 }
+                //Bar chart
                 else if (chartIO_Update1.IsSelectIO == false && chartIO_Update1.IsSelectDay == false)
                 {
-                    if (chkRealTimeChart.Checked)
+                    if (chkRealTime.Checked || QueryAnother)
                     {
                         chartIO_Update1.DoubleBarCurrentTime = dTime;
                     }
@@ -180,7 +193,7 @@ namespace Demo.Page
             }
             catch (Exception e)
             {
-               
+                Console.WriteLine(e.ToString());
             }
 
         }
@@ -199,7 +212,7 @@ namespace Demo.Page
 
             string filePath = "";
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-            fbd.Description = "请选择保存路径";
+            fbd.Description = "Please select the save path";
             if (fbd.ShowDialog() == DialogResult.OK)
             {
                 filePath = fbd.SelectedPath;
@@ -228,13 +241,13 @@ namespace Demo.Page
                 {
                     this.BeginInvoke(new Action(() =>
                     {
-                        this.Lbl_Unit.Text = ios.SN;
-                        this.Lbl_IO.Text = ios.Input_Output;
-                        this.lbl_Yield.Text = ios.Yield;
-                        this.lbl_PF.Text = ios.Pass_Fail;
-                        this.lbl_UPH.Text = ios.UPH;
-                        this.lbl_CT.Text = ios.CT;
-                        this.Pa_Unit.BackColor = ios.UnitStatus == true ? Color.Lime : Color.Red;
+                        //this.Lbl_Unit.Text = ios.SN;
+                        //this.Lbl_IO.Text = ios.Input_Output;
+                        //this.lbl_Yield.Text = ios.Yield;
+                        //this.lbl_PF.Text = ios.Pass_Fail;
+                        //this.lbl_UPH.Text = ios.UPH;
+                        //this.lbl_CT.Text = ios.CT;
+                        //this.Pa_Unit.BackColor = ios.UnitStatus == true ? Color.Lime : Color.Red;
                     }));
                 }
             }
@@ -242,8 +255,6 @@ namespace Demo.Page
             {
 
             }
-
-
         }
         #endregion
 
@@ -251,24 +262,41 @@ namespace Demo.Page
         #region Chart Each Unit
         private void RefreshDEU(DateTime start, DateTime end)
         {
-
+            //Bảng data SQL truy xuất dữ liệu chi tiết của từng sản phẩm
             try
             {
                 DataTable dt;
-                if (cbModel.SelectedIndex == 0)
+                if(QueryAnother == false)
                 {
-                    dt = DataServerManager.Instance.MonitorMassProduct(start, end);
-                }
+                    if (isQuery)
+                    {
+                        if (cbModel.SelectedIndex == 0)
+                        {
+                            dt = DataServerManager.Instance.MonitorMassProduct(start, end);
+                        }
 
+                        else
+                        {
+                            dt = DataServerManager.Instance.MonitorMassProduct(cbModel.SelectedItem.ToString(), start, end);
+                        }
+                    }
+                    else
+                    {
+                        dt = DataServerManager.Instance.MonitorMassProduct(LoadModel.currentModel.modelName, start, end);
+                    }
+                }   
+  
                 else
                 {
-                    dt = DataServerManager.Instance.MonitorMassProduct(cbModel.SelectedItem.ToString(), start, end);
-                }
+                    dt = DataServerManager.Instance.MonitorMassProduct(LoadModel.currentModel.modelName, start, end);
+                }    
 
 
 
                 dt.Columns[0].ColumnName = "HappenTime";
                 DataTable dtt = new DataTable();
+
+
                 for (int i = 0; i < dt.Columns.Count; i++)
                 {
                     DataColumn dc = new DataColumn(dt.Columns[i].ColumnName, typeof(System.String));
@@ -288,12 +316,16 @@ namespace Demo.Page
                             dtt.Rows[i][j] = ((DateTime)dt.Rows[i][j]).ToString("HH:mm:ss.ff");
                         else
                             dtt.Rows[i][j] = dt.Rows[i][j];
-
                     }
                 }
+
                 ChartEachUnit = dtt;
                 ChartEachUnit.TableName = "Chart Each Unit";
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
                 this.dataEachUnit1.UpdateData(dtt);
+                sw.Stop();
+                Console.WriteLine(sw.ElapsedMilliseconds);
             }
             catch (Exception ex)
             {
@@ -302,14 +334,11 @@ namespace Demo.Page
 
         }
 
-
         #endregion
 
 
-        #region 图标显示 chart；
-
-        
-        // Theo ngày
+        #region chart；        
+        // Tính theo đơn vị ngày
         private void RefreshChart_IO_Day()
         {
 
@@ -317,20 +346,23 @@ namespace Demo.Page
             var startTime1 = chartIO_Update1.TrackStartTime.Date;
             var endTime1 = chartIO_Update1.TrackEndTime.Date;
             var Days1 = (endTime1 - startTime1).Days+1;
-            if(Days1>=30)
+            if(Days1 >= 30)
             {
                 Days1 = 30;
-            }    
+            }
 
             /*表2，按天；显示CT;*/
+            #region Cycle Time 
             // cycle time
             /*Chọn 7 ngày gần nhất*/
             DataTable dt = DataServerManager.Instance.Select7DavgCT(DateTime.Now);
+            //Chọn được nhiều ngày, tối đa là 1 tháng
             DataTable dt1 = DataServerManager.Instance.SelectMultiDayCT(startTime1, endTime1);
 
             Dictionary<string, double>[] dicCT = new Dictionary<string, double>[] { new Dictionary<string, double>(), new Dictionary<string, double>() };
 
-            if (chkRealTimeChart.Checked)
+            //Dùng chế độ check thời gian thực
+            if (chkRealTime.Checked)
             {
                 for (int i = 0; i < 7; i++)
                 {
@@ -342,7 +374,7 @@ namespace Demo.Page
                         strTemp = "0";
                     }
 
-                    double value = Convert.ToDouble(strTemp);
+                    double value = Math.Round( Convert.ToDouble(strTemp),2);
                     dicCT[0].Add(key, value);
 
                     string strTemp2 = dt.Rows[13 - i][0].ToString();
@@ -350,11 +382,11 @@ namespace Demo.Page
                     {
                         strTemp2 = "0";
                     }
-                    double value2 = Convert.ToDouble(strTemp2);
+                    double value2 = Math.Round(Convert.ToDouble(strTemp2),2);
                     dicCT[1].Add(key, value2);
                 }
             }
-            //Ko dùng realtime checked
+            //Ko dùng đến realtime checked
             else
             {
                 for (int i = 0; i < Days1; i++)
@@ -367,7 +399,7 @@ namespace Demo.Page
                         strTemp = "0";
                     }
 
-                    double value = Convert.ToDouble(strTemp);
+                    double value = Math.Round(Convert.ToDouble(strTemp),2);
                     dicCT[0].Add(key, value);
 
                     string strTemp2 = dt1.Rows[(Days1 - 1)*2 + 1 - i][0].ToString();
@@ -375,61 +407,74 @@ namespace Demo.Page
                     {
                         strTemp2 = "0";
                     }
-                    double value2 = Convert.ToDouble(strTemp2);
+                    double value2 = Math.Round(Convert.ToDouble(strTemp2),2);
                     dicCT[1].Add(key, value2);
                 }
             }
+            #endregion
 
-            //Sản lượng
-            //Chart2 : 
-            // Thông kê theo 7 ngày gần nhất
-            DataTable dt2 = DataServerManager.Instance.Count7DayYield(DateTime.Now);
-            //Chỉ lấy PASS/FAIL của từng ngày theo lựa chọn
+            #region Thống kê sản lượng theo ngày
+
+            //Thống kê theo 7 ngày gần nhất, chia theo ca ngày và ca đêm
+            DataTable dt2;
+            if (chkRealTime.Checked)
+            {
+                dt2 = DataServerManager.Instance.Count7DayShiftYield(DateTime.Now, 7);
+            }
+            else
+                dt2 = DataServerManager.Instance.Count7DayShiftYield(endTime1, 7);
+
+
+
+            //Lấy dữ liệu PASS/FAIL của 7 ngày gần nhất, không phân chia ca ngày ca đêm
             DataTable dt4 = DataServerManager.Instance.CountDayYield(DateTime.Now);
+            
 
-
-
-            //Chia ca ngày ca đêm + PASS FAIL
+            //Lấy dữ liệu của pass fail nhiều ngày <Tối đa 30 ngày>
             DataTable dt3 = DataServerManager.Instance.CountMultiDayYield(startTime1, endTime1);
-            //DataTable dt5 = Data
-            var checkDayShift = false;
 
+            ///Shift == false là không phân ca
+            ///==true là phân ca ngày ca đêm
+            var Shift = true;
 
             Dictionary<string, int>[] dicCount = new Dictionary<string, int>[] { new Dictionary<string, int>(), new Dictionary<string, int>(), new Dictionary<string, int>(), new Dictionary<string, int>() };
-            if (chkRealTimeChart.Checked)
+            if (chkRealTime.Checked)
             {
-                if(checkDayShift)
+                if(chkShift.Checked == false)
                 {
-                    //DayShift - PASS/FAIL
+                    // PASS/FAIL chia theo từng ca: Lấy dữ liệu của 7 ngày gần nhất
                     for (int i = 0; i < 7; i++)
                     {
-                        string key2 = dt2.Rows[13 - i * 2][1].ToString();
+                        string key2 = dt2.Rows[12 - i * 2][1].ToString();
                         if (key2 == "" || key2 == null)
                         {
                             key2 = DateTime.Now.AddDays(i - 6).ToString("MM/dd");
                         }
                         else
                         {
-                            key2 = Convert.ToDateTime(dt2.Rows[13 - i * 2][1]).ToString("MM/dd");
+                            key2 = Convert.ToDateTime(dt2.Rows[12 - i*2][1]).ToString("MM/dd");
                         }
-                        //key2 = key2 + "_DS";
-                        //Pass
-                        int value = Convert.ToInt32(dt2.Rows[13 - i][0]);
-                        dicCount[0].Add(key2, value);
+                        //Ca ngày
+                        //PASS
+                        int value = Convert.ToInt32(dt2.Rows[12 - i*2][0]);
+                        dicCount[0].Add(key2 + "\r\nDS", value);
                         //Fail
-                        int value1 = Convert.ToInt32(dt2.Rows[6 - i][0]);
-                        dicCount[1].Add(key2, value1);
+                        int value1 = Convert.ToInt32(dt2.Rows[13 - i*2][0]);
+                        dicCount[1].Add(key2 + "\r\nDS", value1);
 
-                        int value2 = Convert.ToInt32(dt2.Rows[27 - i][0]);
-                        dicCount[2].Add(key2, value2);
+                        //Ca đêm
+                        //PASS
+                        int value2 = Convert.ToInt32(dt2.Rows[26 - i*2][0]);
+                        dicCount[0].Add(key2 + "\r\nNS", value2);
                         //fail
-                        int value3 = Convert.ToInt32(dt2.Rows[20 - i][0]);
-                        dicCount[3].Add(key2, value3);
+                        int value3 = Convert.ToInt32(dt2.Rows[27 - i*2][0]);
+                        dicCount[1].Add(key2 + "\r\nNS", value3);
+                          
                     }
                 }
                 else
                 {
-                    //Only PassFail on 1 day
+                    //Only PassFail on 7 day
                     for (int i = 0; i < 7; i++)
                     {
                         string key2 = dt4.Rows[6 - i][1].ToString();
@@ -454,25 +499,63 @@ namespace Demo.Page
             }
             else
             {
-                for (int i = 0; i < Days1; i++)
+                if (chkShift.Checked == false)
                 {
-                    string key2 = dt3.Rows[Days1 -1 - i][1].ToString();
-                    if (key2 == "" || key2 == null)
+                    // PASS/FAIL chia theo từng ca: Lấy dữ liệu của 7 ngày gần nhất
+                    for (int i = 0; i < 7; i++)
                     {
-                        key2 = endTime1.AddDays(i - (Days1-1)).ToString("yyyy/MM/dd");
-                    }
-                    else
-                    {
-                        key2 = Convert.ToDateTime(dt3.Rows[(Days1 - 1) - i][1]).ToString("yyyy/MM/dd");
-                    }
+                        string key2 = dt2.Rows[12 - i * 2][1].ToString();
+                        if (key2 == "" || key2 == null)
+                        {
+                            key2 = DateTime.Now.AddDays(i - 6).ToString("MM/dd");
+                        }
+                        else
+                        {
+                            key2 = Convert.ToDateTime(dt2.Rows[12 - i * 2][1]).ToString("MM/dd");
+                        }
+                        //Ca ngày
+                        //PASS
+                        int value = Convert.ToInt32(dt2.Rows[12 - i * 2][0]);
+                        dicCount[0].Add(key2 + "\r\nDS", value);
+                        //Fail
+                        int value1 = Convert.ToInt32(dt2.Rows[13 - i * 2][0]);
+                        dicCount[1].Add(key2 + "\r\nDS", value1);
 
-                    int value = Convert.ToInt32(dt3.Rows[(Days1 - 1) - i][0]);
-                    dicCount[0].Add(key2, value);
+                        //Ca đêm
+                        //PASS
+                        int value2 = Convert.ToInt32(dt2.Rows[26 - i * 2][0]);
+                        dicCount[0].Add(key2 + "\r\nNS", value2);
+                        //fail
+                        int value3 = Convert.ToInt32(dt2.Rows[27 - i * 2][0]);
+                        dicCount[1].Add(key2 + "\r\nNS", value3);
 
-                    int value2 = Convert.ToInt32(dt3.Rows[((Days1-1)*2) + 1 - i][0]);
-                    dicCount[1].Add(key2, value2);
+                    }
                 }
-            }    
+                else
+                {
+                    for (int i = 0; i < Days1; i++)
+                    {
+                        string key2 = dt3.Rows[Days1 - 1 - i][1].ToString();
+                        if (key2 == "" || key2 == null)
+                        {
+                            key2 = endTime1.AddDays(i - (Days1 - 1)).ToString("yyyy/MM/dd");
+                        }
+                        else
+                        {
+                            key2 = Convert.ToDateTime(dt3.Rows[(Days1 - 1) - i][1]).ToString("yyyy/MM/dd");
+                        }
+
+                        int value = Convert.ToInt32(dt3.Rows[(Days1 - 1) - i][0]);
+                        dicCount[0].Add(key2, value);
+
+                        int value2 = Convert.ToInt32(dt3.Rows[((Days1 - 1) * 2) + 1 - i][0]);
+                        dicCount[1].Add(key2, value2);
+                    }
+                }    
+
+            }
+            #endregion
+
             ChartZhu7D = dt;
             ChartZhu7D.TableName = "7Day";
             chartIO_Update1.Refresh(dicCT, dicCount);
@@ -490,14 +573,26 @@ namespace Demo.Page
                 DateTime dtTemp1 = chart1TimeStart.AddHours(-23);
                 DateTime dtTemp2 = chart2TimeStart.AddHours(-23);
 
-                #region /*Thông kê CT theo giờ
+                #region Thông kê cycle time theo giờ
 
                 //Check CycleTime 24h gần nhất
-                var model = cbModel.SelectedItem.ToString();
+                string model = "";
+                if(cbModel.InvokeRequired)
+                {
+                    cbModel.Invoke(new Action(() =>
+                     {
+                         model = cbModel.SelectedItem.ToString();
+                     }));                    
+                }
+                else
+                    model = cbModel.SelectedItem.ToString();
+
+
                 DataTable dtCT = DataServerManager.Instance.Select24HDavgCT(model,dtTemp2);
+
                 Dictionary<int, double>[] dicIntCTTemp = new Dictionary<int, double>[] { new Dictionary<int, double>(), new Dictionary<int, double>() };
                 Dictionary<int, double>[] dicIntCTRslt = new Dictionary<int, double>[] { new Dictionary<int, double>(), new Dictionary<int, double>() };
-                Dictionary<string, double>[] dicStrCTRslt = new Dictionary<string, double>[] { new Dictionary<string, double>(), new Dictionary<string, double>() };
+                Dictionary<string, double>[] dicStrCTRslt = new Dictionary<string, double>[] { new Dictionary<string, double>(), new Dictionary<string, double>()};
 
                 string[] sTimes = new string[24];
                 for (int i = 0; i < 24; i++)
@@ -516,7 +611,7 @@ namespace Demo.Page
                     }
                     else
                     {
-                        value = Convert.ToDouble(dtCT.Rows[i][0]);
+                        value = Math.Round(Convert.ToDouble(dtCT.Rows[i][0]),2);
                     }
 
                     dicIntCTTemp[0].Add(iTemp, value);
@@ -526,7 +621,7 @@ namespace Demo.Page
                 for (int i = 0; i < 24; i++)
                     {
                     string key, keyT;
-                    key = sTimes[i];
+                    key = sTimes[i]; 
                     keyT = Convert.ToInt32(key).ToString("00");
 
                     string strKey;
@@ -548,7 +643,8 @@ namespace Demo.Page
                     dicStrCTRslt[0].Add(strKey, dTempValue);
                 }
                 #endregion
-                #region Thống kê ngày và đêm theo giờ；
+
+                #region Thống kê sản lượng ngày và đêm theo giờ；
                 //24h thời gian gần nhất.
                 DataTable dtCount = DataServerManager.Instance.Count24HourYield(dtTemp2, 1);
 
@@ -564,7 +660,7 @@ namespace Demo.Page
                     int value = Convert.ToInt32(dtCount.Rows[i][0]);
                     dicCountRslt[0].Add(key2, value);
                     //Fail
-                    int value1 = Convert.ToInt32(dtCount.Rows[i+23][0]);
+                    int value1 = Convert.ToInt32(dtCount.Rows[i+24][0]);
                     dicCountRslt[1].Add(key2, value1);
                 }
                 #endregion
@@ -575,7 +671,8 @@ namespace Demo.Page
                 chartIO_Update1.Refresh(dicStrCTRslt, dicCountRslt);
             }
             catch (Exception ex)
-            { 
+            {
+                Console.WriteLine(ex.ToString());
             }
         }    
 
@@ -721,23 +818,67 @@ namespace Demo.Page
                     }
                 }
                 return true;
-            }
+            }   
             catch (Exception e)
             {
                 return false;
             }
         }
-
-        private void btn_Query_Click(object sender, EventArgs e)
+        bool isQuery = false;
+        public void btn_Query_Click(object sender, EventArgs e)
         {
-            var startTime = chartIO_Update1.TrackStartTime;
-            var endTime = chartIO_Update1.TrackEndTime;
-            if ((endTime.Date - startTime.Date).Days > 30)
+            try
             {
-                startTime = endTime.AddDays(-30);
+                if (isQuery == false)
+                {
+                    isQuery = true;
+                    var startTime = chartIO_Update1.TrackStartTime;
+                    var endTime = chartIO_Update1.TrackEndTime;
+
+                    if (QueryAnother)
+                    {
+                        endTime = DateTime.Now;
+                        startTime = DateTime.Now.AddDays(-7);
+                        chartIO_Update1.TrackStartTime = startTime;
+                        chartIO_Update1.TrackEndTime = endTime;
+                    }
+
+                    if ((endTime.Date - startTime.Date).Days > 30)
+                    {
+                        startTime = endTime.AddDays(-30);
+                    }
+                    //sql table
+                    Stopwatch sw = new Stopwatch();
+                    sw.Start();
+                    RefreshDEU(startTime, endTime);
+                    //chart
+                    RefreshUI();
+                    sw.Stop();
+                    Console.WriteLine(sw.ElapsedMilliseconds);
+                    isQuery = false;
+                    if (QueryAnother)
+                    {
+                        QueryAnother = false;
+                    }
+                }
             }
-            RefreshDEU(startTime, endTime);
-            RefreshUI();
+            catch (Exception ex)
+            {
+                isQuery = false;
+                MessageBox.Show(ex.ToString());
+                Console.WriteLine(ex.ToString());
+            }
+
+
+        }
+        bool QueryAnother = false;
+        public void QueryFromOtherForm()
+        {
+            QueryAnother = true;
+            btn_Query_Click(null, null);
+            HBMachine.Instance.UploadMachineStateMessage(MachineSts.Running);
+            QueryAnother = false;
+            isQuery = false;
         }
     }
 }

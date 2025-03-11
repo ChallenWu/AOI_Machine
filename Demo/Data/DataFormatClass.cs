@@ -23,13 +23,6 @@ namespace BoTech
         public int DurationCatigory { get; set; }
 
         public AlarmCode NowAlarm = new AlarmCode();
-
-        /*DFM2.5新增↓*/
-
-        /*DFM2.5新增↑*/
-
-
-
     }
 
 

@@ -19,22 +19,45 @@ namespace Models
         public String modelName { get; set; }
         public List<PLC_Point> points { get; set; }
         public DateTime updateTime { get; set; }
+        public List<VisionModel> visionModels { get; set; }
 
-        public ModelSettings()
+        public ModelSettings(bool initializeDefaults = true)
         {
-            this.updateTime = DateTime.Now;
-            this.modelName = Default_Model;
-            points = new List<PLC_Point>();
+            if (initializeDefaults)
+            {
+                this.updateTime = DateTime.Now;
+                this.modelName = Default_Model;
+                points = new List<PLC_Point>
+            {
+                new PLC_Point { Name = "Point0" }
+            };
+            //    visionModels = new List<VisionModel>
+            //{
+            //    new VisionModel { VisionModelName = "Capture1" },
+            //    new VisionModel { VisionModelName = "Capture2" }
+            //};
+            }
+            else
+            {
+                points = new List<PLC_Point>();
+                //visionModels = new List<VisionModel>();
+            }
         }
+
         public ModelSettings Clone()
         {
-            return new ModelSettings
+            return new ModelSettings(false)
             {
                 modelName = this.modelName,
                 updateTime = this.updateTime,
-                points = this.points
+                points = this.points.Select(point => new PLC_Point
+                {
+                    Name = point.Name,
+                }).ToList(),
+                //visionModels = this.visionModels.Select(visionModel => visionModel.Clone()).ToList()
             };
         }
+
         public String ToJson()
         {
             return JsonConvert.SerializeObject(this);
@@ -42,20 +65,17 @@ namespace Models
 
         public static ModelSettings FromJson(String js)
         {
-            var j = JsonConvert.DeserializeObject<ModelSettings>(js);
-            return j;
+            return !string.IsNullOrEmpty(js)
+                ? JsonConvert.DeserializeObject<ModelSettings>(js)
+                : null;
         }
 
         public Boolean HasSameModel(ModelSettings x)
         {
-            if (this.modelName != null && x != null && this.modelName.Equals(x.modelName))
-            {
-                return true;
-            }
-            return false;
+            return x != null && !string.IsNullOrEmpty(this.modelName) && this.modelName.Equals(x.modelName);
         }
     }
-     class PLC_Point
+    class PLC_Point
     {
         //Name point
         public string Name { get; set; } = "Point_1";
@@ -70,6 +90,47 @@ namespace Models
         public int Z_Reg { get; set; }
         public int R_Reg { get; set; }  
                
+    }
+
+    class VisionModel
+    {
+        public string VisionModelName { get; set; } = "Vision Default";
+        public List<VisionTool> tools { get; set; }
+
+        // Constructor duy nhất
+        public VisionModel(List<VisionTool> tools = null)
+        {
+            // Nếu tools là null, khởi tạo danh sách mặc định
+            this.tools = tools ?? new List<VisionTool>
+        {
+            new VisionTool { VisionToolName = "CogToolBlob_0" }
+        };
+        }
+
+        // Clone sâu (Deep Clone)
+        public VisionModel Clone()
+        {
+            return new VisionModel(this.tools?.Select(tool => new VisionTool
+            {
+                VisionToolName = tool.VisionToolName}).ToList())
+            {
+                VisionModelName = this.VisionModelName
+            };
+        }
+    }
+
+
+    class VisionTool
+    {
+        public string VisionToolName { get; set; }
+
+        public VisionTool Clone()
+        {
+            return new VisionTool
+            {
+                VisionToolName = this.VisionToolName
+            };
+        }
     }
 
     class AppSettings

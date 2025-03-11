@@ -1,30 +1,39 @@
-﻿//using AutoStudio.Core.Views.Regions;
-using BoTech;
+﻿using BoTech;
 using Demo.UserControls;
+using Models;
 using NPOI.HSSF.Record.PivotTable;
-using OVisionPro;
+using OpenCvSharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using VisionTools;
+using VisionTools.Tools;
+using VisionTools.Tools.ImageFile;
+using VisionTools.Tools.TotalGraphic;
 namespace Demo.Page
 {
     public partial class PageVision : UserControlBase
     {
+        //public static ImageToolC9200 C9200;
         public PageVision()
         {
-            InitializeComponent();
-           
+            InitializeComponent();           
+            VisionModel();
         }
 
-        private static PageVision instance;
+        public void VisionModel()
+        {
+           
+        }
+        static PageVision instance;
         public static PageVision Instance
         {
             get
@@ -33,11 +42,6 @@ namespace Demo.Page
                     instance = new PageVision();
                 return instance;
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            XVisionManager.Instance.StartWorkInTask("Model1", 0);
         }
     }
 }

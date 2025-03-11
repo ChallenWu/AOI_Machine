@@ -10,6 +10,7 @@ namespace XCore.Framework.MultiLang
     {
         private string _PropertyName;
         private string categoryName;
+        private string _description;    
         public MyPropertyAttribute(string name)
         {
             this._PropertyName = GetSettingName(name);
@@ -19,7 +20,12 @@ namespace XCore.Framework.MultiLang
             this._PropertyName = GetSettingName(name);
             this.categoryName = GetCategoryName(category);
         }
-
+        public MyPropertyAttribute(string name, string category, string description)
+        {
+            this._PropertyName = GetSettingName(name);
+            this.categoryName = GetCategoryName(category);
+            this._description = description;
+        }   
         private string GetSettingName(string name)
         {
             return MultiLanguage.GetSettingName(name);
@@ -48,5 +54,7 @@ namespace XCore.Framework.MultiLang
         public string CategoryName {
             get { return this.categoryName; }
         }
+
+        public string Description { get => _description; set => _description = value; }
     }
 }

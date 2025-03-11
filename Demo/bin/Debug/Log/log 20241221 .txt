@@ -1,0 +1,1 @@
+2024/12/21 14:56:56:193 => Station4 => AlarmCode:10017 => Category:VisionError => CCD ERROR. INSPECTION FAIL

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using XCore;
 using HB_IWatch;
 using Demo.UserControls;
-using System.Data.Entity.Infrastructure;
+//using System.Data.Entity.Infrastructure;
 using Newtonsoft.Json;
 using BoTech;
 using Models;
@@ -36,10 +36,11 @@ namespace Demo.Page
         public PageSetting()
         {
             InitializeComponent();
-            this.xSettingGrid_SettingOption.Id = (int)SettingId.Option_model1 + Globals.indexModel;
+            this.xSettingGrid_SettingOption.Id = (int)SettingId.Option_Model + Globals.indexModel;
             this.xSettingGrid_ICT.Id = (int)SettingId.Paramter_Model  + Globals.indexModel;
+            this.xSettingGrid1.Id = (int)SettingId.SerialNumber_Model + Globals.indexModel;
             //UpDateCompensationSettings(LoadModel.currentModel.modelName);
-           // propertyGrid1.SelectedObject = LoadModel.currentModel;
+            // propertyGrid1.SelectedObject = LoadModel.currentModel;
         }
 
 
@@ -59,11 +60,8 @@ namespace Demo.Page
 
         private void xSettingGrid_SettingOption_SaveOkEventHandler(object sender, EventArgs e)
         {
-            XMachine.Instance.DoorEnabled = Globals.SettingOption.IsOpensafeDoor();
-            XMachine.Instance.SafeDoorEStop = Globals.SettingOption.是否开启安全门急停复位;
+            XMachine.Instance.DoorEnabled = Globals.SettingParameter.Safedoor;
             UpDateCompensationSettings();
-
-
         }
         private void UpDateGlobalsSettings(object sender, EventArgs e)
         {
@@ -76,34 +74,11 @@ namespace Demo.Page
         /// <param name="IsDOE"></param>
         public void UpDateCompensationSettings()
         {
-            DataServerManager.Instance.InsertOperationLog("Thay đổi parameter Config");
-
-            //Globals.CreateModelFolder();
-
-            //Console.WriteLine($"id Option {(int)SettingId.Option_model1 + Globals.indexModel}");
-            //Console.WriteLine($"id Parameter {(int)SettingId.Paramter_Model + Globals.indexModel}");
-
-            this.xSettingGrid_SettingOption.Id = (int)SettingId.Option_model1 + Globals.indexModel;
+            DataServerManager.Instance.InsertOperationLog("Change parameter Config");
+            this.xSettingGrid_SettingOption.Id = (int)SettingId.Option_Model + Globals.indexModel;
             this.xSettingGrid_ICT.Id = (int)SettingId.Paramter_Model + Globals.indexModel;
-
+            this.xSettingGrid1.Id = (int)SettingId.SerialNumber_Model + Globals.indexModel;
             Globals.ChangeParaterForEachModel();
         }
-
-              
-
-
-            //if (IsDOE)
-            //{
-            //    this.xSettingGrid_SettingOption.Id = (int)SettingId.选项_DOE;
-            //    this.xSettingGrid_ICT.Id=(int)SettingId.ICT;
-               
-            //}
-            //else
-            //{
-            //    this.xSettingGrid_SettingOption.Id = (int)SettingId.Option_PD;
-            //    this.xSettingGrid_ICT.Id = (int)SettingId.ICT;
-            //    Globals.AddPDCompensationXYR();
-            //}
-        //}
     }
 }

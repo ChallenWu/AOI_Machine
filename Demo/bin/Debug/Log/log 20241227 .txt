@@ -1,0 +1,23 @@
+2024/12/27 09:16:44:148 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/27 09:31:47:579 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/27 10:17:27:266 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/27 10:18:45:906 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/27 10:28:53:663 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/27 10:39:10:304 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/27 10:39:38:007 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/27 10:42:23:131 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/27 10:44:47:122 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/27 10:45:02:754 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/27 10:45:20:947 => Station4 => AlarmCode:10025 => Category:MES_Error => PRODUCT STATION IS INCORRECT
+2024/12/27 10:49:28:770 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/27 10:53:04:284 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/27 10:53:24:899 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/27 10:55:40:904 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/27 10:59:55:364 => Station4 => AlarmCode:10025 => Category:MES_Error => PRODUCT STATION IS INCORRECT
+2024/12/27 11:00:06:376 => Station4 => AlarmCode:10025 => Category:MES_Error => PRODUCT STATION IS INCORRECT
+2024/12/27 11:06:31:377 => Station4 => AlarmCode:5054 => Category:MotionError => M5054: MES NG
+2024/12/27 11:06:35:517 => Station4 => AlarmCode:5054 => Category:MotionError => M5054: MES NG
+2024/12/27 11:07:07:072 => Station4 => AlarmCode:5054 => Category:MotionError => M5054: MES NG
+2024/12/27 11:08:01:777 => Station4 => AlarmCode:5054 => Category:MotionError => M5054: MES NG
+2024/12/27 11:08:22:430 => Station4 => AlarmCode:10025 => Category:MES_Error => PRODUCT STATION IS INCORRECT
+2024/12/27 13:30:54:462 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL

@@ -9,33 +9,33 @@ using System.Threading.Tasks;
 namespace DataBaseManager
 {
     /// <summary>
-    /// 定义数据库统一接口。统合不同数据库。各数据库继承此类，并重写相应接扣内容。
-    /// 目前已暂时完成 MySQL SQLite
+    /// Define a unified database interface. Integrate different databases. Each database inherits this class and rewrites the corresponding interface content.
+    /// Currently completed MySQL SQLite
     /// </summary>
     public interface DataBaseHelper : IDisposable
     {
         /// <summary>
         /// 创建数据表
         /// </summary>
-        /// <param name="tableName">表名</param>
-        /// <param name="colNames">列名数组</param>
+        /// <param name="tableName">Table Name</param>
+        /// <param name="colNames">Array of column names</param>
         /// <param name="colTypes">列类型数组</param>
         /// <returns></returns>
         int CreateTable(string tableName, string[] colNames, string[] colTypes);
         /// <summary>
         /// 创建数据表
         /// </summary>
-        /// <param name="tableName">表名</param>
-        /// <param name="colNames">列名数组</param>
+        /// <param name="tableName">Table Name</param>
+        /// <param name="colNames">Array of column names</param>
         /// <param name="colTypes">列类型数组</param>
         /// <returns></returns>
         int CreateStandardTable(string tableName, string[] colNames, string[] colTypes);
         /// <summary>
         /// 创建标准数据表
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="dT">时间名称数组 建议HappenTime 、 EndTime，只取前两项有效</param>
-        /// <param name="colNames">列名数组</param>
+        /// <param name="colNames">Array of column names</param>
         /// <param name="colLength">数据列长度 根据实际需求定义</param>
         /// <returns></returns>
         int CreateStandardTable(string tableName, string HappenTime, string EndTime, string[] colNames, string[] colLength);
@@ -43,20 +43,20 @@ namespace DataBaseManager
         /// <summary>
         /// 删除表
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <returns></returns>
         int DeleteTable(string tableName);
         /// <summary>
         /// 删除数据
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="WhereClause">删除条件</param>
         /// <returns></returns>
         int DeleteValues(string tableName, string WhereClause);
         /// <summary>
         /// 按条件删除表中的数据
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="WhichCol">条件列名</param>
         /// <param name="operateStr">条件 > = >= </param>
         /// <param name="condition">条件值</param>
@@ -65,26 +65,26 @@ namespace DataBaseManager
         /// <summary>
         /// 向表中插入数据
         /// </summary>
-        /// <param name="tableName">表名</param>
-        /// <param name="colNames">列名数组</param>
-        /// <param name="colValues">对应列名的数值</param>
+        /// <param name="tableName">Table Name</param>
+        /// <param name="colNames">Array of column names</param>
+        /// <param name="colValues">The value corresponding to the column name</param>
         /// <returns></returns>
         int InsertValues(string tableName, string[] colNames, string[] colValues);
 
         /// <summary>
         /// 向表中插入数据
         /// </summary>
-        /// <param name="tableName">表名</param>
-        /// <param name="colNames">列名数组</param>
-        /// <param name="colValues">对应列名的数值</param>
+        /// <param name="tableName">Table Name</param>
+        /// <param name="colNames">Array of column names</param>
+        /// <param name="colValues">The value corresponding to the column name</param>
         /// <returns></returns>
         int InsertStandardValues(string tableName, string[] colNames, string[] colValues);
         /// <summary>
         /// 向表中插入数据
         /// </summary>
-        /// <param name="tableName">表名</param>
-        /// <param name="colNames">列名数组</param>
-        /// <param name="colValues">对应列名的数值</param>
+        /// <param name="tableName">Table Name</param>
+        /// <param name="colNames">Array of column names</param>
+        /// <param name="colValues">The value corresponding to the column name</param>
         /// <returns></returns>
         int InsertStandardValues(string tableName, string[] colValues);
 
@@ -93,24 +93,24 @@ namespace DataBaseManager
         /// </summary>
         /// <param name="HappenTime">开始时间</param>
         /// <param name="EndTime">结束时间</param>
-        /// <param name="tableName">表名</param>
-        /// <param name="colNames">列名数组</param>
-        /// <param name="colValues">对应列名的数值</param>
+        /// <param name="tableName">Table Name</param>
+        /// <param name="colNames">Array of column names</param>
+        /// <param name="colValues">The value corresponding to the column name</param>
         /// <returns></returns>
         int InsertStandardValues(string tableName, string HappenTime, string EndTime, string[] colValues);
 
         /// <summary>
         /// 向表中插入数据
         /// </summary>
-        /// <param name="tableName">表名</param>
-        /// <param name="colNames">列名数组</param>
-        /// <param name="colValues">对应列名的数值</param>
+        /// <param name="tableName">Table Name</param>
+        /// <param name="colNames">Array of column names</param>
+        /// <param name="colValues">The value corresponding to the column name</param>
         /// <returns></returns>
         int InsertValues(string tableName, string[] colValues);
         /// <summary>
         /// 更新单条数据，改数据  UPDATE tableName SET colNames[i]=colValues[i] ... WHERE key operate value
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="colNames">列名</param>
         /// <param name="colValues">列对应的值</param>
         /// <param name="key">根据谁修改 筛选列名</param>
@@ -122,7 +122,7 @@ namespace DataBaseManager
         /// <summary>
         /// 选择整张数据表中数据
         /// </summary>
-        /// <param name="tableName">数据表名</param>   
+        /// <param name="tableName">数据Table Name</param>   
         /// <returns></returns>
         DataSet SelectTables(string tableName);
 
@@ -130,7 +130,7 @@ namespace DataBaseManager
         /// <summary>
         /// 选择整张数据表中数据
         /// </summary>
-        /// <param name="tableName">数据表名</param>
+        /// <param name="tableName">数据Table Name</param>
         /// <param name="ds">置空</param>
         /// <param name="dsName">置空</param>
         /// <returns></returns>
@@ -154,7 +154,7 @@ namespace DataBaseManager
         /// <summary>
         /// 查询一段时间内的 时间DateTime
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="colNames">要查询的列名 可为空 为空时查询所有列</param>
         /// <param name="colName">筛查列名</param>
         /// <param name="startTime">开始时间</param>
@@ -165,7 +165,7 @@ namespace DataBaseManager
         /// <summary>
         /// 查询一段时间内的 时间string
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="colNames">要查询的列名</param>
         /// <param name="colName">筛查列名</param>
         /// <param name="startTime">开始时间</param>
@@ -177,7 +177,7 @@ namespace DataBaseManager
         /// </summary>
         /// <param name="queryString">查询语句</param>
         /// <param name="ds">置空</param>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <returns></returns>                                                                
         DataSet SelectValues(string queryString, DataSet ds, string tableName);
         DataSet SelectValues(string tableName, string WhereClause);
@@ -187,7 +187,7 @@ namespace DataBaseManager
         /// <summary>
         /// 查询一段时间内的 时间DateTime  按指定列顺序
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="colNames">要查询的列名 可为空 为空时查询所有列</param>
         /// <param name="colName">筛查列名</param>
         /// <param name="startTime">开始时间</param>
@@ -200,7 +200,7 @@ namespace DataBaseManager
         /// <summary>
         /// 查询数据库某一行数据
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="colname">筛查列名</param>
         /// <param name="key">筛查值</param>
         /// <returns></returns>
@@ -208,7 +208,7 @@ namespace DataBaseManager
         /// <summary>
         /// 查询一段时间内的 时间DateTime  按指定列顺序
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="colNames">要查询的列名 可为空 为空时查询所有列</param>
         /// <param name="colName">筛查列名</param>
         /// <param name="startTime">开始时间</param>

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sunny.UI;
 
 namespace Demo.UserControls
 {
@@ -26,13 +27,19 @@ namespace Demo.UserControls
             if (!DesignMode)
                 this.Resize += UserControlBase_Resize;
         }
+        int oldResizeWidth = 0;
+        int oldResizeHeight = 0;
         private void UserControlBase_Resize(object sender, EventArgs e)
         {
             if (this.Width < 100 || this.Height < 100) return;
+            if(this.Width == oldResizeWidth || this.Height == oldResizeHeight) return;
             Ratio_Width = this.Width / (float)OriginFormSize.Width;
             Ratio_Height = this.Height / (float)OriginFormSize.Height;
             AutoResize(this);
             OriginFormSize = new Rectangle(this.Location.X, this.Location.Y, this.Width, this.Height);
+            oldResizeWidth = OriginFormSize.Width;
+            oldResizeHeight = OriginFormSize.Height;
+
         }
         public void AutoResize(Control Maincontrol)
         {

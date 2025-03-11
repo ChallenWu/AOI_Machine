@@ -15,7 +15,6 @@ namespace OVisionPro
     public partial class ucPropertyGridBlockBasic : UserControl
     {
         public Dictionary<string, Dictionary<string, object>> myNestedDictionary; 
-        private readonly static XParameterManager instance = new XParameterManager();
         public string funcID = "";
         private int taskId = 1;
         public int TaskId
@@ -27,10 +26,7 @@ namespace OVisionPro
                 this.taskId = value;
             }
         }
-        //public static XParameterManager Instance
-        //{
-        //    get { return instance; }
-        //}
+
         public Bitmap MatToBitmap(Mat mat)
         {
             // Convert từ Mat sang Bitmap

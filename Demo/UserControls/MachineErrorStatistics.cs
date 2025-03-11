@@ -174,7 +174,7 @@ namespace Demo.UserControls
 
 
         #region 方法
-        private const string DateTimeFormate = "MM/dd/yyyy HH:mm:ss";//定义时间格式；
+        private const string DateTimeFormate = "yyyy-MM-dd HH:mm:ss";//定义时间格式；
         public void UpdateDTPick(DateTime dtStart, DateTime dtEnd)
         {
             dateTimePicker1.Text = dtStart.ToString(DateTimeFormate);

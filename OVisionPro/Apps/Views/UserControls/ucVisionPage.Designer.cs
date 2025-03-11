@@ -57,7 +57,7 @@ namespace OVisionPro
             this.label1 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStartConfig = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -244,6 +244,7 @@ namespace OVisionPro
             // 
             this.lblResultAOI.BackColor = System.Drawing.Color.Red;
             this.lblResultAOI.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblResultAOI.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.lblResultAOI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblResultAOI.Font = new System.Drawing.Font("Arial Black", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.World, ((byte)(0)));
             this.lblResultAOI.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -256,7 +257,6 @@ namespace OVisionPro
             this.lblResultAOI.Text = "NG";
             this.lblResultAOI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblResultAOI.UseCompatibleTextRendering = true;
-            this.lblResultAOI.UseWaitCursor = true;
             // 
             // panel3
             // 
@@ -442,7 +442,7 @@ namespace OVisionPro
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.btnStartConfig, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(15, 16, 15, 16);
@@ -454,17 +454,17 @@ namespace OVisionPro
             this.tableLayoutPanel7.Size = new System.Drawing.Size(156, 52);
             this.tableLayoutPanel7.TabIndex = 0;
             // 
-            // button1
+            // btnStartConfig
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(10, 2);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 48);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnStartConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnStartConfig.Image = ((System.Drawing.Image)(resources.GetObject("btnStartConfig.Image")));
+            this.btnStartConfig.Location = new System.Drawing.Point(10, 2);
+            this.btnStartConfig.Margin = new System.Windows.Forms.Padding(2);
+            this.btnStartConfig.Name = "btnStartConfig";
+            this.btnStartConfig.Size = new System.Drawing.Size(136, 48);
+            this.btnStartConfig.TabIndex = 1;
+            this.btnStartConfig.UseVisualStyleBackColor = true;
+            this.btnStartConfig.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // ucVisionPage
             // 
@@ -529,7 +529,7 @@ namespace OVisionPro
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStartConfig;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Label label1;
     }

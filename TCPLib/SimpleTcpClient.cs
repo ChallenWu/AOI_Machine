@@ -85,23 +85,22 @@ namespace TCPLib
             try
             {
                 int recvcount= this._socket.EndReceive(ar);
-           if (recvcount > 0)
-           {
-               string recvmsg = Encoding.ASCII.GetString(buffer);
-               if (DataReceived != null)
+               if (recvcount > 0)
                {
-                   Message m = new Message(buffer, _client, StringEncoder, Delimiter, AutoTrimStrings);
-                   mReply = m;
-                   DataReceived(this, m);
-                   buffer = new byte[2048];
-                   _socket.BeginReceive(buffer, 0, 2048, SocketFlags.None, AsyncCallback, this);
+                   string recvmsg = Encoding.ASCII.GetString(buffer);
+                   if (DataReceived != null)
+                   {
+                       Message m = new Message(buffer, _client, StringEncoder, Delimiter, AutoTrimStrings);
+                       mReply = m;
+                       DataReceived(this, m);
+                       buffer = new byte[2048];
+                       _socket.BeginReceive(buffer, 0, 2048, SocketFlags.None, AsyncCallback, this);
+                   }
                }
-           }
             }
             catch
             {
                 Disconnect();
-
             }
            
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\Demo\\Fukang_AOI_Machine.csproj": {}
+    "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\C9200\\AOI_Update\\AOI_Machine\\Demo\\Fukang_AOI_Machine.csproj": {}
   },
   "projects": {
-    "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\Demo\\Fukang_AOI_Machine.csproj": {
+    "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\C9200\\AOI_Update\\AOI_Machine\\Demo\\Fukang_AOI_Machine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\Demo\\Fukang_AOI_Machine.csproj",
+        "projectUniqueName": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\C9200\\AOI_Update\\AOI_Machine\\Demo\\Fukang_AOI_Machine.csproj",
         "projectName": "Demo",
-        "projectPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\Demo\\Fukang_AOI_Machine.csproj",
+        "projectPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\C9200\\AOI_Update\\AOI_Machine\\Demo\\Fukang_AOI_Machine.csproj",
         "packagesPath": "C:\\Users\\52Hz\\.nuget\\packages\\",
-        "outputPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\Demo\\obj\\",
+        "outputPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\C9200\\AOI_Update\\AOI_Machine\\Demo\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -19,19 +19,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net472"
+          "net48"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
-          "net472": {
-            "projectReferences": {
-              "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\OVisionPro\\OVisionPro.csproj": {
-                "projectPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\OVisionPro\\OVisionPro.csproj"
-              }
-            }
+          "net48": {
+            "projectReferences": {}
           }
         },
         "restoreAuditProperties": {
@@ -41,18 +36,7 @@
         }
       },
       "frameworks": {
-        "net472": {
-          "dependencies": {
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.3, )"
-            },
-            "System.Data.SQLite": {
-              "target": "Package",
-              "version": "[1.0.119, )"
-            }
-          }
-        }
+        "net48": {}
       },
       "runtimes": {
         "win": {
@@ -67,21 +51,6 @@
         "win-x86": {
           "#import": []
         }
-      }
-    },
-    "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\OVisionPro\\OVisionPro.csproj": {
-      "restore": {
-        "projectUniqueName": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\OVisionPro\\OVisionPro.csproj",
-        "projectName": "OVisionPro",
-        "projectPath": "E:\\01.Cong viec\\01.Cong viec\\11.Foxcon Fii\\AOI_Machine\\AOI_Machine\\OVisionPro\\OVisionPro.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
       }
     }
   }

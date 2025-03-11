@@ -78,13 +78,15 @@ namespace XCore
             _thread.Start();
         }
         private void RegisterAlarm(XAlarmId alarmId, AlarmCategory category, string description,
-                string okOptiontext = "确认", string cancelOptionText = "", string ignoreOptionText = "")
+                string okOptiontext = "Confirm", string cancelOptionText = "", string ignoreOptionText = "")
         {
             description = MultiLanguage.GetMessage(description);
             okOptiontext = MultiLanguage.GetMessage(okOptiontext);
             cancelOptionText = MultiLanguage.GetMessage(cancelOptionText);
             ignoreOptionText = MultiLanguage.GetMessage(ignoreOptionText);
-            systemAlarms.Add(alarmId, new XAlarmEventArgs((int)alarmId, category.ToString(), description, okOptiontext, cancelOptionText, ignoreOptionText));
+           
+            //string solution = 
+            systemAlarms.Add(alarmId, new XAlarmEventArgs((int)alarmId, category.ToString(), description, okOptiontext, cancelOptionText, ignoreOptionText));            
         }
         public void RegisterCallbackAction(XAlarmId alarmId, CallbackAction callbackAction)
         {
@@ -95,25 +97,82 @@ namespace XCore
         {
             //ID lỗi, loại lỗi, miêu tả lỗi, 
             #region System
-            RegisterAlarm(XAlarmId.ESTOP, AlarmCategory.SafetyError, "EMG đang tác động", "Retry","Stop","Continue");
-            RegisterAlarm(XAlarmId.DOOR_OPEN, AlarmCategory.SafetyError, "Cửa an toàn", "", "Stop");
-            RegisterAlarm(XAlarmId.CURTAIN_ACT, AlarmCategory.SafetyError, "Cảm biến an toàn", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_SERVON_FAIL, AlarmCategory.MotionError, "Servo On Fail", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_ASTP, AlarmCategory.MotionError, "Trục dừng bất thường", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_ALM, AlarmCategory.MotionError, "Báo lỗi Servo", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_PEL, AlarmCategory.MotionError, "Lỗi Limit+", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_MEL, AlarmCategory.MotionError, "Lỗi Limit-", "", "Stop");
-            RegisterAlarm(XAlarmId.AXIS_POSERROR, AlarmCategory.MotionError, "Quá tọa độ trục", "", "Stop");
-            RegisterAlarm(XAlarmId.WAITDI_TIMEOUT, AlarmCategory.SensorError, "Timeout tín hiệu DI", "", "Stop");
-            RegisterAlarm(XAlarmId.AIR_LOW, AlarmCategory.AirError, "Khí vào không đủ", "Thử lại", "Dừng lại","Bỏ qua");
+            RegisterAlarm(XAlarmId.ESTOP, AlarmCategory.SafetyError, "EMG IS PRESSED", "Retry","Stop","Continue");
+            RegisterAlarm(XAlarmId.DOOR_OPEN, AlarmCategory.SafetyError, "SAFEDOOR IS OPENED", "", "Stop");
+            RegisterAlarm(XAlarmId.CURTAIN_ACT, AlarmCategory.SafetyError, "CURTAIN SENSOR IS ACTIVE", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_SERVON_FAIL, AlarmCategory.MotionError, "SERVO ON FAIL", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_ASTP, AlarmCategory.MotionError, "AXIS MOTION ABNORMAL", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_ALM, AlarmCategory.MotionError, "SERVO ALARM", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_PEL, AlarmCategory.MotionError, "GAP LIMIT+", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_MEL, AlarmCategory.MotionError, "GAP LIMIT-", "", "Stop");
+            RegisterAlarm(XAlarmId.AXIS_POSERROR, AlarmCategory.MotionError, "AXIS POS ERROR", "", "Stop");
+            RegisterAlarm(XAlarmId.WAITDI_TIMEOUT, AlarmCategory.SensorError, "TIME OUT INPUT", "", "Stop");
+            RegisterAlarm(XAlarmId.AIR_LOW, AlarmCategory.AirError, "AIR SUPPLY IS NOT ENOUGH", "Stop");
             #endregion
 
             #region CCD
-            RegisterAlarm(XAlarmId.CCD_Error, AlarmCategory.VisionError, "Lỗi CCD", "", "Stop");
-            RegisterAlarm(XAlarmId.BarCode_Err, AlarmCategory.ScanningError, "Lỗi Barcode", "", "Stop");
-            RegisterAlarm(XAlarmId.Write_PLC_Err, AlarmCategory.PLCError, "Lỗi ghi dữ liệu xuống PLC", "Thử lại", "Stop", "Bỏ qua");
-            RegisterAlarm(XAlarmId.SerialNumber_Dummy, AlarmCategory.ScanningError, "Dữ liệu sản phẩm bị trùng sản phẩm trước", "Thử lại", "Stop", "Bỏ qua");
+            RegisterAlarm(XAlarmId.CCD_ERROR, AlarmCategory.VisionError, "CCD ERROR. INSPECTION ASSY PART FAIL", "", "STOP");
+            RegisterAlarm(XAlarmId.CAPTURE_IMAGE_FAIL, AlarmCategory.VisionError, "CAPTURE IMAGE FAIL", "", "STOP");
+            RegisterAlarm(XAlarmId.CONNECT_CCD_FAIL, AlarmCategory.VisionError, "CANT CONNECT TO CCD", "", "STOP");
+            #endregion
 
+            #region SCANNER
+            
+            RegisterAlarm(XAlarmId.READ_MAIN_CODE, AlarmCategory.ScanningError, "SCANNER READ PN FAIL", "", "PUT NG");
+            RegisterAlarm(XAlarmId.READ_CODE_FAIL, AlarmCategory.ScanningError, "SCANNER READ SN FAIL", "", "PUT NG");
+            RegisterAlarm(XAlarmId.SN_DUMMY, AlarmCategory.ScanningError, "DUMMY THE LAST PRODUCT", "", "PUT NG");
+            #endregion
+
+            #region PLC
+
+            RegisterAlarm(XAlarmId.CONNECT_PLC_FAIL, AlarmCategory.PLCError, "CANT CONNECT TO PLC", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.WRITE_DOWN_PLC_ERROR, AlarmCategory.PLCError, "WRITE DATA TO PLC ERROR", "", "CLEAR ALARM", "");
+
+
+            RegisterAlarm(XAlarmId.LEFT_STOPPER_ORG_ERR, AlarmCategory.CylinderError, "M5010 : ORIGIN SENSOR OF BLOCKER CYLINDER HAS ISSUES ", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.LEFT_STOPPER_END_ERR, AlarmCategory.CylinderError, "M5011 : END SENSOR OF BLOCKER CYLINDER HAS ISSUES", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.RIGHT_STOPPER_ORG_ERR, AlarmCategory.CylinderError, "M5012 : END SENSOR OF UP/DOWN CYLINDER HAS ISSUES", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.RIGHT_STOPPER_END_ERR, AlarmCategory.CylinderError, "M5013 : ORIGIN SENSOR OF UP/DOWN BLOCKER CYLINDER HAS ISSUES", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.LEFT_CLAMP_ORG_ERR, AlarmCategory.CylinderError, "M5014 : ORIGIN SENSOR OF LEFT CLAMP CYLINDER HAS ISSUES", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.LEFT_CLAMP_END_ERR, AlarmCategory.CylinderError, "M5015 : END SENSOR OF LEFT CLAMP CYLINDER HAS ISSUE", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.RIGHT_CLAMP_ORG_ERR, AlarmCategory.CylinderError, "M5016 : ORIGIN SENSOR OF RIGHT CLAMP CYLINDER HAS ISSUES", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.RIGHT_CLAMP_END_ERR, AlarmCategory.CylinderError, "M5017: END SENSOR OF RIGHT CLAMP CYLINDER HAS ISSUES", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.CCD_TURN_ORG_ERR, AlarmCategory.CylinderError, "M5018: ORIGIN SENSOR OF CCD TURN CYLINDER HAS ISSUES", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.CCD_TURN_END_ERR, AlarmCategory.CylinderError, "M5019: END SENSOR OF CCD TURN CYLINDER HAS ISSUES", "", "CLEAR ALARM");
+
+
+            RegisterAlarm(XAlarmId.X_AXIS_ERROR, AlarmCategory.MotionError, "M5020 : AXIS X ERROR", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.Y_AXIS_ERROR, AlarmCategory.MotionError, "M5021 : AXIS Y ERROR", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.Z_AXIS_ERROR, AlarmCategory.MotionError, "M5022 : AXIS Z ERORR", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.R_AXIS_ERROR, AlarmCategory.MotionError, "M5023 : AXIS R ERROR", "", "CLEAR ALARM");
+
+            RegisterAlarm(XAlarmId.DOOR_1_ERROR, AlarmCategory.SafetyError, "M5030: SAFEDOOR 1 IS OPENED", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.DOOR_2_ERROR, AlarmCategory.SafetyError, "M5031: SAFEDOOR 2 IS OPENED", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.DOOR_3_ERROR, AlarmCategory.SafetyError, "M5032: SAFEDOOR 3 IS OPENED", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.DOOR_4_ERROR, AlarmCategory.SafetyError, "M5033: SAFEDOOR 4 IS OPENED", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.CURTAIN_1_ERROR, AlarmCategory.SafetyError, "M5034: CURTAIN SENSOR INPUT HAS ISSUE", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.CURTAIN_2_ERROR, AlarmCategory.SafetyError, "M5035: CURTAIN SENSOR OUTPUT HAS ISSUE", "", "CLEAR ALARM");
+
+            #endregion
+
+            RegisterAlarm(XAlarmId.INIT_DETECT_SEN_ERR, AlarmCategory.PLCError, "M5040: INITIAZATION DECTECT SENSOR ERROR ", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.INIT_OVERTIME, AlarmCategory.PLCError, "M5041: INITIAZATION OVERTIME ERROR", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.INIT_Z_OFF, AlarmCategory.MotionError, "M5042: INITIAZATION AXIS Z OFF", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.INIT_W_OFF, AlarmCategory.MotionError, "M5043: INITIAZATION AXIS W OFF", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.INIT_X_OFF, AlarmCategory.MotionError, "M5044: INITIAZATION AXIS X OFF", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.INIT_Y_OFF, AlarmCategory.MotionError, "M5045: INITIAZATION AXIS Y OFF", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.INIT_X24_ON, AlarmCategory.PLCError, "M5046: INITIAZATION X24 ON ERROR", "", "CLEAR ALARM");
+
+            RegisterAlarm(XAlarmId.VISION_OVERTIME, AlarmCategory.PLCError, "M5050: VISION OVERTIME ", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.SCAN_CODE_OVERTIME, AlarmCategory.PLCError, "M5051: SCANCODE OVERTIME", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.SCAN_CODEMES_OVERTIME, AlarmCategory.MotionError, "M5052: SCANCODE MES OVERTIME", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.CAM_NG, AlarmCategory.MotionError, "M5053: CAM NG", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.MES_NG, AlarmCategory.MotionError, "M5054: MES NG", "", "CLEAR ALARM");
+            RegisterAlarm(XAlarmId.SCAN_CODE_NG, AlarmCategory.MotionError, "M5055: SCAN CODE NG", "", "CLEAR ALARM");
+
+            #region MES
+            RegisterAlarm(XAlarmId.WRONG_STATION, AlarmCategory.MES_Error, "PRODUCT STATION IS INCORRECT", "", "PUT NG");
+            #endregion
         }
 
         public Dictionary<XAlarmId, XAlarmEventArgs> SystemAlarms
@@ -204,11 +263,11 @@ namespace XCore
                                     break;
 
                                 case (int)XAlarmId.DOOR_OPEN:
-                                    append = "安全门" +"\"" + xEvent.EventArgs.StringValue  + "\""+ "被打开";
+                                    append = "Safety door" +"\"" + xEvent.EventArgs.StringValue  + "\""+ "Opened";
                                     description = SystemAlarms[(XAlarmId)alarmId].Description + append;
                                     break;
                                 case (int)XAlarmId.AIR_LOW:
-                                    append = "正气压低于标准值";
+                                    append = "Positive air pressure is lower than the standard value";
                                     description = SystemAlarms[(XAlarmId)alarmId].Description + append;
                                     break;
                                 default:
@@ -351,7 +410,7 @@ namespace XCore
     {
         NONE,
         // System
-        ESTOP = 10000,
+        ESTOP = 10001,
         DOOR_OPEN,
         CURTAIN_ACT,
         AXIS_SERVON_FAIL,
@@ -363,16 +422,81 @@ namespace XCore
         WAITDI_TIMEOUT,
         CARD_INIT_FAIL,
         CARD_LOAD_PARAM_FAIL,
-        TCP_DISCONNECT,
         AIR_LOW,
         RST,
         WAIT_MOTION_TIMEOUT,
-        Parameter_Abnormality,
-        CCD_Error,
-        BarCode_Err,    
-        Write_PLC_Err,
-        SerialNumber_Dummy,
 
+
+
+
+        /// <summary>
+        /// CCD
+        /// </summary>
+        CONNECT_CCD_FAIL,
+        CCD_ERROR,
+        CAPTURE_IMAGE_FAIL,
+        
+        /// <summary>
+        /// SCANNER
+        /// </summary>
+        CONNECT_BARCODE_FAIL,
+        READ_CODE_FAIL,
+        READ_MAIN_CODE,
+        SN_DUMMY,
+        CONNECT_PLC_FAIL,
+        WRITE_DOWN_PLC_ERROR,
+
+
+        /// <summary>
+        /// MES
+        /// </summary>
+        WRONG_STATION,
+        UPLOAD_TO_MES_FAIL,
+
+        //Cylinder
+        LEFT_STOPPER_ORG_ERR = 5010,
+        LEFT_STOPPER_END_ERR,
+        RIGHT_STOPPER_ORG_ERR,
+        RIGHT_STOPPER_END_ERR,
+        LEFT_CLAMP_ORG_ERR,
+        LEFT_CLAMP_END_ERR,
+        RIGHT_CLAMP_ORG_ERR,
+        RIGHT_CLAMP_END_ERR,
+        CCD_TURN_ORG_ERR,
+        CCD_TURN_END_ERR,
+
+        /// <summary>
+        /// PLC
+        /// </summary>
+        X_AXIS_ERROR = 5020,
+        Y_AXIS_ERROR,
+        Z_AXIS_ERROR,
+        R_AXIS_ERROR,
+
+        /// <summary>
+        /// SafetyError
+        /// </summary>
+        DOOR_1_ERROR = 5030,
+        DOOR_2_ERROR,
+        DOOR_3_ERROR,
+        DOOR_4_ERROR,
+        CURTAIN_1_ERROR,
+        CURTAIN_2_ERROR,
+        //INITIAL PROCESS
+        INIT_DETECT_SEN_ERR = 5040,
+        INIT_OVERTIME,
+        INIT_Z_OFF,
+        INIT_W_OFF,
+        INIT_X_OFF,
+        INIT_Y_OFF,
+        INIT_X24_ON,
+        //PC ERROR
+        VISION_OVERTIME = 5050,
+        SCAN_CODE_OVERTIME = 5051,
+        SCAN_CODEMES_OVERTIME,
+        CAM_NG,
+        MES_NG,
+        SCAN_CODE_NG,
     }
 
     public enum XAlarmLevel
@@ -389,5 +513,4 @@ namespace XCore
         Yellow,
         Green
     }
-    #endregion
 }

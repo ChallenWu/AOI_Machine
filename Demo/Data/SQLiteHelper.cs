@@ -12,8 +12,6 @@ using System.Windows.Forms;
 
 namespace DataBaseManager
 {
-
-
     public class SQLiteHelper : IDisposable, DataBaseHelper
     {
         private bool _autoCommit;
@@ -39,7 +37,7 @@ namespace DataBaseManager
 
             if (connectionString == null)
             {
-                throw new ArgumentException("数据库路径为空,connectionString==null");
+                throw new ArgumentException("The database path is empty, connectionString==null");
             }
             if (!File.Exists(connectionString))
             {
@@ -550,9 +548,9 @@ namespace DataBaseManager
         }
 
         /// <summary>
-        /// 创建表名  一一对应
+        /// 创建Table Name  一一对应
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="colNames">列名</param>
         /// <param name="colTypes">列类型</param>
         /// <returns></returns>
@@ -633,9 +631,9 @@ namespace DataBaseManager
         }
 
         /// <summary>
-        /// 删除表
+        /// Delete a table
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <returns></returns>
         public int DeleteTable(string tableName)
         {
@@ -1238,9 +1236,9 @@ namespace DataBaseManager
         /// <summary>
         /// 选择整张表   tableName=   dsName
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="ds"></param>
-        /// <param name="dsName">表名</param>
+        /// <param name="dsName">Table Name</param>
         /// <returns></returns>
         public DataSet SelectTables(string tableName, DataSet ds, string dsName)
         {
@@ -1253,7 +1251,7 @@ namespace DataBaseManager
         /// </summary>
         /// <param name="queryString">查询命令</param>
         /// <param name="ds"></param>
-        /// <param name="dsName">表名</param>
+        /// <param name="dsName">Table Name</param>
         /// <returns></returns>
         public DataSet SelectValues(string queryString, DataSet ds, string dsName)
         {
@@ -1263,7 +1261,7 @@ namespace DataBaseManager
         /// <summary>
         /// 按条件查询  查询表里面某一行数据
         /// </summary>
-        /// <param name="tableName">表名</param>
+        /// <param name="tableName">Table Name</param>
         /// <param name="colName">筛选列名</param>
         /// <param name="key">筛选值</param>
         /// <returns></returns>
@@ -1525,8 +1523,8 @@ namespace DataBaseManager
         #endregion
     }
     /// <summary>
-    /// Y 年 M 月 D 日 H 时 m分 s 秒 f 毫秒
-    /// 数据库时间格式较固定，填数据时按照一种数据格式填入
+    /// Y year M month D day H hour m minute s second f millisecond
+    /// The database time format is relatively fixed, and the data is filled in according to a data format
     /// </summary>
     public class DTFormat
     {

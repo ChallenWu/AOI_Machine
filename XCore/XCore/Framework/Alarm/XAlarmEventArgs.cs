@@ -21,7 +21,7 @@ namespace XCore
         public List<dynamic> Alarmlist = new List<dynamic> { };
 
         public XAlarmEventArgs(int code, string category, string description,
-                string okOptiontext = "确认", string cancelOptionText = "", string ignoreOptionText = "")
+                string okOptiontext = "Confirm", string cancelOptionText = "", string ignoreOptionText = "")
         {
             this.code = code;
             this.category = category;
@@ -29,7 +29,9 @@ namespace XCore
             this.m_OkOptionText = okOptiontext;
             this.m_CancelOptionText = cancelOptionText;
             this.m_IgnoreOptionText = ignoreOptionText;
+
             this.m_solution= LoadFileAndCheckAlarm(code);
+            //this.m_solution = "abc";
         }
         public string LoadFileAndCheckAlarm(int Errorcode)
         {

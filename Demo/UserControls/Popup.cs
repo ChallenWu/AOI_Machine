@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sunny.UI;
 using TCPLib;
 
 namespace HB_IWatch
@@ -38,7 +39,7 @@ namespace HB_IWatch
 
             // Thiết lập Timer
             timer = new System.Windows.Forms.Timer();
-            timer.Interval = timeout; // Thời gian đóng (ms)
+            timer.Interval = timeout; 
             timer.Tick += (s, e) =>
             {
                 timer.Stop();

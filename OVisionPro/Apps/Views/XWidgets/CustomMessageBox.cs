@@ -15,6 +15,22 @@ namespace OVisionPro
         public CustomMessageBox()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterParent;
+        }
+        public void Settext(string msg)
+        {
+            txtMsg.Text = msg;
+        }
+
+        public CustomMessageBox(String message)
+        {
+            InitializeComponent();
+            txtMsg.Text = message.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

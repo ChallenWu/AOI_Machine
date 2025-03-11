@@ -179,7 +179,7 @@ namespace UCTest
 
 
 
-        [Description("滑轨日期字体大小")]
+        [Description("Rails date font size")]
         public int TrackBarFontSize
         {
             get { return _TrackBarFontSize; }
@@ -215,7 +215,7 @@ namespace UCTest
 
 
 
-        [Description("滑块2是否可用")]
+        [Description("Is slider 2 available?")]
         public bool IsSlider2Enable
         {
             get;
@@ -234,7 +234,7 @@ namespace UCTest
 
 
         /// <summary>
-        /// 控件高度（水平）/宽度（垂直）
+        /// Width (vertical)/height (horizontal) of the control
         /// </summary>
         [Description(" Kiểm soát chiều cao (ngang)/chiều rộng (dọc)")]
         public int ControlHeight

@@ -1,0 +1,1 @@
+2024/11/30 09:30:31:353 => Station4 => AlarmCode:10023 => Category:PLCError => Không thể kết nối tới PLC

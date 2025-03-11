@@ -221,7 +221,7 @@ namespace BoTech
                 string[] colName = new string[] { "Model","HappenTime", "Days", "Hours", "Shift", "Unit_SN", "Component_SN", "SerialNumber1", "SerialNumber2", "SerialNumber3", "Start_Time", "End_Time", "Pass", "CT", "Hive_State" };
                 string[] colValues = new string[] {UM.ModelProduct, now.ToString("yyyy-MM-dd HH:mm:ss"),now.ToString("yyyy-MM-dd") , now.ToString("HH"),
                                                    UM.Shift, UM.UnitSN, ucm.UC_SN, UM.serialNumber1, UM.serialNumber2, UM.serialNumber3,
-                                                    UM.StartTime.ToString("yyyy-MM-dd HH:mm:ss"),UM.EndTime.ToString("yyyy-MM-dd HH:mm:ss"), UM.Pass, UM.CT.ToString("f2"), UM.HiveState.ToString() };
+                                                   UM.StartTime.ToString("yyyy-MM-dd HH:mm:ss"),UM.EndTime.ToString("yyyy-MM-dd HH:mm:ss"), UM.Pass, UM.CT.ToString("f2"),                   UM.HiveState.ToString() };
                 //创建数据表
                 //dbh.CreateTable("test001", colName, colTypes);    
                 DBH.InsertStandardValues(unitTableName, colName, colValues);
@@ -238,7 +238,6 @@ namespace BoTech
         {
             DataTable dt = null;
             string Command = "";
-
             Command = $"select Hours,count(*),Pass from {unitTableName} where HappenTime between " +
                 $"'{start.ToString("yyyy-MM-dd HH:00:00")}' and '{end.ToString("yyyy-MM-dd HH:00:00")}' group by Hours order by Hours";
 
@@ -351,7 +350,7 @@ namespace BoTech
             return dt;
         }
         /*Thống kê đầu ra 7D;*/
-        public DataTable Count7DayYield(DateTime startTime)
+        public DataTable Count7DayShiftYield(DateTime startTime, int countDay)
         {
             //DataBaseHelper dataBaseHelper = new DataBaseHelper();
             //   7D  小时平均CT
@@ -360,13 +359,13 @@ namespace BoTech
             sb.Append($"select Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.ToString("yyyy-MM-dd")}' and Shift='DS' and PASS = 'PASS' ");
             sb.Append("union all ");
             sb.Append($"select Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.ToString("yyyy-MM-dd")}' and Shift='DS' and PASS = 'FAIL' ");
-
-            for (int i = 1; i < 7; i++)
+            
+            for (int i = 1; i < countDay; i++)
             {
                 sb.Append($"union all select all Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='DS' and Pass ='PASS' ");
                 sb.Append($"union all select all Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='DS' and Pass ='FAIL' ");
             }
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < countDay; i++)
             {
                 sb.Append($"union all select Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='NS' and Pass ='PASS' ");
                 sb.Append($"union all select Count(*),Days,Shift,PASS from {unitTableName} where  Days='{startTime.AddDays(-i).ToString("yyyy-MM-dd")}' and Shift='NS' and Pass ='FAIL' ");
@@ -472,7 +471,33 @@ namespace BoTech
             return dt;
         }
 
+        public DataTable CountShift(DateTime startTime)
+        {
+            DataTable dt = null;
+            StringBuilder sb = new StringBuilder();
+            sb.Append($"select Count(*), Pass,'{startTime.Hour}' as Hours from {unitTableName} where Pass = 'PASS' " +
+                      $"and End_Time >= '{startTime.ToString("yyyy-MM-dd HH:00:00")}' " +
+                      $"and End_Time < '{startTime.AddHours(1).ToString("yyyy-MM-dd HH:00:00")}' ");
 
+            for (int i = 0; i < 23; i++)
+            {
+                sb.Append($"union all select Count(*), Pass,'{startTime.AddHours((i + 1)).Hour}' as Hours from {unitTableName} " +
+                          $"where End_Time >='{startTime.AddHours((i + 1)).ToString("yyyy-MM-dd HH:00:00")}' " +
+                          $"and End_Time<'{startTime.AddHours(i + 2).ToString("yyyy-MM-dd HH:00:00")}' and Pass = 'PASS' ");
+            }
+            for (int i = 0; i < 24; i++)
+            {
+                sb.Append($"union all select Count(*), Pass,'{startTime.AddHours((i)).Hour}' as Hours from {unitTableName}" +
+                          $" where  End_Time >= '{startTime.AddHours((i)).ToString("yyyy-MM-dd HH:00:00")}' " +
+                          $" and End_Time < '{startTime.AddHours(i + 1).ToString("yyyy-MM-dd HH:00:00")}' and Pass = 'FAIL' ");
+            }
+
+            sb.Append(";");
+            string str = sb.ToString();
+            dt = DBH.SelectValues(sb.ToString()).Tables[0];
+            int x = dt.Rows.Count;
+            return dt;
+        }
 
 
 
@@ -587,14 +612,21 @@ namespace BoTech
             DBH.CreateStandardTable(machineStateTableName, colName, colTypes);
         }
 
-
-
         public void InsertMachineState(HiveMessage HM)
         {
             string[] colName = new string[] { "HappenTime", "Days", "MachineState", "PreviousState", "TimeSpan" };
             string[] colValues = new string[] { HM.HappenTime.ToString("yyyy-MM-dd HH:mm:ss"), HM.HappenTime.ToString("yyyy-MM-dd"), HM.MachineState.ToString(), HM.PreviousState.ToString(), HM.TimeDuration.ToString() };
 
             DBH.InsertStandardValues(machineStateTableName, colName, colValues);
+        }
+
+        public void UpdateMachineState(string SerialID, HiveMessage HM)
+        {
+            //var SerialID = id.ToString();
+            string[] colName = new string[] { "Serial_ID","HappenTime", "Days", "MachineState", "PreviousState", "TimeSpan" };
+            string[] colValues = new string[] { SerialID, HM.HappenTime.ToString("yyyy-MM-dd HH:mm:ss"), HM.HappenTime.ToString("yyyy-MM-dd"), HM.MachineState.ToString(), HM.PreviousState.ToString(), HM.TimeDuration.ToString() };
+
+            DBH.UpdateValues(machineStateTableName, colName, colValues, "Serial_ID", SerialID);
         }
 
         public DataTable SelectMachineState(DateTime start, DateTime end)

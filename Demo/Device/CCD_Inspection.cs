@@ -33,7 +33,7 @@ namespace HB_IWatch
         {
             //try
             //{
-            //  simpleTcpClient.Connect(Globals.SettingICT.CCD_IP, Globals.SettingICT.CCD_Port);
+            //  simpleTcpClient.Connect(Globals.SettingParameter.CCD_IP, Globals.SettingParameter.CCD_Port);
             //}
             //catch
             //{

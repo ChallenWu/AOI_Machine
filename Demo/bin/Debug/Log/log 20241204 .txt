@@ -1,0 +1,2 @@
+2024/12/04 08:50:49:440 => Station4 => AlarmCode:10018 => Category:ScanningError => Scanner không đọc được SN của sản phẩm:Camera feedback data timeout
+2024/12/04 08:50:54:875 => Station4 => AlarmCode:10018 => Category:ScanningError => Scanner không đọc được SN của sản phẩm:Không đọc được mã SN trên sản phẩm

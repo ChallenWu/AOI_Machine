@@ -59,10 +59,10 @@ namespace HB_IWatch
         //}
 
         /// <summary>
-        /// 如果文件被Excel打开，则关闭对应的Excel进程 
-        /// 由于Excel打开多个文件都是在同一进程中，一旦需要被使用的文件被Excel打开，只能直接关闭所有打开的Excel文件。
+        /// If the file is opened by Excel, close the corresponding Excel process
+        /// Since Excel opens multiple files in the same process, once the file to be used is opened by Excel, all open Excel files can only be closed directly.
         /// </summary>
-        /// <param name="filepath">文件路径（绝对路径）</param>
+        /// <param name="filepath">File path (absolute path)</param>
         private void KillProcess(string filepath)
         {
             int n = filepath.LastIndexOf('/') + 1;
@@ -72,10 +72,10 @@ namespace HB_IWatch
             {
                 if (p.ProcessName.ToUpper() == "EXCEL")
                 {
-                    //确认文件
+                    //Confirmation File
                     if (p.MainWindowTitle.Contains(fileName))
                     {
-                        p.Kill();//结束进程
+                        p.Kill();//Ending a process
                     }
                 }
             }

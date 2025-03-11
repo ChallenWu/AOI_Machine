@@ -1,0 +1,5 @@
+2024/12/16 13:50:56:503 => Station4 => AlarmCode:10023 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC:Lỗi ghi xuống Plc
+2024/12/16 13:52:23:124 => Station4 => AlarmCode:10023 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC:Lỗi ghi xuống Plc
+2024/12/16 13:53:56:367 => Station4 => AlarmCode:10023 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC
+2024/12/16 13:55:49:481 => Station4 => AlarmCode:10023 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC:Lỗi ghi xuống Plc
+2024/12/16 14:03:08:791 => Station4 => AlarmCode:10023 => Category:PLCError => Lỗi ghi dữ liệu xuống PLC

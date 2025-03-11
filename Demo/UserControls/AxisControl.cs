@@ -28,7 +28,7 @@ namespace Demo.UserControls
         private double m_Vel;
         private double m_Acc = 1000;
         private System.Threading.Timer m_Timer;
-        private int taskId = 1;
+        //private int taskId = 1;
         private Dictionary<int, PictureBox> pictureBoxMap = new Dictionary<int, PictureBox>();
 
         public Thread thread;
@@ -62,15 +62,15 @@ namespace Demo.UserControls
                 InchFwd1 = 5003,
                 ServoOn1 = 5008,
                 //PLC > PC
-                IsServoOn = 5000,
-                IsHomeOK = 5001,
+                IsServoOn = 40,
+                IsHomeOK = 2620,
                 IsZeroLimit1 = 5002,
                 IsNegativeLimit1 = 5003,
                 IsPositiveLimit1 = 5004,
                 IsErrors1 = 5005,
                 IsMoving = 5006,
                 // Register
-                CurrentPosition = 5000
+                CurrentPosition = 1000
 
 
             };
@@ -87,15 +87,15 @@ namespace Demo.UserControls
                 InchFwd1 = 5103,
                 ServoOn1 = 5108,
                 //Signal 
-                IsServoOn = 5100,
-                IsHomeOK = 5101,
+                IsServoOn = 41,
+                IsHomeOK = 2621,
                 IsZeroLimit1 =5102,
                 IsNegativeLimit1 = 5103,
                 IsPositiveLimit1 = 5104,
                 IsErrors1 = 5105,
                 IsMoving = 5106,
                 // Register
-                CurrentPosition = 5100
+                CurrentPosition = 1002
 
             };
             PLC ZAxis = new PLC() {
@@ -111,15 +111,15 @@ namespace Demo.UserControls
                 InchFwd1 = 5203,
                 ServoOn1 = 5208,
                 //Signal 
-                IsServoOn = 5200,
-                IsHomeOK = 5201,
+                IsServoOn = 42,
+                IsHomeOK = 2622,
                 IsZeroLimit1 = 5202,
                 IsNegativeLimit1 = 5203,
                 IsPositiveLimit1 = 5204,
                 IsErrors1 = 5205,
                 IsMoving = 5206,
                 // Register
-                CurrentPosition = 5200
+                CurrentPosition = 1004
 
             };
             PLC RAxis = new PLC() {
@@ -135,15 +135,15 @@ namespace Demo.UserControls
                 InchFwd1 = 5303,
                 ServoOn1 = 5308,
                 //Signal 
-                IsServoOn = 5300,
-                IsHomeOK = 5301,
+                IsServoOn = 43,
+                IsHomeOK = 2623,
                 IsZeroLimit1 = 5302,
                 IsNegativeLimit1 = 5303,
                 IsPositiveLimit1 = 5304,
-                IsErrors1 = 5305,
+                IsErrors1 = 2603,
                 IsMoving = 5306,
                 // Register
-                CurrentPosition = 5300
+                CurrentPosition = 1006
 
             };
 
@@ -382,7 +382,7 @@ namespace Demo.UserControls
 
         // ServoOn, HomeOK, Limit +, ,Origin , Limit - , Alarm, Moving
         private string[] ColumnsHeaderText = new string[10] { "Id", "Name", "POS", "SVON", "HMOK", "MEL", "ORG", "PEL", "ALM", "ASTP" };
-        private int[] ColumnsWidth = new int[8] { 22, 22, 22, 22, 22, 22, 22, 30 };
+        private int[] ColumnsWidth = new int[8] { 25, 25, 25, 25, 25, 25, 25, 30 };
         private void InitialDatagridView()
         {
             try
@@ -402,7 +402,7 @@ namespace Demo.UserControls
                     dataGridView1.Columns.Add(new DataGridViewImageColumn());
                 }
                 //Tạo chiều dài và header từng cột
-                dataGridView1.Columns[0].Width = 15;
+                dataGridView1.Columns[0].Width = 20;
                 for (int i = 0; i < ColumnsHeaderText.Length; i++)
                 {
                     dataGridView1.Columns[i].HeaderText = ColumnsHeaderText[i];
@@ -426,120 +426,113 @@ namespace Demo.UserControls
         {
             try
             {
-                while (stopPlcThread)
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
+
+                //Select each axis
+                if (Comb_AxisNo.Items.Count > 0)
                 {
-                    Stopwatch sw = new Stopwatch();
-                    sw.Start();
-                    if (Comb_AxisNo.Items.Count > 0)
+                    bool[] axisSts = new bool[] { m_IsServoOn, m_IsNegLimit, m_ZeroLimit, m_IsPosLimit, m_Err, m_Moving, m_IsHomeOK };
+
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_isServoOn, out m_IsServoOn);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_isNegLimit, out m_IsNegLimit);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_isHomeOK, out m_IsHomeOK);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_isPosLimit, out m_IsPosLimit);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_ZeroLimit, out m_ZeroLimit);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_Moving, out m_Moving);
+                    SLMP.Instance.ReadBit(DevideCode.M, signal_Err, out m_Err);
+
+                    //Current position
+                    LB_AxisNo.Text = m_AxisId.ToString() + ":";
+
+                    for (int i = 0; i < axisSts.Length; i++)
                     {
-                        bool[] axisSts = new bool[] { m_IsServoOn, m_IsNegLimit, m_IsHomeOK, m_IsPosLimit, m_Err, m_Moving };
-
-                        SLMP.Instance.ReadBit(DevideCode.M, signal_isServoOn, out m_IsServoOn);
-                        SLMP.Instance.ReadBit(DevideCode.M, signal_isHomeOK, out m_IsHomeOK);
-                        SLMP.Instance.ReadBit(DevideCode.M, signal_isPosLimit, out m_IsPosLimit);
-                        SLMP.Instance.ReadBit(DevideCode.M, signal_isNegLimit, out m_IsNegLimit);
-                        SLMP.Instance.ReadBit(DevideCode.M, signal_ZeroLimit, out m_ZeroLimit);
-                        SLMP.Instance.ReadBit(DevideCode.M, signal_Moving, out m_Moving);
-                        SLMP.Instance.ReadBit(DevideCode.M, signal_Err, out m_Err);
-
-                        LB_AxisNo.Text = m_AxisId.ToString() + ":";
-
-
-
-                        for (int i = 0; i < 6; i++)
+                        if (i < axisSts.Length-1)
                         {
-                            if (i < 5)
+                            if (axisSts[i] == true)
                             {
-                                if (axisSts[i] == true)
+                                if (i == 0)
                                 {
-                                    if (i == 0)
-                                    {
-                                        pictureBoxMap[i].BackgroundImage = Properties.Resources._lampGreen20;
-                                    }
-                                    else
-                                    {
-                                        pictureBoxMap[i].BackgroundImage = Properties.Resources._lampRed20;
-                                    }
+                                    pictureBoxMap[i].BackgroundImage = Properties.Resources._lampGreen20;
                                 }
                                 else
                                 {
-                                    pictureBoxMap[i].BackgroundImage = Properties.Resources._lampGray20;
+                                    pictureBoxMap[i].BackgroundImage = Properties.Resources._lampGreen20;
                                 }
                             }
                             else
                             {
-                                if (axisSts[i] == true)
-                                {
-                                    LB_Home.Text = MultiLanguage.GetMessage("Initial OK");
-                                    LB_Home.ForeColor = Color.Black;
-                                }
-                                else
-                                {
-                                    LB_Home.Text = MultiLanguage.GetMessage("Not Initial");
-                                    LB_Home.ForeColor = Color.Red;
-                                }
+                                pictureBoxMap[i].BackgroundImage = Properties.Resources._lampRed20;
                             }
                         }
-                    }
-
-                    foreach (var item in axisDictionary)
-                    {
-                        string axisId = item.Key;
-                        //bool IsSVON;
-                        if (axisDictionary.TryGetValue(axisId, out PLC plc))
+                        else
                         {
-                            bool IsSVON, IsHomeOK, IsPositiveLimit1, IsNegativeLimit1, IsZeroLimit1, IsMoving, IsErrors1;
-                            int curPos;
-                            // Read each bit status from the device
-                            SLMP.Instance.ReadBit(DevideCode.M, plc.IsServoOn, out IsSVON);
-                            SLMP.Instance.ReadBit(DevideCode.M, plc.IsHomeOK, out IsHomeOK);
-                            SLMP.Instance.ReadBit(DevideCode.M, plc.IsPositiveLimit1, out IsPositiveLimit1);
-                            SLMP.Instance.ReadBit(DevideCode.M, plc.IsNegativeLimit1, out IsNegativeLimit1);
-                            SLMP.Instance.ReadBit(DevideCode.M, plc.IsZeroLimit1, out IsZeroLimit1);
-                            SLMP.Instance.ReadBit(DevideCode.M, plc.IsMoving, out IsMoving);
-                            SLMP.Instance.ReadBit(DevideCode.M, plc.IsErrors1, out IsErrors1);
-                            SLMP.Instance.ReadDoubleWord(DevideCode.D, plc.CurrentPosition, out curPos);
-
-
-
-                            stsMap[axisId] = new bool[7]
+                            if (axisSts[i] == true)
                             {
-                        IsSVON, IsHomeOK, IsPositiveLimit1, IsNegativeLimit1, IsZeroLimit1, IsMoving, IsErrors1
-                            };
-
-                            //stsMap[axisId][0] = IsSVON;
-
-                            foreach (DataGridViewRow dr in dataGridView1.Rows)
+                                LB_Home.Text = MultiLanguage.GetMessage("Initial OK");
+                                LB_Home.ForeColor = Color.Black;
+                            }
+                            else
                             {
-                                if (dr.Cells[1].Value?.ToString() == axisId) // Ensure axisId matches the row
-                                {
-                                    dr.Cells[2].Value = curPos;
-                                    for (int i = 0; i < 7; i++)
-                                    {
-                                        // Update cell visuals based on the status transitions
-                                        if (stsMap[axisId][i] && !lastStsMap[axisId][i])
-                                        {
-                                            //dr.Cells[i + 3].Value = (i < 3) ? Properties.Resources._lampGreen20 : Properties.Resources._lampRed20;
-                                            dr.Cells[i + 3].Value = Properties.Resources._lampGreen20;
-                                        }
-                                        else if (!stsMap[axisId][i] && lastStsMap[axisId][i])
-                                        {
-                                            dr.Cells[i + 3].Value = Properties.Resources._lampGray20;
-                                        }
-                                    }
-                                    lastStsMap[axisId] = new bool[7];
-                                    Array.Copy(stsMap[axisId], lastStsMap[axisId], 7);
-                                    break;
-                                }
+                                LB_Home.Text = MultiLanguage.GetMessage("Not Initial");
+                                LB_Home.ForeColor = Color.Red;
                             }
                         }
-                        sw.Stop();
-                        Console.WriteLine("CT read data from Plc {0}", sw.ElapsedMilliseconds);
-                        Thread.Sleep(500);
                     }
-                    Thread.Sleep(500);
                 }
-                
+                //For all axis
+                foreach (var item in axisDictionary)
+                {
+                    string axisId = item.Key;
+                    //bool IsSVON;
+                    if (axisDictionary.TryGetValue(axisId, out PLC plc))
+                    {
+                        bool IsSVON, IsHomeOK, IsPositiveLimit1, IsNegativeLimit1, IsZeroLimit1, IsMoving, IsErrors1;
+                        int curPos;
+                        // Read each bit status from the device
+                        SLMP.Instance.ReadBit(DevideCode.Y, plc.IsServoOn, out IsSVON);
+                        SLMP.Instance.ReadBit(DevideCode.L, plc.IsHomeOK, out IsHomeOK);
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsPositiveLimit1, out IsPositiveLimit1);
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsNegativeLimit1, out IsNegativeLimit1);
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsZeroLimit1, out IsZeroLimit1);
+                        SLMP.Instance.ReadBit(DevideCode.M, plc.IsMoving, out IsMoving);
+                        SLMP.Instance.ReadBit(DevideCode.L, plc.IsErrors1, out IsErrors1);
+                        SLMP.Instance.ReadDoubleWord(DevideCode.D, plc.CurrentPosition, out curPos);
+                        stsMap[axisId] = new bool[7]
+                        {
+                                IsSVON, IsHomeOK, IsPositiveLimit1, IsNegativeLimit1, IsZeroLimit1, IsMoving, IsErrors1
+                        };
+
+                        //stsMap[axisId][0] = IsSVON;
+
+                        foreach (DataGridViewRow dr in dataGridView1.Rows)
+                        {
+                            if (dr.Cells[1].Value?.ToString() == axisId) // Ensure axisId matches the row
+                            {
+                                dr.Cells[2].Value = curPos;
+                                for (int i = 0; i < 7; i++)
+                                {
+                                    // Update cell visuals based on the status transitions
+                                    if (stsMap[axisId][i] && !lastStsMap[axisId][i])
+                                    {
+                                        //dr.Cells[i + 3].Value = (i < 3) ? Properties.Resources._lampGreen20 : Properties.Resources._lampRed20;
+                                        dr.Cells[i + 3].Value = Properties.Resources._lampGreen20;
+                                    }
+                                    else if (!stsMap[axisId][i] && lastStsMap[axisId][i])
+                                    {
+                                        dr.Cells[i + 3].Value = Properties.Resources._lampGray20;
+                                    }
+                                }
+                                lastStsMap[axisId] = new bool[7];
+                                Array.Copy(stsMap[axisId], lastStsMap[axisId], 7);
+                                break;
+                            }
+                        }                        
+                }
+                Thread.Sleep(100);
+                sw.Stop();
+                //Console.WriteLine("CT read data from Plc {0}", sw.ElapsedMilliseconds);
+                }
             }
             catch (Exception ex)
             {

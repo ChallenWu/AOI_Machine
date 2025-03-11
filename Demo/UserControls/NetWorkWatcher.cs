@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.NetworkInformation;
-using XCore;
+//using XCore;
 
 namespace Demo
 {
@@ -75,7 +75,7 @@ namespace Demo
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn());
             for (int i = 0; i < 3; i++)
             {
-                dataGridView1.Columns[i].HeaderText = MultiLanguage.GetMessage(colHead[i]);
+                //dataGridView1.Columns[i].HeaderText = MultiLanguage.GetMessage(colHead[i]);
                 dataGridView1.Columns[i].HeaderText = colHead[i];
             }
             dataGridView1.Columns[0].Width = 40;

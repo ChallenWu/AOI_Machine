@@ -11,9 +11,9 @@ using TCPLib;
 
 namespace Demo.Device
 {
-    sealed class Scanner_TCP
+    class Scanner_TCP
     {
-        public SimpleTcpClient simpleTcpClient1;
+        public SimpleTcpClient simpleTcpClient1;        
         private readonly static Scanner_TCP instance = new Scanner_TCP();
 
         private Scanner_TCP()
@@ -36,7 +36,7 @@ namespace Demo.Device
             {
                 if(!simpleTcpClient1.Connected)
                 {
-                    //simpleTcpClient1.Connect(Globals.SettingICT.ScanLead_IP, Globals.SettingICT.ScanLead_Port);
+                    simpleTcpClient1.Connect(Globals.SettingParameter.TCPScanner_IP, Globals.SettingParameter.TCPScanner_Port);
                 }                     
             }
             catch
@@ -111,7 +111,6 @@ namespace Demo.Device
                 simpleTcpClient1.Write(cmd);
             }
         }
-
         private void SimpleTcpClient1_DataReceived(object sender, TCPLib.Message message)
         {
             string result = message.MessageString;
@@ -124,13 +123,14 @@ namespace Demo.Device
                 {
                     RecDatas = result.Split(',');
                     RecData = result;
-                    DebugDlg.Instance.Update_TCP(RecData);
+                    if(DebugDlg.Instance.Modal == true)
+                            DebugDlg.Instance.Update_TCP(RecData);
                 }
                 else
                 {
-
                     RecData = result;
-                    DebugDlg.Instance.Update_TCP(RecData);
+                    if (DebugDlg.Instance.Modal == true)
+                        DebugDlg.Instance.Update_TCP(RecData);
                 }
 
                 are_DataRecerveDone.Set();

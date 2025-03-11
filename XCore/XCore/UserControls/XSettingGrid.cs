@@ -63,14 +63,14 @@ namespace XCore
             }
             if (XMachine.Instance.MachineMode != MachineModeType.Engineering)
             {
-                MessageBox.Show("Engineer mới có quyền lưu cài đặt\r\nĐăng nhập với quyền Engineer", "Fail");
+                MessageBox.Show("Only Engineer can do this function\r\nLogin with Engineer permission", "Fail");
                 return;
             }
             if (MessageBox.Show(this, "Save[" + XSettingManager.Instance.FindSettingById(this.id).Name + "]？", "Confirm",
                   MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 XSettingManager.Instance.FindSettingById(this.id).SaveSetting();
-                MessageBox.Show("Save new Setting");
+                MessageBox.Show("Save new setting success");
                 if (SaveOkEventHandler != null)
                     SaveOkEventHandler(sender, e);
             }

@@ -54,43 +54,41 @@
             // 
             // dateTimePicker1_2
             // 
-            this.dateTimePicker1_2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker1_2.CalendarFont = new System.Drawing.Font("SimSun", 8F);
             this.dateTimePicker1_2.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+            this.dateTimePicker1_2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTimePicker1_2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1_2.Location = new System.Drawing.Point(691, 3);
+            this.dateTimePicker1_2.Location = new System.Drawing.Point(715, 3);
             this.dateTimePicker1_2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dateTimePicker1_2.Name = "dateTimePicker1_2";
             this.dateTimePicker1_2.ShowUpDown = true;
-            this.dateTimePicker1_2.Size = new System.Drawing.Size(172, 20);
+            this.dateTimePicker1_2.Size = new System.Drawing.Size(148, 20);
             this.dateTimePicker1_2.TabIndex = 19;
             this.dateTimePicker1_2.Value = new System.DateTime(2024, 8, 9, 10, 20, 52, 0);
             // 
             // dateTimePicker1_1
             // 
-            this.dateTimePicker1_1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1_1.CalendarFont = new System.Drawing.Font("SimSun", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dateTimePicker1_1.CalendarFont = new System.Drawing.Font("SimSun", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dateTimePicker1_1.CustomFormat = "dd/MM/yyyy HH:mm:ss";
+            this.dateTimePicker1_1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTimePicker1_1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1_1.Location = new System.Drawing.Point(518, 2);
+            this.dateTimePicker1_1.Location = new System.Drawing.Point(569, 2);
             this.dateTimePicker1_1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1_1.Name = "dateTimePicker1_1";
             this.dateTimePicker1_1.ShowUpDown = true;
-            this.dateTimePicker1_1.Size = new System.Drawing.Size(169, 20);
+            this.dateTimePicker1_1.Size = new System.Drawing.Size(142, 20);
             this.dateTimePicker1_1.TabIndex = 18;
             this.dateTimePicker1_1.Value = new System.DateTime(2024, 8, 9, 10, 21, 0, 0);
             // 
             // btn_Hour
             // 
+            this.btn_Hour.AutoSize = true;
             this.btn_Hour.BackColor = System.Drawing.Color.LightGray;
-            this.btn_Hour.Location = new System.Drawing.Point(179, 3);
+            this.btn_Hour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Hour.Location = new System.Drawing.Point(263, 3);
             this.btn_Hour.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_Hour.Name = "btn_Hour";
-            this.btn_Hour.Size = new System.Drawing.Size(54, 23);
+            this.btn_Hour.Size = new System.Drawing.Size(83, 23);
             this.btn_Hour.TabIndex = 17;
             this.btn_Hour.Text = "Hour";
             this.btn_Hour.UseVisualStyleBackColor = false;
@@ -98,11 +96,13 @@
             // 
             // btn_Day
             // 
+            this.btn_Day.AutoSize = true;
             this.btn_Day.BackColor = System.Drawing.Color.White;
-            this.btn_Day.Location = new System.Drawing.Point(119, 3);
+            this.btn_Day.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Day.Location = new System.Drawing.Point(176, 3);
             this.btn_Day.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_Day.Name = "btn_Day";
-            this.btn_Day.Size = new System.Drawing.Size(56, 23);
+            this.btn_Day.Size = new System.Drawing.Size(83, 23);
             this.btn_Day.TabIndex = 16;
             this.btn_Day.Text = "Day";
             this.btn_Day.UseVisualStyleBackColor = false;
@@ -110,11 +110,13 @@
             // 
             // btn_Tossing
             // 
+            this.btn_Tossing.AutoSize = true;
             this.btn_Tossing.BackColor = System.Drawing.Color.LightGray;
-            this.btn_Tossing.Location = new System.Drawing.Point(60, 3);
+            this.btn_Tossing.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Tossing.Location = new System.Drawing.Point(89, 3);
             this.btn_Tossing.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_Tossing.Name = "btn_Tossing";
-            this.btn_Tossing.Size = new System.Drawing.Size(55, 23);
+            this.btn_Tossing.Size = new System.Drawing.Size(83, 23);
             this.btn_Tossing.TabIndex = 15;
             this.btn_Tossing.Text = "Chart";
             this.btn_Tossing.UseVisualStyleBackColor = false;
@@ -122,11 +124,13 @@
             // 
             // btn_IO
             // 
+            this.btn_IO.AutoSize = true;
             this.btn_IO.BackColor = System.Drawing.Color.White;
+            this.btn_IO.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_IO.Location = new System.Drawing.Point(2, 3);
             this.btn_IO.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btn_IO.Name = "btn_IO";
-            this.btn_IO.Size = new System.Drawing.Size(54, 23);
+            this.btn_IO.Size = new System.Drawing.Size(83, 23);
             this.btn_IO.TabIndex = 14;
             this.btn_IO.Text = "Line";
             this.btn_IO.UseVisualStyleBackColor = false;
@@ -167,7 +171,7 @@
             series1.IsValueShownAsLabel = true;
             series1.IsXValueIndexed = true;
             series1.Legend = "Legend1";
-            series1.Name = "DS OK";
+            series1.Name = "OK";
             series1.SmartLabelStyle.MovingDirection = ((System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles)((((System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles.Top | System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles.TopRight) 
             | System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles.BottomLeft) 
             | System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles.BottomRight)));
@@ -176,7 +180,7 @@
             series2.IsValueShownAsLabel = true;
             series2.IsXValueIndexed = true;
             series2.Legend = "Legend1";
-            series2.Name = "DS NG";
+            series2.Name = "NG";
             series2.SmartLabelStyle.MovingDirection = ((System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles)((((System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles.Top | System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles.TopRight) 
             | System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles.BottomLeft) 
             | System.Windows.Forms.DataVisualization.Charting.LabelAlignmentStyles.BottomRight)));
@@ -270,19 +274,19 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 7;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.25704F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.44465F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.63227F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.25704F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.409F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.16949F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.16949F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.16949F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.16949F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.42373F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.94915F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.94915F));
             this.tableLayoutPanel4.Controls.Add(this.btn_IO, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.btn_Tossing, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.btn_Day, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.dateTimePicker1_2, 6, 0);
-            this.tableLayoutPanel4.Controls.Add(this.dateTimePicker1_1, 5, 0);
             this.tableLayoutPanel4.Controls.Add(this.btn_Hour, 3, 0);
+            this.tableLayoutPanel4.Controls.Add(this.dateTimePicker1_1, 5, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -302,6 +306,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
 
         }

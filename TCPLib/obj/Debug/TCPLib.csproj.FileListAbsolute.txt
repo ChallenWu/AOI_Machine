@@ -2350,3 +2350,190 @@ E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\TCPLib\obj\De
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.Up2Date
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
 E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CopyComplete
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+E:\Projects\0.BZ\BZ_AOI_C9200 组装自动化线 DFM\CSharp AOI_C9200DFM\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CopyComplete
+D:\New folder\AOI_Machine134\AOI_Machine134\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\AOI_Update\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.Up2Date
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CopyComplete
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+C:\Users\CTOS\Desktop\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+D:\AOI\20241220\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+D:\AOI\20241220\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+D:\AOI\20241220\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CopyComplete
+D:\AOI\20241220\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+D:\AOI\20241220\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CopyComplete
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+D:\AOI\20241224\AOI_Machine\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CopyComplete
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+D:\AOI\20241225\VisionTools\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+D:\AOI\20241226\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+D:\AOI\20241226\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+D:\AOI\20241226\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CopyComplete
+D:\AOI\20241226\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+D:\AOI\20241226\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20241226\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250102\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\TCPLib.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\XCore.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\ACS.SPiiPlusNET.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\NPOI.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\MiniExcel.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\NPOI.OOXML.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\NPOI.OpenXml4Net.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\XCore.pdb
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\bin\Debug\en-US\XCore.resources.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.AssemblyReference.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.CoreCompileInputs.cache
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\obj\Debug\TCPLib.csproj.Up2Date
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\obj\Debug\TCPLib.dll
+E:\01.Cong viec\01.Cong viec\11.Foxcon Fii\C9200\VisionTool\20250303\AOI_Machine\TCPLib\obj\Debug\TCPLib.pdb

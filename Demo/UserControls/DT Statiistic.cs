@@ -29,13 +29,13 @@ namespace BoTech
         private System.Windows.Forms.DataVisualization.Charting.Chart Chart_DT;
         private TableLayoutPanel tableLayoutPanel1;
         private string _dtLabel; 
-        [Description("控件刷新完事件")]
+        [Description("Control refresh complete event")]
         public event Action<DataTable> Refreshed_event; 
         #region 属性   
         //[Category("GUI属性")]
         //[Browsable(true)]
         //[DefaultValue("")]
-        [Description("设置Top10颜色数组")]
+        [Description("Set the Top10 color array")]
         public Color[] Top10
         {
             get
@@ -51,7 +51,7 @@ namespace BoTech
         //[Category("GUI属性")]
         //[Browsable(true)]
         //[DefaultValue("")]
-        [Description("设置数据源")]
+        [Description("Setting up the data source")]
         public DataTable DataSourceTable
         {
             get
@@ -66,7 +66,7 @@ namespace BoTech
         //[Category("GUI属性")]
         //[Browsable(true)]
         //[DefaultValue("")]
-        [Description("设置饼形图形式")]
+        [Description("Set up pie chart format")]
         public PieStyles PieStyle
         {
             get
@@ -81,7 +81,7 @@ namespace BoTech
         //[Category("GUI属性")]
         //[Browsable(true)]
         //[DefaultValue("")]
-        [Description("内部错误信息")]
+        [Description("Internal error message")]
 
         public string ErrorMessage
         {
@@ -97,7 +97,7 @@ namespace BoTech
         //[Category("GUI属性")]
         //[Browsable(true)]
         //[DefaultValue("")]
-        [Description("控件标签名")]
+        [Description("Control tag name")]
         public string DT_Label
         {
             get

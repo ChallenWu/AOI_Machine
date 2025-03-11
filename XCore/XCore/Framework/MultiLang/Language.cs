@@ -15,7 +15,6 @@ namespace XCore.Framework.MultiLang
         public string Chinese { get; set; }
         public string English { get; set; }
         public string Vietnamese { get; set; }
-
         public string Value { get; set; }
     }
 }

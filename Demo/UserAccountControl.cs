@@ -47,13 +47,13 @@ namespace Demo
             {
                 case "Administrator":
                     this.account = account;
-                    this.name = "管理员";
+                    this.name = "Administrator";
                     this.passWord = UserAccountControl.GetAdministratorPassWord();
                     this.userPermission = Privilige.Administrator;
                     break;
                 case "BOTECH":
                     this.account = account;
-                    this.name = "博众工程师";
+                    this.name = "BOTECH";
                     this.passWord = UserAccountControl.GetBOTECHPassWord();
                     this.userPermission = Privilige.Engineer;
                     break;

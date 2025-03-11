@@ -1,0 +1,3293 @@
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Scanner connection failed!
+
+
+Please check the network connection and restart the program
+Connect CCD fail!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+Not Initial
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Connect CCD fail!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at XCore.MultiLanguage.LogUntranslatedMessage(String str) in C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\Framework\MultiLang\MultiLanguage.cs:line 326
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at XCore.MultiLanguage.LogUntranslatedMessage(String str) in C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\Framework\MultiLang\MultiLanguage.cs:line 326
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at XCore.MultiLanguage.LogUntranslatedMessage(String str) in C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\Framework\MultiLang\MultiLanguage.cs:line 326
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at XCore.MultiLanguage.LogUntranslatedMessage(String str) in C:\Users\Administrator\Desktop\AOI_Machine\XCore\XCore\Framework\MultiLang\MultiLanguage.cs:line 326
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection
+EMG đang tác động
+Retry
+Stop
+Continue
+Cửa an toàn
+Stop
+Cảm biến an toàn
+Stop
+Servo On Fail
+Stop
+Trục dừng bất thường
+Stop
+Báo lỗi Servo
+Stop
+Lỗi Limit+
+Stop
+Lỗi Limit-
+Stop
+Quá tọa độ trục
+Stop
+Quá thời gian chờ DI
+Stop
+Khí vào không đủ
+Thử lại
+Dừng lại
+Bỏ qua
+Lỗi CCD
+Dừng lại
+Không thể kết nối được CCD
+Thử lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Bỏ qua
+Scanner không đọc được SN của sản phẩm
+Xác nhận NG
+Dừng lại
+Dữ liệu sản phẩm bị trùng sản phẩm trước
+Thử lại
+Dừng lại
+Bỏ qua
+Không thể kết nối tới PLC
+Dừng lại
+Lỗi ghi dữ liệu xuống PLC
+Thử lại
+Dừng lại
+Bỏ qua
+M5020 : Lỗi động cơ trục X
+Xóa lỗi
+M5021 : Lỗi động cơ trục Y
+Xóa lỗi
+M5022 : Lỗi động cơ trục Z
+Xóa lỗi
+M5023 : Lỗi động cơ trục R
+Xóa lỗi
+M5010 : Lỗi cảm biến org xi lanh chặn trái
+Xóa lỗi
+M5011 : Lỗi cảm biến end xi lanh chặn trái
+Xóa lỗi
+M5012 : Lỗi cảm biến org xi lanh chặn phải
+Xóa lỗi
+M5013 : Lỗi cảm biến end xi lanh chặn phải
+Xóa lỗi
+M5014 : Lỗi cảm biến org xi lanh kẹp trái
+Xóa lỗi
+M5015 : Lỗi cảm biến end xi lanh kẹp trái
+Xóa lỗi
+M5016 : Lỗi cảm biến org xi lanh kẹp phải
+Xóa lỗi
+M5017: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5018: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5019: Lỗi cảm biến end xi lanh kẹp phải
+Xóa lỗi
+M5030: Safedoor1 lỗi
+Xóa lỗi
+M5031: Safedoor2 lỗi
+Xóa lỗi
+M5032: Safedoor3 lỗi
+Xóa lỗi
+M5033: Safedoor4 lỗi
+Xóa lỗi
+M5034: Sensor an toàn cửa 1 lỗi
+Xóa lỗi
+M5035: Sensor an toàn cửa 2 lỗi
+Xóa lỗi
+SAI TRẠM
+Thử lại
+Dừng lại
+Bỏ qua
+Light controller connection failed!
+
+
+Please check the network connection and restart the program
+Middle Light controller connection failed!
+
+
+Please check the network connection and restart the program
+NormalRun
+IP
+Name
+NormalRun
+DryRun
+Conveyor_Dry_Run
+Entire_Machine_Dry_Run
+Single_Reinspection

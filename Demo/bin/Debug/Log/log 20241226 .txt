@@ -1,0 +1,35 @@
+2024/12/26 10:19:42:769 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 10:20:24:193 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 10:21:11:099 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 10:24:04:904 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 10:31:32:083 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 10:32:20:137 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 10:39:09:461 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 10:39:40:330 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 10:48:57:175 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 10:49:33:239 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 10:49:50:190 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 11:01:03:792 => Station4 => AlarmCode:10025 => Category:MES_Error => PRODUCT STATION IS INCORRECT
+2024/12/26 11:01:24:543 => Station4 => AlarmCode:10025 => Category:MES_Error => PRODUCT STATION IS INCORRECT
+2024/12/26 11:06:18:842 => Station4 => AlarmCode:10021 => Category:ScanningError => SCANNER READ PN FAIL
+2024/12/26 11:06:57:431 => Station4 => AlarmCode:10025 => Category:MES_Error => PRODUCT STATION IS INCORRECT
+2024/12/26 11:11:09:132 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 11:14:48:057 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 11:15:28:218 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 11:17:07:838 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 11:19:07:456 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 11:28:38:059 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 13:33:35:788 => System.UnhandledExceptionEventArgs
+2024/12/26 13:37:07:703 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 13:38:54:539 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 13:39:17:531 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 13:39:32:986 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 17:17:28:872 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 17:19:26:876 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 17:22:48:122 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 17:34:05:639 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 17:34:34:826 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 17:37:08:454 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 17:38:31:438 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 17:50:28:956 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
+2024/12/26 17:52:43:227 => Station4 => AlarmCode:10018 => Category:VisionError => CAPTURE IMAGE FAIL
